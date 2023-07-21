@@ -14,44 +14,44 @@ module.exports = {
       secondary: "#02457C",
       black: "#143048",
     },
+    fontWeight: {
+      100: 100,
+      200: 200,
+      300: 300,
+      400: 400,
+      500: 500,
+      600: 600,
+      700: 700,
+      800: 800,
+      900: 900,
+    },
     fontFamily: {
-      sans: ["Mulish", "sans-serif"],
-      poppins: ["Poppins", "sans-serif"],
+      primary: ["BespokeSans-Variable", "sans-serif"],
+      secondary: ["CabinetGrotesk-Variable", "sans-serif"],
     },
     fontSize: {
       h1: [
-        "50px",
+        "32px",
         {
-          lineHeight: "54px",
-          fontWeight: 400,
+          lineHeight: "34px",
         },
       ],
       h2: [
-        "40px",
-        {
-          lineHeight: "44px",
-          fontWeight: 400,
-        },
-      ],
-      h3: [
-        "32px",
-        {
-          lineHeight: "36px",
-          fontWeight: 400,
-        },
-      ],
-      h4: [
         "28px",
         {
           lineHeight: "32px",
-          fontWeight: 400,
         },
       ],
-      body1: [
-        "12px",
+      h3: [
+        "20px",
         {
-          lineHeight: "18px",
-          fontWeight: 400,
+          lineHeight: "24px",
+        },
+      ],
+      h4: [
+        "18px",
+        {
+          lineHeight: "24px",
         },
       ],
     },
