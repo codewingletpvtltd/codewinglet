@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className="font-primary">
         <Link href="/technology/reactjs-development-company">React js</Link>
         <div className="container">{children}</div>
       </body>
