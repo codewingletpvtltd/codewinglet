@@ -31,27 +31,66 @@ module.exports = {
     },
     fontSize: {
       h1: [
-        "32px",
+        "55px",
         {
-          lineHeight: "34px",
+          fontWeight: 800,
+          lineHeight: "68px",
         },
       ],
       h2: [
-        "28px",
+        "50px",
         {
-          lineHeight: "32px",
+          lineHeight: "62px",
+          fontWeight: 800,
         },
       ],
       h3: [
-        "20px",
+        "40px",
         {
-          lineHeight: "24px",
+          lineHeight: "50px",
+          fontWeight: 900,
         },
       ],
       h4: [
+        "25px",
+        {
+          lineHeight: "30px",
+          fontWeight: 800,
+        },
+      ],
+      h5: [
+        "20px",
+        {
+          lineHeight: "30px",
+          fontWeight: 800,
+        },
+      ],
+      h6: [
+        "16px",
+        {
+          lineHeight: "25px",
+          fontWeight: 400,
+        },
+      ],
+      body1: [
+        "20px",
+        {
+          lineHeight: "30px",
+          fontWeight: 500,
+        },
+      ],
+      body2: [
         "18px",
         {
-          lineHeight: "24px",
+          lineHeight: "30px",
+          fontWeight: 500,
+        },
+      ],
+      subtitle1: [
+        "16px",
+        {
+          lineHeight: "22px",
+          fontWeight: 400,
         },
       ],
     },
