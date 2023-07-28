@@ -54,7 +54,7 @@ const TextField: React.FC<TextFieldProps> = ({
       </div>
       {helperText && (
         <div
-          className={getClassNames("text-[12px] ", error ? "text-error" : "")}
+          className={getClassNames("text-[12px]", error ? "text-error" : "")}
         >
           {helperText}
         </div>
