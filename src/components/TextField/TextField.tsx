@@ -1,13 +1,6 @@
 import React, { InputHTMLAttributes, useEffect, useState } from "react";
 import { getClassNames } from "../../utils";
-
-interface TextFieldProps extends InputHTMLAttributes<HTMLInputElement> {
-  label?: string;
-  error?: boolean;
-  helperText?: string;
-  fullWidth?: boolean;
-  labelClassName?: string;
-}
+import { TextFieldProps } from "./types";
 
 const TextField: React.FC<TextFieldProps> = ({
   label,
@@ -30,8 +23,8 @@ const TextField: React.FC<TextFieldProps> = ({
           htmlFor={inputId}
           className={getClassNames(
             "font-secondary text-subtitle1 font-800",
-            labelClassName,
-            error ? "text-error" : ""
+            error ? "text-error" : "",
+            labelClassName
           )}
         >
           {label}
@@ -44,10 +37,10 @@ const TextField: React.FC<TextFieldProps> = ({
           disabled={disabled}
           className={getClassNames(
             "Input-root border-solid border h-[40px] px-[13px] rounded-10 w-[200px] text-subtitle2 font-400 focus:outline-none focus:border-primary",
-            className,
             error ? "border-error" : "border-gray",
             disabled ? "pointer-events-none bg-gray" : "",
-            fullWidth ? "w-full" : ""
+            fullWidth ? "w-full" : "",
+            className
           )}
           {...rest}
         />
