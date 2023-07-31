@@ -18,6 +18,7 @@ module.exports = {
       primary: '#0278BE',
       secondary: '#02457C',
       black: '#143048',
+      white: '#FFFFFF',
       gray: '#CDCCD2',
       error: '#F44336',
       aqua: '#CAD5DF',

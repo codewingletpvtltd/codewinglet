@@ -1,9 +1,9 @@
+import { Menu } from "../components/Menu";
 import { Meta, StoryObj } from "@storybook/react";
-import { Dropdown } from "../components/Dropdown";
 
 const meta = {
-  title: "Example/Dropdown",
-  component: Dropdown,
+  title: "Example/Menu",
+  component: Menu,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
     layout: "centered",
@@ -12,12 +12,12 @@ const meta = {
   tags: ["autodocs"],
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {},
-} satisfies Meta<typeof Dropdown>;
+} satisfies Meta<typeof Menu>;
 
 export default meta;
 
 type Story = StoryObj<typeof meta>;
 
 export const Typo = () => {
-  return <Dropdown menuItems={{}}/>;
+  return <Menu><></></Menu>;
 };

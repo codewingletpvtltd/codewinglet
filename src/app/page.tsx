@@ -1,4 +1,43 @@
+'use client';
+import { useState } from 'react';
+import {
+  Menu,
+  MenuItem,
+  MenuItemIcon,
+  MenuItemText,
+  MenuList,
+} from '../components/';
+import Logo from '../assets/reactJS.svg';
+import Image from 'next/image';
+
 export default function Home() {
+  const [isOpen, setIsOpen] = useState(false);
+  const menuItems = {
+    'col 1': {
+      icon: Logo,
+      items: [
+        { icon: Logo, title: 'React JS' },
+        { icon: Logo, title: 'React JS' },
+        { icon: Logo, title: 'React JS' },
+      ],
+    },
+    'col 2': {
+      icon: Logo,
+      items: [
+        { icon: Logo, title: 'React JS' },
+        { icon: Logo, title: 'React JS' },
+        { icon: Logo, title: 'React JS' },
+      ],
+    },
+    'col 3': {
+      icon: Logo,
+      items: [
+        { icon: Logo, title: 'React JS' },
+        { icon: Logo, title: 'React JS' },
+        { icon: Logo, title: 'React JS' },
+      ],
+    },
+  };
   return (
     <div>
       Home Page Y y
@@ -6,6 +45,27 @@ export default function Home() {
         font-family: Bespoke Sans
       </h1>
       <h1 className='font-primary'>primary font family</h1>
+      <div className='p-3'>
+        <button id='menu-button' onClick={() => setIsOpen(!isOpen)}>
+          Menu
+        </button>
+        <Menu open={isOpen} onClose={() => setIsOpen(false)}>
+          {Object.entries(menuItems).map(([key, items]) => {
+            return (
+              <MenuList key={key}>
+                {items.items.map((item, index) => (
+                  <MenuItem key={`${key}-index`}>
+                    <MenuItemIcon>
+                      <Image src={item.icon} alt='' />
+                    </MenuItemIcon>
+                    <MenuItemText>{item.title}</MenuItemText>
+                  </MenuItem>
+                ))}
+              </MenuList>
+            );
+          })}
+        </Menu>
+      </div>
     </div>
   );
 }
