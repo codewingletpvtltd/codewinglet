@@ -35,16 +35,18 @@ const TitleDescriptionWrapper: React.FC<TitleDescriptionProps> = ({
       }
     >
       <Typography
+        variant={'h2'}
         className={getClassNames(
-          `flex flex-wrap items-baseline text-[50px] text-primary ${titleClass}`
+          `Title-root flex flex-wrap items-baseline text-primary ${titleClass}`
         )}
         {...rest}
       >
         {titleWords}
       </Typography>
       <Typography
+        variant={'body2'}
         className={getClassNames(
-          `text-[18px] text-lightBlack ${descriptionClass}`
+          `Description-root text-lightBlack ${descriptionClass}`
         )}
         {...rest}
       >
