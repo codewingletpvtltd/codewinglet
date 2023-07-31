@@ -3,7 +3,7 @@ import { getClassNames } from '@codewinglet/utils';
 import { TypographyProps } from './types';
 
 const Typography: React.FC<TypographyProps> = ({
-  variant,
+  variant = '',
   className = '',
   children,
   ...rest

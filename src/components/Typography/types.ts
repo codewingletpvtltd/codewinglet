@@ -25,7 +25,7 @@ type ElementByTypographyVariant = {
 
 export interface TypographyProps
   extends React.HTMLAttributes<ElementByTypographyVariant[TypographyVariant]> {
-  variant: TypographyVariant;
+  variant?: TypographyVariant;
   children: React.ReactNode;
   className?: string;
 }

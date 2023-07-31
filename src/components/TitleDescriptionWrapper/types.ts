@@ -1,6 +1,6 @@
 export interface TitleDescriptionProps {
   title: string;
-  boldWords?: number[];
+  highlight?: number[];
   titleClass?: string;
   description?: string;
   descriptionClass?: string;
