@@ -1,6 +1,7 @@
 import React, { InputHTMLAttributes, useEffect, useState } from "react";
-import { getClassNames } from "../../utils";
+
 import { TextFieldProps } from "./types";
+import { getClassNames } from "@codewinglet/utils";
 
 const TextField: React.FC<TextFieldProps> = ({
   label,
@@ -17,7 +18,7 @@ const TextField: React.FC<TextFieldProps> = ({
     rest.id || `textfield-${Math.random().toString(36).substring(7)}`;
 
   return (
-    <div className={"TextField-root flex flex-col h-40"}>
+    <div className="TextField-root flex flex-col h-40">
       {label && (
         <label
           htmlFor={inputId}

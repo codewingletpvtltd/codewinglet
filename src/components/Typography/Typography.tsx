@@ -1,6 +1,6 @@
 import React from "react";
 import { TypographyProps } from "./types";
-import { getClassNames } from "../../utils";
+import { getClassNames } from "@codewinglet/utils";
 
 const Typography: React.FC<TypographyProps> = ({
   variant,
