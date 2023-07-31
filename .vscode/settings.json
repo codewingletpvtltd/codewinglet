@@ -1,0 +1,19 @@
+{
+  "editor.formatOnSave": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.guides.bracketPairs": true,
+  "editor.guides.bracketPairsHorizontal": true,
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "workbench.editor.enablePreview": false,
+  "explorer.confirmDelete": false,
+  "editor.minimap.enabled": true,
+  "editor.codeActionsOnSave": {
+    "source.removeUnusedImports": true,
+    "source.fixAll.eslint": true,
+    "source.sortMembers": true
+  },
+  "eslint.format.enable": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
