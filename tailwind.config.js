@@ -13,6 +13,8 @@ module.exports = {
       primary: "#0278BE",
       secondary: "#02457C",
       black: "#143048",
+      aqua: "#CAD5DF",
+      gray: "#506B82",
     },
     fontWeight: {
       100: 100,
