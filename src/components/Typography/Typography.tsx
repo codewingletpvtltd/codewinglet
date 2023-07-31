@@ -1,4 +1,5 @@
 import React from 'react';
+import { getClassNames } from '@codewinglet/utils';
 import { TypographyProps } from './types';
 
 const Typography: React.FC<TypographyProps> = ({
@@ -10,7 +11,10 @@ const Typography: React.FC<TypographyProps> = ({
   switch (variant) {
     case 'h1':
       return (
-        <h1 className={'text-h1 font-secondary' + className} {...rest}>
+        <h1
+          className={getClassNames('text-h1 font-secondary', className)}
+          {...rest}
+        >
           {children}
         </h1>
       );

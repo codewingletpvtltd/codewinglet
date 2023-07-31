@@ -2,6 +2,11 @@
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
+    extend: {
+      borderRadius: {
+        10: '10px',
+      },
+    },
     screens: {
       xl: '1920px',
       lg: '1440px',
@@ -13,6 +18,8 @@ module.exports = {
       primary: '#0278BE',
       secondary: '#02457C',
       black: '#143048',
+      gray: '#CDCCD2',
+      error: '#F44336',
     },
     fontWeight: {
       100: 100,
@@ -93,7 +100,9 @@ module.exports = {
           fontWeight: 400,
         },
       ],
+      subtitle2: '14px',
     },
   },
+  variants: {},
   plugins: [],
 };

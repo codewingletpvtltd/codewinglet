@@ -20,7 +20,7 @@
       }
     ],
     "paths": {
-      "@/codewinglet/*": ["./*"]
+      "@codewinglet/*": ["./src/*"]
     }
   },
   "include": [
