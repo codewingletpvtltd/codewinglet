@@ -6,7 +6,9 @@
       {
         "root": ["./src"],
         "alias": {
-          "@codewinglet/utils": ["./src/utils/index.ts"]
+          "@codewinglet/utils": ["./src/utils/index.ts"],
+          "@codewinglet/assets": ["./src/assets/index.ts"],
+          "@codewinglet/components": ["./src/components/index.ts"]
         }
       }
     ]

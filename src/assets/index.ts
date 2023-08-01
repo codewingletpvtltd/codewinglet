@@ -1,0 +1,7 @@
+export { EmailLogo } from './EmailLogo';
+export { LocationMarkLogo } from './LocationMarkLogo';
+export { TelePhoneLogo } from './TelePhoneLogo';
+export { FacebookLogo } from './FacebookLogo';
+export { InstagramLogo } from './InstagramLogo';
+export { LinkedInLogo } from './LinkedInLogo';
+export { TwitterLogo } from './TwitterLogo';

@@ -23,6 +23,7 @@ module.exports = {
       gray: '#CDCCD2',
       lightGray: '#F3EFF3',
       error: '#F44336',
+      white: '#FFFFFF',
     },
     fontWeight: {
       100: 100,

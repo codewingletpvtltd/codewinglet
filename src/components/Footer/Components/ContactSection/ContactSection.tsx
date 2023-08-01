@@ -1,0 +1,66 @@
+import {
+  EmailLogo,
+  FacebookLogo,
+  InstagramLogo,
+  LinkedInLogo,
+  LocationMarkLogo,
+  TelePhoneLogo,
+  TwitterLogo,
+} from '@codewinglet/assets';
+import { Logo, Typography } from '@codewinglet/components';
+
+const ContactSection = () => (
+  <>
+    <div className='flex flex-col w-full gap-4'>
+      <div>
+        <Logo />
+      </div>
+      <Typography variant='subtitle1' className='leading-normal'>
+        Codewinglet your premier software development squad employing a
+        streamlined process ensuring timely project delivery.
+      </Typography>
+    </div>
+    <div className='flex gap-2'>
+      <div>
+        <LocationMarkLogo />
+      </div>
+      <Typography variant='subtitle1' className='leading-normal'>
+        A901-A905, Vivanta Icon Opp. Shell Petrol Pump, Adajan, Surat, Gujarat
+        395009.
+      </Typography>
+    </div>
+    <div className='flex gap-2'>
+      <div>
+        <TelePhoneLogo />
+      </div>
+      <Typography variant='subtitle1' className='leading-normal'>
+        +91 83201 11741
+      </Typography>
+    </div>
+    <div className='flex gap-2'>
+      <div>
+        <EmailLogo />
+      </div>
+      <Typography variant='subtitle1' className='leading-normal'>
+        <div>hr@codewinglet.com</div>
+        <div>contact@codewinglet.com</div>
+      </Typography>
+    </div>
+    <div className='flex gap-4'>
+      <div className='border-[1px] border-white py-[6px] px-[10px]  rounded-[50%] cursor-pointer'>
+        <FacebookLogo />
+      </div>
+      <div className='border-[1px] border-white py-[6px] px-[8px] rounded-[50%] cursor-pointer'>
+        <InstagramLogo />
+      </div>
+      <div className='border-[1px] border-white py-[5px] px-[8px] rounded-[50%] cursor-pointer'>
+        <LinkedInLogo />
+      </div>
+      <div className='border-[1px] border-white py-[6px] px-[8px] rounded-[50%] cursor-pointer'>
+        <TwitterLogo />
+      </div>
+    </div>
+  </>
+);
+
+export default ContactSection;
