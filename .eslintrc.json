@@ -1,6 +1,35 @@
 {
-  "extends": [
-    "next/core-web-vitals",
-    "plugin:storybook/recommended"
-  ]
+  "extends": ["next/core-web-vitals", "plugin:storybook/recommended"],
+  "rules": {
+    "no-console": "error",
+    "no-debugger": "warn",
+    "no-var": "error",
+    "semi": ["error", "always"],
+    "no-duplicate-imports": "error",
+    "no-extra-semi": "error",
+    "quotes": ["error", "single"],
+    "arrow-body-style": ["error", "as-needed"],
+    "array-bracket-spacing": ["error", "never"],
+    "comma-dangle": ["error", "always-multiline"],
+    "keyword-spacing": ["error", { "before": true, "after": true }],
+    "no-unused-vars": "warn",
+    "no-restricted-imports": "error",
+    "no-useless-escape": "off",
+    "no-async-promise-executor": "off",
+    "no-restricted-globals": "off",
+    "react/no-unescaped-entities": "off",
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index"
+        ]
+      }
+    ]
+  }
 }

@@ -7,8 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "lint:fix": "eslint --fix .",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@types/node": "20.1.5",
@@ -38,6 +40,7 @@
     "@storybook/nextjs": "^7.1.0",
     "@storybook/react": "^7.1.0",
     "@storybook/testing-library": "^0.2.0",
-    "eslint-plugin-storybook": "^0.6.13"
+    "eslint-plugin-storybook": "^0.6.13",
+    "husky": "^8.0.3"
   }
 }

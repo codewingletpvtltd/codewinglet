@@ -1,13 +1,12 @@
-import { StoryObj } from "@storybook/react";
-import HiringBoard from "./HiringBoard";
+import { StoryObj } from '@storybook/react';
+import HiringBoard from './HiringBoard';
 
 export default {
-    component: HiringBoard,
-    tags: ["We're Hiring"]
+  component: HiringBoard,
 };
 
 export const Default: StoryObj<typeof HiringBoard> = {
-    args: {
-        children: "Click here to apply"
-    }
+  args: {
+    children: 'Click here to apply',
+  },
 };

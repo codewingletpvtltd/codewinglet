@@ -1,7 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { HiringBoard } from '../components/HiringBoard';
 
-
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
   title: 'Example/HiringBoard',
@@ -14,7 +13,7 @@ const meta = {
   tags: ['autodocs'],
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
-    onClick: {}
+    onClick: {},
   },
 } satisfies Meta<typeof HiringBoard>;
 
@@ -27,4 +26,3 @@ export const Default: Story = {
     children: 'Click here to apply',
   },
 };
-

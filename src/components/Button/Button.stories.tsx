@@ -1,9 +1,8 @@
-import Button from "./Button";
-import { StoryObj } from "@storybook/react";
+import Button from './Button';
 
 const meta = {
   component: Button,
-  tags: ["button"],
+  tags: ['button'],
 };
 
 export default meta;

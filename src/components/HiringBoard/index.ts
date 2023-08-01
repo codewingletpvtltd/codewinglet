@@ -1,1 +1,1 @@
-export {default as HiringBoard} from './HiringBoard'
+export { default as HiringBoard } from './HiringBoard';
