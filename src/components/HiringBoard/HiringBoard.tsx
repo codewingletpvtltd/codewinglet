@@ -2,6 +2,7 @@ import { FC } from 'react';
 import Image from 'next/image';
 import HiringImg from 'assets/hiring.svg';
 import HiringBoardBg from 'assets/hiringBoard.svg';
+import { getClassNames } from '@codewinglet/utils';
 import { HiringBoardProps } from './types';
 
 const HiringBoard: FC<HiringBoardProps> = ({
@@ -12,7 +13,10 @@ const HiringBoard: FC<HiringBoardProps> = ({
   <div>
     <Image src={HiringImg} alt='Hiring Image' className='ml-[1.9rem]' />
     <figure
-      className={`absolute top-[4.8rem] left-[20px] animate-swing transform origin-[center_-12px] float-left ${className}`}
+      className={getClassNames(
+        'absolute top-[4.8rem] left-[20px] animate-swing transform origin-[center_-12px] float-left',
+        className
+      )}
     >
       <Image src={HiringBoardBg} alt='Hiring Board' height={150} width={150} />
       <button
