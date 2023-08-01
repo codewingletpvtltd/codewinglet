@@ -15,6 +15,7 @@ module.exports = {
       xs: '375px',
     },
     colors: {
+      white: '#FFFFFF',
       primary: '#0278BE',
       secondary: '#02457C',
       black: '#143048',
@@ -103,6 +104,17 @@ module.exports = {
         },
       ],
       subtitle2: '14px',
+    },
+    extend: {
+      keyframes: {
+        swing: {
+          '0%': { transform: 'rotate(3deg)' },
+          '100%': { transform: 'rotate(-3deg)' },
+        },
+      },
+      animation: {
+        swing: 'swing ease-in-out 1s infinite alternate',
+      },
     },
   },
   variants: {},
