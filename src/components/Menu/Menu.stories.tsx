@@ -1,11 +1,8 @@
 import { StoryObj } from '@storybook/react';
-import Menu from './Menu';
-import { MenuList } from '../MenuList';
-import { MenuItem } from '../MenuItem';
-import { MenuItemIcon } from '../MenuItemIcon';
 import Image from 'next/image';
 import Logo from '../../assets/reactJS.svg';
-import { MenuItemText } from '../MenuItemText';
+import { MenuItem, MenuItemIcon, MenuItemText, MenuList } from '..';
+import Menu from './Menu';
 
 export default {
   component: Menu,

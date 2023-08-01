@@ -1,5 +1,7 @@
 'use client';
-import { useState } from 'react';
+import React from 'react';
+import Image from 'next/image';
+import { Typography } from '@codewinglet/components';
 import {
   Menu,
   MenuItem,
@@ -8,10 +10,9 @@ import {
   MenuList,
 } from '../components/';
 import Logo from '../assets/reactJS.svg';
-import Image from 'next/image';
 
 export default function Home() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = React.useState(false);
   const menuItems = {
     'col 1': {
       icon: Logo,
@@ -50,22 +51,21 @@ export default function Home() {
           Menu
         </button>
         <Menu open={isOpen} onClose={() => setIsOpen(false)}>
-          {Object.entries(menuItems).map(([key, items]) => {
-            return (
-              <MenuList key={key}>
-                {items.items.map((item, index) => (
-                  <MenuItem key={`${key}-index`}>
-                    <MenuItemIcon>
-                      <Image src={item.icon} alt='' />
-                    </MenuItemIcon>
-                    <MenuItemText>{item.title}</MenuItemText>
-                  </MenuItem>
-                ))}
-              </MenuList>
-            );
-          })}
+          {Object.entries(menuItems).map(([key, items]) => (
+            <MenuList key={key}>
+              {items.items.map((item, index) => (
+                <MenuItem key={`${key}-${index}`}>
+                  <MenuItemIcon>
+                    <Image src={item.icon} alt='' />
+                  </MenuItemIcon>
+                  <MenuItemText>{item.title}</MenuItemText>
+                </MenuItem>
+              ))}
+            </MenuList>
+          ))}
         </Menu>
       </div>
+      <Typography>Something</Typography>
     </div>
   );
 }
