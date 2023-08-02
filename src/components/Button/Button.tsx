@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import Typography from '../Typography/Typography';
+import Typography from '../Typography';
 import { ButtonProps } from './types';
 
 const Button: React.FC<ButtonProps> = ({ text }) => (
