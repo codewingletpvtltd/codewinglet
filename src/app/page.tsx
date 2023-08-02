@@ -1,22 +1,22 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
-import { Typography } from '@codewinglet/components';
-import {
-  Menu,
-  MenuItem,
-  MenuItemIcon,
-  MenuItemText,
-  MenuList,
-} from '../components/';
-import Logo from '../assets/reactJS.svg';
+import Logo from 'assets/reactJS.svg';
+import { Typography, Menu } from '@codewinglet/components';
 
 export default function Home() {
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [anchorEle, setAnchorEle] = React.useState<null | HTMLElement>(null);
+  const open = Boolean(anchorEle);
+
   const menuItems = {
     'col 1': {
       icon: Logo,
       items: [
+        { icon: Logo, title: 'React JS' },
+        { icon: Logo, title: 'React JS' },
+        { icon: Logo, title: 'React JS' },
+        { icon: Logo, title: 'React JS' },
+        { icon: Logo, title: 'React JS' },
         { icon: Logo, title: 'React JS' },
         { icon: Logo, title: 'React JS' },
         { icon: Logo, title: 'React JS' },
@@ -38,7 +38,48 @@ export default function Home() {
         { icon: Logo, title: 'React JS' },
       ],
     },
+    'col 4': {
+      icon: Logo,
+      items: [
+        { icon: Logo, title: 'React JS' },
+        { icon: Logo, title: 'React JS' },
+        { icon: Logo, title: 'React JS' },
+      ],
+    },
+    'col 5': {
+      icon: Logo,
+      items: [
+        { icon: Logo, title: 'React JS' },
+        { icon: Logo, title: 'React JS' },
+        { icon: Logo, title: 'React JS' },
+      ],
+    },
+    'col 6': {
+      icon: Logo,
+      items: [
+        { icon: Logo, title: 'React JS' },
+        { icon: Logo, title: 'React JS' },
+        { icon: Logo, title: 'React JS' },
+      ],
+    },
+    'col 7': {
+      icon: Logo,
+      items: [
+        { icon: Logo, title: 'React JS' },
+        { icon: Logo, title: 'React JS' },
+        { icon: Logo, title: 'React JS' },
+      ],
+    },
+    'col 8': {
+      icon: Logo,
+      items: [
+        { icon: Logo, title: 'React JS' },
+        { icon: Logo, title: 'React JS' },
+        { icon: Logo, title: 'React JS' },
+      ],
+    },
   };
+
   return (
     <div>
       Home Page Y y
@@ -46,22 +87,65 @@ export default function Home() {
         font-family: Bespoke Sans
       </h1>
       <h1 className='font-primary'>primary font family</h1>
-      <div className='p-3'>
-        <button id='menu-button' onClick={() => setIsOpen(!isOpen)}>
-          Menu
+      <div className='p-3 w-[100%] mt-[150px] flex justify-end items-center gap-3'>
+        <button
+          className='mx-50 bg-secondary text-white px-5 peer'
+          onClick={(e) => {
+            setAnchorEle(null);
+            setAnchorEle(e.currentTarget);
+          }}
+          // onMouseOver={(e) => setAnchorEle(e.currentTarget)}
+        >
+          Menu 1
         </button>
-        <Menu open={isOpen} onClose={() => setIsOpen(false)}>
+        <button
+          className='mx-50 bg-secondary text-white px-5'
+          onClick={(e) => {
+            setAnchorEle(null);
+            setAnchorEle(e.currentTarget);
+          }}
+        >
+          Menu 2
+        </button>
+        <button
+          className='mx-50 bg-secondary text-white px-5'
+          onClick={(e) => {
+            setAnchorEle(null);
+            setAnchorEle(e.currentTarget);
+          }}
+        >
+          Menu 3
+        </button>
+        <button
+          className='mx-50 bg-secondary text-white px-5'
+          onClick={(e) => {
+            setAnchorEle(null);
+            setAnchorEle(e.currentTarget);
+          }}
+        >
+          Menu 4
+        </button>
+        <Menu
+          open={open}
+          onClose={() => setAnchorEle(null)}
+          anchorEle={anchorEle}
+        >
           {Object.entries(menuItems).map(([key, items]) => (
-            <MenuList key={key}>
+            <Menu.List key={key}>
               {items.items.map((item, index) => (
-                <MenuItem key={`${key}-${index}`}>
-                  <MenuItemIcon>
+                <Menu.Item key={`${key}-${index}`}>
+                  <Menu.ItemIcon>
                     <Image src={item.icon} alt='' />
-                  </MenuItemIcon>
-                  <MenuItemText>{item.title}</MenuItemText>
-                </MenuItem>
+                  </Menu.ItemIcon>
+                  <Menu.ItemText
+                    className='ml-2'
+                    onClick={() => setAnchorEle(null)}
+                  >
+                    {item.title}
+                  </Menu.ItemText>
+                </Menu.Item>
               ))}
-            </MenuList>
+            </Menu.List>
           ))}
         </Menu>
       </div>
