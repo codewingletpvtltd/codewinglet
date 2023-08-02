@@ -8,14 +8,14 @@ const AccordionDetails: React.FC<AccordionDetailsProps> = ({
   className = '',
   id,
 }) => {
-  const { activePanelId } = useContext(AccordionContext);
+  const { activePanelId, expandIconsHidden } = useContext(AccordionContext);
   const active = id === activePanelId;
 
   return (
     <div
       className={getClassNames(
         `Accordion-details overflow-hidden transition duration-700 ease-in-out ${
-          active ? 'opacity-100 h-auto' : 'opacity-0 h-0'
+          active || expandIconsHidden ? 'opacity-100 h-auto' : 'opacity-0 h-0'
         } ${className}`
       )}
     >

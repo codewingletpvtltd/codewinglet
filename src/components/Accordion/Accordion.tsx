@@ -3,7 +3,11 @@ import { AccordionProps } from './types';
 import AccordionContext from './AccordionContext';
 
 // Main Accordion component
-const Accordion: React.FC<AccordionProps> = ({ children, className }) => {
+const Accordion: React.FC<AccordionProps> = ({
+  children,
+  className,
+  expandIconsHidden = false,
+}) => {
   const [activePanelId, setActivePanelId] = useState<string | null>(null);
 
   const clickHandler = (id: string | null) => {
@@ -11,7 +15,9 @@ const Accordion: React.FC<AccordionProps> = ({ children, className }) => {
   };
 
   return (
-    <AccordionContext.Provider value={{ activePanelId, clickHandler }}>
+    <AccordionContext.Provider
+      value={{ activePanelId, clickHandler, expandIconsHidden }}
+    >
       <div className={className}>{children}</div>
     </AccordionContext.Provider>
   );

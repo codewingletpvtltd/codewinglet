@@ -13,7 +13,8 @@ const AccordionSummary: React.FC<AccordionSummaryProps> = ({
   closedIcon = <PlusIcon />,
   iconPosition = 'end',
 }) => {
-  const { activePanelId, clickHandler } = useContext(AccordionContext);
+  const { activePanelId, clickHandler, expandIconsHidden } =
+    useContext(AccordionContext);
   const active = id === activePanelId;
 
   const iconElement = (
@@ -35,13 +36,17 @@ const AccordionSummary: React.FC<AccordionSummaryProps> = ({
          ${className}`
       )}
     >
-      <div className='flex items-center justify-between'>
-        <div className='flex items-center gap-4'>
-          {iconPosition === 'start' && iconElement}
-          {children}
+      {expandIconsHidden ? (
+        <div className='flex justify-start items-start'>{children}</div>
+      ) : (
+        <div className='flex items-center justify-between'>
+          <div className='flex items-center gap-4'>
+            {iconPosition === 'start' && iconElement}
+            {children}
+          </div>
+          {iconPosition === 'end' && iconElement}
         </div>
-        {iconPosition === 'end' && iconElement}
-      </div>
+      )}
     </div>
   );
 };

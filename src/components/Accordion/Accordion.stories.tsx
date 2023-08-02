@@ -10,8 +10,10 @@ export default {
 } as Meta;
 //iconPositions can be start|end
 //You need to pass same id for AccordionSummary and AccordionDetails Component
+//expandIconsHidden will take a boolean value to hide/show icons on the summary
+//and if expandIconsHidden is true then all the details will be by default open
 const Template: Story<AccordionProps> = (args) => (
-  <Accordion {...args}>
+  <Accordion expandIconsHidden={true} {...args}>
     <AccordionSummary id='panel1' iconPosition='end'>
       Panel 1
     </AccordionSummary>
