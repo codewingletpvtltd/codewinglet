@@ -1,6 +1,7 @@
 import React from 'react';
 import { getClassNames } from '@codewinglet/utils';
 import Typography from '../Typography';
+import Button from '../Button';
 import { ServiceCardProps } from './types';
 
 const ServiceCard: React.FC<ServiceCardProps> = ({
@@ -11,12 +12,22 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   cardIconClass,
   cardTitleClass,
   cardContentClass,
+  buttonText = 'Button',
   onClick,
   ...rest
 }) => (
   <div
     className={getClassNames(
-      `ServiceCard-root flex flex-col gap-3 p-[24px] rounded-[10px] bg-white shadow-md
+      `ServiceCard-root 
+      flex flex-col gap-4
+      p-[24px] 
+      rounded-[10px]
+       bg-white 
+       shadow-md 
+       xs:w-[337px] 
+       md:w-[463px] 
+       lg:w-[350px] 
+       xl:w-[402px]
       ${cardClass}`
     )}
     onClick={onClick}
@@ -25,17 +36,31 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
     <div className='ServiceCard-header flex gap-3'>
       <div
         className={getClassNames(
-          `ServiceCard-img-cont rounded-[50%] w-[58px] h-[58px] cursor-pointer
+          `ServiceCard-img-cont 
+          rounded-[50%] 
+          cursor-pointer 
+          border
+          xl:w-[58px] xl:h-[58px] 
+          lg:w-[50px] lg:h-[50px] 
+          md:w-[58px] md:h-[58px] 
+          xs:w-[48px] xs:h-[48px] 
           ${cardIconClass}`
         )}
       >
         {cardIcon}
       </div>
-      <div className={'ServiceCard-title-cont'}>
+      <div
+        className={'ServiceCard-title-cont flex justify-center items-center'}
+      >
         <Typography
-          variant='body1'
+          variant='body2'
           className={getClassNames(
-            `flex font-800 justify-start items-center flex-wrap
+            `flex font-800 
+            justify-center items-center 
+            flex-wrap 
+            md:text-[20px] 
+            lg:text-[18px] 
+            xl:text-[20px]
             ${cardTitleClass}`
           )}
         >
@@ -47,14 +72,21 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
       <Typography
         variant='body2'
         className={getClassNames(
-          `text-left text-lightBlack line-clamp-5 ${cardContentClass}`
+          `text-left text-lightBlack 
+          line-clamp-5 
+          xs:text-subtitle2 
+          sm:text-subtitle1 
+          md:text-body2  
+          ${cardContentClass}`
         )}
       >
         {cardContent}
       </Typography>
     </div>
 
-    <div className={getClassNames('ServiceCard-button')}>{'button'}</div>
+    <div className={getClassNames('ServiceCard-button')}>
+      <Button text={buttonText} />
+    </div>
   </div>
 );
 

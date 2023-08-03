@@ -6,5 +6,6 @@ export interface ServiceCardProps {
   cardIconClass?: string;
   cardTitleClass?: string;
   cardContentClass?: string;
+  buttonText?: string;
   onClick?: () => void;
 }
