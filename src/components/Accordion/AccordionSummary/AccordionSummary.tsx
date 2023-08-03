@@ -9,8 +9,8 @@ const AccordionSummary: React.FC<AccordionSummaryProps> = ({
   children,
   id,
   className,
-  expandedIcon = <MinusIcon />,
-  closedIcon = <PlusIcon />,
+  expandedIcon = <MinusIcon aria-label='accordion-expandedIcon' />,
+  closedIcon = <PlusIcon aria-label='accordion-closedIcon' />,
   iconPosition = 'end',
 }) => {
   const { activePanelId, clickHandler, expandIconsHidden } =

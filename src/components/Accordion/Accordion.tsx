@@ -3,6 +3,7 @@ import { AccordionProps } from './types';
 import AccordionContext from './AccordionContext';
 
 // Main Accordion component
+
 const Accordion: React.FC<AccordionProps> = ({
   children,
   className,
@@ -18,7 +19,9 @@ const Accordion: React.FC<AccordionProps> = ({
     <AccordionContext.Provider
       value={{ activePanelId, clickHandler, expandIconsHidden }}
     >
-      <div className={className}>{children}</div>
+      <div className={className} aria-label='accordion-root'>
+        {children}
+      </div>
     </AccordionContext.Provider>
   );
 };
