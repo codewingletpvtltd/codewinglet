@@ -24,6 +24,7 @@ module.exports = {
       lightGray: '#F3EFF3',
       error: '#F44336',
       white: '#FFFFFF',
+      lightBlue: '#0278BE',
     },
     fontWeight: {
       100: 100,
