@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState } from 'react';
 import { AccordionProps } from './types';
 import AccordionContext from './AccordionContext';
