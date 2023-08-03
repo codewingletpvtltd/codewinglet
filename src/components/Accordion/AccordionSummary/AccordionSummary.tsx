@@ -1,7 +1,6 @@
 import { useContext } from 'react';
 import { getClassNames } from '@codewinglet/utils';
-import { MinusIcon } from '../../../assets/MinusIcon';
-import { PlusIcon } from '../../../assets/PlusIcon';
+import { MinusIcon, PlusIcon } from '@codewinglet/assets';
 import AccordionContext from '../AccordionContext';
 import { AccordionSummaryProps } from './types';
 

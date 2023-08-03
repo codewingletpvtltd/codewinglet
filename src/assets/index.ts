@@ -5,3 +5,5 @@ export { FacebookLogo } from './FacebookLogo';
 export { InstagramLogo } from './InstagramLogo';
 export { LinkedInLogo } from './LinkedInLogo';
 export { TwitterLogo } from './TwitterLogo';
+export { MinusIcon } from './MinusIcon';
+export { PlusIcon } from './PlusIcon';
