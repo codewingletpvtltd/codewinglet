@@ -6,6 +6,15 @@ module.exports = {
       borderRadius: {
         10: '10px',
       },
+      keyframes: {
+        swing: {
+          '0%': { transform: 'rotate(3deg)' },
+          '100%': { transform: 'rotate(-3deg)' },
+        },
+      },
+      animation: {
+        swing: 'swing ease-in-out 1s infinite alternate',
+      },
     },
     screens: {
       xl: '1920px',
@@ -106,17 +115,6 @@ module.exports = {
         },
       ],
       subtitle2: '14px',
-    },
-    extend: {
-      keyframes: {
-        swing: {
-          '0%': { transform: 'rotate(3deg)' },
-          '100%': { transform: 'rotate(-3deg)' },
-        },
-      },
-      animation: {
-        swing: 'swing ease-in-out 1s infinite alternate',
-      },
     },
   },
   variants: {},
