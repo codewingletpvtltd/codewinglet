@@ -20,49 +20,64 @@ const Typography: React.FC<TypographyProps> = ({
       );
     case 'h2':
       return (
-        <h2 className={'text-h2 font-secondary' + className} {...rest}>
+        <h2
+          className={getClassNames('text-h2 font-secondary', className)}
+          {...rest}
+        >
           {children}
         </h2>
       );
     case 'h3':
       return (
-        <h3 className={'text-h3 font-secondary' + className} {...rest}>
+        <h3
+          className={getClassNames('text-h3 font-secondary', className)}
+          {...rest}
+        >
           {children}
         </h3>
       );
     case 'h4':
       return (
-        <h4 className={'text-h4 font-secondary' + className} {...rest}>
+        <h4
+          className={getClassNames('text-h4 font-secondary', className)}
+          {...rest}
+        >
           {children}
         </h4>
       );
     case 'h5':
       return (
-        <h5 className={'text-h5 font-secondary' + className} {...rest}>
+        <h5
+          className={getClassNames('text-h5 font-secondary', className)}
+          {...rest}
+        >
           {children}
         </h5>
       );
     case 'h6':
       return (
-        <h6 className={'text-h6 font-secondary' + className} {...rest}>
+        <h6
+          className={getClassNames('text-h6 font-secondary', className)}
+          {...rest}
+        >
           {children}
         </h6>
       );
     case 'body1':
       return (
-        <p className={'text-body1' + className} {...rest}>
+        <p className={getClassNames('text-body1', className)} {...rest}>
           {children}
         </p>
       );
     case 'body2':
       return (
-        <p className={'text-body2' + className} {...rest}>
+        <p className={getClassNames('text-body2', className)} {...rest}>
           {children}
         </p>
       );
     case 'subtitle1':
       return (
-        <p className={'text-subtitle1' + className} {...rest}>
+        <p className={getClassNames('text-subtitle1', className)} {...rest}>
           {children}
         </p>
       );
