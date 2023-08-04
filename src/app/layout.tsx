@@ -1,3 +1,4 @@
+import React from 'react';
 import { Metadata } from 'next';
 import './globals.css';
 import Link from 'next/link';
@@ -14,10 +15,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className="font-primary">
-        <Link href="/technology/reactjs-development-company">React js</Link>
-        <div className="container">{children}</div>
+    <html lang='en'>
+      <body className='font-primary'>
+        <Link href='/technology/reactjs-development-company'>React js</Link>
+        <div className='container'>{children}</div>
       </body>
     </html>
   );

@@ -1,4 +1,4 @@
-import { Typography } from '@codewinglet/components';
+'use client';
 
 export default function Home() {
   return (
@@ -8,7 +8,6 @@ export default function Home() {
         font-family: Bespoke Sans
       </h1>
       <h1 className='font-primary'>primary font family</h1>
-      <Typography>Something</Typography>
     </div>
   );
 }
