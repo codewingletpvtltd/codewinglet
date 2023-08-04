@@ -4,3 +4,5 @@ export { default as Button } from './Button';
 export { Accordion } from './Accordion';
 export { AccordionSummary } from './Accordion';
 export { AccordionDetails } from './Accordion';
+export { default as TitleDescriptionWrapper } from './TitleDescriptionWrapper';
+export { default as ServiceCard } from './ServiceCard';

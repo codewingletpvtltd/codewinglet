@@ -81,7 +81,12 @@ const Typography: React.FC<TypographyProps> = ({
           {children}
         </p>
       );
-
+    case 'subtitle2':
+      return (
+        <p className={getClassNames('text-subtitle2', className)} {...rest}>
+          {children}
+        </p>
+      );
     default:
       return (
         <p className={className} {...rest}>

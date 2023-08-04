@@ -113,7 +113,13 @@ module.exports = {
           fontWeight: 400,
         },
       ],
-      subtitle2: '14px',
+      subtitle2: [
+        '14px',
+        {
+          lineHeight: '22px',
+          fontWeight: 400,
+        },
+      ],
     },
   },
   variants: {},
