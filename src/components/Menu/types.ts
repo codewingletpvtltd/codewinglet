@@ -5,7 +5,7 @@ export interface MenuProps {
   className?: string;
   open?: boolean;
   onClose?: () => void;
-  anchorEle?: HTMLElement | null | undefined;
+  anchorEle?: HTMLElement | null;
 }
 
 export type MenuContextProps = {

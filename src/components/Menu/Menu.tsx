@@ -38,9 +38,9 @@ const Menu: React.FC<MenuProps> & {
           style={{ ..._anchorPosition }}
         />
         <div
-          id={'menu-container'}
+          id='menu-container'
           className={getClassNames(
-            'absolute bg-white rounded-[10px] py-[47px] px-[39px] gap-x-[30px] grid grid-flow-col z-10 drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] shadow-none  min-w-[272px]',
+            'absolute bg-white rounded-[10px] py-[47px] px-[39px] gap-x-[30px] grid grid-flow-col z-10 drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)] shadow-none  min-w-[272px]',
             'transform-none transition-opacity'
           )}
           style={{ ...menuContainerPosition }}
