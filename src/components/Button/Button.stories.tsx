@@ -1,10 +1,13 @@
+import { StoryObj } from '@storybook/react';
 import Button from './Button';
 
-const meta = {
+export default {
   component: Button,
-  tags: ['button'],
+  tags: ['Button'],
 };
 
-export default meta;
-
-export const CustomButtonTemplate = () => <Button />;
+export const BasicButton: StoryObj<typeof Button> = {
+  args: {
+    text: 'Contact Us',
+  },
+};
