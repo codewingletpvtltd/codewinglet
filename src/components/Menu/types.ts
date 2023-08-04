@@ -13,9 +13,22 @@ export type MenuContextProps = {
   onClose?: () => void;
 };
 
-export interface MenuComposition {
-  List?: React.ElementType;
-  Item?: React.ElementType;
-  ItemIcon?: React.ElementType;
-  ItemText?: React.ElementType;
+export interface MenuListProps {
+  children: React.ReactNode;
+  className?: string;
+}
+
+export interface MenuItemProps {
+  children: React.ReactNode;
+  className?: string;
+}
+
+export interface MenuItemIconProps {
+  children: React.ReactNode;
+}
+
+export interface MenuItemTextProps {
+  children: React.ReactNode;
+  className?: string;
+  onClick?: () => void;
 }

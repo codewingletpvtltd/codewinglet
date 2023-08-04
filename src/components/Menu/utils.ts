@@ -19,18 +19,22 @@ export const getAnchorPosition = (
         : 0;
 
       if (menu) {
-        const temp = anchorObj.left + menu.offsetWidth;
-        menuLeft =
-          temp > screenWidth
-            ? screenWidth - menu.offsetWidth + 10
-            : anchorObj.left;
+        const leftTemp = anchorObj.left - menu.offsetWidth / 2;
+
+        if (leftTemp < 0) {
+          menuLeft = 10;
+        } else if (leftTemp + menu.offsetWidth > screenWidth) {
+          menuLeft = screenWidth - menu.offsetWidth - 10;
+        } else if (leftTemp >= 0) {
+          menuLeft = leftTemp;
+        }
       }
     }
   }
 
   return {
-    top: anchorObj?.top || 25,
+    top: anchorObj?.bottom || -25,
     _anchorPosition: { left: _anchorLeft ? `${_anchorLeft}px` : '11%' },
-    menuPosition: { left: `${menuLeft - 20}px` },
+    menuContainerPosition: { left: `${menuLeft}px` },
   };
 };

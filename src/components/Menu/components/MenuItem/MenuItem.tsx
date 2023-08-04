@@ -1,10 +1,9 @@
 import React from 'react';
 import { useMenuContext } from '../../context/MenuContext';
-import { MenuItemProps } from './types';
+import { MenuItemProps } from '../../types';
 
 const MenuItem: React.FC<MenuItemProps> = ({
   children,
-  key,
   className,
   ...rest
 }) => {
@@ -13,7 +12,6 @@ const MenuItem: React.FC<MenuItemProps> = ({
   if (!menuContext) return null;
   return (
     <li
-      key={key}
       className={`flex flex-row items-center hover:cursor-pointer ${className}`}
       {...rest}
     >
