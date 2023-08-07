@@ -8,12 +8,12 @@ module.exports = {
       },
       keyframes: {
         swing: {
-          '0%': { transform: 'rotate(3deg)' },
-          '100%': { transform: 'rotate(-3deg)' },
+          '0%': { transform: 'rotate(2deg)' },
+          '100%': { transform: 'rotate(-2deg)' },
         },
       },
       animation: {
-        swing: 'swing ease-in-out 1s infinite alternate',
+        swing: 'swing ease-in-out 0.8s infinite alternate',
       },
       minHeight: {
         h1: '68px',
