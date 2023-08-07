@@ -5,3 +5,4 @@ export { default as Button } from './Button';
 export { Accordion, AccordionSummary, AccordionDetails } from './Accordion';
 export { default as TitleDescriptionWrapper } from './TitleDescriptionWrapper';
 export { default as ServiceCard } from './ServiceCard';
+export { default as Slider } from './Slider';
