@@ -6,7 +6,7 @@ import {
 } from '../Typography/types';
 import { TypeAnimationProps, TypingHTMLElement } from './types';
 import useForwardRef from './hooks/useForwardRef';
-import { typingMain } from './typical';
+import { typingMain } from './utils/typical';
 import './TypeAnimation.css';
 
 const DEFAULT_SPEED = 70;

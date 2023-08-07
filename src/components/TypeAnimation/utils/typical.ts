@@ -1,4 +1,4 @@
-import { TypingHTMLElement } from './types';
+import { TypingHTMLElement } from '../types';
 
 const OP_CODE_DELETION = 'DELETE';
 const OP_CODE_WRITING = 'WRITING';
