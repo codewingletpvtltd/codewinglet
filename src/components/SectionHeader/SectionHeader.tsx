@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { getClassNames } from '@codewinglet/utils';
 import Typography from '../Typography';
 import { TitleDescriptionProps } from './types';
 
@@ -14,7 +15,10 @@ const SectionHeader: React.FC<TitleDescriptionProps> = ({
           <Fragment key={`highlighted-word-${index}`}>
             <span
               key={index}
-              className={`${isBold ? 'font-[800]' : 'font-[300]'} text-primary`}
+              className={getClassNames(
+                isBold ? 'font-[800]' : 'font-[300]',
+                'text-primary'
+              )}
             >
               {word}
             </span>
@@ -25,23 +29,14 @@ const SectionHeader: React.FC<TitleDescriptionProps> = ({
     : title;
 
   return (
-    <div
-      className={
-        'flex justify-center flex-col gap-[9px] md:gap-[5px] xl:gap-[15px]'
-      }
-    >
+    <div className='flex justify-center flex-col gap-[9px] md:gap-[5px] xl:gap-[15px]'>
       <Typography
-        variant={'h4'}
-        className={
-          'flex flex-wrap items-baseline text-primary text-[22px] md:text-[32px] lg:text-[40px] xl:text-[50px] font-300'
-        }
+        variant='h4'
+        className='flex flex-wrap items-baseline text-primary text-[22px] md:text-[32px] lg:text-[40px] xl:text-[50px] font-300'
       >
         {titleWords}
       </Typography>
-      <Typography
-        variant={'subtitle2'}
-        className={'text-lightBlack md:text-body2'}
-      >
+      <Typography variant='subtitle2' className='text-lightBlack md:text-body2'>
         {description}
       </Typography>
     </div>
