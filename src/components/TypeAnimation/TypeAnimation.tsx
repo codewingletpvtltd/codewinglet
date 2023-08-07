@@ -20,7 +20,7 @@ const TypeAnimation = forwardRef<
   (
     {
       sequence,
-      variant,
+      variant = 'h3',
       repeat = 0,
       speed = DEFAULT_SPEED,
       wordDelay = DEFAULT_WORD_DELAY,
