@@ -6,6 +6,15 @@ module.exports = {
       borderRadius: {
         10: '10px',
       },
+      keyframes: {
+        swing: {
+          '0%': { transform: 'rotate(2deg)' },
+          '100%': { transform: 'rotate(-2deg)' },
+        },
+      },
+      animation: {
+        swing: 'swing ease-in-out 0.8s infinite alternate',
+      },
     },
     screens: {
       xl: '1920px',
@@ -19,10 +28,14 @@ module.exports = {
       primary: '#0278BE',
       secondary: '#02457C',
       black: '#143048',
+      white: '#FFFFFF',
       lightBlack: '#506B82',
       gray: '#CDCCD2',
       lightGray: '#F3EFF3',
       error: '#F44336',
+      aqua: '#CAD5DF',
+      darkGray: '#506B82',
+      lightBlue: '#0278BE',
     },
     fontWeight: {
       100: 100,
@@ -103,18 +116,13 @@ module.exports = {
           fontWeight: 400,
         },
       ],
-      subtitle2: '14px',
-    },
-    extend: {
-      keyframes: {
-        swing: {
-          '0%': { transform: 'rotate(2deg)' },
-          '100%': { transform: 'rotate(-2deg)' },
+      subtitle2: [
+        '14px',
+        {
+          lineHeight: '22px',
+          fontWeight: 400,
         },
-      },
-      animation: {
-        swing: 'swing ease-in-out 0.8s infinite alternate',
-      },
+      ],
     },
   },
   variants: {},
