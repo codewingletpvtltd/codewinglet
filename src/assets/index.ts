@@ -7,3 +7,6 @@ export { LinkedInLogo } from './LinkedInLogo';
 export { TwitterLogo } from './TwitterLogo';
 export { MinusIcon } from './MinusIcon';
 export { PlusIcon } from './PlusIcon';
+export { default as Arrow } from './icons/Arrow';
+export { default as LeftArrow } from './icons/LeftArrow';
+export { default as RightArrow } from './icons/RightArrow';

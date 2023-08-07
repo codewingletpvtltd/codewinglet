@@ -1,5 +1,5 @@
 import React from 'react';
-import { getClassNames } from '@codewinglet/utils';
+import { getClassNames } from '../../utils';
 import { TypographyProps } from './types';
 
 const Typography: React.FC<TypographyProps> = ({
@@ -81,7 +81,12 @@ const Typography: React.FC<TypographyProps> = ({
           {children}
         </p>
       );
-
+    case 'subtitle2':
+      return (
+        <p className={getClassNames('text-subtitle2', className)} {...rest}>
+          {children}
+        </p>
+      );
     default:
       return (
         <p className={className} {...rest}>

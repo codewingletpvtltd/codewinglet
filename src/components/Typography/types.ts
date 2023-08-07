@@ -9,7 +9,8 @@ type TypographyVariant =
   | 'h6'
   | 'body1'
   | 'body2'
-  | 'subtitle1';
+  | 'subtitle1'
+  | 'subtitle2';
 
 type ElementByTypographyVariant = {
   h1: HTMLHeadingElement;
@@ -21,6 +22,7 @@ type ElementByTypographyVariant = {
   body1: HTMLParagraphElement;
   body2: HTMLParagraphElement;
   subtitle1: HTMLSpanElement;
+  subtitle2: HTMLSpanElement;
 };
 
 export interface TypographyProps
