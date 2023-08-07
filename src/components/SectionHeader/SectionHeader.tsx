@@ -1,15 +1,11 @@
 import React, { Fragment } from 'react';
-import { getClassNames } from '@codewinglet/utils';
 import Typography from '../Typography';
 import { TitleDescriptionProps } from './types';
 
-const TitleDescriptionWrapper: React.FC<TitleDescriptionProps> = ({
+const SectionHeader: React.FC<TitleDescriptionProps> = ({
   highlight = [],
   title,
-  titleClass,
   description,
-  descriptionClass,
-  ...rest
 }) => {
   const titleWords = highlight
     ? title.split(' ').map((word, index) => {
@@ -31,24 +27,20 @@ const TitleDescriptionWrapper: React.FC<TitleDescriptionProps> = ({
   return (
     <div
       className={
-        'TitleDescriptionWrapper-root flex justify-center flex-col gap-2'
+        'flex justify-center flex-col gap-[9px] md:gap-[5px] xl:gap-[15px]'
       }
     >
       <Typography
-        variant={'h2'}
-        className={getClassNames(
-          `Title-root flex flex-wrap items-baseline text-primary ${titleClass}`
-        )}
-        {...rest}
+        variant={'h4'}
+        className={
+          'flex flex-wrap items-baseline text-primary text-[22px] md:text-[32px] lg:text-[40px] xl:text-[50px] font-300'
+        }
       >
         {titleWords}
       </Typography>
       <Typography
-        variant={'body2'}
-        className={getClassNames(
-          `Description-root text-lightBlack ${descriptionClass}`
-        )}
-        {...rest}
+        variant={'subtitle2'}
+        className={'text-lightBlack md:text-body2'}
       >
         {description}
       </Typography>
@@ -56,4 +48,4 @@ const TitleDescriptionWrapper: React.FC<TitleDescriptionProps> = ({
   );
 };
 
-export default TitleDescriptionWrapper;
+export default React.memo(SectionHeader);

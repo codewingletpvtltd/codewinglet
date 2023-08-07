@@ -3,6 +3,6 @@ export { default as Typography } from './Typography/Typography';
 export { default as Menu } from './Menu';
 export { default as Button } from './Button';
 export { Accordion, AccordionSummary, AccordionDetails } from './Accordion';
-export { default as TitleDescriptionWrapper } from './TitleDescriptionWrapper';
+export { default as SectionHeader } from './SectionHeader';
 export { default as ServiceCard } from './ServiceCard';
 export { default as Slider } from './Slider';
