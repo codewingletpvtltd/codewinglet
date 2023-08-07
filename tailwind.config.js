@@ -28,7 +28,6 @@ module.exports = {
       primary: '#0278BE',
       secondary: '#02457C',
       black: '#143048',
-      white: '#FFFFFF',
       lightBlack: '#506B82',
       gray: '#CDCCD2',
       lightGray: '#F3EFF3',
@@ -36,6 +35,7 @@ module.exports = {
       aqua: '#CAD5DF',
       darkGray: '#506B82',
       lightBlue: '#0278BE',
+      lightOrange: '#FEF2EF',
     },
     fontWeight: {
       100: 100,
