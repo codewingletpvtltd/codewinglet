@@ -9,7 +9,7 @@ export default {
 export const Default: StoryObj<typeof ServiceCard> = {
   args: {
     title: 'Title',
-    content: 'Content',
+    children: 'Content',
     icon: <div className='h-[58px] w-[58px] rounded-[50%] bg-lightOrange' />,
   },
 };

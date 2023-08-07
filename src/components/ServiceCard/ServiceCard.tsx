@@ -1,5 +1,4 @@
 import React from 'react';
-import { getClassNames } from '@codewinglet/utils';
 import Typography from '../Typography';
 import Button from '../Button';
 import { ServiceCardProps } from './types';
@@ -7,19 +6,13 @@ import { ServiceCardProps } from './types';
 const ServiceCard: React.FC<ServiceCardProps> = ({
   icon,
   title,
-  content,
+  children,
   buttonText = 'Button',
   onClick,
   ...rest
 }) => (
   <div
-    className={getClassNames(
-      `flex flex-col gap-4
-      p-[24px] 
-      rounded-[10px]
-      bg-white 
-      shadow-md`
-    )}
+    className={'flex flex-col gap-4 p-[24px] rounded-10 bg-white shadow-l'}
     onClick={onClick}
     {...rest}
   >
@@ -27,11 +20,9 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
       {icon}
       <Typography
         variant='body2'
-        className={getClassNames(
-          `flex font-[800] 
-            justify-center items-center 
-            flex-wrap text-[18px] md:text-[20px]`
-        )}
+        className={
+          'flex font-[800] justify-center items-center flex-wrap text-[18px] md:text-[20px]'
+        }
       >
         {title}
       </Typography>
@@ -39,17 +30,13 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 
     <Typography
       variant='body2'
-      className={getClassNames(
-        `text-left text-lightBlack 
-          line-clamp-5 
-          md:text-subtitle2`
-      )}
+      className={'text-left text-lightBlack line-clamp-5 md:text-subtitle2'}
     >
-      {content}
+      {children}
     </Typography>
 
     <div>
-      <Button>{buttonText}</Button>
+      <Button onClick={onClick}>{buttonText}</Button>
     </div>
   </div>
 );

@@ -3,7 +3,7 @@ import React from 'react';
 export interface ServiceCardProps {
   icon: React.ReactNode;
   title: string;
-  content: string;
+  children: React.ReactNode;
   buttonText?: string;
   onClick?: () => void;
 }

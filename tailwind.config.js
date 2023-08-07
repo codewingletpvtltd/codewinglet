@@ -15,6 +15,9 @@ module.exports = {
       animation: {
         swing: 'swing ease-in-out 1s infinite alternate',
       },
+      boxShadow: {
+        l: '1px 1px 20px 0 rgba(0,0,0,0.07)',
+      },
     },
     screens: {
       xl: '1920px',
