@@ -1,6 +1,6 @@
 import React from 'react';
 
-type TypographyVariant =
+export type TypographyVariant =
   | 'h1'
   | 'h2'
   | 'h3'
@@ -12,7 +12,7 @@ type TypographyVariant =
   | 'subtitle1'
   | 'subtitle2';
 
-type ElementByTypographyVariant = {
+export type ElementByTypographyVariant = {
   h1: HTMLHeadingElement;
   h2: HTMLHeadingElement;
   h3: HTMLHeadingElement;
@@ -28,6 +28,7 @@ type ElementByTypographyVariant = {
 export interface TypographyProps
   extends React.HTMLAttributes<ElementByTypographyVariant[TypographyVariant]> {
   variant?: TypographyVariant;
-  children: React.ReactNode;
+  children?: React.ReactNode;
   className?: string;
+  ref?: React.Ref<any>;
 }
