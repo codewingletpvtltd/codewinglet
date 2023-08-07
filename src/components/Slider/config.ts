@@ -8,7 +8,6 @@ export const defaultSettings = (settings: any) => ({
   slidesToScroll: 1,
   centerMode: true,
   centerPadding: 0,
-  //   variableWidth: true,
   responsive: [
     {
       breakpoint: 1024,
