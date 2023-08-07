@@ -8,12 +8,24 @@ module.exports = {
       },
       keyframes: {
         swing: {
-          '0%': { transform: 'rotate(3deg)' },
-          '100%': { transform: 'rotate(-3deg)' },
+          '0%': { transform: 'rotate(2deg)' },
+          '100%': { transform: 'rotate(-2deg)' },
         },
       },
       animation: {
-        swing: 'swing ease-in-out 1s infinite alternate',
+        swing: 'swing ease-in-out 0.8s infinite alternate',
+      },
+      minHeight: {
+        h1: '68px',
+        h2: '62px',
+        h3: '50px',
+        h4: '30px',
+        h5: '30px',
+        h6: '25px',
+        body1: '30px',
+        body2: '30px',
+        subtitle1: '22px',
+        subtitle2: '22px',
       },
     },
     screens: {
