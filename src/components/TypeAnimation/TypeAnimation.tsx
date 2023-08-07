@@ -1,3 +1,4 @@
+'use client';
 import { HTMLAttributes, MutableRefObject, forwardRef, useEffect } from 'react';
 import Typography from '../Typography/Typography';
 import {
