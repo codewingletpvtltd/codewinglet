@@ -15,6 +15,18 @@ module.exports = {
       animation: {
         swing: 'swing ease-in-out 1s infinite alternate',
       },
+      minHeight: {
+        h1: '68px',
+        h2: '62px',
+        h3: '50px',
+        h4: '30px',
+        h5: '30px',
+        h6: '25px',
+        body1: '30px',
+        body2: '30px',
+        subtitle1: '22px',
+        subtitle2: '22px',
+      },
     },
     screens: {
       xl: '1920px',
