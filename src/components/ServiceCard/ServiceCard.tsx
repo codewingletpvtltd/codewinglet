@@ -12,7 +12,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   ...rest
 }) => (
   <div
-    className={'flex flex-col gap-4 p-[24px] rounded-10 bg-white shadow-l'}
+    className='flex flex-col gap-4 p-[24px] rounded-10 bg-white shadow-lg'
     {...rest}
   >
     <div className='flex gap-3'>

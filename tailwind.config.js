@@ -28,7 +28,7 @@ module.exports = {
         subtitle2: '22px',
       },
       boxShadow: {
-        l: '1px 1px 20px 0 rgba(0,0,0,0.07)',
+        lg: '1px 1px 20px 0 rgba(0,0,0,0.07)',
       },
     },
     screens: {
