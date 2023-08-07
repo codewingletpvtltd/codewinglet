@@ -40,6 +40,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
           rounded-[50%] 
           cursor-pointer 
           border
+          w-[48px] h-[48px]
           xl:w-[58px] xl:h-[58px] 
           lg:w-[50px] lg:h-[50px] 
           md:w-[58px] md:h-[58px] 
@@ -61,6 +62,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
             md:text-[20px] 
             lg:text-[18px] 
             xl:text-[20px]
+            xs:text-[14px]
             ${cardTitleClass}`
           )}
         >

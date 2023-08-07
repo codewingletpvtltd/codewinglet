@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang='en'>
       <body className='font-primary'>
         <Link href='/technology/reactjs-development-company'>React js</Link>
-        <div className='container'>{children}</div>
+        <div className='container w-[100%]'>{children}</div>
       </body>
     </html>
   );
