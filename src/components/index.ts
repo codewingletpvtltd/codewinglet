@@ -7,3 +7,4 @@ export { AccordionSummary } from './Accordion';
 export { AccordionDetails } from './Accordion';
 export { default as TitleDescriptionWrapper } from './TitleDescriptionWrapper';
 export { default as ServiceCard } from './ServiceCard';
+export { default as Slider } from './Slider';
