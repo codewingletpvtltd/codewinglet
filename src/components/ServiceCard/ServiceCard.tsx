@@ -13,16 +13,13 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 }) => (
   <div
     className={'flex flex-col gap-4 p-[24px] rounded-10 bg-white shadow-l'}
-    onClick={onClick}
     {...rest}
   >
     <div className='flex gap-3'>
       {icon}
       <Typography
         variant='body2'
-        className={
-          'flex font-[800] justify-center items-center flex-wrap text-[18px] md:text-[20px]'
-        }
+        className='flex font-[800] justify-center items-center flex-wrap text-[18px] md:text-[20px]'
       >
         {title}
       </Typography>
@@ -30,7 +27,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 
     <Typography
       variant='body2'
-      className={'text-left text-lightBlack line-clamp-5 md:text-subtitle2'}
+      className='text-left text-lightBlack line-clamp-5 md:text-subtitle2'
     >
       {children}
     </Typography>
