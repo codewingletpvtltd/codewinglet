@@ -20,8 +20,8 @@ const FooterSliceIcon: FC<SVGProps<SVGSVGElement>> = ({ ...rest }) => (
         id='XMLID_25_'
         d='M24.8826 90.5798C9.83732 75.6793 9.83732 51.3754 24.8826 36.4749L79.4216 90.5798C64.521 105.625 40.0725 105.625 24.8826 90.5798Z'
         stroke='white'
-        stroke-width='2.5152'
-        stroke-miterlimit='10'
+        strokeWidth='2.5152'
+        strokeMiterlimit='10'
       />
     </g>
   </svg>

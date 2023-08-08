@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import {
   EmailLogo,
   FacebookLogo,
@@ -60,18 +61,30 @@ const ContactSection = () => (
       </Typography>
     </div>
     <div className='flex gap-4'>
-      <div className='border-[1px] border-white py-[6px] px-[10px]  rounded-[50%] cursor-pointer'>
+      <Link
+        href=''
+        className='border-[1px] border-white py-[6px] px-[10px]  rounded-[50%] cursor-pointer'
+      >
         <FacebookLogo />
-      </div>
-      <div className='border-[1px] border-white py-[6px] px-[8px] rounded-[50%] cursor-pointer'>
+      </Link>
+      <Link
+        href=''
+        className='border-[1px] border-white py-[6px] px-[8px] rounded-[50%] cursor-pointer'
+      >
         <InstagramLogo />
-      </div>
-      <div className='border-[1px] border-white py-[5px] px-[8px] rounded-[50%] cursor-pointer'>
+      </Link>
+      <Link
+        href=''
+        className='border-[1px] border-white py-[5px] px-[8px] rounded-[50%] cursor-pointer'
+      >
         <LinkedInLogo />
-      </div>
-      <div className='border-[1px] border-white py-[6px] px-[8px] rounded-[50%] cursor-pointer'>
+      </Link>
+      <Link
+        href=''
+        className='border-[1px] border-white py-[6px] px-[8px] rounded-[50%] cursor-pointer'
+      >
         <TwitterLogo />
-      </div>
+      </Link>
     </div>
   </>
 );
