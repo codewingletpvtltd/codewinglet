@@ -1,11 +1,9 @@
+import React from 'react';
+
 export interface ServiceCardProps {
-  cardIcon: React.ReactNode;
-  cardClass?: string;
-  cardTitle: string;
-  cardContent: string;
-  cardIconClass?: string;
-  cardTitleClass?: string;
-  cardContentClass?: string;
+  icon: React.ReactNode;
+  title: string;
+  children: React.ReactNode;
   buttonText?: string;
   onClick?: () => void;
 }
