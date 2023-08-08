@@ -8,12 +8,12 @@ module.exports = {
       },
       keyframes: {
         swing: {
-          '0%': { transform: 'rotate(3deg)' },
-          '100%': { transform: 'rotate(-3deg)' },
+          '0%': { transform: 'rotate(2deg)' },
+          '100%': { transform: 'rotate(-2deg)' },
         },
       },
       animation: {
-        swing: 'swing ease-in-out 1s infinite alternate',
+        swing: 'swing ease-in-out 0.8s infinite alternate',
       },
       minHeight: {
         h1: '68px',
@@ -26,6 +26,9 @@ module.exports = {
         body2: '30px',
         subtitle1: '22px',
         subtitle2: '22px',
+      },
+      boxShadow: {
+        lg: '1px 1px 20px 0 rgba(0,0,0,0.07)',
       },
     },
     screens: {
@@ -40,7 +43,6 @@ module.exports = {
       primary: '#0278BE',
       secondary: '#02457C',
       black: '#143048',
-      white: '#FFFFFF',
       lightBlack: '#506B82',
       gray: '#CDCCD2',
       lightGray: '#F3EFF3',
@@ -48,6 +50,7 @@ module.exports = {
       aqua: '#CAD5DF',
       darkGray: '#506B82',
       lightBlue: '#0278BE',
+      lightOrange: '#FEF2EF',
     },
     fontWeight: {
       100: 100,

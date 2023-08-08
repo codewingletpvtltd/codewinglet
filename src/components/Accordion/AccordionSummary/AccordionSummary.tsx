@@ -1,5 +1,4 @@
 import { useContext } from 'react';
-import { getClassNames } from '@codewinglet/utils';
 import { MinusIcon } from '../../../assets/MinusIcon';
 import { PlusIcon } from '../../../assets/PlusIcon';
 import AccordionContext from '../AccordionContext';
@@ -8,7 +7,6 @@ import { AccordionSummaryProps } from './types';
 const AccordionSummary: React.FC<AccordionSummaryProps> = ({
   children,
   id,
-  className,
   expandedIcon = <MinusIcon aria-label='accordion-expandedIcon' />,
   closedIcon = <PlusIcon aria-label='accordion-closedIcon' />,
   iconPosition = 'end',
@@ -30,11 +28,8 @@ const AccordionSummary: React.FC<AccordionSummaryProps> = ({
 
   return (
     <div
-      className={getClassNames(
-        `Accordion-summary-root cursor-pointer px-4 py-2 mt-1 block w-full text-left
-        bg-gray-200
-         ${className}`
-      )}
+      className='Accordion-summary-root cursor-pointer px-4 py-2 mt-1 block w-full text-left
+        bg-gray-200'
     >
       {expandIconsHidden ? (
         <div className='flex justify-start items-start'>{children}</div>

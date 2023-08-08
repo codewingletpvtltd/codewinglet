@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useId } from 'react';
 import { getClassNames } from '../../utils';
 import { TextFieldProps } from './types';
 
@@ -6,21 +6,19 @@ const TextField: React.FC<TextFieldProps> = ({
   label,
   error = false,
   type = 'text',
-  className = '',
   labelClassName = '',
   helperText,
   disabled,
   fullWidth,
   ...rest
 }) => {
-  const inputId =
-    rest.id || `textfield-${Math.random().toString(36).substring(7)}`;
+  const inputId = useId();
 
   return (
-    <div className='TextField-root flex flex-col h-40'>
+    <div className='flex flex-col h-40'>
       {label && (
         <label
-          htmlFor={inputId}
+          htmlFor={rest.id || inputId}
           className={getClassNames(
             'font-secondary text-subtitle1 font-800',
             error ? 'text-error' : '',
@@ -32,15 +30,14 @@ const TextField: React.FC<TextFieldProps> = ({
       )}
       <div className='inline-block'>
         <input
-          id={inputId}
+          id={rest.id || inputId}
           type={type}
           disabled={disabled}
           className={getClassNames(
-            'Input-root border-solid border h-[40px] px-[13px] rounded-10 w-[200px] text-subtitle2 font-400 focus:outline-none focus:border-primary',
+            'border-solid border h-[40px] px-[13px] rounded-10 w-[200px] text-subtitle2 font-400 focus:outline-none focus:border-primary',
             error ? 'border-error' : 'border-gray',
             disabled ? 'pointer-events-none bg-gray' : '',
-            fullWidth ? 'w-full' : '',
-            className
+            fullWidth ? 'w-full' : ''
           )}
           {...rest}
         />

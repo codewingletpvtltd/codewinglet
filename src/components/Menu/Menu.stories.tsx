@@ -2,7 +2,6 @@ import { StoryObj } from '@storybook/react';
 import React from 'react';
 import Logo from 'assets/reactJS.svg';
 import Image from 'next/image';
-import Typography from '../Typography/Typography';
 import Menu from '.';
 
 export default {
@@ -217,14 +216,7 @@ export const WithHeader = () => {
                     <Menu.ItemIcon>
                       <Image src={items.icon} alt='' />
                     </Menu.ItemIcon>
-                    <Menu.ItemText className='ml-2'>
-                      <Typography
-                        variant='body1'
-                        className='text-black font-extrabold'
-                      >
-                        {key}
-                      </Typography>
-                    </Menu.ItemText>
+                    <Menu.ItemText className='ml-2'>{key}</Menu.ItemText>
                   </Menu.Item>
                   {items.items.map((item, index) => (
                     <Menu.Item key={`menu1-${key}-${idx}-${index}`}>
