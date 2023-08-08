@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useId } from 'react';
 import { getClassNames } from '../../utils';
 import { TextFieldProps } from './types';
 
@@ -13,14 +13,13 @@ const TextField: React.FC<TextFieldProps> = ({
   fullWidth,
   ...rest
 }) => {
-  const inputId =
-    rest.id || `textfield-${Math.random().toString(36).substring(7)}`;
+  const inputId = useId();
 
   return (
     <div className='TextField-root flex flex-col h-40'>
       {label && (
         <label
-          htmlFor={inputId}
+          htmlFor={rest.id || inputId}
           className={getClassNames(
             'font-secondary text-subtitle1 font-800',
             error ? 'text-error' : '',
@@ -32,7 +31,7 @@ const TextField: React.FC<TextFieldProps> = ({
       )}
       <div className='inline-block'>
         <input
-          id={inputId}
+          id={rest.id || inputId}
           type={type}
           disabled={disabled}
           className={getClassNames(
