@@ -1,12 +1,15 @@
-export const EmailLogo = () => (
+import { FC, SVGProps } from 'react';
+
+const EmailLogo: FC<SVGProps<SVGSVGElement>> = ({ ...rest }) => (
   <svg
     xmlns='http://www.w3.org/2000/svg'
     width='22'
     height='22'
     viewBox='0 0 22 22'
     fill='none'
+    {...rest}
   >
-    <g clip-path='url(#clip0_1105_2439)'>
+    <g clipPath='url(#clip0_1105_2439)'>
       <path
         d='M12.8386 13.4791C12.2913 13.8439 11.6555 14.0368 11 14.0368C10.3446 14.0368 9.70879 13.8439 9.16145 13.4791L0.14648 7.46889C0.0967142 7.43562 0.0478691 7.40098 0 7.36503L0 17.2133C0 18.3425 0.916309 19.2386 2.02525 19.2386H19.9747C21.1038 19.2386 22 18.3223 22 17.2133V7.36499C21.952 7.40104 21.9031 7.43574 21.8532 7.46906L12.8386 13.4791Z'
         fill='white'
@@ -23,3 +26,4 @@ export const EmailLogo = () => (
     </defs>
   </svg>
 );
+export default EmailLogo;

@@ -1,3 +1,4 @@
+'use client';
 import { useContext } from 'react';
 import { getClassNames } from '@codewinglet/utils';
 import AccordionContext from '../AccordionContext';
@@ -19,9 +20,7 @@ const AccordionDetails: React.FC<AccordionDetailsProps> = ({
         } ${className}`
       )}
     >
-      <div className='Accordion-details-box px-4 py-2 my-2 flex gap-20'>
-        {children}
-      </div>
+      <div className='Accordion-details-box px-4 py-2 my-4'>{children}</div>
     </div>
   );
 };

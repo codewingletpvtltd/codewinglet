@@ -15,7 +15,10 @@ const ContactSection = () => (
       <div>
         <Logo />
       </div>
-      <Typography variant='subtitle1' className='leading-normal'>
+      <Typography
+        variant='subtitle1'
+        className='leading-normal xs:text-subtitle2 sm:text-subtitle1'
+      >
         Codewinglet your premier software development squad employing a
         streamlined process ensuring timely project delivery.
       </Typography>
@@ -24,7 +27,10 @@ const ContactSection = () => (
       <div>
         <LocationMarkLogo />
       </div>
-      <Typography variant='subtitle1' className='leading-normal'>
+      <Typography
+        variant='subtitle1'
+        className='leading-normal lg:text-subtitle1 xs:text-subtitle2'
+      >
         A901-A905, Vivanta Icon Opp. Shell Petrol Pump, Adajan, Surat, Gujarat
         395009.
       </Typography>
@@ -33,7 +39,10 @@ const ContactSection = () => (
       <div>
         <TelePhoneLogo />
       </div>
-      <Typography variant='subtitle1' className='leading-normal'>
+      <Typography
+        variant='subtitle1'
+        className='leading-normal lg:text-subtitle1 xs:text-subtitle2'
+      >
         +91 83201 11741
       </Typography>
     </div>
@@ -41,9 +50,13 @@ const ContactSection = () => (
       <div>
         <EmailLogo />
       </div>
-      <Typography variant='subtitle1' className='leading-normal'>
-        <div>hr@codewinglet.com</div>
-        <div>contact@codewinglet.com</div>
+      <Typography
+        variant='subtitle1'
+        className='leading-normal lg:text-subtitle1 xs:text-subtitle2'
+      >
+        hr@codewinglet.com
+        <br />
+        contact@codewinglet.com
       </Typography>
     </div>
     <div className='flex gap-4'>

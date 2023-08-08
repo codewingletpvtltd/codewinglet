@@ -11,7 +11,7 @@ const Accordion: React.FC<AccordionProps> = ({
   className,
   expandIconsHidden = false,
 }) => {
-  const [activePanelId, setActivePanelId] = useState<string | null>(null);
+  const [activePanelId, setActivePanelId] = useState<string | null>('panel1');
 
   const clickHandler = (id: string | null) => {
     setActivePanelId(activePanelId === id ? null : id);

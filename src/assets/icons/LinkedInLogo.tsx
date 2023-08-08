@@ -1,10 +1,13 @@
-export const LinkedInLogo = () => (
+import { FC, SVGProps } from 'react';
+
+const LinkedInLogo: FC<SVGProps<SVGSVGElement>> = ({ ...rest }) => (
   <svg
     width='15'
     height='18'
     viewBox='0 0 15 18'
     fill='none'
     xmlns='http://www.w3.org/2000/svg'
+    {...rest}
   >
     <g id='Frame'>
       <path
@@ -15,3 +18,4 @@ export const LinkedInLogo = () => (
     </g>
   </svg>
 );
+export default LinkedInLogo;

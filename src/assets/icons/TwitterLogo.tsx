@@ -1,10 +1,13 @@
-export const TwitterLogo = () => (
+import { FC, SVGProps } from 'react';
+
+const TwitterLogo: FC<SVGProps<SVGSVGElement>> = ({ ...rest }) => (
   <svg
     width='17'
     height='18'
     viewBox='0 0 17 18'
     fill='none'
     xmlns='http://www.w3.org/2000/svg'
+    {...rest}
   >
     <g id='Frame'>
       <path
@@ -15,3 +18,4 @@ export const TwitterLogo = () => (
     </g>
   </svg>
 );
+export default TwitterLogo;

@@ -1,12 +1,15 @@
-export const PlusIcon = () => (
+import { FC, SVGProps } from 'react';
+
+const PlusIcon: FC<SVGProps<SVGSVGElement>> = ({ ...rest }) => (
   <svg
     width='15'
     height='17'
     viewBox='0 0 15 17'
     fill='none'
     xmlns='http://www.w3.org/2000/svg'
+    {...rest}
   >
-    <g id='Frame' clip-path='url(#clip0_1057_1374)'>
+    <g id='Frame' clipPath='url(#clip0_1057_1374)'>
       <g id='Group'>
         <path
           id='Vector'
@@ -34,3 +37,4 @@ export const PlusIcon = () => (
     </defs>
   </svg>
 );
+export default PlusIcon;
