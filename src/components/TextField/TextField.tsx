@@ -6,7 +6,6 @@ const TextField: React.FC<TextFieldProps> = ({
   label,
   error = false,
   type = 'text',
-  className = '',
   labelClassName = '',
   helperText,
   disabled,
@@ -16,7 +15,7 @@ const TextField: React.FC<TextFieldProps> = ({
   const inputId = useId();
 
   return (
-    <div className='TextField-root flex flex-col h-40'>
+    <div className='flex flex-col h-40'>
       {label && (
         <label
           htmlFor={rest.id || inputId}
@@ -35,11 +34,10 @@ const TextField: React.FC<TextFieldProps> = ({
           type={type}
           disabled={disabled}
           className={getClassNames(
-            'Input-root border-solid border h-[40px] px-[13px] rounded-10 w-[200px] text-subtitle2 font-400 focus:outline-none focus:border-primary',
+            'border-solid border h-[40px] px-[13px] rounded-10 w-[200px] text-subtitle2 font-400 focus:outline-none focus:border-primary',
             error ? 'border-error' : 'border-gray',
             disabled ? 'pointer-events-none bg-gray' : '',
-            fullWidth ? 'w-full' : '',
-            className
+            fullWidth ? 'w-full' : ''
           )}
           {...rest}
         />
