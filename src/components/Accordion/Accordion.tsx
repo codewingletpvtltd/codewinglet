@@ -8,7 +8,6 @@ import AccordionContext from './AccordionContext';
 
 const Accordion: React.FC<AccordionProps> = ({
   children,
-  className,
   expandIconsHidden = false,
 }) => {
   const [activePanelId, setActivePanelId] = useState<string | null>('panel1');
@@ -21,9 +20,7 @@ const Accordion: React.FC<AccordionProps> = ({
     <AccordionContext.Provider
       value={{ activePanelId, clickHandler, expandIconsHidden }}
     >
-      <div className={className} aria-label='accordion-root'>
-        {children}
-      </div>
+      <div aria-label='accordion-root'>{children}</div>
     </AccordionContext.Provider>
   );
 };
