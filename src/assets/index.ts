@@ -1,3 +1,17 @@
 export { default as Arrow } from './icons/Arrow';
 export { default as LeftArrow } from './icons/LeftArrow';
 export { default as RightArrow } from './icons/RightArrow';
+export { default as ProjectConsulting } from './icons/ProjectConsulting';
+export { default as System } from './icons/System';
+export { default as WebApp } from './icons/WebApp';
+export { default as MobileApp } from './icons/MobileApp';
+export { default as FeDev } from './icons/FeDev';
+export { default as BeDev } from './icons/BeDev';
+export { default as QaTest } from './icons/QaTest';
+export { default as Support } from './icons/Support';
+export { default as CustomDev } from './icons/CustomDev';
+export { default as WebDesign } from './icons/WebDesign';
+export { default as UiLib } from './icons/UiLib';
+export { default as UiUxDev } from './icons/UiUxDev';
+export { default as Hire } from './icons/Hire';
+export { default as BgWave } from './BgWave';

@@ -30,13 +30,12 @@ module.exports = {
       boxShadow: {
         lg: '1px 1px 20px 0 rgba(0,0,0,0.07)',
       },
-    },
-    screens: {
-      xl: '1920px',
-      lg: '1440px',
-      md: '1024px',
-      sm: '768px',
-      xs: '375px',
+      container: {
+        center: true,
+      },
+      backgroundImage: {
+        'curve-pattern': 'url("/assets/reactJS.svg")',
+      },
     },
     colors: {
       white: '#FFFFFF',
@@ -51,6 +50,8 @@ module.exports = {
       darkGray: '#506B82',
       lightBlue: '#0278BE',
       lightOrange: '#FEF2EF',
+      culturedWhite: '#F4F5F9',
+      lightGreen: '#ECF8F0',
     },
     fontWeight: {
       100: 100,

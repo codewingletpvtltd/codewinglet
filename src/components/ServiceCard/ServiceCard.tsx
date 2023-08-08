@@ -1,4 +1,5 @@
 import React from 'react';
+import { getClassNames } from '@codewinglet/utils';
 import Typography from '../Typography';
 import Button from '../Button';
 import { ServiceCardProps } from './types';
@@ -8,11 +9,15 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   title,
   children,
   buttonText = 'Button',
+  className = '',
   onClick,
   ...rest
 }) => (
   <div
-    className='flex flex-col gap-4 p-[24px] rounded-10 bg-white shadow-lg'
+    className={getClassNames(
+      'flex flex-col gap-4 p-[24px] rounded-10 bg-white shadow-lg',
+      className
+    )}
     {...rest}
   >
     <div className='flex gap-3'>
