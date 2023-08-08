@@ -17,10 +17,12 @@ const AccordionDetails: React.FC<AccordionDetailsProps> = ({
       className={getClassNames(
         `Accordion-details overflow-hidden transition duration-700 ease-in-out ${
           active || expandIconsHidden ? 'opacity-100 h-auto' : 'opacity-0 h-0'
-        } ${className}`
+        }`
       )}
     >
-      <div className='Accordion-details-box px-4 py-2 my-4'>{children}</div>
+      <div className={`Accordion-details-box px-4 py-2 my-4 ${className}`}>
+        {children}
+      </div>
     </div>
   );
 };
