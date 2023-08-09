@@ -5,19 +5,20 @@ import {
   AccordionDetails,
   AccordionSummary,
 } from '@codewinglet/components/Accordion';
-import useScreenSize from '@codewinglet/hooks/useScreenSize';
-import { sm } from '../../constants/mediaQueryConst';
+import { useScreenSize } from '@codewinglet/hooks';
+import { sm } from '@codewinglet/constants';
 
 const ServiceSection = () => {
   const isMobileView = useScreenSize(sm);
   const services = [
-    'Front-end Backend',
-    'Mobile',
-    'Devops/Cloud',
-    'IoT',
-    'Database',
-    'Robotics',
-    'Git Solutions',
+    { label: 'Front-end Backend', path: '' },
+    { label: 'Mobile', path: '' },
+    { label: 'Devops/Cloud', path: '' },
+    { label: 'IoT', path: '' },
+    { label: 'Database', path: '' },
+    { label: 'Robotics', path: '' },
+    { label: 'Git Solutions', path: '' },
+    { label: 'ML/AI', path: '' },
   ];
   const boldBorder = (
     <span className='absolute top-[36.5px] bg-white w-[106px] h-1'></span>
@@ -40,11 +41,11 @@ const ServiceSection = () => {
         <div className='grid grid-rows-5 grid-flow-col gap-x-8 gap-y-5'>
           {services.map((element, i) => (
             <Link
-              href=''
+              href={element.path}
               key={`${uniqueId}-${i}`}
               className='flex flex-wrap cursor-pointer w-full'
             >
-              {element}
+              {element.label}
             </Link>
           ))}
         </div>

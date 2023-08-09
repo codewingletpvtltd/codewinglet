@@ -5,17 +5,17 @@ import {
   AccordionDetails,
   AccordionSummary,
 } from '@codewinglet/components/Accordion';
-import useScreenSize from '@codewinglet/hooks/useScreenSize';
-import { sm } from '../../constants/mediaQueryConst';
+import { useScreenSize } from '@codewinglet/hooks';
+import { sm } from '@codewinglet/constants';
 
 const TechnologySection = () => {
   const isMobileView = useScreenSize(sm);
   const technologies = [
-    'Front-end Backend',
-    'Mobile',
-    'Devops/Cloud',
-    'IoT',
-    'Database',
+    { label: 'Front-end Backend', path: '' },
+    { label: 'Mobile', path: '' },
+    { label: 'Devops/Cloud', path: '' },
+    { label: 'IoT', path: '' },
+    { label: 'Database', path: '' },
   ];
   const boldBorder = (
     <span className='absolute top-[36.5px] bg-white w-[146px] h-1'></span>
@@ -38,11 +38,11 @@ const TechnologySection = () => {
         <div className='grid grid-rows-5 grid-flow-col gap-x-8 gap-y-5'>
           {technologies.map((element, i) => (
             <Link
-              href=''
+              href={element.path}
               key={`${uniqueId}-${i}`}
               className='flex flex-wrap cursor-pointer w-full'
             >
-              {element}
+              {element.label}
             </Link>
           ))}
         </div>

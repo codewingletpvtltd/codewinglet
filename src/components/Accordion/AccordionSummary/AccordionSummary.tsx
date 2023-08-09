@@ -28,11 +28,7 @@ const AccordionSummary: React.FC<AccordionSummaryProps> = ({
   );
 
   return (
-    <div
-      className={
-        'Accordion-summary-root cursor-pointer px-4 py-2 mt-1 block w-full text-left'
-      }
-    >
+    <div className='Accordion-summary-root cursor-pointer px-4 py-2 mt-1 block w-full text-left'>
       {expandIconsHidden ? (
         <div className={`flex justify-start items-start ${className}`}>
           {children}

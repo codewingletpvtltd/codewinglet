@@ -40,25 +40,35 @@ const ContactSection = () => (
       <div>
         <TelePhoneLogo />
       </div>
-      <Typography
-        variant='subtitle1'
+      <Link
+        href=''
         className='leading-normal lg:text-subtitle1 xs:text-subtitle2'
       >
         +91 83201 11741
-      </Typography>
+      </Link>
     </div>
     <div className='flex gap-2'>
       <div>
         <EmailLogo />
       </div>
-      <Typography
-        variant='subtitle1'
-        className='leading-normal lg:text-subtitle1 xs:text-subtitle2'
-      >
-        hr@codewinglet.com
-        <br />
-        contact@codewinglet.com
-      </Typography>
+      <div>
+        <div>
+          <Link
+            href=''
+            className='leading-normal inline-block lg:text-subtitle1 xs:text-subtitle2'
+          >
+            hr@codewinglet.com
+          </Link>
+        </div>
+        <div>
+          <Link
+            href=''
+            className='leading-normal inline-block lg:text-subtitle1 xs:text-subtitle2'
+          >
+            contact@codewinglet.com
+          </Link>
+        </div>
+      </div>
     </div>
     <div className='flex gap-4'>
       <Link
