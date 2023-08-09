@@ -21,7 +21,7 @@ const ServiceSection = () => {
     { label: 'ML/AI', path: '' },
   ];
   const boldBorder = (
-    <span className='absolute top-[36.5px] bg-white w-[106px] h-1'></span>
+    <span className='absolute top-[44px] bg-white w-[106px] h-1'></span>
   );
   const uniqueId = useId();
   return (
