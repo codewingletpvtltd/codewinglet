@@ -18,7 +18,7 @@ const TechnologySection = () => {
     { label: 'Database', path: '' },
   ];
   const boldBorder = (
-    <span className='absolute top-[44px] bg-white w-[146px] h-1'></span>
+    <span className='absolute !top-[44px] bg-white w-[146px] h-1'></span>
   );
   const uniqueId = useId();
   return (
