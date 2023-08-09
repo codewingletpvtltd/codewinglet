@@ -72,26 +72,30 @@ const ContactSection = () => (
     </div>
     <div className='flex gap-4'>
       <Link
-        href=''
-        className='border-[1px] border-white py-[6px] px-[10px]  rounded-[50%] cursor-pointer'
+        href={'https://www.facebook.com/CodewingletPvtLtd'}
+        target={'_blank'}
+        className='border-[1px] border-white py-[6px] px-[10px]  rounded-[50%] cursor-pointer hover:scale-110'
       >
         <FacebookLogo />
       </Link>
       <Link
-        href=''
-        className='border-[1px] border-white py-[6px] px-[8px] rounded-[50%] cursor-pointer'
+        href={'https://www.instagram.com/codewinglet/'}
+        className='border-[1px] border-white py-[6px] px-[8px] rounded-[50%] cursor-pointer hover:scale-110'
+        target={'_blank'}
       >
         <InstagramLogo />
       </Link>
       <Link
-        href=''
-        className='border-[1px] border-white py-[5px] px-[8px] rounded-[50%] cursor-pointer'
+        href={'https://in.linkedin.com/company/codewinglet'}
+        target={'_blank'}
+        className='border-[1px] border-white py-[5px] px-[8px] rounded-[50%] cursor-pointer hover:scale-110'
       >
         <LinkedInLogo />
       </Link>
       <Link
-        href=''
-        className='border-[1px] border-white py-[6px] px-[8px] rounded-[50%] cursor-pointer'
+        href={'https://twitter.com/codewinglet'}
+        target={'_blank'}
+        className='border-[1px] border-white py-[6px] px-[8px] rounded-[50%] cursor-pointer hover:scale-110'
       >
         <TwitterLogo />
       </Link>

@@ -14,12 +14,12 @@ const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer className='max-w-screen-2xl px-4 py-12 relative mx-auto bg-black text-white font-secondary sm:px-6 lg:px-8'>
+    <footer className='max-w-screen-2xl py-12 relative mx-auto bg-black text-white font-secondary'>
       <FooterSliceIcon
         aria-label='footer-slice-icon'
         className='absolute top-[35%] left-[2%] hidden lg:block lg:w-[65px] lg:h-[82px] xl:w-[80px] xl:h-[101px]'
       />
-      <section className='w-full flex flex-wrap justify-center gap-4'>
+      <section className='w-full flex flex-wrap justify-center gap-4 px-4'>
         <div className='w-full flex flex-col px-4 h-fit md:w-[30%] lg:w-1/4 gap-6'>
           <ContactSection />
         </div>
