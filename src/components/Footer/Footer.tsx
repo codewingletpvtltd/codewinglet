@@ -13,6 +13,7 @@ import {
   TelePhoneLogo,
   TwitterLogo,
 } from '@codewinglet/assets';
+import { COLORS } from '@codewinglet/constants';
 import { companyTermsMenu, serviceMenu, technologyMenu } from './constants';
 
 const Footer = () => (
@@ -103,7 +104,7 @@ const Footer = () => (
                   variant='subtitle1'
                   className='leading-7 flex gap-2 items-center'
                 >
-                  <HighlightArrow color='#fff' />
+                  <HighlightArrow color={COLORS.white} />
                   <Link
                     className=' relative after:absolute after:w-0 after:h-[1px] after:left-0 after:bg-white after:bottom-0 after:transition-all hover:after:w-full after:duration-200'
                     href={item.path}
@@ -125,7 +126,7 @@ const Footer = () => (
                   variant='subtitle1'
                   className='leading-7 flex gap-2 items-center'
                 >
-                  <HighlightArrow color='#fff' />
+                  <HighlightArrow color={COLORS.white} />
                   <Link
                     className=' relative after:absolute after:w-0 after:h-[1px] after:left-0 after:bg-white after:bottom-0 after:transition-all hover:after:w-full after:duration-200'
                     href={item.path}
@@ -139,7 +140,7 @@ const Footer = () => (
         </div>
       </div>
     </div>
-    <hr className='mb-8 mt-10 border-[#506B82]' />
+    <hr className='mb-8 mt-10 border-lightBlack' />
     <div className='max-w-screen-xl mx-auto'>
       <div className='flex justify-between lg:flex-row flex-col'>
         <Typography

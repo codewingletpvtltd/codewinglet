@@ -1,1 +1,1 @@
-export { xs, sm, md, lg, xl } from './mediaQueryConst';
+export { default as COLORS } from './colors';

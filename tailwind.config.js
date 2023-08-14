@@ -44,8 +44,6 @@ module.exports = {
       lightGray: '#F3EFF3',
       error: '#F44336',
       aqua: '#CAD5DF',
-      darkGray: '#506B82',
-      white: '#FFFFFF',
       lightBlue: '#0278BE',
       lightOrange: '#FEF2EF',
     },

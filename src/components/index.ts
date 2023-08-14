@@ -4,7 +4,6 @@ export { default as Menu } from './Menu';
 export { default as Button } from './Button';
 export { Accordion, AccordionSummary, AccordionDetails } from './Accordion';
 export { default as SectionHeader } from './SectionHeader';
-export { default as Logo } from './Logo';
 export { default as Footer } from './Footer';
 export { default as ServiceCard } from './ServiceCard';
 export { default as Slider } from './Slider';
