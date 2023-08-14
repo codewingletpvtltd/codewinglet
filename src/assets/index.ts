@@ -13,3 +13,4 @@ export { default as RightArrow } from './icons/RightArrow';
 export { default as FooterCircleIcon } from './icons/FooterCircleIcon';
 export { default as FooterSliceIcon } from './icons/FooterSliceIcon';
 export { default as FooterTriangleIcon } from './icons/FooterTriangleIcon';
+export { default as HighlightArrow } from './icons/HighlightArrow';

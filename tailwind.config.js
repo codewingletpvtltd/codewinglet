@@ -2,6 +2,9 @@
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
+    container: {
+      center: true,
+    },
     extend: {
       borderRadius: {
         10: '10px',
@@ -30,13 +33,6 @@ module.exports = {
       boxShadow: {
         lg: '1px 1px 20px 0 rgba(0,0,0,0.07)',
       },
-    },
-    screens: {
-      xl: '1920px',
-      lg: '1440px',
-      md: '1024px',
-      sm: '768px',
-      xs: '375px',
     },
     colors: {
       white: '#FFFFFF',
