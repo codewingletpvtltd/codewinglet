@@ -44,7 +44,9 @@ const Footer = () => (
               <div>
                 <TelePhoneLogo />
               </div>
-              <Typography variant='subtitle2'>+91 83201 11741</Typography>
+              <Typography variant='subtitle2'>
+                <Link href='tel:+918320111741'>+91 83201 11741</Link>
+              </Typography>
             </div>
             <div className='flex gap-2'>
               <div className='mt-[2px]'>
@@ -70,21 +72,21 @@ const Footer = () => (
             </Link>
             <Link
               className='border w-8 h-8 rounded-full flex items-center justify-center'
-              href='https://www.facebook.com/CodewingletPvtLtd'
+              href='https://www.instagram.com/codewinglet/'
               target='_blank'
             >
               <InstagramLogo />
             </Link>
             <Link
               className='border w-8 h-8 rounded-full flex items-center justify-center'
-              href='https://www.facebook.com/CodewingletPvtLtd'
+              href='https://in.linkedin.com/company/codewinglet'
               target='_blank'
             >
               <LinkedInLogo />
             </Link>
             <Link
               className='border w-8 h-8 rounded-full flex items-center justify-center'
-              href='https://www.facebook.com/CodewingletPvtLtd'
+              href='https://twitter.com/codewinglet'
               target='_blank'
             >
               <TwitterLogo />
