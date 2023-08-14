@@ -8,7 +8,6 @@ const COLORS = {
   lightGray: '#F3EFF3',
   error: '#F44336',
   aqua: '#CAD5DF',
-  lightBlue: '#0278BE',
   lightOrange: '#FEF2EF',
 };
 
