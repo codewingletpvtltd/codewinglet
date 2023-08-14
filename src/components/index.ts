@@ -6,4 +6,4 @@ export { Accordion, AccordionSummary, AccordionDetails } from './Accordion';
 export { default as SectionHeader } from './SectionHeader';
 export { default as ServiceCard } from './ServiceCard';
 export { default as Slider } from './Slider';
-export { default as TypeAnimation } from './TypeAnimation/TypeAnimation';
+export { default as TypeAnimation } from './TypeAnimation';

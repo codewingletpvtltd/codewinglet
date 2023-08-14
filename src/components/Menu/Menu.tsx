@@ -25,7 +25,7 @@ const Menu: React.FC<MenuProps> & {
       <div
         role='presentation'
         className={getClassNames(
-          'fixed inset-x-0 pt-[15px] absolute w-full',
+          'inset-x-0 pt-[15px] absolute w-full',
           open ? 'visible' : 'invisible',
           className
         )}
