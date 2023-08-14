@@ -2,6 +2,9 @@
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
+    container: {
+      center: true,
+    },
     extend: {
       borderRadius: {
         10: '10px',
@@ -31,13 +34,6 @@ module.exports = {
         lg: '1px 1px 20px 0 rgba(0,0,0,0.07)',
       },
     },
-    screens: {
-      xl: '1920px',
-      lg: '1440px',
-      md: '1024px',
-      sm: '768px',
-      xs: '375px',
-    },
     colors: {
       white: '#FFFFFF',
       primary: '#0278BE',
@@ -48,7 +44,6 @@ module.exports = {
       lightGray: '#F3EFF3',
       error: '#F44336',
       aqua: '#CAD5DF',
-      darkGray: '#506B82',
       lightBlue: '#0278BE',
       lightOrange: '#FEF2EF',
     },

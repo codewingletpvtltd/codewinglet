@@ -1,10 +1,13 @@
-export const MinusIcon = () => (
+import { FC, SVGProps } from 'react';
+
+const MinusIcon: FC<SVGProps<SVGSVGElement>> = ({ ...rest }) => (
   <svg
     width='15'
     height='17'
     viewBox='0 0 15 17'
     fill='none'
     xmlns='http://www.w3.org/2000/svg'
+    {...rest}
   >
     <g id='Frame'>
       <g id='Group'>
@@ -17,3 +20,4 @@ export const MinusIcon = () => (
     </g>
   </svg>
 );
+export default MinusIcon;
