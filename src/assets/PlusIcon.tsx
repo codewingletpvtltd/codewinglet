@@ -6,7 +6,7 @@ export const PlusIcon = () => (
     fill='none'
     xmlns='http://www.w3.org/2000/svg'
   >
-    <g id='Frame' clip-path='url(#clip0_1057_1374)'>
+    <g id='Frame' clipPath='url(#clip0_1057_1374)'>
       <g id='Group'>
         <path
           id='Vector'
