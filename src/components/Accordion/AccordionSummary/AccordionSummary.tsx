@@ -1,7 +1,6 @@
+'use client';
 import { useContext } from 'react';
-import { getClassNames } from '@codewinglet/utils';
-import { MinusIcon } from '../../../assets/MinusIcon';
-import { PlusIcon } from '../../../assets/PlusIcon';
+import { MinusIcon, PlusIcon } from '@codewinglet/assets';
 import AccordionContext from '../AccordionContext';
 import { AccordionSummaryProps } from './types';
 
@@ -29,17 +28,13 @@ const AccordionSummary: React.FC<AccordionSummaryProps> = ({
   );
 
   return (
-    <div
-      className={getClassNames(
-        `Accordion-summary-root cursor-pointer px-4 py-2 mt-1 block w-full text-left
-        bg-gray-200
-         ${className}`
-      )}
-    >
+    <div className='Accordion-summary-root cursor-pointer px-4 py-2 mt-1 block w-full text-left'>
       {expandIconsHidden ? (
-        <div className='flex justify-start items-start'>{children}</div>
+        <div className={`flex justify-start items-start ${className}`}>
+          {children}
+        </div>
       ) : (
-        <div className='flex items-center justify-between'>
+        <div className={`flex items-center justify-between ${className}`}>
           <div className='flex items-center gap-4'>
             {iconPosition === 'start' && iconElement}
             {children}

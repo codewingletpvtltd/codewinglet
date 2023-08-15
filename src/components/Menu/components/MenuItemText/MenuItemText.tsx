@@ -10,7 +10,7 @@ const MenuItemText: React.FC<MenuItemTextProps> = ({ children, className }) => {
   return (
     <Typography
       variant='body2'
-      className={`font-bold capitalize primary text-darkGray ${className}`}
+      className={`font-bold capitalize primary ${className}`}
     >
       {children}
     </Typography>

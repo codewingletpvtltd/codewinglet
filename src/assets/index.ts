@@ -1,3 +1,12 @@
+export { default as EmailLogo } from './icons/EmailLogo';
+export { default as LocationMarkLogo } from './icons/LocationMarkLogo';
+export { default as TelePhoneLogo } from './icons/TelePhoneLogo';
+export { default as FacebookLogo } from './icons/FacebookLogo';
+export { default as InstagramLogo } from './icons/InstagramLogo';
+export { default as LinkedInLogo } from './icons/LinkedInLogo';
+export { default as TwitterLogo } from './icons/TwitterLogo';
+export { default as MinusIcon } from './icons/MinusIcon';
+export { default as PlusIcon } from './icons/PlusIcon';
 export { default as Arrow } from './icons/Arrow';
 export { default as LeftArrow } from './icons/LeftArrow';
 export { default as RightArrow } from './icons/RightArrow';
@@ -17,3 +26,4 @@ export { default as Hire } from './icons/Hire';
 export { default as BgWave } from './BgWave';
 export { default as ServiceCircleIcon } from './icons/ServiceCircleIcon';
 export { default as StarIcon } from './icons/StarIcon';
+export { default as HighlightArrow } from './icons/HighlightArrow';

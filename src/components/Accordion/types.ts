@@ -2,7 +2,6 @@ import { ReactNode } from 'react';
 
 export interface AccordionProps {
   children: ReactNode;
-  className?: string;
   expandIconsHidden?: boolean;
 }
 export interface contextType {
