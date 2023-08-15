@@ -11,9 +11,14 @@ module.exports = {
           '0%': { transform: 'rotate(2deg)' },
           '100%': { transform: 'rotate(-2deg)' },
         },
+        spin: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
       },
       animation: {
         swing: 'swing ease-in-out 0.8s infinite alternate',
+        spin: 'spin 4s infinite linear',
       },
       minHeight: {
         h1: '68px',
@@ -39,6 +44,7 @@ module.exports = {
     },
     colors: {
       white: '#FFFFFF',
+      paleWhite: '#F8FCFF',
       primary: '#0278BE',
       secondary: '#02457C',
       black: '#143048',

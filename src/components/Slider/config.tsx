@@ -19,7 +19,7 @@ export const defaultSettings = (settings: any) => ({
       },
     },
     {
-      breakpoint: 375,
+      breakpoint: 640,
       settings: {
         slidesToShow: 1,
         initialSlide: 0,

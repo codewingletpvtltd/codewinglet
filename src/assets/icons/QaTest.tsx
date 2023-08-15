@@ -9,7 +9,7 @@ const QaTest: FC<SVGProps<SVGSVGElement>> = ({ ...rest }) => (
     fill='none'
     {...rest}
   >
-    <g clip-path='url(#clip0_1524_1466)'>
+    <g clipPath='url(#clip0_1524_1466)'>
       <path
         d='M14 10C15.6569 10 17 8.65685 17 7C17 5.34315 15.6569 4 14 4C12.3431 4 11 5.34315 11 7C11 8.65685 12.3431 10 14 10Z'
         fill='#D95D37'

@@ -38,7 +38,7 @@ const SectionHeader: React.FC<TitleDescriptionProps> = ({
       </Typography>
       <Typography
         variant='subtitle2'
-        className='text-lightBlack md:text-body2 w-[50%] max-w-[446px]'
+        className='text-lightBlack leading-[20px] font-500 md:text-body2 md:leading-[30px] max-w-[460px]'
       >
         {description}
       </Typography>

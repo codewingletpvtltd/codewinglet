@@ -7,20 +7,36 @@ import { LeftArrow, RightArrow } from '@codewinglet/assets';
 import { SliderProps } from './types';
 import { defaultSettings } from './config';
 
-const Slider: FC<SliderProps> = ({ children, settings }) => {
+const Slider: FC<SliderProps> = ({
+  children,
+  settings,
+  iconsPosition = 'topRight',
+}) => {
   const _settings = defaultSettings(settings);
   const sliderRef = useRef<SlickSlider>(null);
+  const icons = (styles: string) => (
+    <div
+      className={`flex flex-row items-center justify-end gap-[17px] ${styles}`}
+    >
+      <LeftArrow
+        className='cursor-pointer'
+        onClick={() => sliderRef.current?.slickPrev()}
+      />
+      <RightArrow
+        className='cursor-pointer'
+        onClick={() => sliderRef.current?.slickNext()}
+      />
+    </div>
+  );
 
   return (
-    <div>
-      <div className='flex flex-row items-center justify-end gap-[17px]'>
-        <LeftArrow onClick={() => sliderRef.current?.slickPrev()} />
-        <RightArrow onClick={() => sliderRef.current?.slickNext()} />
-      </div>
+    <>
+      {iconsPosition === 'topRight' && icons('justify-end')}
       <SlickSlider ref={sliderRef} {..._settings}>
         {children}
       </SlickSlider>
-    </div>
+      {iconsPosition === 'bottomCenter' && icons('justify-center mt-[30px]')}
+    </>
   );
 };
 

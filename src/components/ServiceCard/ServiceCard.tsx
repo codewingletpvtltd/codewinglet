@@ -32,7 +32,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 
     <Typography
       variant='body2'
-      className='text-left text-lightBlack line-clamp-5 md:text-subtitle2'
+      className='text-left text-lightBlack line-clamp-3 text-subtitle2 leading-[20px] md:text-body2 md:font-400 md:leading-[30px]'
     >
       {children}
     </Typography>

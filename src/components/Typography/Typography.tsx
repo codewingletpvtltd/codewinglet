@@ -98,7 +98,19 @@ const Typography: React.FC<TypographyProps> = forwardRef(
             {children}
           </p>
         );
-
+      case 'subtitle2':
+        return (
+          <p
+            ref={ref}
+            className={getClassNames(
+              'text-subtitle2 min-h-subtitle2',
+              className
+            )}
+            {...rest}
+          >
+            {children}
+          </p>
+        );
       default:
         return (
           <p
