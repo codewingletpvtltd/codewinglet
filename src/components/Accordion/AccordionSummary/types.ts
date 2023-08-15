@@ -5,5 +5,6 @@ export interface AccordionSummaryProps {
   expandedIcon?: ReactNode;
   closedIcon?: ReactNode;
   iconPosition?: string;
+  className?: string;
   id: string | null;
 }

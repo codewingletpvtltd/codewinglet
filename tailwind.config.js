@@ -2,6 +2,9 @@
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
+    container: {
+      center: true,
+    },
     extend: {
       borderRadius: {
         10: '10px',
@@ -53,8 +56,6 @@ module.exports = {
       lightGray: '#F3EFF3',
       error: '#F44336',
       aqua: '#CAD5DF',
-      darkGray: '#506B82',
-      lightBlue: '#0278BE',
       lightOrange: '#FEF2EF',
       culturedWhite: '#F4F5F9',
       lightGreen: '#ECF8F0',
