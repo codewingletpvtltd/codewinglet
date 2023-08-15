@@ -35,7 +35,7 @@ const Slider: FC<SliderProps> = ({
       <SlickSlider ref={sliderRef} {..._settings}>
         {children}
       </SlickSlider>
-      {iconsPosition === 'bottomCenter' && icons('justify-center mt-[30px]')}
+      {iconsPosition === 'bottomCenter' && icons('justify-center')}
     </>
   );
 };

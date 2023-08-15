@@ -5,7 +5,7 @@ import { ButtonProps } from './types';
 
 const Button: React.FC<ButtonProps> = ({ children, ...rest }) => (
   <button
-    className='group relative transition-all text-primary  justify-center items-center duration-[0.2s] flex ease-[ease] px-[13px] border-[none] before:content-[""] before:absolute before:block lg:h-9 lg:before:w-9 lg:before:h-9 xs:before:w-8  xs:before:h-8 before:transition-all before:duration-[0.3s] before:ease-[ease] before:rounded-[50px] before:left-0 before:top-0 before:bg-lightBlue before:opacity-20 hover:before:w-full active:scale-95 sm:before:h-[31px] sm:before:w-[31px] '
+    className='group relative transition-all text-primary before:bg-primary  justify-center items-center duration-[0.2s] flex ease-[ease] px-[13px] border-[none] before:content-[""] before:w-[31px] before:h-[31px] before:absolute before:block lg:h-9 lg:before:w-9 lg:before:h-9 before:transition-all before:duration-[0.3s] before:ease-[ease] before:rounded-[50px] before:left-0 before:top-0 before:bg-lightBlue before:opacity-20 hover:before:w-full active:scale-95 sm:before:h-[31px] sm:before:w-[31px] '
     {...rest}
   >
     <Typography

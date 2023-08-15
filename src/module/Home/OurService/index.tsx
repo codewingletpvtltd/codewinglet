@@ -17,6 +17,7 @@ const OurService = () => {
           title='Our Services'
           description='Optimized Custom Software Solutions to Empower Your Niche and Strategic Business Growth'
           highlight={[0]}
+          className='mx-[12px]'
         />
         <Slider
           settings={{ initialSlide: 1 }}
@@ -26,7 +27,7 @@ const OurService = () => {
             const icon = (
               <div
                 className={getClassNames(
-                  'h-[48px] w-[48px] md:h-[58px] md:w-[58px] flex items-center justify-center rounded-[50%]',
+                  'h-[48px] min-w-[48px] md:h-[58px] md:min-w-[58px] flex items-center justify-center rounded-[50%]',
                   service.iconBgColor
                 )}
               >
@@ -38,7 +39,7 @@ const OurService = () => {
                 key={`service-${index}`}
                 title={service.title}
                 icon={icon}
-                className='py-[27px] px-[23px] !w-[calc(100%-24px)] !h-[calc(100%-30px)] !flex self-center bg-white'
+                className='py-[27px] px-[23px] !w-[calc(100%-24px)] !h-[calc(100%-30px)] !flex self-center !my-[30px] !mx-[12px] bg-white'
                 buttonText='Read More'
               >
                 {service.content}

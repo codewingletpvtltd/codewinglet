@@ -7,6 +7,7 @@ const SectionHeader: React.FC<TitleDescriptionProps> = ({
   highlight = [],
   title,
   description,
+  className = '',
 }) => {
   const titleWords = highlight
     ? title.split(' ').map((word, index) => {
@@ -29,7 +30,11 @@ const SectionHeader: React.FC<TitleDescriptionProps> = ({
     : title;
 
   return (
-    <div className='flex justify-center flex-col gap-[9px] md:gap-[5px] xl:gap-[15px]'>
+    <div
+      className={getClassNames(
+        `flex justify-center flex-col gap-[9px] md:gap-[5px] xl:gap-[15px] ${className}`
+      )}
+    >
       <Typography
         variant='h4'
         className='flex flex-wrap items-baseline text-primary text-[22px] md:text-[32px] lg:text-[40px] xl:text-[50px] font-300'
