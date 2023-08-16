@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { BackgroundCircle } from '@codewinglet/assets';
 import SectionHeader from '../SectionHeader/SectionHeader';
-import { Header } from './components';
+import { Heading } from './components';
 import { portfolio } from './data';
 
 const OurPortfolio = () => (
@@ -16,7 +16,7 @@ const OurPortfolio = () => (
       <div className='grid grid-cols-1 md:grid-cols-2 md:gap-[23px]'>
         {portfolio.map((data, index) => (
           <div key={`portfolio-${data.id}-${index}`}>
-            <Header title={data.title} description={data.description} />
+            <Heading title={data.title} description={data.description} />
             <Image
               src={data.image}
               alt='portfolio image'
