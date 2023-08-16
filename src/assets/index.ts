@@ -11,3 +11,4 @@ export { default as Arrow } from './icons/Arrow';
 export { default as LeftArrow } from './icons/LeftArrow';
 export { default as RightArrow } from './icons/RightArrow';
 export { default as HighlightArrow } from './icons/HighlightArrow';
+export { default as BackgroundCircle } from './icons/BackgroundCircle';

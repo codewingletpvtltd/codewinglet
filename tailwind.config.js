@@ -6,6 +6,11 @@ module.exports = {
       center: true,
     },
     extend: {
+      maxWidth: {
+        'screen-2xl': '1270px',
+        'screen-xl': '1109px',
+        'screen-lg': '952px',
+      },
       borderRadius: {
         10: '10px',
       },
