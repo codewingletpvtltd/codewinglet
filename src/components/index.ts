@@ -8,3 +8,4 @@ export { default as Footer } from './Footer';
 export { default as ServiceCard } from './ServiceCard';
 export { default as Slider } from './Slider';
 export { default as TypeAnimation } from './TypeAnimation';
+export { default as OurPortfolio } from './OurPortfolio';

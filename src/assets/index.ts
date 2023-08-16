@@ -10,7 +10,4 @@ export { default as PlusIcon } from './icons/PlusIcon';
 export { default as Arrow } from './icons/Arrow';
 export { default as LeftArrow } from './icons/LeftArrow';
 export { default as RightArrow } from './icons/RightArrow';
-export { default as FooterCircleIcon } from './icons/FooterCircleIcon';
-export { default as FooterSliceIcon } from './icons/FooterSliceIcon';
-export { default as FooterTriangleIcon } from './icons/FooterTriangleIcon';
 export { default as HighlightArrow } from './icons/HighlightArrow';
