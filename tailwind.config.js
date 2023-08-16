@@ -11,6 +11,9 @@ module.exports = {
         'screen-xl': '1109px',
         'screen-lg': '952px',
       },
+      container: {
+        center: true,
+      },
       borderRadius: {
         10: '10px',
       },
@@ -19,10 +22,20 @@ module.exports = {
           '0%': { transform: 'rotate(2deg)' },
           '100%': { transform: 'rotate(-2deg)' },
         },
+        odd: {
+          '0%': { opacity: 0.5 },
+          '100%': { opacity: 1 },
+        },
+        // technologyAnimation: {
+        //   '100%': { opacity: 0.75 },
+        // },
       },
       animation: {
         swing: 'swing ease-in-out 0.8s infinite alternate',
+        // technologyAnimation:
+        //   'technologyAnimation ease-in-out 0.8s infinite alternate',
       },
+
       minHeight: {
         h1: '68px',
         h2: '62px',
@@ -50,6 +63,7 @@ module.exports = {
       error: '#F44336',
       aqua: '#CAD5DF',
       lightOrange: '#FEF2EF',
+      aliceBlue: '#F8FCFF',
       lightBlue: '#F4FAFF',
     },
     fontWeight: {

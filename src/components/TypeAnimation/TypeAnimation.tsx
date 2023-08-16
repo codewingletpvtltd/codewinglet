@@ -1,5 +1,6 @@
 'use client';
 import { HTMLAttributes, MutableRefObject, forwardRef, useEffect } from 'react';
+import { getClassNames } from '@codewinglet/utils';
 import Typography from '../Typography/Typography';
 import {
   ElementByTypographyVariant,
@@ -25,6 +26,7 @@ const TypeAnimation = forwardRef<
       repeat = 'infinity',
       speed = DEFAULT_SPEED,
       wordDelay = DEFAULT_WORD_DELAY,
+      className = '',
     },
     ref
   ) => {
@@ -48,7 +50,7 @@ const TypeAnimation = forwardRef<
 
     return (
       <Typography
-        className='typing-cursor text-primary'
+        className={getClassNames('typing-cursor text-primary', className)}
         variant={variant}
         ref={textRef}
       />

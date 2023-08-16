@@ -1,6 +1,7 @@
 import React from 'react';
 import { Metadata } from 'next';
 import './globals.css';
+import Link from 'next/link';
 import { Footer, OurPortfolio, Consultant } from '@codewinglet/components';
 
 export const metadata: Metadata = {
@@ -17,6 +18,9 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className='font-primary'>
+        <div className='h-[90px]'>
+          <Link href='/technology/reactjs-development-company'>React js</Link>
+        </div>
         {children}
         <OurPortfolio />
         <Consultant />
