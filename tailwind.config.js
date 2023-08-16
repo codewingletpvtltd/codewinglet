@@ -26,16 +26,10 @@ module.exports = {
           '0%': { opacity: 0.5 },
           '100%': { opacity: 1 },
         },
-        // technologyAnimation: {
-        //   '100%': { opacity: 0.75 },
-        // },
       },
       animation: {
         swing: 'swing ease-in-out 0.8s infinite alternate',
-        // technologyAnimation:
-        //   'technologyAnimation ease-in-out 0.8s infinite alternate',
       },
-
       minHeight: {
         h1: '68px',
         h2: '62px',
