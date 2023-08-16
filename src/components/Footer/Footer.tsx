@@ -141,7 +141,7 @@ const Footer = () => (
       </div>
     </div>
     <hr className='mb-8 mt-10 border-lightBlack' />
-    <div className='max-w-screen-xl mx-auto'>
+    <div className='max-w-screen-xl md:mx-8 xl:mx-auto'>
       <div className='flex justify-between lg:flex-row flex-col'>
         <Typography
           variant='subtitle2'

@@ -50,6 +50,7 @@ module.exports = {
       error: '#F44336',
       aqua: '#CAD5DF',
       lightOrange: '#FEF2EF',
+      lightBlue: '#F4FAFF',
     },
     fontWeight: {
       100: 100,

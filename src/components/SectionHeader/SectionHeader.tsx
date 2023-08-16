@@ -1,49 +1,22 @@
-import React, { Fragment } from 'react';
-import { getClassNames } from '@codewinglet/utils';
+import React from 'react';
 import Typography from '../Typography';
-import { TitleDescriptionProps } from './types';
+import { SectionHeaderProps } from './types';
 
-const SectionHeader: React.FC<TitleDescriptionProps> = ({
-  highlight = [],
+const SectionHeader: React.FC<SectionHeaderProps> = ({
   title,
   description,
-}) => {
-  const titleWords = highlight
-    ? title.split(' ').map((word, index) => {
-        const isBold = highlight.includes(index);
-        return (
-          <Fragment key={`highlighted-word-${index}`}>
-            <span
-              key={index}
-              className={getClassNames(
-                isBold ? 'font-[800]' : 'font-[300]',
-                'text-primary'
-              )}
-            >
-              {word}
-            </span>
-            &nbsp;
-          </Fragment>
-        );
-      })
-    : title;
-
-  return (
-    <div className='flex justify-center flex-col gap-[9px] md:gap-[5px] xl:gap-[15px]'>
-      <Typography
-        variant='h4'
-        className='flex flex-wrap items-baseline text-primary text-[22px] md:text-[32px] lg:text-[40px] xl:text-[50px] font-300'
-      >
-        {titleWords}
-      </Typography>
-      <Typography
-        variant='subtitle2'
-        className='text-lightBlack md:text-body2 md:w-[70%] lg:w-[40%]'
-      >
-        {description}
-      </Typography>
-    </div>
-  );
-};
-
+  headingClassName,
+}) => (
+  <div>
+    <Typography
+      variant='h4'
+      className={`text-primary text-[22px] md:text-[32px] lg:text-[40px] xl:text-[50px] font-300 leading-7 lg:leading-[62px] mb-4 ${headingClassName}`}
+    >
+      {title}
+    </Typography>
+    <Typography variant='subtitle2' className='text-lightBlack md:text-body2'>
+      {description}
+    </Typography>
+  </div>
+);
 export default React.memo(SectionHeader);

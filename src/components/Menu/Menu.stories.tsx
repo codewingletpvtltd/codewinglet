@@ -1,6 +1,6 @@
 import { StoryObj } from '@storybook/react';
 import React from 'react';
-import Logo from 'assets/reactJS.svg';
+import Logo from 'assets/hiring.svg';
 import Image from 'next/image';
 import Menu from '.';
 
