@@ -9,6 +9,7 @@ const COLORS = {
   error: '#F44336',
   aqua: '#CAD5DF',
   lightOrange: '#FEF2EF',
+  sky: '#ACD3EA',
 };
 
 export default COLORS;

@@ -1,9 +1,18 @@
+import { MutableRefObject } from 'react';
 import SlickSlider, { Settings } from 'react-slick';
 
+export type ArrowPosition = {
+  horizontal?: 'top' | 'bottom';
+  vertical?: 'left' | 'center' | 'right';
+};
 export interface SliderProps {
   children: React.ReactNode;
   settings?: Settings;
-  sliderRef?: SlickSlider;
-  onNextClick?: () => void;
-  onPrevClick?: () => void;
+  arrowPosition?: ArrowPosition;
+  className?: string;
+}
+
+export interface ArrowProps {
+  arrowPosition?: ArrowPosition;
+  sliderRef: MutableRefObject<SlickSlider | undefined>;
 }

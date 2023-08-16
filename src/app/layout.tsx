@@ -1,7 +1,11 @@
 import React from 'react';
 import { Metadata } from 'next';
 import './globals.css';
-import { Footer, OurPortfolio } from '@codewinglet/components';
+import {
+  ClientTestimonials,
+  Footer,
+  OurPortfolio,
+} from '@codewinglet/components';
 
 export const metadata: Metadata = {
   title: 'Top Software Development Company India - Code Winglet Pvt. Ltd.',
@@ -19,6 +23,7 @@ export default function RootLayout({
       <body className='font-primary'>
         {children}
         <OurPortfolio />
+        <ClientTestimonials />
         <Footer />
       </body>
     </html>
