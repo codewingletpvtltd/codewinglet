@@ -10,6 +10,7 @@ const COLORS = {
   aqua: '#CAD5DF',
   lightOrange: '#FEF2EF',
   sky: '#ACD3EA',
+  lightBlue: '#F4FAFF',
 };
 
 export default COLORS;

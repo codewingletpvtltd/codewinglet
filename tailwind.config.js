@@ -51,6 +51,7 @@ module.exports = {
       aqua: '#CAD5DF',
       lightOrange: '#FEF2EF',
       sky: '#ACD3EA',
+      lightBlue: '#F4FAFF',
     },
     fontWeight: {
       100: 100,

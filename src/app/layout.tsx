@@ -5,6 +5,7 @@ import {
   ClientTestimonials,
   Footer,
   OurPortfolio,
+  Consultant,
 } from '@codewinglet/components';
 
 export const metadata: Metadata = {
@@ -24,6 +25,7 @@ export default function RootLayout({
         {children}
         <OurPortfolio />
         <ClientTestimonials />
+        <Consultant />
         <Footer />
       </body>
     </html>

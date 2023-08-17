@@ -1,7 +1,7 @@
-export interface TitleDescriptionProps {
-  title: string;
-  highlight?: number[];
+export interface SectionHeaderProps {
+  title: React.ReactNode;
   description?: string;
-  className?: string;
-  textWrap?: boolean | false;
+  headingClassName?: string;
+  descriptionTextWrap?: boolean;
+  descriptionClassName?: string;
 }

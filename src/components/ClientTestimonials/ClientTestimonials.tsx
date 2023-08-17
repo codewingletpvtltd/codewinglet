@@ -16,10 +16,14 @@ const ClientTestimonials = () => (
   <div className='max-w-screen-xl mx-[20px] my-[50px] md:mx-[38px] xl:mx-auto relative'>
     <BackgroundTriangle className='invisible xl:visible absolute right-[-10%] top-[15px] 2xl:right-[-55%] 2xl:h-[98px] 2xl:w-[111px]' />
     <SectionHeader
-      title='Client Testimonials'
+      title={
+        <>
+          <strong className='font-[800]'>Client</strong> Testimonials
+        </>
+      }
       description='Clients feedback'
-      highlight={[0]}
-      className='items-center'
+      headingClassName='text-center'
+      descriptionClassName='text-center'
     />
     <div className='grid grid-cols-1 md:grid-cols-2 gap-[30px] mt-[93px]'>
       <div className='relative'>

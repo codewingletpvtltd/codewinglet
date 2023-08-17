@@ -1,15 +1,15 @@
-import { addons } from "@storybook/addons";
-import { create } from "@storybook/theming";
+import { addons } from '@storybook/addons';
+import { create } from '@storybook/theming';
 
 const theme = create({
-  base: "light",
+  base: 'light',
 
-  colorPrimary: "#0278BE",
-  colorSecondary: "#02457C",
+  colorPrimary: '#0278BE',
+  colorSecondary: '#02457C',
 
-  brandTitle: "CodeWinglet",
-  brandUrl: "https://www.codewinglet.com/",
-  brandImage: "/logo.svg",
+  brandTitle: 'CodeWinglet',
+  brandUrl: 'https://www.codewinglet.com/',
+  brandImage: '/company_logo_white.svg',
 });
 
 addons.setConfig({

@@ -1,10 +1,11 @@
-import type { Preview } from "@storybook/react";
-import React from "react";
-import "../src/app/globals.css";
+import type { Preview } from '@storybook/react';
+import React from 'react';
+
+import '../src/app/globals.css';
 
 const preview: Preview = {
   parameters: {
-    actions: { argTypesRegex: "^on[A-Z].*" },
+    actions: { argTypesRegex: '^on[A-Z].*' },
     controls: {
       matchers: {
         color: /(background|color)$/i,
@@ -16,7 +17,7 @@ const preview: Preview = {
 
 export const decorators = [
   (Story) => (
-    <div className="font-primary">
+    <div className='font-primary'>
       <Story />
     </div>
   ),

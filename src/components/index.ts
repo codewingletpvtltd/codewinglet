@@ -10,3 +10,4 @@ export { default as Slider } from './Slider';
 export { default as TypeAnimation } from './TypeAnimation';
 export { default as OurPortfolio } from './OurPortfolio';
 export { default as ClientTestimonials } from './ClientTestimonials';
+export { default as Consultant } from './Consultant';

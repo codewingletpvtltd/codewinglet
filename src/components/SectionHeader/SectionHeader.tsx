@@ -1,59 +1,35 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { getClassNames } from '@codewinglet/utils';
 import Typography from '../Typography';
-import { TitleDescriptionProps } from './types';
+import { SectionHeaderProps } from './types';
 
-const SectionHeader: React.FC<TitleDescriptionProps> = ({
-  highlight = [],
+const SectionHeader: React.FC<SectionHeaderProps> = ({
   title,
   description,
-  className = '',
-  textWrap,
-}) => {
-  const titleWords = highlight
-    ? title.split(' ').map((word, index) => {
-        const isBold = highlight.includes(index);
-        return (
-          <Fragment key={`highlighted-word-${index}`}>
-            <span
-              key={index}
-              className={getClassNames(
-                isBold ? 'font-[800]' : 'font-[300]',
-                'text-primary'
-              )}
-            >
-              {word}
-            </span>
-            &nbsp;
-          </Fragment>
-        );
-      })
-    : title;
-
-  return (
-    <div
+  headingClassName = '',
+  descriptionTextWrap,
+  descriptionClassName = '',
+}) => (
+  <div>
+    <Typography
+      variant='h4'
       className={getClassNames(
-        'flex justify-center flex-col gap-[9px] md:gap-[5px] xl:gap-[15px]',
-        className
+        'text-primary text-[22px] md:text-[32px] lg:text-[40px] xl:text-[50px] font-300 leading-7 lg:leading-[62px] mb-41',
+        headingClassName
       )}
     >
-      <Typography
-        variant='h4'
-        className='flex flex-wrap items-baseline text-primary text-[22px] md:text-[32px] lg:text-[40px] xl:text-[50px] font-300'
-      >
-        {titleWords}
-      </Typography>
-      <Typography
-        variant='subtitle2'
-        className={getClassNames(
-          'text-lightBlack md:text-body2',
-          textWrap ? 'md:w-[70%] lg:w-[40%]' : ''
-        )}
-      >
-        {description}
-      </Typography>
-    </div>
-  );
-};
-
+      {title}
+    </Typography>
+    <Typography
+      variant='subtitle2'
+      className={getClassNames(
+        'text-lightBlack md:text-body2',
+        descriptionTextWrap ? 'md:w-[70%] lg:w-[40%]' : '',
+        descriptionClassName
+      )}
+    >
+      {description}
+    </Typography>
+  </div>
+);
 export default React.memo(SectionHeader);
