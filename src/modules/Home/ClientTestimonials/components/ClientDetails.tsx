@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import { FC } from 'react';
 import ClientImage from '@codewinglet/assets/clientImage.svg';
-import { ReviewProps } from '../../types';
-import Typography from '../../../Typography';
+import { ReviewProps } from '../types';
+import Typography from '../../../../components/Typography';
 
 const ClientDetails: FC<ReviewProps> = ({ name, designation }) => (
   <div className='mt-[39px] flex row items-center gap-[14px]'>

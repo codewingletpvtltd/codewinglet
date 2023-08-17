@@ -5,12 +5,12 @@ import {
   ClosingQuote,
 } from '@codewinglet/assets';
 import Client from '@codewinglet/assets/client.svg';
-import SectionHeader from '../SectionHeader/SectionHeader';
-import Typography from '../Typography/Typography';
-import Slider from '../Slider/Slider';
+import SectionHeader from '../../../components/SectionHeader/SectionHeader';
+import Typography from '../../../components/Typography/Typography';
+import Slider from '../../../components/Slider/Slider';
 import { testimonials } from './constants';
-import { ClientDetails } from './components';
 import { slickSetting } from './config';
+import ClientDetails from './components/ClientDetails';
 
 const ClientTestimonials = () => (
   <div className='max-w-screen-xl mx-[20px] my-[50px] md:mx-[38px] xl:mx-auto relative'>

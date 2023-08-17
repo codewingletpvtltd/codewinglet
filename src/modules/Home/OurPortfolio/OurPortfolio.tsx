@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import { BackgroundCircle } from '@codewinglet/assets';
-import SectionHeader from '../SectionHeader/SectionHeader';
-import { Heading } from './components';
+import SectionHeader from '../../../components/SectionHeader/SectionHeader';
 import { portfolio } from './data';
+import Heading from './components/Heading';
 
 const OurPortfolio = () => (
   <div className='my-[50px] mx-[20px] md:mx-[38px] max-w-screen-xl xl:mx-auto'>
