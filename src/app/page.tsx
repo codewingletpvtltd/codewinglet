@@ -1,3 +1,15 @@
+import {
+  ClientTestimonials,
+  Consultant,
+  OurPortfolio,
+} from '@codewinglet/components';
+
 export default function Home() {
-  return <div>Home Page</div>;
+  return (
+    <div>
+      <OurPortfolio />
+      <ClientTestimonials />
+      <Consultant />
+    </div>
+  );
 }

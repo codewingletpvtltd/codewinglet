@@ -14,7 +14,7 @@ import { slickSetting } from './config';
 
 const ClientTestimonials = () => (
   <div className='max-w-screen-xl mx-[20px] my-[50px] md:mx-[38px] xl:mx-auto relative'>
-    <BackgroundTriangle className='invisible xl:visible absolute right-[-10%] top-[15px] 2xl:right-[-55%] 2xl:h-[98px] 2xl:w-[111px]' />
+    <BackgroundTriangle className='invisible xl:visible absolute right-[-100px] top-[15px] 2xl:right-[-300px] 2xl:h-[98px] 2xl:w-[111px]' />
     <SectionHeader
       title={
         <>
@@ -27,7 +27,7 @@ const ClientTestimonials = () => (
     />
     <div className='grid grid-cols-1 md:grid-cols-2 gap-[30px] mt-[93px]'>
       <div className='relative'>
-        <BackgroundDonut className='invisible xl:visible absolute top-[30%] left-[-25%] 2xl:left-[-115%] 2xl:h-[114px] 2xl:w-[114px]' />
+        <BackgroundDonut className='invisible xl:visible absolute top-[30%] left-[-120px] 2xl:left-[-240px] 2xl:h-[114px] 2xl:w-[114px]' />
         <ClosingQuote />
         <Slider
           settings={slickSetting}
