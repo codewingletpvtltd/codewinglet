@@ -5,18 +5,33 @@ import HiringBoardBg from 'assets/hiringBoard.svg';
 import { HiringBoardProps } from './types';
 
 const HiringBoard: FC<HiringBoardProps> = ({ children, onClick }) => (
-  <div>
-    <Image src={HiringImg} alt='Hiring Image' className='ml-[1.9rem]' />
-    <div className='content-[""] absolute w-[10px] h-[10px] top-[83px] left-[78px] z-[5] rounded-[50%] bg-primary border-[2px]' />
-    <figure className='absolute top-[4.8rem] left-[20px] animate-swing transform origin-[center_-30px] float-left after:content-[""] after:absolute after:w-[44px] after:h-[44px] after:border-t-[2px] after:border-t-black after:border-l-[2px] after:border-l-black after:top-[18px] after:left-[46px] after:z-0 after:rotate-[35deg]'>
-      <Image src={HiringBoardBg} alt='Hiring Board' height={150} width={150} />
-      <button
-        className='absolute top-[30%] left-[0] p-2 rotate-[-15deg] flex items-center justify-center text-white'
-        onClick={onClick}
-      >
-        {children}
-      </button>
-    </figure>
+  <div className='relative z-[-2]'>
+    <Image
+      src={HiringImg}
+      alt='Hiring Image'
+      className=' w-[107px] h-[53px] relative z-[-2]'
+    />
+    {/* content-[""] w-[10px] h-[10px] top-[83px] left-[78px] z-[5] rounded-[50%] bg-primary border-[2px] */}
+    <div className='relative h-[75.6px] bg-primary'>
+      {/* animate-swing */}
+      {/* <div className='contents-[""] h-[6px] w-[6px] bg-primary absolute rounded-full border-[2px] left-[44px] top-[-11px]'></div> */}
+      <div className='h-[6px] w-[6px] ml-[17px] bg-primary rounded-full border-[2px]'></div>
+      <div className='inline-block h-[16px] w-[2px] bg-primary'></div>
+      <div className='inline-block h-[16px] w-[2px] bg-primary'></div>
+      <div className='relative w-[98px] h-auto bg-black'>
+        <Image
+          src={HiringBoardBg}
+          alt='Hiring Board'
+          className='w-[98px] h-[auto]'
+        />
+        <button
+          className='absolute p-[9px] text-[11px] uppercase top-[30%] left-[0] rotate-[-15deg] flex items-center justify-center text-white'
+          onClick={onClick}
+        >
+          {children}
+        </button>
+      </div>
+    </div>
   </div>
 );
 

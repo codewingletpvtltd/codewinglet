@@ -1,0 +1,13 @@
+export { default as LeftLineSVG } from './waveLines/LeftLineSVG';
+export { default as LeftLineMediumSVG } from './waveLines/LeftLineMediumSVG';
+export { default as RightLineSVG } from './waveLines/RightLineSVG';
+export { default as IllustrationSVG } from './IllustrationSVG';
+export { default as ArrowRightSVG } from './ArrowRightSVG';
+export { default as reactSVG } from './react.svg';
+export { default as vuePNG } from './vue.png';
+export { default as angularPNG } from './angular.png';
+export { default as nodeJSSVG } from './nodeJS.svg';
+export { default as GraphQLPNG } from './graphQL.png';
+export { default as nextJSPNG } from './nextJS.png';
+export { default as javascriptPNG } from './javascript.png';
+export { default as typescript } from './typescript.png';

@@ -11,6 +11,9 @@ module.exports = {
         'screen-xl': '1109px',
         'screen-lg': '952px',
       },
+      container: {
+        center: true,
+      },
       borderRadius: {
         10: '10px',
       },
@@ -18,6 +21,10 @@ module.exports = {
         swing: {
           '0%': { transform: 'rotate(2deg)' },
           '100%': { transform: 'rotate(-2deg)' },
+        },
+        odd: {
+          '0%': { opacity: 0.5 },
+          '100%': { opacity: 1 },
         },
       },
       animation: {
@@ -50,6 +57,7 @@ module.exports = {
       error: '#F44336',
       aqua: '#CAD5DF',
       lightOrange: '#FEF2EF',
+      aliceBlue: '#F8FCFF',
       sky: '#ACD3EA',
       lightBlue: '#F4FAFF',
     },

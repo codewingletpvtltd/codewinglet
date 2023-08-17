@@ -13,4 +13,5 @@ export type TypeAnimationProps = {
   repeat?: 'infinity' | number;
   speed?: number;
   wordDelay?: number;
+  className?: string;
 };
