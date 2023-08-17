@@ -1,7 +1,7 @@
 import React from 'react';
-import Typography from '../../../Typography';
-import { useMenuContext } from '../../context/MenuContext';
-import { MenuItemTextProps } from '../../types';
+import Typography from '../../Typography';
+import { useMenuContext } from '../context/MenuContext';
+import { MenuItemTextProps } from '../types';
 
 const MenuItemText: React.FC<MenuItemTextProps> = ({ children, className }) => {
   const menuContext = useMenuContext();
