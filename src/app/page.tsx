@@ -1,15 +1,5 @@
-import {
-  ClientTestimonials,
-  Consultant,
-  OurPortfolio,
-} from '@codewinglet/components';
+import { HomeModule } from '@codewinglet/modules';
 
 export default function Home() {
-  return (
-    <div>
-      <OurPortfolio />
-      <ClientTestimonials />
-      <Consultant />
-    </div>
-  );
+  return <HomeModule />;
 }

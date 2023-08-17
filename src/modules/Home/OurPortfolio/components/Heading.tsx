@@ -1,8 +1,8 @@
 import { FC } from 'react';
 import { Arrow } from '@codewinglet/assets';
 import { COLORS } from '@codewinglet/constants';
-import Typography from '../../../Typography';
-import { HeadingProps } from '../../types';
+import Typography from '../../../../components/Typography';
+import { HeadingProps } from '../types';
 
 const Heading: FC<HeadingProps> = ({ title, description }) => (
   <div className='flex row items-center justify-between mt-[29px] mb-[17px]'>
