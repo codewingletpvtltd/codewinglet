@@ -1,9 +1,15 @@
-import { HeroSection } from '@codewinglet/modules';
+import {
+  ClientTestimonials,
+  Consultant,
+  OurPortfolio,
+} from '@codewinglet/components';
 
 export default function Home() {
   return (
     <div>
-      <HeroSection />
+      <OurPortfolio />
+      <ClientTestimonials />
+      <Consultant />
     </div>
   );
 }

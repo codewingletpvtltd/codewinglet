@@ -16,4 +16,8 @@ export { default as RectangleSVG } from './RectangleSVG';
 
 export * from './heroSection';
 export { default as BackgroundCircle } from './icons/BackgroundCircle';
+export { default as ClosingQuote } from './icons/ClosingQuote';
+export { default as BackgroundBubble } from './icons/BackgroundBubble';
+export { default as BackgroundTriangle } from './icons/BackgroundTriangle';
+export { default as BackgroundDonut } from './icons/BackgroundDonut';
 export { default as Calender } from './icons/Calender';

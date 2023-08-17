@@ -1,5 +1,6 @@
 import { FC } from 'react';
-import { RightArrow } from '@codewinglet/assets';
+import { Arrow } from '@codewinglet/assets';
+import { COLORS } from '@codewinglet/constants';
 import Typography from '../../../Typography';
 import { HeadingProps } from '../../types';
 
@@ -13,7 +14,10 @@ const Heading: FC<HeadingProps> = ({ title, description }) => (
         {description}
       </Typography>
     </div>
-    <RightArrow className='hover:rotate-[-30deg] hover:transition-transform' />
+    <Arrow
+      className='hover:rotate-[-30deg] hover:transition-transform'
+      fill={COLORS.black}
+    />
   </div>
 );
 
