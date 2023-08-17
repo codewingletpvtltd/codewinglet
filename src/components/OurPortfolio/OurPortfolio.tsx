@@ -13,6 +13,7 @@ const OurPortfolio = () => (
         </>
       }
       description='Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+      descriptionTextWrap
     />
     <div className='relative'>
       <BackgroundCircle className='invisible absolute top-[32%] xl:visible xl:left-[-12%] 2xl:left-[-20%] 2xl:w-[148px] 2xl:h-[103px]' />

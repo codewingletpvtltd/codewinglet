@@ -1,30 +1,33 @@
 'use client';
-import { FC, memo } from 'react';
+import { FC, memo, useRef } from 'react';
 import SlickSlider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { LeftArrow, RightArrow } from '@codewinglet/assets';
 import { SliderProps } from './types';
 import { defaultSettings } from './config';
+import { _arrowPosition } from './constants';
+import { Arrows } from './components';
 
 const Slider: FC<SliderProps> = ({
   children,
   settings,
-  sliderRef,
-  onPrevClick,
-  onNextClick,
+  arrowPosition = _arrowPosition,
+  className = '',
 }) => {
   const _settings = defaultSettings(settings);
+  const ref = useRef<SlickSlider>();
 
   return (
     <div>
-      <div className='flex flex-row items-center justify-end gap-[17px]'>
-        <LeftArrow onClick={onPrevClick} />
-        <RightArrow onClick={onNextClick} />
-      </div>
-      <SlickSlider ref={sliderRef} {..._settings}>
+      {arrowPosition.horizontal !== 'bottom' && (
+        <Arrows sliderRef={ref} arrowPosition={arrowPosition} />
+      )}
+      <SlickSlider ref={ref} {..._settings} className={className}>
         {children}
       </SlickSlider>
+      {arrowPosition.horizontal === 'bottom' && (
+        <Arrows sliderRef={ref} arrowPosition={arrowPosition} />
+      )}
     </div>
   );
 };

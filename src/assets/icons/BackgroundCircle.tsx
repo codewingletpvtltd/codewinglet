@@ -18,8 +18,8 @@ const Arrow: FC<SVGProps<SVGSVGElement>> = (props) => (
       <path
         d='M11.4681 48.5869C-1.15602 35.9629 -1.15602 15.6241 11.4681 3L57.5226 48.5869C44.8985 61.211 24.0921 61.211 11.4681 48.5869Z'
         stroke={COLORS.primary}
-        stroke-width='3'
-        stroke-miterlimit='10'
+        strokeWidth='3'
+        strokeMiterlimit='10'
       />
     </g>
   </svg>
