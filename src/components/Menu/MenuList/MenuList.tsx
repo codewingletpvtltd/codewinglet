@@ -1,6 +1,6 @@
 import React from 'react';
-import { useMenuContext } from '../../context/MenuContext';
-import { MenuListProps } from '../../types';
+import { useMenuContext } from '../context/MenuContext';
+import { MenuListProps } from '../types';
 
 const MenuList: React.FC<MenuListProps> = ({ children, className = '' }) => {
   const menuContext = useMenuContext();

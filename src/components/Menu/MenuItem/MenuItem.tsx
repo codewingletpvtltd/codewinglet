@@ -1,6 +1,6 @@
 import React from 'react';
-import { useMenuContext } from '../../context/MenuContext';
-import { MenuItemProps } from '../../types';
+import { useMenuContext } from '../context/MenuContext';
+import { MenuItemProps } from '../types';
 
 const MenuItem: React.FC<MenuItemProps> = ({
   children,
