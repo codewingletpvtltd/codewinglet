@@ -38,3 +38,10 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - We are using default [tailwind](https://tailwindcss.com/docs/responsive-design#working-mobile-first) breakpoints.
 - For responsive we have container and subcontainer classes.
 - In figma we don't have the same breakpoints as in the tailwind. so, we need to see closest breakpoints in the tailwind. for example, In the figma we have the 1440px breakpoint so according to tailwind we should use the 1280px
+
+## folder structure
+
+- If we have a common component then we need to create that in components folder.
+- We are making all pages JSX inside the module folder.
+  - If any case we have a component for that page's module then we create one component folder and make only index.tsx and write JSX inside it. don't need to create another file for the same component name.
+    For example,
