@@ -15,6 +15,7 @@ export { default as StarsSVG } from './StarsSVG';
 export { default as RectangleSVG } from './RectangleSVG';
 
 export * from './heroSection';
+export * from './ourClient';
 export { default as BackgroundCircle } from './icons/BackgroundCircle';
 export { default as ClosingQuote } from './icons/ClosingQuote';
 export { default as BackgroundBubble } from './icons/BackgroundBubble';
