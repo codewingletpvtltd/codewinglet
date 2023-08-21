@@ -16,7 +16,7 @@ const OurPortfolio = () => (
       descriptionTextWrap
     />
     <div className='relative'>
-      <BackgroundCircle className='invisible absolute top-[32%] xl:visible xl:left-[-12%] 2xl:left-[-20%] 2xl:w-[148px] 2xl:h-[103px]' />
+      <BackgroundCircle className='invisible absolute top-[32%] 2xl:visible xl:left-[-12%] 2xl:left-[-20%] 2xl:w-[148px] 2xl:h-[103px]' />
       <div className='grid grid-cols-1 md:grid-cols-2 md:gap-[23px]'>
         {portfolio.map((data, index) => (
           <div key={`portfolio-${data.id}-${index}`}>
