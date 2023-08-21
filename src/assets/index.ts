@@ -24,3 +24,4 @@ export { default as Phone } from './icons/Phone';
 export { default as Email } from './icons/Email';
 
 export * from './heroSection';
+export * from './ourClient';

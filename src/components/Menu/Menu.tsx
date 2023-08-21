@@ -9,7 +9,10 @@ import {
 } from './types';
 import { MenuContext } from './context/MenuContext';
 import { getAnchorPosition } from './utils';
-import { MenuItem, MenuItemIcon, MenuItemText, MenuList } from './components';
+import { MenuItem } from './MenuItem';
+import { MenuItemIcon } from './MenuItemIcon';
+import { MenuItemText } from './MenuItemText';
+import { MenuList } from './MenuList';
 
 const Menu: React.FC<MenuProps> & {
   List: React.FC<MenuListProps>;
