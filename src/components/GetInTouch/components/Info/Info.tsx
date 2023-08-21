@@ -5,7 +5,7 @@ import { InfoProps } from '../../types';
 const Info: FC<InfoProps> = ({ icon, title, detail }) => (
   <div className='flex row'>
     {icon}
-    <div className='ml-[15px]'>
+    <div>
       <Typography variant='body2' className='font-[800]'>
         {title}
       </Typography>

@@ -1,4 +1,4 @@
-import { Consultant } from '@codewinglet/components';
+import { Consultant, GetInTouch } from '@codewinglet/components';
 import OurPortfolio from './OurPortfolio/OurPortfolio';
 import HeroSection from './HeroSection/HeroSection';
 import OurClient from './OurClient';
@@ -10,7 +10,7 @@ const Home = () => (
     <OurClient />
     {/* <GoogleMap /> */}
     {/* <ClientTestimonials /> */}
-    {/* <GetInTouch /> */}
+    <GetInTouch />
     <Consultant />
   </>
 );
