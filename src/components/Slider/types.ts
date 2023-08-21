@@ -1,4 +1,5 @@
-import { Settings } from 'react-slick';
+import { MutableRefObject } from 'react';
+import SlickSlider, { Settings } from 'react-slick';
 
 export type ArrowPosition = {
   horizontal?: 'top' | 'bottom';
@@ -7,5 +8,11 @@ export type ArrowPosition = {
 export interface SliderProps {
   children: React.ReactNode;
   settings?: Settings;
-  iconsPosition?: 'bottomCenter' | 'topRight';
+  arrowPosition?: ArrowPosition;
+  className?: string;
+}
+
+export interface ArrowProps {
+  arrowPosition?: ArrowPosition;
+  sliderRef: MutableRefObject<SlickSlider | undefined>;
 }

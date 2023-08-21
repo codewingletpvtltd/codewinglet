@@ -3,25 +3,39 @@ import { SectionHeader, ServiceCard, Slider } from '@codewinglet/components';
 import { getClassNames } from '@codewinglet/utils';
 import { BgWave, ServiceCircleIcon, StarIcon } from '@codewinglet/assets';
 import useScreenSize from '@codewinglet/hooks/useScreenSize';
-import { lg } from '../../../constants/mediaQueryConst';
+import { md } from '../../../constants/mediaQueryConst';
 import { services } from './utils';
 
 const OurService = () => {
-  const isLarge = useScreenSize(lg);
+  const isLarge = useScreenSize(md);
   return (
-    <div className='relative pt-[54px] pb-[70px] pl-[19px] pr-[15px] '>
-      <BgWave className='z-[-1] absolute top-0 bottom-0 left-0 h-[100%] w-[100%] ' />
+    <div
+      className={getClassNames(
+        'relative pt-[54px] pb-[70px] pl-[19px] pr-[15px]',
+        !isLarge ? 'bg-aliceBlue z-30' : ''
+      )}
+    >
+      {isLarge && (
+        <BgWave className='z-[-1] absolute top-0 bottom-0 left-0 h-[100%] w-[100%] ' />
+      )}
       <StarIcon className='absolute hidden md:block right-12 top-[69px] lg:w-[54px] lg:h-[53px] xl:w-[69px] xl:h-[69px] 2xl:w-[92px] 2xl:h-[91px] animate-spin' />
       <div className='lg:max-w-screen-lg xl:max-w-screen-xl mx-auto'>
         <SectionHeader
-          title='Our Services'
+          title={
+            <>
+              <strong className='font-[800]'>Our</strong> Services
+            </>
+          }
           description='Optimized Custom Software Solutions to Empower Your Niche and Strategic Business Growth'
-          highlight={[0]}
-          className='mx-[12px]'
+          descriptionTextWrap
         />
         <Slider
           settings={{ initialSlide: 1 }}
-          iconsPosition={isLarge ? 'topRight' : 'bottomCenter'}
+          arrowPosition={
+            isLarge
+              ? { horizontal: 'top', vertical: 'right' }
+              : { horizontal: 'bottom', vertical: 'center' }
+          }
         >
           {services.map((service, index) => {
             const icon = (
