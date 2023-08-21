@@ -11,4 +11,6 @@ export { default as TypeAnimation } from './TypeAnimation';
 export { default as OurPortfolio } from '../modules/Home/OurPortfolio';
 export { default as ClientTestimonials } from '../modules/Home/ClientTestimonials';
 export { default as Consultant } from './Consultant';
+export { default as GetInTouch } from './GetInTouch';
+export { default as Textarea } from './Textarea';
 export { default as GoogleMap } from './GoogleMap';

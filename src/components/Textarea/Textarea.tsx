@@ -1,11 +1,10 @@
 import React, { useId } from 'react';
 import { getClassNames } from '../../utils';
-import { TextFieldProps } from './types';
+import { TextareaProps } from './types';
 
-const TextField: React.FC<TextFieldProps> = ({
+const Textarea: React.FC<TextareaProps> = ({
   label,
   error = false,
-  type = 'text',
   labelClassName = '',
   helperText,
   disabled,
@@ -29,16 +28,16 @@ const TextField: React.FC<TextFieldProps> = ({
         </label>
       )}
       <div className='inline-block'>
-        <input
+        <textarea
           id={rest.id || inputId}
-          type={type}
           disabled={disabled}
           className={getClassNames(
-            'border-solid border h-[40px] px-[13px] rounded-10 w-[200px] text-subtitle2 font-400 focus:outline-none focus:border-primary',
+            'border-solid border px-[13px] pt-[10px] rounded-10 w-[200px] text-subtitle2 font-400 focus:outline-none focus:border-primary',
             error ? 'border-error' : 'border-gray',
             disabled ? 'pointer-events-none bg-gray' : '',
             fullWidth ? 'w-full' : ''
           )}
+          rows={3}
           {...rest}
         />
       </div>
@@ -53,4 +52,4 @@ const TextField: React.FC<TextFieldProps> = ({
   );
 };
 
-export default React.memo(TextField);
+export default React.memo(Textarea);

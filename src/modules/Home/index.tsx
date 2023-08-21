@@ -10,6 +10,7 @@ const Home = () => (
     <OurClient />
     {/* <GoogleMap /> */}
     {/* <ClientTestimonials /> */}
+    {/* <GetInTouch /> */}
     <Consultant />
   </>
 );
