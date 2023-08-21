@@ -1,6 +1,6 @@
-import Textarea from '../../../Textarea';
-import Button from '../../../Button';
-import TextField from '../../../TextField';
+import Textarea from '../../../../../components/Textarea';
+import Button from '../../../../../components/Button';
+import TextField from '../../../../../components/TextField';
 
 const Form = () => (
   <div className='grid md:grid-rows-2 gap-[20px] md:col-span-2'>

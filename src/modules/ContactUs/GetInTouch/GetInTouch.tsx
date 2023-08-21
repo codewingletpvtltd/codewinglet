@@ -1,4 +1,4 @@
-import SectionHeader from '../SectionHeader/SectionHeader';
+import SectionHeader from '../../../components/SectionHeader/SectionHeader';
 import { Form, Info } from './components';
 import { info } from './constants';
 
@@ -7,9 +7,9 @@ const GetInTouch = () => (
     <div className='md:col-span-1'>
       <SectionHeader
         title={
-          <>
+          <div className='mb-[10px]'>
             <strong className='font-[800]'>Get In</strong> Touch
-          </>
+          </div>
         }
         description="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
       />
