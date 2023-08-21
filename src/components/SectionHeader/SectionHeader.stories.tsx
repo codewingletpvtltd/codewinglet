@@ -17,6 +17,5 @@ export const HighlightedWords: StoryObj<typeof SectionHeader> = {
   args: {
     title: 'This is a title',
     description: 'This is a description',
-    highlight: [0],
   },
 };

@@ -6,7 +6,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import { SliderProps } from './types';
 import { defaultSettings } from './config';
 import { _arrowPosition } from './constants';
-import { Arrows } from './components';
+import { Arrows } from './Arrows';
 
 const Slider: FC<SliderProps> = ({
   children,
