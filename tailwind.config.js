@@ -14,6 +14,10 @@ module.exports = {
           '0%': { transform: 'rotate(2deg)' },
           '100%': { transform: 'rotate(-2deg)' },
         },
+        spin: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
         odd: {
           '0%': { opacity: 0.5 },
           '100%': { opacity: 1 },
@@ -21,6 +25,7 @@ module.exports = {
       },
       animation: {
         swing: 'swing ease-in-out 0.8s infinite alternate',
+        spin: 'spin 4s infinite linear',
       },
       minHeight: {
         h1: '68px',
@@ -37,9 +42,16 @@ module.exports = {
       boxShadow: {
         lg: '1px 1px 20px 0 rgba(0,0,0,0.07)',
       },
+      container: {
+        center: true,
+      },
+      backgroundImage: {
+        'curve-pattern': 'url("/assets/reactJS.svg")',
+      },
     },
     colors: {
       white: '#FFFFFF',
+      paleWhite: '#F8FCFF',
       primary: '#0278BE',
       secondary: '#02457C',
       black: '#143048',
@@ -49,6 +61,8 @@ module.exports = {
       error: '#F44336',
       aqua: '#CAD5DF',
       lightOrange: '#FEF2EF',
+      culturedWhite: '#F4F5F9',
+      lightGreen: '#ECF8F0',
       aliceBlue: '#F8FCFF',
       sky: '#ACD3EA',
       lightBlue: '#F4FAFF',

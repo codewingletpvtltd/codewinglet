@@ -12,7 +12,7 @@ export const _arrowPosition: ArrowPosition = {
 };
 
 export const svgPosition = {
-  left: 'left-[57px] lg:left-[75px]',
-  center: 'right-[102px] lg:right-[188px]',
-  right: 'right-[-2px]',
+  left: 'right-0',
+  center: 'right-0',
+  right: 'right-0',
 };

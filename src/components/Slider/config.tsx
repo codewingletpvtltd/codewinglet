@@ -8,6 +8,8 @@ export const defaultSettings = (settings: any) => ({
   slidesToScroll: 1,
   centerMode: true,
   centerPadding: 0,
+  nextArrow: <></>,
+  prevArrow: <></>,
   responsive: [
     {
       breakpoint: 1024,
@@ -17,7 +19,7 @@ export const defaultSettings = (settings: any) => ({
       },
     },
     {
-      breakpoint: 375,
+      breakpoint: 640,
       settings: {
         slidesToShow: 1,
         initialSlide: 0,
