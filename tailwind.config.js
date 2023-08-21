@@ -2,15 +2,7 @@
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
-    container: {
-      center: true,
-    },
     extend: {
-      maxWidth: {
-        'screen-2xl': '1270px',
-        'screen-xl': '1109px',
-        'screen-lg': '952px',
-      },
       container: {
         center: true,
       },

@@ -13,3 +13,4 @@ export { default as ClientTestimonials } from '../modules/Home/ClientTestimonial
 export { default as Consultant } from './Consultant';
 export { default as GetInTouch } from './GetInTouch';
 export { default as Textarea } from './Textarea';
+export { default as GoogleMap } from './GoogleMap';

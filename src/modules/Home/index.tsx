@@ -8,6 +8,7 @@ const Home = () => (
     <HeroSection />
     <OurPortfolio />
     <OurClient />
+    {/* <GoogleMap /> */}
     {/* <ClientTestimonials /> */}
     {/* <GetInTouch /> */}
     <Consultant />
