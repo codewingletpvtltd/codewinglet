@@ -1,5 +1,6 @@
 import React, { useId } from 'react';
-import { getClassNames } from '../../utils';
+
+import { getClassNames } from '@codewinglet/utils/index';
 import { TextareaProps } from './types';
 
 const Textarea: React.FC<TextareaProps> = ({
