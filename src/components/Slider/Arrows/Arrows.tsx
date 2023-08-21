@@ -20,16 +20,18 @@ const Arrows: FC<ArrowProps> = ({
       onClick={() => sliderRef?.current?.slickPrev()}
       className='lg:h-[30px] lg:w-auto'
     />
-    <RightArrow
-      onClick={() => sliderRef?.current?.slickNext()}
-      className='lg:h-[30px] lg:w-auto'
-    />
-    <BackgroundBubble
-      className={getClassNames(
-        'absolute bottom-[2px] z-[-1] lg:h-[24px] lg:w-[24px]',
-        arrowPosition.vertical ? svgPosition[arrowPosition.vertical] : ''
-      )}
-    />
+    <div className='relative'>
+      <RightArrow
+        onClick={() => sliderRef?.current?.slickNext()}
+        className='lg:h-[30px] lg:w-auto'
+      />
+      <BackgroundBubble
+        className={getClassNames(
+          'absolute bottom-[2px] z-[-1] lg:h-[24px] lg:w-[24px]',
+          arrowPosition.vertical ? svgPosition[arrowPosition.vertical] : ''
+        )}
+      />
+    </div>
   </div>
 );
 
