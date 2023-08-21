@@ -14,3 +14,6 @@ export { default as Consultant } from './Consultant';
 export { default as GetInTouch } from './GetInTouch';
 export { default as Textarea } from './Textarea';
 export { default as GoogleMap } from './GoogleMap';
+export { default as Modal } from './Modal';
+export { default as FileUpload } from './FileUpload';
+export { default as CareerApplyNow } from './CareerApplyNow';

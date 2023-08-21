@@ -22,6 +22,7 @@ export { default as Calender } from './icons/Calender';
 export { default as LocationPin } from './icons/LocationPin';
 export { default as Phone } from './icons/Phone';
 export { default as Email } from './icons/Email';
+export { default as Close } from './icons/Close';
 
 export * from './heroSection';
 export * from './ourClient';
