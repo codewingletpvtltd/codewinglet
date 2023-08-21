@@ -1,29 +1,36 @@
 'use client';
-
-import React, { useState } from 'react';
+import { FC } from 'react';
+import { getClassNames } from '@codewinglet/utils';
+import { Summary } from './components';
 import { AccordionProps } from './types';
-import AccordionContext from './AccordionContext';
+import { AccordionContext } from './context/AccordionContext';
 
-// Main Accordion component
-
-const Accordion: React.FC<AccordionProps> = ({
+const Accordion: FC<AccordionProps> = ({
+  title,
+  info,
+  expanded,
+  onChange,
   children,
-  expandIconsHidden = false,
-}) => {
-  const [activePanelId, setActivePanelId] = useState<string | null>(
-    'tech-section'
-  );
+}) => (
+  <AccordionContext.Provider value={{ title, info, expanded, onChange }}>
+    <div className='rounded-10 shadow-lg px-[12px] py-[14px]'>
+      <Summary />
+      <div
+        className={getClassNames(
+          'transition-[max-height] overflow-hidden duration-[400ms] ease-linear',
+          expanded ? 'max-h-[1830px]' : 'max-h-0'
+        )}
+      >
+        <div
+          className={getClassNames(
+            'mt-[17px] pt-[25px] border-t border-t-lightBlack'
+          )}
+        >
+          {children}
+        </div>
+      </div>
+    </div>
+  </AccordionContext.Provider>
+);
 
-  const clickHandler = (id: string | null) => {
-    setActivePanelId(activePanelId === id ? null : id);
-  };
-
-  return (
-    <AccordionContext.Provider
-      value={{ activePanelId, clickHandler, expandIconsHidden }}
-    >
-      <div aria-label='accordion-root'>{children}</div>
-    </AccordionContext.Provider>
-  );
-};
 export default Accordion;
