@@ -2,7 +2,6 @@
 import { ChangeEvent, FC, useRef, useState } from 'react';
 import Modal from '../Modal';
 import TextField from '../TextField';
-import Button from '../Button';
 import FileUpload from '../FileUpload';
 import { CareerApplyNowProps } from './types';
 
@@ -19,7 +18,7 @@ const CareerApplyNow: FC<CareerApplyNowProps> = ({ open, onClose }) => {
   };
 
   return (
-    <Modal open={open} title='Career' onClose={onClose}>
+    <Modal open={open} title='Career' onClose={onClose} onApply={onClose}>
       <TextField placeholder='Full Name*' fullWidth />
       <TextField placeholder='Email*' fullWidth />
       <TextField placeholder='Mobile Number*' fullWidth />
@@ -30,7 +29,6 @@ const CareerApplyNow: FC<CareerApplyNowProps> = ({ open, onClose }) => {
         className='hidden'
       />
       <FileUpload fileRef={fileRef} fileName={fileName} />
-      <Button>Apply Now</Button>
     </Modal>
   );
 };

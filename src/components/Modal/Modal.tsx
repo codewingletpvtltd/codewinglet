@@ -2,9 +2,10 @@ import { FC } from 'react';
 import { Close } from '@codewinglet/assets';
 import { getClassNames } from '@codewinglet/utils';
 import Typography from '../Typography';
+import Button from '../Button';
 import { ModalProps } from './types';
 
-const Modal: FC<ModalProps> = ({ open, children, title, onClose }) => (
+const Modal: FC<ModalProps> = ({ open, children, title, onClose, onApply }) => (
   <div
     role='presentation'
     className={getClassNames(
@@ -26,6 +27,7 @@ const Modal: FC<ModalProps> = ({ open, children, title, onClose }) => (
           <Close className='cursor-pointer' onClick={onClose} />
         </div>
         {children}
+        <Button onClick={onApply}>Apply Now</Button>
       </div>
     </div>
   </div>
