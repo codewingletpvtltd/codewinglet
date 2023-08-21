@@ -1,9 +1,5 @@
-import OurService from '@codewinglet/module/Home/OurService';
+import { HomeModule } from '@codewinglet/modules';
 
 export default function Home() {
-  return (
-    <div>
-      <OurService />
-    </div>
-  );
+  return <HomeModule />;
 }

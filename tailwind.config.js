@@ -2,10 +2,10 @@
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
-    container: {
-      center: true,
-    },
     extend: {
+      container: {
+        center: true,
+      },
       borderRadius: {
         10: '10px',
       },
@@ -17,6 +17,10 @@ module.exports = {
         spin: {
           '0%': { transform: 'rotate(0deg)' },
           '100%': { transform: 'rotate(360deg)' },
+        },
+        odd: {
+          '0%': { opacity: 0.5 },
+          '100%': { opacity: 1 },
         },
       },
       animation: {
@@ -59,6 +63,9 @@ module.exports = {
       lightOrange: '#FEF2EF',
       culturedWhite: '#F4F5F9',
       lightGreen: '#ECF8F0',
+      aliceBlue: '#F8FCFF',
+      sky: '#ACD3EA',
+      lightBlue: '#F4FAFF',
     },
     fontWeight: {
       100: 100,

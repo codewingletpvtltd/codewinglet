@@ -32,3 +32,14 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Responsive configuration:
+
+- We are using default [tailwind](https://tailwindcss.com/docs/responsive-design#working-mobile-first) breakpoints.
+- For responsive we have container and subcontainer classes.
+- In figma we don't have the same breakpoints as in the tailwind. so, we need to see closest breakpoints in the tailwind. for example, In the figma we have the 1440px breakpoint so according to tailwind we should use the 1280px
+
+## Folder Structure
+
+- Inside the app only goes module component we should not write directly JSX and logic.
+- Inside the module folder we are creating folder same as the page folder have. For example, inside the page folder we have the home and about page so in that case all the jsx of that pages are goes into module folder.

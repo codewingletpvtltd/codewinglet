@@ -14,7 +14,6 @@ const config: StorybookConfig = {
     options: {},
   },
   webpackFinal: async (config: any) => {
-    console.log('config', config);
     config.resolve.alias = {
       ...config.resolve.alias,
       '@codewinglet/*': path.resolve(__dirname, '../src/'),
