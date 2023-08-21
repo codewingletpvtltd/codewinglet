@@ -1,8 +1,7 @@
 import React from 'react';
 import { Metadata } from 'next';
 import './globals.css';
-import Link from 'next/link';
-import { Footer } from '@codewinglet/components';
+import { Footer, Header } from '@codewinglet/components';
 
 export const metadata: Metadata = {
   title: 'Top Software Development Company India - Code Winglet Pvt. Ltd.',
@@ -18,9 +17,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className='font-primary'>
-        <div className='h-[90px]'>
-          <Link href='/technology/reactjs-development-company'>React js</Link>
-        </div>
+        <Header />
         {children}
         <Footer />
       </body>
