@@ -10,6 +10,7 @@ export interface SliderProps {
   settings?: Settings;
   arrowPosition?: ArrowPosition;
   className?: string;
+  hideArrow?: boolean;
 }
 
 export interface ArrowProps {

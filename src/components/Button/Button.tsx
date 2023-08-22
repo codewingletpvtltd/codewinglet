@@ -21,8 +21,8 @@ const Button: React.FC<ButtonProps> = ({
     >
       {startIcon}
       <Typography
-        variant='body2'
-        className='relative tracking-wider lg:text-[16px] xs:text-[14px]'
+        variant='subtitle2'
+        className='relative tracking-wider md:text-[16px] lg:text-[18px]'
       >
         {children}
       </Typography>

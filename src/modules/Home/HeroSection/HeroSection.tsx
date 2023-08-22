@@ -20,7 +20,7 @@ const sequence = [
 ];
 
 const HeroSection = () => (
-  <div className='relative bg-aliceBlue z-0'>
+  <div className='relative bg-aliceBlue z-0 overflow-hidden'>
     <div className='container relative'>
       <div className='my-[50px] mx-[20px] md:mx-[38px] max-w-screen-xl xl:mx-auto px-[20px] sm:p-0 flex items-center max-sm:flex-col md:gap-[35px] lg:gap-[75px] xl:gap-[140px] lg:w-full relative flex-col md:flex-row'>
         <div className='relative lg:self-end'>
@@ -56,11 +56,11 @@ const HeroSection = () => (
       </div>
       <Technologies />
     </div>
-    <StarsSVG className='absolute -z-50 top-[320px] left-[310px] md:top-[270px] lg:top-[360px] xl:top-[451px] xl:left-[550px] 2xl:top-[480px] 2xl:left-[700px] 2xl:w-[71px] 2xl:h-[71px] xl:h-[53px] xl:w-[53px]' />
     <LeftLineSVG className='absolute -z-50 top-[80px] sm:top-0 left-0 lg:hidden' />
-    <RectangleSVG className='absolute -z-50 top-[400px] left-[44px] md:right-[100px] md:left-[unset] md:top-[300px] lg:right-[64px] lg:top-[375px] 2xl:right-[210px] 2xl:h-[24px] 2xl:w-[24px]' />
-    <RightLineSVG className='absolute hidden -z-50 right-0 top-[-90px] h-[calc(100%+80px)] 2xl:right-[88px] lg:block' />
-    <LeftLineMediumSVG className='absolute -z-50 hidden lg:block top-[-69px] h-[calc(100%+80px)] left-[-64px] xl:left-[8px]' />
+    <StarsSVG className='absolute -z-50 top-[360px] right-[150px] md:top-[280px] md:left-[300px] lg:top-[450px] lg:left-[350px] xl:top-[480px] xl:left-[460px] 2xl:left-[800px] 2xl:top-[550px]' />
+    <RectangleSVG className='absolute -z-50 bottom-[460px] left-[40px] md:bottom-[150px] md:left-[revert] md:right-[60px]  lg:!right-[90px]' />
+    <RightLineSVG className='absolute hidden -z-50 right-0 top-[-90px] h-[calc(100%+90px)] 2xl:right-[88px] lg:block' />
+    <LeftLineMediumSVG className='absolute -z-50 hidden lg:block top-[-83px] h-[calc(100%+90px)] left-[-64px] xl:left-[0px]' />
   </div>
 );
 
