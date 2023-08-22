@@ -27,7 +27,7 @@ const HeroSection = () => (
           <div className='max-w-[680px] capitalize'>
             <Typography
               variant='h3'
-              className='inline !text-[22px] lg:!text-[28px] xl:!text-[35px] 2xl:!text-[40px]'
+              className='inline !text-[22px] lg:!text-[28px] xl:!text-[35px] 2xl:!text-[40px] text-black'
             >
               Your premiere Web, Mobile <br /> And Software development <br />{' '}
               squad in{' '}
@@ -41,7 +41,7 @@ const HeroSection = () => (
 
           <Typography
             variant='body1'
-            className='text-darkGray mt-[30px] mb-[29px]  !text-[14px] lg:!text-[16px] lg:w-[413px] xl:!text-[18px] xl:w-[473px] 2xl:!text-[20px] 2xl:w-[548px]'
+            className='text-darkGray mt-[30px] mb-[29px]  !text-[14px] lg:!text-[16px] lg:w-[413px] xl:!text-[18px] xl:w-[473px] 2xl:!text-[20px] 2xl:w-[548px] text-lightBlack'
           >
             have a concept for project? connect with code winglet right away to
             secure a technologically advanced and economically efficient
