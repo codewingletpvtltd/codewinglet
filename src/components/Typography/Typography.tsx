@@ -98,7 +98,6 @@ const Typography: React.FC<TypographyProps> = forwardRef(
             {children}
           </p>
         );
-
       case 'subtitle2':
         return (
           <p
@@ -112,7 +111,6 @@ const Typography: React.FC<TypographyProps> = forwardRef(
             {children}
           </p>
         );
-
       default:
         return (
           <p

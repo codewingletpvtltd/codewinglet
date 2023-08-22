@@ -1,0 +1,34 @@
+import { COLORS } from '@codewinglet/constants';
+
+const LeftArrowsSVG: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
+  <svg
+    width={142}
+    height={17}
+    viewBox='0 0 142 17'
+    fill='none'
+    xmlns='http://www.w3.org/2000/svg'
+    {...props}
+  >
+    <g opacity={0.2}>
+      <path
+        d='M128.554 8.31579L141.505 16.7679V7.62939e-06L128.554 8.31579Z'
+        fill={COLORS.primary}
+      />
+      <path
+        d='M96.3811 8.31579L109.332 16.7679V7.62939e-06L96.3811 8.31579Z'
+        fill={COLORS.primary}
+      />
+      <path
+        d='M64.345 8.31579L77.1594 16.7679V7.62939e-06L64.345 8.31579Z'
+        fill={COLORS.primary}
+      />
+      <path
+        d='M32.1724 8.31579L44.9869 16.7679V7.62939e-06L32.1724 8.31579Z'
+        fill={COLORS.primary}
+      />
+      <path d='M0 8.31578L12.9508 16.7679V0L0 8.31578Z' fill={COLORS.primary} />
+    </g>
+  </svg>
+);
+
+export default LeftArrowsSVG;
