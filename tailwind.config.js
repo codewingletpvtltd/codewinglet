@@ -11,8 +11,8 @@ module.exports = {
       },
       keyframes: {
         swing: {
-          '0%': { transform: 'rotate(2deg)' },
-          '100%': { transform: 'rotate(-2deg)' },
+          '0%': { transform: 'rotate(3deg)' },
+          '100%': { transform: 'rotate(-3deg)' },
         },
         spin: {
           '0%': { transform: 'rotate(0deg)' },
@@ -41,9 +41,6 @@ module.exports = {
       },
       boxShadow: {
         lg: '1px 1px 20px 0 rgba(0,0,0,0.07)',
-      },
-      container: {
-        center: true,
       },
       backgroundImage: {
         'curve-pattern': 'url("/assets/reactJS.svg")',
