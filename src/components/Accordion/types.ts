@@ -8,6 +8,8 @@ export interface AccordionProps {
   children: React.ReactNode;
   expanded?: boolean;
   onChange?: () => void;
+  contentClassName?: string;
+  onApplyNow?: () => void;
 }
 
 export interface SummaryInfoProps {
@@ -20,4 +22,5 @@ export interface AccordionContextProps {
   info?: Info[];
   expanded?: boolean;
   onChange?: () => void;
+  onApplyNow?: () => void;
 }

@@ -1,3 +1,5 @@
+import { CareerModule } from '@codewinglet/modules';
+
 export default function Career() {
-  return <div>Career Page</div>;
+  return <CareerModule />;
 }
