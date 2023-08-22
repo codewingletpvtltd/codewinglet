@@ -1,11 +1,26 @@
-import { ReactNode } from 'react';
-
+export type Info = {
+  title: string;
+  value: string;
+};
 export interface AccordionProps {
-  children: ReactNode;
-  expandIconsHidden?: boolean;
+  title: string;
+  info: Info[];
+  children: React.ReactNode;
+  expanded?: boolean;
+  onChange?: () => void;
+  contentClassName?: string;
+  onApplyNow?: () => void;
 }
-export interface contextType {
-  activePanelId: string | null;
-  expandIconsHidden: boolean;
-  clickHandler: (id: string | null) => void;
+
+export interface SummaryInfoProps {
+  title: string;
+  value: string;
+}
+
+export interface AccordionContextProps {
+  title: string;
+  info?: Info[];
+  expanded?: boolean;
+  onChange?: () => void;
+  onApplyNow?: () => void;
 }

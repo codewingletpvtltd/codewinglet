@@ -35,6 +35,7 @@ export { default as BackgroundBubble } from './icons/BackgroundBubble';
 export { default as BackgroundTriangle } from './icons/BackgroundTriangle';
 export { default as BackgroundDonut } from './icons/BackgroundDonut';
 export { default as Calender } from './icons/Calender';
+export { default as DownArrow } from './icons/DownArrow';
 export { default as LocationPin } from './icons/LocationPin';
 export { default as Phone } from './icons/Phone';
 export { default as Email } from './icons/Email';

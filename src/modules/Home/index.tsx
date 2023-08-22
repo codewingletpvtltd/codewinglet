@@ -1,5 +1,5 @@
 import { Consultant } from '@codewinglet/components';
-import OurService from '@codewinglet/module/Home/OurService';
+import OurServices from './OurServices';
 import OurPortfolio from './OurPortfolio/OurPortfolio';
 import HeroSection from './HeroSection/HeroSection';
 import OurClient from './OurClient';
@@ -7,12 +7,9 @@ import OurClient from './OurClient';
 const Home = () => (
   <>
     <HeroSection />
-    <OurService />
+    <OurServices />
     <OurPortfolio />
     <OurClient />
-    {/* <GoogleMap /> */}
-    {/* <ClientTestimonials /> */}
-    {/* <GetInTouch /> */}
     <Consultant />
   </>
 );
