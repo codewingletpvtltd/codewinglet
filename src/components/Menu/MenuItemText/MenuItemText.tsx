@@ -9,8 +9,8 @@ const MenuItemText: React.FC<MenuItemTextProps> = ({ children, className }) => {
   if (!menuContext) return null;
   return (
     <Typography
-      variant='body2'
-      className={`font-bold capitalize primary ${className}`}
+      variant='subtitle1'
+      className={`font-bold capitalize text-lightBlack ${className} whitespace-nowrap`}
     >
       {children}
     </Typography>

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Logo from '@codewinglet/assets/company_logo.svg';
-import NavMenu from './components/NavigationMenu';
+import NavMenu from './components/NavigationMenu/NavigationMenu';
 
 const Header = () => (
   <header className='h-[90px] flex items-center fixed top-0 z-50 w-full'>

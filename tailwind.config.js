@@ -45,6 +45,10 @@ module.exports = {
       backgroundImage: {
         'curve-pattern': 'url("/assets/reactJS.svg")',
       },
+      gridTemplateRows: {
+        // Simple 8 row grid
+        8: 'repeat(8, minmax(0, 1fr))',
+      },
     },
     colors: {
       white: '#FFFFFF',
