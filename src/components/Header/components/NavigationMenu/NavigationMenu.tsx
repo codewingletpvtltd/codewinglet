@@ -1,56 +1,76 @@
 'use client';
 
-import React from 'react';
+import { getClassNames } from '@codewinglet/utils';
 import { navMenu } from '../../constants';
-import Menu from '../../../Menu';
-import MenuWithCategory from './MenuWithCategory';
-import LinkItem from './LinkItem';
+import useNavigation from './useNavigation';
+import MenuList from './MenuList';
+import MenuItems from './MenuItems';
+import MenuContent from './MenuContent';
+import ListItem from './ListItem';
+import MenuTrigger from './MenuTrigger';
+import MenuIndicator from './MenuIndicator';
 
 const NavigationMenu = () => {
-  const [anchorEle, setAnchorEle] = React.useState<null | HTMLElement>(null);
-
+  const { onMouseEnter, onMouseLeave, left, gridRows } = useNavigation();
   return (
-    <div className='p-3 w-[100%] mt-[10px] flex justify-end items-center gap-3'>
-      {navMenu.map((items, index) => {
-        const open = anchorEle?.id === `menu-${items.label}-${index}`;
-        return (
-          <div
-            key={`menu-${items.label}-${index}`}
-            onMouseLeave={() => setAnchorEle(null)}
+    <nav className='w-[50%]'>
+      <MenuList>
+        {navMenu.map((item, index) => (
+          <MenuItems
+            key={`menu-${index}`}
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
           >
-            <button
-              id={`menu-${items.label}-${index}`}
-              className='mx-50 bg-secondary text-white px-5'
-              onMouseEnter={(e) => setAnchorEle(e.currentTarget)}
-            >
-              {items.label}
-            </button>
-            {items.children && items.category ? (
-              <MenuWithCategory
-                open={open}
-                anchorEle={anchorEle}
-                items={items}
-                index={index}
-                onClick={() => setAnchorEle(null)}
-              />
-            ) : (
-              <Menu open={open} anchorEle={anchorEle}>
-                <Menu.List className='grid grid-flow-col grid-rows-5'>
-                  {items.children?.map((item, idx) => (
-                    <LinkItem
-                      key={`Menu-item-${index}-${idx}`}
-                      icon={item.icon}
-                      label={item.label}
-                      onClick={() => setAnchorEle(null)}
+            <MenuTrigger
+              label={item.label}
+              showIcon={!!item.children}
+              href={item.path}
+            />
+            {item.children && <MenuIndicator />}
+            {item.children ? (
+              item.category ? (
+                <MenuContent left={left}>
+                  {item.children.map((menu, menuIdx) => (
+                    <li key={`menu-header-${index}-${menuIdx}`}>
+                      <ul className='grid grid-flow-row gap-[15px]'>
+                        <ListItem
+                          icon={menu.icon}
+                          label={menu.label}
+                          isHeader
+                        />
+
+                        {menu.menu.map((val, idx) => (
+                          <ListItem
+                            key={`menu-item-${index}-${menuIdx}-${idx}`}
+                            icon={val.icon}
+                            label={val.label}
+                            href={val.path}
+                          />
+                        ))}
+                      </ul>
+                    </li>
+                  ))}
+                </MenuContent>
+              ) : (
+                <MenuContent
+                  left={left}
+                  className={getClassNames(gridRows(item.children.length))}
+                >
+                  {item.children.map((val, index) => (
+                    <ListItem
+                      key={`menu-item-${index}`}
+                      icon={val.icon}
+                      label={val.label}
+                      href={val.path}
                     />
                   ))}
-                </Menu.List>
-              </Menu>
-            )}
-          </div>
-        );
-      })}
-    </div>
+                </MenuContent>
+              )
+            ) : null}
+          </MenuItems>
+        ))}
+      </MenuList>
+    </nav>
   );
 };
 

@@ -1,32 +1,35 @@
-export type MenuType = {
-  path?: string;
-  label: string;
-  icon?: string;
-};
+import { AnchorHTMLAttributes, DetailedHTMLProps, MouseEvent } from 'react';
+export interface MenuListProps {
+  children: React.ReactNode;
+}
 
-export type ChildrenType = {
-  icon?: string;
-  name: string;
-  menu?: MenuType[];
-};
+export interface MenuItemsProps {
+  onMouseEnter: (e: MouseEvent<HTMLLIElement>) => void;
+  onMouseLeave: () => void;
+  children: React.ReactNode;
+}
 
-export type ItemsType = {
-  path?: string;
-  label: string;
-  children?: ChildrenType[];
-};
+export interface MenuContentProps {
+  left: string;
+  children: React.ReactNode;
+  className?: string;
+}
 
-export interface LinkItemProps {
+export interface ListItemProps
+  extends DetailedHTMLProps<
+    AnchorHTMLAttributes<HTMLAnchorElement>,
+    HTMLAnchorElement
+  > {
   icon?: string;
   label: string;
-  onClick?: () => void;
   isHeader?: boolean;
 }
 
-export interface MenuWithCategoryProps {
-  open: boolean;
-  anchorEle: HTMLElement | null;
-  items: ItemsType;
-  index: number;
-  onClick: () => void;
+export interface MenuTriggerProps
+  extends DetailedHTMLProps<
+    AnchorHTMLAttributes<HTMLAnchorElement>,
+    HTMLAnchorElement
+  > {
+  label: string;
+  showIcon?: boolean;
 }

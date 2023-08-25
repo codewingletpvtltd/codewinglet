@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import Logo from '@codewinglet/assets/company_logo.svg';
-import NavMenu from './components/NavigationMenu/NavigationMenu';
+import { NavMenu } from './components';
 
 const Header = () => (
-  <header className='h-[90px] flex items-center fixed top-0 z-50 w-full'>
+  <header className='h-[90px] flex items-center absolute top-0 z-50 w-full'>
     <div className='container'>
       <div className='flex items-center justify-between'>
         <div>
@@ -15,6 +15,8 @@ const Header = () => (
           />
         </div>
         <NavMenu />
+        {/* <RadixNav /> */}
+        {/* <Shadcn /> */}
       </div>
     </div>
   </header>

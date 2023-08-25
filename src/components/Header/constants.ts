@@ -1,35 +1,74 @@
 import {
   aboutUs,
+  ai,
+  aiConsulting,
+  aiDev,
+  aiIntegration,
+  angular,
   automotive,
+  aws,
+  azure,
+  backend,
   beDev,
+  blockChain,
+  chatGtpService,
+  chatgtp,
+  cloud,
   customSoftwareDev,
+  database,
+  docker,
+  dynamodb,
   education,
   energy,
+  express,
   feDev,
   fintech,
+  flutter,
   food,
+  frontend,
+  gatsby,
+  googleCloud,
   government,
   healthCare,
   industrial,
   insurance,
+  ionic,
+  jenkins,
+  knockoutjs,
   legal,
   life,
   logistics,
   maintenance,
+  mariadb,
   media,
+  mobile,
   mobileApp,
+  mongodb,
   multiTenatSystem,
+  mysql,
+  nest,
   news,
+  nextjs,
+  nodejs,
+  others,
+  postgresql,
   professionalServices,
   projectConsulting,
+  pwa,
+  python,
   qa,
-  reactSVG,
+  react,
   realEstate,
+  rediis,
+  remix,
   sports,
+  storybook,
   teamDev,
   travel,
   uiComponent,
   uiux,
+  vue,
+  web3,
   webApp,
   webDesigning,
   whyCodewinglet,
@@ -193,6 +232,233 @@ const companyMenu = [
   },
 ];
 
+const technology = [
+  {
+    path: '',
+    icon: frontend,
+    label: 'Frontend',
+    menu: [
+      {
+        path: 'technology/react-js',
+        label: 'ReactJs',
+        icon: react,
+      },
+      {
+        path: 'technology/next-js',
+        label: 'NextJs',
+        icon: nextjs,
+      },
+      {
+        path: 'technology/gatsby',
+        label: 'Gatsby',
+        icon: gatsby,
+      },
+      {
+        path: 'technology/angular',
+        label: 'Anugalr',
+        icon: angular,
+      },
+      {
+        path: 'technology/vue',
+        label: 'Vue',
+        icon: vue,
+      },
+      {
+        path: 'technology/remix',
+        label: 'Remix',
+        icon: remix,
+      },
+      {
+        path: 'technology/knockout-js',
+        label: 'knockoutJs',
+        icon: knockoutjs,
+      },
+    ],
+  },
+  {
+    path: '',
+    icon: backend,
+    label: 'Backend',
+    menu: [
+      {
+        path: 'technology/node-js',
+        label: 'NodeJs',
+        icon: nodejs,
+      },
+      {
+        path: 'technology/python',
+        label: 'Python',
+        icon: python,
+      },
+      {
+        path: 'technology/express',
+        label: 'Express',
+        icon: express,
+      },
+      {
+        path: 'technology/nest',
+        label: 'Nest',
+        icon: nest,
+      },
+    ],
+  },
+  {
+    path: '',
+    icon: mobile,
+    label: 'Mobile',
+    menu: [
+      {
+        path: 'technology/react-native',
+        label: 'React Native',
+        icon: react,
+      },
+      {
+        path: 'technology/flutter',
+        label: 'Flutter',
+        icon: flutter,
+      },
+      {
+        path: 'technology/ionic',
+        label: 'Ionic',
+        icon: ionic,
+      },
+    ],
+  },
+  {
+    path: '',
+    icon: cloud,
+    label: 'DevOps/Cloud',
+    menu: [
+      {
+        path: 'technology/aws',
+        label: 'Aws',
+        icon: aws,
+      },
+      {
+        path: 'technology/azure',
+        label: 'Azure',
+        icon: azure,
+      },
+      {
+        path: 'technology/google-cloud',
+        label: 'Google Cloud',
+        icon: googleCloud,
+      },
+      {
+        path: 'technology/docker',
+        label: 'Docker',
+        icon: docker,
+      },
+      {
+        path: 'technology/jenkins',
+        label: 'Jenkins',
+        icon: jenkins,
+      },
+    ],
+  },
+  {
+    path: '',
+    icon: database,
+    label: 'Database',
+    menu: [
+      {
+        path: 'technology/mongodb',
+        label: 'MongoDB',
+        icon: mongodb,
+      },
+      {
+        path: 'technology/mysql',
+        label: 'MySQL',
+        icon: mysql,
+      },
+      {
+        path: 'technology/postgresql',
+        label: 'PostgreSQL',
+        icon: postgresql,
+      },
+      {
+        path: 'technology/redis',
+        label: 'Rediis',
+        icon: rediis,
+      },
+      {
+        path: 'technology/mariadb',
+        label: 'MariaDB',
+        icon: mariadb,
+      },
+      {
+        path: 'technology/dynamodb',
+        label: 'DynamoDB',
+        icon: dynamodb,
+      },
+    ],
+  },
+  {
+    path: '',
+    icon: others,
+    label: 'Others',
+    menu: [
+      {
+        path: 'technology/storybook',
+        label: 'Storybook',
+        icon: storybook,
+      },
+      {
+        path: 'technology/pwa',
+        label: 'PWA',
+        icon: pwa,
+      },
+      {
+        path: 'technology/web3',
+        label: 'Web3',
+        icon: web3,
+      },
+      {
+        path: 'technology/blockchain',
+        label: 'BlockChain',
+        icon: blockChain,
+      },
+      {
+        path: 'technology/component-library',
+        label: 'Component Library',
+        icon: react,
+      },
+    ],
+  },
+  {
+    path: '',
+    icon: ai,
+    label: 'Generative AI',
+    menu: [
+      {
+        path: 'technology/generative-ai-development',
+        label: 'Generative AI Development',
+        icon: aiDev,
+      },
+      {
+        path: 'technology/generative-ai-integration',
+        label: 'Generative AI Integration',
+        icon: aiIntegration,
+      },
+      {
+        path: 'technology/chatgpt-developer',
+        label: 'ChatGPT Developer',
+        icon: chatgtp,
+      },
+      {
+        path: 'technology/chatgpt-integration-service',
+        label: 'ChatGPT Integration Service',
+        icon: chatGtpService,
+      },
+      {
+        path: 'technology/generative-ai-consulting',
+        label: 'Generative AI Consulting',
+        icon: aiConsulting,
+      },
+    ],
+  },
+];
+
 export const navMenu = [
   {
     path: '',
@@ -203,225 +469,7 @@ export const navMenu = [
     path: '',
     label: 'Technology',
     category: true,
-    children: [
-      {
-        icon: reactSVG,
-        name: 'Frontend',
-        menu: [
-          {
-            path: 'technology/react-js',
-            label: 'ReactJs',
-            icon: reactSVG,
-          },
-          {
-            path: 'technology/next-js',
-            label: 'NextJs',
-            icon: reactSVG,
-          },
-          {
-            path: 'technology/gatsby',
-            label: 'Gatsby',
-            icon: reactSVG,
-          },
-          {
-            path: 'technology/angular',
-            label: 'Anugalr',
-            icon: reactSVG,
-          },
-          {
-            path: 'technology/vue',
-            label: 'Vue',
-            icon: reactSVG,
-          },
-          {
-            path: 'technology/remix',
-            label: 'Remix',
-            icon: reactSVG,
-          },
-          {
-            path: 'technology/knockout-js',
-            label: 'knockoutJs',
-            icon: reactSVG,
-          },
-        ],
-      },
-      {
-        icon: reactSVG,
-        name: 'Backend',
-        menu: [
-          {
-            path: 'technology/node-js',
-            label: 'NodeJs',
-            icon: reactSVG,
-          },
-          {
-            path: 'technology/python',
-            label: 'Python',
-            icon: reactSVG,
-          },
-          {
-            path: 'technology/express',
-            label: 'Express',
-            icon: reactSVG,
-          },
-          {
-            path: 'technology/nest',
-            label: 'Nest',
-            icon: reactSVG,
-          },
-        ],
-      },
-      {
-        icon: reactSVG,
-        name: 'Mobile',
-        menu: [
-          {
-            path: 'technology/react-native',
-            label: 'React Native',
-            icon: reactSVG,
-          },
-          {
-            path: 'technology/flutter',
-            label: 'Flutter',
-            icon: reactSVG,
-          },
-          {
-            path: 'technology/ionic',
-            label: 'Ionic',
-            icon: reactSVG,
-          },
-        ],
-      },
-      {
-        icon: reactSVG,
-        name: 'DevOps/Cloud',
-        menu: [
-          {
-            path: 'technology/aws',
-            label: 'Aws',
-            icon: reactSVG,
-          },
-          {
-            path: 'technology/azure',
-            label: 'Azure',
-            icon: reactSVG,
-          },
-          {
-            path: 'technology/google-cloud',
-            label: 'Google Cloud',
-            icon: reactSVG,
-          },
-          {
-            path: 'technology/docker',
-            label: 'Docker',
-            icon: reactSVG,
-          },
-          {
-            path: 'technology/jenkins',
-            label: 'Jenkins',
-            icon: reactSVG,
-          },
-        ],
-      },
-      {
-        icon: reactSVG,
-        name: 'Database',
-        menu: [
-          {
-            path: 'technology/mongodb',
-            label: 'MongoDB',
-            icon: reactSVG,
-          },
-          {
-            path: 'technology/mysql',
-            label: 'MySQL',
-            icon: reactSVG,
-          },
-          {
-            path: 'technology/postgresql',
-            label: 'PostgreSQL',
-            icon: reactSVG,
-          },
-          {
-            path: 'technology/redis',
-            label: 'Rediis',
-            icon: reactSVG,
-          },
-          {
-            path: 'technology/mariadb',
-            label: 'MariaDB',
-            icon: reactSVG,
-          },
-          {
-            path: 'technology/dynamodb',
-            label: 'DynamoDB',
-            icon: reactSVG,
-          },
-        ],
-      },
-      {
-        icon: reactSVG,
-        name: 'Others',
-        menu: [
-          {
-            path: 'technology/storybook',
-            label: 'Storybook',
-            icon: reactSVG,
-          },
-          {
-            path: 'technology/pwa',
-            label: 'PWA',
-            icon: reactSVG,
-          },
-          {
-            path: 'technology/web3',
-            label: 'Web3',
-            icon: reactSVG,
-          },
-          {
-            path: 'technology/blockchain',
-            label: 'BlockChain',
-            icon: reactSVG,
-          },
-          {
-            path: 'technology/component-library',
-            label: 'Component Library',
-            icon: reactSVG,
-          },
-        ],
-      },
-      {
-        icon: reactSVG,
-        name: 'Generative AI',
-        menu: [
-          {
-            path: 'technology/generative-ai-development',
-            label: 'Generative AI Development',
-            icon: reactSVG,
-          },
-          {
-            path: 'technology/generative-ai-integration',
-            label: 'Generative AI Integration',
-            icon: reactSVG,
-          },
-          {
-            path: 'technology/chatgpt-developer',
-            label: 'ChatGPT Developer',
-            icon: reactSVG,
-          },
-          {
-            path: 'technology/chatgpt-integration-service',
-            label: 'ChatGPT Integration Service',
-            icon: reactSVG,
-          },
-          {
-            path: 'technology/generative-ai-consulting',
-            label: 'Generative AI Consulting',
-            icon: reactSVG,
-          },
-        ],
-      },
-    ],
+    children: technology,
   },
   {
     path: '',
