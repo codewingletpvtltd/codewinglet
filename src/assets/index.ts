@@ -45,3 +45,4 @@ export { default as BreadcrumbSeparator } from './icons/BreadcrumbSeparator';
 export * from './heroSection';
 export * from './ourClient';
 export * from './navigation';
+export * from './technologies';
