@@ -40,7 +40,7 @@ const WhyChooseUs = () => (
         </div>
       </div>
     </div>
-    <BackgroundDonutShadow className='invisible md:visible absolute right-0 bottom-[40%] 2xl:right-[-250px]' />
+    <BackgroundDonutShadow className='invisible md:visible absolute right-0 bottom-[40%] 2xl:right-[-250px] lg:h-[101px] lg:w-[101px]' />
   </div>
 );
 

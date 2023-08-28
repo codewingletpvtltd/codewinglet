@@ -24,7 +24,6 @@ export { default as UiLib } from './icons/UiLib';
 export { default as UiUxDev } from './icons/UiUxDev';
 export { default as Hire } from './icons/Hire';
 export { default as BgWave } from './BgWave';
-export { default as ServiceCircleIcon } from './icons/ServiceCircleIcon';
 export { default as StarIcon } from './icons/StarIcon';
 export { default as HighlightArrow } from './icons/HighlightArrow';
 export { default as StarsSVG } from './StarsSVG';

@@ -47,6 +47,9 @@ module.exports = {
       backgroundImage: {
         'curve-pattern': 'url("/assets/reactJS.svg")',
       },
+      textShadow: {
+        sm: '2px 2px 0 #506B82, -1px -1px 0 #506B82,1px -1px 0 #506B82,-1px 1px 0 #506B82,1px 1px 0 #506B82',
+      },
     },
     colors: {
       white: '#FFFFFF',
