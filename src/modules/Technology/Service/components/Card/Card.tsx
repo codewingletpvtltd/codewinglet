@@ -4,8 +4,8 @@ import { Typography } from '@codewinglet/components';
 import { CardProps } from '../../types';
 
 const Card: FC<CardProps> = ({ icon, title, desc }) => (
-  <div className='flex flex-col items-center justify-center relative md:p-[30px]'>
-    <div className='flex items-center justify-between'>
+  <div className='flex flex-col relative md:p-[30px]'>
+    <div className='flex flex-row items-center'>
       {icon && (
         <Image
           src={icon}

@@ -41,6 +41,7 @@ export { default as Phone } from './icons/Phone';
 export { default as Email } from './icons/Email';
 export { default as Close } from './icons/Close';
 export { default as BreadcrumbSeparator } from './icons/BreadcrumbSeparator';
+export { default as BackgroundArc } from './icons/BackgroundArc';
 
 export * from './heroSection';
 export * from './ourClient';
