@@ -42,6 +42,8 @@ export { default as Email } from './icons/Email';
 export { default as Close } from './icons/Close';
 export { default as BreadcrumbSeparator } from './icons/BreadcrumbSeparator';
 export { default as BackgroundArc } from './icons/BackgroundArc';
+export { default as BackgroundDonutShadow } from './icons/BackgroundDonutShadow';
+export { default as BackgroundSemiCircle } from './icons/BackgroundSemiCircle';
 
 export * from './heroSection';
 export * from './ourClient';
