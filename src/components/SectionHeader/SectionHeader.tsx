@@ -9,8 +9,9 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
   headingClassName = '',
   descriptionTextWrap,
   descriptionClassName = '',
+  wrapperClassName = '',
 }) => (
-  <div>
+  <div className={wrapperClassName}>
     <Typography
       variant='h4'
       className={getClassNames(
@@ -23,7 +24,7 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
     <Typography
       variant='subtitle2'
       className={getClassNames(
-        'text-lightBlack md:text-body2 text-[14px] md:text-[16px] lg:text-[18px] ',
+        'text-lightBlack md:text-body2 text-[14px] md:text-[16px] lg:text-[18px]',
         descriptionTextWrap ? 'md:w-[70%] lg:w-[40%]' : '',
         descriptionClassName
       )}
