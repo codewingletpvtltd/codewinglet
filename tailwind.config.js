@@ -123,7 +123,7 @@ module.exports = {
       h3: [
         '40px',
         {
-          fontWeight: 900,
+          fontWeight: 800,
         },
       ],
       h4: [
