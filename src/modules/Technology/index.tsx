@@ -1,3 +1,4 @@
+import ClientTestimonials from '../Home/ClientTestimonials/ClientTestimonials';
 import Faq from './Faq';
 import Service from './Service';
 import SignificantAchievement from './SignificantAchievement/SignificantAchievement';
@@ -8,6 +9,7 @@ const Technology = () => (
     <Service />
     <WhyChooseUs />
     <SignificantAchievement />
+    <ClientTestimonials />
     <Faq />
   </>
 );
