@@ -1,8 +1,8 @@
 'use client';
 import { SectionHeader, ServiceCard, Slider } from '@codewinglet/components';
-import { getClassNames } from '@codewinglet/utils';
 import { BackgroundDonutShadow, BgWave, StarIcon } from '@codewinglet/assets';
 import useScreenSize from '@codewinglet/hooks/useScreenSize';
+import { getClassNames } from '@codewinglet/utils/cn';
 import { md } from '../../../constants/mediaQueryConst';
 import { services } from './utils';
 

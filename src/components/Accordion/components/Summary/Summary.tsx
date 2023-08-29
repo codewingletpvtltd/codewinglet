@@ -1,5 +1,5 @@
 import { DownArrow, MinusIcon, PlusIcon } from '@codewinglet/assets';
-import { getClassNames } from '@codewinglet/utils';
+import { getClassNames } from '@codewinglet/utils/cn';
 import Button from '../../../Button';
 import Typography from '../../../Typography';
 import { useAccordionContext } from '../../context/AccordionContext';

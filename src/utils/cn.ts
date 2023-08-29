@@ -4,3 +4,6 @@ import { twMerge } from 'tailwind-merge';
 export default function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
+
+export const getClassNames = (defaultClassName: string, ...rest: string[]) =>
+  [defaultClassName, ...rest].filter((name) => name.trim() !== '').join(' ');

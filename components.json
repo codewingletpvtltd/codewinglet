@@ -11,6 +11,6 @@
   },
   "aliases": {
     "components": "@codewinglet",
-    "utils": "@codewinglet/utils/index"
+    "utils": "@codewinglet"
   }
 }

@@ -46,4 +46,5 @@ export { default as BackgroundSemiCircle } from './icons/BackgroundSemiCircle';
 
 export * from './heroSection';
 export * from './ourClient';
+export * from './navigation';
 export * from './technologies';
