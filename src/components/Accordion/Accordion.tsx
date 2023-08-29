@@ -13,29 +13,43 @@ const Accordion: FC<AccordionProps> = ({
   children,
   onApplyNow,
   contentClassName = '',
-}) => (
-  <AccordionContext.Provider
-    value={{ title, info, expanded, onChange, onApplyNow }}
-  >
-    <div className='rounded-10 shadow-lg px-[12px] py-[14px]'>
-      <Summary />
+  variant,
+}) => {
+  const isSecondary = variant === 'secondary';
+  return (
+    <AccordionContext.Provider
+      value={{ title, info, expanded, onChange, onApplyNow, isSecondary }}
+    >
       <div
         className={getClassNames(
-          'transition-[max-height] overflow-hidden duration-[400ms] ease-linear',
-          expanded ? 'max-h-[4000px]' : 'max-h-0'
+          isSecondary ? '' : 'rounded-10 shadow-lg px-[12px] py-[14px]'
         )}
       >
+        <Summary />
         <div
           className={getClassNames(
-            'mt-[17px] pt-[25px] border-t border-t-lightBlack',
-            contentClassName
+            'transition-[max-height] overflow-hidden duration-[400ms] ease-linear',
+            expanded
+              ? isSecondary
+                ? 'max-h-[500px] md:max-h-[400px] lg:max-h-[300px]'
+                : 'max-h-[5000px] md:max-h-[4000px] lg:max-h-[3000px]'
+              : 'max-h-0'
           )}
         >
-          {children}
+          <div
+            className={getClassNames(
+              isSecondary
+                ? 'pt-[22px]'
+                : 'mt-[17px] pt-[25px] border-t border-t-lightBlack',
+              contentClassName
+            )}
+          >
+            {children}
+          </div>
         </div>
       </div>
-    </div>
-  </AccordionContext.Provider>
-);
+    </AccordionContext.Provider>
+  );
+};
 
 export default Accordion;

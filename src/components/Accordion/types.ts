@@ -4,12 +4,13 @@ export type Info = {
 };
 export interface AccordionProps {
   title: string;
-  info: Info[];
+  info?: Info[];
   children: React.ReactNode;
   expanded?: boolean;
   onChange?: () => void;
   contentClassName?: string;
   onApplyNow?: () => void;
+  variant?: 'primary' | 'secondary';
 }
 
 export interface SummaryInfoProps {
@@ -23,4 +24,5 @@ export interface AccordionContextProps {
   expanded?: boolean;
   onChange?: () => void;
   onApplyNow?: () => void;
+  isSecondary?: boolean;
 }
