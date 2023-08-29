@@ -4,8 +4,9 @@ import { COLORS } from '@codewinglet/constants';
 import { Calender } from '@codewinglet/assets';
 import Typography from '../Typography';
 import Button from '../Button';
+import { BlogCardProps } from './types';
 
-const BlogCard: FC<BolgCardProps> = ({ image, desc, title, date }) => (
+const BlogCard: FC<BlogCardProps> = ({ image, desc, title, date }) => (
   <div className='relative h-[400px] md:h-[390px] xl:h-[450px] w-full'>
     {image ? (
       <Image
