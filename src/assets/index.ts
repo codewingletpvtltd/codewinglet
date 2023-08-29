@@ -43,6 +43,7 @@ export { default as BreadcrumbSeparator } from './icons/BreadcrumbSeparator';
 export { default as BackgroundArc } from './icons/BackgroundArc';
 export { default as BackgroundDonutShadow } from './icons/BackgroundDonutShadow';
 export { default as BackgroundSemiCircle } from './icons/BackgroundSemiCircle';
+export { default as Menu } from './icons/Menu';
 
 export * from './heroSection';
 export * from './ourClient';

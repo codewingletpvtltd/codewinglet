@@ -1,5 +1,5 @@
 import React from 'react';
-import { getClassNames } from '@codewinglet/utils';
+import { getClassNames } from '@codewinglet/utils/cn';
 import Typography from '../Typography';
 import { SectionHeaderProps } from './types';
 

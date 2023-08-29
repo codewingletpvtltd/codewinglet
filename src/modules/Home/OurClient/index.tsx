@@ -10,7 +10,7 @@ import {
   logo_6,
 } from '@codewinglet/assets';
 import { SectionHeader } from '@codewinglet/components';
-import { getClassNames } from '@codewinglet/utils';
+import { getClassNames } from '@codewinglet/utils/cn';
 
 const clientLogo = [
   logo_1,

@@ -33,3 +33,14 @@ export interface MenuTriggerProps
   label: string;
   showIcon?: boolean;
 }
+
+export type ChildItemType = {
+  label: string;
+  icon?: string;
+  path?: string;
+  menu?: {
+    label: string;
+    icon?: string;
+    path?: string;
+  }[];
+}[];

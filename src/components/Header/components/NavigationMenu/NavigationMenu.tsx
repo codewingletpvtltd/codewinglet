@@ -1,6 +1,6 @@
 'use client';
 
-import { getClassNames } from '@codewinglet/utils';
+import { getClassNames } from '@codewinglet/utils/cn';
 import { navMenu } from '../../constants';
 import useNavigation from './useNavigation';
 import MenuList from './MenuList';
@@ -39,14 +39,15 @@ const NavigationMenu = () => {
                           isHeader
                         />
 
-                        {menu.menu.map((val, idx) => (
-                          <ListItem
-                            key={`menu-item-${index}-${menuIdx}-${idx}`}
-                            icon={val.icon}
-                            label={val.label}
-                            href={val.path}
-                          />
-                        ))}
+                        {menu.menu &&
+                          menu.menu.map((val, idx) => (
+                            <ListItem
+                              key={`menu-item-${index}-${menuIdx}-${idx}`}
+                              icon={val.icon}
+                              label={val.label}
+                              href={val.path}
+                            />
+                          ))}
                       </ul>
                     </li>
                   ))}
