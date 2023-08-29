@@ -9,15 +9,14 @@ import { NavMenu } from './components';
 const Header = () => {
   const isLarge = useScreenSize(lg);
   return (
-    <header className='h-[90px] flex items-center absolute top-0 z-50 w-[calc(100%-20px)] mx-[20px] md:w-[calc(100%-38px)] md:mx-[38px] lg:mx-auto'>
+    <header className='h-[90px] flex items-center absolute top-0 z-50 w-full'>
       <div className='container'>
-        <div className='flex items-center justify-between'>
+        <div className='flex items-center max-w-screen-xl justify-between mx-[20px] md:mx-[38px] xl:mx-auto'>
           <div>
             <Image
               src={Logo}
               alt='Codewinglet Private Limited Logo'
-              width={250}
-              height={70}
+              className='w-[191px] xl:w-[252px]'
             />
           </div>
           {isLarge ? <NavMenu /> : <Menu />}

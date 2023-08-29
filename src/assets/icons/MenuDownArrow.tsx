@@ -1,0 +1,30 @@
+import { FC, SVGProps } from 'react';
+
+const MenuDownArrow: FC<SVGProps<SVGSVGElement>> = (props) => (
+  <svg
+    xmlns='http://www.w3.org/2000/svg'
+    width='12'
+    height='20'
+    viewBox='0 0 12 20'
+    fill='none'
+    {...props}
+  >
+    <g clip-path='url(#clip0_1371_4587)'>
+      <path
+        d='M6.63758 13.7617L11.7376 8.44922C12.0901 8.08203 12.0901 7.48828 11.7376 7.125L10.8901 6.24219C10.5376 5.875 9.96758 5.875 9.61883 6.24219L6.00383 10.0078L2.38883 6.24219C2.03633 5.875 1.46633 5.875 1.11758 6.24219L0.27008 7.125C-0.0824203 7.49219 -0.0824203 8.08594 0.27008 8.44922L5.37008 13.7617C5.71508 14.1289 6.28508 14.1289 6.63758 13.7617Z'
+        fill='#143048'
+      />
+    </g>
+    <defs>
+      <clipPath id='clip0_1371_4587'>
+        <rect
+          width='12'
+          height='20'
+          fill='white'
+          transform='matrix(-1 0 0 1 12 0)'
+        />
+      </clipPath>
+    </defs>
+  </svg>
+);
+export default MenuDownArrow;

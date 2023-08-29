@@ -9,6 +9,7 @@ const Button: React.FC<ButtonProps> = ({
   startIcon,
   variant = 'primary',
   className = '',
+  labelClassName = '',
   ...rest
 }) =>
   variant === 'primary' ? (
@@ -22,7 +23,10 @@ const Button: React.FC<ButtonProps> = ({
       {startIcon}
       <Typography
         variant='subtitle2'
-        className='relative tracking-wider md:text-[16px] lg:text-[18px]'
+        className={getClassNames(
+          'relative tracking-wider md:text-[16px] lg:text-[18px]',
+          labelClassName
+        )}
       >
         {children}
       </Typography>

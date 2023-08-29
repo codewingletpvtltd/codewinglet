@@ -1,6 +1,7 @@
 'use client';
 
 import { getClassNames } from '@codewinglet/utils/cn';
+import Button from '../../../Button';
 import { navMenu } from '../../constants';
 import useNavigation from './useNavigation';
 import MenuList from './MenuList';
@@ -13,7 +14,7 @@ import MenuIndicator from './MenuIndicator';
 const NavigationMenu = () => {
   const { onMouseEnter, onMouseLeave, left, gridRows } = useNavigation();
   return (
-    <nav className='w-[50%]'>
+    <nav className='flex flex-row items-center gap-[15px] xl:gap-[32px]'>
       <MenuList>
         {navMenu.map((item, index) => (
           <MenuItems
@@ -71,6 +72,7 @@ const NavigationMenu = () => {
           </MenuItems>
         ))}
       </MenuList>
+      <Button labelClassName='text-[14px]'>Contact Us</Button>
     </nav>
   );
 };
