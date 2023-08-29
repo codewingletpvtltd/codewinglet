@@ -26,13 +26,15 @@ const BlogCard: FC<BlogCardProps> = ({ image, desc, title, date }) => (
       </Typography>
       <div className='flex flex-row items-center mt-[6px] mb-[11px]'>
         <Calender color={COLORS.lightBlack} />
-        <Typography
-          variant='subtitle2'
-          className='md:text-[16px] text-lightBlack ml-[8px]'
-        >
-          {date.toLocaleString('default', { month: 'long' })} {date.getDate()},{' '}
-          {date.getFullYear()}
-        </Typography>
+        {date && (
+          <Typography
+            variant='subtitle2'
+            className='md:text-[16px] text-lightBlack ml-[8px]'
+          >
+            {date.toLocaleString('default', { month: 'long' })} {date.getDate()}
+            , {date.getFullYear()}
+          </Typography>
+        )}
       </div>
       <Typography
         variant='h5'

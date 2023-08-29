@@ -1,6 +1,8 @@
+import { StaticImageData } from 'next/image';
+
 export interface BlogCardProps {
-  image?: string;
+  image?: StaticImageData;
   desc?: string;
   title: string;
-  date?: string;
+  date?: Date;
 }
