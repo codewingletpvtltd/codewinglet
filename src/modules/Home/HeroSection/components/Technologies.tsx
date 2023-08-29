@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { Slider } from '@codewinglet/components';
-import { getClassNames } from '@codewinglet/utils';
+import { getClassNames } from '@codewinglet/utils/cn';
 import { settings, techList } from './utils';
 
 const Technologies = () => (

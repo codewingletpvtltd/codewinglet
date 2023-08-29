@@ -24,7 +24,6 @@ export { default as UiLib } from './icons/UiLib';
 export { default as UiUxDev } from './icons/UiUxDev';
 export { default as Hire } from './icons/Hire';
 export { default as BgWave } from './BgWave';
-export { default as ServiceCircleIcon } from './icons/ServiceCircleIcon';
 export { default as StarIcon } from './icons/StarIcon';
 export { default as HighlightArrow } from './icons/HighlightArrow';
 export { default as StarsSVG } from './StarsSVG';
@@ -41,6 +40,9 @@ export { default as Phone } from './icons/Phone';
 export { default as Email } from './icons/Email';
 export { default as Close } from './icons/Close';
 export { default as BreadcrumbSeparator } from './icons/BreadcrumbSeparator';
+export { default as BackgroundArc } from './icons/BackgroundArc';
+export { default as BackgroundDonutShadow } from './icons/BackgroundDonutShadow';
+export { default as BackgroundSemiCircle } from './icons/BackgroundSemiCircle';
 
 export * from './heroSection';
 export * from './ourClient';

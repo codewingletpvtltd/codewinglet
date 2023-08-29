@@ -4,4 +4,5 @@ export interface SectionHeaderProps {
   headingClassName?: string;
   descriptionTextWrap?: boolean;
   descriptionClassName?: string;
+  wrapperClassName?: string;
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Arrow } from '@codewinglet/assets';
-import { getClassNames } from '@codewinglet/utils';
+import { getClassNames } from '@codewinglet/utils/cn';
 import Typography from '../Typography';
 import { ButtonProps } from './types';
 

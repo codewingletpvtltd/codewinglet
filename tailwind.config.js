@@ -69,6 +69,9 @@ module.exports = {
       backgroundImage: {
         'curve-pattern': 'url("/assets/reactJS.svg")',
       },
+      textShadow: {
+        sm: '2px 2px 0 #506B82, -1px -1px 0 #506B82,1px -1px 0 #506B82,-1px 1px 0 #506B82,1px 1px 0 #506B82',
+      },
       gridTemplateRows: {
         // Simple 8 row grid
         8: 'repeat(8, minmax(0, 1fr))',

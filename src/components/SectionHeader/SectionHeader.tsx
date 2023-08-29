@@ -9,8 +9,9 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
   headingClassName = '',
   descriptionTextWrap,
   descriptionClassName = '',
+  wrapperClassName = '',
 }) => (
-  <div>
+  <div className={wrapperClassName}>
     <Typography
       variant='h4'
       className={getClassNames(

@@ -1,1 +1,11 @@
 export { default as FrontendSVG } from './FrontendSVG';
+export { default as apiIntegration } from './apiIntegration.svg';
+export { default as componentLib } from './componentLib.svg';
+export { default as enterpriseAppDev } from './enterpriseAppDev.svg';
+export { default as microFrontend } from './microFrontend.svg';
+export { default as migration } from './migration.svg';
+export { default as support } from './support.svg';
+export { default as achievement1 } from './achievement1.svg';
+export { default as achievement2 } from './achievement2.svg';
+export { default as achievement3 } from './achievement3.svg';
+export { default as achievement4 } from './achievement4.svg';
