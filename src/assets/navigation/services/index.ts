@@ -1,0 +1,13 @@
+export { default as beDev } from './beDev.svg';
+export { default as customSoftwareDev } from './customSoftwareDev.svg';
+export { default as feDev } from './feDev.svg';
+export { default as maintenance } from './maintenance.svg';
+export { default as mobileApp } from './mobileApp.svg';
+export { default as multiTenatSystem } from './multiTenatSystem.svg';
+export { default as projectConsulting } from './projectConsulting.svg';
+export { default as qa } from './qa.svg';
+export { default as teamDev } from './teamDev.svg';
+export { default as uiComponent } from './uiComponent.svg';
+export { default as uiux } from './uiux.svg';
+export { default as webApp } from './webApp.svg';
+export { default as webDesigning } from './webDesigning.svg';

@@ -22,10 +22,32 @@ module.exports = {
           '0%': { opacity: 0.5 },
           '100%': { opacity: 1 },
         },
+        enterFromTop: {
+          from: {
+            opacity: 0,
+            transform: 'translateY(-10px)',
+          },
+          to: {
+            opacity: 1,
+            transform: 'translateY(0)',
+          },
+        },
+        exitToTop: {
+          from: {
+            opacity: 1,
+            transform: 'translateY(1)',
+          },
+          to: {
+            opacity: 0,
+            transform: 'translateY(-10px)',
+          },
+        },
       },
       animation: {
         swing: 'swing ease-in-out 0.8s infinite alternate',
         spin: 'spin 4s infinite linear',
+        enterFromTop: 'enterFromTop linear 0.2s',
+        exitToTop: 'exitToTop linear 0.2s',
       },
       minHeight: {
         h1: '68px',
@@ -49,6 +71,10 @@ module.exports = {
       },
       textShadow: {
         sm: '2px 2px 0 #506B82, -1px -1px 0 #506B82,1px -1px 0 #506B82,-1px 1px 0 #506B82,1px 1px 0 #506B82',
+      },
+      gridTemplateRows: {
+        // Simple 8 row grid
+        8: 'repeat(8, minmax(0, 1fr))',
       },
     },
     colors: {
@@ -100,7 +126,7 @@ module.exports = {
       h3: [
         '40px',
         {
-          fontWeight: 900,
+          fontWeight: 800,
         },
       ],
       h4: [
@@ -148,5 +174,5 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [],
+  plugins: [require('tailwindcss-animate')],
 };
