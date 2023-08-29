@@ -49,3 +49,4 @@ export * from './heroSection';
 export * from './ourClient';
 export * from './navigation';
 export * from './technologies';
+export * from './blog';
