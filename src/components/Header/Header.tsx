@@ -1,37 +1,22 @@
-import Link from 'next/link';
-
-const headerMenu = [
-  {
-    id: 1,
-    label: 'Services',
-    path: '/',
-  },
-  {
-    id: 2,
-    label: 'Technology',
-    path: '/',
-  },
-];
+import Image from 'next/image';
+import Logo from '@codewinglet/assets/company_logo.svg';
+import { NavMenu } from './components';
 
 const Header = () => (
-  <header className='h-[90px] flex items-center'>
+  <header className='h-[90px] flex items-center absolute top-0 z-50 w-full'>
     <div className='container'>
       <div className='flex items-center justify-between'>
         <div>
-          {/* <Image
+          <Image
             src={Logo}
             alt='Codewinglet Private Limited Logo'
             width={250}
             height={70}
-          /> */}
+          />
         </div>
-        <ul className='flex'>
-          {headerMenu.map((menu) => (
-            <li key={menu.id}>
-              <Link href={menu.path}>{menu.label}</Link>
-            </li>
-          ))}
-        </ul>
+        <NavMenu />
+        {/* <RadixNav /> */}
+        {/* <Shadcn /> */}
       </div>
     </div>
   </header>

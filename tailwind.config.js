@@ -22,10 +22,32 @@ module.exports = {
           '0%': { opacity: 0.5 },
           '100%': { opacity: 1 },
         },
+        enterFromTop: {
+          from: {
+            opacity: 0,
+            transform: 'translateY(-10px)',
+          },
+          to: {
+            opacity: 1,
+            transform: 'translateY(0)',
+          },
+        },
+        exitToTop: {
+          from: {
+            opacity: 1,
+            transform: 'translateY(1)',
+          },
+          to: {
+            opacity: 0,
+            transform: 'translateY(-10px)',
+          },
+        },
       },
       animation: {
         swing: 'swing ease-in-out 0.8s infinite alternate',
         spin: 'spin 4s infinite linear',
+        enterFromTop: 'enterFromTop linear 0.2s',
+        exitToTop: 'exitToTop linear 0.2s',
       },
       minHeight: {
         h1: '68px',
@@ -46,6 +68,10 @@ module.exports = {
       },
       backgroundImage: {
         'curve-pattern': 'url("/assets/reactJS.svg")',
+      },
+      gridTemplateRows: {
+        // Simple 8 row grid
+        8: 'repeat(8, minmax(0, 1fr))',
       },
     },
     colors: {
@@ -145,5 +171,5 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [],
+  plugins: [require('tailwindcss-animate')],
 };
