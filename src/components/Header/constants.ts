@@ -73,8 +73,9 @@ import {
   webDesigning,
   whyCodewinglet,
 } from '@codewinglet/assets';
+import { ChildItemType } from './types';
 
-const services = [
+const services: ChildItemType = [
   {
     path: 'project-consulting',
     label: 'Project Consulting',
@@ -141,7 +142,7 @@ const services = [
     icon: teamDev,
   },
 ];
-const industriesMenu = [
+const industriesMenu: ChildItemType = [
   {
     icon: healthCare,
     label: 'Heathcare',
@@ -216,7 +217,7 @@ const industriesMenu = [
   },
 ];
 
-const companyMenu = [
+const companyMenu: ChildItemType = [
   {
     icon: aboutUs,
     label: 'About Us',
@@ -232,7 +233,7 @@ const companyMenu = [
   },
 ];
 
-const technology = [
+const technology: ChildItemType = [
   {
     path: '',
     icon: frontend,

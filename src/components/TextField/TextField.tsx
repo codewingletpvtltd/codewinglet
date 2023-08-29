@@ -1,5 +1,5 @@
 import React, { useId } from 'react';
-import { getClassNames } from '@codewinglet/utils';
+import { getClassNames } from '@codewinglet/utils/cn';
 import { TextFieldProps } from './types';
 
 const TextField: React.FC<TextFieldProps> = ({

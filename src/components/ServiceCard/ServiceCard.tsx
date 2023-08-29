@@ -1,5 +1,5 @@
 import React from 'react';
-import { getClassNames } from '@codewinglet/utils';
+import { getClassNames } from '@codewinglet/utils/cn';
 import Typography from '../Typography';
 import Button from '../Button';
 import { ServiceCardProps } from './types';

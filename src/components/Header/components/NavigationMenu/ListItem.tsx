@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { FC } from 'react';
-import { getClassNames } from '@codewinglet/utils';
+import { getClassNames } from '@codewinglet/utils/cn';
 import Typography from '../../../Typography';
 import { ListItemProps } from '../../types';
 

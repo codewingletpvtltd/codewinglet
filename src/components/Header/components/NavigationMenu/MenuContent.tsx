@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { getClassNames } from '@codewinglet/utils';
+import { getClassNames } from '@codewinglet/utils/cn';
 import { MenuContentProps } from '../../types';
 
 const MenuContent: FC<MenuContentProps> = ({
