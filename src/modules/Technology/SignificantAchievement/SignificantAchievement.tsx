@@ -42,7 +42,7 @@ const SignificantAchievement = () => {
         >
           {achievements.map((data, index) => (
             <div
-              className='py-[27px] px-[23px] !w-[calc(100%-24px)] !h-[250px] !flex flex-col self-center !my-[30px] !mx-[12px] bg-white rounded-10 shadow-lg'
+              className='py-[27px] px-[23px] !w-[calc(100%-24px)] !h-[250px] !flex flex-col self-center !my-[30px] !mx-[12px] bg-white rounded-10 shadow-lg lg:!h-[300px]'
               key={`achievements-${index}`}
             >
               <Card
