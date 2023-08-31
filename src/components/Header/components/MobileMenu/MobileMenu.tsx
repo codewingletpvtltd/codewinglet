@@ -9,7 +9,7 @@ const MobileMenu = () => {
   const { expanded, onMenuExpand } = useMobileMenu();
   return (
     <>
-      <div className='fixed bg-[rgba(0,0,0,0.5)] top-[80px] bottom-0 right-0 left-0 inset-0 -z-10 bg-white ' />
+      <div className='fixed bg-[rgba(0,0,0,0.5)] top-[80px] bottom-0 right-0 left-0 inset-0 -z-10 bg-white' />
       <div
         role='presentation'
         className='bg-white fixed top-[80px] left-0 right-0 b-0 border-t border-t-lightBlack pt-[10px] animate-enterFromTop overflow-y-auto max-h-[500px]'
