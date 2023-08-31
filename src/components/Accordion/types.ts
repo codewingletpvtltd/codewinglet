@@ -11,6 +11,9 @@ export interface AccordionProps {
   contentClassName?: string;
   onApplyNow?: () => void;
   variant?: 'primary' | 'secondary';
+  titleClassName?: string;
+  rightIcon?: React.ReactNode;
+  headerClassName?: string;
 }
 
 export interface SummaryInfoProps {
@@ -25,4 +28,7 @@ export interface AccordionContextProps {
   onChange?: () => void;
   onApplyNow?: () => void;
   isSecondary?: boolean;
+  titleClassName?: string;
+  rightIcon?: React.ReactNode;
+  headerClassName?: string;
 }
