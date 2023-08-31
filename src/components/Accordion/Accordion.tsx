@@ -13,12 +13,25 @@ const Accordion: FC<AccordionProps> = ({
   children,
   onApplyNow,
   contentClassName = '',
+  titleClassName = '',
+  headerClassName = '',
+  rightIcon,
   variant,
 }) => {
   const isSecondary = variant === 'secondary';
   return (
     <AccordionContext.Provider
-      value={{ title, info, expanded, onChange, onApplyNow, isSecondary }}
+      value={{
+        title,
+        info,
+        expanded,
+        onChange,
+        onApplyNow,
+        isSecondary,
+        titleClassName,
+        headerClassName,
+        rightIcon,
+      }}
     >
       <div
         className={getClassNames(
@@ -28,11 +41,9 @@ const Accordion: FC<AccordionProps> = ({
         <Summary />
         <div
           className={getClassNames(
-            'transition-[max-height] overflow-hidden duration-[400ms] ease-linear',
+            'transition-[max-height] overflow-hidden duration-[400] ease-linear overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-300',
             expanded
-              ? isSecondary
-                ? 'max-h-[500px] md:max-h-[400px] lg:max-h-[300px]'
-                : 'max-h-[5000px] md:max-h-[4000px] lg:max-h-[3000px]'
+              ? 'max-h-[800px] md:max-h-[700px] lg:max-h-[600px]'
               : 'max-h-0'
           )}
         >

@@ -29,7 +29,7 @@ const Consultant = () => (
           // startIcon={<Calender color='' />}
           variant='contained'
         >
-          <div className='rounded-full absolute inset-0 w-0 bg-white transition-all duration-[250ms] ease-out group-hover:w-full' />
+          <div className='rounded-full absolute inset-0 w-0 bg-white transition-all duration-[250] ease-out group-hover:w-full' />
 
           <Typography
             className='relative text-white group-hover:text-black'

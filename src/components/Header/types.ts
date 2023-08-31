@@ -23,6 +23,7 @@ export interface ListItemProps
   icon?: string;
   label: string;
   isHeader?: boolean;
+  labelClassName?: string;
 }
 
 export interface MenuTriggerProps

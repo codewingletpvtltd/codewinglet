@@ -8,6 +8,7 @@ export const ListItem: FC<ListItemProps> = ({
   icon,
   label,
   isHeader = false,
+  labelClassName = '',
   ...props
 }) => (
   <li>
@@ -31,7 +32,8 @@ export const ListItem: FC<ListItemProps> = ({
         variant='subtitle1'
         className={getClassNames(
           'font-bold capitalize text-lightBlack whitespace-nowrap ml-2',
-          isHeader ? 'text-[18px] font-800 text-black' : ''
+          isHeader ? 'text-[18px] font-800 text-black' : '',
+          labelClassName
         )}
       >
         {label}

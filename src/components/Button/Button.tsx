@@ -15,7 +15,7 @@ const Button: React.FC<ButtonProps> = ({
   variant === 'primary' ? (
     <button
       className={getClassNames(
-        'group relative text-primary flex justify-center items-center px-[15px] py-[5px] before:absolute before:h-[33px] before:w-[33px] before:rounded-[50%] before:opacity-[0.15] before:bg-primary before:left-0 before:transition-all before:duration-[0.3s] before:ease-linear before:hover:w-full before:hover:rounded-[50px]',
+        'group relative text-primary flex justify-center items-center px-[15px] py-[5px] before:absolute before:h-[33px] before:w-[33px] before:rounded-[50%] before:opacity-[0.15] before:bg-primary before:left-0 before:transition-all before:duration-[300] before:ease-linear before:hover:w-full before:hover:rounded-[50px]',
         className
       )}
       {...rest}
@@ -33,7 +33,7 @@ const Button: React.FC<ButtonProps> = ({
       <Arrow
         width={16}
         height={16}
-        className='relative fill-none stroke-2 translate-x-[-5px] transition-all duration-[0.3s] ease-[ease] ml-2.5 top-0 stroke-linecap:round stroke-linejoin: round group-hover:translate-x-0'
+        className='relative fill-none stroke-2 translate-x-[-5px] transition-all duration-[0.3s] ease-linear ml-2.5 top-0 stroke-linecap:round stroke-linejoin: round group-hover:translate-x-0'
       />
     </button>
   ) : (
