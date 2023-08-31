@@ -44,6 +44,8 @@ export { default as BackgroundArc } from './icons/BackgroundArc';
 export { default as BackgroundDonutShadow } from './icons/BackgroundDonutShadow';
 export { default as BackgroundSemiCircle } from './icons/BackgroundSemiCircle';
 export { default as Menu } from './icons/Menu';
+export { default as MenuDownArrow } from './icons/MenuDownArrow';
+export { default as MenuClose } from './icons/MenuClose';
 
 export * from './heroSection';
 export * from './ourClient';

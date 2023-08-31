@@ -5,4 +5,5 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'contained';
   startIcon?: React.ReactNode;
   className?: string;
+  labelClassName?: string;
 }

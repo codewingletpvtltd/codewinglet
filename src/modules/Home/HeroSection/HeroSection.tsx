@@ -20,7 +20,7 @@ const sequence = [
 ];
 
 const HeroSection = () => (
-  <div className='relative bg-aliceBlue z-0 overflow-hidden'>
+  <div className='relative bg-aliceBlue z-0 overflow-hidden pt-[38px]'>
     <div className='container relative'>
       <div className='my-[50px] mx-[20px] md:mx-[38px] max-w-screen-xl xl:mx-auto px-[20px] sm:p-0 flex items-center max-sm:flex-col md:gap-[35px] lg:gap-[75px] xl:gap-[140px] lg:w-full relative flex-col md:flex-row'>
         <div className='relative lg:self-end'>

@@ -8,15 +8,25 @@ import { Info } from '../../types';
 
 const Heading = () => {
   const accordionContext = useAccordionContext();
-  const { title, info, expanded, onChange, onApplyNow, isSecondary } =
-    accordionContext || {};
+  const {
+    title,
+    info,
+    expanded,
+    onChange,
+    onApplyNow,
+    isSecondary,
+    titleClassName = '',
+    headerClassName = '',
+    rightIcon,
+  } = accordionContext || {};
   return (
     <div
       className={getClassNames(
         'grid md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-6 gap-[8px]',
         isSecondary
           ? 'grid-cols-3 pb-[22px] border-b border-b-lightBlack'
-          : 'grid-cols-1'
+          : 'grid-cols-1',
+        headerClassName
       )}
     >
       <div
@@ -27,7 +37,10 @@ const Heading = () => {
       >
         <Typography
           variant='body2'
-          className='font-[800] md:text-[22px] lg:text-[25px]'
+          className={getClassNames(
+            'font-[800] md:text-[22px] lg:text-[25px]',
+            titleClassName
+          )}
         >
           {title}
         </Typography>
@@ -48,7 +61,9 @@ const Heading = () => {
           </div>
         )}
       </div>
-      {isSecondary ? (
+      {rightIcon ? (
+        rightIcon
+      ) : isSecondary ? (
         <div className='flex items-center justify-end'>
           {expanded ? (
             <MinusIcon onClick={onChange} className='hover:cursor-pointer' />
@@ -68,7 +83,7 @@ const Heading = () => {
           >
             <DownArrow
               className={getClassNames(
-                'transition duration-[400ms] ease-linear',
+                'transition duration-[400] ease-linear',
                 expanded ? 'rotate-[180deg]' : ''
               )}
             />
