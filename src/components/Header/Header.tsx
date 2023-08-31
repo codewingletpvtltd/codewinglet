@@ -15,7 +15,7 @@ const Header = () => {
     <header
       className={getClassNames(
         'fixed h-[90px] flex items-center top-0 z-50 w-full',
-        showMenu ? 'bg-white' : ''
+        showMenu ? 'bg-white' : 'bg-aliceBlue'
       )}
     >
       <div className='container'>
