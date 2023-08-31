@@ -13,7 +13,7 @@ export const Default: StoryObj<typeof Slider> = {
       <div
         key={`slider-${index}`}
         className={getClassNames(
-          'bg-white rounded-10 shadow-[1px_1px_20px_0_rgba(0,0,0,0.07)] py-[27px] px-[23px] !w-[calc(100%-24px)] !h-[calc(100%-30px)] !my-[30px] !mx-[12px] !flex self-center'
+          'bg-white rounded-10 shadow-lg py-[27px] px-[23px] !w-[calc(100%-24px)] !h-[calc(100%-30px)] !my-[30px] !mx-[12px] !flex self-center'
         )}
       >
         <Typography variant='h1'>Slide {index + 1}</Typography>
