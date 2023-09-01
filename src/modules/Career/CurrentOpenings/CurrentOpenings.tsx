@@ -13,7 +13,7 @@ const CurrentOpenings = () => {
 
   return (
     <>
-      <div className='max-w-screen-xl mx-[20px] my-[50px] md:mx-[38px] xl:mx-auto'>
+      <div className='max-w-screen-xl mx-[20px] my-[50px] md:mx-[38px] xl:mx-auto mt-[150px]'>
         <SectionHeader
           title={
             <>

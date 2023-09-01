@@ -14,6 +14,7 @@ export interface AccordionProps {
   titleClassName?: string;
   rightIcon?: React.ReactNode;
   headerClassName?: string;
+  onTitleClick?: () => void;
 }
 
 export interface SummaryInfoProps {
@@ -31,4 +32,5 @@ export interface AccordionContextProps {
   titleClassName?: string;
   rightIcon?: React.ReactNode;
   headerClassName?: string;
+  onTitleClick?: () => void;
 }

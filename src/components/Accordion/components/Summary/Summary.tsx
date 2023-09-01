@@ -18,6 +18,7 @@ const Heading = () => {
     titleClassName = '',
     headerClassName = '',
     rightIcon,
+    onTitleClick,
   } = accordionContext || {};
   return (
     <div
@@ -34,6 +35,7 @@ const Heading = () => {
           'md:col-span-2 lg:col-span-3 2xl:col-span-5',
           isSecondary ? 'col-span-2' : ''
         )}
+        onClick={onTitleClick}
       >
         <Typography
           variant='body2'

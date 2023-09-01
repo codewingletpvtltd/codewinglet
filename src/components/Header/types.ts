@@ -1,4 +1,4 @@
-import { AnchorHTMLAttributes, DetailedHTMLProps, MouseEvent } from 'react';
+import { MouseEvent } from 'react';
 export interface MenuListProps {
   children: React.ReactNode;
 }
@@ -15,24 +15,18 @@ export interface MenuContentProps {
   className?: string;
 }
 
-export interface ListItemProps
-  extends DetailedHTMLProps<
-    AnchorHTMLAttributes<HTMLAnchorElement>,
-    HTMLAnchorElement
-  > {
+export interface ListItemProps {
   icon?: string;
   label: string;
   isHeader?: boolean;
   labelClassName?: string;
+  onClick?: () => void;
 }
 
-export interface MenuTriggerProps
-  extends DetailedHTMLProps<
-    AnchorHTMLAttributes<HTMLAnchorElement>,
-    HTMLAnchorElement
-  > {
+export interface MenuTriggerProps {
   label: string;
   showIcon?: boolean;
+  href: string;
 }
 
 export type ChildItemType = {
@@ -45,3 +39,7 @@ export type ChildItemType = {
     path?: string;
   }[];
 }[];
+
+export interface MobileMenuProps {
+  onMenu: () => void;
+}

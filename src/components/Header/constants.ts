@@ -77,7 +77,7 @@ import { ChildItemType } from './types';
 
 const services: ChildItemType = [
   {
-    path: 'project-consulting',
+    path: '/project-consulting',
     label: 'Project Consulting',
     icon: projectConsulting,
   },

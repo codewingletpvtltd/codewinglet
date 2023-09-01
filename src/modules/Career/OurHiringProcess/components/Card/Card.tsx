@@ -9,12 +9,12 @@ const Card: FC<CardProps> = ({ index, icon, title, desc }) => (
       {icon && <Image src={icon} alt='card image' className='absolute top-5' />}
       <Typography
         variant='h2'
-        className='text-darkBlue text-[45px] font-700 lg:text-[50px] opacity-20 -z-10'
+        className='text-darkBlue text-[45px] font-700 lg:text-[50px] opacity-20 -z-10 text-center'
       >
         {index}
       </Typography>
     </div>
-    <Typography variant='body2' className='font-800 lg:text-[20px]'>
+    <Typography variant='body2' className='font-800 lg:text-[20px] text-center'>
       {title}
     </Typography>
     <Typography

@@ -18,8 +18,8 @@ import { sliderSettings } from './config';
 
 const HeroSection = () => (
   <>
-    <div className='bg-aliceBlue px-[20px] pt-[50px] pb-[120px] relative mt-[80px] -z-10 overflow-hidden'>
-      <LeftLineMediumSVG className='absolute left-[-10px] -z-40' />
+    <div className='bg-aliceBlue px-[20px] pt-[50px] pb-[120px] relative mt-[80px] z-[-1] overflow-hidden'>
+      <LeftLineMediumSVG className='absolute left-[-10px] x-100' />
       <RectangleSVG className='absolute right-[50px] top-5 lg:h-[24px] lg:w-[24px]' />
       <StarsSVG className='absolute top-[40%] md:left-[50%] md:top-[60%] 2xl:top-[50px] 2xl:left-[100px] lg:h-[70px] lg:w-[70px]' />
       <div className='max-w-screen-xl md:mx-[38px] xl:mx-auto'>
@@ -49,9 +49,9 @@ const HeroSection = () => (
           />
         </div>
       </div>
-      <RightLineSVG className='absolute right-0 top-[-100px] -z-40' />
+      <RightLineSVG className='absolute right-0 top-[-100px] z-100' />
     </div>
-    <div className='max-w-screen-xl mx-[20px] md:mx-[38px] xl:mx-auto bg-white rounded-10 shadow-lg py-[33px] px-[32px] mt-[-100px] z-10'>
+    <div className='max-w-screen-xl mx-[20px] md:mx-[38px] xl:mx-auto bg-white rounded-10 shadow-lg py-[33px] px-[32px] mt-[-100px] z-100'>
       <SectionHeader
         title={
           <>
