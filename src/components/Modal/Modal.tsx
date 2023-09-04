@@ -5,7 +5,15 @@ import Typography from '../Typography';
 import Button from '../Button';
 import { ModalProps } from './types';
 
-const Modal: FC<ModalProps> = ({ open, children, title, onClose, onApply }) => (
+const Modal: FC<ModalProps> = ({
+  open,
+  children,
+  title,
+  onClose,
+  onApply,
+  showFooter = true,
+  showHeader = true,
+}) => (
   <div
     role='presentation'
     className={getClassNames(
@@ -13,21 +21,28 @@ const Modal: FC<ModalProps> = ({ open, children, title, onClose, onApply }) => (
       open ? 'visible' : 'invisible'
     )}
   >
-    <div className='md:min-w-[780px] bg-white absolute'>
+    <div
+      className={getClassNames(
+        'md:min-w-[780px] bg-white absolute transition-opacity duration-500 ease-in-out',
+        open ? 'opacity-100' : 'opacity-0'
+      )}
+    >
       <div className='bg-primary h-[6px]' />
 
       <div className='grid grid-flow-row gap-[30px] pt-[20px] px-[36px] pb-[40px] bg-white'>
-        <div className='flex justify-start items-center'>
-          <Typography
-            variant='h3'
-            className='text-[35px] font-[800] self-center text-center w-[95%]'
-          >
-            {title}
-          </Typography>
-          <Close className='cursor-pointer' onClick={onClose} />
-        </div>
+        {showHeader && (
+          <div className='flex justify-start items-center'>
+            <Typography
+              variant='h3'
+              className='text-[35px] font-[800] self-center text-center w-[95%]'
+            >
+              {title}
+            </Typography>
+            <Close className='cursor-pointer' onClick={onClose} />
+          </div>
+        )}
         {children}
-        <Button onClick={onApply}>Apply Now</Button>
+        {showFooter && <Button onClick={onApply}>Apply Now</Button>}
       </div>
     </div>
   </div>
