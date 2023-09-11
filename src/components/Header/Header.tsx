@@ -20,7 +20,7 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
       id='header'
       className={getClassNames(
         'fixed h-[90px] flex items-center top-0 z-50 w-full',
-        showMenu ? 'bg-white' : isScroll ? 'bg-white' : 'bg-aliceBlue'
+        showMenu ? 'bg-white' : isScroll ? 'bg-white shadow-lg' : 'bg-aliceBlue'
       )}
     >
       <div className='container'>
