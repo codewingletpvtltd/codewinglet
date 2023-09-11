@@ -3,6 +3,7 @@ import OurServices from './OurServices';
 import OurPortfolio from './OurPortfolio/OurPortfolio';
 import HeroSection from './HeroSection/HeroSection';
 import OurClient from './OurClient';
+import ClientTestimonials from './ClientTestimonials';
 import Technologies from './Technologies';
 
 const Home = () => (
@@ -12,6 +13,7 @@ const Home = () => (
     <OurPortfolio />
     <Technologies />
     <OurClient />
+    <ClientTestimonials />
     <Consultant />
   </>
 );
