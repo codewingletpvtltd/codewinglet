@@ -16,3 +16,5 @@ export { default as FileUpload } from './FileUpload';
 export { default as Breadcrumb } from './Breadcrumb';
 export { default as Header } from './Header';
 export { default as TechnologiesTab } from './TechnologiesTab';
+export { default as BlogCard } from './BlogCard';
+export { default as MenuIcon } from './MenuIcon';

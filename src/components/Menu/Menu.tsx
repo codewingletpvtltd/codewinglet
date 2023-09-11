@@ -1,5 +1,5 @@
 import React from 'react';
-import { getClassNames } from '@codewinglet/utils';
+import { getClassNames } from '@codewinglet/utils/cn';
 import {
   MenuItemIconProps,
   MenuItemProps,
@@ -19,7 +19,14 @@ const Menu: React.FC<MenuProps> & {
   Item: React.FC<MenuItemProps>;
   ItemIcon: React.FC<MenuItemIconProps>;
   ItemText: React.FC<MenuItemTextProps>;
-} = ({ children, className = '', anchorEle, open, onClose }) => {
+} = ({
+  children,
+  className = '',
+  anchorEle,
+  open,
+  onClose,
+  menuClassName = '',
+}) => {
   const { _anchorPosition, menuContainerPosition } =
     getAnchorPosition(anchorEle);
 
@@ -28,7 +35,7 @@ const Menu: React.FC<MenuProps> & {
       <div
         role='presentation'
         className={getClassNames(
-          'inset-x-0 pt-[15px] absolute w-full',
+          'inset-x-[20px] pt-[15px] absolute w-full',
           open ? 'visible' : 'invisible',
           className
         )}
@@ -43,8 +50,9 @@ const Menu: React.FC<MenuProps> & {
         <div
           id='menu-container'
           className={getClassNames(
-            'absolute bg-white rounded-[10px] py-[47px] px-[39px] gap-x-[30px] grid grid-flow-col z-10 drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)] shadow-none  min-w-[272px]',
-            'transform-none transition-opacity'
+            'absolute bg-white rounded-[10px] p-[39px] gap-x-[22px] z-10 drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)] shadow-none  min-w-[272px]',
+            'transform-none transition-opacity',
+            menuClassName
           )}
           style={{ ...menuContainerPosition }}
         >

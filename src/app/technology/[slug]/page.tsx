@@ -1,3 +1,5 @@
+import Technology from '@codewinglet/modules/Technology';
+
 export default function Page({ params }: { params: { slug: string } }) {
-  return <div>blog {params.slug}</div>;
+  return <Technology />;
 }

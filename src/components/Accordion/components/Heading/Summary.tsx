@@ -6,7 +6,8 @@ import HeadingInfo from '../SummaryInfo';
 import { Info } from '../../types';
 
 const Heading = () => {
-  const { title, info } = useAccordionContext();
+  const accordionContext = useAccordionContext();
+  const { title, info } = accordionContext || {};
   return (
     <div className='grid grid-cols-1 md:grid-cols-7 gap-[8px] border-b border-b-lightBlack pb-[15px]'>
       <div className='md:col-span-6'>

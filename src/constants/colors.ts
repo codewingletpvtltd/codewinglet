@@ -11,6 +11,7 @@ const COLORS = {
   lightOrange: '#FEF2EF',
   sky: '#ACD3EA',
   lightBlue: '#F4FAFF',
+  darkBlue: '#141F6A',
 };
 
 export default COLORS;

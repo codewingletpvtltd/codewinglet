@@ -1,8 +1,8 @@
 'use client';
 import { SectionHeader, ServiceCard, Slider } from '@codewinglet/components';
-import { getClassNames } from '@codewinglet/utils';
-import { BgWave, ServiceCircleIcon, StarIcon } from '@codewinglet/assets';
+import { BackgroundDonutShadow, BgWave, StarIcon } from '@codewinglet/assets';
 import useScreenSize from '@codewinglet/hooks/useScreenSize';
+import { getClassNames } from '@codewinglet/utils/cn';
 import { md } from '../../../constants/mediaQueryConst';
 import { services } from './utils';
 
@@ -62,7 +62,7 @@ const OurService = () => {
           })}
         </Slider>
       </div>
-      <ServiceCircleIcon className='absolute hidden bottom-[36px] left-[94px] w-[75px] h-[75px] xl:block xl:left-[8px] 2xl:left-[37px] 2xl:w-[101px] 2xl:h-[101px]' />
+      <BackgroundDonutShadow className='absolute hidden bottom-[36px] left-[94px] w-[75px] h-[75px] xl:block xl:left-[8px] 2xl:left-[37px] 2xl:w-[101px] 2xl:h-[101px]' />
     </div>
   );
 };
