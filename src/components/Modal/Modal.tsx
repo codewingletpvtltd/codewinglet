@@ -42,7 +42,11 @@ const Modal: FC<ModalProps> = ({
           </div>
         )}
         {children}
-        {showFooter && <Button onClick={onApply}>Apply Now</Button>}
+        {showFooter && (
+          <div className='flex items-center justify-center'>
+            <Button onClick={onApply}>Apply Now</Button>
+          </div>
+        )}
       </div>
     </div>
   </div>

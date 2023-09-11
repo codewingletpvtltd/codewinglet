@@ -8,7 +8,7 @@ const Faq = () => {
   const { expanded, onChangeAccordion } = useFaq();
   return (
     <div className='bg-aliceBlue px-[20px] py-[50px] relative'>
-      <BackgroundCircle className='invisible absolute top-[10%] lg:visible xl:h-[100px] xl:w-[146px]' />
+      <BackgroundCircle className='invisible absolute top-[80px] lg:visible xl:h-[100px] xl:w-[146px]' />
       <div className='max-w-screen-xl md:mx-[38px] xl:mx-auto'>
         <SectionHeader
           title={
@@ -40,7 +40,7 @@ const Faq = () => {
           ))}
         </div>
       </div>
-      <LeftArrowsSVG className='absolute invisible lg:visible top-[10%] right-0 xl:w-[200px] xl:h-[22px]' />
+      <LeftArrowsSVG className='absolute invisible lg:visible top-[50px] right-0 xl:w-[200px] xl:h-[22px]' />
     </div>
   );
 };
