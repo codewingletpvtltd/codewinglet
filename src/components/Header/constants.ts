@@ -221,7 +221,7 @@ const companyMenu: ChildItemType = [
   {
     icon: aboutUs,
     label: 'About Us',
-    path: '/about-us',
+    path: '/',
   },
   {
     icon: whyCodewinglet,
@@ -487,7 +487,7 @@ export const navMenu = [
     children: companyMenu,
   },
   {
-    path: '/blog',
+    path: '/',
     label: 'Blog',
   },
 ];

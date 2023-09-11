@@ -46,19 +46,15 @@ const Accordion: FC<AccordionProps> = ({
             'transition-[max-height] overflow-hidden duration-[400] ease-linear overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-300',
             expanded
               ? 'max-h-[800px] md:max-h-[700px] lg:max-h-[600px]'
-              : 'max-h-0'
+              : 'max-h-0',
+            expanded
+              ? isSecondary
+                ? 'pt-[22px]'
+                : 'mt-[17px] pt-[25px] border-t border-t-lightBlack'
+              : ''
           )}
         >
-          <div
-            className={getClassNames(
-              isSecondary
-                ? 'pt-[22px]'
-                : 'mt-[17px] pt-[25px] border-t border-t-lightBlack',
-              contentClassName
-            )}
-          >
-            {children}
-          </div>
+          <div className={contentClassName}>{children}</div>
         </div>
       </div>
     </AccordionContext.Provider>
