@@ -5,4 +5,5 @@ export interface SectionHeaderProps {
   descriptionTextWrap?: boolean;
   descriptionClassName?: string;
   wrapperClassName?: string;
+  showDescription?: boolean;
 }

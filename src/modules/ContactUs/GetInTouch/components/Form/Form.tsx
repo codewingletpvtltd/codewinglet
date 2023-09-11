@@ -15,7 +15,9 @@ const Form = () => (
       />
     </div>
     <Textarea fullWidth label='Message' placeholder='Your Message' />
-    <Button>Submit</Button>
+    <div className='flex items-center justify-center'>
+      <Button>Submit</Button>
+    </div>
   </div>
 );
 

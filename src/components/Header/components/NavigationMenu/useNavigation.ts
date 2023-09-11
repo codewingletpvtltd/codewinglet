@@ -1,7 +1,9 @@
 'use client';
+import { useRouter } from 'next/navigation';
 import { useState, MouseEvent } from 'react';
 
 const useNavigation = () => {
+  const router = useRouter();
   const [left, setLeft] = useState(0);
 
   const onMouseEnter = (e: MouseEvent<HTMLLIElement>) => {
@@ -39,11 +41,17 @@ const useNavigation = () => {
     }
   };
 
+  const onNavigate = (path: string) => () => {
+    onMouseLeave();
+    router.push(path);
+  };
+
   return {
     onMouseLeave,
     onMouseEnter,
     left: `-${left}px`,
     gridRows,
+    onNavigate,
   };
 };
 

@@ -1,18 +1,20 @@
 'use client';
-import { Accordion } from '@codewinglet/components';
+import { FC } from 'react';
+import { Accordion, Button } from '@codewinglet/components';
 import { MenuDownArrow } from '@codewinglet/assets';
 import { navMenu } from '../../constants';
 import ListItem from '../NavigationMenu/ListItem';
+import { MobileMenuProps } from '../../types';
 import useMobileMenu from './useMobileMenu';
 
-const MobileMenu = () => {
-  const { expanded, onMenuExpand } = useMobileMenu();
+const MobileMenu: FC<MobileMenuProps> = ({ onMenu }) => {
+  const { expanded, onMenuExpand, onNavigate } = useMobileMenu(onMenu);
   return (
     <>
       <div className='fixed bg-[rgba(0,0,0,0.5)] top-[80px] bottom-0 right-0 left-0 inset-0 -z-10 bg-white' />
       <div
         role='presentation'
-        className='bg-white fixed top-[80px] left-0 right-0 b-0 border-t border-t-lightBlack pt-[10px] animate-enterFromTop overflow-y-auto max-h-[500px]'
+        className='bg-white fixed top-[80px] left-0 right-0 b-0 border-t border-t-lightBlack pt-[10px] animate-enterFromTop overflow-y-auto max-h-[500px] pb-[100px]'
       >
         <div className='flex flex-col mx-[20px] md:mx-[38px] gap-[10px]'>
           {navMenu.map((item, index) => (
@@ -30,6 +32,7 @@ const MobileMenu = () => {
               }
               headerClassName='!flex flex-row items-center justify-between pb-[10px] border-b border-b-lightGray w-full'
               expanded={index === expanded}
+              onTitleClick={onNavigate(item.path || '')}
             >
               {item.children ? (
                 item.category ? (
@@ -49,8 +52,8 @@ const MobileMenu = () => {
                               key={`mobile-menu-item-${index}-${menuIndex}-${idx}`}
                               icon={val.icon}
                               label={val.label}
-                              href={val.path}
                               labelClassName='!whitespace-normal'
+                              onClick={onNavigate(val.path || '')}
                             />
                           ))}
                         </ul>
@@ -64,7 +67,7 @@ const MobileMenu = () => {
                         key={`mobile-menu-item-${index}`}
                         icon={val.icon}
                         label={val.label}
-                        href={val.path}
+                        onClick={onNavigate(val.path || '')}
                         labelClassName='!whitespace-normal'
                       />
                     ))}
@@ -73,6 +76,9 @@ const MobileMenu = () => {
               ) : null}
             </Accordion>
           ))}
+          <div>
+            <Button onClick={onNavigate('contact-us')}>Contact Us</Button>
+          </div>
         </div>
       </div>
     </>

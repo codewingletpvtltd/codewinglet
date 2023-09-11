@@ -14,7 +14,7 @@ export const ListItem: FC<ListItemProps> = ({
   <li>
     <a
       className={getClassNames(
-        'flex flex-row items-center',
+        'flex flex-row items-center cursor-pointer',
         isHeader ? 'border-b border-aqua pb-[15px]' : ''
       )}
       {...props}

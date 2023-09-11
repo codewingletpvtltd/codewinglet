@@ -14,7 +14,7 @@ import ClientDetails from './components/ClientDetails';
 
 const ClientTestimonials = () => (
   <div className='max-w-screen-xl mx-[20px] my-[50px] md:mx-[38px] xl:mx-auto relative'>
-    <BackgroundTriangle className='invisible xl:visible absolute xl:right-[-200px]' />
+    <BackgroundTriangle className='invisible xl:visible absolute xl:right-[-10px] 2xl:right-[-200px]' />
     <SectionHeader
       title={
         <>
@@ -54,7 +54,7 @@ const ClientTestimonials = () => (
         className='w-[100%] md:h-[100%] md:w-auto place-self-end'
       />
     </div>
-    <BackgroundDonut className='invisible xl:visible absolute top-[30%] left-[-120px] 2xl:left-[-240px] 2xl:h-[114px] 2xl:w-[114px]' />
+    <BackgroundDonut className='invisible xl:visible absolute xl:top-[20%] 2xl:top-[30%] xl:left-[-50px] 2xl:left-[-280px] 2xl:h-[114px] 2xl:w-[114px]' />
   </div>
 );
 

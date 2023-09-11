@@ -94,6 +94,7 @@ module.exports = {
       aliceBlue: '#F8FCFF',
       sky: '#ACD3EA',
       lightBlue: '#F4FAFF',
+      darkBlue: '#141F6A',
     },
     fontWeight: {
       100: 100,
