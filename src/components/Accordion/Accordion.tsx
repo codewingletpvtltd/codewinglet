@@ -17,6 +17,7 @@ const Accordion: FC<AccordionProps> = ({
   headerClassName = '',
   rightIcon,
   variant,
+  onTitleClick,
 }) => {
   const isSecondary = variant === 'secondary';
   return (
@@ -31,6 +32,7 @@ const Accordion: FC<AccordionProps> = ({
         titleClassName,
         headerClassName,
         rightIcon,
+        onTitleClick,
       }}
     >
       <div

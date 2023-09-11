@@ -12,7 +12,8 @@ import MenuTrigger from './MenuTrigger';
 import MenuIndicator from './MenuIndicator';
 
 const NavigationMenu = () => {
-  const { onMouseEnter, onMouseLeave, left, gridRows } = useNavigation();
+  const { onMouseEnter, onMouseLeave, left, gridRows, onNavigate } =
+    useNavigation();
   return (
     <nav className='flex flex-row items-center gap-[15px] xl:gap-[32px]'>
       <MenuList>
@@ -25,7 +26,7 @@ const NavigationMenu = () => {
             <MenuTrigger
               label={item.label}
               showIcon={!!item.children}
-              href={item.path}
+              href={item.path || ''}
             />
             {item.children && <MenuIndicator />}
             {item.children ? (
@@ -37,6 +38,7 @@ const NavigationMenu = () => {
                         <ListItem
                           icon={menu.icon}
                           label={menu.label}
+                          onClick={onNavigate(menu.path || '')}
                           isHeader
                         />
 
@@ -46,7 +48,7 @@ const NavigationMenu = () => {
                               key={`menu-item-${index}-${menuIdx}-${idx}`}
                               icon={val.icon}
                               label={val.label}
-                              href={val.path}
+                              onClick={onNavigate(val.path || '')}
                             />
                           ))}
                       </ul>
@@ -63,7 +65,7 @@ const NavigationMenu = () => {
                       key={`menu-item-${index}`}
                       icon={val.icon}
                       label={val.label}
-                      href={val.path}
+                      onClick={onNavigate(val.path || '')}
                     />
                   ))}
                 </MenuContent>
@@ -72,7 +74,9 @@ const NavigationMenu = () => {
           </MenuItems>
         ))}
       </MenuList>
-      <Button labelClassName='text-[14px]'>Contact Us</Button>
+      <Button labelClassName='text-[14px]' onClick={onNavigate('contact-us')}>
+        Contact Us
+      </Button>
     </nav>
   );
 };

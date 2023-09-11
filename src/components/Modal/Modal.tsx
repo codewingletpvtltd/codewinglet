@@ -27,7 +27,9 @@ const Modal: FC<ModalProps> = ({ open, children, title, onClose, onApply }) => (
           <Close className='cursor-pointer' onClick={onClose} />
         </div>
         {children}
-        <Button onClick={onApply}>Apply Now</Button>
+        <div className='flex items-center justify-center'>
+          <Button onClick={onApply}>Apply Now</Button>
+        </div>
       </div>
     </div>
   </div>
