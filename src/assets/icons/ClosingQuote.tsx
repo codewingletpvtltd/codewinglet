@@ -1,7 +1,7 @@
 import { FC, SVGProps } from 'react';
 import { COLORS } from '@codewinglet/constants';
 
-const ClosingQuote: FC<SVGProps<SVGSVGElement>> = (props) => (
+const ClosingQuote: FC<SVGProps<SVGSVGElement>> = () => (
   <svg
     xmlns='http://www.w3.org/2000/svg'
     width={68}

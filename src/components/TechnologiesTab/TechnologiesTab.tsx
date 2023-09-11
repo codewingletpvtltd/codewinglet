@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import {
   AngularPNG,
   AntdSVG,
@@ -18,7 +19,6 @@ import {
 } from '@codewinglet/assets';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../Tabs';
 import Typography from '../Typography/Typography';
-import Link from 'next/link';
 
 const tabs = [
   {
