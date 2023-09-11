@@ -18,6 +18,7 @@ import {
 } from '@codewinglet/assets';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../Tabs';
 import Typography from '../Typography/Typography';
+import Link from 'next/link';
 
 const tabs = [
   {
@@ -28,38 +29,47 @@ const tabs = [
       {
         label: 'ReactJS',
         icon: <ReactTabSVG />,
+        url: 'https://react.dev/',
       },
       {
         label: 'NextJS',
         icon: <Image src={NexJSPNG} className='h-full w-full' alt='' />,
+        url: 'https://nextjs.org/docs/',
       },
       {
         label: 'GatsBy',
         icon: <Image src={GatsByPNG} className='h-full w-full' alt='' />,
+        url: 'https://www.gatsbyjs.com/docs/',
       },
       {
         label: 'AngularJS',
         icon: <Image src={AngularPNG} className='h-full w-full' alt='' />,
+        url: 'https://angular.io/',
       },
       {
         label: 'VueJS',
         icon: <Image src={VueJSPNG} className='h-full w-full' alt='' />,
+        url: 'https://vuejs.org/',
       },
       {
-        label: 'ReactJS',
+        label: 'Remix',
         icon: <RemixIcon />,
+        url: 'https://remix.run/docs/en/main',
       },
       {
         label: 'Material UI',
         icon: <MuiSVG />,
+        url: 'https://mui.com/material-ui/getting-started/',
       },
       {
         label: 'Tailwind',
         icon: <TailwindSVG />,
+        url: 'https://tailwindcss.com/docs/installation',
       },
       {
         label: 'Ant Design',
         icon: <AntdSVG />,
+        url: 'https://ant.design/components/overview/',
       },
     ],
   },
@@ -113,8 +123,13 @@ const TechnologiesTab = () => (
           </Typography>
         </div>
         <div className='grid grid-cols-2 lg:grid-cols-3 gap-[20px] lg:gap-[40px]'>
-          {tabContent?.map(({ label, icon }, index) => (
-            <div key={index} className='flex items-center gap-[15px]'>
+          {tabContent?.map(({ label, icon, url }, index) => (
+            <Link
+              href={url ? url : ''}
+              key={index}
+              target='_blank'
+              className='flex items-center gap-[15px]'
+            >
               <div className='h-[32px] w-[32px] lg:h-[36px] lg:w-[36px]'>
                 {icon}
               </div>
@@ -124,7 +139,7 @@ const TechnologiesTab = () => (
               >
                 {label}
               </Typography>
-            </div>
+            </Link>
           ))}
         </div>
       </TabsContent>
