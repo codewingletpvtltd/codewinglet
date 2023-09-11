@@ -77,7 +77,7 @@ import { ChildItemType } from './types';
 
 const services: ChildItemType = [
   {
-    path: '/project-consulting',
+    path: 'project-consulting',
     label: 'Project Consulting',
     icon: projectConsulting,
   },
@@ -144,6 +144,7 @@ const services: ChildItemType = [
 ];
 const industriesMenu: ChildItemType = [
   {
+    path: 'health-care',
     icon: healthCare,
     label: 'Heathcare',
   },
@@ -221,7 +222,7 @@ const companyMenu: ChildItemType = [
   {
     icon: aboutUs,
     label: 'About Us',
-    path: '/',
+    path: '',
   },
   {
     icon: whyCodewinglet,
@@ -482,12 +483,12 @@ export const navMenu = [
     label: 'Career',
   },
   {
-    path: '',
+    path: '/not-found',
     label: 'Company',
     children: companyMenu,
   },
   {
-    path: '/',
+    path: '/not-found',
     label: 'Blog',
   },
 ];
