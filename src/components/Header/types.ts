@@ -1,4 +1,8 @@
 import { MouseEvent } from 'react';
+
+export interface HeaderProps {
+  isScroll?: boolean;
+}
 export interface MenuListProps {
   children: React.ReactNode;
 }

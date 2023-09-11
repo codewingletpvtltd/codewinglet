@@ -1,6 +1,7 @@
 'use client';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
+import React, { FC } from 'react';
 import Logo from '@codewinglet/assets/company_logo.svg';
 import { useScreenSize } from '@codewinglet/hooks';
 import { getClassNames } from '@codewinglet/utils/cn';
@@ -8,16 +9,18 @@ import { xl } from '@codewinglet/constants/mediaQueryConst';
 import MenuIcon from '../MenuIcon';
 import { MobileMenu, NavMenu } from './components';
 import useHeader from './useHeader';
+import { HeaderProps } from './types';
 
-const Header = () => {
+const Header: FC<HeaderProps> = ({ isScroll }) => {
   const router = useRouter();
   const isLarge = useScreenSize(xl);
   const { showMenu, onMenu } = useHeader();
   return (
     <header
+      id='header'
       className={getClassNames(
         'fixed h-[90px] flex items-center top-0 z-50 w-full',
-        showMenu ? 'bg-white' : 'bg-aliceBlue'
+        showMenu ? 'bg-white' : isScroll ? 'bg-white' : 'bg-aliceBlue'
       )}
     >
       <div className='container'>
@@ -42,4 +45,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default React.memo(Header);

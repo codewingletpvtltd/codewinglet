@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import React, { FC } from 'react';
 import { MenuListProps } from '../../types';
 
 const MenuList: FC<MenuListProps> = ({ children }) => (
@@ -7,4 +7,4 @@ const MenuList: FC<MenuListProps> = ({ children }) => (
   </ul>
 );
 
-export default MenuList;
+export default React.memo(MenuList);

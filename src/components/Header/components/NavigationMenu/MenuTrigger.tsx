@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, memo } from 'react';
 import Link from 'next/link';
 import { MenuDownArrow } from '@codewinglet/assets';
 import { MenuTriggerProps } from '../../types';
@@ -15,4 +15,4 @@ const MenuTrigger: FC<MenuTriggerProps> = ({ label, showIcon, href }) => (
   </Link>
 );
 
-export default MenuTrigger;
+export default memo(MenuTrigger);
