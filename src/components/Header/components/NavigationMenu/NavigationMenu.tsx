@@ -13,7 +13,7 @@ import MenuTrigger from './MenuTrigger';
 import MenuIndicator from './MenuIndicator';
 
 const NavigationMenu = () => {
-  const { onMouseEnter, onMouseLeave, left, gridRows, onNavigate } =
+  const { onMouseEnter, onMouseLeave, gridRows, onNavigate, anchorEle } =
     useNavigation();
   return (
     <nav className='flex flex-row items-center gap-[15px] xl:gap-[32px]'>
@@ -23,6 +23,7 @@ const NavigationMenu = () => {
             key={`menu-${index}`}
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
+            id={`menu-${index}`}
           >
             <MenuTrigger
               label={item.label}
@@ -32,7 +33,14 @@ const NavigationMenu = () => {
             {item.children && <MenuIndicator />}
             {item.children ? (
               item.category ? (
-                <MenuContent left={left}>
+                <MenuContent
+                  wrapperClassName={getClassNames(
+                    item.left,
+                    anchorEle?.id === `menu-${index}`
+                      ? 'group-hover:block'
+                      : 'hidden'
+                  )}
+                >
                   {item.children.map((menu, menuIdx) => (
                     <li key={`menu-header-${index}-${menuIdx}`}>
                       <ul className='grid grid-flow-row gap-[15px]'>
@@ -58,7 +66,12 @@ const NavigationMenu = () => {
                 </MenuContent>
               ) : (
                 <MenuContent
-                  left={left}
+                  wrapperClassName={getClassNames(
+                    item.left,
+                    anchorEle?.id === `menu-${index}`
+                      ? 'group-hover:block'
+                      : 'hidden'
+                  )}
                   className={getClassNames(gridRows(item.children.length))}
                 >
                   {item.children.map((val, index) => (
