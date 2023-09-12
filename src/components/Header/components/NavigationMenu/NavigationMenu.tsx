@@ -1,5 +1,6 @@
 'use client';
 
+import React from 'react';
 import { getClassNames } from '@codewinglet/utils/cn';
 import Button from '../../../Button';
 import { navMenu } from '../../constants';
@@ -81,4 +82,4 @@ const NavigationMenu = () => {
   );
 };
 
-export default NavigationMenu;
+export default React.memo(NavigationMenu);

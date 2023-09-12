@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, memo } from 'react';
 import { getClassNames } from '@codewinglet/utils/cn';
 import { MenuContentProps } from '../../types';
 
@@ -24,4 +24,4 @@ const MenuContent: FC<MenuContentProps> = ({
   </div>
 );
 
-export default MenuContent;
+export default memo(MenuContent);
