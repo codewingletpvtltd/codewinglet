@@ -35,14 +35,14 @@ const ClientTestimonials = () => (
           {testimonials.map((data, index) => (
             <div key={`testimonials-${data.id}-${index}`} className='mb-[36px]'>
               <Typography
-                variant='body2'
-                className='md:text-[15px] xl:text-[20px] text-lightBlack'
+                variant='subtitle1'
+                className='md:text-[15px] xl:text-[16px] text-lightBlack'
               >
-                <i>{data.comment}</i>
+                {data.comment}
               </Typography>
               <ClientDetails
                 name={data.client.name}
-                designation={data.client.designation}
+                designation={data.client.country}
               />
             </div>
           ))}
