@@ -5,9 +5,9 @@ import {
   ClosingQuote,
 } from '@codewinglet/assets';
 import Client from '@codewinglet/assets/client.svg';
-import SectionHeader from '../../../components/SectionHeader/SectionHeader';
-import Typography from '../../../components/Typography/Typography';
-import Slider from '../../../components/Slider/Slider';
+import SectionHeader from '../SectionHeader/SectionHeader';
+import Typography from '../Typography/Typography';
+import Slider from '../Slider/Slider';
 import { testimonials } from './constants';
 import { slickSetting } from './config';
 import ClientDetails from './components/ClientDetails';
@@ -36,9 +36,9 @@ const ClientTestimonials = () => (
             <div key={`testimonials-${data.id}-${index}`} className='mb-[36px]'>
               <Typography
                 variant='body2'
-                className='md:text-[25px] xl:text-[30px]'
+                className='md:text-[15px] xl:text-[20px] text-lightBlack'
               >
-                {data.comment}
+                <i>{data.comment}</i>
               </Typography>
               <ClientDetails
                 name={data.client.name}

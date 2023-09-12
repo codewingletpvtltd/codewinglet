@@ -5,7 +5,6 @@ import {
   aws,
   azure as azureIcon,
   backend,
-  blockChain,
   cloud,
   database,
   docker,
@@ -25,24 +24,21 @@ import {
   nest,
   nextjs,
   nodejs,
-  others,
   postgresql,
-  pwa,
   python,
   react,
   rediis,
   remix,
-  storybook,
   tailwind,
   vue,
-  web3,
 } from '@codewinglet/assets';
 
 export const tabs = [
   {
     label: 'Frontend',
     icon: <Image src={frontend} alt='Frontend' />,
-    subTitle: 'Lorem Ipsum has been the industrys standard dummy text ever.',
+    subTitle:
+      'Frontend development focuses on creating user-friendly interfaces and interactive web experiences.',
     tabContent: [
       {
         label: 'ReactJS',
@@ -93,6 +89,8 @@ export const tabs = [
   },
   {
     label: 'Backend',
+    subTitle:
+      'Backend development focuses on building the server-side components and logic that power web applications and services.',
     icon: (
       <Image src={backend} alt='Backend' className='xl:h-[31px] xl:w-[31px]' />
     ),
@@ -121,6 +119,8 @@ export const tabs = [
   },
   {
     label: 'Mobile',
+    subTitle:
+      'Mobile development encompasses the creation of apps and software for smartphones and tablets.',
     icon: (
       <Image src={mobile} alt='Mobile' className='xl:h-[31px] xl:w-[31px]' />
     ),
@@ -144,6 +144,8 @@ export const tabs = [
   },
   {
     label: 'DevOps/Cloud',
+    subTitle:
+      'DevOps and cloud technologies enable seamless software development and deployment in the digital age.',
     icon: (
       <Image
         src={cloud}
@@ -181,6 +183,8 @@ export const tabs = [
   },
   {
     label: 'Database',
+    subTitle:
+      'Databases serve as digital repositories for organising, storing, and managing structured information.',
     icon: (
       <Image
         src={database}
@@ -221,41 +225,43 @@ export const tabs = [
       },
     ],
   },
-  {
-    label: 'Others',
-    icon: (
-      <Image
-        src={others}
-        alt='Others'
-        className='h-[23px] w-[23px] xl:h-[31px] xl:w-[31px]'
-      />
-    ),
-    tabContent: [
-      {
-        label: 'Storybook',
-        icon: storybook,
-        url: 'https://storybook.js.org/',
-      },
-      {
-        label: 'PWA',
-        icon: pwa,
-        url: 'https://web.dev/progressive-web-apps/',
-      },
-      {
-        label: 'Web3',
-        icon: web3,
-        url: 'https://web3.foundation/',
-      },
-      {
-        label: 'Blockchain',
-        icon: blockChain,
-        url: 'https://www.blockchain.com/explorer/api',
-      },
-      {
-        label: 'Component Library',
-        icon: react,
-        url: 'https://blog.bitsrc.io/6-tools-for-documenting-your-react-components-like-a-pro-5027cdfb40c6',
-      },
-    ],
-  },
+  // {
+  //   label: 'Generative AI',
+  //   subTitle:
+  //     'AI is revolutionising industries and shaping the future of technology.',
+  //   icon: (
+  //     <Image
+  //       src={ai}
+  //       alt='Generative AI'
+  //       className='h-[23px] w-[23px] xl:h-[31px] xl:w-[31px]'
+  //     />
+  //   ),
+  //   tabContent: [
+  //     {
+  //       label: 'Generative AI Development',
+  //       icon: aiDev,
+  //       url: 'https://storybook.js.org/',
+  //     },
+  //     {
+  //       label: 'Generative AI Integration',
+  //       icon: aiIntegration,
+  //       url: 'https://web.dev/progressive-web-apps/',
+  //     },
+  //     {
+  //       label: 'ChatGPT Developer',
+  //       icon: chatgtp,
+  //       url: 'https://web3.foundation/',
+  //     },
+  //     {
+  //       label: 'ChatGPT Integration Service',
+  //       icon: chatGtpService,
+  //       url: 'https://www.blockchain.com/explorer/api',
+  //     },
+  //     {
+  //       label: 'Generative AI Consulting Company',
+  //       icon: aiConsulting,
+  //       url: 'https://blog.bitsrc.io/6-tools-for-documenting-your-react-components-like-a-pro-5027cdfb40c6',
+  //     },
+  //   ],
+  // },
 ];

@@ -1,4 +1,4 @@
-import ClientTestimonials from '../Home/ClientTestimonials';
+import { ClientTestimonials } from '../../components';
 import Faq from './Faq';
 import HeroSection from './HeroSection';
 import OurBlog from './OurBlog/OurBlog';

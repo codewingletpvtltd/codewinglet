@@ -1,8 +1,11 @@
 import Image from 'next/image';
 import WhyChooseUsImg from '@codewinglet/assets/whyChooseUs.svg';
 import { SectionHeader, Typography } from '@codewinglet/components';
-import { BackgroundSemiCircle, HighlightArrow } from '@codewinglet/assets';
-import BackgroundDonutShadow from '@codewinglet/assets/icons/BackgroundDonutShadow';
+import {
+  BackgroundDonutShadow,
+  BackgroundSemiCircle,
+  HighlightArrow,
+} from '@codewinglet/assets';
 import { chooseUsPoints } from './constants';
 
 const WhyChooseUs = () => (

@@ -25,7 +25,10 @@ const TechnologiesTab = () => (
     {tabs.map(({ label, subTitle, tabContent }, index) => (
       <TabsContent value={label} key={index} className='md:mt-0'>
         <div className='mb-[22px] mt-[28px] md:mb-[28px] md:mt-0 text-black'>
-          <Typography variant='h5' className='md:text-[22px] xl:text-[25px]'>
+          <Typography
+            variant='h5'
+            className='md:text-[22px] xl:text-[25px] font-600'
+          >
             {label}
           </Typography>
           <Typography
@@ -35,7 +38,7 @@ const TechnologiesTab = () => (
             {subTitle}
           </Typography>
         </div>
-        <div className='grid grid-cols-2 lg:grid-cols-3 gap-[20px] lg:gap-[40px]'>
+        <div className='grid grid-cols-2 lg:grid-cols-3 gap-[20px] lg:gap-[30px]'>
           {tabContent?.map(({ label, icon, url }, index) => (
             <Link
               href={url ? url : ''}
@@ -50,7 +53,7 @@ const TechnologiesTab = () => (
               />
               <Typography
                 variant='h6'
-                className='font-800 md:text-[16px] xl:text-[18px] 2xl:text-[20px] text-black'
+                className='font-500 md:text-[16px] xl:text-[18px] 2xl:text-[20px] text-black'
               >
                 {label}
               </Typography>

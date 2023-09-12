@@ -6,7 +6,7 @@ const Info: FC<InfoProps> = ({ icon, title, detail }) => (
   <div className='flex row'>
     {icon}
     <div className='ml-[15px]'>
-      <Typography variant='body2' className='font-[800]'>
+      <Typography variant='body2' className='font-600'>
         {title}
       </Typography>
       <Typography variant='subtitle1' className='text-[14px] text-lightBlack'>

@@ -1,4 +1,3 @@
-export { default as SliceSVG } from './SliceSVG';
 export { default as apiIntegration } from './apiIntegration.svg';
 export { default as componentLib } from './componentLib.svg';
 export { default as enterpriseAppDev } from './enterpriseAppDev.svg';
