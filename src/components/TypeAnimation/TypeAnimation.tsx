@@ -47,7 +47,11 @@ const TypeAnimation = forwardRef<
 
         typingMain(textRef.current, sequenceArr, speed, wordDelay);
       }
-    }, [repeat, sequence, speed, textRef]);
+
+      return () => {
+        textRef.current;
+      };
+    }, []);
 
     return (
       <Typography

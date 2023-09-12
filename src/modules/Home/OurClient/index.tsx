@@ -25,7 +25,7 @@ const clientLogo = [
 
 const OurClient = () => (
   <section className='relative overflow-hidden py-[50px] lg:py-[80px] xl:py-[120px] 2xl:py-[138px] 2xl:!pb-[78px] bg-aliceBlue px-[20px]'>
-    <section className='2xl:max-w-screen-2xl xl:max-w-screen-xl lg:max-w-screen-lg md:w-full  mx-auto'>
+    <section className='max-w-screen-xl md:w-full  mx-auto'>
       <SectionHeader
         title={
           <>
