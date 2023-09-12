@@ -1,4 +1,3 @@
-import { Consultant } from '@codewinglet/components';
 import GoogleMap from './GoogleMap/GoogleMap';
 import HeroSection from './HeroSection/HeroSection';
 import GetInTouch from './GetInTouch';
@@ -10,7 +9,6 @@ const ContactUs = () => (
       <GetInTouch />
     </div>
     <GoogleMap />
-    <Consultant />
   </>
 );
 

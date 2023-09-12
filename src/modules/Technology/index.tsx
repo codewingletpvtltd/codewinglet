@@ -1,4 +1,5 @@
 import { ClientTestimonials } from '../../components';
+import BusinessModel from './BusinessModel';
 import Faq from './Faq';
 import HeroSection from './HeroSection';
 import OurBlog from './OurBlog/OurBlog';
@@ -14,6 +15,7 @@ const Technology = () => (
     <Technologies />
     <WhyChooseUs />
     <SignificantAchievement />
+    <BusinessModel />
     <ClientTestimonials />
     <Faq />
     <OurBlog />
