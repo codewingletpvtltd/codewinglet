@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Image from 'next/image';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../Tabs';
 import Typography from '../Typography/Typography';
@@ -39,13 +38,8 @@ const TechnologiesTab = () => (
           </Typography>
         </div>
         <div className='grid grid-cols-2 lg:grid-cols-3 gap-[20px] lg:gap-[30px]'>
-          {tabContent?.map(({ label, icon, url }, index) => (
-            <Link
-              href={url ? url : ''}
-              key={index}
-              target='_blank'
-              className='flex items-center gap-[15px]'
-            >
+          {tabContent?.map(({ label, icon }, index) => (
+            <div key={index} className='flex items-center gap-[15px]'>
               <Image
                 src={icon}
                 className='h-[32px] w-[32px] lg:h-[36px] lg:w-[36px]'
@@ -57,7 +51,7 @@ const TechnologiesTab = () => (
               >
                 {label}
               </Typography>
-            </Link>
+            </div>
           ))}
         </div>
       </TabsContent>

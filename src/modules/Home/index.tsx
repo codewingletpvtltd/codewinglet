@@ -1,4 +1,3 @@
-import { Consultant } from '@codewinglet/components';
 import { ClientTestimonials } from '../../components';
 import OurServices from './OurServices';
 import OurPortfolio from './OurPortfolio/OurPortfolio';
@@ -14,7 +13,6 @@ const Home = () => (
     <Technologies />
     <OurClient />
     <ClientTestimonials />
-    <Consultant />
   </>
 );
 
