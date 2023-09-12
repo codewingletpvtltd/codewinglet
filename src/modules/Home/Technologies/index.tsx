@@ -2,12 +2,12 @@ import { SliceSVG, StarsSVG } from '@codewinglet/assets';
 import { SectionHeader, TechnologiesTab } from '@codewinglet/components';
 
 const Technologies = () => (
-  <section className='relative overflow-hidden py-[50px] lg:py-[80px] xl:py-[120px] 2xl:py-[138px] 2xl:!pb-[78px] px-[20px]'>
-    <section className=' 2xl:max-w-screen-2xl xl:max-w-screen-xl lg:max-w-screen-lg md:w-full mx-auto'>
+  <section className='relative overflow-hidden py-[50px] lg:py-[80px] xl:py-[120px] 2xl:py-[138px] 2xl:!pb-[78px]'>
+    <section className='mx-[20px] md:mx-[38px] max-w-screen-xl xl:mx-auto'>
       <SectionHeader
         title={
           <>
-            <strong className='font-[800]'>Technologies</strong> Client
+            <strong className='font-[800]'>Technologies</strong> We Work With
           </>
         }
         description='Cutting-Edge Technologies We Work With for Optimal Results'
@@ -19,8 +19,8 @@ const Technologies = () => (
         <TechnologiesTab />
       </div>
     </section>
-    <StarsSVG className='hidden xl:inline-block z-[-1] absolute top-[500px] h-[53.2px] w-[53.2px]' />
-    <SliceSVG className='hidden xl:inline-block z-[-1] absolute right-0 top-[200px]' />
+    <StarsSVG className='hidden xl:inline-block z-[-1] absolute top-[500px] left-[100px] h-[53.2px] w-[53.2px]' />
+    <SliceSVG className='hidden xl:inline-block z-[-1] absolute right-[100px] top-[200px]' />
   </section>
 );
 
