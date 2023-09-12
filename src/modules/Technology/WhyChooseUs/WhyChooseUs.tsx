@@ -6,7 +6,7 @@ import BackgroundDonutShadow from '@codewinglet/assets/icons/BackgroundDonutShad
 import { chooseUsPoints } from './constants';
 
 const WhyChooseUs = () => (
-  <div className='my-[50px] mx-[20px] md:mx-[38px] max-w-screen-xl xl:mx-auto relative'>
+  <div className='my-[50px] mx-[20px] md:mx-[38px] max-w-screen-xl xl:mx-auto xl:my-[150px] relative'>
     <BackgroundSemiCircle className='invisible xl:visible absolute left-[-200px] top-[30%]' />
     <div className='grid grid-flow-row gap-[30px] md:grid-flow-col md:gap-[17px]'>
       <Image

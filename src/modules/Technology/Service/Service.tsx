@@ -5,7 +5,7 @@ import { Card } from './components';
 import { services } from './constants';
 
 const Service = () => (
-  <div className='my-[50px] mx-[20px] md:mx-[38px] max-w-screen-xl xl:mx-auto relative'>
+  <div className='my-[50px] mx-[20px] md:mx-[38px] max-w-screen-xl xl:mx-auto xl:mb-[100px] relative'>
     <SectionHeader
       title={
         <>
