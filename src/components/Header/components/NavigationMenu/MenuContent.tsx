@@ -3,19 +3,19 @@ import { getClassNames } from '@codewinglet/utils/cn';
 import { MenuContentProps } from '../../types';
 
 const MenuContent: FC<MenuContentProps> = ({
-  left,
+  wrapperClassName,
   children,
   className = '',
 }) => (
   <div
-    className='absolute animate-exitToTop hidden group-hover:block group-hover:animate-enterFromTop'
-    style={{
-      left: left,
-    }}
+    className={getClassNames(
+      'absolute hidden group-hover:animate-enterFromTop',
+      wrapperClassName
+    )}
   >
     <ul
       className={getClassNames(
-        'bg-white w-max h-max p-10 gap-[15px] rounded-10 shadow-lg grid grid-flow-col top-[100%] mt-[10px] z-10',
+        'bg-white w-max h-max p-10 gap-[15px] rounded-10 shadow-lg grid grid-flow-col top-[100%] mt-[34px] z-10',
         className
       )}
     >
