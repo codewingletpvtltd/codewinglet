@@ -38,3 +38,6 @@ export { default as remix } from './remix.svg';
 export { default as storybook } from './storybook.svg';
 export { default as vue } from './vue.svg';
 export { default as web3 } from './web3.svg';
+export { default as antd } from './antd.svg';
+export { default as mui } from './mui.svg';
+export { default as tailwind } from './tailwind.svg';

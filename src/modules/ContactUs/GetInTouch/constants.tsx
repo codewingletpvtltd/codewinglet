@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Email, LocationPin, Phone } from '@codewinglet/assets';
 
 export const info = [
@@ -14,12 +15,14 @@ export const info = [
     id: 2,
     icon: <Phone />,
     title: 'Phone',
-    detail: '+91 83201 11741',
+    detail: <Link href='tel:+918320111741'>+91 83201 11741</Link>,
   },
   {
     id: 3,
     icon: <Email />,
     title: 'Email',
-    detail: 'sale@codewinglet.com',
+    detail: (
+      <Link href='mailto:sale@codewinglet.com'>sale@codewinglet.com</Link>
+    ),
   },
 ];

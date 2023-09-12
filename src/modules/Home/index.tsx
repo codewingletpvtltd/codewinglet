@@ -1,9 +1,9 @@
 import { Consultant } from '@codewinglet/components';
+import { ClientTestimonials } from '../../components';
 import OurServices from './OurServices';
 import OurPortfolio from './OurPortfolio/OurPortfolio';
 import HeroSection from './HeroSection/HeroSection';
 import OurClient from './OurClient';
-import ClientTestimonials from './ClientTestimonials';
 import Technologies from './Technologies';
 
 const Home = () => (

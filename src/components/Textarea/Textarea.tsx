@@ -20,7 +20,7 @@ const Textarea: React.FC<TextareaProps> = ({
         <label
           htmlFor={rest.id || inputId}
           className={getClassNames(
-            'font-secondary text-subtitle1 font-800 mb-[13px]',
+            'font-secondary text-subtitle1 font-600 mb-[13px]',
             error ? 'text-error' : '',
             labelClassName
           )}

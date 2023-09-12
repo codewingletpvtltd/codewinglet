@@ -6,7 +6,7 @@ import GetInTouch from './GetInTouch';
 const ContactUs = () => (
   <>
     <HeroSection />
-    <div className='mb-[58px] mt-[-100px]'>
+    <div className='mb-[100px] mt-[-100px]'>
       <GetInTouch />
     </div>
     <GoogleMap />

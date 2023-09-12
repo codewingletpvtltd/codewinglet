@@ -34,7 +34,7 @@ const Consultant = () => (
           <div className='rounded-full absolute inset-0 w-0 bg-white transition-all duration-[250] ease-out group-hover:w-full' />
 
           <Link
-            href='https://calendly.com/pkahar'
+            href='https://calendly.com/slapani'
             rel='noopener noreferrer'
             target='_blank'
           >
