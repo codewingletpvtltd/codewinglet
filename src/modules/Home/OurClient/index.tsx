@@ -2,25 +2,27 @@ import Image from 'next/image';
 import {
   CircleSVG,
   LeftArrowsSVG,
-  logo_1,
-  logo_2,
-  logo_3,
-  logo_4,
-  logo_5,
-  logo_6,
+  circle_ci,
+  content_stack,
+  infineo,
+  junomoneta,
+  magics,
+  ninja_van,
+  prime_lab,
+  vidiren,
 } from '@codewinglet/assets';
 import { SectionHeader } from '@codewinglet/components';
 import { getClassNames } from '@codewinglet/utils/cn';
 
 const clientLogo = [
-  logo_1,
-  logo_2,
-  logo_3,
-  logo_4,
-  logo_5,
-  logo_6,
-  logo_6,
-  logo_6,
+  circle_ci,
+  prime_lab,
+  ninja_van,
+  magics,
+  junomoneta,
+  content_stack,
+  infineo,
+  vidiren,
 ];
 
 const OurClient = () => (
@@ -46,9 +48,9 @@ const OurClient = () => (
         {clientLogo.map((img, index) => (
           <div
             key={index}
-            className='w-full  flex items-center justify-center h-[130px]'
+            className='w-full flex items-center justify-center h-[130px] p-[35px]'
           >
-            <Image src={img} alt='' />
+            <Image src={img} alt='' className='object-contain h-full w-full' />
           </div>
         ))}
       </div>
