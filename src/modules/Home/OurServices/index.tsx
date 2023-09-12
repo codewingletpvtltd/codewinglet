@@ -11,7 +11,7 @@ const OurService = () => {
   return (
     <div
       className={getClassNames(
-        'relative pt-[54px] pb-[70px] pl-[19px] pr-[15px]',
+        'relative pt-[54px] pb-[70px] p-[20px] md:px-[38px]',
         !isLarge ? 'bg-aliceBlue z-30' : ''
       )}
     >
@@ -19,7 +19,7 @@ const OurService = () => {
         <BgWave className='z-[-1] absolute top-0 bottom-0 left-0 h-[100%] w-[100%] ' />
       )}
       <StarIcon className='absolute hidden md:block right-12 top-[69px] lg:w-[54px] lg:h-[53px] xl:w-[69px] xl:h-[69px] 2xl:w-[92px] 2xl:h-[91px] animate-spin' />
-      <div className='lg:max-w-screen-lg xl:max-w-screen-xl mx-auto'>
+      <div className='max-w-screen-xl mx-auto'>
         <SectionHeader
           title={
             <>

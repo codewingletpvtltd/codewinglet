@@ -18,9 +18,9 @@ const Arrows: FC<ArrowProps> = ({
   >
     <LeftArrow
       onClick={() => sliderRef?.current?.slickPrev()}
-      className='lg:h-[30px] lg:w-auto'
+      className='lg:h-[30px] lg:w-auto cursor-pointer'
     />
-    <div className='relative'>
+    <div className='relative cursor-pointer'>
       <RightArrow
         onClick={() => sliderRef?.current?.slickNext()}
         className='lg:h-[30px] lg:w-auto'
