@@ -1,5 +1,4 @@
-const AboutUsLeftSVG: React.FC<React.SVGProps<SVGSVGElement>> = (props) => {
-  return (
+const AboutUsLeftSVG: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
     <svg
       width='34'
       height='34'
@@ -18,6 +17,5 @@ const AboutUsLeftSVG: React.FC<React.SVGProps<SVGSVGElement>> = (props) => {
       />
     </svg>
   );
-};
 
 export default AboutUsLeftSVG;

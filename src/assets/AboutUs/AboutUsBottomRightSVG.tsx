@@ -1,7 +1,6 @@
 const AboutUsBottomRightSVG: React.FC<React.SVGProps<SVGSVGElement>> = (
   props
-) => {
-  return (
+) => (
     <svg
       width='60'
       height='60'
@@ -24,6 +23,5 @@ const AboutUsBottomRightSVG: React.FC<React.SVGProps<SVGSVGElement>> = (
       />
     </svg>
   );
-};
 
 export default AboutUsBottomRightSVG;

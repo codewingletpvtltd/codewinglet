@@ -1,5 +1,4 @@
-const CustomersSVG = () => {
-  return (
+const CustomersSVG = () => (
     <svg
       width='46'
       height='46'
@@ -33,6 +32,5 @@ const CustomersSVG = () => {
       </defs>
     </svg>
   );
-};
 
 export default CustomersSVG;

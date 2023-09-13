@@ -1,5 +1,4 @@
-const CompletedProjectSVG = () => {
-  return (
+const CompletedProjectSVG = () => (
     <svg
       xmlns='http://www.w3.org/2000/svg'
       width='46'
@@ -14,6 +13,5 @@ const CompletedProjectSVG = () => {
       />
     </svg>
   );
-};
 
 export default CompletedProjectSVG;

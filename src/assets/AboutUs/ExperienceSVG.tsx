@@ -1,5 +1,4 @@
-const Experience = () => {
-  return (
+const Experience = () => (
     <svg
       width='46'
       height='46'
@@ -25,6 +24,5 @@ const Experience = () => {
       </defs>
     </svg>
   );
-};
 
 export default Experience;
