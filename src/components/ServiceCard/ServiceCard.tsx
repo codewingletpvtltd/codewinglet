@@ -1,7 +1,6 @@
 import React from 'react';
 import { getClassNames } from '@codewinglet/utils/cn';
 import Typography from '../Typography';
-import Button from '../Button';
 import { ServiceCardProps } from './types';
 
 const ServiceCard: React.FC<ServiceCardProps> = ({
@@ -37,9 +36,10 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
       {children}
     </Typography>
 
-    <div>
+    {/* TODO_1.1: This code is commented because in the first release we need to disabled */}
+    {/* <div>
       <Button onClick={onClick}>{buttonText}</Button>
-    </div>
+    </div> */}
   </div>
 );
 

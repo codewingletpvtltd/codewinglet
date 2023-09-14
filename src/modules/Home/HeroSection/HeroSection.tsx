@@ -1,6 +1,6 @@
 import { memo } from 'react';
 import Image from 'next/image';
-import { Button, TypeAnimation, Typography } from '@codewinglet/components';
+import { TypeAnimation, Typography } from '@codewinglet/components';
 import {
   ArrowRightSVG,
   Illustration,
@@ -49,7 +49,8 @@ const HeroSection = () => (
             secure a technologically advanced and economically efficient
             development solution!
           </Typography>
-          <Button>Consult Code Winglet</Button>
+          {/* TODO_1.1: In the first release we commented this code. */}
+          {/* <Button>Consult Code Winglet</Button> */}
         </div>
         <div className='relative h-[257px] w-[259px] md:min-w-[300px] md:h-[auto] mt-[105px] md:mt-[51px] lg:mt-[71px] xl:mt-[83px] 2xl:mt-[80px] flex justify-center lg:w-[357px] lg:h-[359px] xl:w-[424px] xl:h-[426px]'>
           <Image src={Illustration} alt='Ill' loading='eager' />
