@@ -466,26 +466,29 @@ export const navMenu = [
     path: '',
     label: 'Services',
     children: services,
+    left: 'left-[-170px]',
   },
   {
     path: '',
     label: 'Technology',
     category: true,
     children: technology,
+    left: 'left-[-570px]',
   },
   {
     path: '',
     label: 'Industries',
     children: industriesMenu,
+    left: 'left-[-340px]',
   },
   {
     path: '/career',
     label: 'Career',
   },
   {
-    path: '/not-found',
     label: 'Company',
     children: companyMenu,
+    left: 'left-0',
   },
   {
     path: '/not-found',

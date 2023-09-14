@@ -4,26 +4,29 @@ import { useState, MouseEvent } from 'react';
 
 const useNavigation = () => {
   const router = useRouter();
-  const [left, setLeft] = useState(0);
+  const [anchorEle, setAnchorEle] = useState<HTMLLIElement | null>(null);
 
   const onMouseEnter = (e: MouseEvent<HTMLLIElement>) => {
-    const anchorEle = e.currentTarget;
-    if (anchorEle) {
-      const contentContainer = anchorEle.children[2];
-      if (contentContainer) {
-        const containerData = contentContainer.getBoundingClientRect();
-        const containerWidth = containerData.left + containerData.width;
-        const screenWidth = screen.width;
+    // const anchorEleTemp = e.currentTarget;
+    setAnchorEle(e.currentTarget);
 
-        if (containerWidth >= screenWidth) {
-          setLeft(containerWidth - screenWidth + 100);
-        }
-      }
-    }
+    // if (anchorEleTemp) {
+    //   const contentContainer = anchorEleTemp.children[2];
+    //   if (contentContainer) {
+    //     const containerData = contentContainer.getBoundingClientRect();
+    //     const containerWidth = containerData.left + containerData.width;
+    //     const screenWidth = screen.width;
+
+    //     if (containerWidth >= screenWidth) {
+    //       // setLeft(containerWidth - screenWidth + 100);
+    //     }
+    //   }
+    // }
   };
 
   const onMouseLeave = () => {
-    setLeft(1);
+    // setLeft(1);
+    setAnchorEle(null);
   };
 
   const gridRows = (rows: number) => {
@@ -42,16 +45,16 @@ const useNavigation = () => {
   };
 
   const onNavigate = (path: string) => () => {
-    onMouseLeave();
     router.push(path);
+    onMouseLeave();
   };
 
   return {
     onMouseLeave,
     onMouseEnter,
-    left: `-${left}px`,
     gridRows,
     onNavigate,
+    anchorEle,
   };
 };
 

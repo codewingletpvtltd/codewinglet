@@ -64,7 +64,7 @@ module.exports = {
       boxShadow: {
         lg: '1px 1px 20px 0 rgba(0,0,0,0.07)',
         tabShadow: '0px -1px 0px inset #0278BE',
-        // tabShadowRight: '-2px 0px 0px inset #0278BE',
+        aboutUsCardShadow: '1px 1px 15px 0px rgba(0, 0, 0, 0.08)',
       },
       backgroundImage: {
         'curve-pattern': 'url("/assets/reactJS.svg")',
