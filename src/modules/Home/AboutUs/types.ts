@@ -1,6 +1,6 @@
 export type AboutUsCardProps = {
   icon: React.ReactNode;
-  number: number;
+  number: string;
   text: string;
   borderClassName: string;
   numberSuffix?: string;
