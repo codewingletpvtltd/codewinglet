@@ -14,7 +14,7 @@ const Card: FC<CardProps> = ({ icon, title, desc, slideIndex }) => (
         {slideIndex}
       </Typography>
     </div>
-    <Typography variant='body2' className='font-800 md:text-[20px]'>
+    <Typography variant='body2' className='md:text-[20px] font-800'>
       {title}
     </Typography>
     <Typography variant='subtitle2' className='md:text-[18px] text-lightBlack'>

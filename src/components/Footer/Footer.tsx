@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import React from 'react';
 import LogoWhite from '@codewinglet/assets/company_logo_white.svg';
 
 import { Typography } from '@codewinglet/components';
@@ -53,10 +54,20 @@ const Footer = () => (
               <div className='mt-[2px]'>
                 <EmailLogo />
               </div>
-              <Typography variant='subtitle2'>
-                <Link href='mailto:hr@codewinglet.com'>hr@codewinglet.com</Link>
-                <br />
-                <Link href='mailto:contact@codewinglet.com'>
+              <Typography
+                variant='subtitle2'
+                className='flex flex-col gap-[5px]'
+              >
+                <Link
+                  href='mailto:hr@codewinglet.com'
+                  className='py-[2px] lg:py-auto'
+                >
+                  hr@codewinglet.com
+                </Link>
+                <Link
+                  href='mailto:contact@codewinglet.com'
+                  className='py-[3px] lg:py-auto'
+                >
                   contact@codewinglet.com
                 </Link>
               </Typography>
@@ -68,6 +79,7 @@ const Footer = () => (
               className='border w-8 h-8 rounded-full flex items-center justify-center'
               href='https://www.facebook.com/CodewingletPvtLtd'
               target='_blank'
+              aria-label='Facebook'
             >
               <FacebookLogo />
             </Link>
@@ -75,6 +87,7 @@ const Footer = () => (
               className='border w-8 h-8 rounded-full flex items-center justify-center'
               href='https://www.instagram.com/codewinglet/'
               target='_blank'
+              aria-label='Instagram'
             >
               <InstagramLogo />
             </Link>
@@ -82,6 +95,7 @@ const Footer = () => (
               className='border w-8 h-8 rounded-full flex items-center justify-center'
               href='https://in.linkedin.com/company/codewinglet'
               target='_blank'
+              aria-label='Linkedin'
             >
               <LinkedInLogo />
             </Link>
@@ -89,6 +103,7 @@ const Footer = () => (
               className='border w-8 h-8 rounded-full flex items-center justify-center'
               href='https://twitter.com/codewinglet'
               target='_blank'
+              aria-label='Twitter'
             >
               <TwitterLogo />
             </Link>
@@ -168,4 +183,4 @@ const Footer = () => (
     </div>
   </footer>
 );
-export default Footer;
+export default React.memo(Footer);

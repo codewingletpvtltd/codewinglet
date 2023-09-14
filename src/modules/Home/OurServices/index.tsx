@@ -1,4 +1,5 @@
 'use client';
+import { memo } from 'react';
 import { SectionHeader, ServiceCard, Slider } from '@codewinglet/components';
 import { BackgroundDonutShadow, BgWave, StarIcon } from '@codewinglet/assets';
 import useScreenSize from '@codewinglet/hooks/useScreenSize';
@@ -67,4 +68,4 @@ const OurService = () => {
   );
 };
 
-export default OurService;
+export default memo(OurService);

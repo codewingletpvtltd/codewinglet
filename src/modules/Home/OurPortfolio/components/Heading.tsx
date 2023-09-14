@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, memo } from 'react';
 import { Arrow } from '@codewinglet/assets';
 import { COLORS } from '@codewinglet/constants';
 import Typography from '../../../../components/Typography';
@@ -10,7 +10,7 @@ const Heading: FC<HeadingProps> = ({ title, description }) => (
       <Typography variant='subtitle1' className='!font-[800]'>
         {title}
       </Typography>
-      <Typography variant='body2' className='!text-[14px] text-gray'>
+      <Typography variant='body2' className='!text-[14px] text-lightBlack'>
         {description}
       </Typography>
     </div>
@@ -21,4 +21,4 @@ const Heading: FC<HeadingProps> = ({ title, description }) => (
   </div>
 );
 
-export default Heading;
+export default memo(Heading);

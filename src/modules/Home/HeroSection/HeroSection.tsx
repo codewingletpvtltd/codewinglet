@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { Button, TypeAnimation, Typography } from '@codewinglet/components';
 import {
   ArrowRightSVG,
@@ -64,4 +65,4 @@ const HeroSection = () => (
   </div>
 );
 
-export default HeroSection;
+export default memo(HeroSection);

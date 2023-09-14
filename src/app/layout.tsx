@@ -17,6 +17,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <Head>
+        <meta charSet='UTF-8' />
         <link rel='icon' type='image/png' sizes='32x32' href='/favicon.png' />
       </Head>
       <body className='font-primary'>{children}</body>

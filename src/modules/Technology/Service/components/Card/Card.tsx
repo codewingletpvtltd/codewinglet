@@ -15,7 +15,7 @@ const Card: FC<CardProps> = ({ icon, title, desc }) => (
       )}
       <Typography
         variant='body2'
-        className='leading-800 md:text-[20px] ml-[15px]'
+        className='md:text-[20px] ml-[15px] leading-800 '
       >
         {title}
       </Typography>
