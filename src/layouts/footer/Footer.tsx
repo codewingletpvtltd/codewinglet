@@ -71,7 +71,7 @@ export default function Footer() {
               </Stack>
 
               <Stack alignItems="flex-start">
-                <Typography variant="h6">test </Typography>
+                <Typography variant="h6">test 123</Typography>
                 <LinkStyle href="#">Documentation</LinkStyle>
                 <LinkStyle href="#">Changelog</LinkStyle>
                 <LinkStyle href="#">Contributing</LinkStyle>
