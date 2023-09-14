@@ -6,7 +6,7 @@ import {
   CustomersSVG,
   ExperienceSVG,
 } from '@codewinglet/assets/AboutUs';
-import { Button, SectionHeader, Typography } from '@codewinglet/components';
+import { SectionHeader, Typography } from '@codewinglet/components';
 import AboutUsCard from './components/AboutUsCard';
 
 const AboutUs = () => (
@@ -66,7 +66,8 @@ const AboutUs = () => (
           client growth by leveraging our innovation ecosystem to facilitate
           knowledge transfers, thereby fostering perpetual advancement.
         </Typography>
-        <Button>Read More</Button>
+        {/* TODO_1.1 */}
+        {/* <Button>Read More</Button> */}
       </div>
     </section>
   </section>

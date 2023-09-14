@@ -1,17 +1,14 @@
-import Portfolio1 from '@codewinglet/assets/portfolio1.svg';
-import Portfolio2 from '@codewinglet/assets/portfolio2.svg';
+import { MagicsHaircare, portfolio1 } from '@codewinglet/assets';
 
 export const portfolio = [
   {
     id: 1,
-    title: 'Project Name',
-    description: 'Application Design',
-    image: Portfolio1,
+    title: 'Food App',
+    image: portfolio1,
   },
   {
     id: 2,
-    title: 'Project Name',
-    description: 'Application Design',
-    image: Portfolio2,
+    title: 'Magic Hair Care',
+    image: MagicsHaircare,
   },
 ];
