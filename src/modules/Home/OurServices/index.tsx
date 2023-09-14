@@ -42,8 +42,7 @@ const OurService = () => {
             const icon = (
               <div
                 className={getClassNames(
-                  'h-[48px] min-w-[48px] md:h-[58px] md:min-w-[58px] flex items-center justify-center rounded-[50%]',
-                  service.iconBgColor
+                  'h-[48px] min-w-[48px] md:h-[58px] md:min-w-[58px] flex items-center justify-center rounded-[50%]'
                 )}
               >
                 {service.icon}

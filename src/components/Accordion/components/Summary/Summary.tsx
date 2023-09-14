@@ -85,7 +85,7 @@ const Heading = () => {
           >
             <DownArrow
               className={getClassNames(
-                'transition duration-[400] ease-linear',
+                'transitio duration-400 ease-linear',
                 expanded ? 'rotate-[180deg]' : ''
               )}
             />

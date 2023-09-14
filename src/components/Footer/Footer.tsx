@@ -58,16 +58,10 @@ const Footer = () => (
                 variant='subtitle2'
                 className='flex flex-col gap-[5px]'
               >
-                <Link
-                  href='mailto:hr@codewinglet.com'
-                  className='py-[2px] lg:py-auto'
-                >
+                <Link href='mailto:hr@codewinglet.com' className='mb-[5px]'>
                   hr@codewinglet.com
                 </Link>
-                <Link
-                  href='mailto:contact@codewinglet.com'
-                  className='py-[3px] lg:py-auto'
-                >
+                <Link href='mailto:contact@codewinglet.com'>
                   contact@codewinglet.com
                 </Link>
               </Typography>
@@ -110,7 +104,9 @@ const Footer = () => (
           </div>
         </div>
         <div className='basis-1/5'>
-          <Typography variant='h4'>Technology</Typography>
+          <Typography variant='body1' className='xl:text-[25px]'>
+            Technology
+          </Typography>
           <hr className='mt-4 mb-7' />
           <div className='grid sm:grid-cols-2 lg:grid-cols-1 sm:gap-2 gap-[5px]'>
             {technologyMenu.map((item) => (
@@ -132,7 +128,9 @@ const Footer = () => (
           </div>
         </div>
         <div className='basis-1/2'>
-          <Typography variant='h4'>Services</Typography>
+          <Typography variant='body1' className='xl:text-[25px]'>
+            Services
+          </Typography>
           <hr className='mt-4 mb-7' />
           <div className='grid grid-cols-1 sm:grid-cols-2 sm:gap-2 gap-[5px]'>
             {serviceMenu.map((item) => (

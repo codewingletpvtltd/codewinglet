@@ -2,6 +2,7 @@ import React from 'react';
 import { Metadata } from 'next';
 import './globals.css';
 import Head from 'next/head';
+import { COLORS } from '@codewinglet/constants';
 
 export const metadata: Metadata = {
   title: 'Top Software Development Company India - Code Winglet Pvt. Ltd.',
@@ -18,6 +19,7 @@ export default function RootLayout({
     <html lang='en'>
       <Head>
         <meta charSet='UTF-8' />
+        <meta name='theme-color' content={COLORS.primary} />
         <link rel='icon' type='image/png' sizes='32x32' href='/favicon.png' />
       </Head>
       <body className='font-primary'>{children}</body>
