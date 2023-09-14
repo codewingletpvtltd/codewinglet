@@ -24,7 +24,14 @@ export const services = [
       'Our project consulting services provide valuable insights and expertise to help you make informed decisions, optimise processes, and achieve successful outcomes. Gain a competitive edge and',
   },
   {
-    icon: <Image src={multiTenatSystem} alt='Hire' loading='eager' />,
+    icon: (
+      <Image
+        src={multiTenatSystem}
+        alt='Hire'
+        loading='eager'
+        className='md:h-[58px] md:w-[58px]'
+      />
+    ),
     iconBgColor: 'bg-culturedWhite',
     title: 'Multi Tenant System',
     content:
