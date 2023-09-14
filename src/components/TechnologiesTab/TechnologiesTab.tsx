@@ -25,7 +25,7 @@ const TechnologiesTab = () => (
       <TabsContent value={label} key={index} className='md:mt-0'>
         <div className='mb-[22px] mt-[28px] md:mb-[28px] md:mt-0 text-black'>
           <Typography
-            variant='h5'
+            variant='body1'
             className='md:text-[22px] xl:text-[25px] font-600'
           >
             {label}
@@ -46,8 +46,8 @@ const TechnologiesTab = () => (
                 alt={label}
               />
               <Typography
-                variant='h6'
-                className='font-500 md:text-[16px] xl:text-[18px] 2xl:text-[20px] text-black'
+                variant='subtitle1'
+                className='font-500 text-black lg:text-[18px]'
               >
                 {label}
               </Typography>

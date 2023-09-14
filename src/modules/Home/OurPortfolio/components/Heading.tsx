@@ -1,5 +1,5 @@
-import { FC } from 'react';
-import Typography from '../../../../components/Typography';
+import { FC, memo } from 'react';
+import { Typography } from '@codewinglet/components';
 import { HeadingProps } from '../types';
 
 const Heading: FC<HeadingProps> = ({ title }) => (
@@ -12,4 +12,4 @@ const Heading: FC<HeadingProps> = ({ title }) => (
   </div>
 );
 
-export default Heading;
+export default memo(Heading);

@@ -26,12 +26,14 @@ export interface ListItemProps {
   isHeader?: boolean;
   labelClassName?: string;
   onClick?: () => void;
+  href?: string;
 }
 
 export interface MenuTriggerProps {
   label: string;
   showIcon?: boolean;
   href: string;
+  hasChild?: boolean | false;
 }
 
 export type ChildItemType = {

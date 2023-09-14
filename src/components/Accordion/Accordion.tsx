@@ -43,7 +43,7 @@ const Accordion: FC<AccordionProps> = ({
         <Summary />
         <div
           className={getClassNames(
-            'transition-[max-height] overflow-hidden duration-[400] ease-linear overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-300',
+            'transition-[max-height] overflow-hidden duration-400 ease-linear overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-300',
             expanded
               ? 'max-h-[800px] md:max-h-[700px] lg:max-h-[600px]'
               : 'max-h-0',

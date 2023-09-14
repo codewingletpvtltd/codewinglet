@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { memo } from 'react';
 import { BackgroundCircle } from '@codewinglet/assets';
 import SectionHeader from '../../../components/SectionHeader/SectionHeader';
 import { portfolio } from './data';
@@ -36,4 +37,4 @@ const OurPortfolio = () => (
   </div>
 );
 
-export default OurPortfolio;
+export default memo(OurPortfolio);

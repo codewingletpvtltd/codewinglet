@@ -31,6 +31,7 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
               alt='Codewinglet Private Limited Logo'
               className='w-[191px] xl:w-[252px] cursor-pointer'
               onClick={() => router.push('/')}
+              loading='eager'
             />
           </div>
           {/* TODO_1.0: In the first release this menu is not working so commented this in 1.0*/}

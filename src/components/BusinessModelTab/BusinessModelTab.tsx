@@ -50,8 +50,8 @@ const BusinessModelTab = () => (
                 <HighlightArrow className='mt-[4px] h-[16px] w-[9px] md:h-[19px] md:w-[10px] lg:h-[22px] lg:w-[12px]' />
               </span>
               <Typography
-                variant='h6'
-                className='font-300 md:text-[16px] xl:text-[18px] 2xl:text-[20px] text-lightBlack'
+                variant='subtitle1'
+                className='font-300 lg:text-[18px] text-lightBlack'
               >
                 {content}
               </Typography>

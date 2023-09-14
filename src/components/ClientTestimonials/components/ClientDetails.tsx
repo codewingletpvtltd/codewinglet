@@ -10,7 +10,7 @@ const ClientDetails: FC<ReviewProps> = ({ name, designation }) => (
       alt='avatar'
     /> */}
     <div>
-      <Typography variant='h6' className='font-extrabold md:text-[20px]'>
+      <Typography variant='subtitle1' className='md:text-[20px] font-extrabold'>
         {name}
       </Typography>
       <Typography

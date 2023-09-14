@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { memo } from 'react';
 import { Slider } from '@codewinglet/components';
 import { getClassNames } from '@codewinglet/utils/cn';
 import { settings, techList } from './utils';
@@ -13,18 +14,17 @@ const Technologies = () => (
       <div
         key={`tech-${index}`}
         className={getClassNames(
-          '!h-[55px] !w-[55px] rounded-full !flex items-center justify-center xl:!h-[80px] xl:!w-[80px] 2xl:!h-[86px] 2xl:!w-[86px] !my-[30px] !mx-[12px] self-center',
-          tech.bgColor
+          '!h-[55px] !w-[55px] !flex items-center justify-center xl:!h-[80px] xl:!w-[80px] 2xl:!h-[86px] 2xl:!w-[86px] !my-[30px] !mx-[12px] self-center'
         )}
       >
         <Image
           alt=''
           src={tech.image}
-          className='h-[35px] w-[35px] xl:h-[52px] xl:w-[52px] 2xl:h-[56px] 2xl:w-[56px]'
+          className='h-[55px] w-[55px] xl:h-[80px] xl:w-[80px] 2xl:h-[86px] 2xl:w-[86px]'
         />
       </div>
     ))}
   </Slider>
 );
 
-export default Technologies;
+export default memo(Technologies);

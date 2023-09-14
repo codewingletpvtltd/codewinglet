@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { BackgroundCircle, StarsSVG } from '@codewinglet/assets';
 import { SectionHeader, TechnologiesTab } from '@codewinglet/components';
 
@@ -24,4 +25,4 @@ const Technologies = () => (
   </section>
 );
 
-export default Technologies;
+export default memo(Technologies);
