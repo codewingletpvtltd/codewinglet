@@ -1,0 +1,54 @@
+'use client';
+import Image from 'next/image';
+import Link from 'next/link';
+import { Button, SectionHeader, Typography } from '@codewinglet/components';
+import Meeting from '@codewinglet/assets/meeting.svg';
+
+const Consultant = () => (
+  <section className='bg-lightBlue px-5 pt-10 md:py-8 md:px-0'>
+    <div className='md:mx-8 max-w-screen-xl xl:mx-auto flex items-center lg:gap-10 sm:flex-row flex-col-reverse'>
+      <div>
+        <Image
+          src={Meeting}
+          alt='book meeting image'
+          width={300}
+          height={300}
+        />
+      </div>
+      <div>
+        <SectionHeader
+          title={
+            <>
+              <strong className='font-[800]'>Speak to</strong> an expert?
+            </>
+          }
+          description='Connect with our knowledgeable experts to gain insights that drive success for your business.'
+          headingClassName='mb-1'
+        />
+        <Button
+          className='group overflow-hidden relative mt-8  border-2 border-black'
+          // TODO: Need to change this
+          // startIcon={<Calender color='' />}
+          variant='contained'
+        >
+          <div className='rounded-full absolute inset-0 w-0 bg-white transition-all duration-300 ease-out group-hover:w-full' />
+
+          <Link
+            href='https://calendly.com/slapani'
+            rel='noopener noreferrer'
+            target='_blank'
+          >
+            <Typography
+              className='relative text-white group-hover:text-black'
+              variant='body2'
+            >
+              Book a Meeting
+            </Typography>
+          </Link>
+        </Button>
+      </div>
+    </div>
+  </section>
+);
+
+export default Consultant;
