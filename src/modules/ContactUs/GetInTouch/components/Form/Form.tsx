@@ -15,6 +15,7 @@ const Form: FC<FormProps> = ({
       <TextField
         fullWidth
         label='Name'
+        required
         placeholder='Name'
         value={formData.name}
         onChange={(e) => onChangeFormData({ name: e.target.value })}
@@ -26,6 +27,7 @@ const Form: FC<FormProps> = ({
         label='Email'
         placeholder='Email'
         value={formData.email}
+        required
         onChange={(e) => onChangeFormData({ email: e.target.value })}
         helperText={formData.errors.email}
         error={!!formData.errors.email}
@@ -49,6 +51,7 @@ const Form: FC<FormProps> = ({
         label='Message'
         placeholder='Your Message'
         value={formData.message}
+        required
         error={!!formData.errors.message}
         helperText={formData.errors.message}
         rootClasseName='md:col-span-2'

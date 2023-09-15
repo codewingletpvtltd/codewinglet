@@ -11,6 +11,7 @@ const Textarea: React.FC<TextareaProps> = ({
   disabled,
   fullWidth,
   rootClasseName = '',
+  required,
   ...rest
 }) => {
   const inputId = useId();
@@ -27,6 +28,7 @@ const Textarea: React.FC<TextareaProps> = ({
           )}
         >
           {label}
+          {required && <span className='text-error'>*</span>}
         </label>
       )}
       <div className='inline-block'>
