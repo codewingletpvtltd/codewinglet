@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, memo } from 'react';
 import { ReviewProps } from '../types';
 import Typography from '../../Typography';
 
@@ -9,18 +9,16 @@ const ClientDetails: FC<ReviewProps> = ({ name, designation }) => (
       src={ClientImage}
       alt='avatar'
     /> */}
-    <div>
-      <Typography variant='subtitle1' className='md:text-[20px] font-extrabold'>
-        {name}
-      </Typography>
-      <Typography
-        variant='subtitle1'
-        className='font-medium !text-[14px] md:text-[16px] text-primary'
-      >
-        {designation}
-      </Typography>
-    </div>
+    <Typography variant='subtitle1' className='md:text-[20px] font-extrabold'>
+      {name}
+    </Typography>
+    <Typography
+      variant='subtitle1'
+      className='font-medium !text-[14px] md:text-[16px] text-primary'
+    >
+      {designation}
+    </Typography>
   </div>
 );
 
-export default ClientDetails;
+export default memo(ClientDetails);

@@ -10,22 +10,25 @@ const Textarea: React.FC<TextareaProps> = ({
   helperText,
   disabled,
   fullWidth,
+  rootClasseName = '',
+  required,
   ...rest
 }) => {
   const inputId = useId();
 
   return (
-    <div className='flex flex-col'>
+    <div className={getClassNames('flex flex-col', rootClasseName)}>
       {label && (
         <label
           htmlFor={rest.id || inputId}
           className={getClassNames(
-            'font-secondary text-subtitle1 font-600 mb-[13px]',
+            'font-secondary text-subtitle1 font-600 mb-[13px] ',
             error ? 'text-error' : '',
             labelClassName
           )}
         >
           {label}
+          {required && <span className='text-error'>*</span>}
         </label>
       )}
       <div className='inline-block'>

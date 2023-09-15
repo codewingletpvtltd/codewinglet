@@ -8,7 +8,7 @@ export const portfolio = [
   },
   {
     id: 2,
-    title: 'Magic Hair Care',
+    title: 'Magics Hair Care',
     image: MagicsHaircare,
   },
 ];

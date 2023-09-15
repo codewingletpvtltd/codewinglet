@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { Arrow } from '@codewinglet/assets';
 import { getClassNames } from '@codewinglet/utils/cn';
 import Typography from '../Typography';
@@ -10,12 +10,14 @@ const Button: React.FC<ButtonProps> = ({
   variant = 'primary',
   className = '',
   labelClassName = '',
+  disabled,
   ...rest
 }) =>
   variant === 'primary' ? (
     <button
       className={getClassNames(
-        'group relative text-primary flex justify-center items-center px-[15px] py-[5px] before:absolute before:h-[33px] before:w-[33px] before:rounded-[50%] before:opacity-[0.15] before:bg-primary before:left-0 before:transition-all before:duration-300 before:ease-linear before:hover:w-full before:hover:rounded-[50px]',
+        'group relative text-primary flex justify-center items-center px-[15px] py-[5px] before:absolute before:h-[33px] before:w-[33px] before:rounded-[50%] before:opacity-[0.15] before:bg-primary before:left-0 before:transition-all before:duration-[300] before:ease-linear before:hover:w-full before:hover:rounded-[50px]',
+        disabled ? 'pointer-events-none opacity-60' : '',
         className
       )}
       {...rest}
@@ -49,4 +51,4 @@ const Button: React.FC<ButtonProps> = ({
     </button>
   );
 
-export default Button;
+export default memo(Button);

@@ -1,9 +1,6 @@
 'use client';
 import React, { FC } from 'react';
-import { Accordion, Button } from '@codewinglet/components';
-import { MenuDownArrow } from '@codewinglet/assets';
-import { navMenu } from '../../constants';
-import ListItem from '../NavigationMenu/ListItem';
+import { Button } from '@codewinglet/components';
 import { MobileMenuProps } from '../../types';
 import useMobileMenu from './useMobileMenu';
 
@@ -17,7 +14,8 @@ const MobileMenu: FC<MobileMenuProps> = ({ onMenu }) => {
         className='bg-white fixed top-[80px] left-0 right-0 b-0 border-t border-t-lightBlack pt-[10px] animate-enterFromTop overflow-y-auto max-h-[500px] pb-[100px]'
       >
         <div className='flex flex-col mx-[20px] md:mx-[38px] gap-[10px]'>
-          {navMenu.map((item, index) => (
+          {/* TODO_1.1 */}
+          {/* {navMenu.map((item, index) => (
             <Accordion
               title={item.label}
               key={`mobile-nav-${index}`}
@@ -77,7 +75,7 @@ const MobileMenu: FC<MobileMenuProps> = ({ onMenu }) => {
                 )
               ) : null}
             </Accordion>
-          ))}
+          ))} */}
           <div>
             <Button onClick={onNavigate('contact-us')}>Contact Us</Button>
           </div>

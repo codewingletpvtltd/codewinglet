@@ -10,6 +10,7 @@ const TextField: React.FC<TextFieldProps> = ({
   helperText,
   disabled,
   fullWidth,
+  required,
   ...rest
 }) => {
   const inputId = useId();
@@ -26,6 +27,7 @@ const TextField: React.FC<TextFieldProps> = ({
           )}
         >
           {label}
+          {required && <span className='text-error'>*</span>}
         </label>
       )}
       <div className='inline-block'>
