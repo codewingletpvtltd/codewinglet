@@ -46,7 +46,6 @@ const useNavigation = () => {
 
   const onNavigate = (path: string) => () => {
     router.push(path);
-    onMouseLeave();
   };
 
   return {

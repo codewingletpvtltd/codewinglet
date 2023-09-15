@@ -27,7 +27,6 @@ const useGetInTouch = () => {
         ...Object.assign({ ...formData }, value),
       });
 
-    console.log('isFormValid', isFormValid);
     if (!formData.isSubmitted)
       setFormData(Object.assign({ ...formData }, value));
   };
@@ -81,8 +80,6 @@ const useGetInTouch = () => {
     if (!formData.isSubmitted) {
       setFormData({ ...formData, isSubmitted: true });
     }
-
-    console.log('isValid', isValid);
 
     if (isValid) {
       setIsLoading(true);

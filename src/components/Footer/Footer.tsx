@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import React from 'react';
 import LogoWhite from '@codewinglet/assets/company_logo_white.svg';
 
 import { Typography } from '@codewinglet/components';
@@ -53,9 +54,13 @@ const Footer = () => (
               <div className='mt-[2px]'>
                 <EmailLogo />
               </div>
-              <Typography variant='subtitle2'>
-                <Link href='mailto:hr@codewinglet.com'>hr@codewinglet.com</Link>
-                <br />
+              <Typography
+                variant='subtitle2'
+                className='flex flex-col gap-[5px]'
+              >
+                <Link href='mailto:hr@codewinglet.com' className='mb-[5px]'>
+                  hr@codewinglet.com
+                </Link>
                 <Link href='mailto:contact@codewinglet.com'>
                   contact@codewinglet.com
                 </Link>
@@ -68,6 +73,7 @@ const Footer = () => (
               className='border w-8 h-8 rounded-full flex items-center justify-center'
               href='https://www.facebook.com/CodewingletPvtLtd'
               target='_blank'
+              aria-label='Facebook'
             >
               <FacebookLogo />
             </Link>
@@ -75,6 +81,7 @@ const Footer = () => (
               className='border w-8 h-8 rounded-full flex items-center justify-center'
               href='https://www.instagram.com/codewinglet/'
               target='_blank'
+              aria-label='Instagram'
             >
               <InstagramLogo />
             </Link>
@@ -82,6 +89,7 @@ const Footer = () => (
               className='border w-8 h-8 rounded-full flex items-center justify-center'
               href='https://in.linkedin.com/company/codewinglet'
               target='_blank'
+              aria-label='Linkedin'
             >
               <LinkedInLogo />
             </Link>
@@ -89,13 +97,16 @@ const Footer = () => (
               className='border w-8 h-8 rounded-full flex items-center justify-center'
               href='https://twitter.com/codewinglet'
               target='_blank'
+              aria-label='Twitter'
             >
               <TwitterLogo />
             </Link>
           </div>
         </div>
         <div className='basis-1/5'>
-          <Typography variant='h4'>Technology</Typography>
+          <Typography variant='body1' className='xl:text-[25px]'>
+            Technology
+          </Typography>
           <hr className='mt-4 mb-7' />
           <div className='grid sm:grid-cols-2 lg:grid-cols-1 sm:gap-2 gap-[5px]'>
             {technologyMenu.map((item) => (
@@ -117,7 +128,9 @@ const Footer = () => (
           </div>
         </div>
         <div className='basis-1/2'>
-          <Typography variant='h4'>Services</Typography>
+          <Typography variant='body1' className='xl:text-[25px]'>
+            Services
+          </Typography>
           <hr className='mt-4 mb-7' />
           <div className='grid grid-cols-1 sm:grid-cols-2 sm:gap-2 gap-[5px]'>
             {serviceMenu.map((item) => (
@@ -168,4 +181,4 @@ const Footer = () => (
     </div>
   </footer>
 );
-export default Footer;
+export default React.memo(Footer);

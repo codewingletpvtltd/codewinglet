@@ -43,3 +43,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 - Inside the app only goes module component we should not write directly JSX and logic.
 - Inside the module folder we are creating folder same as the page folder have. For example, inside the page folder we have the home and about page so in that case all the jsx of that pages are goes into module folder.
+
+# Codewinglet

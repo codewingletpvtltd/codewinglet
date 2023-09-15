@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { memo } from 'react';
 import {
   CircleSVG,
   LeftArrowsSVG,
@@ -59,4 +60,4 @@ const OurClient = () => (
     <CircleSVG className='absolute left-0 top-[67px] hidden lg:block lg:left-[-14px] h-[107px] w-[107px] xl:top-[400px] xl:right-[-19px] 2xl:right-[-25px] ' />
   </section>
 );
-export default OurClient;
+export default memo(OurClient);

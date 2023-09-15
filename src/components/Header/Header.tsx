@@ -31,6 +31,7 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
               alt='Codewinglet Private Limited Logo'
               className='w-[191px] xl:w-[252px] cursor-pointer'
               onClick={() => router.push('/')}
+              loading='eager'
             />
           </div>
           {isLarge ? (

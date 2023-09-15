@@ -22,7 +22,10 @@ const NavigationMenu = () => {
             <MenuTrigger
               label={item.label}
               showIcon={!!item.children}
-              href={item.path || ''}
+              href={item.path || '/not-found'}
+              hasChild={
+                item.children && item.children.length > 0 ? true : false
+              }
             />
             {item.children && <MenuIndicator />}
             {item.children ? (
@@ -41,7 +44,6 @@ const NavigationMenu = () => {
                         <ListItem
                           icon={menu.icon}
                           label={menu.label}
-                          onClick={onNavigate(menu.path || '')}
                           isHeader
                         />
 
@@ -51,7 +53,8 @@ const NavigationMenu = () => {
                               key={`menu-item-${index}-${menuIdx}-${idx}`}
                               icon={val.icon}
                               label={val.label}
-                              onClick={onNavigate(val.path || '')}
+                              onClick={onMouseLeave}
+                              href={val.path ? val.path : '/not-found'}
                             />
                           ))}
                       </ul>
@@ -73,7 +76,8 @@ const NavigationMenu = () => {
                       key={`menu-item-${index}`}
                       icon={val.icon}
                       label={val.label}
-                      onClick={onNavigate(val.path || '')}
+                      onClick={onMouseLeave}
+                      href={val.path ? val.path : '/not-found'}
                     />
                   ))}
                 </MenuContent>

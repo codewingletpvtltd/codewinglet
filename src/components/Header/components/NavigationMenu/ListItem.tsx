@@ -12,33 +12,49 @@ export const ListItem: FC<ListItemProps> = ({
   ...props
 }) => (
   <li>
-    <a
-      className={getClassNames(
-        'flex flex-row items-center cursor-pointer',
-        isHeader ? 'border-b border-aqua pb-[15px]' : ''
-      )}
-      {...props}
-    >
-      {icon && (
-        <Image
-          src={icon}
-          alt='Menu Icon'
-          className={getClassNames(
-            isHeader ? 'h-[27px] w-[27px]' : 'h-[36px] w-[36px] rounded-full'
-          )}
-        />
-      )}
-      <Typography
-        variant='subtitle1'
-        className={getClassNames(
-          'font-bold capitalize text-lightBlack whitespace-nowrap ml-2',
-          isHeader ? 'text-[18px] font-800 text-black' : '',
-          labelClassName
-        )}
+    {isHeader ? (
+      <span
+        className='flex flex-row items-center cursor-pointer border-b border-aqua pb-[15px]'
+        aria-label='menu-item'
+        {...props}
       >
-        {label}
-      </Typography>
-    </a>
+        {icon && (
+          <Image src={icon} alt='Menu Icon' className='h-[27px] w-[27px]' />
+        )}
+        <Typography
+          variant='subtitle1'
+          className={getClassNames(
+            'font-bold capitalize whitespace-nowrap ml-2 text-[18px] font-800 text-black',
+            labelClassName
+          )}
+        >
+          {label}
+        </Typography>
+      </span>
+    ) : (
+      <a
+        className='flex flex-row items-center cursor-pointer'
+        aria-label='menu-item'
+        {...props}
+      >
+        {icon && (
+          <Image
+            src={icon}
+            alt='Menu Icon'
+            className='h-[36px] w-[36px] rounded-full'
+          />
+        )}
+        <Typography
+          variant='subtitle1'
+          className={getClassNames(
+            'font-bold capitalize text-lightBlack whitespace-nowrap ml-2',
+            labelClassName
+          )}
+        >
+          {label}
+        </Typography>
+      </a>
+    )}
   </li>
 );
 

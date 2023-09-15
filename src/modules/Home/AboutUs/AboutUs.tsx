@@ -17,26 +17,26 @@ const AboutUs = () => (
       <div className='grid grid-cols-2  lg:min-w-[466px] xl:min-w-[541px] relative gap-[19px] [&>.aboutUsCard:nth-child(2)]:relative [&>.aboutUsCard:nth-child(2n)]:top-[15px] lg:[&>.aboutUsCard:nth-child(2n)]:top-[20px] md:max-w-[466px] md:mx-auto 2xl:min-w-[618px] 2xl:gap-[30px]'>
         <AboutUsCard
           icon={<ExperienceSVG />}
-          number={5}
+          number={'5'}
           text='Year Of Experience'
           borderClassName='bg-[#3F78E0]'
         />
         <AboutUsCard
           icon={<CustomersSVG />}
-          number={400}
+          number={'50'}
           text='Happy Customers'
           borderClassName='bg-[#D95D37]'
         />
         <AboutUsCard
           icon={<CompletionRateSVG />}
-          number={100}
+          number={'100'}
           numberSuffix='%'
           text='Completion Rate'
           borderClassName='bg-[#11AF00]'
         />
         <AboutUsCard
           icon={<CompletedProjectSVG />}
-          number={1000}
+          number={'150'}
           text='Completed Project'
           borderClassName='bg-[#5E5FDC]'
         />

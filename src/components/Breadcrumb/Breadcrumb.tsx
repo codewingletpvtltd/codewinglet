@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, memo } from 'react';
 import { BreadcrumbSeparator } from '@codewinglet/assets';
 import Typography from '../Typography/Typography';
 import { BreadcrumbProps } from './types';
@@ -23,4 +23,4 @@ const Breadcrumb: FC<BreadcrumbProps> = ({ breadcrumbs }) => (
   </ol>
 );
 
-export default Breadcrumb;
+export default memo(Breadcrumb);

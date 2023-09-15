@@ -55,7 +55,7 @@ const Form: FC<FormProps> = ({
         onChange={(e) => onChangeFormData({ message: e.target.value })}
       />
     </div>
-    <div className='flex items-center justify-center'>
+    <div className='flex items-center justify-center mt-[40px]'>
       <Button type='submit' disabled={isDisabled}>
         Submit
       </Button>

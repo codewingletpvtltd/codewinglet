@@ -1,4 +1,6 @@
 'use client';
+import { memo } from 'react';
+import Image from 'next/image';
 import { SectionHeader, ServiceCard, Slider } from '@codewinglet/components';
 import { BackgroundDonutShadow, BgWave, StarIcon } from '@codewinglet/assets';
 import useScreenSize from '@codewinglet/hooks/useScreenSize';
@@ -39,14 +41,12 @@ const OurService = () => {
         >
           {services.map((service, index) => {
             const icon = (
-              <div
-                className={getClassNames(
-                  'h-[48px] min-w-[48px] md:h-[58px] md:min-w-[58px] flex items-center justify-center rounded-[50%]',
-                  service.iconBgColor
-                )}
-              >
-                {service.icon}
-              </div>
+              <Image
+                src={service.icon}
+                alt={service.title}
+                loading='eager'
+                className='h-[48px] min-w-[48px] md:h-[58px] md:min-w-[58px]'
+              />
             );
             return (
               <ServiceCard
@@ -67,4 +67,4 @@ const OurService = () => {
   );
 };
 
-export default OurService;
+export default memo(OurService);

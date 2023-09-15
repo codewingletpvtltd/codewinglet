@@ -241,37 +241,37 @@ const technology: ChildItemType = [
     label: 'Frontend',
     menu: [
       {
-        path: 'technology/react-js',
+        path: '/technology/react-js',
         label: 'ReactJs',
         icon: react,
       },
       {
-        path: 'technology/next-js',
+        path: '/technology/next-js',
         label: 'NextJs',
         icon: nextjs,
       },
       {
-        path: 'technology/gatsby',
+        path: '/technology/gatsby',
         label: 'Gatsby',
         icon: gatsby,
       },
       {
-        path: 'technology/angular',
+        path: '/technology/angular',
         label: 'Anugalr',
         icon: angular,
       },
       {
-        path: 'technology/vue',
+        path: '/technology/vue',
         label: 'Vue',
         icon: vue,
       },
       {
-        path: 'technology/remix',
+        path: '/technology/remix',
         label: 'Remix',
         icon: remix,
       },
       {
-        path: 'technology/knockout-js',
+        path: '/technology/knockout-js',
         label: 'knockoutJs',
         icon: knockoutjs,
       },
@@ -283,22 +283,22 @@ const technology: ChildItemType = [
     label: 'Backend',
     menu: [
       {
-        path: 'technology/node-js',
+        path: '/technology/node-js',
         label: 'NodeJs',
         icon: nodejs,
       },
       {
-        path: 'technology/python',
+        path: '/technology/python',
         label: 'Python',
         icon: python,
       },
       {
-        path: 'technology/express',
+        path: '/technology/express',
         label: 'Express',
         icon: express,
       },
       {
-        path: 'technology/nest',
+        path: '/technology/nest',
         label: 'Nest',
         icon: nest,
       },
@@ -310,17 +310,17 @@ const technology: ChildItemType = [
     label: 'Mobile',
     menu: [
       {
-        path: 'technology/react-native',
+        path: '/technology/react-native',
         label: 'React Native',
         icon: react,
       },
       {
-        path: 'technology/flutter',
+        path: '/technology/flutter',
         label: 'Flutter',
         icon: flutter,
       },
       {
-        path: 'technology/ionic',
+        path: '/technology/ionic',
         label: 'Ionic',
         icon: ionic,
       },
@@ -332,27 +332,27 @@ const technology: ChildItemType = [
     label: 'DevOps/Cloud',
     menu: [
       {
-        path: 'technology/aws',
+        path: '/technology/aws',
         label: 'Aws',
         icon: aws,
       },
       {
-        path: 'technology/azure',
+        path: '/technology/azure',
         label: 'Azure',
         icon: azure,
       },
       {
-        path: 'technology/google-cloud',
+        path: '/technology/google-cloud',
         label: 'Google Cloud',
         icon: googleCloud,
       },
       {
-        path: 'technology/docker',
+        path: '/technology/docker',
         label: 'Docker',
         icon: docker,
       },
       {
-        path: 'technology/jenkins',
+        path: '/technology/jenkins',
         label: 'Jenkins',
         icon: jenkins,
       },
@@ -364,32 +364,32 @@ const technology: ChildItemType = [
     label: 'Database',
     menu: [
       {
-        path: 'technology/mongodb',
+        path: '/technology/mongodb',
         label: 'MongoDB',
         icon: mongodb,
       },
       {
-        path: 'technology/mysql',
+        path: '/technology/mysql',
         label: 'MySQL',
         icon: mysql,
       },
       {
-        path: 'technology/postgresql',
+        path: '/technology/postgresql',
         label: 'PostgreSQL',
         icon: postgresql,
       },
       {
-        path: 'technology/redis',
+        path: '/technology/redis',
         label: 'Rediis',
         icon: rediis,
       },
       {
-        path: 'technology/mariadb',
+        path: '/technology/mariadb',
         label: 'MariaDB',
         icon: mariadb,
       },
       {
-        path: 'technology/dynamodb',
+        path: '/technology/dynamodb',
         label: 'DynamoDB',
         icon: dynamodb,
       },
@@ -401,27 +401,27 @@ const technology: ChildItemType = [
     label: 'Others',
     menu: [
       {
-        path: 'technology/storybook',
+        path: '/technology/storybook',
         label: 'Storybook',
         icon: storybook,
       },
       {
-        path: 'technology/pwa',
+        path: '/technology/pwa',
         label: 'PWA',
         icon: pwa,
       },
       {
-        path: 'technology/web3',
+        path: '/technology/web3',
         label: 'Web3',
         icon: web3,
       },
       {
-        path: 'technology/blockchain',
+        path: '/technology/blockchain',
         label: 'BlockChain',
         icon: blockChain,
       },
       {
-        path: 'technology/component-library',
+        path: '/technology/component-library',
         label: 'Component Library',
         icon: react,
       },
@@ -433,27 +433,27 @@ const technology: ChildItemType = [
     label: 'Generative AI',
     menu: [
       {
-        path: 'technology/generative-ai-development',
+        path: '/technology/generative-ai-development',
         label: 'Generative AI Development',
         icon: aiDev,
       },
       {
-        path: 'technology/generative-ai-integration',
+        path: '/technology/generative-ai-integration',
         label: 'Generative AI Integration',
         icon: aiIntegration,
       },
       {
-        path: 'technology/chatgpt-developer',
+        path: '/technology/chatgpt-developer',
         label: 'ChatGPT Developer',
         icon: chatgtp,
       },
       {
-        path: 'technology/chatgpt-integration-service',
+        path: '/technology/chatgpt-integration-service',
         label: 'ChatGPT Integration Service',
         icon: chatGtpService,
       },
       {
-        path: 'technology/generative-ai-consulting',
+        path: '/technology/generative-ai-consulting',
         label: 'Generative AI Consulting',
         icon: aiConsulting,
       },

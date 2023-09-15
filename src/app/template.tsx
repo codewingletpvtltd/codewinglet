@@ -15,17 +15,12 @@ export default function RootLayout({
   const [isScroll, setScroll] = useState(false);
 
   const handleScroll = () => {
-    if (window.scrollY > 50) {
-      setScroll(true);
-    } else {
-      setScroll(false);
-    }
+    setScroll(window.scrollY > 50);
   };
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll, true);
 
-    // Remove the event listener
     return () => {
       window.removeEventListener('scroll', handleScroll, true);
     };

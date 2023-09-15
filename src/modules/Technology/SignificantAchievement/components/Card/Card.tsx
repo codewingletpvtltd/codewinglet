@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, memo } from 'react';
 import Image from 'next/image';
 import { Typography } from '@codewinglet/components';
 import { CardProps } from '../../types';
@@ -14,7 +14,7 @@ const Card: FC<CardProps> = ({ icon, title, desc, slideIndex }) => (
         {slideIndex}
       </Typography>
     </div>
-    <Typography variant='body2' className='font-800 md:text-[20px]'>
+    <Typography variant='body2' className='md:text-[20px] font-800'>
       {title}
     </Typography>
     <Typography variant='subtitle2' className='md:text-[18px] text-lightBlack'>
@@ -23,4 +23,4 @@ const Card: FC<CardProps> = ({ icon, title, desc, slideIndex }) => (
   </>
 );
 
-export default Card;
+export default memo(Card);

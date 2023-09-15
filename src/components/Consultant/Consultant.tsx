@@ -31,7 +31,7 @@ const Consultant = () => (
           // startIcon={<Calender color='' />}
           variant='contained'
         >
-          <div className='rounded-full absolute inset-0 w-0 bg-white transition-all duration-[250] ease-out group-hover:w-full' />
+          <div className='rounded-full absolute inset-0 w-0 bg-white transition-all duration-300 ease-out group-hover:w-full' />
 
           <Link
             href='https://calendly.com/slapani'

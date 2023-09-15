@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { Arrow } from '@codewinglet/assets';
 import { getClassNames } from '@codewinglet/utils/cn';
 import Typography from '../Typography';
@@ -35,7 +35,7 @@ const Button: React.FC<ButtonProps> = ({
       <Arrow
         width={16}
         height={16}
-        className='relative fill-none stroke-2 translate-x-[-5px] transition-all duration-[0.3s] ease-linear ml-2.5 top-0 stroke-linecap:round stroke-linejoin: round group-hover:translate-x-0'
+        className='relative fill-none stroke-2 translate-x-[-5px] transition-all duration-300 ease-linear ml-2.5 top-0 stroke-linecap:round stroke-linejoin: round group-hover:translate-x-0'
       />
     </button>
   ) : (
@@ -51,4 +51,4 @@ const Button: React.FC<ButtonProps> = ({
     </button>
   );
 
-export default Button;
+export default memo(Button);

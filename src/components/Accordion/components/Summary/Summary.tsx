@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { DownArrow, MinusIcon, PlusIcon } from '@codewinglet/assets';
 import { getClassNames } from '@codewinglet/utils/cn';
 import Button from '../../../Button';
@@ -6,7 +7,7 @@ import { useAccordionContext } from '../../context/AccordionContext';
 import SummaryInfo from '../SummaryInfo';
 import { Info } from '../../types';
 
-const Heading = () => {
+const Summary = () => {
   const accordionContext = useAccordionContext();
   const {
     title,
@@ -85,7 +86,7 @@ const Heading = () => {
           >
             <DownArrow
               className={getClassNames(
-                'transition duration-[400] ease-linear',
+                'transitio duration-400 ease-linear',
                 expanded ? 'rotate-[180deg]' : ''
               )}
             />
@@ -96,4 +97,4 @@ const Heading = () => {
   );
 };
 
-export default Heading;
+export default memo(Summary);

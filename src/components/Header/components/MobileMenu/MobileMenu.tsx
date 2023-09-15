@@ -1,5 +1,5 @@
 'use client';
-import { FC } from 'react';
+import React, { FC } from 'react';
 import { Button } from '@codewinglet/components';
 import { MobileMenuProps } from '../../types';
 import useMobileMenu from './useMobileMenu';
@@ -51,7 +51,8 @@ const MobileMenu: FC<MobileMenuProps> = ({ onMenu }) => {
                               icon={val.icon}
                               label={val.label}
                               labelClassName='!whitespace-normal'
-                              onClick={onNavigate(val.path || '')}
+                              href={val.path ? val.path : '/not-found'}
+                              onClick={onMenu}
                             />
                           ))}
                         </ul>
@@ -65,7 +66,8 @@ const MobileMenu: FC<MobileMenuProps> = ({ onMenu }) => {
                         key={`mobile-menu-item-${index}`}
                         icon={val.icon}
                         label={val.label}
-                        onClick={onNavigate(val.path || '')}
+                        onClick={onMenu}
+                        href={val.path ? val.path : '/not-found'}
                         labelClassName='!whitespace-normal'
                       />
                     ))}
@@ -83,4 +85,4 @@ const MobileMenu: FC<MobileMenuProps> = ({ onMenu }) => {
   );
 };
 
-export default MobileMenu;
+export default React.memo(MobileMenu);

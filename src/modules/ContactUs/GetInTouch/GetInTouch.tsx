@@ -13,9 +13,9 @@ const GetInTouch = () => {
       <div className='md:col-span-1'>
         <SectionHeader
           title={
-            <div className='mb-[10px]'>
+            <>
               <strong className='font-[800]'>Get In</strong> Touch
-            </div>
+            </>
           }
           description='Fill up the form and our Team will get back to you within 24 hours.'
         />

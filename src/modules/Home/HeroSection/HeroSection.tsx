@@ -1,7 +1,9 @@
+import { memo } from 'react';
+import Image from 'next/image';
 import { TypeAnimation, Typography } from '@codewinglet/components';
 import {
   ArrowRightSVG,
-  IllustrationSVG,
+  Illustration,
   LeftLineMediumSVG,
   LeftLineSVG,
   RectangleSVG,
@@ -51,7 +53,12 @@ const HeroSection = () => (
           {/* <Button>Consult Code Winglet</Button> */}
         </div>
         <div className='relative h-[257px] w-[259px] md:min-w-[300px] md:h-[auto] mt-[105px] md:mt-[51px] lg:mt-[71px] xl:mt-[83px] 2xl:mt-[80px] flex justify-center lg:w-[357px] lg:h-[359px] xl:w-[424px] xl:h-[426px]'>
-          <IllustrationSVG />
+          <Image
+            src={Illustration}
+            alt='Ill'
+            loading='eager'
+            className='md:w-[357px] md:h-[357px] lg:h-[423px] lg:w-[423px] xl:h-[510px] xl:w-[510px]'
+          />
           <ArrowRightSVG className='absolute -z-50 hidden md:block top-[40px] left-[-75px] 2xl:w-[94px] 2xl:h-[66px]' />
         </div>
       </div>
@@ -65,4 +72,4 @@ const HeroSection = () => (
   </div>
 );
 
-export default HeroSection;
+export default memo(HeroSection);

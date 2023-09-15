@@ -41,3 +41,6 @@ export { default as web3 } from './web3.svg';
 export { default as antd } from './antd.svg';
 export { default as mui } from './mui.svg';
 export { default as tailwind } from './tailwind.svg';
+export { default as graphql } from './graphql.svg';
+export { default as typescriptIcon } from './typescript.svg';
+export { default as javascriptIcon } from './javascript.svg';

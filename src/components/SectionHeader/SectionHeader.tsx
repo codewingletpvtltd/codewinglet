@@ -14,9 +14,9 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
 }) => (
   <div className={wrapperClassName}>
     <Typography
-      variant='h4'
+      variant='body1'
       className={getClassNames(
-        'text-primary !text-[22px] leading-[27px] md:!text-[32px] md:leading-[39px] lg:!text-[40px] lg:leading-[49px] xl:!text-[50px] xl:leading-[62px] font-300 mb-41',
+        'text-primary font-300 mb-41 text-[22px] md:text-[32px] lg:text-[40px] xl:text-[50px]',
         headingClassName
       )}
     >
