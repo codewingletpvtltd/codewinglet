@@ -160,8 +160,8 @@ const Footer = () => (
           variant='subtitle2'
           className='text-[14px] text-gray text-center'
         >
-          © {new Date().getFullYear()} All rights reserved. Codewinglet Pvt.
-          Ltd.
+          © {new Date().getFullYear()} All rights reserved. Codewinglet Private
+          Limited
         </Typography>
         <ul className='flex gap-7 lg:mt-0 mt-5 justify-center'>
           {companyTermsMenu.map((item) => (
