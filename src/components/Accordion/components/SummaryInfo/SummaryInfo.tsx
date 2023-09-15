@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, memo } from 'react';
 import Typography from '../../../Typography';
 import { SummaryInfoProps } from '../../types';
 
@@ -19,4 +19,4 @@ const SummaryInfo: FC<SummaryInfoProps> = ({ title, value }) => (
   </div>
 );
 
-export default SummaryInfo;
+export default memo(SummaryInfo);

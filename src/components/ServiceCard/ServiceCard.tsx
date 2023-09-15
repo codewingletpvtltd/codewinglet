@@ -7,9 +7,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   icon,
   title,
   children,
-  buttonText = 'Button',
   className = '',
-  onClick,
   ...rest
 }) => (
   <div
