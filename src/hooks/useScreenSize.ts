@@ -2,11 +2,10 @@
 import { useEffect, useState } from 'react';
 
 const useScreenSize = (query: string): boolean => {
-  const [matches, setMatches] = useState(false);
+  const mediaQuery = window.matchMedia(query);
+  const [matches, setMatches] = useState(mediaQuery.matches);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia(query);
-
     const handleMatchChange = (event: MediaQueryListEvent) => {
       setMatches(event.matches);
     };
