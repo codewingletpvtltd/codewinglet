@@ -28,7 +28,7 @@ export const SnackbarProvider: FC<SnacbarProviderProps> = ({ children }) => {
           className={getClassNames(
             'fixed py-[10px] px-[20px] top-[100px] rounded-10 z-[9999] shadow-lg border',
             background(),
-            open ? 'animate-enterFromRight ' : 'right-[-150px]'
+            open ? 'animate-enterFromRight' : 'right-[-150px]'
           )}
         >
           <div className='flex flex-row items-center gap-[10px]'>

@@ -14,10 +14,12 @@ export interface FormProps {
     service: string;
     message: string;
     errors: {
-      phone: string;
+      name: string;
       email: string;
+      message: string;
     };
   };
   onChangeFormData: (e: object) => void;
   onSubmit: (e: FormEvent<HTMLFormElement>) => void;
+  isDisabled: boolean;
 }

@@ -1,58 +1,119 @@
 'use client';
 import { FormEvent, useState } from 'react';
+import axios from 'axios';
 import { useSnackbar } from '@codewinglet/components';
+
+const getIsValidEmail = (email: string) =>
+  /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/.test(email);
 
 const useGetInTouch = () => {
   const { showSnackbar } = useSnackbar();
+  const [isLoading, setIsLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
     service: '',
     message: '',
-    errors: { email: '', phone: '' },
+    errors: { email: '', name: '', message: '' },
+    isSubmitted: false,
   });
 
   const onChangeFormData = (value: object) => {
-    setFormData(Object.assign({ ...formData }, value));
+    const isFormValid =
+      formData.isSubmitted &&
+      validateFields({
+        ...formData,
+        ...Object.assign({ ...formData }, value),
+      });
+
+    console.log('isFormValid', isFormValid);
+    if (!formData.isSubmitted)
+      setFormData(Object.assign({ ...formData }, value));
   };
 
-  const onSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const { email, phone, errors } = formData;
+  const validateFields = (validateValues: typeof formData) => {
+    const { email, phone, message, name, errors } = validateValues;
 
-    const isValidEmail = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/.test(email);
-    const isValidPhone =
-      /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/.test(phone);
+    const isValidEmail = getIsValidEmail(email);
 
-    if (!isValidEmail || !isValidPhone) {
+    if (!isValidEmail || !message) {
       let error = { ...errors };
 
-      if (!isValidEmail) {
-        Object.assign(error, { email: 'Please enter valid email address' });
+      if (!email) {
+        Object.assign(error, { email: 'Email address is required.' });
+      } else if (!isValidEmail) {
+        Object.assign(error, { email: 'Please enter valid email address.' });
       } else {
         Object.assign(error, { email: '' });
       }
 
-      if (!isValidPhone) {
-        Object.assign(error, { phone: 'Please enter valid phone number' });
+      if (!name) {
+        Object.assign(error, { name: 'Name is required.' });
+      } else Object.assign(error, { name: '' });
+
+      if (!message) {
+        Object.assign(error, { message: 'Message is required.' });
       } else {
-        Object.assign(error, { phone: '' });
+        Object.assign(error, { message: '' });
       }
 
       setFormData(
-        Object.assign({ ...formData }, { errors: Object.assign(errors, error) })
+        Object.assign(
+          { ...validateValues },
+          { errors: Object.assign(errors, error) }
+        )
       );
-    } else {
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        service: '',
-        message: '',
-        errors: { email: '', phone: '' },
-      });
-      showSnackbar({ msg: 'Added Successfully', type: 'success' });
+      return false;
+    }
+
+    setFormData({
+      ...validateValues,
+      errors: { email: '', message: '', name: '' },
+    });
+    return true;
+  };
+
+  const onSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const isValid = validateFields(formData);
+
+    if (!formData.isSubmitted) {
+      setFormData({ ...formData, isSubmitted: true });
+    }
+
+    console.log('isValid', isValid);
+
+    if (isValid) {
+      setIsLoading(true);
+      axios
+        .post(process.env.NEXT_PUBLIC_STRAPI_API_URL + '/api/contacts', {
+          data: {
+            ...formData,
+            source_url: window.location.origin,
+          },
+        })
+        .then(() => {
+          showSnackbar({
+            msg: 'Thank you for reaching out to us! will get back to you.',
+            type: 'success',
+          });
+
+          setFormData({
+            name: '',
+            email: '',
+            phone: '',
+            service: '',
+            message: '',
+            errors: { email: '', message: '', name: '' },
+            isSubmitted: true,
+          });
+          setIsLoading(false);
+        })
+        .catch((error) => {
+          showSnackbar({ msg: error.message, type: 'error' });
+          setIsLoading(false);
+        });
     }
   };
 
@@ -60,6 +121,7 @@ const useGetInTouch = () => {
     formData,
     onChangeFormData,
     onSubmit,
+    isLoading,
   };
 };
 

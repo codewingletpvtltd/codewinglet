@@ -15,6 +15,10 @@ const useSnackbarProvider = () => {
   const showHandler = ({ msg = '', type = '' }) => {
     setOpen(true);
     setData({ msg, type });
+    setTimeout(() => {
+      setOpen(false);
+      setData({ msg: '', type: '' });
+    }, 5000);
   };
 
   const closeHandler = () => {

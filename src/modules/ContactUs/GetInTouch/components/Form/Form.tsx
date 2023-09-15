@@ -4,18 +4,22 @@ import Button from '../../../../../components/Button';
 import TextField from '../../../../../components/TextField';
 import { FormProps } from '../../types';
 
-const Form: FC<FormProps> = ({ formData, onChangeFormData, onSubmit }) => (
-  <form
-    onSubmit={onSubmit}
-    className='grid md:grid-rows-2 gap-[20px] md:col-span-2'
-  >
+const Form: FC<FormProps> = ({
+  formData,
+  onChangeFormData,
+  onSubmit,
+  isDisabled,
+}) => (
+  <form onSubmit={onSubmit} className='col-span-2'>
     <div className='grid grid-cols-1 md:grid-cols-2 gap-[20px]'>
       <TextField
         fullWidth
-        label='Your Name'
-        placeholder='Your Name'
+        label='Name'
+        placeholder='Name'
         value={formData.name}
         onChange={(e) => onChangeFormData({ name: e.target.value })}
+        helperText={formData.errors.name}
+        error={!!formData.errors.name}
       />
       <TextField
         fullWidth
@@ -24,7 +28,7 @@ const Form: FC<FormProps> = ({ formData, onChangeFormData, onSubmit }) => (
         value={formData.email}
         onChange={(e) => onChangeFormData({ email: e.target.value })}
         helperText={formData.errors.email}
-        error={formData.errors.email ? true : false}
+        error={!!formData.errors.email}
       />
       <TextField
         fullWidth
@@ -32,8 +36,6 @@ const Form: FC<FormProps> = ({ formData, onChangeFormData, onSubmit }) => (
         placeholder='Phone'
         value={formData.phone}
         onChange={(e) => onChangeFormData({ phone: e.target.value })}
-        helperText={formData.errors.phone}
-        error={formData.errors.phone ? true : false}
       />
       <TextField
         fullWidth
@@ -42,16 +44,21 @@ const Form: FC<FormProps> = ({ formData, onChangeFormData, onSubmit }) => (
         value={formData.service}
         onChange={(e) => onChangeFormData({ service: e.target.value })}
       />
+      <Textarea
+        fullWidth
+        label='Message'
+        placeholder='Your Message'
+        value={formData.message}
+        error={!!formData.errors.message}
+        helperText={formData.errors.message}
+        rootClasseName='md:col-span-2'
+        onChange={(e) => onChangeFormData({ message: e.target.value })}
+      />
     </div>
-    <Textarea
-      fullWidth
-      label='Message'
-      placeholder='Your Message'
-      value={formData.message}
-      onChange={(e) => onChangeFormData({ message: e.target.value })}
-    />
     <div className='flex items-center justify-center'>
-      <Button type='submit'>Submit</Button>
+      <Button type='submit' disabled={isDisabled}>
+        Submit
+      </Button>
     </div>
   </form>
 );
