@@ -22,7 +22,7 @@ export const info = [
     icon: <Email />,
     title: 'Email',
     detail: (
-      <Link href='mailto:sale@codewinglet.com'>sale@codewinglet.com</Link>
+      <Link href='mailto:sales@codewinglet.com'>sale@codewinglet.com</Link>
     ),
   },
 ];

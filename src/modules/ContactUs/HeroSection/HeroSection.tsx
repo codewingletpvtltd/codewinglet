@@ -7,7 +7,7 @@ import {
 import { Breadcrumb, Typography } from '@codewinglet/components';
 
 const HeroSection = () => (
-  <div className='overflow-hidden relative -z-10'>
+  <div className='overflow-hidden relative -z-10 pt-[50px]'>
     <LeftLineMediumSVG className='absolute top-0 left-[-30px]' />
     <StarsSVG className='absolute left-[20px] top-[195px] lg:top-[250px] lg:left-[70px] xl:left-[120px] 2xl:left-[300px] 2xl:top-[200px]' />
     <RectangleSVG className='absolute right-[36px] top-[140px] lg:top-[170px] lg:right-[70px] xl:right-[120px] 2xl:right-[300px]' />
