@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { Arrow } from '@codewinglet/assets';
 import { getClassNames } from '@codewinglet/utils/cn';
 import Typography from '../Typography';
@@ -49,4 +49,4 @@ const Button: React.FC<ButtonProps> = ({
     </button>
   );
 
-export default Button;
+export default memo(Button);

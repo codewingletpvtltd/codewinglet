@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, memo } from 'react';
 import Image from 'next/image';
 import { Typography } from '@codewinglet/components';
 import { CardProps } from '../../types';
@@ -23,4 +23,4 @@ const Card: FC<CardProps> = ({ icon, title, desc, slideIndex }) => (
   </>
 );
 
-export default Card;
+export default memo(Card);

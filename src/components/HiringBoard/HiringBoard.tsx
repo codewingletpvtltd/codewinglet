@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, memo } from 'react';
 import Image from 'next/image';
 import HiringImg from 'assets/hiring.svg';
 import HiringBoardBg from 'assets/hiringBoard.svg';
@@ -31,4 +31,4 @@ const HiringBoard: FC<HiringBoardProps> = ({
   </div>
 );
 
-export default HiringBoard;
+export default memo(HiringBoard);

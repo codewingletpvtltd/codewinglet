@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { FC } from 'react';
+import { FC, memo } from 'react';
 import { COLORS } from '@codewinglet/constants';
 import { Calender } from '@codewinglet/assets';
 import Typography from '../Typography';
@@ -47,4 +47,4 @@ const BlogCard: FC<BlogCardProps> = ({ image, desc, title, date }) => (
   </div>
 );
 
-export default BlogCard;
+export default memo(BlogCard);

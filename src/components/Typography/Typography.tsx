@@ -1,4 +1,4 @@
-import React, { forwardRef } from 'react';
+import React, { forwardRef, memo } from 'react';
 import { getClassNames } from '@codewinglet/utils/cn';
 import { TypographyProps } from './types';
 
@@ -127,4 +127,4 @@ const Typography: React.FC<TypographyProps> = forwardRef(
 
 Typography.displayName = 'Typography';
 
-export default Typography;
+export default memo(Typography);
