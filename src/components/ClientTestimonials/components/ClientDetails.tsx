@@ -3,7 +3,7 @@ import { ReviewProps } from '../types';
 import Typography from '../../Typography';
 
 const ClientDetails: FC<ReviewProps> = ({ name, designation }) => (
-  <div className='mt-[39px] flex row items-center gap-[14px]'>
+  <div className='mt-[35px] mb-[25px]'>
     {/* <Image
       className='rounded-full h-[47px] w-[47px] md:h-[58px] md:w-[58px] xl:h-[65px] xl:w-[65px]'
       src={ClientImage}
