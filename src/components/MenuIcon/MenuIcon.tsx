@@ -1,5 +1,5 @@
 import { FC, memo } from 'react';
-import { getClassNames } from '@codewinglet/utils/cn';
+import { getClassNames } from '@codewinglet/utils';
 import { MenuIconProps } from './types';
 
 const MenuIcon: FC<MenuIconProps> = ({ isOpen, onClick }) => (

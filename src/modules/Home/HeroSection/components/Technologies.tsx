@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { memo } from 'react';
 import { Slider } from '@codewinglet/components';
-import { getClassNames } from '@codewinglet/utils/cn';
+import { getClassNames } from '@codewinglet/utils';
 import { settings, techList } from './utils';
 
 const Technologies = () => (

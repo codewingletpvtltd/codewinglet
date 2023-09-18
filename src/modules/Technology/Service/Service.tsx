@@ -1,5 +1,5 @@
 import { SectionHeader } from '@codewinglet/components';
-import { getClassNames } from '@codewinglet/utils/cn';
+import { getClassNames } from '@codewinglet/utils';
 import { BackgroundArc } from '@codewinglet/assets';
 import { Card } from './components';
 import { services } from './constants';

@@ -1,9 +1,9 @@
 'use client';
 import { FC } from 'react';
-import { getClassNames } from '@codewinglet/utils/cn';
-import { Summary } from './components';
-import { AccordionProps } from './types';
+import { getClassNames } from '@codewinglet/utils';
 import { AccordionContext } from './context/AccordionContext';
+import { AccordionProps } from './types';
+import { Summary } from './components';
 
 const Accordion: FC<AccordionProps> = ({
   title,

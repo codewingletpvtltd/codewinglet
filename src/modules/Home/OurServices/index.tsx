@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { SectionHeader, ServiceCard, Slider } from '@codewinglet/components';
 import { BackgroundDonutShadow, BgWave, StarIcon } from '@codewinglet/assets';
 import useScreenSize from '@codewinglet/hooks/useScreenSize';
-import { getClassNames } from '@codewinglet/utils/cn';
+import { getClassNames } from '@codewinglet/utils';
 import { md } from '../../../constants/mediaQueryConst';
 import { services } from './utils';
 
