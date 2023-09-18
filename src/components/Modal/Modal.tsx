@@ -1,6 +1,6 @@
 import { FC, memo } from 'react';
 import { Close } from '@codewinglet/assets';
-import { getClassNames } from '@codewinglet/utils/cn';
+import { getClassNames } from '@codewinglet/utils';
 import Typography from '../Typography';
 import Button from '../Button';
 import { ModalProps } from './types';

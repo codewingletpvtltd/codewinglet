@@ -2,7 +2,7 @@ import { FC, memo } from 'react';
 import Image from 'next/image';
 import HiringImg from 'assets/hiring.svg';
 import HiringBoardBg from 'assets/hiringBoard.svg';
-import { getClassNames } from '@codewinglet/utils/cn';
+import { getClassNames } from '@codewinglet/utils';
 import { HiringBoardProps } from './types';
 
 const HiringBoard: FC<HiringBoardProps> = ({

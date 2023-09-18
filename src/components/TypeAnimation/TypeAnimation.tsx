@@ -1,7 +1,7 @@
 'use client';
 import { HTMLAttributes, MutableRefObject, forwardRef, useEffect } from 'react';
 
-import { getClassNames } from '@codewinglet/utils/cn';
+import { getClassNames } from '@codewinglet/utils';
 import Typography from '../Typography/Typography';
 import {
   ElementByTypographyVariant,

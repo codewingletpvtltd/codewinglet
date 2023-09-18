@@ -1,6 +1,6 @@
 import React, { memo } from 'react';
 import { Arrow } from '@codewinglet/assets';
-import { getClassNames } from '@codewinglet/utils/cn';
+import { getClassNames } from '@codewinglet/utils';
 import Typography from '../Typography';
 import { ButtonProps } from './types';
 
