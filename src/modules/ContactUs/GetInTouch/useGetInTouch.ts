@@ -2,6 +2,7 @@
 import { FormEvent, useState } from 'react';
 import axios from 'axios';
 import { useSnackbar } from '@codewinglet/components';
+import { STRAPI_API_URL } from '@codewinglet/constants/constants';
 
 const getIsValidEmail = (email: string) =>
   /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/.test(email);
@@ -84,7 +85,7 @@ const useGetInTouch = () => {
     if (isValid) {
       setIsLoading(true);
       axios
-        .post(process.env.NEXT_PUBLIC_STRAPI_API_URL + '/api/contacts', {
+        .post(STRAPI_API_URL + '/api/contacts', {
           data: {
             ...formData,
             source_url: window.location.origin,
