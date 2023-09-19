@@ -1,15 +1,20 @@
 'use client';
 import { memo } from 'react';
 import Image from 'next/image';
+import { animated } from '@react-spring/web';
 import { SectionHeader, ServiceCard, Slider } from '@codewinglet/components';
 import { BackgroundDonutShadow, BgWave, StarIcon } from '@codewinglet/assets';
 import useScreenSize from '@codewinglet/hooks/useScreenSize';
 import { getClassNames } from '@codewinglet/utils/cn';
 import { md } from '../../../constants/mediaQueryConst';
 import { services } from './utils';
+import useServiceAnimation from './useAnimation';
 
 const OurService = () => {
+  const AnimatedServiceCard = animated(ServiceCard);
+  const { cardOneRef, cardOneSprings } = useServiceAnimation();
   const isLarge = useScreenSize(md);
+
   return (
     <div
       className={getClassNames(
@@ -51,6 +56,8 @@ const OurService = () => {
             return (
               <ServiceCard
                 key={`service-${index}`}
+                ref={cardOneRef}
+                style={cardOneSprings}
                 title={service.title}
                 icon={icon}
                 className='py-[27px] px-[23px] !w-[calc(100%-24px)] !h-[calc(100%-30px)] !flex self-center !my-[30px] !mx-[12px] bg-white'

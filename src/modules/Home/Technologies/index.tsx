@@ -13,7 +13,7 @@ const Technologies = () => (
         }
         description='Cutting-Edge Technologies We Work With for Optimal Results'
         headingClassName='text-center text-[22px]'
-        descriptionClassName='text-center mt-[9px] lg:w-[388px] xl:w-[448px] text-center mx-auto '
+        descriptionClassName='text-center mt-[9px] lg:w-[388px] xl:w-[448px] text-center mx-auto'
       />
 
       <div className='mt-[38px] bg-white'>

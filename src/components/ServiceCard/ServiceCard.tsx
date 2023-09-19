@@ -1,4 +1,6 @@
+'use client';
 import React from 'react';
+import { animated } from '@react-spring/web';
 import { getClassNames } from '@codewinglet/utils/cn';
 import Typography from '../Typography';
 import { ServiceCardProps } from './types';
@@ -10,7 +12,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   className = '',
   ...rest
 }) => (
-  <div
+  <animated.div
     className={getClassNames(
       'flex flex-col gap-4 p-[24px] rounded-10 bg-white shadow-lg',
       className
@@ -38,7 +40,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
     {/* <div>
       <Button onClick={onClick}>{buttonText}</Button>
     </div> */}
-  </div>
+  </animated.div>
 );
 
 export default React.memo(ServiceCard);

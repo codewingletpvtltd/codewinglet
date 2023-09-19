@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { RefObject } from 'react';
 
 export interface ServiceCardProps {
   icon: React.ReactNode;
@@ -7,4 +7,6 @@ export interface ServiceCardProps {
   className?: string;
   buttonText?: string;
   onClick?: () => void;
+  ref?: RefObject<any>;
+  style?: any;
 }
