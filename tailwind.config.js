@@ -126,8 +126,8 @@ module.exports = {
       900: 900,
     },
     fontFamily: {
-      primary: ['Inter', 'sans-serif'],
-      secondary: ['Outfit', 'sans-serif'],
+      primary: ['Nunito Sans', 'sans-serif'],
+      secondary: ['Lato', 'sans-serif'],
     },
     fontSize: {
       h1: [
