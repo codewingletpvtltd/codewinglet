@@ -1,6 +1,6 @@
 import { memo } from 'react';
 import { Typography } from '@codewinglet/components';
-import { getClassNames } from '@codewinglet/utils/cn';
+import { getClassNames } from '@codewinglet/utils';
 import { AboutUsCardProps } from '../types';
 
 const AboutUsCard: React.FC<AboutUsCardProps> = ({

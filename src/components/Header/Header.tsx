@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation';
 import React, { FC } from 'react';
 import Logo from '@codewinglet/assets/company_logo.svg';
 import { useScreenSize } from '@codewinglet/hooks';
-import { getClassNames } from '@codewinglet/utils/cn';
+import { getClassNames } from '@codewinglet/utils';
 import { xl } from '@codewinglet/constants/mediaQueryConst';
 import MenuIcon from '../MenuIcon';
 import { MobileMenu, NavMenu } from './components';

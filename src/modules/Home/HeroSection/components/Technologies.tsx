@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { memo } from 'react';
-import { getClassNames } from '@codewinglet/utils/cn';
+import { getClassNames } from '@codewinglet/utils';
 import { techList } from './utils';
 
 const Technologies = () => (
@@ -10,14 +10,10 @@ const Technologies = () => (
         <div
           key={`tech-${index}`}
           className={getClassNames(
-            '!h-[60px] !w-[60px] !flex items-center justify-center xl:!h-[80px] xl:!w-[80px] 2xl:!h-[90px] 2xl:!w-[90px] self-center md:!h-[70px] md:!w-[70px]'
+            '!h-[60px] !w-[60px] !flex items-center justify-center xl:!h-[80px] xl:!w-[80px] 2xl:!h-[86px] 2xl:!w-[86px] self-center md:!h-[70px] md:!w-[70px]'
           )}
         >
-          <Image
-            alt=''
-            src={tech.image}
-            className='h-[55px] w-[55px] md:!h-[70px] md:!w-[70px] xl:h-[80px] xl:w-[80px] 2xl:h-[86px] 2xl:w-[86px]'
-          />
+          <Image alt='' src={tech.image} className='h-full w-full' />
         </div>
       ))}
     </div>

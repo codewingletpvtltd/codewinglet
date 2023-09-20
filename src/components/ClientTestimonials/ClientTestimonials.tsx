@@ -36,7 +36,7 @@ const ClientTestimonials = () => (
             {testimonials.map((data, index) => (
               <div
                 key={`testimonials-${data.id}-${index}`}
-                className='mb-[36px]'
+                // className='mb-[36px]'
               >
                 <Typography
                   variant='subtitle1'
@@ -55,7 +55,7 @@ const ClientTestimonials = () => (
         <Image
           src={Client}
           alt='Client Testimonals'
-          className='w-[100%] md:h-[100%] md:w-auto place-self-end'
+          className='w-[100%] md:h-[100%] md:w-auto place-self-end select-none'
         />
       </div>
     </div>

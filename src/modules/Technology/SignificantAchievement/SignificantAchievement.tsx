@@ -4,7 +4,7 @@ import { BackgroundDonutShadow, BgWave, StarIcon } from '@codewinglet/assets';
 import { SectionHeader, Slider } from '@codewinglet/components';
 import { md } from '@codewinglet/constants/mediaQueryConst';
 import { useScreenSize } from '@codewinglet/hooks';
-import { getClassNames } from '@codewinglet/utils/cn';
+import { getClassNames } from '@codewinglet/utils';
 import { achievements } from './constants';
 import { Card } from './components';
 import { sliderConfig } from './utils';

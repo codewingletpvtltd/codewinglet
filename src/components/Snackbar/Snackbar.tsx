@@ -1,6 +1,6 @@
 'use client';
 import React, { FC, useContext } from 'react';
-import { getClassNames } from '@codewinglet/utils/cn';
+import { getClassNames } from '@codewinglet/utils';
 import { SnackbarClose } from '@codewinglet/assets';
 import Typography from '../Typography';
 import { SnacbarProviderProps } from './types';

@@ -1,5 +1,5 @@
 import React, { forwardRef, memo } from 'react';
-import { getClassNames } from '@codewinglet/utils/cn';
+import { getClassNames } from '@codewinglet/utils';
 import { TypographyProps } from './types';
 
 const Typography: React.FC<TypographyProps> = forwardRef(

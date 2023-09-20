@@ -13,7 +13,7 @@ import {
   vidiren,
 } from '@codewinglet/assets';
 import { SectionHeader } from '@codewinglet/components';
-import { getClassNames } from '@codewinglet/utils/cn';
+import { getClassNames } from '@codewinglet/utils';
 
 const clientLogo = [
   circle_ci,

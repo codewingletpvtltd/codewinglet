@@ -1,6 +1,6 @@
 import { FC, memo } from 'react';
 import { BackgroundBubble, LeftArrow, RightArrow } from '@codewinglet/assets';
-import { getClassNames } from '@codewinglet/utils/cn';
+import { getClassNames } from '@codewinglet/utils';
 import { _arrowPosition, svgPosition, verticalPosition } from '../constants';
 import { ArrowProps } from '../types';
 

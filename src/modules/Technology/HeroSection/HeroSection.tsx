@@ -12,7 +12,7 @@ import {
   Slider,
   Typography,
 } from '@codewinglet/components';
-import { getClassNames } from '@codewinglet/utils/cn';
+import { getClassNames } from '@codewinglet/utils';
 import { techList } from './constants';
 import { sliderSettings } from './config';
 
