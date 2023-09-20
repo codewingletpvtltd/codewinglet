@@ -48,7 +48,7 @@ const AboutUs = () => (
               <strong className='font-[800]'>About</strong> Us
             </>
           }
-          description='Personalized Application Development & IT Guidance Corporation'
+          description='Personalized Application Development & IT Solution Providing Hub.'
           headingClassName='lg:!text-[32px] xl:!text-[50px]'
           descriptionClassName='font-500'
         />
@@ -57,14 +57,14 @@ const AboutUs = () => (
           className='!text-lightBlack py-[20px] lg:!text-[18px] xl:py-[30px]'
         >
           Codewinglet Private Limited excels as a globally recognized,
-          award-laden software and IT consulting firm, boasting decades of
-          digitally transforming businesses.
+          award-winner software and IT consulting firm, offering digitally
+          transforming solution since long.
           <br />
           <br />
-          Our speciality lies in providing high-performing tech solutions, built
-          on deep industry insights and cooperative collaboration. We fuel
-          client growth by leveraging our innovation ecosystem to facilitate
-          knowledge transfers, thereby fostering perpetual advancement.
+          Our speciality lies in providing expert tech solutions, built on deep
+          industry insights and collaboration. We boost client growth by
+          leveraging our innovative ecosystem to facilitate IT knowledge
+          transfers, thereby fostering consistent advancement.
         </Typography>
         {/* TODO_1.1 */}
         {/* <Button>Read More</Button> */}

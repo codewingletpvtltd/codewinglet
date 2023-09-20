@@ -1,11 +1,11 @@
 'use client';
 import { useEffect, useState } from 'react';
 
-const useScreenSize = (query: string): boolean => {
-  const mediaQuery = window.matchMedia(query);
-  const [matches, setMatches] = useState(mediaQuery.matches);
+const useScreenSize = (query: string) => {
+  const [matches, setMatches] = useState<any>(undefined);
 
   useEffect(() => {
+    const mediaQuery = window.matchMedia(query);
     const handleMatchChange = (event: MediaQueryListEvent) => {
       setMatches(event.matches);
     };
