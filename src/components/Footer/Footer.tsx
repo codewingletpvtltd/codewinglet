@@ -52,12 +52,12 @@ const Footer = () => (
                   </Link>
                 </Typography>
                 <Typography variant='subtitle2'>
-                  <Link href='tel:+918320111741'>
+                  <Link href='tel:+918160868310'>
                     <strong>Jobs:</strong> +91 81608 68310
                   </Link>
                 </Typography>
                 <Typography variant='subtitle2'>
-                  <Link href='tel:+918320111741'>
+                  <Link href='tel:+919687973728'>
                     <strong>Sales:</strong> +91 96879 73728
                   </Link>
                 </Typography>

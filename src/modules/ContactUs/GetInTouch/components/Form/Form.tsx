@@ -55,6 +55,7 @@ const Form: FC<FormProps> = ({
         error={!!formData.errors.message}
         helperText={formData.errors.message}
         rootClasseName='md:col-span-2'
+        rows={10}
         onChange={(e) => onChangeFormData({ message: e.target.value })}
       />
     </div>
