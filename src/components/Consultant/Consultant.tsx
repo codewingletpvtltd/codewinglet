@@ -19,10 +19,10 @@ const Consultant = () => (
         <SectionHeader
           title={
             <>
-              <strong className='font-[800]'>Speak to</strong> an expert?
+              <strong className='font-[800]'>Speak to</strong> an expert
             </>
           }
-          description='Connect with our knowledgeable experts to gain insights that drive success for your business.'
+          description='Connect with our knowledge experts to gain insights that drive success for your business.'
           headingClassName='mb-1'
         />
         <Button

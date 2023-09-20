@@ -13,7 +13,7 @@ const OurPortfolio = () => (
           <strong className='font-[800]'>Our</strong> Portfolio
         </>
       }
-      description='Our portfolio showcases a spectrum of successful projects, from custom software to network optimization.'
+      description='Our portfolio showcases a spectrum of successful projects, from customized software to network optimization.'
       descriptionTextWrap
     />
     <div className='relative'>

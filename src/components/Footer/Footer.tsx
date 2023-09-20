@@ -29,8 +29,7 @@ const Footer = () => (
             alt='Codewinglet White Logo'
           />
           <Typography variant='subtitle2' className='mt-3'>
-            Codewinglet your premier software development squad employing a
-            streamlined process ensuring timely project delivery.
+            Your swift software development experts for timely delivery.
           </Typography>
           <div className='mt-10 space-y-6'>
             <address className='not-italic flex items-start  gap-2'>
@@ -38,7 +37,7 @@ const Footer = () => (
                 <LocationMarkLogo />
               </div>
               <Typography variant='subtitle2'>
-                A901-A905, Vivanta Icon Opp. Shell Petrol Pump, Adajan, Surat,
+                A901-A905, Vivanta Icon, Opp. Shell Petrol Pump, Adajan, Surat,
                 Gujarat 395009.
               </Typography>
             </address>
@@ -46,23 +45,31 @@ const Footer = () => (
               <div>
                 <TelePhoneLogo />
               </div>
-              <Typography variant='subtitle2'>
-                <Link href='tel:+918320111741'>+91 83201 11741</Link>
+              <Typography variant='subtitle2' className='flex flex-col gap-2'>
+                <Link href='tel:+918320111741'>
+                  <strong>HR:</strong> +91 83201 11741
+                </Link>
+                <Link href='tel:+918320111741'>
+                  <strong>Jobs:</strong> +91 81608 68310
+                </Link>
+                <Link href='tel:+918320111741'>
+                  <strong>Sales:</strong> +91 96879 73728
+                </Link>
               </Typography>
             </div>
             <div className='flex gap-2'>
               <div className='mt-[2px]'>
                 <EmailLogo />
               </div>
-              <Typography
-                variant='subtitle2'
-                className='flex flex-col gap-[5px]'
-              >
-                <Link href='mailto:hr@codewinglet.com' className='mb-[5px]'>
-                  hr@codewinglet.com
+              <Typography variant='subtitle2' className='flex flex-col gap-2'>
+                <Link href='mailto:hr@codewinglet.com'>
+                  <strong>HR:</strong> hr@codewinglet.com
                 </Link>
-                <Link href='mailto:contact@codewinglet.com'>
-                  contact@codewinglet.com
+                <Link href='mailto:jobs@codewinglet.com'>
+                  <strong>Jobs:</strong> jobs@codewinglet.com
+                </Link>
+                <Link href='mailto:sales@codewinglet.com'>
+                  <strong>Sales:</strong> sales@codewinglet.com
                 </Link>
               </Typography>
             </div>

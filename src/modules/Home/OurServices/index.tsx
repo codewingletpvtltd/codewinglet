@@ -28,7 +28,7 @@ const OurService = () => {
               <strong className='font-[800]'>Our</strong> Services
             </>
           }
-          description='Optimized Custom Software Solutions to Empower Your Niche and Strategic Business Growth'
+          description='Optimized customized software solutions to empower your niche and strategic business growth'
           descriptionTextWrap
         />
         <Slider

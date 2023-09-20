@@ -100,7 +100,7 @@ export const serviceMenu = [
   {
     id: 13,
     path: '/backend-development',
-    label: 'Backenda Development',
+    label: 'Backend Development',
   },
 ];
 
