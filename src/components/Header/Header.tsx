@@ -36,9 +36,6 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
           </div>
           <NavMenu />
           <MenuIcon isOpen={showMenu} onClick={onMenu} />
-          {/* {isLarge ? (
-          ) : (
-          )} */}
         </div>
         {!isLarge && showMenu && <MobileMenu onMenu={onMenu} />}
       </div>

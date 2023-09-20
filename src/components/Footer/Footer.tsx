@@ -45,33 +45,45 @@ const Footer = () => (
               <div>
                 <TelePhoneLogo />
               </div>
-              <Typography variant='subtitle2' className='flex flex-col gap-2'>
-                <Link href='tel:+918320111741'>
-                  <strong>HR:</strong> +91 83201 11741
-                </Link>
-                <Link href='tel:+918320111741'>
-                  <strong>Jobs:</strong> +91 81608 68310
-                </Link>
-                <Link href='tel:+918320111741'>
-                  <strong>Sales:</strong> +91 96879 73728
-                </Link>
-              </Typography>
+              <div className='flex flex-col gap-2'>
+                <Typography variant='subtitle2'>
+                  <Link href='tel:+918320111741'>
+                    <strong>HR:</strong> +91 83201 11741
+                  </Link>
+                </Typography>
+                <Typography variant='subtitle2'>
+                  <Link href='tel:+918320111741'>
+                    <strong>Jobs:</strong> +91 81608 68310
+                  </Link>
+                </Typography>
+                <Typography variant='subtitle2'>
+                  <Link href='tel:+918320111741'>
+                    <strong>Sales:</strong> +91 96879 73728
+                  </Link>
+                </Typography>
+              </div>
             </div>
             <div className='flex gap-2'>
               <div className='mt-[2px]'>
                 <EmailLogo />
               </div>
-              <Typography variant='subtitle2' className='flex flex-col gap-2'>
-                <Link href='mailto:hr@codewinglet.com'>
-                  <strong>HR:</strong> hr@codewinglet.com
-                </Link>
-                <Link href='mailto:jobs@codewinglet.com'>
-                  <strong>Jobs:</strong> jobs@codewinglet.com
-                </Link>
-                <Link href='mailto:sales@codewinglet.com'>
-                  <strong>Sales:</strong> sales@codewinglet.com
-                </Link>
-              </Typography>
+              <div className='flex flex-col gap-2'>
+                <Typography variant='subtitle2'>
+                  <Link href='mailto:hr@codewinglet.com'>
+                    <strong>HR:</strong> hr@codewinglet.com
+                  </Link>
+                </Typography>
+                <Typography variant='subtitle2'>
+                  <Link href='mailto:jobs@codewinglet.com'>
+                    <strong>Jobs:</strong> jobs@codewinglet.com
+                  </Link>
+                </Typography>
+                <Typography variant='subtitle2'>
+                  <Link href='mailto:sales@codewinglet.com'>
+                    <strong>Sales:</strong> sales@codewinglet.com
+                  </Link>
+                </Typography>
+              </div>
             </div>
           </div>
 
