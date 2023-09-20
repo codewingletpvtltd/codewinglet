@@ -9,7 +9,7 @@ export const info = [
     ),
     title: 'Address',
     detail:
-      'A901-A905, Vivanta Icon Opp. Shell Petrol Pump, Adajan, Surat, Gujarat 395009.',
+      'A901-A905, Vivanta Icon, Opp. Shell Petrol Pump, Adajan, Surat, Gujarat 395009.',
   },
   {
     id: 2,

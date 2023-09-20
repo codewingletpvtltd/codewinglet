@@ -34,11 +34,8 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
               loading='eager'
             />
           </div>
-          {isLarge ? (
-            <NavMenu />
-          ) : (
-            <MenuIcon isOpen={showMenu} onClick={onMenu} />
-          )}
+          <NavMenu />
+          <MenuIcon isOpen={showMenu} onClick={onMenu} />
         </div>
         {!isLarge && showMenu && <MobileMenu onMenu={onMenu} />}
       </div>

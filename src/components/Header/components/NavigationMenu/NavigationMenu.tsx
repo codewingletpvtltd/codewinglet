@@ -8,7 +8,7 @@ const NavigationMenu = () => {
   const { onMouseEnter, onMouseLeave, gridRows, onNavigate, anchorEle } =
     useNavigation();
   return (
-    <nav className='flex flex-row items-center gap-[15px] xl:gap-[32px]'>
+    <nav className='flex-row items-center gap-[15px] xl:gap-[32px] hidden xl:flex'>
       {/* TODO_1.0: In the first release this menu is not working so commented this in 1.0*/}
 
       {/* <MenuList>

@@ -19,10 +19,10 @@ const ClientTestimonials = () => (
       <SectionHeader
         title={
           <>
-            <strong className='font-[800]'>Client</strong> Testimonials
+            <strong className='font-[800]'>Clients'</strong> Testimonials
           </>
         }
-        description='Clients feedback'
+        description="Clients' feedback"
         headingClassName='text-center'
         descriptionClassName='text-center'
       />
