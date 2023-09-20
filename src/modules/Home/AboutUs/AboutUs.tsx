@@ -17,26 +17,26 @@ const AboutUs = () => (
       <div className='grid grid-cols-2  lg:min-w-[466px] xl:min-w-[541px] relative gap-[19px] [&>.aboutUsCard:nth-child(2)]:relative [&>.aboutUsCard:nth-child(2n)]:top-[15px] lg:[&>.aboutUsCard:nth-child(2n)]:top-[20px] md:max-w-[466px] md:mx-auto 2xl:min-w-[618px] 2xl:gap-[30px]'>
         <AboutUsCard
           icon={<ExperienceSVG />}
-          number={'5'}
+          number={7}
           text='Year Of Experience'
           borderClassName='bg-[#3F78E0]'
         />
         <AboutUsCard
           icon={<CustomersSVG />}
-          number={'50'}
+          number={53}
           text='Happy Customers'
           borderClassName='bg-[#D95D37]'
         />
         <AboutUsCard
           icon={<CompletionRateSVG />}
-          number={'100'}
+          number={100}
           numberSuffix='%'
           text='Completion Rate'
           borderClassName='bg-[#11AF00]'
         />
         <AboutUsCard
           icon={<CompletedProjectSVG />}
-          number={'150'}
+          number={150}
           text='Completed Project'
           borderClassName='bg-[#5E5FDC]'
         />
@@ -48,7 +48,7 @@ const AboutUs = () => (
               <strong className='font-[800]'>About</strong> Us
             </>
           }
-          description='Personalized Application Development & IT Guidance Corporation'
+          description='Personalized Application Development & IT Solution Providing Hub.'
           headingClassName='lg:!text-[32px] xl:!text-[50px]'
           descriptionClassName='font-500'
         />
@@ -56,15 +56,15 @@ const AboutUs = () => (
           variant='subtitle2'
           className='!text-lightBlack py-[20px] lg:!text-[18px] xl:py-[30px]'
         >
-          Code Winglet Pvt. Ltd. excels as a globally recognized, award-laden
-          software and IT consulting firm, boasting decades of digitally
-          transforming businesses.
+          Codewinglet Private Limited excels as a globally recognized,
+          award-winner software and IT consulting firm, offering digitally
+          transforming solution since long.
           <br />
           <br />
-          Our speciality lies in providing high-performing tech solutions, built
-          on deep industry insights and cooperative collaboration. We fuel
-          client growth by leveraging our innovation ecosystem to facilitate
-          knowledge transfers, thereby fostering perpetual advancement.
+          Our speciality lies in providing expert tech solutions, built on deep
+          industry insights and collaboration. We boost client growth by
+          leveraging our innovative ecosystem to facilitate IT knowledge
+          transfers, thereby fostering consistent advancement.
         </Typography>
         {/* TODO_1.1 */}
         {/* <Button>Read More</Button> */}

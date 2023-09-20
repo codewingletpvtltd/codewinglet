@@ -7,4 +7,5 @@ export interface TextareaProps
   helperText?: string;
   fullWidth?: boolean;
   labelClassName?: string;
+  rootClasseName?: string;
 }

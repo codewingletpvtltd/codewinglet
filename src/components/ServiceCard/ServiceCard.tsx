@@ -1,5 +1,5 @@
 import React from 'react';
-import { getClassNames } from '@codewinglet/utils/cn';
+import { getClassNames } from '@codewinglet/utils';
 import Typography from '../Typography';
 import { ServiceCardProps } from './types';
 
@@ -7,9 +7,8 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   icon,
   title,
   children,
-  buttonText = 'Button',
   className = '',
-  onClick,
+  buttonText,
   ...rest
 }) => (
   <div

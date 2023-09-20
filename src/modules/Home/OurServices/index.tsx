@@ -1,9 +1,10 @@
 'use client';
 import { memo } from 'react';
+import Image from 'next/image';
 import { SectionHeader, ServiceCard, Slider } from '@codewinglet/components';
 import { BackgroundDonutShadow, BgWave, StarIcon } from '@codewinglet/assets';
 import useScreenSize from '@codewinglet/hooks/useScreenSize';
-import { getClassNames } from '@codewinglet/utils/cn';
+import { getClassNames } from '@codewinglet/utils';
 import { md } from '../../../constants/mediaQueryConst';
 import { services } from './utils';
 
@@ -27,7 +28,7 @@ const OurService = () => {
               <strong className='font-[800]'>Our</strong> Services
             </>
           }
-          description='Optimized Custom Software Solutions to Empower Your Niche and Strategic Business Growth'
+          description='Optimized customized software solutions to empower your niche and strategic business growth'
           descriptionTextWrap
         />
         <Slider
@@ -40,13 +41,12 @@ const OurService = () => {
         >
           {services.map((service, index) => {
             const icon = (
-              <div
-                className={getClassNames(
-                  'h-[48px] min-w-[48px] md:h-[58px] md:min-w-[58px] flex items-center justify-center rounded-[50%]'
-                )}
-              >
-                {service.icon}
-              </div>
+              <Image
+                src={service.icon}
+                alt={service.title}
+                loading='eager'
+                className='h-[48px] min-w-[48px] md:h-[58px] md:min-w-[58px]'
+              />
             );
             return (
               <ServiceCard

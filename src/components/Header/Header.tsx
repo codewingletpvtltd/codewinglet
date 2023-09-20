@@ -4,10 +4,10 @@ import { useRouter } from 'next/navigation';
 import React, { FC } from 'react';
 import Logo from '@codewinglet/assets/company_logo.svg';
 import { useScreenSize } from '@codewinglet/hooks';
-import { getClassNames } from '@codewinglet/utils/cn';
+import { getClassNames } from '@codewinglet/utils';
 import { xl } from '@codewinglet/constants/mediaQueryConst';
-// import MenuIcon from '../MenuIcon';
-import { MobileMenu } from './components';
+import MenuIcon from '../MenuIcon';
+import { MobileMenu, NavMenu } from './components';
 import useHeader from './useHeader';
 import { HeaderProps } from './types';
 
@@ -34,12 +34,8 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
               loading='eager'
             />
           </div>
-          {/* TODO_1.0: In the first release this menu is not working so commented this in 1.0*/}
-          {/* {isLarge ? (
-            <NavMenu />
-          ) : (
-            <MenuIcon isOpen={showMenu} onClick={onMenu} />
-          )} */}
+          <NavMenu />
+          <MenuIcon isOpen={showMenu} onClick={onMenu} />
         </div>
         {!isLarge && showMenu && <MobileMenu onMenu={onMenu} />}
       </div>

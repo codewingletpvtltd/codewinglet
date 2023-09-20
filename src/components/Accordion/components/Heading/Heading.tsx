@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import { DownArrow } from '@codewinglet/assets';
 import Button from '../../../Button';
 import Typography from '../../../Typography';
@@ -45,4 +46,4 @@ const Heading = () => {
   );
 };
 
-export default Heading;
+export default memo(Heading);

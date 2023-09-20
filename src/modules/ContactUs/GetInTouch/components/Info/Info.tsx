@@ -9,9 +9,7 @@ const Info: FC<InfoProps> = ({ icon, title, detail }) => (
       <Typography variant='body2' className='font-600'>
         {title}
       </Typography>
-      <Typography variant='subtitle1' className='text-[14px] text-lightBlack'>
-        {detail}
-      </Typography>
+      {detail}
     </div>
   </div>
 );

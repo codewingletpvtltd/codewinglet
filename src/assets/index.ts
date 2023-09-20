@@ -46,6 +46,11 @@ export { default as BackgroundSemiCircle } from './BackgroundSemiCircle';
 export { default as Menu } from './icons/Menu';
 export { default as MenuDownArrow } from './icons/MenuDownArrow';
 export { default as MenuClose } from './icons/MenuClose';
+export { default as SuccessIcon } from './icons/SuccessIcon';
+export { default as WarningIcon } from './icons/WarningIcon';
+export { default as InfoIcon } from './icons/InfoIcon';
+export { default as ErrorIcon } from './icons/ErrorIcon';
+export { default as SnackbarClose } from './icons/SnackbarClose';
 export { default as MagicsHaircare } from './MagicsHaircare.png';
 export { default as portfolio1 } from './portfolio1.png';
 

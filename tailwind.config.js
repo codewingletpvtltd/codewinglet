@@ -32,14 +32,24 @@ module.exports = {
             transform: 'translateY(0)',
           },
         },
-        exitToTop: {
+        enterFromRight: {
+          from: {
+            opacity: 0,
+            right: '-150px',
+          },
+          to: {
+            opacity: 1,
+            right: '30px',
+          },
+        },
+        exitToRight: {
           from: {
             opacity: 1,
-            transform: 'translateY(1)',
+            right: '30px',
           },
           to: {
             opacity: 0,
-            transform: 'translateY(-10px)',
+            right: '-150px',
           },
         },
       },
@@ -47,7 +57,7 @@ module.exports = {
         swing: 'swing ease-in-out 0.8s infinite alternate',
         spin: 'spin 4s infinite linear',
         enterFromTop: 'enterFromTop linear 0.2s',
-        exitToTop: 'exitToTop linear 0.2s',
+        enterFromRight: 'enterFromRight linear 0.2s',
       },
       minHeight: {
         h1: '68px',
@@ -95,6 +105,14 @@ module.exports = {
       sky: '#ACD3EA',
       lightBlue: '#F4FAFF',
       darkBlue: '#141F6A',
+      successBg: 'rgb(237, 247, 237)',
+      infoBg: 'rgb(229, 246, 253)',
+      warnBg: 'rgb(255, 244, 229)',
+      popupErrorBg: 'rgb(253, 237, 237)',
+      success: 'rgb(46, 125, 50)',
+      info: 'rgb(2, 136, 209)',
+      warn: 'rgb(237, 108, 2)',
+      popupError: 'rgb(211, 47, 47)',
     },
     fontWeight: {
       100: 100,
@@ -108,8 +126,8 @@ module.exports = {
       900: 900,
     },
     fontFamily: {
-      primary: ['Inter', 'sans-serif'],
-      secondary: ['Outfit', 'sans-serif'],
+      primary: ['Nunito Sans', 'sans-serif'],
+      secondary: ['Lato', 'sans-serif'],
     },
     fontSize: {
       h1: [

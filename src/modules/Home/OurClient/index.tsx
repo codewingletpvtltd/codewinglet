@@ -13,7 +13,7 @@ import {
   vidiren,
 } from '@codewinglet/assets';
 import { SectionHeader } from '@codewinglet/components';
-import { getClassNames } from '@codewinglet/utils/cn';
+import { getClassNames } from '@codewinglet/utils';
 
 const clientLogo = [
   circle_ci,
@@ -32,7 +32,7 @@ const OurClient = () => (
       <SectionHeader
         title={
           <>
-            <strong className='font-[800]'>Our</strong> Client
+            <strong className='font-[800]'>Our</strong> Clients
           </>
         }
         description='Our Global Clients'

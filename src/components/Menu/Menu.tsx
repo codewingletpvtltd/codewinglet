@@ -1,5 +1,5 @@
 import React from 'react';
-import { getClassNames } from '@codewinglet/utils/cn';
+import { getClassNames } from '@codewinglet/utils';
 import {
   MenuItemIconProps,
   MenuItemProps,
