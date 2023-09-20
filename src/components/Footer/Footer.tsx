@@ -28,9 +28,6 @@ const Footer = () => (
             height={44}
             alt='Codewinglet White Logo'
           />
-          <Typography variant='subtitle2' className='mt-3'>
-            Your swift software development experts for timely delivery.
-          </Typography>
           <div className='mt-10 space-y-6'>
             <address className='not-italic flex items-start  gap-2'>
               <div className='mt-[2px]'>
@@ -52,12 +49,12 @@ const Footer = () => (
                   </Link>
                 </Typography>
                 <Typography variant='subtitle2'>
-                  <Link href='tel:+918320111741'>
+                  <Link href='tel:+918160868310'>
                     <strong>Jobs:</strong> +91 81608 68310
                   </Link>
                 </Typography>
                 <Typography variant='subtitle2'>
-                  <Link href='tel:+918320111741'>
+                  <Link href='tel:+919687973728'>
                     <strong>Sales:</strong> +91 96879 73728
                   </Link>
                 </Typography>

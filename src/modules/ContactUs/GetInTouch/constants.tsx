@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Email, LocationPin, Phone } from '@codewinglet/assets';
+import { Typography } from '@codewinglet/components';
 
 export const info = [
   {
@@ -15,14 +16,48 @@ export const info = [
     id: 2,
     icon: <Phone />,
     title: 'Phone',
-    detail: <Link href='tel:+918320111741'>+91 83201 11741</Link>,
+    detail: (
+      <div className='flex flex-col gap-2'>
+        <Typography variant='subtitle2'>
+          <Link href='tel:+918320111741'>
+            <strong>HR:</strong> +91 83201 11741
+          </Link>
+        </Typography>
+        <Typography variant='subtitle2'>
+          <Link href='tel:+918160868310'>
+            <strong>Jobs:</strong> +91 81608 68310
+          </Link>
+        </Typography>
+        <Typography variant='subtitle2'>
+          <Link href='tel:+919687973728'>
+            <strong>Sales:</strong> +91 96879 73728
+          </Link>
+        </Typography>
+      </div>
+    ),
   },
   {
     id: 3,
     icon: <Email />,
     title: 'Email',
     detail: (
-      <Link href='mailto:sales@codewinglet.com'>sales@codewinglet.com</Link>
+      <div className='flex flex-col gap-2'>
+        <Typography variant='subtitle2'>
+          <Link href='mailto:hr@codewinglet.com'>
+            <strong>HR:</strong> hr@codewinglet.com
+          </Link>
+        </Typography>
+        <Typography variant='subtitle2'>
+          <Link href='mailto:jobs@codewinglet.com'>
+            <strong>Jobs:</strong> jobs@codewinglet.com
+          </Link>
+        </Typography>
+        <Typography variant='subtitle2'>
+          <Link href='mailto:sales@codewinglet.com'>
+            <strong>Sales:</strong> sales@codewinglet.com
+          </Link>
+        </Typography>
+      </div>
     ),
   },
 ];
