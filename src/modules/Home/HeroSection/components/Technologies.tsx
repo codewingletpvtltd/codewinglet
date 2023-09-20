@@ -4,7 +4,7 @@ import { getClassNames } from '@codewinglet/utils';
 import { techList } from './utils';
 
 const Technologies = () => (
-  <div className='w-full overflow-auto md:px-[38px] xl:max-w-screen-xl xl:mx-auto no-scrollbar'>
+  <div className='w-full overflow-auto md:px-[38px] xl:px-0 xl:max-w-screen-xl xl:mx-auto no-scrollbar'>
     <div className='flex justify-between min-w-[787px] gap-[20px] my-[50px] mx-[20px] md:mx-auto md:gap-[40px] mt-[20px] md:mt-[30px] xl:mt-[50px] 2xl:mt-[120px]'>
       {techList.map((tech, index) => (
         <div

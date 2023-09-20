@@ -24,7 +24,7 @@ const sequence = [
 const HeroSection = () => (
   <div className='relative bg-aliceBlue z-0 overflow-hidden pt-[38px]'>
     <div className='relative'>
-      <div className='my-[50px] md:px-[38px] max-w-screen-xl xl:mx-auto px-[20px] flex items-center max-sm:2flex-col md:gap-[35px] lg:gap-[75px] xl:gap-[140px] lg:w-full relative flex-col md:flex-row'>
+      <div className='my-[50px] xl:p-0 md:px-[38px] max-w-screen-xl xl:mx-auto px-[20px] flex items-center max-sm:2flex-col md:gap-[35px] lg:gap-[75px] xl:gap-[140px] lg:w-full relative flex-col md:flex-row'>
         <div className='relative lg:self-end flex-1'>
           <div className='max-w-[680px] capitalize'>
             <Typography
