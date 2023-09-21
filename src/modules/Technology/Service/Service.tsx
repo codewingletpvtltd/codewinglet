@@ -5,14 +5,14 @@ import { Card } from './components';
 import { services } from './constants';
 
 const Service = () => (
-  <div className='my-[50px] mx-[20px] md:mx-[38px] max-w-screen-xl xl:mx-auto xl:mb-[100px] relative'>
+  <div className='mb-[50px] mx-[20px] md:mx-[38px] max-w-screen-xl xl:mx-auto xl:mb-[100px] relative'>
     <SectionHeader
       title={
         <>
-          <strong className='font-800'>ReactJs Development</strong> Services?
+          <strong className='font-800'>ReactJS Development</strong> Services?
         </>
       }
-      description='Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+      description='Empowering Your Projects with ReactJS Expertise.'
       wrapperClassName='flex items-center justify-center flex-col'
       headingClassName='text-center'
       descriptionClassName='text-center'

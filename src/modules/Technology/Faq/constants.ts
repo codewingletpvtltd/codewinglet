@@ -1,26 +1,17 @@
 export const faqList = [
   {
-    title:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry?',
+    title: 'What is the typical cost and timeline for a React.js project?',
     content:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+      'The cost and timeline for a React.js project can vary significantly based on complexity and scope. Costs depend on factors like development hours, design, and third-party integrations. For an accurate estimate, please provide your project requirements.',
   },
   {
-    title:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry?',
+    title: 'Can I hire React JS developers on an hourly or on a project basis?',
     content:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+      'Yes, we provide the flexibility to hire React.js developers on a full-time, hourly, or part-time basis, allowing you to choose and assemble a React development team that suits your specific needs.',
   },
   {
-    title:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry?',
+    title: 'What are the major benefits of React.JS?',
     content:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-  },
-  {
-    title:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry?',
-    content:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+      'React.js is the preferred choice due to its streamlined development process, robust maintenance capabilities, and cross-browser compatibility support.',
   },
 ];

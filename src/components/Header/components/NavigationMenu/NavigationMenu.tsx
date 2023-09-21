@@ -2,7 +2,15 @@
 
 import React from 'react';
 import Button from '../../../Button';
+import MenuList from './MenuList';
+import { getClassNames } from '@codewinglet/utils';
+import { navMenu } from '../../constants';
 import useNavigation from './useNavigation';
+import MenuItems from './MenuItems';
+import MenuTrigger from './MenuTrigger';
+import MenuIndicator from './MenuIndicator';
+import MenuContent from './MenuContent';
+import ListItem from './ListItem';
 
 const NavigationMenu = () => {
   const { onMouseEnter, onMouseLeave, gridRows, onNavigate, anchorEle } =
@@ -11,7 +19,7 @@ const NavigationMenu = () => {
     <nav className='flex-row items-center gap-[15px] xl:gap-[32px] hidden xl:flex'>
       {/* TODO_1.0: In the first release this menu is not working so commented this in 1.0*/}
 
-      {/* <MenuList>
+      <MenuList>
         {navMenu.map((item, index) => (
           <MenuItems
             key={`menu-${index}`}
@@ -85,7 +93,7 @@ const NavigationMenu = () => {
             ) : null}
           </MenuItems>
         ))}
-      </MenuList> */}
+      </MenuList>
       <Button labelClassName='text-[14px]' onClick={onNavigate('contact-us')}>
         Contact Us
       </Button>
