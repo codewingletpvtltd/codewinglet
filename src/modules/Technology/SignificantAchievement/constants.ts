@@ -9,7 +9,7 @@ import {
 export const achievements = [
   {
     icon: achievement1,
-    title: '8+ Years Experience',
+    title: '7+ Years Experience',
     desc: 'Unparalleled Expertise in Frontend Technologies',
   },
   {

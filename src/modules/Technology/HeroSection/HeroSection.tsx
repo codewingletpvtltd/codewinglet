@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import {
   LeftLineMediumSVG,
   RectangleSVG,
@@ -26,8 +27,8 @@ const HeroSection = () => (
         <div className='grid grid-cols-1 md:grid-cols-7 gap-[18px] md:gap-[30px] mb-10 items-center'>
           <div className='md:col-span-4 lg:col-span-5 lg:w-[70%]'>
             <Typography
-              variant='body1'
-              className='text-[22px] font-900 md:text-[28px] lg:text-[35px] xl:text-[40px]'
+              variant='h3'
+              className='inline !text-[22px] lg:!text-[28px] xl:!text-[35px] 2xl:!text-[40px] text-black'
             >
               ReactJS Development Company
             </Typography>
@@ -40,7 +41,16 @@ const HeroSection = () => (
               high-performing web applications that set your brand apart from
               the competition!
             </Typography>
-            <Button>Consult Code Winglet</Button>
+            <Button>
+              {' '}
+              <Link
+                href='https://calendly.com/slapani'
+                rel='noopener noreferrer'
+                target='_blank'
+              >
+                Consult Code Winglet
+              </Link>
+            </Button>
           </div>
           <Image
             src={tech}
