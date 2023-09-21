@@ -1,10 +1,10 @@
 'use client';
 
 import React from 'react';
-import Button from '../../../Button';
-import MenuList from './MenuList';
 import { getClassNames } from '@codewinglet/utils';
+import Button from '../../../Button';
 import { navMenu } from '../../constants';
+import MenuList from './MenuList';
 import useNavigation from './useNavigation';
 import MenuItems from './MenuItems';
 import MenuTrigger from './MenuTrigger';

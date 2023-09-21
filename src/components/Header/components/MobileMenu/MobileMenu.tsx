@@ -1,11 +1,11 @@
 'use client';
 import React, { FC } from 'react';
 import { Accordion, Button } from '@codewinglet/components';
+import { MenuDownArrow } from '@codewinglet/assets';
 import { MobileMenuProps } from '../../types';
 import { navMenu } from '../../constants';
 import ListItem from '../NavigationMenu/ListItem';
 import useMobileMenu from './useMobileMenu';
-import { MenuDownArrow } from '@codewinglet/assets';
 
 const MobileMenu: FC<MobileMenuProps> = ({ onMenu }) => {
   const { expanded, onMenuExpand, onNavigate } = useMobileMenu(onMenu);
