@@ -1,6 +1,7 @@
 import { memo } from 'react';
 import Image from 'next/image';
-import { TypeAnimation, Typography } from '@codewinglet/components';
+import Link from 'next/link';
+import { Button, TypeAnimation, Typography } from '@codewinglet/components';
 import {
   ArrowRightSVG,
   Illustration,
@@ -12,14 +13,7 @@ import {
 } from '@codewinglet/assets';
 import Technologies from './components/Technologies';
 
-const sequence = [
-  'EdTech',
-  'E-Commerce',
-  'Healthcare',
-  'Real Estate',
-  'CRM',
-  // 'Smart Assets Management',
-];
+const sequence = ['EdTech', 'E-Commerce', 'Healthcare', 'Real Estate', 'CRM'];
 
 const HeroSection = () => (
   <div className='relative bg-aliceBlue z-0 overflow-hidden pt-[38px]'>
@@ -49,8 +43,16 @@ const HeroSection = () => (
             away to secure a technologically advanced and cost effective
             development solution!
           </Typography>
-          {/* TODO_1.1: In the first release we commented this code. */}
-          {/* <Button>Consult Code Winglet</Button> */}
+
+          <Button>
+            <Link
+              href='https://calendly.com/slapani'
+              rel='noopener noreferrer'
+              target='_blank'
+            >
+              Consult Code Winglet
+            </Link>
+          </Button>
         </div>
         <div className='relative h-[257px] w-[259px] md:min-w-[300px] md:h-[auto] mt-[105px] md:mt-[51px] lg:mt-[71px] xl:mt-[83px] 2xl:mt-[80px] flex justify-center lg:w-[357px] lg:h-[359px] xl:w-[424px] xl:h-[426px]'>
           <Image
