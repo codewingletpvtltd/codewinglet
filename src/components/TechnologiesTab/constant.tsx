@@ -43,47 +43,39 @@ export const tabs = [
       {
         label: 'ReactJS',
         icon: react,
-        url: 'https://react.dev/',
+        url: '/technology/react-js',
       },
       {
         label: 'NextJS',
         icon: nextjs,
-        url: 'https://nextjs.org/docs/',
       },
       {
         label: 'GatsBy',
         icon: gatsby,
-        url: 'https://www.gatsbyjs.com/docs/',
       },
       {
         label: 'AngularJS',
         icon: angular,
-        url: 'https://angular.io/',
       },
       {
         label: 'VueJS',
         icon: vue,
-        url: 'https://vuejs.org/',
       },
       {
         label: 'Remix',
         icon: remix,
-        url: 'https://remix.run/docs/en/main',
       },
       {
         label: 'Material UI',
         icon: mui,
-        url: 'https://mui.com/material-ui/getting-started/',
       },
       {
         label: 'Tailwind',
         icon: tailwind,
-        url: 'https://tailwindcss.com/docs/installation',
       },
       {
         label: 'Ant Design',
         icon: antd,
-        url: 'https://ant.design/components/overview/',
       },
     ],
   },
@@ -98,22 +90,18 @@ export const tabs = [
       {
         label: 'NodeJS',
         icon: nodejs,
-        url: 'https://nodejs.org/en',
       },
       {
         label: 'Python',
         icon: python,
-        url: 'https://www.python.org/',
       },
       {
         label: 'Express',
         icon: express,
-        url: 'https://expressjs.com/',
       },
       {
         label: 'Nest',
         icon: nest,
-        url: 'https://nestjs.com/',
       },
     ],
   },
@@ -128,17 +116,14 @@ export const tabs = [
       {
         label: 'React Native',
         icon: react,
-        url: 'https://reactnative.dev/',
       },
       {
         label: 'Flutter',
         icon: flutter,
-        url: 'https://flutter.dev/',
       },
       {
         label: 'Ionic',
         icon: ionic,
-        url: 'https://ionicframework.com/',
       },
     ],
   },
@@ -157,27 +142,22 @@ export const tabs = [
       {
         label: 'AWS',
         icon: aws,
-        url: 'https://docs.aws.amazon.com/?nc2=h_ql_doc_do',
       },
       {
         label: 'Azsure',
         icon: azureIcon,
-        url: 'https://azure.microsoft.com/en-in/products/devops',
       },
       {
         label: 'Google Cloud',
         icon: googleCloud,
-        url: 'https://cloud.google.com/why-google-cloud',
       },
       {
         label: 'Docker',
         icon: docker,
-        url: 'https://docs.docker.com/',
       },
       {
         label: 'Jenkins',
         icon: jenkins,
-        url: 'https://www.jenkins.io/doc/',
       },
     ],
   },
@@ -196,32 +176,26 @@ export const tabs = [
       {
         label: 'MongoDB',
         icon: mongodb,
-        url: 'https://www.mongodb.com/',
       },
       {
         label: 'MySQL',
         icon: mysql,
-        url: 'https://dev.mysql.com/doc/',
       },
       {
         label: 'PostgreSQL',
         icon: postgresql,
-        url: 'https://www.postgresql.org/docs/',
       },
       {
         label: 'Redis',
         icon: rediis,
-        url: 'https://redis.io/',
       },
       {
         label: 'MariaDB',
         icon: mariadb,
-        url: 'https://mariadb.org/',
       },
       {
         label: 'DynamoDB',
         icon: dynamodb,
-        url: 'https://docs.aws.amazon.com/dynamodb/',
       },
     ],
   },

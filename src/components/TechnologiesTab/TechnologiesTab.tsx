@@ -1,6 +1,9 @@
+'use client';
 import Image from 'next/image';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '../Tabs';
+import Link from 'next/link';
+import { getClassNames } from '@codewinglet/utils';
 import Typography from '../Typography/Typography';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '../Tabs';
 import { tabs } from './constant';
 
 const TechnologiesTab = () => (
@@ -38,25 +41,32 @@ const TechnologiesTab = () => (
           </Typography>
         </div>
         <div className='grid grid-cols-2 lg:grid-cols-3 gap-[20px] lg:gap-[30px]'>
-          {tabContent?.map(({ label, icon }, index) => (
-            <div key={index} className='flex items-center gap-[15px]'>
-              <Image
-                src={icon}
-                className='h-[32px] w-[32px] lg:h-[36px] lg:w-[36px]'
-                alt={label}
-              />
-              <Typography
-                variant='subtitle1'
-                className='font-500 text-black lg:text-[18px]'
-              >
-                {label}
-              </Typography>
-            </div>
+          {tabContent?.map(({ label, icon, url }, index) => (
+            <Link
+              href={url ? url : ''}
+              key={index}
+              className={getClassNames(url ? '' : 'pointer-events-none')}
+              replace={true}
+              target='_blank'
+            >
+              <div className='flex items-center gap-[15px]'>
+                <Image
+                  src={icon}
+                  className='h-[32px] w-[32px] lg:h-[36px] lg:w-[36px]'
+                  alt={label}
+                />
+                <Typography
+                  variant='subtitle1'
+                  className='font-500 text-black lg:text-[18px]'
+                >
+                  {label}
+                </Typography>
+              </div>
+            </Link>
           ))}
         </div>
       </TabsContent>
     ))}
   </Tabs>
 );
-
 export default TechnologiesTab;
