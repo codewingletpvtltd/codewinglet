@@ -3,6 +3,7 @@ import {
   achievement2,
   achievement3,
   achievement4,
+  achievement5,
 } from '@codewinglet/assets';
 
 export const achievements = [
@@ -19,7 +20,7 @@ export const achievements = [
   {
     icon: achievement3,
     title: '95% On Time Delivery',
-    desc: 'On Time Delivery Guaranteed for ReactJs',
+    desc: 'On Time Delivery Guaranteed for ReactJS',
   },
   {
     icon: achievement4,
@@ -27,8 +28,8 @@ export const achievements = [
     desc: 'Empowering Solutions Across Industries',
   },
   {
-    icon: achievement1,
-    title: '8+ Years Experience',
-    desc: 'Unparalleled Expertise in Frontend Technologies',
+    icon: achievement5,
+    title: '40+ Frontend Experts',
+    desc: 'Frontend Developers for Unmatched Web Solutions',
   },
 ];

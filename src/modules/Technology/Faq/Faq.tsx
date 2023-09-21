@@ -17,7 +17,7 @@ const Faq = () => {
             </>
           }
           headingClassName='text-center'
-          description='Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+          description='Find answers to our most frequently asked questions below for your convenience.'
           descriptionClassName='text-center'
           wrapperClassName='flex flex-col items-center justify-center'
         />

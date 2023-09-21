@@ -2,7 +2,6 @@ import { ClientTestimonials } from '../../components';
 import BusinessModel from './BusinessModel';
 import Faq from './Faq';
 import HeroSection from './HeroSection';
-import OurBlog from './OurBlog/OurBlog';
 import Service from './Service';
 import SignificantAchievement from './SignificantAchievement';
 import Technologies from './Technologies';
@@ -18,7 +17,8 @@ const Technology = () => (
     <BusinessModel />
     <ClientTestimonials />
     <Faq />
-    <OurBlog />
+    {/* TODO: When the blog page is created at that time we put this section over here */}
+    {/* <OurBlog /> */}
   </>
 );
 

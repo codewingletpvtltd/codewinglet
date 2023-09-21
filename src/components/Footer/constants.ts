@@ -1,7 +1,7 @@
 export const technologyMenu = [
   {
     id: 1,
-    path: '/technology/reactjs-development-company',
+    path: '/technology/react-js',
     label: 'React JS',
   },
   {

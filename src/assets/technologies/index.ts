@@ -8,6 +8,7 @@ export { default as achievement1 } from './achievement1.svg';
 export { default as achievement2 } from './achievement2.svg';
 export { default as achievement3 } from './achievement3.svg';
 export { default as achievement4 } from './achievement4.svg';
+export { default as achievement5 } from './achievement5.svg';
 export { default as tech } from './tech.svg';
 export { default as airbnbLogo } from './airbnbLogo.png';
 export { default as asanaLogo } from './asanaLogo.png';
