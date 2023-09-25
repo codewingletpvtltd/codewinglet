@@ -1,15 +1,13 @@
 'use client';
-// import Technology from '@codewinglet/modules/Technology';
 import { useRouter } from 'next/navigation';
 import { Button, Typography } from '@codewinglet/components';
+import Technology from '@codewinglet/modules/Technology';
 
 // TODO_1.1: Commented code because of first release.
-// export default function Page({ params }: { params: { slug: string } }) {
-//   return <Technology />;
-// }
-
-export default function Page() {
+export default function Page({ params }: { params: { slug: string } }) {
   const router = useRouter();
+
+  if (params.slug === 'react-js') return <Technology />;
 
   return (
     <div className='mt-[130px] mb-[55px] flex items-center justify-center h-[30vh] flex-col'>

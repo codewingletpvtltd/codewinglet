@@ -11,7 +11,7 @@ const BusinessModel = () => (
             <strong className='font-800'>Our Business</strong> Model
           </>
         }
-        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor'
+        description='How We Work and Thrive.'
         wrapperClassName='flex flex-col items-center mb-[30px]'
         descriptionClassName='text-center'
       />
