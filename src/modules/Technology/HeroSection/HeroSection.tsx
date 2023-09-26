@@ -5,7 +5,6 @@ import {
   RectangleSVG,
   RightLineSVG,
   StarsSVG,
-  tech,
 } from '@codewinglet/assets';
 import {
   Button,
@@ -14,10 +13,17 @@ import {
   Typography,
 } from '@codewinglet/components';
 import { getClassNames } from '@codewinglet/utils';
-import { techList } from './constants';
+import { getStrapiMediaFullURL } from '@codewinglet/helper';
 import { sliderSettings } from './config';
+import { HeroSectionProps } from './types';
 
-const HeroSection = () => (
+const HeroSection: React.FC<HeroSectionProps> = ({
+  title,
+  description,
+  bannerImageUrl,
+  logos,
+  technologyName,
+}) => (
   <>
     <div className='bg-aliceBlue px-[20px] pt-[50px] pb-[120px] relative mt-[80px] z-0 overflow-hidden'>
       <LeftLineMediumSVG className='absolute left-[-10px] x-100' />
@@ -30,16 +36,13 @@ const HeroSection = () => (
               variant='h3'
               className='inline !text-[22px] lg:!text-[28px] xl:!text-[35px] 2xl:!text-[40px] text-black'
             >
-              ReactJS Development Company
+              {title}
             </Typography>
             <Typography
               variant='subtitle2'
               className='md:text-[16px] lg:text-[18px] mb-[22px] mt-[5px]'
             >
-              Revolutionize your business's digital transformation with our
-              top-tier ReactJS development services, creating cutting-edge and
-              high-performing web applications that set your brand apart from
-              the competition!
+              {description}
             </Typography>
             <Button>
               {' '}
@@ -52,11 +55,20 @@ const HeroSection = () => (
               </Link>
             </Button>
           </div>
-          <Image
-            src={tech}
-            alt='Techonolgy Image'
-            className='h-[100%] md:w-[100%] md:col-span-3 lg:col-span-2'
-          />
+          <div className='h-[294px] w-[294px] place-self-center md:place-self-start md:h-[350px] md:w-[350px] 2xl:h-[500px] 2xl:w-[500px]'>
+            <Image
+              src={bannerImageUrl as string}
+              alt='Techonolgy Image'
+              loading='lazy'
+              sizes='50vw'
+              width={700}
+              height={475}
+              style={{
+                width: '100%',
+                height: 'auto',
+              }}
+            />
+          </div>
         </div>
       </div>
       <RightLineSVG className='absolute right-0 top-[-100px] z-100' />
@@ -65,21 +77,23 @@ const HeroSection = () => (
       <SectionHeader
         title={
           <>
-            <strong className='font-800'>Who Used</strong> ReactJS?
+            <strong className='font-800'>Who Used</strong> {technologyName}?
           </>
         }
         showDescription={false}
         headingClassName='text-center'
       />
       <Slider hideArrow settings={sliderSettings} className='mt-[20px]'>
-        {techList.map((tech, index) => (
+        {logos.data.map((tech) => (
           <div
-            key={`technology-hero-section-slider-${index}`}
+            key={`technology-ero-section-slider-${tech.id}`}
             className={getClassNames('pt-[27px] px-[23px] !flex')}
           >
             <Image
-              src={tech}
+              src={getStrapiMediaFullURL(tech.attributes.url)}
               alt='Technology Logo'
+              height={38}
+              width={140}
               className='flex self-center'
             />
           </div>

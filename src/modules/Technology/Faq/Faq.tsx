@@ -2,9 +2,9 @@
 import { Accordion, SectionHeader, Typography } from '@codewinglet/components';
 import { BackgroundCircle, LeftArrowsSVG } from '@codewinglet/assets';
 import useFaq from './useFaq';
-import { faqList } from './constants';
+import { FaqsProps } from './types';
 
-const Faq = () => {
+const Faq: React.FC<FaqsProps> = ({ faqs }) => {
   const { expanded, onChangeAccordion } = useFaq();
   return (
     <div className='bg-aliceBlue px-[20px] py-[50px] relative'>
@@ -22,10 +22,10 @@ const Faq = () => {
           wrapperClassName='flex flex-col items-center justify-center'
         />
         <div className='mt-[30px] flex flex-col gap-[22px] md:mt-[60px] lg:mt-[40px] xl:mt-[100px]'>
-          {faqList.map((data, index) => (
+          {faqs.map((data, index) => (
             <Accordion
-              key={`FAQ-Accordion-${index}`}
-              title={data.title}
+              key={`FAQ-Accordion-${data.id}`}
+              title={data.question}
               variant='secondary'
               expanded={expanded === index}
               onChange={onChangeAccordion(index)}
@@ -34,7 +34,7 @@ const Faq = () => {
                 variant='subtitle2'
                 className='md:text-[16px] lg:text-[18px] text-lightBlack'
               >
-                {data.content}
+                {data.answer}
               </Typography>
             </Accordion>
           ))}

@@ -1,18 +1,20 @@
 import { SectionHeader } from '@codewinglet/components';
 import { getClassNames } from '@codewinglet/utils';
 import { BackgroundArc } from '@codewinglet/assets';
+import { getStrapiMediaFullURL } from '@codewinglet/helper';
 import { Card } from './components';
-import { services } from './constants';
+import { ServiceProps } from './types';
 
-const Service = () => (
+const Service: React.FC<ServiceProps> = ({ services, technologyName }) => (
   <div className='mb-[50px] mx-[20px] md:mx-[38px] max-w-screen-xl xl:mx-auto xl:mb-[100px] relative'>
     <SectionHeader
       title={
         <>
-          <strong className='font-800'>ReactJS Development</strong> Services?
+          <strong className='font-800'>{technologyName} Development</strong>{' '}
+          Services?
         </>
       }
-      description='Empowering Your Projects with ReactJS Expertise.'
+      description={`Empowering Your Projects with ${technologyName} Expertise.`}
       wrapperClassName='flex items-center justify-center flex-col'
       headingClassName='text-center'
       descriptionClassName='text-center'
@@ -35,8 +37,8 @@ const Service = () => (
         <Card
           key={`service-card-${index}`}
           title={service.title}
-          icon={service.icon}
-          desc={service.desc}
+          icon={getStrapiMediaFullURL(service.icon.data.attributes.url)}
+          desc={service.description}
         />
       ))}
     </div>

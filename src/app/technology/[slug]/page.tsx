@@ -1,22 +1,15 @@
-'use client';
-import { useRouter } from 'next/navigation';
-import { Button, Typography } from '@codewinglet/components';
-import Technology from '@codewinglet/modules/Technology';
+import { notFound } from 'next/navigation';
+import { TechnologyModule } from '@codewinglet/modules';
+import { GET } from './api/route';
+// import getTechnology   from './api/route';
 
 // TODO_1.1: Commented code because of first release.
-export default function Page({ params }: { params: { slug: string } }) {
-  const router = useRouter();
+export default async function Page({ params }: { params: { slug: string } }) {
+  const data = await GET(params.slug);
 
-  if (params.slug === 'react-js') return <Technology />;
+  if (!data.data.length) {
+    notFound();
+  }
 
-  return (
-    <div className='mt-[130px] mb-[55px] flex items-center justify-center h-[30vh] flex-col'>
-      <Typography variant='h4' className='text-primary md:text-h3 lg:text-h1'>
-        This page is under construction.
-      </Typography>
-      <Button className='mt-[20px]' onClick={() => router.push('/')}>
-        Go To Home Page
-      </Button>
-    </div>
-  );
+  return <TechnologyModule data={data.data[0].attributes} />;
 }

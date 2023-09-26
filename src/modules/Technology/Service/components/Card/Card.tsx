@@ -10,6 +10,8 @@ const Card: FC<CardProps> = ({ icon, title, desc }) => (
         <Image
           src={icon}
           alt='service card icon'
+          width={48}
+          height={48}
           className='h-[48px] w-[48px] md:h-[58px] md:w-[58px]'
         />
       )}
