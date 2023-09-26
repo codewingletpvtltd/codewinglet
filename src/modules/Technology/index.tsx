@@ -25,11 +25,8 @@ const Technology: React.FC<TechnologyProps> = ({ data }) => (
       technologyName={data.technology_name}
     />
     <Technologies />
-    <WhyChooseUs points={data.why_choose_us} />
-    <SignificantAchievement
-      achievements={data.achievements}
-      technologyName={data.technology_name}
-    />
+    <WhyChooseUs />
+    <SignificantAchievement technologyName={data.technology_name} />
     <BusinessModel />
     <ClientTestimonials />
     <Faq faqs={data.FAQs} />

@@ -1,5 +1,3 @@
-import { Achievements } from '../types';
-
 export interface CardProps {
   icon?: string;
   title: string;
@@ -8,6 +6,5 @@ export interface CardProps {
 }
 
 export interface SignificantAchievementProps {
-  achievements: Achievements[];
   technologyName: string;
 }

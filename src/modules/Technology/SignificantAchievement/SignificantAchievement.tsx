@@ -9,14 +9,12 @@ import { getStrapiMediaFullURL } from '@codewinglet/helper';
 import { Card } from './components';
 import { sliderConfig } from './utils';
 import { SignificantAchievementProps } from './types';
+import { achievements } from './constants';
 
 const SignificantAchievement: React.FC<SignificantAchievementProps> = ({
-  achievements,
   technologyName,
 }) => {
   const isLarge = useScreenSize(md);
-
-  if (!achievements) return null;
 
   return (
     <div

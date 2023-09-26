@@ -10,26 +10,26 @@ export const achievements = [
   {
     icon: achievement1,
     title: '7+ Years Experience',
-    desc: 'Unparalleled Expertise in Frontend Technologies',
+    description: 'Unparalleled Expertise in Frontend Technologies',
   },
   {
     icon: achievement2,
     title: '150+ Successful Projects',
-    desc: 'Proven successful track record with 20+ Projects',
+    description: 'Proven successful track record with 20+ Projects',
   },
   {
     icon: achievement3,
     title: '95% On Time Delivery',
-    desc: 'On Time Delivery Guaranteed for ReactJS',
+    description: 'On Time Delivery Guaranteed for ReactJS',
   },
   {
     icon: achievement4,
     title: '10+ Diverse Domain',
-    desc: 'Empowering Solutions Across Industries',
+    description: 'Empowering Solutions Across Industries',
   },
   {
     icon: achievement5,
     title: '40+ Frontend Experts',
-    desc: 'Frontend Developers for Unmatched Web Solutions',
+    description: 'Frontend Developers for Unmatched Web Solutions',
   },
 ];

@@ -1,17 +1,8 @@
 import QueryString from 'qs';
 
 async function handler(slug: any) {
-  console.log('slug', slug);
   const params = QueryString.stringify({
-    populate: [
-      'development_services.icon',
-      'why_choose_us',
-      'achievements',
-      'achievements.icon',
-      'FAQs',
-      'banner_image',
-      'who_used',
-    ],
+    populate: ['development_services.icon', 'FAQs', 'banner_image', 'who_used'],
     filters: {
       slug: slug,
     },

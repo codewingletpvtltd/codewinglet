@@ -1,4 +1,4 @@
-export const chooseUsPoints = [
+export const points = [
   'Customized Web Applications',
   'Scalable Web Applications',
   'Customer-Centric Focus',
