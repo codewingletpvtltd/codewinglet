@@ -5,7 +5,6 @@ import { SectionHeader, Slider } from '@codewinglet/components';
 import { md } from '@codewinglet/constants/mediaQueryConst';
 import { useScreenSize } from '@codewinglet/hooks';
 import { getClassNames } from '@codewinglet/utils';
-import { getStrapiMediaFullURL } from '@codewinglet/helper';
 import { Card } from './components';
 import { sliderConfig } from './utils';
 import { SignificantAchievementProps } from './types';
@@ -52,7 +51,7 @@ const SignificantAchievement: React.FC<SignificantAchievementProps> = ({
             >
               <Card
                 title={data.title}
-                icon={getStrapiMediaFullURL(data.icon.data.attributes.url)}
+                icon={data.icon}
                 desc={data.description}
                 slideIndex={(index + 1).toString().padStart(2, '0')}
               />
