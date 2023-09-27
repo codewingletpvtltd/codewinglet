@@ -16,7 +16,6 @@ async function handler(slug: any) {
     const res = await fetch(
       `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/api/technologies?${params}`
     );
-
     if (!res.ok) {
       throw new Error('Failed to fetch data');
     }
