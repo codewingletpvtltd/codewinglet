@@ -1,5 +1,7 @@
-import Image from 'next/image';
+import { Url } from 'url';
 import { FC, memo } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 import { getClassNames } from '@codewinglet/utils';
 import Typography from '../../../Typography';
 import { ListItemProps } from '../../types';
@@ -9,6 +11,7 @@ export const ListItem: FC<ListItemProps> = ({
   label,
   isHeader = false,
   labelClassName = '',
+  href,
   ...props
 }) => (
   <li>
@@ -32,7 +35,8 @@ export const ListItem: FC<ListItemProps> = ({
         </Typography>
       </span>
     ) : (
-      <a
+      <Link
+        href={href as unknown as Url}
         className='flex flex-row items-center cursor-pointer'
         aria-label='menu-item'
         {...props}
@@ -53,7 +57,7 @@ export const ListItem: FC<ListItemProps> = ({
         >
           {label}
         </Typography>
-      </a>
+      </Link>
     )}
   </li>
 );

@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { FC, memo } from 'react';
 import { Typography } from '@codewinglet/components';
-import { CardProps } from '../../types';
+import { CardProps } from '../types';
 
 const Card: FC<CardProps> = ({ icon, title, desc }) => (
   <div className='flex flex-col relative md:p-[30px]'>

@@ -2,10 +2,10 @@ import { SectionHeader } from '@codewinglet/components';
 import { getClassNames } from '@codewinglet/utils';
 import { BackgroundArc } from '@codewinglet/assets';
 import { getStrapiMediaFullURL } from '@codewinglet/helper';
-import { Card } from './components';
 import { ServiceProps } from './types';
+import Card from './components/Card';
 
-const Service: React.FC<ServiceProps> = ({ services, technologyName }) => (
+const Services: React.FC<ServiceProps> = ({ services, technologyName }) => (
   <div className='mb-[50px] mx-[20px] md:mx-[38px] max-w-screen-xl xl:mx-auto xl:mb-[100px] relative'>
     <SectionHeader
       title={
@@ -45,4 +45,4 @@ const Service: React.FC<ServiceProps> = ({ services, technologyName }) => (
   </div>
 );
 
-export default Service;
+export default Services;

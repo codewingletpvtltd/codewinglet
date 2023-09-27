@@ -1,4 +1,4 @@
-interface BannerImage {
+export interface BannerImage {
   data: {
     id: number;
     attributes: {

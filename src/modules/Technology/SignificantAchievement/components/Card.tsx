@@ -1,7 +1,7 @@
 import { FC, memo } from 'react';
 import Image from 'next/image';
 import { Typography } from '@codewinglet/components';
-import { CardProps } from '../../types';
+import { CardProps } from '../types';
 
 const Card: FC<CardProps> = ({ icon, title, desc, slideIndex }) => (
   <>

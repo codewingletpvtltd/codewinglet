@@ -5,7 +5,7 @@ import { SectionHeader, Slider } from '@codewinglet/components';
 import { md } from '@codewinglet/constants/mediaQueryConst';
 import { useScreenSize } from '@codewinglet/hooks';
 import { getClassNames } from '@codewinglet/utils';
-import { Card } from './components';
+import Card from './components/Card';
 import { sliderConfig } from './utils';
 import { SignificantAchievementProps } from './types';
 import { achievements } from './constants';
@@ -34,6 +34,7 @@ const SignificantAchievement: React.FC<SignificantAchievementProps> = ({
             </>
           }
           description={`Our company achieved remarkable milestones, driving innovative solutions and delivering cutting-edge ${technologyName} development services, securing top positions in the industry.`}
+          descriptionClassName='lg:!w-[789px]'
           descriptionTextWrap
         />
         <Slider
