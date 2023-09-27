@@ -1,9 +1,8 @@
-import { getStrapiMediaFullURL } from '@codewinglet/helper';
 import { ClientTestimonials } from '../../components';
 import BusinessModel from './BusinessModel';
-import Faq from './Faq';
+import Faq from './Faqs';
 import HeroSection from './HeroSection';
-import Service from './Service';
+import Services from './Services';
 import SignificantAchievement from './SignificantAchievement';
 import Technologies from './Technologies';
 import WhyChooseUs from './WhyChooseUs';
@@ -14,13 +13,11 @@ const Technology: React.FC<TechnologyProps> = ({ data }) => (
     <HeroSection
       title={data.title}
       description={data.description}
-      bannerImageUrl={getStrapiMediaFullURL(
-        data.banner_image.data.attributes.url
-      )}
+      bannerImage={data.banner_image}
       logos={data.who_used}
       technologyName={data.technology_name}
     />
-    <Service
+    <Services
       services={data.development_services}
       technologyName={data.technology_name}
     />

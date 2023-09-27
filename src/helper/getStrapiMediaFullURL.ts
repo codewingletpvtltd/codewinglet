@@ -3,6 +3,9 @@ export function getStrapiURL(path = '') {
 }
 
 export function getStrapiMediaFullURL(url: string) {
+  if (!url) {
+    return '';
+  }
   if (url.startsWith('http') || url.startsWith('//')) {
     return url;
   }
