@@ -1,3 +1,4 @@
+import { getStrapiMediaFullURL } from '@codewinglet/helper';
 import { ClientTestimonials } from '../../components';
 import BusinessModel from './BusinessModel';
 import Faq from './Faq';
@@ -6,17 +7,29 @@ import Service from './Service';
 import SignificantAchievement from './SignificantAchievement';
 import Technologies from './Technologies';
 import WhyChooseUs from './WhyChooseUs';
+import { TechnologyProps } from './types';
 
-const Technology = () => (
+const Technology: React.FC<TechnologyProps> = ({ data }) => (
   <>
-    <HeroSection />
-    <Service />
+    <HeroSection
+      title={data.title}
+      description={data.description}
+      bannerImageUrl={getStrapiMediaFullURL(
+        data.banner_image.data.attributes.url
+      )}
+      logos={data.who_used}
+      technologyName={data.technology_name}
+    />
+    <Service
+      services={data.development_services}
+      technologyName={data.technology_name}
+    />
     <Technologies />
     <WhyChooseUs />
-    <SignificantAchievement />
+    <SignificantAchievement technologyName={data.technology_name} />
     <BusinessModel />
     <ClientTestimonials />
-    <Faq />
+    <Faq faqs={data.FAQs} />
     {/* TODO: When the blog page is created at that time we put this section over here */}
     {/* <OurBlog /> */}
   </>

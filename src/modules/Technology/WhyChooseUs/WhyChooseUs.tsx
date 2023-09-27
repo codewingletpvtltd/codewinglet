@@ -6,7 +6,7 @@ import {
   BackgroundSemiCircle,
   HighlightArrow,
 } from '@codewinglet/assets';
-import { chooseUsPoints } from './constants';
+import { points } from './constants';
 
 const WhyChooseUs = () => (
   <div className='my-[50px] mx-[20px] md:mx-[38px] max-w-screen-xl xl:mx-auto xl:my-[150px] relative'>
@@ -27,7 +27,7 @@ const WhyChooseUs = () => (
           description='Empowering brands with client-focused and customer-centric web application solutions, driving tangible business results in the dynamic digital landscape.'
         />
         <div className='flex flex-col mt-[30px] gap-[15px] lg:gap-[18px]'>
-          {chooseUsPoints.map((point, index) => (
+          {points.map((point, index) => (
             <div key={`point-${index}`} className='flex flex-row items-center'>
               <span>
                 <HighlightArrow className='w-[11px] h-[14px] md:w-[13px] md:h-[23px]' />

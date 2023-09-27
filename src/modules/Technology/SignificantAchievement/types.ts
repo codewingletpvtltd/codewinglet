@@ -4,3 +4,7 @@ export interface CardProps {
   desc?: string;
   slideIndex?: string;
 }
+
+export interface SignificantAchievementProps {
+  technologyName: string;
+}
