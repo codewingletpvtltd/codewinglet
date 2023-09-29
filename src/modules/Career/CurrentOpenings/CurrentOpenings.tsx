@@ -1,10 +1,8 @@
 'use client';
-import { HighlightArrow } from '@codewinglet/assets';
-import Accordion from '../../../components/Accordion/Accordion';
+// import Accordion from '../../../components/Accordion/Accordion';
 import SectionHeader from '../../../components/SectionHeader';
-import Typography from '../../../components/Typography/Typography';
 import CareerApplyNow from '../CareerApplyNow';
-import { openings } from './constants';
+// import { openings } from './constants';
 import useCurrentOpenings from './useCurrentOpenings';
 
 const CurrentOpenings = () => {
@@ -23,7 +21,7 @@ const CurrentOpenings = () => {
           headingClassName='text-center'
         />
         <div className='flex flex-col gap-[20px] md:gap-[30px]'>
-          {openings.map((data, index) => (
+          {/* {openings.map((data, index) => (
             <Accordion
               key={`openings-${data.id}-${index}`}
               title={data.title}
@@ -72,7 +70,7 @@ const CurrentOpenings = () => {
                   </div>
                 ))}
             </Accordion>
-          ))}
+          ))} */}
         </div>
       </div>
       <CareerApplyNow open={showModal} onClose={() => setShowModal(false)} />

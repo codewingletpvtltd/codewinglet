@@ -9,7 +9,6 @@ export { default as Slider } from './Slider';
 export { default as TypeAnimation } from './TypeAnimation';
 export { default as OurPortfolio } from '../modules/Home/OurPortfolio';
 export { default as Consultant } from './Consultant';
-export { default as Accordion } from './Accordion';
 export { default as Textarea } from './Textarea';
 export { default as Modal } from './Modal';
 export { default as FileUpload } from './FileUpload';
@@ -21,3 +20,9 @@ export { default as MenuIcon } from './MenuIcon';
 export { default as ClientTestimonials } from './ClientTestimonials';
 export { default as BusinessModelTab } from './BusinessModelTab';
 export * from './Snackbar';
+export {
+  Accordion,
+  AccordionItem,
+  AccordionTrigger,
+  AccordionContent,
+} from './Accordion';
