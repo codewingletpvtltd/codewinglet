@@ -390,36 +390,36 @@ const technology: ChildItemType = [
   //   ],
   // },
   // {
-  //   path: '',
-  //   icon: ai,
-  //   label: 'Generative AI',
-  //   menu: [
-  //     {
-  //       path: '/technology/generative-ai-development',
-  //       label: 'Generative AI Development',
-  //       icon: aiDev,
-  //     },
-  //     {
-  //       path: '/technology/generative-ai-integration',
-  //       label: 'Generative AI Integration',
-  //       icon: aiIntegration,
-  //     },
-  //     {
-  //       path: '/technology/chatgpt-developer',
-  //       label: 'ChatGPT Developer',
-  //       icon: chatgtp,
-  //     },
-  //     {
-  //       path: '/technology/chatgpt-integration-service',
-  //       label: 'ChatGPT Integration Service',
-  //       icon: chatGtpService,
-  //     },
-  //     {
-  //       path: '/technology/generative-ai-consulting',
-  //       label: 'Generative AI Consulting',
-  //       icon: aiConsulting,
-  //     },
-  //   ],
+  // path: '',
+  // icon: ai,
+  // label: 'Generative AI',
+  // menu: [
+  //   {
+  //     path: '/technology/generative-ai-development',
+  //     label: 'Generative AI Development',
+  //     icon: aiDev,
+  //   },
+  //   {
+  //     path: '/technology/generative-ai-integration',
+  //     label: 'Generative AI Integration',
+  //     icon: aiIntegration,
+  //   },
+  //   {
+  //     path: '/technology/chatgpt-developer',
+  //     label: 'ChatGPT Developer',
+  //     icon: chatgtp,
+  //   },
+  //   {
+  //     path: '/technology/chatgpt-integration-service',
+  //     label: 'ChatGPT Integration Service',
+  //     icon: chatGtpService,
+  //   },
+  //   {
+  //     path: '/technology/generative-ai-consulting',
+  //     label: 'Generative AI Consulting',
+  //     icon: aiConsulting,
+  //   },
+  // ],
   // },
 ];
 

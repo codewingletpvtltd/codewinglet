@@ -34,3 +34,7 @@ export interface AccordionContextProps {
   headerClassName?: string;
   onTitleClick?: () => void;
 }
+
+export type ExternalAccordionPrimitiveTrigger = {
+  icon?: React.ReactNode;
+};

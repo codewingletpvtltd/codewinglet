@@ -1,6 +1,6 @@
 import { ClientTestimonials } from '../../components';
 import BusinessModel from './BusinessModel';
-import Faq from './Faqs';
+import Faqs from './Faqs';
 import HeroSection from './HeroSection';
 import Services from './Services';
 import SignificantAchievement from './SignificantAchievement';
@@ -26,7 +26,7 @@ const Technology: React.FC<TechnologyProps> = ({ data }) => (
     <SignificantAchievement technologyName={data.technology_name} />
     <BusinessModel />
     <ClientTestimonials />
-    <Faq faqs={data.FAQs} />
+    <Faqs faqs={data.FAQs} />
     {/* TODO: When the blog page is created at that time we put this section over here */}
     {/* <OurBlog /> */}
   </>
