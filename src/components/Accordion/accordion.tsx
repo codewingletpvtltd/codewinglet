@@ -3,6 +3,7 @@
 import * as React from 'react';
 import * as AccordionPrimitive from '@radix-ui/react-accordion';
 import { cn } from '@codewinglet/utils';
+import { ExternalAccordionPrimitiveTrigger } from './types';
 
 const Accordion = AccordionPrimitive.Root;
 
@@ -20,8 +21,9 @@ AccordionItem.displayName = 'AccordionItem';
 
 const AccordionTrigger = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Trigger>,
-  React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Trigger>
->(({ className, children, ...props }, ref) => (
+  React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Trigger> &
+    ExternalAccordionPrimitiveTrigger
+>(({ className, children, icon, ...props }, ref) => (
   <AccordionPrimitive.Header className='flex'>
     <AccordionPrimitive.Trigger
       ref={ref}
@@ -32,10 +34,16 @@ const AccordionTrigger = React.forwardRef<
       {...props}
     >
       {children}
-      <div className='icon-container relative h-[15px] w-[15px] md:h-[19px] md:w-[19px]'>
-        <span className='horizontal absolute block rounded-full w-full h-[3px] bg-primary translate-y-[-50%] top-[50%] transition-all'></span>
-        <span className='vertical absolute block rounded-full w-[3px] h-full bg-primary translate-x-[-50%] left-[50%] transition-all'></span>
-      </div>
+      {}
+
+      {icon ? (
+        icon
+      ) : (
+        <div className='icon-container relative h-[15px] w-[15px] md:h-[19px] md:w-[19px]'>
+          <span className='horizontal absolute block rounded-full w-full h-[3px] bg-primary translate-y-[-50%] top-[50%] transition-all'></span>
+          <span className='vertical absolute block rounded-full w-[3px] h-full bg-primary translate-x-[-50%] left-[50%] transition-all'></span>
+        </div>
+      )}
     </AccordionPrimitive.Trigger>
   </AccordionPrimitive.Header>
 ));
@@ -48,12 +56,12 @@ const AccordionContent = React.forwardRef<
   <AccordionPrimitive.Content
     ref={ref}
     className={cn(
-      'overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down pt-[21px]',
+      'overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down',
       className
     )}
     {...props}
   >
-    <div className='pb-[9px] pt-0'>{children}</div>
+    <div className='pb-[9px] pt-[21px]'>{children}</div>
   </AccordionPrimitive.Content>
 ));
 AccordionContent.displayName = AccordionPrimitive.Content.displayName;

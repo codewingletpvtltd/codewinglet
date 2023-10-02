@@ -11,8 +11,8 @@ module.exports = {
       },
       keyframes: {
         animation: {
-          'accordion-down': 'accordion-down 0.2s linear',
-          'accordion-up': 'accordion-up 0.2s linear',
+          'accordion-down': 'accordion-down 0.2s ease-out',
+          'accordion-up': 'accordion-up 0.2s ease-out',
         },
         swing: {
           from: { transform: 'rotate(3deg)' },

@@ -25,7 +25,7 @@ const Faqs: React.FC<FaqsProps> = ({ faqs }) => (
         wrapperClassName='flex flex-col items-center justify-center'
       />
       {faqs && (
-        <div className='mt-[30px] flex flex-col gap-[22px] md:mt-[60px] lg:mt-[40px] xl:mt-[100px]'>
+        <div className='mt-[30px] md:mt-[60px] lg:mt-[40px] xl:mt-[100px]'>
           <Accordion type='single' defaultValue='0' collapsible>
             {faqs.map((data, index) => (
               <AccordionItem value={index.toString()} key={index}>
