@@ -10,9 +10,13 @@ module.exports = {
         10: '10px',
       },
       keyframes: {
+        animation: {
+          'accordion-down': 'accordion-down 0.2s ease-out',
+          'accordion-up': 'accordion-up 0.2s ease-out',
+        },
         swing: {
-          '0%': { transform: 'rotate(3deg)' },
-          '100%': { transform: 'rotate(-3deg)' },
+          from: { transform: 'rotate(3deg)' },
+          to: { transform: 'rotate(-3deg)' },
         },
         spin: {
           '0%': { transform: 'rotate(0deg)' },
@@ -52,12 +56,22 @@ module.exports = {
             right: '-150px',
           },
         },
+        'accordion-down': {
+          from: { height: 0 },
+          to: { height: 'var(--radix-accordion-content-height)' },
+        },
+        'accordion-up': {
+          from: { height: 'var(--radix-accordion-content-height)' },
+          to: { height: 0 },
+        },
       },
       animation: {
         swing: 'swing ease-in-out 0.8s infinite alternate',
         spin: 'spin 4s infinite linear',
         enterFromTop: 'enterFromTop linear 0.2s',
         enterFromRight: 'enterFromRight linear 0.2s',
+        'accordion-down': 'accordion-down 0.2s ease-out',
+        'accordion-up': 'accordion-up 0.2s ease-out',
       },
       minHeight: {
         h1: '68px',

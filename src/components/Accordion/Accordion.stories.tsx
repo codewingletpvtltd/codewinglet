@@ -1,29 +1,75 @@
-import { useState } from 'react';
-import Accordion from './Accordion';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from './accordion';
 
 export default {
   component: Accordion,
 };
 
-export const Basic = () => {
-  const [expanded, setExpanded] = useState(false);
-  return (
-    <Accordion
-      title='React Developer'
-      info={[
-        { title: 'Experience: ', value: '2-4 Year' },
-        { title: 'Job Type: ', value: 'Full Time' },
-      ]}
-      expanded={expanded}
-      onChange={() => setExpanded(!expanded)}
-    >
-      We are looking for a skilled React Developer to join our team and help us
-      build innovative and user-friendly web applications. The ideal candidate
-      should have a deep understanding of the React ecosystem and be able to
-      work well within a collaborative environment. Your primary
-      responsibilities will be to develop and maintain high-quality web
-      applications and ensure the smooth integration of these applications with
-      various back-end services.
-    </Accordion>
-  );
-};
+export const Basic = () => (
+  <Accordion type='single' collapsible defaultValue='item-1'>
+    <AccordionItem value='item-1'>
+      <AccordionTrigger>Is it accessible?</AccordionTrigger>
+      <AccordionContent>
+        Yes. It adheres to the WAI-ARIA design pattern. Yes. It adheres to the
+        WAI-ARIA design pattern. Yes. It adheres to the WAI-ARIA design pattern.
+        Yes. It adheres to the WAI-ARIA design pattern. Yes. It adheres to the
+        WAI-ARIA design pattern. Yes. It adheres to the WAI-ARIA design pattern.
+        Yes. It adheres to the WAI-ARIA design pattern. Yes. It adheres to the
+        WAI-ARIA design pattern. Yes. It adheres to the WAI-ARIA design pattern.
+        Yes. It adheres to the WAI-ARIA design pattern. Yes. It adheres to the
+        WAI-ARIA design pattern. Yes. It adheres to the WAI-ARIA design pattern.
+        Yes. It adheres to the WAI-ARIA design pattern. Yes. It adheres to the
+        WAI-ARIA design pattern. Yes. It adheres to the WAI-ARIA design pattern.
+      </AccordionContent>
+    </AccordionItem>
+    <AccordionItem value='item-2'>
+      <AccordionTrigger>Item 2</AccordionTrigger>
+      <AccordionContent>
+        Yes. It adheres to the WAI-ARIA design pattern. Yes. It adheres to the
+        WAI-ARIA design pattern. Yes. It adheres to the WAI-ARIA design pattern.
+        Yes. It adheres to the WAI-ARIA design pattern. Yes. It adheres to the
+        WAI-ARIA design pattern. Yes. It adheres to the WAI-ARIA design pattern.
+        Yes. It adheres to the WAI-ARIA design pattern. Yes. It adheres to the
+        WAI-ARIA design pattern. Yes. It adheres to the WAI-ARIA design pattern.
+        Yes. It adheres to the WAI-ARIA design pattern. Yes. It adheres to the
+        WAI-ARIA design pattern. Yes. It adheres to the WAI-ARIA design pattern.
+        Yes. It adheres to the WAI-ARIA design pattern. Yes. It adheres to the
+        WAI-ARIA design pattern. Yes. It adheres to the WAI-ARIA design pattern.
+      </AccordionContent>
+    </AccordionItem>
+    <AccordionItem value='item-3'>
+      <AccordionTrigger>Item 3</AccordionTrigger>
+      <AccordionContent>
+        Yes. It adheres to the WAI-ARIA design pattern. Yes. It adheres to the
+        WAI-ARIA design pattern. Yes. It adheres to the WAI-ARIA design pattern.
+        Yes. It adheres to the WAI-ARIA design pattern. Yes. It adheres to the
+        WAI-ARIA design pattern. Yes. It adheres to the WAI-ARIA design pattern.
+        Yes. It adheres to the WAI-ARIA design pattern. Yes. It adheres to the
+        WAI-ARIA design pattern. Yes. It adheres to the WAI-ARIA design pattern.
+        Yes. It adheres to the WAI-ARIA design pattern. Yes. It adheres to the
+        WAI-ARIA design pattern. Yes. It adheres to the WAI-ARIA design pattern.
+        Yes. It adheres to the WAI-ARIA design pattern. Yes. It adheres to the
+        WAI-ARIA design pattern. Yes. It adheres to the WAI-ARIA design pattern.
+      </AccordionContent>
+    </AccordionItem>
+    <AccordionItem value='item-4'>
+      <AccordionTrigger>Item 4</AccordionTrigger>
+      <AccordionContent>
+        Yes. It adheres to the WAI-ARIA design pattern. Yes. It adheres to the
+        WAI-ARIA design pattern. Yes. It adheres to the WAI-ARIA design pattern.
+        Yes. It adheres to the WAI-ARIA design pattern. Yes. It adheres to the
+        WAI-ARIA design pattern. Yes. It adheres to the WAI-ARIA design pattern.
+        Yes. It adheres to the WAI-ARIA design pattern. Yes. It adheres to the
+        WAI-ARIA design pattern. Yes. It adheres to the WAI-ARIA design pattern.
+        Yes. It adheres to the WAI-ARIA design pattern. Yes. It adheres to the
+        WAI-ARIA design pattern. Yes. It adheres to the WAI-ARIA design pattern.
+        Yes. It adheres to the WAI-ARIA design pattern. Yes. It adheres to the
+        WAI-ARIA design pattern. Yes. It adheres to the WAI-ARIA design pattern.
+      </AccordionContent>
+    </AccordionItem>
+  </Accordion>
+);

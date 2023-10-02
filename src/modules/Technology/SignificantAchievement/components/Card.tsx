@@ -1,12 +1,14 @@
 import { FC, memo } from 'react';
 import Image from 'next/image';
 import { Typography } from '@codewinglet/components';
-import { CardProps } from '../../types';
+import { CardProps } from '../types';
 
 const Card: FC<CardProps> = ({ icon, title, desc, slideIndex }) => (
   <>
     <div className='flex flex-row items-center justify-between'>
-      {icon && <Image src={icon} alt='Achivement Icon' />}
+      {icon && (
+        <Image src={icon} height={48} width={48} alt='Achivement Icon' />
+      )}
       <Typography
         variant='h2'
         className='text-white [text-shadow:2px_2px_0_#506B82,-1px_-1px_0_#506B82,1px_-1px_0_#506B82,-1px_1px_0_#506B82,1px_1px_0_#506B82] text-[45px] font-700 lg:text-[50px]'

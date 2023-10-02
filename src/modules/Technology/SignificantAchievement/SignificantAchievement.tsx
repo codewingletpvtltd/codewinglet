@@ -5,12 +5,16 @@ import { SectionHeader, Slider } from '@codewinglet/components';
 import { md } from '@codewinglet/constants/mediaQueryConst';
 import { useScreenSize } from '@codewinglet/hooks';
 import { getClassNames } from '@codewinglet/utils';
-import { achievements } from './constants';
-import { Card } from './components';
+import Card from './components/Card';
 import { sliderConfig } from './utils';
+import { SignificantAchievementProps } from './types';
+import { achievements } from './constants';
 
-const SignificantAchievement = () => {
+const SignificantAchievement: React.FC<SignificantAchievementProps> = ({
+  technologyName,
+}) => {
   const isLarge = useScreenSize(md);
+
   return (
     <div
       className={getClassNames(
@@ -29,7 +33,8 @@ const SignificantAchievement = () => {
               <strong className='font-800'>Significant</strong> Achievement
             </>
           }
-          description='Our company achieved remarkable milestones, driving innovative solutions and delivering cutting-edge React JS development services, securing top positions in the industry.'
+          description={`Our company achieved remarkable milestones, driving innovative solutions and delivering cutting-edge ${technologyName} development services, securing top positions in the industry.`}
+          descriptionClassName='lg:!w-[789px]'
           descriptionTextWrap
         />
         <Slider
@@ -48,7 +53,7 @@ const SignificantAchievement = () => {
               <Card
                 title={data.title}
                 icon={data.icon}
-                desc={data.desc}
+                desc={data.description}
                 slideIndex={(index + 1).toString().padStart(2, '0')}
               />
             </div>
