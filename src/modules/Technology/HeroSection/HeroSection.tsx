@@ -43,14 +43,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             >
               {description}
             </Typography>
-            <Button>
+            <Button link>
               {' '}
               <Link
                 href='https://calendly.com/slapani'
                 rel='noopener noreferrer'
                 target='_blank'
               >
-                Consult Code Winglet
+                Consult Codewinglet
               </Link>
             </Button>
           </div>

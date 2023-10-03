@@ -94,9 +94,7 @@ const NavigationMenu = () => {
           </MenuItems>
         ))}
       </MenuList>
-      <Button labelClassName='text-[14px]' onClick={onNavigate('contact-us')}>
-        Contact Us
-      </Button>
+      <Button onClick={onNavigate('contact-us')}>Contact Us</Button>
     </nav>
   );
 };
