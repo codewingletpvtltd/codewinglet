@@ -1,54 +1,52 @@
 import React, { memo } from 'react';
-import { Arrow } from '@codewinglet/assets';
-import { getClassNames } from '@codewinglet/utils';
-import Typography from '../Typography';
+import { twMerge } from 'tailwind-merge';
 import { ButtonProps } from './types';
 
 const Button: React.FC<ButtonProps> = ({
   children,
-  startIcon,
-  variant = 'primary',
-  className = '',
-  labelClassName = '',
+  link,
   disabled,
+  className,
   ...rest
-}) =>
-  variant === 'primary' ? (
-    <button
-      className={getClassNames(
-        'group relative text-primary flex justify-center items-center px-[15px] py-[5px] before:absolute before:h-[33px] before:w-[33px] before:rounded-[50%] before:opacity-[0.15] before:bg-primary before:left-0 before:transition-all before:duration-[300] before:ease-linear before:hover:w-full before:hover:rounded-[50px]',
-        disabled ? 'pointer-events-none opacity-60' : '',
-        className
-      )}
-      {...rest}
-    >
-      {startIcon}
-      <Typography
-        variant='subtitle2'
-        className={getClassNames(
-          'relative tracking-wider md:text-[16px] lg:text-[18px]',
-          labelClassName
-        )}
-      >
+}) => (
+  <button
+    className={twMerge(
+      'font-secondary bg-black tracking-tight px-5 py-3 rounded-full group overflow-hidden will-change-transform transition-transform duration-300 uppercase flex items-center',
+      className
+    )}
+    {...rest}
+  >
+    <span className='text-white relative flex'>
+      <strong className='group-hover:-translate-y-[200%] transition-transform'>
         {children}
-      </Typography>
-      <Arrow
-        width={16}
-        height={16}
-        className='relative fill-none stroke-2 translate-x-[-5px] transition-all duration-300 ease-linear ml-2.5 top-0 stroke-linecap:round stroke-linejoin: round group-hover:translate-x-0'
-      />
-    </button>
-  ) : (
-    <button
-      className={getClassNames(
-        'bg-black py-2 px-5 rounded-full flex gap-4',
-        className
-      )}
-      {...rest}
-    >
-      {startIcon}
-      {children}
-    </button>
-  );
+      </strong>
+      <strong className='absolute block translate-y-[200%] group-hover:translate-y-0 transition-transform text-sky'>
+        {children}
+      </strong>
+    </span>
+    {link && (
+      <span className='flex-shrink-0 ml-4 text-white group-hover:text-sky'>
+        <span className='w-4 h-4 flex flex-col overflow-hidden'>
+          <svg
+            focusable='false'
+            aria-hidden='true'
+            viewBox='0 0 30 30'
+            className='w-4 h-4 transition-transform duration-300 translate-x-0 translate-y-0 opacity-100 inline-block flex-shrink-0 group-hover:translate-x-full group-hover:-translate-y-full group-hover:opacity-0 fill-current'
+          >
+            <path d='M29.9995 29L29.9995 0.999451L29.9995 -0.000549316H28.9995H0.999527L0.999528 1.99945L26.5864 1.99945L0.292969 28.2928L1.70718 29.7071L27.9995 3.41471L27.9995 29H29.9995Z'></path>
+          </svg>
+          <svg
+            focusable='false'
+            aria-hidden='true'
+            viewBox='0 0 30 30'
+            className='w-4 h-4 transition-transform duration-300 opacity-0 -translate-x-full translate-y-0 inline-block flex-shrink-0 group-hover:translate-x-0 group-hover:-translate-y-full group-hover:opacity-100 fill-current'
+          >
+            <path d='M29.9995 29L29.9995 0.999451L29.9995 -0.000549316H28.9995H0.999527L0.999528 1.99945L26.5864 1.99945L0.292969 28.2928L1.70718 29.7071L27.9995 3.41471L27.9995 29H29.9995Z'></path>
+          </svg>
+        </span>
+      </span>
+    )}
+  </button>
+);
 
 export default memo(Button);

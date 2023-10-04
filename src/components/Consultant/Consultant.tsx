@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Button, SectionHeader, Typography } from '@codewinglet/components';
+import { Button, SectionHeader } from '@codewinglet/components';
 import Meeting from '@codewinglet/assets/meeting.svg';
 
 const Consultant = () => (
@@ -25,25 +25,13 @@ const Consultant = () => (
           description='Connect with our knowledge experts to gain insights that drive success for your business.'
           headingClassName='mb-1'
         />
-        <Button
-          className='group overflow-hidden relative mt-8  border-2 border-black'
-          // TODO: Need to change this
-          // startIcon={<Calender color='' />}
-          variant='contained'
-        >
-          <div className='rounded-full absolute inset-0 w-0 bg-white transition-all duration-300 ease-out group-hover:w-full' />
-
+        <Button className='mt-5' link>
           <Link
             href='https://calendly.com/slapani'
             rel='noopener noreferrer'
             target='_blank'
           >
-            <Typography
-              className='relative text-white group-hover:text-black'
-              variant='body2'
-            >
-              Book a Meeting
-            </Typography>
+            Book a Meeting
           </Link>
         </Button>
       </div>

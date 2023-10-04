@@ -9,7 +9,7 @@ const COLORS = {
   error: '#F44336',
   aqua: '#CAD5DF',
   lightOrange: '#FEF2EF',
-  sky: '#ACD3EA',
+  sky: '#ABE2FF',
   lightBlue: '#F4FAFF',
   darkBlue: '#141F6A',
   successBg: 'rgb(237, 247, 237)',
