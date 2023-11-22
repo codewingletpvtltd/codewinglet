@@ -23,7 +23,7 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
         showMenu ? 'bg-white' : isScroll ? 'bg-white shadow-lg' : 'bg-aliceBlue'
       )}
     >
-      <div className='container'>
+      <div className='container fixed'>
         <div className='flex items-center max-w-screen-xl justify-between mx-[20px] md:mx-[38px] xl:mx-auto relative'>
           <div>
             <Image
