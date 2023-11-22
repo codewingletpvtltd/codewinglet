@@ -17,13 +17,13 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
   const { showMenu, onMenu } = useHeader();
   return (
     <header
-      id='header'
+      id='header-1'
       className={getClassNames(
         'fixed h-[90px] flex items-center top-0 z-50 w-full',
         showMenu ? 'bg-white' : isScroll ? 'bg-white shadow-lg' : 'bg-aliceBlue'
       )}
     >
-      <div className='container'>
+      <div className='container fixed'>
         <div className='flex items-center max-w-screen-xl justify-between mx-[20px] md:mx-[38px] xl:mx-auto relative'>
           <div>
             <Image
