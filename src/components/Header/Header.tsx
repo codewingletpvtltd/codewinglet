@@ -17,7 +17,7 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
   const { showMenu, onMenu } = useHeader();
   return (
     <header
-      id='header'
+      id='header-1'
       className={getClassNames(
         'fixed h-[90px] flex items-center top-0 z-50 w-full',
         showMenu ? 'bg-white' : isScroll ? 'bg-white shadow-lg' : 'bg-aliceBlue'
