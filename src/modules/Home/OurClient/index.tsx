@@ -3,7 +3,7 @@ import { memo } from 'react';
 import {
   CircleSVG,
   LeftArrowsSVG,
-  circle_ci,
+  circle_dna,
   content_stack,
   infineo,
   junomoneta,
@@ -16,7 +16,7 @@ import { SectionHeader } from '@codewinglet/components';
 import { getClassNames } from '@codewinglet/utils';
 
 const clientLogo = [
-  circle_ci,
+  circle_dna,
   prime_lab,
   ninja_van,
   magics,
@@ -51,7 +51,11 @@ const OurClient = () => (
             key={index}
             className='w-full flex items-center justify-center h-[130px] p-[35px]'
           >
-            <Image src={img} alt='' className='object-contain h-full w-full' />
+            <Image
+              src={img}
+              alt='client-logo'
+              className='object-contain h-full w-full'
+            />
           </div>
         ))}
       </div>
