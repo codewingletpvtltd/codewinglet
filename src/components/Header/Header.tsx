@@ -1,8 +1,8 @@
 'use client';
-import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import React, { FC } from 'react';
-import Logo from '@codewinglet/assets/company_logo.svg';
+import Image from 'next/image';
+import Logo from '@codewinglet/assets/logo_black.svg';
 import { useScreenSize } from '@codewinglet/hooks';
 import { getClassNames } from '@codewinglet/utils';
 import { xl } from '@codewinglet/constants/mediaQueryConst';
