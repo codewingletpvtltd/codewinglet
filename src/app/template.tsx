@@ -1,11 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
-import {
-  Consultant,
-  Footer,
-  Header,
-  SnackbarProvider,
-} from '@codewinglet/components';
+import { Footer, Header, SnackbarProvider } from '@codewinglet/components';
 
 export default function RootLayout({
   children,
@@ -31,7 +26,8 @@ export default function RootLayout({
       <div>
         <Header isScroll={isScroll} />
         {children}
-        <Consultant />
+        {/* TODO */}
+        {/* <Consultant /> */}
         <Footer />
       </div>
     </SnackbarProvider>
