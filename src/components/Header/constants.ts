@@ -431,12 +431,19 @@ export const navMenu = [
   //   left: 'left-[-170px]',
   // },
   {
+    path: '/jobs',
+    label: 'Jobs',
+    category: true,
+    left: 'left-[-50px]',
+  },
+  {
     path: '',
     label: 'Technology',
     category: true,
     children: technology,
     left: 'left-[-50px]',
   },
+
   // {
   //   path: '',
   //   label: 'Industries',

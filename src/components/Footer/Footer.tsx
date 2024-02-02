@@ -58,11 +58,11 @@ const Footer = () => {
                       <strong>Jobs:</strong> +91 81608 68310
                     </Link>
                   </Typography>
-                  <Typography variant='subtitle2'>
+                  {/* <Typography variant='subtitle2'>
                     <Link href='tel:+919687973728'>
                       <strong>Sales:</strong> +91 96879 73728
                     </Link>
-                  </Typography>
+                  </Typography> */}
                 </div>
               </div>
               <div className='flex gap-2'>
