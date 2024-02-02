@@ -1,0 +1,12 @@
+export { default as indus_01 } from './indus_01.png';
+export { default as indus_02 } from './indus_02.png';
+export { default as indus_03 } from './indus_03.png';
+export { default as indus_04 } from './indus_04.png';
+export { default as indus_05 } from './indus_05.png';
+export { default as indus_06 } from './indus_06.png';
+export { default as indus_07 } from './indus_07.png';
+export { default as indus_08 } from './indus_08.png';
+export { default as indus_09 } from './indus_09.png';
+export { default as indus_10 } from './indus_10.png';
+export { default as indus_11 } from './indus_11.png';
+export { default as indus_12 } from './indus_12.png';

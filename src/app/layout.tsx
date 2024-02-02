@@ -1,6 +1,7 @@
 import React from 'react';
 import { Metadata } from 'next';
 import './globals.css';
+import './scss/main.css';
 import Head from 'next/head';
 import { COLORS } from '@codewinglet/constants';
 

@@ -26,8 +26,6 @@ export default function RootLayout({
       <div>
         <Header isScroll={isScroll} />
         {children}
-        {/* TODO */}
-        {/* <Consultant /> */}
         <Footer />
       </div>
     </SnackbarProvider>

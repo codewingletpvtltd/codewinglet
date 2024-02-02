@@ -4,28 +4,27 @@ import { useRouter } from 'next/navigation';
 import React from 'react';
 import Image from 'next/image';
 import LogoWhite from '@codewinglet/assets/logo_white.svg';
+import FooterBox from '@codewinglet/assets/footer-box.svg';
+
+import './scss/main.css';
 
 import { Typography } from '@codewinglet/components';
 import {
-  EmailLogo,
   FacebookLogo,
-  HighlightArrow,
   InstagramLogo,
   LinkedInLogo,
-  LocationMarkLogo,
-  TelePhoneLogo,
   TwitterLogo,
 } from '@codewinglet/assets';
-import { COLORS } from '@codewinglet/constants';
 import { companyTermsMenu, serviceMenu, technologyMenu } from './constants';
 
 const Footer = () => {
   const router = useRouter();
   return (
-    <footer className='bg-black text-white lg:px-0 px-5 py-10'>
-      <div className='md:mx-8 max-w-screen-xl xl:mx-auto'>
-        <div className='flex gap-10  flex-col lg:flex-row'>
-          <div className='basis-1/4'>
+    <footer>
+      <Image src={FooterBox} alt='Footer Box' className='box-bg' />
+      <div className='container'>
+        <div className='footer_text row'>
+          <div className='col-md-3 col-sm-12 links'>
             <Image
               src={LogoWhite}
               alt='Codewinglet White Logo'
@@ -33,114 +32,21 @@ const Footer = () => {
               onClick={() => router.push('/')}
               loading='eager'
             />
-            <div className='mt-10 space-y-6'>
-              <address className='not-italic flex items-start  gap-2'>
-                <div className='mt-[2px]'>
-                  <LocationMarkLogo />
-                </div>
-                <Typography variant='subtitle2'>
-                  A901-A905, Vivanta Icon, Opp. Shell Petrol Pump, Adajan,
-                  Surat, Gujarat 395009.
-                </Typography>
-              </address>
-              <div className='flex items-start gap-2'>
-                <div>
-                  <TelePhoneLogo />
-                </div>
-                <div className='flex flex-col gap-2'>
-                  <Typography variant='subtitle2'>
-                    <Link href='tel:+918320111741'>
-                      <strong>HR:</strong> +91 83201 11741
-                    </Link>
-                  </Typography>
-                  <Typography variant='subtitle2'>
-                    <Link href='tel:+918160868310'>
-                      <strong>Jobs:</strong> +91 81608 68310
-                    </Link>
-                  </Typography>
-                  {/* <Typography variant='subtitle2'>
-                    <Link href='tel:+919687973728'>
-                      <strong>Sales:</strong> +91 96879 73728
-                    </Link>
-                  </Typography> */}
-                </div>
-              </div>
-              <div className='flex gap-2'>
-                <div className='mt-[2px]'>
-                  <EmailLogo />
-                </div>
-                <div className='flex flex-col gap-2'>
-                  <Typography variant='subtitle2'>
-                    <Link href='mailto:hr@codewinglet.com'>
-                      <strong>HR:</strong> hr@codewinglet.com
-                    </Link>
-                  </Typography>
-                  <Typography variant='subtitle2'>
-                    <Link href='mailto:jobs@codewinglet.com'>
-                      <strong>Jobs:</strong> jobs@codewinglet.com
-                    </Link>
-                  </Typography>
-                  <Typography variant='subtitle2'>
-                    <Link href='mailto:sales@codewinglet.com'>
-                      <strong>Sales:</strong> sales@codewinglet.com
-                    </Link>
-                  </Typography>
-                </div>
-              </div>
-            </div>
 
-            <div className='flex gap-5 mt-8'>
-              <Link
-                className='border w-8 h-8 rounded-full flex items-center justify-center'
-                href='https://www.facebook.com/CodewingletPvtLtd'
-                target='_blank'
-                aria-label='Facebook'
-              >
-                <FacebookLogo />
-              </Link>
-              <Link
-                className='border w-8 h-8 rounded-full flex items-center justify-center'
-                href='https://www.instagram.com/codewinglet/'
-                target='_blank'
-                aria-label='Instagram'
-              >
-                <InstagramLogo />
-              </Link>
-              <Link
-                className='border w-8 h-8 rounded-full flex items-center justify-center'
-                href='https://in.linkedin.com/company/codewinglet'
-                target='_blank'
-                aria-label='Linkedin'
-              >
-                <LinkedInLogo />
-              </Link>
-              <Link
-                className='border w-8 h-8 rounded-full flex items-center justify-center'
-                href='https://twitter.com/codewinglet'
-                target='_blank'
-                aria-label='Twitter'
-              >
-                <TwitterLogo />
-              </Link>
-            </div>
-          </div>
-          <div className='basis-1/5'>
-            <Typography variant='body1' className='xl:text-[25px]'>
-              Technology
+            <Typography variant='subtitle1' className='footer_des'>
+              Codewinglet has proven to be a professional software development
+              service provider from the outset. We appreciate their proactive
+              approach and ability.
             </Typography>
-            <hr className='mt-4 mb-7' />
-            <div className='grid sm:grid-cols-2 lg:grid-cols-1 sm:gap-2 gap-[5px]'>
+          </div>
+          <div className='col-md-3 col-sm-12 links'>
+            <Typography variant='h5'>Services</Typography>
+            <div>
               {technologyMenu.map((item) => (
                 <div key={item.id}>
-                  <Typography
-                    variant='subtitle1'
-                    className='leading-7 flex gap-2 items-center'
-                  >
-                    <HighlightArrow color={COLORS.white} />
-                    <Link
-                      className=' relative after:absolute after:w-0 after:h-[1px] after:left-0 after:bg-white after:bottom-0 after:transition-all hover:after:w-full after:duration-200'
-                      href={item.path}
-                    >
+                  <Typography className='footer_menu'>
+                    {/* <HighlightArrow color={COLORS.white} /> */}
+                    <Link className='' href={item.path}>
                       {item.label}
                     </Link>
                   </Typography>
@@ -148,52 +54,85 @@ const Footer = () => {
               ))}
             </div>
           </div>
-          <div className='basis-1/2'>
-            <Typography variant='body1' className='xl:text-[25px]'>
-              Services
-            </Typography>
-            <hr className='mt-4 mb-7' />
-            <div className='grid grid-cols-1 sm:grid-cols-2 sm:gap-2 gap-[5px]'>
+          <div className='col-md-3 col-sm-12 links'>
+            <Typography variant='h5'>Discover</Typography>
+            <div>
               {serviceMenu.map((item) => (
                 <div key={item.id}>
-                  <Typography
-                    variant='subtitle1'
-                    className='leading-7 flex gap-2 items-center'
-                  >
-                    <HighlightArrow color={COLORS.white} />
-                    <Link
-                      className=' relative after:absolute after:w-0 after:h-[1px] after:left-0 after:bg-white after:bottom-0 after:transition-all hover:after:w-full after:duration-200'
-                      href={item.path}
-                    >
+                  <Typography className='footer_menu'>
+                    <Link className='' href={item.path}>
                       {item.label}
                     </Link>
                   </Typography>
                 </div>
               ))}
+            </div>
+          </div>
+          <div className='col-md-3 col-sm-12 links'>
+            <Typography variant='h5'>Get in touch</Typography>
+            <div>
+              <Typography className='footer_menu'>
+                <Link href='tel:+918320111741'>+91 83201 11741</Link>
+              </Typography>
+
+              <Typography className='footer_menu'>
+                <Link href='mailto:jobs@codewinglet.com'>
+                  jobs@codewinglet.com
+                </Link>
+              </Typography>
+
+              <Typography className='footer_menu address'>
+                A901-905, Vivanta Icon Opp. Shell Petrol Pump, Adajan, Surat,
+                Gujarat 395009.
+              </Typography>
             </div>
           </div>
         </div>
-      </div>
-      <hr className='mb-8 mt-10 border-lightBlack' />
-      <div className='max-w-screen-xl md:mx-8 xl:mx-auto'>
-        <div className='flex justify-between lg:flex-row flex-col'>
-          <Typography
-            variant='subtitle2'
-            className='text-[14px] text-gray text-center'
-          >
+
+        <div className='footer2'>
+          <div className='icon'>
+            <Link
+              className='f_social_bg'
+              href='https://www.facebook.com/CodewingletPvtLtd'
+              target='_blank'
+              aria-label='Facebook'
+            >
+              <FacebookLogo />
+            </Link>
+            <Link
+              className='f_social_bg'
+              href='https://www.instagram.com/codewinglet/'
+              target='_blank'
+              aria-label='Instagram'
+            >
+              <InstagramLogo />
+            </Link>
+            <Link
+              className='f_social_bg'
+              href='https://in.linkedin.com/company/codewinglet'
+              target='_blank'
+              aria-label='Linkedin'
+            >
+              <LinkedInLogo />
+            </Link>
+            <Link
+              className='f_social_bg'
+              href='https://twitter.com/codewinglet'
+              target='_blank'
+              aria-label='Twitter'
+            >
+              <TwitterLogo />
+            </Link>
+          </div>
+          <Typography className='all-reserved'>
             © {new Date().getFullYear()} All rights reserved. Codewinglet
             Private Limited
           </Typography>
-          <ul className='flex gap-7 lg:mt-0 mt-5 justify-center'>
+          <ul className='terms'>
             {companyTermsMenu.map((item) => (
               <li key={item.id}>
-                <Typography className='text-[14px] text-gray'>
-                  <Link
-                    className='hover:text-white transition-colors'
-                    href={item.path}
-                  >
-                    {item.label}
-                  </Link>
+                <Typography className='terms-text'>
+                  <Link href={item.path}>{item.label}</Link>
                 </Typography>
               </li>
             ))}
