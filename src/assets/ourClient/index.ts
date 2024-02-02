@@ -2,6 +2,7 @@ export { default as junomoneta } from './junomoneta.png';
 export { default as magics } from './magics.png';
 export { default as content_stack } from './content_stack.png';
 export { default as circle_ci } from './circle_ci.png';
+export { default as circle_dna } from './circle_dna.png';
 export { default as prime_lab } from './prime_lab.png';
 export { default as ninja_van } from './ninja_van.png';
 export { default as blip_iq } from './blip_iq.png';

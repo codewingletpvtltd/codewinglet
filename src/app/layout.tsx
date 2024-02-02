@@ -20,7 +20,7 @@ export default function RootLayout({
       <Head>
         <meta charSet='UTF-8' />
         <meta name='theme-color' content={COLORS.primary} />
-        <link rel='icon' type='image/png' sizes='32x32' href='/favicon.png' />
+        <link rel='icon' type='image/ico' sizes='32x32' href='/favicon.ico' />
       </Head>
       <body className='font-primary'>{children}</body>
     </html>
