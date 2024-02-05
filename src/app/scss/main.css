@@ -1,0 +1,7 @@
+.our-client img {
+  filter: invert(0) sepia(30%) saturate(5%) hue-rotate(230deg) brightness(80%) contrast(100%);
+}
+
+.our-client img:hover {
+  filter: none;
+}/*# sourceMappingURL=main.css.map */

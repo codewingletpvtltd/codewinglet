@@ -1,8 +1,6 @@
 import Image from 'next/image';
 import { memo } from 'react';
 import {
-  CircleSVG,
-  LeftArrowsSVG,
   circle_dna,
   content_stack,
   infineo,
@@ -16,28 +14,23 @@ import { SectionHeader } from '@codewinglet/components';
 import { getClassNames } from '@codewinglet/utils';
 
 const clientLogo = [
-  circle_dna,
-  prime_lab,
-  ninja_van,
-  magics,
-  junomoneta,
-  content_stack,
-  infineo,
   vidiren,
+  infineo,
+  content_stack,
+  magics,
+  ninja_van,
+  prime_lab,
+  junomoneta,
+  circle_dna,
 ];
 
 const OurClient = () => (
-  <section className='relative overflow-hidden py-[50px] lg:py-[80px] xl:py-[120px] 2xl:py-[138px] 2xl:!pb-[78px] bg-aliceBlue px-[20px]'>
+  <section className='relative overflow-hidden py-[50px] lg:py-[80px] xl:py-[120px] 2xl:py-[80px] 2xl:!pb-[80px] bg-[#f9f9f9] px-[20px]'>
     <section className='max-w-screen-xl md:w-full  mx-auto'>
       <SectionHeader
-        title={
-          <>
-            <strong className='font-[800]'>Our</strong> Clients
-          </>
-        }
-        description='Our Global Clients'
-        headingClassName='text-center text-[22px]'
-        descriptionClassName='text-center'
+        title={<>Our Clients</>}
+        description='"Our Global Clients"'
+        headingClassName='text-[22px]'
       />
       <div
         className={getClassNames(
@@ -49,19 +42,17 @@ const OurClient = () => (
         {clientLogo.map((img, index) => (
           <div
             key={index}
-            className='w-full flex items-center justify-center h-[130px] p-[35px]'
+            className='w-full flex items-center justify-center h-[130px] p-[35px] our-client'
           >
             <Image
               src={img}
               alt='client-logo'
-              className='object-contain h-full w-full'
+              className='object-contain h-full w-full '
             />
           </div>
         ))}
       </div>
     </section>
-    <LeftArrowsSVG className='absolute right-0 w-[119px] h-[14px] top-[15px] lg:right-[-28px] lg:w-[142px] lg:h-[16px] lg:top-[38px] xl:w-[167px] xl:h-[19px] xl:top-[50px] xl:right-[-2px] 2xl:[56px] 2xl:w-[188px] 2xl:h-[22px]' />
-    <CircleSVG className='absolute left-0 top-[67px] hidden lg:block lg:left-[-14px] h-[107px] w-[107px] xl:top-[400px] xl:right-[-19px] 2xl:right-[-25px] ' />
   </section>
 );
 export default memo(OurClient);

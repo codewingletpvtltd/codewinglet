@@ -141,8 +141,8 @@ module.exports = {
       900: 900,
     },
     fontFamily: {
-      primary: ['Nunito Sans', 'sans-serif'],
-      secondary: ['Lato', 'sans-serif'],
+      primary: ['Poppins', 'sans-serif'],
+      secondary: ['Poppins', 'sans-serif'],
     },
     fontSize: {
       h1: [
