@@ -16,9 +16,9 @@ const Home = () => (
     <AboutUs />
     <WorkProcess />
     <Industries />
+    <Technologies />
     <OurServices />
     <OurPortfolio />
-    <Technologies />
     <OurClient />
     <ClientTestimonials />
     <ContactUs />

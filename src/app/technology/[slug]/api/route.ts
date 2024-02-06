@@ -24,9 +24,9 @@ async function handler(slug: any) {
 
     return data;
   } catch (error: any) {
-    throw new Error(
-      error.cause.syscall + ' ' + error.cause.code + ' ' + error.cause.address
-    );
+    // throw new Error(
+    //   error.cause.syscall + ' ' + error.cause.code + ' ' + error.cause.address
+    // );
   }
 }
 

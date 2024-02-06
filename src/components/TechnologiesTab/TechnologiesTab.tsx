@@ -1,72 +1,71 @@
 'use client';
-import Image from 'next/image';
-import Link from 'next/link';
-import { getClassNames } from '@codewinglet/utils';
-import Typography from '../Typography/Typography';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '../Tabs';
-import { tabs } from './constant';
+import React from 'react';
+import '../../modules/Home/Technologies/scss/technologies.css';
 
-const TechnologiesTab = () => (
-  <Tabs
-    defaultValue='Frontend'
-    className='md:border-[1px] border-lightBlack/30 lg:p-[28px] rounded-10 py-[24px]'
-  >
-    <TabsList className='w-full'>
-      {tabs.map(({ label, icon }, index) => (
-        <TabsTrigger
-          value={label}
-          key={index}
-          className='w-full flex flex-row justify-center items-center px-[25px] md:p-auto'
+interface AccordCompProps {
+  title: string;
+  count: string;
+  caption: string;
+  content: string;
+  handleChange: any;
+  expanded: any;
+}
+
+const Accordion: React.FC<AccordCompProps> = ({
+  title,
+  count,
+  caption,
+  content,
+  handleChange,
+  expanded,
+}) => {
+  console.log(expanded, count);
+
+  return (
+    <div
+      className={`!bg-white accord-item accord-trigger accord-default relative cursor-pointer py-[30px] pr-[30px] pl-[25px] flex text-[24px] h-[460px] bg-[#f0ffee]  transition-all ease-in-out duration-700 delay-75 overflow-hidden w-[90px] border ${
+        expanded == count
+          ? '!bg-cover bg-no-repeat bg-center bg-[url(https://shorturl.at/dEFO3)] w-screen text-white'
+          : ''
+      }`}
+      onClick={() => handleChange(count)}
+    >
+      <div className='w-7 flex justify-between relative text-black accord-head'>
+        <h3
+          className={`${
+            expanded == count ? '!text-white' : ''
+          } font-400 text-[20px] leading-[1] p-0 m-0 rotate-180 [transition: all 200ms ease-in-out 50ms] [writing-mode:vertical-rl]`}
         >
-          {icon}
-          {label}
-        </TabsTrigger>
-      ))}
-    </TabsList>
+          {title}
+        </h3>
+        <span
+          className={`${
+            expanded == count ? '!text-white text-[40px]' : ''
+          }  absolute text-[20px] text-black`}
+        >
+          {count}
+        </span>
+      </div>
+      <div
+        className={`${
+          expanded == count
+            ? 'transition-opacity ease-linear delay-500 duration-300 opacity-100'
+            : ''
+        } flex justify-between opacity-0 p-0 px-[60px] gap-10 [transition:opacity 50ms ease 0s]`}
+      >
+        <div className='flex flex-col'>
+          <h2 className='text-[50px] font-300 mb-[30px] text-left leading-tight'>
+            {caption}
+          </h2>
+          <div className='font-300 text-[30px]'>
+            <p>
+              <span>{content}</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-    {tabs.map(({ label, subTitle, tabContent }, index) => (
-      <TabsContent value={label} key={index} className='md:mt-0'>
-        <div className='mb-[22px] mt-[28px] md:mb-[28px] md:mt-0 text-black'>
-          <Typography
-            variant='body1'
-            className='md:text-[22px] xl:text-[25px] font-600'
-          >
-            {label}
-          </Typography>
-          <Typography
-            variant='subtitle2'
-            className='font-500 mt-[3px] xl:text-[16px]'
-          >
-            {subTitle}
-          </Typography>
-        </div>
-        <div className='grid grid-cols-2 lg:grid-cols-3 gap-[20px] lg:gap-[30px]'>
-          {tabContent?.map(({ label, icon, url }, index) => (
-            <Link
-              href={url ? url : ''}
-              key={index}
-              className={getClassNames(url ? '' : 'pointer-events-none')}
-              replace={true}
-              target='_blank'
-            >
-              <div className='flex items-center gap-[15px]'>
-                <Image
-                  src={icon}
-                  className='h-[32px] w-[32px] lg:h-[36px] lg:w-[36px]'
-                  alt={label}
-                />
-                <Typography
-                  variant='subtitle1'
-                  className='font-500 text-black lg:text-[18px]'
-                >
-                  {label}
-                </Typography>
-              </div>
-            </Link>
-          ))}
-        </div>
-      </TabsContent>
-    ))}
-  </Tabs>
-);
-export default TechnologiesTab;
+export default Accordion;

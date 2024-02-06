@@ -105,7 +105,7 @@ module.exports = {
         paleWhite: '#F8FCFF',
         primary: '#0278BE',
         secondary: '#02457C',
-        black: '#143048',
+        black: '#141414',
         lightBlack: '#506B82',
         gray: '#CDCCD2',
         lightGray: '#F3EFF3',
