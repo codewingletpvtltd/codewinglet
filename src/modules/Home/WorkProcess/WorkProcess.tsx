@@ -42,8 +42,8 @@ const PROCESS = [
 ];
 
 const ContactUs = () => (
-  <section className='m-soft'>
-    <div className='container'>
+  <section className='relative py-[80px] bg-[#F5F5F5]'>
+    <div className='max-w-[1410px] w-full px-[15px] mx-auto'>
       <SectionHeader
         title={<>Our Work Process</>}
         description={
@@ -55,17 +55,23 @@ const ContactUs = () => (
         headingClassName=''
       />
 
-      <div className='our-card'>
+      <div className='grid gap-[30px] grid-cols-3 mt-12'>
         {PROCESS.map((card) => (
           <>
-            <div className='soft-card'>
-              <Typography variant='h1' className='soft-head'>
+            <div className='soft-card p-10 bg-white hover:bg-black hover:text-white'>
+              <Typography
+                variant='h1'
+                className='soft-head !text-[50px] font-700 leading-[50px] relative text-transparent after:content after:absolute after:bottom-2.5 after:left-[70px] after:w-[30px] after:h-[2px] after:bg-black hover:after:bg-white after:duration-[0.9s] after:transition-all after:ease-in'
+              >
                 {card.number}
               </Typography>
-              <Typography variant='h5' className='soft-subhead'>
+              <Typography variant='h5' className='text-[18px] font-500  mb-3'>
                 {card.title}
               </Typography>
-              <Typography variant='body2' className='soft-des'>
+              <Typography
+                variant='body2'
+                className='!text-[15px] font-300  m-0'
+              >
                 {card.description}
               </Typography>
             </div>

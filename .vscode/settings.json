@@ -15,5 +15,6 @@
     "source.sortMembers": true
   },
   "eslint.format.enable": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "liveServer.settings.port": 5501
 }

@@ -4,9 +4,6 @@ import { useRouter } from 'next/navigation';
 import React from 'react';
 import Image from 'next/image';
 import LogoWhite from '@codewinglet/assets/logo_white.svg';
-import FooterBox from '@codewinglet/assets/footer-box.svg';
-
-import './scss/main.css';
 
 import { Typography } from '@codewinglet/components';
 import {
@@ -20,11 +17,10 @@ import { companyTermsMenu, serviceMenu, technologyMenu } from './constants';
 const Footer = () => {
   const router = useRouter();
   return (
-    <footer>
-      <Image src={FooterBox} alt='Footer Box' className='box-bg' />
-      <div className='container'>
-        <div className='footer_text row'>
-          <div className='col-md-3 col-sm-12 links'>
+    <footer className='bg-[#000] text-white relative py-[60px]'>
+      <div className='max-w-[1410px] w-full px-[15px] mx-auto'>
+        <div className='flex p-[15px] relative mx-[-15px] flex-wrap '>
+          <div className='px-[15px] w-full relative max-w-[25%] min-h-[1px] flex-[0_0_25%]'>
             <Image
               src={LogoWhite}
               alt='Codewinglet White Logo'
@@ -33,18 +29,26 @@ const Footer = () => {
               loading='eager'
             />
 
-            <Typography variant='subtitle1' className='footer_des'>
+            <Typography
+              variant='subtitle1'
+              className='mt-[15px] !leading-normal font-300'
+            >
               Codewinglet has proven to be a professional software development
               service provider from the outset. We appreciate their proactive
               approach and ability.
             </Typography>
           </div>
-          <div className='col-md-3 col-sm-12 links'>
-            <Typography variant='h5'>Services</Typography>
+          <div className='px-[15px] w-full relative max-w-[25%] min-h-[1px] flex-[0_0_25%]'>
+            <Typography
+              variant='h5'
+              className='!text-[25px] !font-400 mb-[20px]'
+            >
+              Services
+            </Typography>
             <div>
               {technologyMenu.map((item) => (
                 <div key={item.id}>
-                  <Typography className='footer_menu'>
+                  <Typography className='text-[16px] font-300 leading-[34px] mb-[5px] min-h-0'>
                     {/* <HighlightArrow color={COLORS.white} /> */}
                     <Link className='' href={item.path}>
                       {item.label}
@@ -54,12 +58,17 @@ const Footer = () => {
               ))}
             </div>
           </div>
-          <div className='col-md-3 col-sm-12 links'>
-            <Typography variant='h5'>Discover</Typography>
+          <div className='px-[15px] w-full relative max-w-[25%] min-h-[1px] flex-[0_0_25%]'>
+            <Typography
+              variant='h5'
+              className='!text-[25px] !font-400 mb-[20px]'
+            >
+              Discover
+            </Typography>
             <div>
               {serviceMenu.map((item) => (
                 <div key={item.id}>
-                  <Typography className='footer_menu'>
+                  <Typography className='text-[16px] font-300 leading-[34px] mb-[5px] min-h-0'>
                     <Link className='' href={item.path}>
                       {item.label}
                     </Link>
@@ -68,20 +77,25 @@ const Footer = () => {
               ))}
             </div>
           </div>
-          <div className='col-md-3 col-sm-12 links'>
-            <Typography variant='h5'>Get in touch</Typography>
+          <div className='px-[15px] w-full relative max-w-[25%] min-h-[1px] flex-[0_0_25%]'>
+            <Typography
+              variant='h5'
+              className='!text-[25px] !font-400 mb-[20px]'
+            >
+              Get in touch
+            </Typography>
             <div>
-              <Typography className='footer_menu'>
+              <Typography className='text-[16px] font-300 leading-[34px] mb-[5px] min-h-0'>
                 <Link href='tel:+918320111741'>+91 83201 11741</Link>
               </Typography>
 
-              <Typography className='footer_menu'>
+              <Typography className='text-[16px] font-300 leading-[34px] mb-[5px] min-h-0'>
                 <Link href='mailto:jobs@codewinglet.com'>
                   jobs@codewinglet.com
                 </Link>
               </Typography>
 
-              <Typography className='footer_menu address'>
+              <Typography className='text-[16px] font-300 leading-[34px] mb-[5px] min-h-0 !leading-normal'>
                 A901-905, Vivanta Icon Opp. Shell Petrol Pump, Adajan, Surat,
                 Gujarat 395009.
               </Typography>
@@ -89,10 +103,10 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className='footer2'>
-          <div className='icon'>
+        <div className='flex items-center justify-between relative pt-[40px] '>
+          <div className='flex gap-5'>
             <Link
-              className='f_social_bg'
+              className='flex items-center justify-center w-8 h-8 border border-solid border-white rounded-full'
               href='https://www.facebook.com/CodewingletPvtLtd'
               target='_blank'
               aria-label='Facebook'
@@ -100,7 +114,7 @@ const Footer = () => {
               <FacebookLogo />
             </Link>
             <Link
-              className='f_social_bg'
+              className='flex items-center justify-center w-8 h-8 border border-solid border-white rounded-full'
               href='https://www.instagram.com/codewinglet/'
               target='_blank'
               aria-label='Instagram'
@@ -108,7 +122,7 @@ const Footer = () => {
               <InstagramLogo />
             </Link>
             <Link
-              className='f_social_bg'
+              className='flex items-center justify-center w-8 h-8 border border-solid border-white rounded-full'
               href='https://in.linkedin.com/company/codewinglet'
               target='_blank'
               aria-label='Linkedin'
@@ -116,7 +130,7 @@ const Footer = () => {
               <LinkedInLogo />
             </Link>
             <Link
-              className='f_social_bg'
+              className='flex items-center justify-center w-8 h-8 border border-solid border-white rounded-full'
               href='https://twitter.com/codewinglet'
               target='_blank'
               aria-label='Twitter'
@@ -124,14 +138,14 @@ const Footer = () => {
               <TwitterLogo />
             </Link>
           </div>
-          <Typography className='all-reserved'>
+          <Typography className='text-[16px] font-300'>
             © {new Date().getFullYear()} All rights reserved. Codewinglet
             Private Limited
           </Typography>
-          <ul className='terms'>
+          <ul className='flex gap-7'>
             {companyTermsMenu.map((item) => (
               <li key={item.id}>
-                <Typography className='terms-text'>
+                <Typography className='text-[16px] font-300'>
                   <Link href={item.path}>{item.label}</Link>
                 </Typography>
               </li>

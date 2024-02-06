@@ -16,7 +16,14 @@ const Technologies = () => (
       />
 
       <div className='mt-[37px] xl:mt-[80px]'>
-        <TechnologiesTab />
+        <TechnologiesTab
+          title=''
+          count=''
+          caption=''
+          content=''
+          handleChange={() => {}}
+          expanded={false}
+        />
       </div>
     </section>
     <StarsSVG className='hidden 2xl:inline-block absolute top-[400px] left-[100px] h-[90px] w-[90px] ' />
