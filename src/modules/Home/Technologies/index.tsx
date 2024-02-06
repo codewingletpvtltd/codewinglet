@@ -1,9 +1,9 @@
 'use client';
+import { useState } from 'react';
 import { SectionHeader } from '@codewinglet/components';
-import './scss/technologies.css';
 import { accordionData } from '../../../components/TechnologiesTab/constant';
 import Accordion from '../../../components/TechnologiesTab/index';
-import { useState } from 'react';
+import './scss/technologies.css';
 
 const Technologies = () => {
   const [expanded, setExpanded] = useState<String>('01');
@@ -16,7 +16,7 @@ const Technologies = () => {
 
   return (
     <section className='py-20 bg-[#f9f9f9]'>
-      <section className='container'>
+      <section className='max-w-[1410px] w-full px-[15px] mx-auto'>
         <SectionHeader
           title={<>Our Services</>}
           description={

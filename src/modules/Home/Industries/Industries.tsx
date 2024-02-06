@@ -14,7 +14,6 @@ import {
   indus_11,
   indus_12,
 } from '@codewinglet/assets';
-import './scss/indumain.css';
 
 const INDUCARD = [
   {
@@ -69,8 +68,8 @@ const INDUCARD = [
 ];
 
 const ContactUs = () => (
-  <section className='industries'>
-    <div className='container'>
+  <section className='bg-white py-20'>
+    <div className='max-w-[1410px] w-full px-[15px] mx-auto'>
       <SectionHeader
         title={<>Industries We Serve</>}
         description={
@@ -82,12 +81,15 @@ const ContactUs = () => (
         headingClassName=''
       />
 
-      <div className='serv_card_wrap'>
+      <div className='grid grid-cols-4 gap-[30px] pt-10'>
         {INDUCARD.map((card) => (
           <>
             <div>
-              <Image src={card.image} alt='Menu Icon' />
-              <Typography variant='subtitle2' className='title'>
+              <Image src={card.image} alt='Menu Icon' className='w-full' />
+              <Typography
+                variant='subtitle2'
+                className='text-black !text-[20px] font-400 mt-3'
+              >
                 {card.title}
               </Typography>
             </div>
