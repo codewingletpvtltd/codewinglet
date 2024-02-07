@@ -1,8 +1,7 @@
 import Image from 'next/image';
 import { memo } from 'react';
 import SectionHeader from '../../../components/SectionHeader/SectionHeader';
-import { portfolio } from './data';
-import { btnArrow } from './data';
+import { portfolio, btnArrow } from './data';
 
 const OurWork = () => (
   <section className='py-20 '>
