@@ -52,7 +52,12 @@ export { default as InfoIcon } from './icons/InfoIcon';
 export { default as ErrorIcon } from './icons/ErrorIcon';
 export { default as SnackbarClose } from './icons/SnackbarClose';
 export { default as MagicsHaircare } from './MagicsHaircare.png';
-export { default as portfolio1 } from './portfolio1.png';
+export { default as portfolio1 } from './project_1.png';
+export { default as portfolio2 } from './project_2.png';
+export { default as portfolio3 } from './project_3.png';
+export { default as portfolio4 } from './project_4.png';
+export { default as portfolio5 } from './project_5.png';
+export { default as portfolio6 } from './project_6.png';
 
 export * from './heroSection';
 export * from './ourClient';

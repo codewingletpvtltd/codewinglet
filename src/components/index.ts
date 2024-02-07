@@ -7,7 +7,7 @@ export { default as Footer } from './Footer';
 export { default as ServiceCard } from './ServiceCard';
 export { default as Slider } from './Slider';
 export { default as TypeAnimation } from './TypeAnimation';
-export { default as OurPortfolio } from '../modules/Home/OurPortfolio';
+export { default as OurPortfolio } from '../modules/Home/OurWork';
 export { default as Textarea } from './Textarea';
 export { default as Modal } from './Modal';
 export { default as FileUpload } from './FileUpload';

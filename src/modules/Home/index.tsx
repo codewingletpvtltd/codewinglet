@@ -1,7 +1,7 @@
 import dynamic from 'next/dynamic';
 import { ClientTestimonials } from '@codewinglet/components';
 const OurServices = dynamic(() => import('./OurServices'));
-const OurPortfolio = dynamic(() => import('./OurPortfolio'));
+const OurWork = dynamic(() => import('./OurWork'));
 const HeroSection = dynamic(() => import('./HeroSection'));
 const OurClient = dynamic(() => import('./OurClient'));
 const Technologies = dynamic(() => import('./Technologies'));
@@ -18,9 +18,9 @@ const Home = () => (
     <Industries />
     <Technologies />
     <OurServices />
-    <OurPortfolio />
     <OurClient />
     <ClientTestimonials />
+    <OurWork />
     <ContactUs />
   </>
 );
