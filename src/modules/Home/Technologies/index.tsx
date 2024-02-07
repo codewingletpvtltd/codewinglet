@@ -8,8 +8,6 @@ import './scss/technologies.css';
 const Technologies = () => {
   const [expanded, setExpanded] = useState<String>('01');
 
-  console.log(expanded, 'console.log(expanded);');
-
   const handleChange = (count: any) => {
     setExpanded(count);
   };

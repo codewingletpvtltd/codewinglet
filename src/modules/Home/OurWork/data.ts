@@ -1,9 +1,11 @@
-import { portfolio1 } from '@codewinglet/assets';
-import { portfolio2 } from '@codewinglet/assets';
-import { portfolio3 } from '@codewinglet/assets';
-import { portfolio4 } from '@codewinglet/assets';
-import { portfolio5 } from '@codewinglet/assets';
-import { portfolio6 } from '@codewinglet/assets';
+import {
+  portfolio1,
+  portfolio2,
+  portfolio3,
+  portfolio4,
+  portfolio5,
+  portfolio6,
+} from '@codewinglet/assets';
 
 export const portfolio = [
   {
@@ -61,3 +63,5 @@ export const portfolio = [
       'Heim: New digital identity to the electronic consumer market across the horizons of innovation',
   },
 ];
+
+export { btnArrow } from '@codewinglet/assets';

@@ -58,6 +58,7 @@ export { default as portfolio3 } from './project_3.png';
 export { default as portfolio4 } from './project_4.png';
 export { default as portfolio5 } from './project_5.png';
 export { default as portfolio6 } from './project_6.png';
+export { default as btnArrow } from './btnArrow.svg';
 
 export * from './heroSection';
 export * from './ourClient';

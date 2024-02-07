@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { memo } from 'react';
 import SectionHeader from '../../../components/SectionHeader/SectionHeader';
 import { portfolio } from './data';
+import { btnArrow } from './data';
 
 const OurWork = () => (
   <section className='py-20 '>
@@ -27,8 +28,9 @@ const OurWork = () => (
                     alt='portfolio image'
                   />
                   <div className='absolute px-4 top-2/4 left-1/2 opacity-0 z-[2] bg-[#00000099] transform -translate-x-1/2 -translate-y-1/2 transition-all ease-in-out duration-[0.3s] group-hover:opacity-[1]'>
-                    <button className='w-[180px] h-[50px] text-white block border-none cursor-pointer mx-auto'>
-                      {data.button}
+                    <button className='w-[180px] h-[50px] text-white block border-none cursor-pointer mx-auto flex items-center justify-center'>
+                      {data.button}{' '}
+                      <Image className='ml-[10px]' src={btnArrow} alt='Arrow' />
                     </button>
                   </div>
                 </a>
