@@ -1,7 +1,7 @@
 import { FC, memo } from 'react';
-import { BackgroundBubble, LeftArrow, RightArrow } from '@codewinglet/assets';
+import { LeftArrow, RightArrow } from '@codewinglet/assets';
 import { getClassNames } from '@codewinglet/utils';
-import { _arrowPosition, svgPosition, verticalPosition } from '../constants';
+import { _arrowPosition, verticalPosition } from '../constants';
 import { ArrowProps } from '../types';
 
 const Arrows: FC<ArrowProps> = ({
@@ -10,7 +10,7 @@ const Arrows: FC<ArrowProps> = ({
 }) => (
   <div
     className={getClassNames(
-      'flex flex-row items-center gap-[17px] relative',
+      'flex flex-row items-center gap-[17px] absolute right-0 bottom-[3rem]',
       arrowPosition.vertical
         ? verticalPosition[arrowPosition.vertical]
         : 'justify-end'
@@ -18,18 +18,12 @@ const Arrows: FC<ArrowProps> = ({
   >
     <LeftArrow
       onClick={() => sliderRef?.current?.slickPrev()}
-      className='lg:h-[30px] lg:w-auto cursor-pointer'
+      className='lg:h-[30px] lg:w-auto cursor-pointer fill-white'
     />
-    <div className='relative cursor-pointer'>
+    <div className='relative cursor-pointe'>
       <RightArrow
         onClick={() => sliderRef?.current?.slickNext()}
-        className='lg:h-[30px] lg:w-auto'
-      />
-      <BackgroundBubble
-        className={getClassNames(
-          'absolute bottom-[2px] z-[-1] lg:h-[24px] lg:w-[24px]',
-          arrowPosition.vertical ? svgPosition[arrowPosition.vertical] : ''
-        )}
+        className='lg:h-[30px] lg:w-auto cursor-pointer !hover:fill-black fill-white'
       />
     </div>
   </div>

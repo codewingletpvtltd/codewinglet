@@ -30,6 +30,7 @@ export { default as StarsSVG } from './StarsSVG';
 export { default as RectangleSVG } from './RectangleSVG';
 export { default as BackgroundCircle } from './BackgroundCircle';
 export { default as ClosingQuote } from './icons/ClosingQuote';
+export { default as StartQuote } from './icons/StartQuote';
 export { default as BackgroundBubble } from './BackgroundBubble';
 export { default as BackgroundTriangle } from './BackgroundTriangle';
 export { default as BackgroundDonut } from './BackgroundDonut';

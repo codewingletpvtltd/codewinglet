@@ -1,10 +1,4 @@
-import Image from 'next/image';
-import {
-  BackgroundDonut,
-  BackgroundTriangle,
-  ClosingQuote,
-} from '@codewinglet/assets';
-import Client from '@codewinglet/assets/client.svg';
+import { ClosingQuote, StartQuote } from '@codewinglet/assets';
 import SectionHeader from '../SectionHeader/SectionHeader';
 import Typography from '../Typography/Typography';
 import Slider from '../Slider/Slider';
@@ -13,34 +7,45 @@ import { slickSetting } from './config';
 import ClientDetails from './components/ClientDetails';
 
 const ClientTestimonials = () => (
-  <div className=' mx-[20px] my-[50px] md:mx-[38px] xl:mx-auto relative'>
-    <BackgroundTriangle className='invisible xl:visible absolute right-[60px]' />
-    <div className='max-w-screen-xl xl:mx-auto'>
+  <div className=' py-20'>
+    <div className='max-w-[1410px] w-full px-[15px] mx-auto'>
       <SectionHeader
-        title={
+        title={<>Testimonials</>}
+        description={
           <>
-            <strong className='font-[800]'>Clients'</strong> Testimonials
+            We let our work prove beyond expectations for a blissful client
+            experience. <br /> Here’s a glimpse into what Our Clients have to
+            say about us.
           </>
         }
-        description="Clients' feedback"
-        headingClassName='text-center'
-        descriptionClassName='text-center'
+        headingClassName='text-[22px] text-white'
+        descriptionClassName=' mt-[9px] text-white !font-300'
       />
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-[30px] mt-[93px]'>
+      <div
+        className=' mt-[50px] h-[481px] relative'
+        style={{
+          backgroundImage: `url(${
+            require('./testimonial_img.svg').default.src
+          })`,
+          backgroundRepeat: 'no-repeat',
+          backgroundPositionX: 'right',
+        }}
+      >
+        <StartQuote />
         <div className='relative'>
-          <ClosingQuote />
           <Slider
+            className='ml-[120px] '
             settings={slickSetting}
             arrowPosition={{ horizontal: 'bottom', vertical: 'left' }}
           >
             {testimonials.map((data, index) => (
               <div
                 key={`testimonials-${data.id}-${index}`}
-                // className='mb-[36px]'
+                className='bg-[#1c1c1c] py-[42px] px-[57px] !w-[754px] mt-[170px]'
               >
                 <Typography
-                  variant='subtitle1'
-                  className='md:text-[15px] xl:text-[16px] text-lightBlack'
+                  variant='h5'
+                  className='!text-[22px] font-300 text-white'
                 >
                   {data.comment}
                 </Typography>
@@ -52,14 +57,9 @@ const ClientTestimonials = () => (
             ))}
           </Slider>
         </div>
-        <Image
-          src={Client}
-          alt='Client Testimonals'
-          className='w-[100%] md:h-[100%] md:w-auto place-self-end select-none'
-        />
+        <ClosingQuote />
       </div>
     </div>
-    <BackgroundDonut className='invisible xl:visible absolute xl:top-[20%] 2xl:top-[30%] xl:left-[50px]  2xl:h-[114px] 2xl:w-[114px]' />
   </div>
 );
 
