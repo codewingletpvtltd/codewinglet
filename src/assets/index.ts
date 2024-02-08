@@ -60,6 +60,20 @@ export { default as portfolio5 } from './project_5.png';
 export { default as portfolio6 } from './project_6.png';
 export { default as btnArrow } from './btnArrow.svg';
 
+export { default as hero_slider } from './navigation/technology/hero_slider.svg';
+export { default as hero_slider1 } from './navigation/technology/hero_slider1.svg';
+export { default as hero_slider2 } from './navigation/technology/hero_slider2.svg';
+export { default as hero_slider3 } from './navigation/technology/hero_slider3.svg';
+export { default as hero_slider4 } from './navigation/technology/hero_slider4.svg';
+export { default as hero_slider5 } from './navigation/technology/hero_slider5.svg';
+export { default as hero_slider6 } from './navigation/technology/hero_slider6.svg';
+export { default as hero_slider7 } from './navigation/technology/hero_slider7.svg';
+export { default as hero_slider8 } from './navigation/technology/hero_slider8.svg';
+export { default as hero_slider9 } from './navigation/technology/hero_slider9.svg';
+export { default as hero_slider10 } from './navigation/technology/hero_slider10.svg';
+export { default as hero_slider11 } from './navigation/technology/hero_slider11.svg';
+export { default as hero_slider12 } from './navigation/technology/hero_slider12.svg';
+
 export * from './heroSection';
 export * from './ourClient';
 export * from './navigation';

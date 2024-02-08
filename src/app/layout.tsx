@@ -23,7 +23,7 @@ export default function RootLayout({
         <meta name='theme-color' content={COLORS.primary} />
         <link rel='icon' type='image/ico' sizes='32x32' href='/favicon.ico' />
       </Head>
-      <body className='font-primary'>{children}</body>
+      <body className='font-primary bg-[#000]'>{children}</body>
     </html>
   );
 }
