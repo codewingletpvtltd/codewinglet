@@ -1,73 +1,152 @@
+import Image from 'next/image';
 import {
-  AboutUsBottomRightSVG,
-  AboutUsLeftSVG,
-  CompletedProjectSVG,
-  CompletionRateSVG,
-  CustomersSVG,
-  ExperienceSVG,
+  AboutUsBoxIcon,
+  about1,
+  about2,
+  about3,
+  rating,
 } from '@codewinglet/assets/AboutUs';
 import { SectionHeader, Typography } from '@codewinglet/components';
-import AboutUsCard from './components/AboutUsCard';
 
 const AboutUs = () => (
-  <section className='py-[62px] lg:py-[83px] xl:py-[132px] relative'>
-    <AboutUsLeftSVG className='absolute right-[40px] top-[23px] h-[14.2px] w-[14.2px] lg:hidden 2xl:block 2xl:h-[24px] 2xl:w-[24px] 2xl:right-[revert] 2xl:left-[116px] 2xl:top-[345px]' />
-    <AboutUsBottomRightSVG className='absolute bottom-[46px] right-[20px] lg:hidden 2xl:block 2xl:right-[90px] 2xl:top-[327px] 2xl:h-[87px] 2xl:w-[87px]' />
-    <section className='max-w-screen-xl mx-auto px-[20px] xl:p-0 lg:px-[36px] lg:flex lg:gap-[20px] xl:gap-[30px] 2xl:gap-[35px]'>
-      <div className='grid grid-cols-2  lg:min-w-[466px] xl:min-w-[541px] relative gap-[19px] [&>.aboutUsCard:nth-child(2)]:relative [&>.aboutUsCard:nth-child(2n)]:top-[15px] lg:[&>.aboutUsCard:nth-child(2n)]:top-[20px] md:max-w-[466px] md:mx-auto 2xl:min-w-[618px] 2xl:gap-[30px]'>
-        <AboutUsCard
-          icon={<ExperienceSVG />}
-          number={7}
-          text='Year Of Experience'
-          borderClassName='bg-[#3F78E0]'
-        />
-        <AboutUsCard
-          icon={<CustomersSVG />}
-          number={53}
-          text='Happy Customers'
-          borderClassName='bg-[#D95D37]'
-        />
-        <AboutUsCard
-          icon={<CompletionRateSVG />}
-          number={100}
-          numberSuffix='%'
-          text='Completion Rate'
-          borderClassName='bg-[#11AF00]'
-        />
-        <AboutUsCard
-          icon={<CompletedProjectSVG />}
-          number={150}
-          text='Completed Project'
-          borderClassName='bg-[#5E5FDC]'
-        />
-      </div>
-      <div className='mt-[45px] lg:m-0 2xl:mt-[86px]'>
-        <SectionHeader
-          title={
-            <>
-              <strong className='font-[800]'>About</strong> Us
-            </>
-          }
-          description='Personalized Application Development & IT Solution Providing Hub.'
-          headingClassName='lg:!text-[32px] xl:!text-[50px]'
-          descriptionClassName='font-500'
-        />
-        <Typography
-          variant='subtitle2'
-          className='!text-lightBlack py-[20px] lg:!text-[18px] xl:py-[30px]'
-        >
-          Codewinglet Private Limited excels as a globally recognized,
-          award-winner software and IT consulting firm, offering digitally
-          transforming solution since long.
-          <br />
-          <br />
-          Our speciality lies in providing expert tech solutions, built on deep
-          industry insights and collaboration. We boost client growth by
-          leveraging our innovative ecosystem to facilitate IT knowledge
-          transfers, thereby fostering consistent advancement.
-        </Typography>
-        {/* TODO_1.1 */}
-        {/* <Button>Read More</Button> */}
+  <section className='py-20 bg-[#000]'>
+    <section className='max-w-[1410px] w-full px-[15px] mx-auto'>
+      <SectionHeader
+        title={<>About us</>}
+        description={<>"We are more than digital agency”</>}
+        headingClassName='text-[22px] text-white'
+        descriptionClassName=' mt-[9px] text-white'
+      />
+
+      <div className='flex gap-5 mt-12'>
+        <div className='w-[70%] pr-[60px]'>
+          <Typography
+            variant='subtitle2'
+            className='pb-[20px] !text-[22px] font-300 leading-[40px]  text-white'
+          >
+            Codewinglet Private Limited excels as a globally recognized,
+            award-winner software and IT consulting firm, offering digitally
+            transforming solution since long.
+          </Typography>
+          <Typography
+            variant='subtitle2'
+            className='!text-[22px] font-300 leading-[40px] text-white pb-[20px]'
+          >
+            Our speciality lies in providing expert tech solutions, built on
+            deep industry insights and collaboration. We boost client growth by
+            leveraging our innovative ecosystem to facilitate IT knowledge
+            transfers, thereby fostering consistent advancement.
+          </Typography>
+
+          <div className='flex justify-between items-center'>
+            <ul className='mt-[60px]'>
+              <li className='relative mb-[30px]'>
+                <h5 className='text-[30px] font-600 text-white flex item-center'>
+                  250+
+                </h5>
+                <p className='text-[18px] font-300 text-white'>
+                  Successful Projects
+                </p>
+              </li>
+              <li className='relative mb-[30px]'>
+                <h5 className='text-[30px] font-600 text-white flex item-center'>
+                  10+
+                </h5>
+                <p className='text-[18px] font-300 text-white'>
+                  Year’s in industry
+                </p>
+              </li>
+              <li className='relative mb-[30px]'>
+                <h5 className='text-[30px] font-600 text-white flex item-center'>
+                  100%
+                </h5>
+                <p className='text-[18px] font-300 text-white'>
+                  {' '}
+                  Client Satisfaction
+                </p>
+              </li>
+              <li className='relative mb-[30px]'>
+                <h5 className='text-[30px] font-600 text-white flex item-center'>
+                  5 <Image src={rating} alt='rating' className='ml-[8px]' />
+                </h5>
+                <p className='text-[18px] font-300 text-white'>
+                  Upwork Ratings
+                </p>
+              </li>
+            </ul>
+            <div className='w-[408px] bg-[#131315] p-[18px] mb-10'>
+              <div className='w-full overflow-hidden'>
+                <Image
+                  className='w-full object-cover object-center transition-transform duration-[0.5s] hover:scale-110'
+                  src={about3}
+                  alt='about'
+                />
+              </div>
+              <div className='flex justify-between items-baseline mt-[10px]'>
+                <h5 className='text-[25px] font-400 text-white'>
+                  XtendR for extended reach of robots
+                </h5>
+                <Image
+                  className='w-[5%] '
+                  src={AboutUsBoxIcon}
+                  alt='AboutUs Box Icon'
+                />
+              </div>
+              <p className='text-white text-[18px] font-200 m-0'>
+                A plug produce solution for cobot applications demanding
+                extended operational reach.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className='w-[30%]'>
+          <div className='bg-[#131315] p-[18px] mb-10'>
+            <div className='w-full overflow-hidden'>
+              <Image
+                className='w-full object-cover object-center transition-transform duration-[0.5s] hover:scale-110'
+                src={about1}
+                alt='about'
+              />
+            </div>
+            <div className='flex justify-between items-baseline mt-[10px]'>
+              <h5 className='text-[25px] font-400 text-white'>
+                XtendR for extended reach of robots
+              </h5>
+              <Image
+                className='w-[5%] '
+                src={AboutUsBoxIcon}
+                alt='AboutUs Box Icon'
+              />
+            </div>
+            <p className='text-white text-[18px] font-200 m-0'>
+              A plug produce solution for cobot applications demanding extended
+              operational reach.
+            </p>
+          </div>
+          <div className=' bg-[#131315] p-[18px] mb-10'>
+            <div className='w-full overflow-hidden'>
+              <Image
+                className='w-full object-cover object-center transition-transform duration-[0.5s] hover:scale-110'
+                src={about2}
+                alt='about'
+              />
+            </div>
+            <div className='flex justify-between items-baseline mt-[10px]'>
+              <h5 className='text-[25px] font-400 text-white'>
+                XtendR for extended reach of robots
+              </h5>
+              <Image
+                className='w-[5%] '
+                src={AboutUsBoxIcon}
+                alt='AboutUs Box Icon'
+              />
+            </div>
+            <p className='text-white text-[18px] font-200 m-0'>
+              A plug produce solution for cobot applications demanding extended
+              operational reach.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   </section>

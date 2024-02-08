@@ -1,6 +1,5 @@
-export { default as ExperienceSVG } from './ExperienceSVG';
-export { default as CustomersSVG } from './CustomersSVG';
-export { default as CompletionRateSVG } from './CompletionRateSVG';
-export { default as CompletedProjectSVG } from './CompletedProjectSVG';
-export { default as AboutUsBottomRightSVG } from './AboutUsBottomRightSVG';
-export { default as AboutUsLeftSVG } from './AboutUsLeftSVG';
+export { default as AboutUsBoxIcon } from './about_icon.svg';
+export { default as rating } from './rating.svg';
+export { default as about1 } from './about_1.png';
+export { default as about2 } from './about_2.png';
+export { default as about3 } from './about_3.png';
