@@ -1,6 +1,5 @@
 import { SectionHeader } from '@codewinglet/components';
 import { getClassNames } from '@codewinglet/utils';
-import { BackgroundArc } from '@codewinglet/assets';
 import { getStrapiMediaFullURL } from '@codewinglet/helper';
 import { ServiceProps } from './types';
 import Card from './components/Card';
@@ -20,7 +19,6 @@ const Services: React.FC<ServiceProps> = ({ services, technologyName }) => (
       descriptionClassName='text-center'
       descriptionTextWrap
     />
-    <BackgroundArc className='hidden md:block md:absolute md:top-[50px] md:left-3 lg:h-[89px] lg:w-[89px] xl:left-[-50px] 2xl:left-[-200px]' />
     <div
       className={getClassNames(
         'bg-white grid grid-flow-rows md:grid-cols-2 lg:grid-cols-3 mt-[34px] mb-[50px] gap-[27px] md:gap-0',

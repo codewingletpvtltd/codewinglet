@@ -1,68 +1,67 @@
 import Image from 'next/image';
 import { SectionHeader, Typography } from '@codewinglet/components';
 import {
-  indus_01,
-  indus_02,
-  indus_03,
-  indus_04,
-  indus_05,
-  indus_06,
-  indus_07,
-  indus_08,
-  indus_09,
-  indus_10,
-  indus_11,
-  indus_12,
+  realEstate,
+  travel,
+  healthcare,
+  eCommerce,
+  edTech,
+  crm,
+  finance,
+  social,
+  food,
+  fitness,
+  shopping,
+  event,
 } from '@codewinglet/assets';
 
 const INDUCARD = [
   {
-    image: indus_01,
+    image: realEstate,
     title: 'Real Estate',
   },
   {
-    image: indus_02,
+    image: travel,
     title: 'Tour & Travel',
   },
   {
-    image: indus_03,
+    image: healthcare,
     title: 'Healthcare',
   },
   {
-    image: indus_04,
+    image: eCommerce,
     title: 'E-commerce',
   },
   {
-    image: indus_05,
+    image: edTech,
     title: 'Ed-tech',
   },
   {
-    image: indus_06,
+    image: crm,
     title: 'CRM-ERM',
   },
   {
-    image: indus_07,
+    image: finance,
     title: 'Finance',
   },
   {
-    image: indus_08,
+    image: social,
     title: 'Social Networking',
   },
-
   {
-    image: indus_09,
+    image: food,
     title: 'Food & Delivery',
   },
   {
-    image: indus_10,
+    image: fitness,
     title: 'Health & Fitness',
   },
   {
-    image: indus_11,
+    image: shopping,
     title: 'Shopping',
   },
   {
-    image: indus_12,
+    image: event,
     title: 'Event & Ticket',
   },
 ];
@@ -86,10 +85,7 @@ const ContactUs = () => (
           <>
             <div>
               <Image src={card.image} alt='Menu Icon' className='w-full' />
-              <Typography
-                variant='subtitle2'
-                className='text-black !text-[20px] font-400 mt-3'
-              >
+              <Typography variant='h6' className='text-black mt-3'>
                 {card.title}
               </Typography>
             </div>

@@ -1,9 +1,7 @@
-import { BackgroundDonut } from '@codewinglet/assets';
 import { BusinessModelTab, SectionHeader } from '@codewinglet/components';
 
 const BusinessModel = () => (
   <div className='max-w-screen-xl lg:mx-auto relative'>
-    <BackgroundDonut className='invisible xl:visible absolute xl:top-[20%] 2xl:top-[30%] xl:left-[-50px] 2xl:left-[-280px] 2xl:h-[114px] 2xl:w-[114px]' />
     <div className='mx-[20px] my-[50px] md:my-[80px] md:mx-[38px]'>
       <SectionHeader
         title={

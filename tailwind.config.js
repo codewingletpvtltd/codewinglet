@@ -104,19 +104,12 @@ module.exports = {
       colors: {
         white: '#FFFFFF',
         paleWhite: '#F8FCFF',
-        primary: '#0278BE',
-        secondary: '#02457C',
-        black: '#141414',
+        primary: '#141414',
+        secondary: '#f9f9f9',
         lightBlack: '#506B82',
-        gray: '#CDCCD2',
-        lightGray: '#F3EFF3',
+        lightGray: '#b8bbc6',
         error: '#F44336',
         aqua: '#CAD5DF',
-        lightOrange: '#FEF2EF',
-        culturedWhite: '#F4F5F9',
-        lightGreen: '#ECF8F0',
-        aliceBlue: '#F8FCFF',
-        sky: '#ABE2FF',
         lightBlue: '#F4FAFF',
         darkBlue: '#141F6A',
         successBg: 'rgb(237, 247, 237)',
@@ -149,25 +142,25 @@ module.exports = {
       h1: [
         '55px',
         {
-          fontWeight: 800,
+          fontWeight: 300,
         },
       ],
       h2: [
-        '50px',
+        '40px',
         {
-          fontWeight: 800,
+          fontWeight: 300,
         },
       ],
       h3: [
-        '40px',
+        '30px',
         {
-          fontWeight: 800,
+          fontWeight: 600,
         },
       ],
       h4: [
         '25px',
         {
-          fontWeight: 800,
+          fontWeight: 400,
         },
       ],
       h5: [
@@ -177,33 +170,33 @@ module.exports = {
         },
       ],
       h6: [
-        '16px',
+        '20px',
         {
           fontWeight: 400,
         },
       ],
       body1: [
-        '20px',
+        '22px',
         {
-          fontWeight: 500,
+          fontWeight: 300,
         },
       ],
       body2: [
         '18px',
         {
-          fontWeight: 500,
+          fontWeight: 300,
         },
       ],
       subtitle1: [
         '16px',
         {
-          fontWeight: 400,
+          fontWeight: 300,
         },
       ],
       subtitle2: [
-        '14px',
+        '15px',
         {
-          fontWeight: 400,
+          fontWeight: 300,
         },
       ],
     },

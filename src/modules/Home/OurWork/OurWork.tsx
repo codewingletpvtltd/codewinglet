@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import { memo } from 'react';
-import SectionHeader from '../../../components/SectionHeader/SectionHeader';
-import { portfolio, btnArrow } from './data';
+import { btnArrow } from '@codewinglet/assets';
+import { SectionHeader, Typography } from '@codewinglet/components';
+import { portfolio } from './data';
 
 const OurWork = () => (
   <section className='py-20 bg-white'>
@@ -11,8 +12,8 @@ const OurWork = () => (
         description={
           <>"Cutting-Edge Technologies We Work With for Optimal Results”</>
         }
-        headingClassName='text-[22px]'
-        descriptionClassName=' mt-[9px] '
+        headingClassName=''
+        descriptionClassName=''
       />
       <div className='relative'>
         <div className='grid grid-cols-3 gap-10 pt-12'>
@@ -35,13 +36,13 @@ const OurWork = () => (
                 </a>
               </div>
               <div className='project-head'>
-                <h4 className='text-[15px] font-300 mt-[5px] mt-5'>
+                <Typography variant='subtitle2' className=' mt-[5px] mt-5'>
                   {data.subtitle}
-                </h4>
-                <h3 className='text-black font-300 text-[28px] mb-[10px]'>
+                </Typography>
+                <h3 className='text-primary font-300 text-[28px] mb-[10px]'>
                   {data.title}
                 </h3>
-                <p className='text-black text-[16px] font-300 mb-0'>
+                <p className='text-primary text-[16px] font-300 mb-0'>
                   {data.description}
                 </p>
               </div>

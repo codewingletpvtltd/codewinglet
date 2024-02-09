@@ -1,9 +1,8 @@
 import Image from 'next/image';
 import {
-  AboutUsBoxIcon,
-  about1,
-  about2,
-  about3,
+  pioneering,
+  crafting,
+  building,
   rating,
 } from '@codewinglet/assets/AboutUs';
 import { SectionHeader, Typography } from '@codewinglet/components';
@@ -22,23 +21,23 @@ const AboutUs = () => (
       <SectionHeader
         title={<>About us</>}
         description={<>"We are more than digital agency”</>}
-        headingClassName='text-[22px] text-white'
-        descriptionClassName=' mt-[9px] text-white'
+        headingClassName='text-white'
+        descriptionClassName='text-white'
       />
 
       <div className='flex gap-5 mt-12'>
         <div className='w-[70%] pr-[60px]'>
           <Typography
-            variant='subtitle2'
-            className='pb-[20px] !text-[22px] font-300 leading-[40px]  text-white'
+            variant='body1'
+            className='pb-[20px] leading-[40px]  text-white'
           >
             Codewinglet Private Limited excels as a globally recognized,
             award-winner software and IT consulting firm, offering digitally
             transforming solution since long.
           </Typography>
           <Typography
-            variant='subtitle2'
-            className='!text-[22px] font-300 leading-[40px] text-white pb-[20px]'
+            variant='body1'
+            className='leading-[40px] text-white pb-[20px]'
           >
             Our speciality lies in providing expert tech solutions, built on
             deep industry insights and collaboration. We boost client growth by
@@ -49,61 +48,67 @@ const AboutUs = () => (
           <div className='flex justify-between items-center'>
             <ul className='mt-[60px]'>
               <li className='relative mb-[30px]'>
-                <h5 className='text-[30px] font-600 text-white flex item-center'>
+                <Typography
+                  variant='h3'
+                  className=' text-white flex item-center'
+                >
                   250+
-                </h5>
-                <p className='text-[18px] font-300 text-white'>
+                </Typography>
+                <Typography variant='body2' className=' text-white'>
                   Successful Projects
-                </p>
+                </Typography>
               </li>
               <li className='relative mb-[30px]'>
-                <h5 className='text-[30px] font-600 text-white flex item-center'>
+                <Typography
+                  variant='h3'
+                  className=' text-white flex item-center'
+                >
                   10+
-                </h5>
-                <p className='text-[18px] font-300 text-white'>
+                </Typography>
+                <Typography variant='body2' className=' text-white'>
                   Year’s in industry
-                </p>
+                </Typography>
               </li>
               <li className='relative mb-[30px]'>
-                <h5 className='text-[30px] font-600 text-white flex item-center'>
+                <Typography
+                  variant='h3'
+                  className=' text-white flex item-center'
+                >
                   100%
-                </h5>
-                <p className='text-[18px] font-300 text-white'>
-                  {' '}
+                </Typography>
+                <Typography variant='body2' className=' text-white'>
                   Client Satisfaction
-                </p>
+                </Typography>
               </li>
               <li className='relative mb-[30px]'>
-                <h5 className='text-[30px] font-600 text-white flex item-center'>
+                <Typography
+                  variant='h3'
+                  className=' text-white flex item-center'
+                >
                   5 <Image src={rating} alt='rating' className='ml-[8px]' />
-                </h5>
-                <p className='text-[18px] font-300 text-white'>
+                </Typography>
+                <Typography variant='body2' className=' text-white'>
                   Upwork Ratings
-                </p>
+                </Typography>
               </li>
             </ul>
             <div className='w-[408px] bg-[#131315] p-[18px] mb-10'>
               <div className='w-full overflow-hidden'>
                 <Image
                   className='w-full object-cover object-center transition-transform duration-[0.5s] hover:scale-110'
-                  src={about3}
-                  alt='about'
+                  src={building}
+                  alt='building'
                 />
               </div>
               <div className='flex justify-between items-baseline mt-[10px]'>
-                <h5 className='text-[25px] font-400 text-white'>
+                <Typography variant='h4' className='text-white'>
                   XtendR for extended reach of robots
-                </h5>
-                <Image
-                  className='w-[5%] '
-                  src={AboutUsBoxIcon}
-                  alt='AboutUs Box Icon'
-                />
+                </Typography>
               </div>
-              <p className='text-white text-[18px] font-200 m-0'>
+              <Typography variant='body2' className='text-white m-0'>
                 A plug produce solution for cobot applications demanding
                 extended operational reach.
-              </p>
+              </Typography>
             </div>
           </div>
         </div>
@@ -112,47 +117,37 @@ const AboutUs = () => (
             <div className='w-full overflow-hidden'>
               <Image
                 className='w-full object-cover object-center transition-transform duration-[0.5s] hover:scale-110'
-                src={about1}
-                alt='about'
+                src={pioneering}
+                alt='pioneering'
               />
             </div>
             <div className='flex justify-between items-baseline mt-[10px]'>
-              <h5 className='text-[25px] font-400 text-white'>
+              <Typography variant='h4' className='text-white'>
                 XtendR for extended reach of robots
-              </h5>
-              <Image
-                className='w-[5%] '
-                src={AboutUsBoxIcon}
-                alt='AboutUs Box Icon'
-              />
+              </Typography>
             </div>
-            <p className='text-white text-[18px] font-200 m-0'>
+            <Typography variant='body2' className='text-white m-0'>
               A plug produce solution for cobot applications demanding extended
               operational reach.
-            </p>
+            </Typography>
           </div>
           <div className=' bg-[#131315] p-[18px] mb-10'>
             <div className='w-full overflow-hidden'>
               <Image
                 className='w-full object-cover object-center transition-transform duration-[0.5s] hover:scale-110'
-                src={about2}
-                alt='about'
+                src={crafting}
+                alt='crafting'
               />
             </div>
             <div className='flex justify-between items-baseline mt-[10px]'>
-              <h5 className='text-[25px] font-400 text-white'>
+              <Typography variant='h4' className='text-white'>
                 XtendR for extended reach of robots
-              </h5>
-              <Image
-                className='w-[5%] '
-                src={AboutUsBoxIcon}
-                alt='AboutUs Box Icon'
-              />
+              </Typography>
             </div>
-            <p className='text-white text-[18px] font-200 m-0'>
+            <Typography variant='body2' className='text-white m-0'>
               A plug produce solution for cobot applications demanding extended
               operational reach.
-            </p>
+            </Typography>
           </div>
         </div>
       </div>

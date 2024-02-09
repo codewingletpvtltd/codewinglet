@@ -1,34 +1,17 @@
 import {
   aboutUs,
-  automotive,
   beDev,
   customSoftwareDev,
-  education,
-  energy,
   feDev,
-  fintech,
-  food,
   frontend,
-  government,
-  healthCare,
-  industrial,
-  insurance,
-  legal,
   life,
-  logistics,
   maintenance,
-  media,
   mobileApp,
   multiTenatSystem,
-  news,
-  professionalServices,
   projectConsulting,
   qa,
   react,
-  realEstate,
-  sports,
   teamDev,
-  travel,
   uiComponent,
   uiux,
   webApp,
@@ -102,81 +85,6 @@ const services: ChildItemType = [
     path: 'hire-dedicated-team',
     label: 'Hire Dedicated Team and Developer',
     icon: teamDev,
-  },
-];
-const industriesMenu: ChildItemType = [
-  {
-    path: 'health-care',
-    icon: healthCare,
-    label: 'Heathcare',
-  },
-  {
-    icon: education,
-    label: 'Education',
-  },
-  {
-    icon: logistics,
-    label: 'Logistics',
-  },
-  {
-    icon: realEstate,
-    label: 'Real Estate',
-  },
-  {
-    icon: realEstate,
-    label: 'Real Estate',
-  },
-  {
-    icon: media,
-    label: 'Media & Entertainment',
-  },
-  {
-    icon: fintech,
-    label: 'FinTECH',
-  },
-  {
-    icon: insurance,
-    label: 'Insurance',
-  },
-  {
-    icon: automotive,
-    label: 'Automotive',
-  },
-  {
-    icon: travel,
-    label: 'Travel And Hospitality',
-  },
-  {
-    icon: food,
-    label: 'Food And Beverage',
-  },
-  {
-    icon: sports,
-    label: 'Entertainment/Sports',
-  },
-  {
-    icon: news,
-    label: 'News/Media',
-  },
-  {
-    icon: government,
-    label: 'Government',
-  },
-  {
-    icon: legal,
-    label: 'Legal',
-  },
-  {
-    icon: industrial,
-    label: 'Manufacturing/Industrial',
-  },
-  {
-    icon: energy,
-    label: 'Energy',
-  },
-  {
-    icon: professionalServices,
-    label: 'Professional Services',
   },
 ];
 

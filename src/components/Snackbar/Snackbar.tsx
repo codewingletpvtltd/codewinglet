@@ -35,7 +35,7 @@ export const SnackbarProvider: FC<SnacbarProviderProps> = ({ children }) => {
             {showIcon()}
             <Typography
               variant='subtitle1'
-              className='max-w-[200px] md:max-w-[500px] text-black'
+              className='max-w-[200px] md:max-w-[500px] text-primary'
             >
               {data.msg}
             </Typography>

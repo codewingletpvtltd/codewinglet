@@ -12,7 +12,10 @@ const MenuTrigger: FC<MenuTriggerProps> = ({
 }) =>
   hasChild ? (
     <span className='flex flex-row items-center cursor-pointer'>
-      <Typography variant='subtitle2' className='font-500 text-black uppercase'>
+      <Typography
+        variant='subtitle2'
+        className='font-500 text-primary uppercase'
+      >
         {label}
       </Typography>
       {showIcon && (
@@ -21,7 +24,10 @@ const MenuTrigger: FC<MenuTriggerProps> = ({
     </span>
   ) : (
     <Link href={href} className='flex flex-row items-center'>
-      <Typography variant='subtitle2' className='font-500 text-black uppercase'>
+      <Typography
+        variant='subtitle2'
+        className='font-500 text-primary uppercase'
+      >
         {label}
       </Typography>
       {showIcon && (
