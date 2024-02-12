@@ -39,16 +39,16 @@ const Footer = () => {
             </Typography>
           </div>
           <div className='px-[15px] w-full relative max-w-[25%] min-h-[1px] flex-[0_0_25%]'>
-            <Typography
-              variant='h5'
-              className='!text-[25px] !font-400 mb-[20px]'
-            >
+            <Typography variant='h4' className='mb-[20px]'>
               Services
             </Typography>
             <div>
               {technologyMenu.map((item) => (
                 <div key={item.id}>
-                  <Typography className='text-[16px] font-300 leading-[34px] mb-[5px] min-h-0'>
+                  <Typography
+                    variant='subtitle1'
+                    className='leading-[34px] mb-[5px] min-h-0'
+                  >
                     {/* <HighlightArrow color={COLORS.white} /> */}
                     <Link className='' href={item.path}>
                       {item.label}
@@ -59,16 +59,16 @@ const Footer = () => {
             </div>
           </div>
           <div className='px-[15px] w-full relative max-w-[25%] min-h-[1px] flex-[0_0_25%]'>
-            <Typography
-              variant='h5'
-              className='!text-[25px] !font-400 mb-[20px]'
-            >
+            <Typography variant='h4' className=' mb-[20px]'>
               Discover
             </Typography>
             <div>
               {serviceMenu.map((item) => (
                 <div key={item.id}>
-                  <Typography className='text-[16px] font-300 leading-[34px] mb-[5px] min-h-0'>
+                  <Typography
+                    variant='subtitle1'
+                    className=' leading-[34px] mb-[5px] min-h-0'
+                  >
                     <Link className='' href={item.path}>
                       {item.label}
                     </Link>
@@ -78,24 +78,30 @@ const Footer = () => {
             </div>
           </div>
           <div className='px-[15px] w-full relative max-w-[25%] min-h-[1px] flex-[0_0_25%]'>
-            <Typography
-              variant='h5'
-              className='!text-[25px] !font-400 mb-[20px]'
-            >
+            <Typography variant='h4' className=' mb-[20px]'>
               Get in touch
             </Typography>
             <div>
-              <Typography className='text-[16px] font-300 leading-[34px] mb-[5px] min-h-0'>
+              <Typography
+                variant='subtitle1'
+                className='leading-[34px] mb-[5px] min-h-0'
+              >
                 <Link href='tel:+918320111741'>+91 83201 11741</Link>
               </Typography>
 
-              <Typography className='text-[16px] font-300 leading-[34px] mb-[5px] min-h-0'>
+              <Typography
+                variant='subtitle1'
+                className=' leading-[34px] mb-[5px] min-h-0'
+              >
                 <Link href='mailto:jobs@codewinglet.com'>
                   jobs@codewinglet.com
                 </Link>
               </Typography>
 
-              <Typography className='text-[16px] font-300 leading-[34px] mb-[5px] min-h-0 !leading-normal'>
+              <Typography
+                variant='subtitle1'
+                className='leading-[34px] mb-[5px] min-h-0 !leading-normal'
+              >
                 A901-905, Vivanta Icon Opp. Shell Petrol Pump, Adajan, Surat,
                 Gujarat 395009.
               </Typography>
@@ -138,14 +144,14 @@ const Footer = () => {
               <TwitterLogo />
             </Link>
           </div>
-          <Typography className='text-[16px] font-300'>
+          <Typography variant='subtitle1'>
             © {new Date().getFullYear()} All rights reserved. Codewinglet
             Private Limited
           </Typography>
           <ul className='flex gap-7'>
             {companyTermsMenu.map((item) => (
               <li key={item.id}>
-                <Typography className='text-[16px] font-300'>
+                <Typography variant='subtitle1'>
                   <Link href={item.path}>{item.label}</Link>
                 </Typography>
               </li>

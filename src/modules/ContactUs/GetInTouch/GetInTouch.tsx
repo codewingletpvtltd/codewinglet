@@ -1,5 +1,4 @@
 'use client';
-import { BackgroundDonutShadow } from '@codewinglet/assets';
 import SectionHeader from '../../../components/SectionHeader/SectionHeader';
 import { Form, Info } from './components';
 import { info } from './constants';
@@ -31,7 +30,6 @@ const GetInTouch = () => {
         onSubmit={onSubmit}
         isDisabled={isLoading}
       />
-      <BackgroundDonutShadow className='absolute hidden bottom-[200px] 2xl:block 2xl:left-[100px] 2xl:w-[101px] 2xl:h-[101px]' />
     </div>
   );
 };

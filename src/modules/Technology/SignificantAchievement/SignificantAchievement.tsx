@@ -1,6 +1,6 @@
 'use client';
 
-import { BackgroundDonutShadow, BgWave, StarIcon } from '@codewinglet/assets';
+import { BgWave, StarIcon } from '@codewinglet/assets';
 import { SectionHeader, Slider } from '@codewinglet/components';
 import { md } from '@codewinglet/constants/mediaQueryConst';
 import { useScreenSize } from '@codewinglet/hooks';
@@ -60,7 +60,6 @@ const SignificantAchievement: React.FC<SignificantAchievementProps> = ({
           ))}
         </Slider>
       </div>
-      <BackgroundDonutShadow className='absolute hidden bottom-[36px] left-[94px] w-[75px] h-[75px] xl:block xl:left-[8px] 2xl:left-[37px] 2xl:w-[101px] 2xl:h-[101px]' />
     </div>
   );
 };

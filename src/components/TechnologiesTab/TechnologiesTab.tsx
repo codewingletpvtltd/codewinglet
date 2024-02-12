@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import '../../modules/Home/Technologies/scss/technologies.css';
+import '../../modules/Home/OurServices/scss/technologies.css';
 
 interface AccordCompProps {
   title: string;
@@ -30,7 +30,7 @@ const Accordion: React.FC<AccordCompProps> = ({
       }`}
       onClick={() => handleChange(count)}
     >
-      <div className='w-7 flex justify-between relative text-black accord-head'>
+      <div className='w-7 flex justify-between relative text-primary accord-head'>
         <h3
           className={`${
             expanded == count ? '!text-white' : ''
@@ -41,7 +41,7 @@ const Accordion: React.FC<AccordCompProps> = ({
         <span
           className={`${
             expanded == count ? '!text-white text-[40px]' : ''
-          }  absolute text-[20px] text-black`}
+          }  absolute text-[20px] text-primary`}
         >
           {count}
         </span>

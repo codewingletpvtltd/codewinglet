@@ -1,10 +1,10 @@
 import {
-  portfolio1,
-  portfolio2,
-  portfolio3,
-  portfolio4,
-  portfolio5,
-  portfolio6,
+  digital,
+  identity,
+  electronic,
+  consumer,
+  market,
+  horizons,
 } from '@codewinglet/assets';
 
 export const portfolio = [
@@ -12,7 +12,7 @@ export const portfolio = [
     id: 1,
     subtitle: 'Service',
     title: 'Product Name',
-    image: portfolio1,
+    image: digital,
     button: 'View Project',
     description:
       'Heim: New digital identity to the electronic consumer market across the horizons of innovation',
@@ -21,7 +21,7 @@ export const portfolio = [
     id: 2,
     subtitle: 'Service',
     title: 'Product Name',
-    image: portfolio2,
+    image: identity,
     button: 'View Project',
     description:
       'Heim: New digital identity to the electronic consumer market across the horizons of innovation',
@@ -30,7 +30,7 @@ export const portfolio = [
     id: 3,
     subtitle: 'Service',
     title: 'Product Name',
-    image: portfolio3,
+    image: electronic,
     button: 'View Project',
     description:
       'Heim: New digital identity to the electronic consumer market across the horizons of innovation',
@@ -39,7 +39,7 @@ export const portfolio = [
     id: 4,
     subtitle: 'Service',
     title: 'Product Name',
-    image: portfolio4,
+    image: consumer,
     button: 'View Project',
     description:
       'Heim: New digital identity to the electronic consumer market across the horizons of innovation',
@@ -48,7 +48,7 @@ export const portfolio = [
     id: 5,
     subtitle: 'Service',
     title: 'Product Name',
-    image: portfolio5,
+    image: market,
     button: 'View Project',
     description:
       'Heim: New digital identity to the electronic consumer market across the horizons of innovation',
@@ -57,11 +57,9 @@ export const portfolio = [
     id: 6,
     subtitle: 'Service',
     title: 'Product Name',
-    image: portfolio6,
+    image: horizons,
     button: 'View Project',
     description:
       'Heim: New digital identity to the electronic consumer market across the horizons of innovation',
   },
 ];
-
-export { btnArrow } from '@codewinglet/assets';

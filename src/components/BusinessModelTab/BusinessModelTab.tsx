@@ -26,7 +26,7 @@ const BusinessModelTab = () => (
         key={`business-model-${index}`}
         className='md:mt-0'
       >
-        <div className='mb-[22px] mt-[28px] md:mb-[28px] md:mt-0 text-black'>
+        <div className='mb-[22px] mt-[28px] md:mb-[28px] md:mt-0 text-primary'>
           <Typography
             variant='subtitle2'
             className='font-500 mt-[3px] md:text-[18px] text-lightBlack'
@@ -36,7 +36,7 @@ const BusinessModelTab = () => (
         </div>
         <Typography
           variant='h5'
-          className='font-600 md:text-[22px] text-black my-[10px]'
+          className='font-600 md:text-[22px] text-primary my-[10px]'
         >
           Key Benefits
         </Typography>

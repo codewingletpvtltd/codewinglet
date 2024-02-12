@@ -6,12 +6,11 @@ import {
   AccordionTrigger,
   SectionHeader,
 } from '@codewinglet/components';
-import { BackgroundCircle, LeftArrowsSVG } from '@codewinglet/assets';
+import { LeftArrowsSVG } from '@codewinglet/assets';
 import { FaqsProps } from './types';
 
 const Faqs: React.FC<FaqsProps> = ({ faqs }) => (
   <div className='bg-aliceBlue px-[20px] py-[50px] relative'>
-    <BackgroundCircle className='invisible absolute top-[80px] lg:visible xl:h-[100px] xl:w-[146px]' />
     <div className='max-w-screen-xl md:mx-[38px] xl:mx-auto'>
       <SectionHeader
         title={

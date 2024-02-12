@@ -33,7 +33,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           <div className='md:col-span-4 lg:col-span-5 lg:w-[70%]'>
             <Typography
               variant='h3'
-              className='inline !text-[22px] lg:!text-[28px] xl:!text-[35px] 2xl:!text-[40px] text-black'
+              className='inline !text-[22px] lg:!text-[28px] xl:!text-[35px] 2xl:!text-[40px] text-primary'
             >
               {title}
             </Typography>

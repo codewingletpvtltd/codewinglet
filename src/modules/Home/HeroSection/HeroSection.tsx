@@ -21,21 +21,19 @@ const HeroSection = () => (
 
     <div className='max-w-[1410px] px-[15px] mx-auto w-full m-auto'>
       <div className='px-[200px]'>
-        <Typography
-          variant='h2'
-          className='text-[55px] text-center font-500 text-white'
-        >
+        <Typography variant='h1' className=' text-center  text-white'>
           Your Premier Web, Mobile And Software development squad in{' '}
         </Typography>
 
         <TypeAnimation
+          variant='h1'
           sequence={sequence}
-          className='text-[55px] text-center font-500 text-white'
+          className='text-center text-white'
         />
 
         <Typography
           variant='body1'
-          className='text-center my-[41px] mb-[84px] !font-200 text-[22px] text-white'
+          className='text-center my-[41px] mb-[84px] text-white'
         >
           Do you have a concept for project? connect with codewinglet right away
           to secure a technologically advanced and cost effective development

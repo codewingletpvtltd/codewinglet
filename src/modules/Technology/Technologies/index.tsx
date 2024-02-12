@@ -1,4 +1,4 @@
-import { BackgroundCircle, StarsSVG } from '@codewinglet/assets';
+import { StarsSVG } from '@codewinglet/assets';
 import { SectionHeader, TechnologiesTab } from '@codewinglet/components';
 
 const Technologies = () => (
@@ -27,7 +27,6 @@ const Technologies = () => (
       </div>
     </section>
     <StarsSVG className='hidden 2xl:inline-block absolute top-[400px] left-[100px] h-[90px] w-[90px] ' />
-    <BackgroundCircle className='invisible absolute top-[100px] 2xl:visible xl:right-[100px] 2xl:w-[148px] 2xl:h-[103px]' />
   </section>
 );
 
