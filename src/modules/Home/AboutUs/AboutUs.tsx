@@ -9,8 +9,16 @@ import {
 import { SectionHeader, Typography } from '@codewinglet/components';
 
 const AboutUs = () => (
-  <section className='py-20 bg-[#000]'>
-    <section className='max-w-[1410px] w-full px-[15px] mx-auto'>
+  <section
+    className='py-20'
+    style={{
+      backgroundImage: `url(${require('./about-bg-boxline.png').default.src})`,
+      backgroundRepeat: 'no-repeat',
+      backgroundPositionX: 'left',
+      backgroundPositionY: 'bottom',
+    }}
+  >
+    <div className='max-w-[1410px] w-full px-[15px] mx-auto'>
       <SectionHeader
         title={<>About us</>}
         description={<>"We are more than digital agency”</>}
@@ -148,7 +156,7 @@ const AboutUs = () => (
           </div>
         </div>
       </div>
-    </section>
+    </div>
   </section>
 );
 

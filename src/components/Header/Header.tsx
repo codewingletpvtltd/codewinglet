@@ -20,7 +20,11 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
       id='header'
       className={getClassNames(
         'fixed h-[90px] flex items-center top-0 z-50 w-full',
-        showMenu ? 'bg-white' : isScroll ? 'bg-white shadow-lg' : 'bg-aliceBlue'
+        showMenu
+          ? 'bg-white'
+          : isScroll
+          ? 'bg-white shadow-lg'
+          : 'bg-transparent'
       )}
     >
       <div className='container'>
@@ -29,7 +33,7 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
             <Image
               src={Logo}
               alt='Codewinglet Private Limited Logo'
-              className='w-[191px] xl:w-[252px] cursor-pointer'
+              className='w-[191px] xl:w-[252px] cursor-pointer invert'
               onClick={() => router.push('/')}
               loading='eager'
             />

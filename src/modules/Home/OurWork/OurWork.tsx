@@ -4,7 +4,7 @@ import SectionHeader from '../../../components/SectionHeader/SectionHeader';
 import { portfolio, btnArrow } from './data';
 
 const OurWork = () => (
-  <section className='py-20 '>
+  <section className='py-20 bg-white'>
     <section className='max-w-[1410px] w-full px-[15px] mx-auto'>
       <SectionHeader
         title={<>Our Work</>}
