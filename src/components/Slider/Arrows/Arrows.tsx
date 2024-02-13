@@ -10,7 +10,7 @@ const Arrows: FC<ArrowProps> = ({
 }) => (
   <div
     className={getClassNames(
-      'flex flex-row items-center gap-[17px] absolute right-0 bottom-[3rem]',
+      'sm:flex flex-row items-center gap-[17px] sm:absolute hidden  right-0 bottom-[3rem]',
       arrowPosition.vertical
         ? verticalPosition[arrowPosition.vertical]
         : 'justify-end'

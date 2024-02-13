@@ -13,7 +13,7 @@ const Technologies = () => {
   };
 
   return (
-    <section className='py-20 bg-secondary'>
+    <section className='sm:py-20 py-10 bg-secondary'>
       <section className='max-w-[1410px] w-full px-[15px] mx-auto'>
         <SectionHeader
           title={<>Our Services</>}
@@ -25,7 +25,7 @@ const Technologies = () => {
         />
 
         <div
-          className='accord flex flex-row content-center items-center relative w-full gap-5 pt-[50px] [transition: all 200ms ease-in-out 50ms]'
+          className='accord flex flex-row content-center items-center relative w-full gap-5 sm:mt-12 mt-7 [transition: all 200ms ease-in-out 50ms]'
           style={{ opacity: 1 }}
         >
           {accordionData.map((data) => (

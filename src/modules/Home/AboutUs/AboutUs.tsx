@@ -29,7 +29,7 @@ const AboutUs = () => (
         <div className='w-[70%] pr-[60px]'>
           <Typography
             variant='body1'
-            className='pb-[20px] leading-[40px]  text-white'
+            className='pb-[20px] leading-[40px] text-white text-justify'
           >
             Codewinglet Private Limited excels as a globally recognized,
             award-winner software and IT consulting firm, offering digitally
@@ -37,7 +37,7 @@ const AboutUs = () => (
           </Typography>
           <Typography
             variant='body1'
-            className='leading-[40px] text-white pb-[20px]'
+            className='leading-[40px] text-white pb-[20px] text-justify'
           >
             Our speciality lies in providing expert tech solutions, built on
             deep industry insights and collaboration. We boost client growth by
@@ -101,11 +101,11 @@ const AboutUs = () => (
                 />
               </div>
               <div className='flex justify-between items-baseline mt-[10px]'>
-                <Typography variant='h4' className='text-white'>
+                <Typography variant='h4' className='text-white leading-[1.2]'>
                   XtendR for extended reach of robots
                 </Typography>
               </div>
-              <Typography variant='body2' className='text-white m-0'>
+              <Typography variant='body2' className='text-white mt-6'>
                 A plug produce solution for cobot applications demanding
                 extended operational reach.
               </Typography>
@@ -122,11 +122,11 @@ const AboutUs = () => (
               />
             </div>
             <div className='flex justify-between items-baseline mt-[10px]'>
-              <Typography variant='h4' className='text-white'>
+              <Typography variant='h4' className='text-white leading-[1.2]'>
                 XtendR for extended reach of robots
               </Typography>
             </div>
-            <Typography variant='body2' className='text-white m-0'>
+            <Typography variant='body2' className='text-white mt-6'>
               A plug produce solution for cobot applications demanding extended
               operational reach.
             </Typography>
@@ -140,11 +140,11 @@ const AboutUs = () => (
               />
             </div>
             <div className='flex justify-between items-baseline mt-[10px]'>
-              <Typography variant='h4' className='text-white'>
+              <Typography variant='h4' className='text-white leading-[1.2]'>
                 XtendR for extended reach of robots
               </Typography>
             </div>
-            <Typography variant='body2' className='text-white m-0'>
+            <Typography variant='body2' className='text-white mt-6'>
               A plug produce solution for cobot applications demanding extended
               operational reach.
             </Typography>

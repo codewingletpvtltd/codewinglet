@@ -1,11 +1,13 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { memo } from 'react';
 import { btnArrow } from '@codewinglet/assets';
-import { SectionHeader, Typography } from '@codewinglet/components';
+import { Button, SectionHeader, Typography } from '@codewinglet/components';
+
 import { portfolio } from './data';
 
 const OurWork = () => (
-  <section className='py-20 bg-white'>
+  <section className='sm:py-20 py-10 bg-white'>
     <section className='max-w-[1410px] w-full px-[15px] mx-auto'>
       <SectionHeader
         title={<>Our Work</>}
@@ -16,14 +18,14 @@ const OurWork = () => (
         descriptionClassName=''
       />
       <div className='relative'>
-        <div className='grid grid-cols-3 gap-10 pt-12'>
+        <div className='grid sm:grid-cols-3 grid-cols-1 sm:gap-10 gap-5 sm:mt-12 mt-7'>
           {portfolio.map((data, index) => (
             <div key={`portfolio-${data.id}-${index}`} className='port-1'>
               <div className='relative w-full overflow-hidden m-auto group'>
                 <a href='#' target='_blank'>
                   <div className='bg-[#00000099] absolute w-full h-full left-0 top-0 bottom-0 right-0 opacity-0 z-[1] group-hover:opacity-[1]'></div>
                   <Image
-                    className='w-full transition-transform duration-[0.5s] group-hover:scale-110'
+                    className='w-full transition-transform duration-500 group-hover:scale-110'
                     src={data.image}
                     alt='portfolio image'
                   />
@@ -36,19 +38,32 @@ const OurWork = () => (
                 </a>
               </div>
               <div className='project-head'>
-                <Typography variant='subtitle2' className=' mt-[5px] mt-5'>
+                <Typography
+                  variant='subtitle2'
+                  className=' sm:mt-[5px] mt-[10px]'
+                >
                   {data.subtitle}
                 </Typography>
-                <h3 className='text-primary font-300 text-[28px] mb-[10px]'>
+                <h3 className='text-primary font-300 sm:text-[28px] text-[18px] sm:mb-2 mb-1'>
                   {data.title}
                 </h3>
-                <p className='text-primary text-[16px] font-300 mb-0'>
+                <p className='text-primary sm:text-[16px] text-[14px] font-300 mb-0'>
                   {data.description}
                 </p>
               </div>
             </div>
           ))}
         </div>
+        <Button className='w-full text-black mt-[30px] sm:hidden block'>
+          <Link
+            href='#'
+            rel='noopener noreferrer'
+            target='_blank'
+            className='text-black'
+          >
+            View All
+          </Link>
+        </Button>
       </div>
     </section>
   </section>

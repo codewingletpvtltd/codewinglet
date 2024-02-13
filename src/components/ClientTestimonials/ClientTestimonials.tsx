@@ -7,22 +7,22 @@ import { slickSetting } from './config';
 import ClientDetails from './components/ClientDetails';
 
 const ClientTestimonials = () => (
-  <div className=' py-20'>
+  <div className='sm:py-20 py-10'>
     <div className='max-w-[1410px] w-full px-[15px] mx-auto'>
       <SectionHeader
         title={<>Testimonials</>}
         description={
           <>
             We let our work prove beyond expectations for a blissful client
-            experience. <br /> Here’s a glimpse into what Our Clients have to
-            say about us.
+            experience. Here’s a glimpse into what Our Clients have to say about
+            us.
           </>
         }
         headingClassName='text-[22px] text-white'
         descriptionClassName=' mt-[9px] text-white !font-300'
       />
       <div
-        className=' mt-[50px] h-[481px] relative'
+        className=' mt-[50px] sm:h-[481px] h-auto relative'
         style={{
           backgroundImage: `url(${
             require('./testimonial_img.svg').default.src
@@ -31,22 +31,19 @@ const ClientTestimonials = () => (
           backgroundPositionX: 'right',
         }}
       >
-        <StartQuote />
+        <StartQuote className='sm:block hidden' />
         <div className='relative'>
           <Slider
-            className='ml-[120px] '
+            className='sm:ml-[120px] ml-0'
             settings={slickSetting}
             arrowPosition={{ horizontal: 'bottom', vertical: 'left' }}
           >
             {testimonials.map((data, index) => (
               <div
                 key={`testimonials-${data.id}-${index}`}
-                className='bg-[#1c1c1c] py-[42px] px-[57px] !w-[754px] mt-[170px]'
+                className='bg-[#1c1c1c] sm:py-[42px] sm:px-[57px] p-6 sm:!w-[754px] w-full sm:h-auto h-[335px] sm:mt-[170px] mt-[350px]'
               >
-                <Typography
-                  variant='h5'
-                  className='!text-[22px] font-300 text-white'
-                >
+                <Typography className='sm:text-body1 text-subtitle2 font-300 text-white'>
                   {data.comment}
                 </Typography>
                 <ClientDetails
@@ -57,7 +54,7 @@ const ClientTestimonials = () => (
             ))}
           </Slider>
         </div>
-        <ClosingQuote />
+        <ClosingQuote className='sm:block hidden' />
       </div>
     </div>
   </div>

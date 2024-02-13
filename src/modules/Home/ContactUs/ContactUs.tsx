@@ -3,15 +3,15 @@ import { SectionHeader, Typography } from '@codewinglet/components';
 const ContactUs = () => (
   <section className='py-20 bg-secondary'>
     <div className='max-w-[1410px] w-full px-[15px] mx-auto'>
-      <SectionHeader
-        title={<>Contact Us</>}
-        description={<>Awesomeness awaits! Connect with our experts.</>}
-      />
       <div className='flex mt-12'>
         <div className='w-[55%]'>
+          <SectionHeader
+            title={<>Contact Us</>}
+            description={<>Awesomeness awaits! Connect with our experts.</>}
+          />
           <Typography
             variant='body1'
-            className='!text-[20px] font-300 mb-10 text-primary'
+            className='!text-[20px] font-300 text-primary mt-[50px] mb-[38px] text-justify'
           >
             If you are looking for a way to optimize your business processes and
             operations with data and analytics, talk to our business analytics
@@ -20,7 +20,7 @@ const ContactUs = () => (
           <iframe
             src='https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=codewinglet&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed'
             id='gmap_canvas'
-            className='w-[100%] h-[336px] md:h-[400px] lg:h-[470px]'
+            className='w-[100%] h-[336px] md:h-[400px] lg:h-[371px]'
           ></iframe>
         </div>
         <div className='w-[45%]'>

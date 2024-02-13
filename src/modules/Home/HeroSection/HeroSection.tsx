@@ -9,7 +9,7 @@ import InfiniteSlider from './logoSlider';
 const sequence = ['EdTech', 'E-Commerce', 'Healthcare', 'Real Estate', 'CRM'];
 
 const HeroSection = () => (
-  <div className='relative bg-transparent mb-0 h-[calc(100vh-78px)] mt-[78px] flex flex-col justify-between'>
+  <div className='relative bg-transparent mb-0 h-[calc(100vh-78px)] mt-[78px] flex flex-col justify-between hero'>
     <div className='box'>
       <span style={{ animationDelay: '1s' }}></span>
       <span style={{ animationDelay: '2s' }}></span>
@@ -20,32 +20,24 @@ const HeroSection = () => (
     </div>
 
     <div className='max-w-[1410px] px-[15px] mx-auto w-full m-auto'>
-      <div className='px-[200px]'>
-        <Typography variant='h1' className=' text-center  text-white'>
+      <div className='md:px-[200px] sm:px-0 px-0'>
+        <Typography className='md:text-h1 sm:text-[37px] text-body2 !font-300 text-center  text-white leading-[1.2]'>
           Your Premier Web, Mobile And Software development squad in{' '}
         </Typography>
 
         <TypeAnimation
-          variant='h1'
           sequence={sequence}
-          className='text-center text-white'
+          className='text-center text-white md:text-h1 sm:text-[37px] text-h6 !font-300'
         />
 
-        <Typography
-          variant='body1'
-          className='text-center my-[41px] mb-[84px] text-white'
-        >
+        <Typography className='md:text-body1 text-subtitle1 text-center my-[41px] mb-[84px] text-white md:px-0 sm:px-[0px] px-0'>
           Do you have a concept for project? connect with codewinglet right away
           to secure a technologically advanced and cost effective development
           solution!
         </Typography>
 
         <Button link className=' w-[222px]'>
-          <Link
-            href='https://calendly.com/slapani'
-            rel='noopener noreferrer'
-            target='_blank'
-          >
+          <Link href='#' rel='noopener noreferrer' target='_blank'>
             Request a Quote
           </Link>
         </Button>

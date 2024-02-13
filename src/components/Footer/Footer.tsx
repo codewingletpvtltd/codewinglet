@@ -17,14 +17,14 @@ import { companyTermsMenu, serviceMenu, technologyMenu } from './constants';
 const Footer = () => {
   const router = useRouter();
   return (
-    <footer className='bg-[#000] text-white relative py-[60px]'>
+    <footer className='bg-black text-white relative md:py-[60px] py-5'>
       <div className='max-w-[1410px] w-full px-[15px] mx-auto'>
-        <div className='flex p-[15px] relative mx-[-15px] flex-wrap '>
-          <div className='px-[15px] w-full relative max-w-[25%] min-h-[1px] flex-[0_0_25%]'>
+        <div className='sm:gap-0 gap-[30px] flex p-[15px] relative mx-[-15px] flex-wrap '>
+          <div className='px-[15px] w-full relative md:max-w-[25%] md:flex-[0_0_25%] max-w-[100%] flex-[0_0_100%] min-h-[1px]'>
             <Image
               src={LogoWhite}
               alt='Codewinglet White Logo'
-              className='w-[191px] xl:w-[252px] cursor-pointer'
+              className='w-[253px] sm:[w-191px] xl:w-[252px] cursor-pointer'
               onClick={() => router.push('/')}
               loading='eager'
             />
@@ -38,7 +38,7 @@ const Footer = () => {
               approach and ability.
             </Typography>
           </div>
-          <div className='px-[15px] w-full relative max-w-[25%] min-h-[1px] flex-[0_0_25%]'>
+          <div className='px-[15px] w-full relative md:max-w-[25%] md:flex-[0_0_25%] max-w-[100%] flex-[0_0_100%] min-h-[1px]'>
             <Typography variant='h4' className='mb-[20px]'>
               Services
             </Typography>
@@ -58,7 +58,7 @@ const Footer = () => {
               ))}
             </div>
           </div>
-          <div className='px-[15px] w-full relative max-w-[25%] min-h-[1px] flex-[0_0_25%]'>
+          <div className='px-[15px] w-full relative md:max-w-[25%] md:flex-[0_0_25%] max-w-[100%] flex-[0_0_100%] min-h-[1px]'>
             <Typography variant='h4' className=' mb-[20px]'>
               Discover
             </Typography>
@@ -77,7 +77,7 @@ const Footer = () => {
               ))}
             </div>
           </div>
-          <div className='px-[15px] w-full relative max-w-[25%] min-h-[1px] flex-[0_0_25%]'>
+          <div className='px-[15px] w-full relative md:max-w-[25%] md:flex-[0_0_25%] max-w-[100%] flex-[0_0_100%] min-h-[1px]'>
             <Typography variant='h4' className=' mb-[20px]'>
               Get in touch
             </Typography>
@@ -108,11 +108,11 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
-        <div className='flex items-center justify-between relative pt-[40px] '>
+        <hr className='block md:hidden sm mt-[25px]' />
+        <div className='md:gap-0 gap-4 flex flex-col md:flex-row items-center md:justify-between justify-center relative pt-[40px] '>
           <div className='flex gap-5'>
             <Link
-              className='flex items-center justify-center w-8 h-8 border border-solid border-white rounded-full'
+              className='flex items-center justify-center w-8 h-8 border border-solid border-white rounded-full bg-white'
               href='https://www.facebook.com/CodewingletPvtLtd'
               target='_blank'
               aria-label='Facebook'
@@ -120,7 +120,7 @@ const Footer = () => {
               <FacebookLogo />
             </Link>
             <Link
-              className='flex items-center justify-center w-8 h-8 border border-solid border-white rounded-full'
+              className='flex items-center justify-center w-8 h-8 border border-solid border-white rounded-full bg-white'
               href='https://www.instagram.com/codewinglet/'
               target='_blank'
               aria-label='Instagram'
@@ -128,7 +128,7 @@ const Footer = () => {
               <InstagramLogo />
             </Link>
             <Link
-              className='flex items-center justify-center w-8 h-8 border border-solid border-white rounded-full'
+              className='flex items-center justify-center w-8 h-8 border border-solid border-white rounded-full bg-white'
               href='https://in.linkedin.com/company/codewinglet'
               target='_blank'
               aria-label='Linkedin'
@@ -136,7 +136,7 @@ const Footer = () => {
               <LinkedInLogo />
             </Link>
             <Link
-              className='flex items-center justify-center w-8 h-8 border border-solid border-white rounded-full'
+              className='flex items-center justify-center w-8 h-8 border border-solid border-white rounded-full bg-white'
               href='https://twitter.com/codewinglet'
               target='_blank'
               aria-label='Twitter'
@@ -144,9 +144,8 @@ const Footer = () => {
               <TwitterLogo />
             </Link>
           </div>
-          <Typography variant='subtitle1'>
+          <Typography variant='subtitle1' className='sm:text-left text-center'>
             © {new Date().getFullYear()} All rights reserved. Codewinglet
-            Private Limited
           </Typography>
           <ul className='flex gap-7'>
             {companyTermsMenu.map((item) => (
