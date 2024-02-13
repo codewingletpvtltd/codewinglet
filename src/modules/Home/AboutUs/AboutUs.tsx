@@ -9,7 +9,7 @@ import { SectionHeader, Typography } from '@codewinglet/components';
 
 const AboutUs = () => (
   <section
-    className='py-20'
+    className='sm:py-20 py-10'
     style={{
       backgroundImage: `url(${require('./about-bg-boxline.png').default.src})`,
       backgroundRepeat: 'no-repeat',
@@ -25,28 +25,22 @@ const AboutUs = () => (
         descriptionClassName='text-white'
       />
 
-      <div className='flex gap-5 mt-12'>
-        <div className='w-[70%] pr-[60px]'>
-          <Typography
-            variant='body1'
-            className='pb-[20px] leading-[40px]  text-white'
-          >
+      <div className='sm:flex block gap-5 sm:mt-12 mt-7'>
+        <div className='sm:w-[70%] w-full sm:pr-[60px] pr-0'>
+          <Typography className='sm:text-body1 text-subtitle1 pb-[20px] sm:leading-[40px]  text-white text-justify'>
             Codewinglet Private Limited excels as a globally recognized,
             award-winner software and IT consulting firm, offering digitally
             transforming solution since long.
           </Typography>
-          <Typography
-            variant='body1'
-            className='leading-[40px] text-white pb-[20px]'
-          >
+          <Typography className='sm:text-body1 text-subtitle1 sm:leading-[40px] text-white pb-[20px] text-justify'>
             Our speciality lies in providing expert tech solutions, built on
             deep industry insights and collaboration. We boost client growth by
             leveraging our innovative ecosystem to facilitate IT knowledge
             transfers, thereby fostering consistent advancement.
           </Typography>
 
-          <div className='flex justify-between items-center'>
-            <ul className='mt-[60px]'>
+          <div className='sm:flex block justify-between items-center'>
+            <ul className='sm:mt-[60px] mt-[10px] sm:block grid grid-cols-2'>
               <li className='relative mb-[30px]'>
                 <Typography
                   variant='h3'
@@ -54,7 +48,7 @@ const AboutUs = () => (
                 >
                   250+
                 </Typography>
-                <Typography variant='body2' className=' text-white'>
+                <Typography className=' text-white sm:text-body2 text-subtitle2'>
                   Successful Projects
                 </Typography>
               </li>
@@ -65,7 +59,7 @@ const AboutUs = () => (
                 >
                   10+
                 </Typography>
-                <Typography variant='body2' className=' text-white'>
+                <Typography className=' text-white sm:text-body2 text-subtitle2'>
                   Year’s in industry
                 </Typography>
               </li>
@@ -76,7 +70,7 @@ const AboutUs = () => (
                 >
                   100%
                 </Typography>
-                <Typography variant='body2' className=' text-white'>
+                <Typography className=' text-white sm:text-body2 text-subtitle2'>
                   Client Satisfaction
                 </Typography>
               </li>
@@ -87,46 +81,46 @@ const AboutUs = () => (
                 >
                   5 <Image src={rating} alt='rating' className='ml-[8px]' />
                 </Typography>
-                <Typography variant='body2' className=' text-white'>
+                <Typography className=' text-white sm:text-body2 text-subtitle2'>
                   Upwork Ratings
                 </Typography>
               </li>
             </ul>
-            <div className='w-[408px] bg-[#131315] p-[18px] mb-10'>
+            <div className='sm:w-[408px] w-full bg-[#131315] p-[18px] mb-10'>
               <div className='w-full overflow-hidden'>
                 <Image
-                  className='w-full object-cover object-center transition-transform duration-[0.5s] hover:scale-110'
+                  className='w-full object-cover object-center transition-transform duration-500 hover:scale-110'
                   src={building}
                   alt='building'
                 />
               </div>
               <div className='flex justify-between items-baseline mt-[10px]'>
-                <Typography variant='h4' className='text-white'>
+                <Typography className='text-white sm:text-h4 text-subtitle1 leading-[1.2]'>
                   XtendR for extended reach of robots
                 </Typography>
               </div>
-              <Typography variant='body2' className='text-white m-0'>
+              <Typography className='text-white sm:text-body2 text-[13px] font-300 mt-6'>
                 A plug produce solution for cobot applications demanding
                 extended operational reach.
               </Typography>
             </div>
           </div>
         </div>
-        <div className='w-[30%]'>
+        <div className='sm:w-[30%] w-full'>
           <div className='bg-[#131315] p-[18px] mb-10'>
             <div className='w-full overflow-hidden'>
               <Image
-                className='w-full object-cover object-center transition-transform duration-[0.5s] hover:scale-110'
+                className='w-full object-cover object-center transition-transform duration-500 hover:scale-110'
                 src={pioneering}
                 alt='pioneering'
               />
             </div>
             <div className='flex justify-between items-baseline mt-[10px]'>
-              <Typography variant='h4' className='text-white'>
+              <Typography className='text-white sm:text-h4 text-subtitle1 leading-[1.2]'>
                 XtendR for extended reach of robots
               </Typography>
             </div>
-            <Typography variant='body2' className='text-white m-0'>
+            <Typography className='text-white sm:text-body2 text-[13px] font-300 mt-6'>
               A plug produce solution for cobot applications demanding extended
               operational reach.
             </Typography>
@@ -134,17 +128,17 @@ const AboutUs = () => (
           <div className=' bg-[#131315] p-[18px] mb-10'>
             <div className='w-full overflow-hidden'>
               <Image
-                className='w-full object-cover object-center transition-transform duration-[0.5s] hover:scale-110'
+                className='w-full object-cover object-center transition-transform duration-500 hover:scale-110'
                 src={crafting}
                 alt='crafting'
               />
             </div>
             <div className='flex justify-between items-baseline mt-[10px]'>
-              <Typography variant='h4' className='text-white'>
+              <Typography className='text-white sm:text-h4 text-subtitle1 leading-[1.2]'>
                 XtendR for extended reach of robots
               </Typography>
             </div>
-            <Typography variant='body2' className='text-white m-0'>
+            <Typography className='text-white sm:text-body2 text-[13px] font-300 mt-6'>
               A plug produce solution for cobot applications demanding extended
               operational reach.
             </Typography>
