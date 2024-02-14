@@ -1,5 +1,5 @@
 'use client';
-import { FC, memo, useRef } from 'react';
+import { FC, memo, useRef, useState } from 'react';
 import SlickSlider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -17,17 +17,31 @@ const Slider: FC<SliderProps> = ({
 }) => {
   const _settings = defaultSettings(settings);
   const ref = useRef<SlickSlider>();
+  const [activeIndex, setActiveIndex] = useState(0);
 
   return (
     <div>
       {!hideArrow && arrowPosition.horizontal !== 'bottom' && (
-        <Arrows sliderRef={ref} arrowPosition={arrowPosition} />
+        <Arrows
+          sliderRef={ref}
+          arrowPosition={arrowPosition}
+          activeIndex={activeIndex}
+        />
       )}
-      <SlickSlider ref={ref} {..._settings} className={className}>
+      <SlickSlider
+        ref={ref}
+        {..._settings}
+        className={className}
+        beforeChange={(_, next) => setActiveIndex(next)}
+      >
         {children}
       </SlickSlider>
       {!hideArrow && arrowPosition.horizontal === 'bottom' && (
-        <Arrows sliderRef={ref} arrowPosition={arrowPosition} />
+        <Arrows
+          sliderRef={ref}
+          arrowPosition={arrowPosition}
+          activeIndex={activeIndex}
+        />
       )}
     </div>
   );
