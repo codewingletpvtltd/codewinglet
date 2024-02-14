@@ -42,7 +42,7 @@ const PROCESS = [
 ];
 
 const ContactUs = () => (
-  <section className='relative sm:py-20 py-10 bg-secondary'>
+  <section className='relative lg:py-20 py-10 bg-secondary'>
     <div className='max-w-[1410px] w-full px-[15px] mx-auto'>
       <SectionHeader
         title={<>Our Work Process</>}
@@ -55,10 +55,10 @@ const ContactUs = () => (
         headingClassName=''
       />
 
-      <div className='grid sm:gap-[30px] gap-2.5 sm:grid-cols-3 grid-cols-2  sm:mt-12 mt-7'>
+      <div className='grid sm:gap-[30px] gap-2.5 lg:grid-cols-3 grid-cols-2  sm:mt-12 mt-7'>
         {PROCESS.map((card) => (
           <>
-            <div className='soft-card sm:p-10 p-2.5 bg-white hover:bg-primary hover:text-white'>
+            <div className='soft-card xl:p-10 lg:p-7 md:p-10 sm:p-5 p-2.5 bg-white hover:bg-primary hover:text-white'>
               <Typography
                 variant='h1'
                 className='soft-head !text-[50px] font-700 leading-[50px] relative text-transparent after:content after:absolute after:bottom-2.5 after:left-[70px] after:w-[30px] after:h-[2px] after:bg-primary hover:after:bg-white after:duration-[0.9s] after:transition-all after:ease-in'

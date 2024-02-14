@@ -17,10 +17,10 @@ import { companyTermsMenu, serviceMenu, technologyMenu } from './constants';
 const Footer = () => {
   const router = useRouter();
   return (
-    <footer className='bg-black text-white relative md:py-[60px] py-5'>
+    <footer className='bg-black text-white relative xl:py-[60px] md:py-[40px] py-5'>
       <div className='max-w-[1410px] w-full px-[15px] mx-auto'>
-        <div className='sm:gap-0 gap-[30px] flex p-[15px] relative mx-[-15px] flex-wrap '>
-          <div className='px-[15px] w-full relative md:max-w-[25%] md:flex-[0_0_25%] max-w-[100%] flex-[0_0_100%] min-h-[1px]'>
+        <div className='md:gap-0 gap-[30px] flex p-[15px] relative mx-[-15px] flex-wrap '>
+          <div className='px-[15px] w-full relative lg:max-w-[25%] lg:flex-[0_0_25%] md:max-w-[50%] md:flex-[0_0_50%] sm:max-w-[100%] sm:flex-[0_0_100%] max-w-[100%] flex-[0_0_100%] min-h-[1px]'>
             <Image
               src={LogoWhite}
               alt='Codewinglet White Logo'
@@ -38,7 +38,7 @@ const Footer = () => {
               approach and ability.
             </Typography>
           </div>
-          <div className='px-[15px] w-full relative md:max-w-[25%] md:flex-[0_0_25%] max-w-[100%] flex-[0_0_100%] min-h-[1px]'>
+          <div className='px-[15px] w-full relative lg:max-w-[25%] lg:flex-[0_0_25%] md:max-w-[50%] md:flex-[0_0_50%] sm:max-w-[100%] sm:flex-[0_0_100%] max-w-[100%] flex-[0_0_100%] min-h-[1px]'>
             <Typography variant='h4' className='mb-[20px]'>
               Services
             </Typography>
@@ -58,7 +58,7 @@ const Footer = () => {
               ))}
             </div>
           </div>
-          <div className='px-[15px] w-full relative md:max-w-[25%] md:flex-[0_0_25%] max-w-[100%] flex-[0_0_100%] min-h-[1px]'>
+          <div className='px-[15px] w-full relative lg:max-w-[25%] lg:flex-[0_0_25%] md:max-w-[50%] md:flex-[0_0_50%] sm:max-w-[100%] sm:flex-[0_0_100%] max-w-[100%] flex-[0_0_100%] min-h-[1px] lg:mt-0 md:mt-7 m-0'>
             <Typography variant='h4' className=' mb-[20px]'>
               Discover
             </Typography>
@@ -77,7 +77,7 @@ const Footer = () => {
               ))}
             </div>
           </div>
-          <div className='px-[15px] w-full relative md:max-w-[25%] md:flex-[0_0_25%] max-w-[100%] flex-[0_0_100%] min-h-[1px]'>
+          <div className='px-[15px] w-full relative lg:max-w-[25%] lg:flex-[0_0_25%] md:max-w-[50%] md:flex-[0_0_50%] sm:max-w-[100%] sm:flex-[0_0_100%] max-w-[100%] flex-[0_0_100%] min-h-[1px] lg:mt-0 md:mt-7 m-0'>
             <Typography variant='h4' className=' mb-[20px]'>
               Get in touch
             </Typography>
@@ -109,7 +109,7 @@ const Footer = () => {
           </div>
         </div>
         <hr className='block md:hidden sm mt-[25px]' />
-        <div className='md:gap-0 gap-4 flex flex-col md:flex-row items-center md:justify-between justify-center relative pt-[40px] '>
+        <div className='lg:gap-0 gap-4 flex flex-col lg:flex-row items-center md:justify-between justify-center relative pt-[40px]'>
           <div className='flex gap-5'>
             <Link
               className='flex items-center justify-center w-8 h-8 border border-solid border-white rounded-full bg-white'

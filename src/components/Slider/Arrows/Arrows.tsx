@@ -10,20 +10,22 @@ const Arrows: FC<ArrowProps> = ({
 }) => (
   <div
     className={getClassNames(
-      'sm:flex flex-row items-center gap-[17px] sm:absolute hidden  right-0 bottom-[3rem]',
+      'lg:flex flex-row items-center gap-[17px] lg:absolute lg:bottom-[-2rem] lg:left-[50%] xl:left-auto hidden xl:right-0 xl:bottom-[3rem]',
       arrowPosition.vertical
         ? verticalPosition[arrowPosition.vertical]
         : 'justify-end'
     )}
   >
-    <LeftArrow
-      onClick={() => sliderRef?.current?.slickPrev()}
-      className='lg:h-[30px] lg:w-auto cursor-pointer fill-white'
-    />
-    <div className='relative cursor-pointe'>
+    <div className='relative cursor-pointe hover:bg-white w-[40px] h-[40px] hover:rounded-full flex items-center justify-center group transition-all duration-300'>
+      <LeftArrow
+        onClick={() => sliderRef?.current?.slickPrev()}
+        className='lg:h-[20px] lg:w-auto cursor-pointer fill-white group-hover:fill-black'
+      />
+    </div>
+    <div className='relative cursor-pointe hover:bg-white w-[40px] h-[40px] hover:rounded-full flex items-center justify-center group transition-all duration-300'>
       <RightArrow
         onClick={() => sliderRef?.current?.slickNext()}
-        className='lg:h-[30px] lg:w-auto cursor-pointer !hover:fill-black fill-white'
+        className='lg:h-[20px] lg:w-auto cursor-pointer fill-white group-hover:fill-black'
       />
     </div>
   </div>

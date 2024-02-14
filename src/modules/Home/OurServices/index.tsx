@@ -13,7 +13,7 @@ const Technologies = () => {
   };
 
   return (
-    <section className='sm:py-20 py-10 bg-secondary'>
+    <section className='lg:py-20 py-10 bg-secondary'>
       <section className='max-w-[1410px] w-full px-[15px] mx-auto'>
         <SectionHeader
           title={<>Our Services</>}

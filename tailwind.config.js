@@ -155,7 +155,7 @@ module.exports = {
       h3: [
         '30px',
         {
-          fontWeight: 600,
+          fontWeight: 300,
         },
       ],
       h4: [

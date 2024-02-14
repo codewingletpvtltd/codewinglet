@@ -7,7 +7,7 @@ import { Button, SectionHeader, Typography } from '@codewinglet/components';
 import { portfolio } from './data';
 
 const OurWork = () => (
-  <section className='sm:py-20 py-10 bg-white'>
+  <section className='lg:py-20 py-10 bg-white'>
     <section className='max-w-[1410px] w-full px-[15px] mx-auto'>
       <SectionHeader
         title={<>Our Work</>}
@@ -18,7 +18,7 @@ const OurWork = () => (
         descriptionClassName=''
       />
       <div className='relative'>
-        <div className='grid sm:grid-cols-3 grid-cols-1 sm:gap-10 gap-5 sm:mt-12 mt-7'>
+        <div className='grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-10 gap-5 sm:mt-12 mt-7'>
           {portfolio.map((data, index) => (
             <div key={`portfolio-${data.id}-${index}`} className='port-1'>
               <div className='relative w-full overflow-hidden m-auto group'>
@@ -38,13 +38,10 @@ const OurWork = () => (
                 </a>
               </div>
               <div className='project-head'>
-                <Typography
-                  variant='subtitle2'
-                  className=' sm:mt-[5px] mt-[10px]'
-                >
+                <Typography variant='subtitle2' className='mt-[10px]'>
                   {data.subtitle}
                 </Typography>
-                <h3 className='text-primary font-300 sm:text-[28px] text-[18px] sm:mb-2 mb-1'>
+                <h3 className='text-primary font-300 lg:text-[22px] md:text-[28px] sm:text-[28px] text-[18px] sm:mb-2 mb-1'>
                   {data.title}
                 </h3>
                 <p className='text-primary sm:text-[16px] text-[14px] font-300 mb-0'>

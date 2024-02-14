@@ -25,8 +25,8 @@ const clientLogo = [
 ];
 
 const OurClient = () => (
-  <section className='relative overflow-hidden py-[50px] lg:py-[80px] xl:py-[120px] 2xl:py-[80px] 2xl:!pb-[80px]  px-[20px] bg-white'>
-    <section className='max-w-screen-xl md:w-full  mx-auto'>
+  <section className='relative overflow-hidden lg:py-20 py-10 bg-white'>
+    <section className='max-w-[1410px] w-full px-[15px] mx-auto'>
       <SectionHeader
         title={<>Our Clients</>}
         description='"Our Global Clients"'
