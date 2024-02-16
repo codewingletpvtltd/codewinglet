@@ -17,7 +17,7 @@ const AboutUs = () => (
       backgroundPositionY: 'bottom',
     }}
   >
-    <div className='max-w-[1410px] w-full px-[15px] mx-auto'>
+    <div className='container w-full px-[15px] mx-auto'>
       <SectionHeader
         title={<>About us</>}
         description={<>"We are more than digital agency”</>}
@@ -25,7 +25,7 @@ const AboutUs = () => (
         descriptionClassName='text-white'
       />
 
-      <div className='lg:flex block gap-5 mt-12'>
+      <div className='lg:flex block gap-5 md:mt-12 mt-7'>
         <div className='lg:w-[70%] w-full xl:pr-[60px] lg:pr-[20px] pr-0'>
           <Typography className='xl:text-body1 lg:text-body2 md:text-body1 text-subtitle1 pb-[20px] md:leading-[40px] text-white md:text-justify text-left'>
             Codewinglet Private Limited excels as a globally recognized,
@@ -79,7 +79,7 @@ const AboutUs = () => (
                   variant='h3'
                   className=' text-white flex item-center'
                 >
-                  5 <Image src={rating} alt='rating' className='ml-[8px]' />
+                  5.0 <Image src={rating} alt='rating' className='ml-[8px]' />
                 </Typography>
                 <Typography className=' text-white md:text-body2 text-subtitle2'>
                   Upwork Ratings
@@ -99,7 +99,7 @@ const AboutUs = () => (
                   XtendR for extended reach of robots
                 </Typography>
               </div>
-              <Typography className='text-white mt-6 md:text-body2 text-[13px] font-300'>
+              <Typography className='text-white sm:mt-6 mt-3 md:text-body2 text-[13px] font-300'>
                 A plug produce solution for cobot applications demanding
                 extended operational reach.
               </Typography>
@@ -120,7 +120,7 @@ const AboutUs = () => (
                 XtendR for extended reach of robots
               </Typography>
             </div>
-            <Typography className='text-white mt-6 xl:text-body2 lg:text-subtitle2 md:text-body2 text-[13px] font-300'>
+            <Typography className='text-white sm:mt-6 mt-3 xl:text-body2 lg:text-subtitle2 md:text-body2 text-[13px] font-300'>
               A plug produce solution for cobot applications demanding extended
               operational reach.
             </Typography>
@@ -138,7 +138,7 @@ const AboutUs = () => (
                 XtendR for extended reach of robots
               </Typography>
             </div>
-            <Typography className='text-white mt-6 xl:text-body2 lg:text-subtitle2 md:text-body2 text-[13px] font-300'>
+            <Typography className='text-white sm:mt-6 mt-3 xl:text-body2 lg:text-subtitle2 md:text-body2 text-[13px] font-300'>
               A plug produce solution for cobot applications demanding extended
               operational reach.
             </Typography>

@@ -2,7 +2,7 @@ import { FC, SVGProps } from 'react';
 
 const ClosingQuote: FC<SVGProps<SVGSVGElement>> = () => (
   <svg
-    className='w-[99px] absolute left-0 z-[-1] xl:top-[11rem] lg:top-[20rem] md:top-[25rem] sm:block hidden'
+    className='lg:w-[99px] md:w-[75px] absolute left-0 z-[-1] xl:top-[11rem] lg:top-[20rem] md:top-[15rem] md:block hidden'
     xmlns='http://www.w3.org/2000/svg'
     width='99'
     height='77'

@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { SectionHeader } from '@codewinglet/components';
 import { accordionData } from '../../../components/TechnologiesTab/constant';
 import Accordion from '../../../components/TechnologiesTab/index';
-import './scss/technologies.css';
+import './scss/main.css';
 
 const Technologies = () => {
   const [expanded, setExpanded] = useState<String>('01');
@@ -14,7 +14,7 @@ const Technologies = () => {
 
   return (
     <section className='lg:py-20 py-10 bg-secondary'>
-      <section className='max-w-[1410px] w-full px-[15px] mx-auto'>
+      <section className='container w-full px-[15px] mx-auto'>
         <SectionHeader
           title={<>Our Services</>}
           description={
@@ -25,7 +25,7 @@ const Technologies = () => {
         />
 
         <div
-          className='accord flex flex-row content-center items-center relative w-full gap-5 sm:mt-12 mt-7 [transition: all 200ms ease-in-out 50ms]'
+          className='accord flex flex-row content-center items-center relative w-full gap-5 md:mt-12 mt-7 [transition: all 200ms ease-in-out 50ms]'
           style={{ opacity: 1 }}
         >
           {accordionData.map((data) => (

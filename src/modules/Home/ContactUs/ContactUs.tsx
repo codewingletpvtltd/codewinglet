@@ -2,7 +2,7 @@ import { SectionHeader, Typography } from '@codewinglet/components';
 
 const ContactUs = () => (
   <section className='lg:py-20 py-10 bg-secondary'>
-    <div className='max-w-[1410px] w-full px-[15px] mx-auto'>
+    <div className='container w-full px-[15px] mx-auto'>
       <div className='flex lg:flex-row flex-col'>
         <div className='lg:w-[55%] w-full md:m-0 mb-7 xl:pr-0 lg:pr-[30] md:p-0 pr-0'>
           <SectionHeader

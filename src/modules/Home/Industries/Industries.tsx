@@ -69,8 +69,8 @@ const INDUCARD = [
 ];
 
 const ContactUs = () => (
-  <section className='bg-white lg:py-20 py-10'>
-    <div className='max-w-[1410px] w-full px-[15px] mx-auto'>
+  <section className='bg-secondary lg:py-20 py-10'>
+    <div className='container w-full px-[15px] mx-auto'>
       <SectionHeader
         title={<>Industries We Serve</>}
         description={
@@ -82,7 +82,7 @@ const ContactUs = () => (
         headingClassName=''
       />
 
-      <div className='grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 sm:gap-[30px] gap-5 sm:mt-12 mt-7'>
+      <div className='grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 sm:gap-[30px] gap-5 md:mt-12 mt-7'>
         {INDUCARD.map((card) => (
           <>
             <div>

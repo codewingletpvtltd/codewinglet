@@ -8,16 +8,18 @@ const AboutUs = dynamic(() => import('./AboutUs'));
 const ContactUs = dynamic(() => import('./ContactUs'));
 const Industries = dynamic(() => import('./Industries'));
 const OurWorkProcess = dynamic(() => import('./OurWorkProcess'));
+const Technology = dynamic(() => import('./Technology'));
 
 const Home = () => (
   <>
     <HeroSection />
     <AboutUs />
-    <OurWorkProcess />
-    <Industries />
-    <ClientTestimonials />
     <OurServices />
+    <Technology />
+    <Industries />
     <OurWork />
+    <ClientTestimonials />
+    <OurWorkProcess />
     <OurClient />
     <ContactUs />
   </>

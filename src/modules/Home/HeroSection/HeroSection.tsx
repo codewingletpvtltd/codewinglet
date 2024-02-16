@@ -2,6 +2,7 @@
 import { memo } from 'react';
 import Link from 'next/link';
 import { Button, TypeAnimation, Typography } from '@codewinglet/components';
+import { Arrow } from '@codewinglet/assets';
 import './main.css';
 
 import InfiniteSlider from './logoSlider';
@@ -20,14 +21,14 @@ const HeroSection = () => (
     </div>
 
     <div className='max-w-[1410px] px-[15px] mx-auto w-full m-auto'>
-      <div className='xl:px-[200px] md:px-5 sm:px-0 px-0'>
-        <Typography className='lg:text-h1 md:text-[42px] sm:text-[37px] text-body2 !font-300 text-center  text-white leading-[1.2]'>
+      <div className='xl:px-[200px] lg:px-[120px] md:px-5 sm:px-0 px-0'>
+        <Typography className='xl:text-h1 md:text-[42px] sm:text-[37px] text-body2 !font-300 text-center  text-white leading-[1.2]'>
           Your Premier Web, Mobile And Software development squad in{' '}
         </Typography>
 
         <TypeAnimation
           sequence={sequence}
-          className='text-center text-white lg:text-h1 md:text-[42px] sm:text-[37px] text-h6 !font-300'
+          className='text-center text-white xl:text-h1 md:text-[42px] sm:text-[37px] text-body2 !font-300'
         />
 
         <Typography className='lg:text-body1 md:text-[20px] text-subtitle1 text-center my-[41px] mb-[84px] text-white md:px-0 sm:px-[0px] px-0'>
@@ -37,8 +38,13 @@ const HeroSection = () => (
         </Typography>
 
         <Button link className=' w-[222px]'>
-          <Link href='#' rel='noopener noreferrer' target='_blank'>
-            Request a Quote
+          <Link
+            href='#'
+            rel='noopener noreferrer'
+            target='_blank'
+            className='flex items-center justify-center gap-3'
+          >
+            Request a Quote <Arrow />
           </Link>
         </Button>
       </div>

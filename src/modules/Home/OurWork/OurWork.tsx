@@ -8,7 +8,7 @@ import { portfolio } from './data';
 
 const OurWork = () => (
   <section className='lg:py-20 py-10 bg-white'>
-    <section className='max-w-[1410px] w-full px-[15px] mx-auto'>
+    <section className='container w-full px-[15px] mx-auto'>
       <SectionHeader
         title={<>Our Work</>}
         description={
@@ -18,7 +18,7 @@ const OurWork = () => (
         descriptionClassName=''
       />
       <div className='relative'>
-        <div className='grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-10 gap-5 sm:mt-12 mt-7'>
+        <div className='grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-10 gap-5 md:mt-12 mt-7'>
           {portfolio.map((data, index) => (
             <div key={`portfolio-${data.id}-${index}`} className='port-1'>
               <div className='relative w-full overflow-hidden m-auto group'>
