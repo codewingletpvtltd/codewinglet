@@ -1,26 +1,64 @@
 'use client';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import LogoWhite from '@codewinglet/assets/logo_white.svg';
-
-import { Typography } from '@codewinglet/components';
+import { Button, Typography } from '@codewinglet/components';
 import {
   FacebookLogo,
   InstagramLogo,
   LinkedInLogo,
   TwitterLogo,
+  DownArrows,
+  EmailIcon,
+  CallIcon,
+  LocationIcon,
 } from '@codewinglet/assets';
-import { companyTermsMenu, serviceMenu, technologyMenu } from './constants';
+import { getClassNames } from '@codewinglet/utils';
+import {
+  companyTermsMenu,
+  serviceMenu,
+  industryMenu,
+  technologyMenu,
+  companyMenu,
+} from './constants';
+
+const footerTitle = [
+  {
+    title: 'Services',
+    responsiveClass:
+      'xl:max-w-[25%] xl:flex-[0_0_25%] lg:max-w-[33.33%] lg:flex-[0_0_33.33%] md:max-w-[50%] md:flex-[0_0_50%] sm:max-w-[100%] sm:flex-[0_0_100%] max-w-[100%] flex-[0_0_100%] min-h-[1px]',
+    menu: serviceMenu,
+  },
+  {
+    title: 'Industry',
+    responsiveClass:
+      'xl:max-w-[20%] xl:flex-[0_0_20%] lg:max-w-[33.33%] lg:flex-[0_0_33.33%] md:max-w-[50%] md:flex-[0_0_50%] sm:max-w-[100%] sm:flex-[0_0_100%] max-w-[100%] flex-[0_0_100%] min-h-[1px] lg:mt-0 md:mt-0 m-0',
+    menu: industryMenu,
+  },
+  {
+    title: 'Technology',
+    responsiveClass:
+      'xl:max-w-[20%] xl:flex-[0_0_20%] px-[15px] w-full relative lg:max-w-[33.33%] lg:flex-[0_0_33.33%] md:max-w-[50%] md:flex-[0_0_50%] sm:max-w-[100%] sm:flex-[0_0_100%] max-w-[100%] flex-[0_0_100%] min-h-[1px] lg:mt-0 md:mt-7 m-0',
+    menu: technologyMenu,
+  },
+  {
+    title: 'Company',
+    responsiveClass:
+      'xl:max-w-[15%] xl:flex-[0_0_15%] lg:max-w-[30%] lg:flex-[0_0_30%] md:max-w-[50%] md:flex-[0_0_50%] sm:max-w-[100%] sm:flex-[0_0_100%] max-w-[100%] flex-[0_0_100%] min-h-[1px] xl:mt-0 lg:mt-7 md:mt-7 m-0',
+    menu: companyMenu,
+  },
+];
 
 const Footer = () => {
   const router = useRouter();
+  const [expandedOption, setExpandedOption] = useState<number>(-1);
   return (
-    <footer className='bg-black text-white relative xl:py-[60px] md:py-[40px] py-5'>
-      <div className='max-w-[1410px] w-full px-[15px] mx-auto'>
-        <div className='md:gap-0 gap-[30px] flex p-[15px] relative mx-[-15px] flex-wrap '>
-          <div className='px-[15px] w-full relative lg:max-w-[25%] lg:flex-[0_0_25%] md:max-w-[50%] md:flex-[0_0_50%] sm:max-w-[100%] sm:flex-[0_0_100%] max-w-[100%] flex-[0_0_100%] min-h-[1px]'>
+    <>
+      <footer className='bg-black text-white relative xl:py-[60px] md:py-[40px] py-[30px]'>
+        <div className='max-w-[1410px] w-full px-[15px] mx-auto'>
+          <div className='md:mb-16 mb-10 flex justify-between items-center flex-col md:flex-col lg:flex-row md:px-0 sm:px-[15px] px-[15px]'>
             <Image
               src={LogoWhite}
               alt='Codewinglet White Logo'
@@ -28,126 +66,158 @@ const Footer = () => {
               onClick={() => router.push('/')}
               loading='eager'
             />
-
-            <Typography
-              variant='subtitle1'
-              className='mt-[15px] !leading-normal font-300'
-            >
-              Codewinglet has proven to be a professional software development
-              service provider from the outset. We appreciate their proactive
-              approach and ability.
-            </Typography>
-          </div>
-          <div className='px-[15px] w-full relative lg:max-w-[25%] lg:flex-[0_0_25%] md:max-w-[50%] md:flex-[0_0_50%] sm:max-w-[100%] sm:flex-[0_0_100%] max-w-[100%] flex-[0_0_100%] min-h-[1px]'>
-            <Typography variant='h4' className='mb-[20px]'>
-              Services
-            </Typography>
-            <div>
-              {technologyMenu.map((item) => (
-                <div key={item.id}>
-                  <Typography
-                    variant='subtitle1'
-                    className='leading-[34px] mb-[5px] min-h-0'
-                  >
-                    {/* <HighlightArrow color={COLORS.white} /> */}
-                    <Link className='' href={item.path}>
-                      {item.label}
-                    </Link>
-                  </Typography>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className='px-[15px] w-full relative lg:max-w-[25%] lg:flex-[0_0_25%] md:max-w-[50%] md:flex-[0_0_50%] sm:max-w-[100%] sm:flex-[0_0_100%] max-w-[100%] flex-[0_0_100%] min-h-[1px] lg:mt-0 md:mt-7 m-0'>
-            <Typography variant='h4' className=' mb-[20px]'>
-              Discover
-            </Typography>
-            <div>
-              {serviceMenu.map((item) => (
-                <div key={item.id}>
-                  <Typography
-                    variant='subtitle1'
-                    className=' leading-[34px] mb-[5px] min-h-0'
-                  >
-                    <Link className='' href={item.path}>
-                      {item.label}
-                    </Link>
-                  </Typography>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className='px-[15px] w-full relative lg:max-w-[25%] lg:flex-[0_0_25%] md:max-w-[50%] md:flex-[0_0_50%] sm:max-w-[100%] sm:flex-[0_0_100%] max-w-[100%] flex-[0_0_100%] min-h-[1px] lg:mt-0 md:mt-7 m-0'>
-            <Typography variant='h4' className=' mb-[20px]'>
-              Get in touch
-            </Typography>
-            <div>
-              <Typography
-                variant='subtitle1'
-                className='leading-[34px] mb-[5px] min-h-0'
-              >
-                <Link href='tel:+918320111741'>+91 83201 11741</Link>
+            <hr className='lg:hidden block w-full border-[#575757] my-7' />
+            <div className='flex items-center relative flex-col sm:flex-row md:gap-0 gap-3.5'>
+              <Typography className='lg:text-h4 md:text-body2 text-body2 font-300 pl-0  lg:pl-[80px] xl:pl-[200px] relative md:after:content lg:after:block after:hidden after:absolute xl:after:left-44 after:left-14 after:top-2 after:bg-white after:w-[0.1rem] after:h-[3.5rem]'>
+                Do you want to talk more about the project? Reach out to us
               </Typography>
-
-              <Typography
-                variant='subtitle1'
-                className=' leading-[34px] mb-[5px] min-h-0'
+              <Button className='md:w-[350px] sm:w-[364px] w-full h-[56px]'>
+                Schedule a call
+              </Button>
+            </div>
+          </div>
+          <div className='md:gap-0 gap-[10px] flex px-[15px] relative mx-[-15px] flex-wrap '>
+            {footerTitle.map((menuItem, index) => (
+              <div
+                className={`px-[15px] w-full relative ${menuItem.responsiveClass}`}
+                key={menuItem.title}
               >
-                <Link href='mailto:jobs@codewinglet.com'>
-                  jobs@codewinglet.com
+                <div className='my-3 sm:hidden' />
+                <Typography
+                  variant='h6'
+                  className=' mb-[10px] flex items-center justify-between'
+                  onClick={() =>
+                    setExpandedOption((prev) =>
+                      prev === -1 || prev !== index ? index : -1
+                    )
+                  }
+                >
+                  {menuItem.title}
+                  <Button
+                    className={getClassNames(
+                      'w-auto h-6 sm:hidden transition-all ease-in-out duration-500 border-none m-[initial]',
+                      index === expandedOption ? '-rotate-180' : ''
+                    )}
+                  >
+                    <DownArrows />
+                  </Button>
+                </Typography>
+                <div
+                  className={getClassNames(
+                    'flex flex-col gap-[6px] sm:max-h-full max-h-0 overflow-hidden transition-all ease-in-out duration-500',
+                    index === expandedOption ? 'max-h-[566px]' : ''
+                  )}
+                >
+                  {menuItem.menu.map((item) => (
+                    <div key={item.id}>
+                      <Typography
+                        variant='subtitle1'
+                        className=' leading-normal mb-3.5 min-h-0 text-silver'
+                      >
+                        <Link className='' href={item.path}>
+                          {item.label}
+                        </Link>
+                      </Typography>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+
+            <div className='px-[15px] w-full relative xl:max-w-[20%] xl:flex-[0_0_20%] lg:max-w-[70%] lg:flex-[0_0_70%] md:max-w-[50%] md:flex-[0_0_50%] sm:max-w-[100%] sm:flex-[0_0_100%] max-w-[100%] flex-[0_0_100%] min-h-[1px] xl:mt-0 lg:mt-7 md:mt-7 m-0'>
+              <Typography variant='h6' className=' mb-[20px] sm:mt-0 mt-3'>
+                Get in touch
+              </Typography>
+              <div>
+                <Typography
+                  variant='subtitle1'
+                  className='leading-normal mb-3.5 min-h-0 text-silver flex gap-3'
+                >
+                  <CallIcon />
+                  <div className='flex flex-col'>
+                    <div>Contact us :</div>
+                    <Link href='tel:+918320111741'>+91 83201 11741 (Jobs)</Link>
+                    <Link href='tel:+918320111741'>
+                      +91 83201 11741 (Sales)
+                    </Link>
+                  </div>
+                </Typography>
+
+                <Typography
+                  variant='subtitle1'
+                  className=' leading-normal mb-3.5 min-h-0 text-silver flex gap-3'
+                >
+                  <EmailIcon />
+                  <div className='flex flex-col'>
+                    <div>Email us on :</div>
+                    <Link href='mailto:jobs@codewinglet.com'>
+                      jobs@codewinglet.com
+                    </Link>
+                    <Link href='mailto:Info@codewinglet.com'>
+                      Info@codewinglet.com
+                    </Link>
+                    <Link href='mailto:sales@codewinglet.com'>
+                      sales@codewinglet.com
+                    </Link>
+                  </div>
+                </Typography>
+
+                <Typography
+                  variant='subtitle1'
+                  className='leading-normal mb-3.5 min-h-0 text-silver flex gap-3'
+                >
+                  <LocationIcon className='xl:w-[22%] lg:w-[6-%] md:w-[10%] sm:w-auto w-[13%]' />
+                  <Typography className='xl:pr-0 lg:pr-[370px] pr-0'>
+                    A901-905, Vivanta Icon Opp. Shell Petrol Pump, Adajan,
+                    Surat, Gujarat 395009.
+                  </Typography>
+                </Typography>
+              </div>
+              <div className='flex gap-5 lg:mt-7 md:mt-7 mt-7 ml-[30px]'>
+                <Link
+                  className='flex items-center justify-center w-8 h-8 border border-solid border-white rounded-full bg-white'
+                  href='https://in.linkedin.com/company/codewinglet'
+                  target='_blank'
+                  aria-label='Linkedin'
+                >
+                  <LinkedInLogo />
                 </Link>
-              </Typography>
-
-              <Typography
-                variant='subtitle1'
-                className='leading-[34px] mb-[5px] min-h-0 !leading-normal'
-              >
-                A901-905, Vivanta Icon Opp. Shell Petrol Pump, Adajan, Surat,
-                Gujarat 395009.
-              </Typography>
+                <Link
+                  className='flex items-center justify-center w-8 h-8 border border-solid border-white rounded-full bg-white'
+                  href='https://www.instagram.com/codewinglet/'
+                  target='_blank'
+                  aria-label='Instagram'
+                >
+                  <InstagramLogo />
+                </Link>
+                <Link
+                  className='flex items-center justify-center w-8 h-8 border border-solid border-white rounded-full bg-white'
+                  href='https://www.facebook.com/CodewingletPvtLtd'
+                  target='_blank'
+                  aria-label='Facebook'
+                >
+                  <FacebookLogo />
+                </Link>
+                <Link
+                  className='flex items-center justify-center w-8 h-8 border border-solid border-white rounded-full bg-white'
+                  href='https://twitter.com/codewinglet'
+                  target='_blank'
+                  aria-label='Twitter'
+                >
+                  <TwitterLogo />
+                </Link>
+              </div>
             </div>
           </div>
         </div>
-        <hr className='block md:hidden sm mt-[25px]' />
-        <div className='lg:gap-0 gap-4 flex flex-col lg:flex-row items-center md:justify-between justify-center relative pt-[40px]'>
-          <div className='flex gap-5'>
-            <Link
-              className='flex items-center justify-center w-8 h-8 border border-solid border-white rounded-full bg-white'
-              href='https://www.facebook.com/CodewingletPvtLtd'
-              target='_blank'
-              aria-label='Facebook'
-            >
-              <FacebookLogo />
-            </Link>
-            <Link
-              className='flex items-center justify-center w-8 h-8 border border-solid border-white rounded-full bg-white'
-              href='https://www.instagram.com/codewinglet/'
-              target='_blank'
-              aria-label='Instagram'
-            >
-              <InstagramLogo />
-            </Link>
-            <Link
-              className='flex items-center justify-center w-8 h-8 border border-solid border-white rounded-full bg-white'
-              href='https://in.linkedin.com/company/codewinglet'
-              target='_blank'
-              aria-label='Linkedin'
-            >
-              <LinkedInLogo />
-            </Link>
-            <Link
-              className='flex items-center justify-center w-8 h-8 border border-solid border-white rounded-full bg-white'
-              href='https://twitter.com/codewinglet'
-              target='_blank'
-              aria-label='Twitter'
-            >
-              <TwitterLogo />
-            </Link>
-          </div>
+      </footer>
+
+      <div className='lg:gap-0 gap-4 relative bg-white'>
+        <div className='max-w-[1410px] w-full px-[15px] mx-auto flex flex-col md:flex-row items-center md:justify-between justify-center py-3.5 md:gap-0 gap-2.5'>
           <Typography variant='subtitle1' className='sm:text-left text-center'>
             © {new Date().getFullYear()} All rights reserved. Codewinglet
           </Typography>
-          <ul className='flex gap-7'>
+          <ul className='flex gap-12'>
             {companyTermsMenu.map((item) => (
               <li key={item.id}>
                 <Typography variant='subtitle1'>
@@ -158,7 +228,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-    </footer>
+    </>
   );
 };
 export default React.memo(Footer);

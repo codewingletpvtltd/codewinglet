@@ -86,7 +86,7 @@ const AboutUs = () => (
                 </Typography>
               </li>
             </ul>
-            <div className='xl:w-[408px] lg:w-[292px] md:w-[358px] w-full bg-[#131315] p-[18px] mb-10'>
+            <div className='xl:w-[408px] lg:w-[292px] md:w-[358px] w-full bg-primary p-[18px] mb-10'>
               <div className='w-full overflow-hidden'>
                 <Image
                   className='w-full object-cover object-center transition-transform duration-[0.5s] hover:scale-110'
@@ -107,7 +107,7 @@ const AboutUs = () => (
           </div>
         </div>
         <div className='lg:w-[30%] w-full lg:block md:flex block md:gap-6'>
-          <div className='bg-[#131315] p-[18px] lg:mb-10 md:mb-0 mb-10'>
+          <div className='bg-primary p-[18px] lg:mb-10 md:mb-0 mb-10'>
             <div className='w-full overflow-hidden'>
               <Image
                 className='w-full object-cover object-center transition-transform duration-[0.5s] hover:scale-110'
@@ -125,7 +125,7 @@ const AboutUs = () => (
               operational reach.
             </Typography>
           </div>
-          <div className=' bg-[#131315] p-[18px] lg:mb-10 mb-0'>
+          <div className=' bg-primary p-[18px] lg:mb-10 mb-0'>
             <div className='w-full overflow-hidden'>
               <Image
                 className='w-full object-cover object-center transition-transform duration-[0.5s] hover:scale-110'
