@@ -40,7 +40,7 @@ const footerTitle = [
   {
     title: 'Technology',
     responsiveClass:
-      'xl:max-w-[20%] xl:flex-[0_0_20%] px-[15px] w-full relative lg:max-w-[33.33%] lg:flex-[0_0_33.33%] md:max-w-[50%] md:flex-[0_0_50%] sm:max-w-[100%] sm:flex-[0_0_100%] max-w-[100%] flex-[0_0_100%] min-h-[1px] lg:mt-0 md:mt-7 m-0',
+      'doubleXl:max-w-[20%] doubleXl:flex-[0_0_20%] xl:max-w-[17%] xl:flex-[0_0_17%] px-[15px] w-full relative lg:max-w-[33.33%] lg:flex-[0_0_33.33%] md:max-w-[50%] md:flex-[0_0_50%] sm:max-w-[100%] sm:flex-[0_0_100%] max-w-[100%] flex-[0_0_100%] min-h-[1px] lg:mt-0 md:mt-7 m-0',
     menu: technologyMenu,
   },
   {
@@ -57,8 +57,8 @@ const Footer = () => {
   return (
     <>
       <footer className='bg-black text-white relative xl:py-[60px] md:py-[40px] py-[30px]'>
-        <div className='max-w-[1410px] w-full px-[15px] mx-auto'>
-          <div className='md:mb-16 mb-10 flex justify-between items-center flex-col md:flex-col lg:flex-row md:px-0 sm:px-[15px] px-[15px]'>
+        <div className='container'>
+          <div className='md:mb-16 mb-10 flex justify-between items-center flex-col md:flex-col lg:flex-row md:px-[15px] sm:px-[15px] px-[15px]'>
             <Image
               src={LogoWhite}
               alt='Codewinglet White Logo'
@@ -68,12 +68,18 @@ const Footer = () => {
             />
             <hr className='lg:hidden block w-full border-[#575757] my-7' />
             <div className='flex items-center relative flex-col sm:flex-row md:gap-0 gap-3.5'>
-              <Typography className='lg:text-h4 md:text-body2 text-body2 font-300 pl-0  lg:pl-[80px] xl:pl-[200px] relative md:after:content lg:after:block after:hidden after:absolute xl:after:left-44 after:left-14 after:top-2 after:bg-white after:w-[0.1rem] after:h-[3.5rem]'>
+              <Typography className='footerTitle doubleXl:text-h4 xl:text-h4 lg:text-body1 md:text-body2 text-body2 font-300 lg:pl-[80px] pl-0 relative md:after:content lg:after:block after:hidden after:absolute after:left-14 after:top-2 after:bg-white after:w-[0.1rem] doubleXl:after:h-[3.5rem] doubleXl:h-[3.5rem] xl:h-[3rem] lg:after:h-[3rem] after:h-[3.5rem]'>
                 Do you want to talk more about the project? Reach out to us
               </Typography>
-              <Button className='md:w-[350px] sm:w-[364px] w-full h-[56px]'>
-                Schedule a call
-              </Button>
+              <Link
+                href='https://calendly.com/slapani'
+                target='_blank'
+                aria-label='Instagram'
+              >
+                <Button className='doubleXl:w-[230px] xl:w-[230px] md:w-[350px] sm:w-[364px] w-full h-[56px]'>
+                  Schedule a call
+                </Button>
+              </Link>
             </div>
           </div>
           <div className='md:gap-0 gap-[10px] flex px-[15px] relative mx-[-15px] flex-wrap '>
@@ -82,10 +88,10 @@ const Footer = () => {
                 className={`px-[15px] w-full relative ${menuItem.responsiveClass}`}
                 key={menuItem.title}
               >
-                <div className='my-3 sm:hidden' />
+                <div className='my-1 sm:hidden' />
                 <Typography
                   variant='h6'
-                  className=' mb-[10px] flex items-center justify-between'
+                  className='lg:mb-[20px] mb-[20px] flex items-center justify-between'
                   onClick={() =>
                     setExpandedOption((prev) =>
                       prev === -1 || prev !== index ? index : -1
@@ -104,7 +110,7 @@ const Footer = () => {
                 </Typography>
                 <div
                   className={getClassNames(
-                    'flex flex-col gap-[6px] sm:max-h-full max-h-0 overflow-hidden transition-all ease-in-out duration-500',
+                    'flex flex-col gap-[6px] sm:max-h-full max-h-0 overflow-hidden transition-all ease-in-out duration-500 sm:pl-0 pl-4',
                     index === expandedOption ? 'max-h-[566px]' : ''
                   )}
                 >
@@ -112,7 +118,7 @@ const Footer = () => {
                     <div key={item.id}>
                       <Typography
                         variant='subtitle1'
-                        className=' leading-normal mb-3.5 min-h-0 text-silver'
+                        className=' leading-normal mb-3.5 min-h-0 text-silver hover:text-white'
                       >
                         <Link className='' href={item.path}>
                           {item.label}
@@ -124,7 +130,7 @@ const Footer = () => {
               </div>
             ))}
 
-            <div className='px-[15px] w-full relative xl:max-w-[20%] xl:flex-[0_0_20%] lg:max-w-[70%] lg:flex-[0_0_70%] md:max-w-[50%] md:flex-[0_0_50%] sm:max-w-[100%] sm:flex-[0_0_100%] max-w-[100%] flex-[0_0_100%] min-h-[1px] xl:mt-0 lg:mt-7 md:mt-7 m-0'>
+            <div className='px-[15px] w-full relative doubleXl:max-w-[20%] doubleXl:flex-[0_0_20%] xl:max-w-[23%] xl:flex-[0_0_23%] lg:max-w-[70%] lg:flex-[0_0_70%] md:max-w-[50%] md:flex-[0_0_50%] sm:max-w-[100%] sm:flex-[0_0_100%] max-w-[100%] flex-[0_0_100%] min-h-[1px] xl:mt-0 lg:mt-7 md:mt-7 m-0'>
               <Typography variant='h6' className=' mb-[20px] sm:mt-0 mt-3'>
                 Get in touch
               </Typography>
@@ -166,11 +172,14 @@ const Footer = () => {
                   variant='subtitle1'
                   className='leading-normal mb-3.5 min-h-0 text-silver flex gap-3'
                 >
-                  <LocationIcon className='xl:w-[22%] lg:w-[6-%] md:w-[10%] sm:w-auto w-[13%]' />
-                  <Typography className='xl:pr-0 lg:pr-[370px] pr-0'>
-                    A901-905, Vivanta Icon Opp. Shell Petrol Pump, Adajan,
-                    Surat, Gujarat 395009.
-                  </Typography>
+                  <LocationIcon className='xl:w-[15%] lg:w-[6-%] md:w-[10%] sm:w-auto w-[13%] mt-[2px]' />
+                  <div className='flex flex-col'>
+                    <div>Address :</div>
+                    <Typography className='xl:pr-0 lg:pr-[370px] pr-0'>
+                      A901-905, Vivanta Icon Opp. Shell Petrol Pump, Adajan,
+                      Surat, Gujarat 395009.
+                    </Typography>
+                  </div>
                 </Typography>
               </div>
               <div className='flex gap-5 lg:mt-7 md:mt-7 mt-7 ml-[30px]'>
@@ -192,7 +201,7 @@ const Footer = () => {
                 </Link>
                 <Link
                   className='flex items-center justify-center w-8 h-8 border border-solid border-white rounded-full bg-white'
-                  href='https://www.facebook.com/CodewingletPvtLtd'
+                  href='https://www.facebook.com/codewingletpteltd'
                   target='_blank'
                   aria-label='Facebook'
                 >
@@ -213,7 +222,7 @@ const Footer = () => {
       </footer>
 
       <div className='lg:gap-0 gap-4 relative bg-white'>
-        <div className='max-w-[1410px] w-full px-[15px] mx-auto flex flex-col md:flex-row items-center md:justify-between justify-center py-3.5 md:gap-0 gap-2.5'>
+        <div className='container flex flex-col md:flex-row items-center md:justify-between justify-center p-3.5 md:gap-0 gap-2.5'>
           <Typography variant='subtitle1' className='sm:text-left text-center'>
             © {new Date().getFullYear()} All rights reserved. Codewinglet
           </Typography>

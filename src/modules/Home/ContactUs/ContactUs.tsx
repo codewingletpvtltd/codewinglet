@@ -4,7 +4,7 @@ const ContactUs = () => (
   <section className='lg:py-20 py-10 bg-secondary'>
     <div className='container w-full px-[15px] mx-auto'>
       <div className='flex lg:flex-row flex-col'>
-        <div className='lg:w-[55%] w-full md:m-0 mb-7 xl:pr-0 lg:pr-[30] md:p-0 pr-0'>
+        <div className='lg:w-[55%] w-full md:m-0 mb-7 xl:pr-0 lg:pr-[30px] md:p-0 pr-0'>
           <SectionHeader
             title={<>Contact Us</>}
             description={<>Awesomeness awaits! Connect with our experts.</>}
@@ -25,7 +25,7 @@ const ContactUs = () => (
         </div>
         <div className='lg:w-[45%] w-full'>
           <div
-            className='bg-white md:p-[60px] p-[16px] lg:w-[510px] md:w-[75%] w-full float-right md:float-none lg:float-right md:mt-3 block mx-auto'
+            className='bg-white xl:p-[60px] lg:p-10 md:p-[60px] p-[16px] xl:w-[510px] lg:w-full md:w-[75%] w-full float-right md:float-none lg:float-right md:mt-3 block mx-auto'
             data-wow-duration='2s'
           >
             <h3 className='md:text-[30px] text-body2 font-500 relative text-primary mb-2'>

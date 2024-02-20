@@ -7,6 +7,7 @@ const EmailIcon: FC<SVGProps<SVGSVGElement>> = (props) => (
     viewBox='0 0 18 18'
     fill='none'
     xmlns='http://www.w3.org/2000/svg'
+    className='mt-[2px]'
   >
     <path
       d='M12.75 15.375H5.25C3 15.375 1.5 14.25 1.5 11.625V6.375C1.5 3.75 3 2.625 5.25 2.625H12.75C15 2.625 16.5 3.75 16.5 6.375V11.625C16.5 14.25 15 15.375 12.75 15.375Z'
