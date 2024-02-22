@@ -39,6 +39,7 @@ export interface MenuTriggerProps {
 export type ChildItemType = {
   label: string;
   icon?: string;
+  description?: string;
   path?: string;
   menu?: {
     label: string;
@@ -49,4 +50,9 @@ export type ChildItemType = {
 
 export interface MobileMenuProps {
   onMenu: () => void;
+}
+
+export interface SubMenuContentProps {
+  childItems: ChildItemType;
+  index: number;
 }

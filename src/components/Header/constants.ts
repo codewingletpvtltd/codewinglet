@@ -1,106 +1,197 @@
 import {
-  aboutUs,
+  ic_aboutus,
+  ic_work,
+  ic_career,
+  ic_case,
+  ic_blog,
+  ic_customer,
+  ic_workculter,
+  ic_contactus,
+  cpu,
+  itConsulting,
+  customSoftware,
+  webApplication,
+  mobileApplication,
   beDev,
   customSoftwareDev,
   feDev,
   frontend,
-  life,
   maintenance,
-  mobileApp,
   multiTenatSystem,
-  projectConsulting,
-  qa,
   react,
   teamDev,
   uiComponent,
-  uiux,
   webApp,
-  webDesigning,
-  whyCodewinglet,
+  eCommerces,
+  edTechs,
+  fintech,
+  healthcares,
+  iot,
+  logistics,
+  manufacturing,
+  media,
+  staffing,
+  waste,
+  travels,
+  realEstates,
 } from '@codewinglet/assets';
 import { ChildItemType } from './types';
 
 const services: ChildItemType = [
   {
-    path: 'project-consulting',
-    label: 'Project Consulting',
-    icon: projectConsulting,
+    path: 'internet-if-things',
+    label: 'Internet if Things(IoT)',
+    icon: cpu,
   },
   {
-    path: 'multi-tenant-system',
-    label: 'Multi Tenat System',
-    icon: multiTenatSystem,
-  },
-  {
-    path: 'web-application-development',
-    label: 'Web Application Development',
-    icon: webApp,
-  },
-  {
-    path: 'mobile-application-development',
-    label: 'Mobile Application Development',
-    icon: mobileApp,
-  },
-  {
-    path: 'frontend-development',
-    label: 'Frontend Development',
-    icon: feDev,
-  },
-  {
-    path: 'backend-development',
-    label: 'Backend Development',
-    icon: beDev,
-  },
-  {
-    path: 'qa-testing',
-    label: 'QA & Testing',
-    icon: qa,
-  },
-  {
-    path: 'support-maintenance',
-    label: 'Support & Maintenance',
-    icon: maintenance,
+    path: 'it-consulting',
+    label: 'IT Consulting',
+    icon: itConsulting,
   },
   {
     path: 'custom-software-development',
-    label: 'Custom Software Development',
-    icon: customSoftwareDev,
+    label: 'Custom software development',
+    icon: customSoftware,
   },
   {
-    path: 'web-designing',
-    label: 'Web Designing',
-    icon: webDesigning,
+    path: 'web-application-development',
+    label: 'Web application development',
+    icon: webApplication,
   },
   {
-    path: 'ui-component-library',
-    label: 'UI Component Library',
+    path: 'mobile-application-development',
+    label: 'Mobile application development',
+    icon: mobileApplication,
+  },
+  {
+    path: 'devOps',
+    label: 'DevOps',
+    icon: multiTenatSystem,
+  },
+  {
+    path: 'cloud-computing',
+    label: 'Cloud Computing',
+    icon: feDev,
+  },
+  {
+    path: 'artificial-intelligence',
+    label: 'Artificial Intelligence',
+    icon: maintenance,
+  },
+  {
+    path: 'sustainability-services',
+    label: 'Sustainability Services',
     icon: uiComponent,
+  },
+
+  {
+    path: 'qa-and-testing',
+    label: 'QA and Testing',
+    icon: teamDev,
   },
   {
     path: 'ui-ux-development',
-    label: 'UI/UX development',
-    icon: uiux,
+    label: 'UI/UX Design & Development',
+    icon: webApp,
   },
+
   {
-    path: 'hire-dedicated-team',
-    label: 'Hire Dedicated Team and Developer',
-    icon: teamDev,
+    path: 'hire-dedicated-team-and-developers',
+    label: 'Hire dedicated team and developers',
+    icon: beDev,
+  },
+
+  {
+    path: 'support-and-maintenance',
+    label: 'Support and maintenance',
+    icon: customSoftwareDev,
   },
 ];
 
-const companyMenu: ChildItemType = [
+const industries: ChildItemType = [
   {
-    icon: aboutUs,
-    label: 'About Us',
-    path: '',
+    path: 'project-consulting',
+    label: 'Waste management',
+    description:
+      'Sustainability is one area where better use of resources is critical. ',
+    icon: waste,
   },
   {
-    icon: whyCodewinglet,
-    label: 'Why Codewinglet',
+    path: 'multi-tenant-system',
+    label: 'Sustainable IoT Solution',
+    description:
+      'Sustainability is one area where better use of resources is critical. ',
+    icon: iot,
   },
   {
-    icon: life,
-    label: 'Life At Codewinglet',
+    path: 'web-application-development',
+    description:
+      'Sustainability is one area where better use of resources is critical. ',
+    label: 'Staffing management',
+    icon: staffing,
+  },
+  {
+    path: 'mobile-application-development',
+    description:
+      'Sustainability is one area where better use of resources is critical. ',
+    label: 'E-commerce',
+    icon: eCommerces,
+  },
+  {
+    path: 'frontend-development',
+    description:
+      'Sustainability is one area where better use of resources is critical. ',
+    label: 'Healthcare',
+    icon: healthcares,
+  },
+  {
+    path: 'backend-development',
+    description:
+      'Sustainability is one area where better use of resources is critical. ',
+    label: 'Logistics',
+    icon: logistics,
+  },
+  {
+    path: 'qa-testing',
+    label: 'Ed-tech',
+    description:
+      'Sustainability is one area where better use of resources is critical. ',
+    icon: edTechs,
+  },
+  {
+    path: 'support-maintenance',
+    description:
+      'Sustainability is one area where better use of resources is critical. ',
+    label: 'Fintech',
+    icon: fintech,
+  },
+  {
+    path: 'custom-software-development',
+    label: 'Manufacturing & retails',
+    description:
+      'Sustainability is one area where better use of resources is critical. ',
+    icon: manufacturing,
+  },
+  {
+    path: 'web-designing',
+    label: 'real Estate',
+    description:
+      'Sustainability is one area where better use of resources is critical. ',
+    icon: realEstates,
+  },
+  {
+    path: 'ui-component-library',
+    label: 'Travel & hospitality',
+    description:
+      'Sustainability is one area where better use of resources is critical. ',
+    icon: travels,
+  },
+  {
+    path: 'ui-ux-development',
+    label: 'Media & Entertainment',
+    description:
+      'Sustainability is one area where better use of resources is critical. ',
+    icon: media,
   },
 ];
 
@@ -331,7 +422,76 @@ const technology: ChildItemType = [
   // },
 ];
 
+const companyMenu: ChildItemType = [
+  {
+    icon: ic_aboutus,
+    label: 'About Us',
+    path: '',
+    description: 'Learn about our story and our mission statement.',
+  },
+  {
+    icon: ic_work,
+    label: 'Work',
+    description: 'News and writings, press releases, and press resources.',
+  },
+  {
+    icon: ic_career,
+    label: 'Careers',
+    description: 'We’re always looking for talented people. Join our team!',
+  },
+  {
+    icon: ic_case,
+    label: 'Case studies',
+    path: '',
+    description: 'All the boring stuff that we Dan from legal made us add.',
+  },
+  {
+    icon: ic_blog,
+    label: 'Blog',
+    description: 'The latest industry news, updates and info.',
+  },
+  {
+    icon: ic_customer,
+    label: 'Customer stories',
+    description: 'Learn how our customers are making big changes.',
+  },
+  {
+    icon: ic_workculter,
+    label: 'Work culture',
+    description: 'Get up and running on new features and techniques.',
+  },
+  {
+    icon: ic_contactus,
+    label: 'Contact us',
+    description: 'All the boring stuff that you (hopefully won’t) need.',
+  },
+];
+
 export const navMenu = [
+  {
+    path: '',
+    label: 'Services',
+    children: services,
+    left: 'left-[-21rem]',
+  },
+
+  {
+    path: '',
+    label: 'Technology',
+    category: true,
+    children: technology,
+    left: 'left-[-28rem]',
+  },
+  {
+    path: '',
+    label: 'Industries',
+    children: industries,
+    left: 'left-[-36rem]',
+  },
+  {
+    path: '/not-found',
+    label: 'Portfolio',
+  },
   // {
   //   path: '',
   //   label: 'Services',

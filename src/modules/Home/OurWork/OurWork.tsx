@@ -7,20 +7,23 @@ import { Button, SectionHeader, Typography } from '@codewinglet/components';
 import { portfolio } from './data';
 
 const OurWork = () => (
-  <section className='lg:py-20 py-10 bg-white'>
-    <section className='max-w-[1410px] w-full px-[15px] mx-auto'>
+  <section className='xl:py-20 lg:py-14 py-10 bg-white'>
+    <section className='container w-full lg:px-[15px] sm:px-[30px] px-[15px] mx-auto'>
       <SectionHeader
         title={<>Our Work</>}
         description={
-          <>"Cutting-Edge Technologies We Work With for Optimal Results”</>
+          <>Cutting-Edge Technologies We Work With for Optimal Results</>
         }
         headingClassName=''
         descriptionClassName=''
       />
       <div className='relative'>
-        <div className='grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-10 gap-5 sm:mt-12 mt-7'>
+        <div className='grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-10 gap-5 lg:mt-12 md:mt-6 mt-7'>
           {portfolio.map((data, index) => (
-            <div key={`portfolio-${data.id}-${index}`} className='port-1'>
+            <div
+              key={`portfolio-${data.id}-${index}`}
+              className={`${index >= 3 ? 'sm:block hidden' : undefined} port-1`}
+            >
               <div className='relative w-full overflow-hidden m-auto group'>
                 <a href='#' target='_blank'>
                   <div className='bg-[#00000099] absolute w-full h-full left-0 top-0 bottom-0 right-0 opacity-0 z-[1] group-hover:opacity-[1]'></div>
@@ -38,10 +41,13 @@ const OurWork = () => (
                 </a>
               </div>
               <div className='project-head'>
-                <Typography variant='subtitle2' className='mt-[10px]'>
+                <Typography
+                  variant='subtitle2'
+                  className='mt-[10px] text-primary '
+                >
                   {data.subtitle}
                 </Typography>
-                <h3 className='text-primary font-300 lg:text-[22px] md:text-[28px] sm:text-[28px] text-[18px] sm:mb-2 mb-1'>
+                <h3 className='text-primary font-300 lg:text-[22px] sm:text-[22px] text-[18px] sm:mb-2 mb-1'>
                   {data.title}
                 </h3>
                 <p className='text-primary sm:text-[16px] text-[14px] font-300 mb-0'>

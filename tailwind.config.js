@@ -121,6 +121,9 @@ module.exports = {
         info: 'rgb(2, 136, 209)',
         warn: 'rgb(237, 108, 2)',
         popupError: 'rgb(211, 47, 47)',
+        silver: '#BCBCBC',
+        dropdownText: '#606060',
+        dropBorder: '#dadada',
       },
     },
 

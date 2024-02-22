@@ -67,27 +67,27 @@ const Typography: React.FC<TypographyProps> = forwardRef(
         );
       case 'body1':
         return (
-          <p
+          <div
             ref={ref}
             className={getClassNames('text-body1 h-body1', className)}
             {...rest}
           >
             {children}
-          </p>
+          </div>
         );
       case 'body2':
         return (
-          <p
+          <div
             ref={ref}
             className={getClassNames('text-body2 h-body2', className)}
             {...rest}
           >
             {children}
-          </p>
+          </div>
         );
       case 'subtitle1':
         return (
-          <p
+          <div
             ref={ref}
             className={getClassNames(
               'text-subtitle1 min-h-subtitle1',
@@ -96,11 +96,11 @@ const Typography: React.FC<TypographyProps> = forwardRef(
             {...rest}
           >
             {children}
-          </p>
+          </div>
         );
       case 'subtitle2':
         return (
-          <p
+          <div
             ref={ref}
             className={getClassNames(
               'text-subtitle2 min-h-subtitle2',
@@ -109,17 +109,17 @@ const Typography: React.FC<TypographyProps> = forwardRef(
             {...rest}
           >
             {children}
-          </p>
+          </div>
         );
       default:
         return (
-          <p
+          <div
             ref={ref}
             className={getClassNames('min-h-[24px]', className)}
             {...rest}
           >
             {children}
-          </p>
+          </div>
         );
     }
   }

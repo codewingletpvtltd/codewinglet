@@ -60,7 +60,70 @@ export const serviceMenu = [
   {
     id: 6,
     path: '/hire-dedicated-team',
-    label: 'CRM-ERM',
+    label: 'Vue Js',
+  },
+  {
+    id: 7,
+    path: '/hire-dedicated-team',
+    label: 'Django',
+  },
+  {
+    id: 8,
+    path: '/hire-dedicated-team',
+    label: 'Postgre SQL',
+  },
+  {
+    id: 9,
+    path: '/hire-dedicated-team',
+    label: 'MongoDB',
+  },
+  {
+    id: 10,
+    path: '/hire-dedicated-team',
+    label: 'NewSQL',
+  },
+  {
+    id: 11,
+    path: '/hire-dedicated-team',
+    label: 'AWS',
+  },
+  {
+    id: 12,
+    path: '/hire-dedicated-team',
+    label: 'Google Cloud',
+  },
+];
+
+export const companyMenu = [
+  {
+    id: 1,
+    path: '/terms-and-conditions',
+    label: 'About us',
+  },
+  {
+    id: 2,
+    path: '/privacy-policy',
+    label: 'Contact us',
+  },
+  {
+    id: 3,
+    path: '/privacy-policy',
+    label: 'Career',
+  },
+  {
+    id: 4,
+    path: '/privacy-policy',
+    label: 'Works',
+  },
+  {
+    id: 5,
+    path: '/privacy-policy',
+    label: 'Case studies',
+  },
+  {
+    id: 6,
+    path: '/privacy-policy',
+    label: 'Blogs',
   },
 ];
 

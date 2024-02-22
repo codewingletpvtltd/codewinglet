@@ -1,8 +1,8 @@
 import { SectionHeader, Typography } from '@codewinglet/components';
 
 const ContactUs = () => (
-  <section className='lg:py-20 py-10 bg-secondary'>
-    <div className='max-w-[1410px] w-full px-[15px] mx-auto'>
+  <section className='xl:py-20 lg:py-14 pb-10 pt-0 bg-secondary'>
+    <div className='container w-full lg:px-[15px] sm:px-[30px] px-[15px] mx-auto'>
       <div className='flex lg:flex-row flex-col'>
         <div className='lg:w-[55%] w-full md:m-0 mb-7 xl:pr-0 lg:pr-[30] md:p-0 pr-0'>
           <SectionHeader
@@ -11,7 +11,7 @@ const ContactUs = () => (
           />
           <Typography
             variant='body1'
-            className='!text-[20px] font-300 text-primary mt-[50px] mb-[38px] text-justify md:block hidden'
+            className='!text-[20px] font-300 text-primary lg:mt-[50px] md:mt-[30px] mt-[50px] mb-[38px] text-justify md:block hidden'
           >
             If you are looking for a way to optimize your business processes and
             operations with data and analytics, talk to our business analytics
@@ -46,7 +46,7 @@ const ContactUs = () => (
               </span>
               <span className='w-full block mb-[20px]'>
                 <input
-                  type='text'
+                  type='email'
                   className='border border-solid border-lightGray px-6 leading-[46px] h-[62px] w-full text-[16px] transition-all ease-in-out duration-[0.2s] placeholder:text-[#575757] placeholder:text-[14px] placeholder:font-300 focus:shadow-none focus-visible:border-transparent'
                   placeholder='Email'
                   required
@@ -54,7 +54,7 @@ const ContactUs = () => (
               </span>
               <span className='w-full block mb-[20px]'>
                 <input
-                  type='text'
+                  type='tel'
                   className='border border-solid border-lightGray px-6 leading-[46px] h-[62px] w-full text-[16px] transition-all ease-in-out duration-[0.2s] placeholder:text-[#575757] placeholder:text-[14px] placeholder:font-300 focus:shadow-none focus-visible:border-transparent'
                   placeholder='Phone number'
                   required

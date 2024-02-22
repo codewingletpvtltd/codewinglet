@@ -10,7 +10,13 @@ import MenuItems from './MenuItems';
 import MenuTrigger from './MenuTrigger';
 import MenuIndicator from './MenuIndicator';
 import MenuContent from './MenuContent';
-import ListItem from './ListItem';
+// import ListItem from './ListItem';
+import {
+  ServicesContent,
+  IndustryContent,
+  TechnologyContent,
+  CompanyContent,
+} from './SubMenu';
 
 const NavigationMenu = () => {
   const { onMouseEnter, onMouseLeave, gridRows, onNavigate, anchorEle } =
@@ -37,16 +43,26 @@ const NavigationMenu = () => {
             />
             {item.children && <MenuIndicator />}
             {item.children ? (
-              item.category ? (
-                <MenuContent
-                  wrapperClassName={getClassNames(
-                    item.left,
-                    anchorEle?.id === `menu-${index}`
-                      ? 'group-hover:block'
-                      : 'hidden'
-                  )}
-                >
-                  {item.children.map((menu, menuIdx) => (
+              // item.category ? (
+              <MenuContent
+                wrapperClassName={getClassNames(
+                  item.left,
+                  anchorEle?.id === `menu-${index}`
+                    ? 'group-hover:block'
+                    : 'hidden'
+                )}
+              >
+                {item.label === 'Services' && (
+                  <ServicesContent childItems={item.children} index={index} />
+                )}
+                {item.label === 'Technology' && <TechnologyContent />}
+                {item.label === 'Industries' && (
+                  <IndustryContent childItems={item.children} index={index} />
+                )}
+                {item.label === 'Company' && (
+                  <CompanyContent childItems={item.children} index={index} />
+                )}
+                {/* {item.children.map((menu, menuIdx) => (
                     <li key={`menu-header-${index}-${menuIdx}`}>
                       <ul className='grid grid-flow-row gap-[15px]'>
                         <ListItem
@@ -87,10 +103,10 @@ const NavigationMenu = () => {
                       onClick={onMouseLeave}
                       href={val.path ? val.path : '/not-found'}
                     />
-                  ))}
-                </MenuContent>
-              )
-            ) : null}
+                  ))} */}
+              </MenuContent>
+            ) : // )
+            null}
           </MenuItems>
         ))}
       </MenuList>

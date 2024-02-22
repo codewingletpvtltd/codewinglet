@@ -42,33 +42,33 @@ const PROCESS = [
 ];
 
 const ContactUs = () => (
-  <section className='relative lg:py-20 py-10 bg-secondary'>
-    <div className='max-w-[1410px] w-full px-[15px] mx-auto'>
+  <section className='relative xl:py-20 lg:py-14 py-10 bg-secondary'>
+    <div className='container w-full lg:px-[15px] sm:px-[30px] px-[15px] mx-auto'>
       <SectionHeader
         title={<>Our Work Process</>}
         description={
           <>
-            "Here, we make almost every genre of applications. You name it and
-            we build it."
+            Here, we make almost every genre of applications. You name it and we
+            build it.
           </>
         }
         headingClassName=''
       />
 
-      <div className='grid sm:gap-[30px] gap-2.5 lg:grid-cols-3 grid-cols-2  sm:mt-12 mt-7'>
+      <div className='grid sm:gap-[30px] gap-2.5 lg:grid-cols-3 grid-cols-2 lg:mt-12 md:mt-6 mt-7 process-card'>
         {PROCESS.map((card) => (
           <>
-            <div className='soft-card xl:p-10 lg:p-7 md:p-10 sm:p-5 p-2.5 bg-white hover:bg-primary hover:text-white'>
+            <div className='soft-card xl:p-10 lg:p-7 md:p-8 sm:p-5 p-2.5 bg-white hover:bg-primary hover:text-white'>
               <Typography
                 variant='h1'
                 className='soft-head !text-[50px] font-700 leading-[50px] relative text-transparent after:content after:absolute after:bottom-2.5 after:left-[70px] after:w-[30px] after:h-[2px] after:bg-primary hover:after:bg-white after:duration-[0.9s] after:transition-all after:ease-in'
               >
                 {card.number}
               </Typography>
-              <Typography className='sm:text-[18px] text-[12px] font-500  sm:mb-3 sm:mt-3 mb-1 mt-1'>
+              <Typography className='sm:text-[18px] text-[12px] font-500  sm:mb-3 sm:mt-3 mb-1 mt-1 text-primary'>
                 {card.title}
               </Typography>
-              <Typography className='m-0 sm:text-[15px] text-[12px] font-300'>
+              <Typography className='m-0 sm:text-[15px] text-[12px] font-300 text-primary'>
                 {card.description}
               </Typography>
             </div>

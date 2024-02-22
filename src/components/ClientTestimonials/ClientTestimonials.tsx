@@ -8,7 +8,7 @@ import ClientDetails from './components/ClientDetails';
 
 const ClientTestimonials = () => (
   <div className='md:py-20 py-10'>
-    <div className='max-w-[1410px] w-full px-[15px] mx-auto'>
+    <div className='container w-full lg:px-[15px] sm:px-[30px] px-[15px] mx-auto'>
       <SectionHeader
         title={<>Testimonials</>}
         description={

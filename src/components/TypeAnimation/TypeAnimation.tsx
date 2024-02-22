@@ -23,7 +23,6 @@ const TypeAnimation = forwardRef<
   (
     {
       sequence,
-      variant = 'h2',
       repeat = 'infinity',
       speed = DEFAULT_SPEED,
       wordDelay = DEFAULT_WORD_DELAY,
@@ -56,7 +55,6 @@ const TypeAnimation = forwardRef<
     return (
       <Typography
         className={getClassNames('typing-cursor text-primary', className)}
-        variant={variant}
         ref={textRef}
       />
     );

@@ -19,18 +19,19 @@ const HeroSection = () => (
       <span style={{ animationDelay: '6s' }}></span>
     </div>
 
-    <div className='max-w-[1410px] px-[15px] mx-auto w-full m-auto'>
-      <div className='xl:px-[200px] md:px-5 sm:px-0 px-0'>
-        <Typography className='lg:text-h1 md:text-[42px] sm:text-[37px] text-body2 !font-300 text-center  text-white leading-[1.2]'>
-          Your Premier Web, Mobile And Software development squad in{' '}
+    <div className='max-w-[1410px] md:px-[15px] sm:px-[30px] px-[15px] mx-auto w-full m-auto'>
+      <div className='xl:px-[200px] lg:px-[120px] md:px-14 sm:px-0 px-0'>
+        <Typography className='xl:text-h1 md:text-[36px] sm:text-[36px] text-h6 !font-300 text-center text-white leading-[1.2]'>
+          Your Trusted Custom Software Development Partner - Crafting Innovative
+          Solutions for{' '}
         </Typography>
 
         <TypeAnimation
           sequence={sequence}
-          className='text-center text-white lg:text-h1 md:text-[42px] sm:text-[37px] text-h6 !font-300'
+          className='text-center text-white xl:text-h1 md:text-[42px] sm:text-[37px] text-h6 !font-300'
         />
 
-        <Typography className='lg:text-body1 md:text-[20px] text-subtitle1 text-center my-[41px] mb-[84px] text-white md:px-0 sm:px-[0px] px-0'>
+        <Typography className='lg:text-body1 md:text-[18px] text-subtitle1 text-center my-[41px] mb-[84px] text-white md:px-0 sm:px-[0px] px-0'>
           Do you have a concept for project? connect with codewinglet right away
           to secure a technologically advanced and cost effective development
           solution!

@@ -1,0 +1,12 @@
+export { default as eCommerces } from './eCommerce.svg';
+export { default as edTechs } from './edTech.svg';
+export { default as fintech } from './fintech.svg';
+export { default as healthcares } from './healthcare.svg';
+export { default as travels } from './travel.svg';
+export { default as iot } from './ioT.svg';
+export { default as logistics } from './logistics.svg';
+export { default as manufacturing } from './manufacturing.svg';
+export { default as media } from './media.svg';
+export { default as realEstates } from './realEstate.svg';
+export { default as staffing } from './staffing.svg';
+export { default as waste } from './waste.svg';
