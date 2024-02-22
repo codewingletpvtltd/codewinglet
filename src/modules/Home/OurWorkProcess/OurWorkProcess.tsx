@@ -42,8 +42,8 @@ const PROCESS = [
 ];
 
 const ContactUs = () => (
-  <section className='relative py-[80px] bg-[#F5F5F5]'>
-    <div className='max-w-[1410px] w-full px-[15px] mx-auto'>
+  <section className='relative lg:py-20 py-10 bg-secondary'>
+    <div className='container w-full px-[15px] mx-auto'>
       <SectionHeader
         title={<>Our Work Process</>}
         description={
@@ -55,23 +55,20 @@ const ContactUs = () => (
         headingClassName=''
       />
 
-      <div className='grid gap-[30px] grid-cols-3 mt-12'>
+      <div className='grid sm:gap-[30px] gap-2.5 lg:grid-cols-3 grid-cols-2 md:mt-12 mt-7 process-card'>
         {PROCESS.map((card) => (
           <>
-            <div className='soft-card p-10 bg-white hover:bg-primary hover:text-white'>
+            <div className='soft-card xl:p-10 lg:p-7 md:p-10 sm:p-5 p-2.5 bg-white hover:bg-primary hover:text-white'>
               <Typography
                 variant='h1'
-                className='soft-head !text-[50px] font-700 leading-[50px] relative text-transparent after:content after:absolute after:bottom-2.5 after:left-[70px] after:w-[30px] after:h-[2px] after:bg-primary hover:after:bg-white after:duration-[0.9s] after:transition-all after:ease-in'
+                className='soft-head font-700 leading-[50px] relative after:content after:absolute after:bottom-2.5 sm:after:left-[70px] after:left-[60px] after:w-[30px] after:h-[2px] after:bg-primary hover:after:bg-white after:duration-[0.9s] after:transition-all after:ease-in'
               >
                 {card.number}
               </Typography>
-              <Typography
-                variant='h5'
-                className='text-[18px] font-500  mb-3 mt-3'
-              >
+              <Typography className='sm:text-[18px] text-[12px] font-500  sm:mb-3 sm:mt-3 mb-1 mt-1'>
                 {card.title}
               </Typography>
-              <Typography variant='subtitle2' className='m-0'>
+              <Typography className='m-0 sm:text-[15px] text-[12px] font-300'>
                 {card.description}
               </Typography>
             </div>

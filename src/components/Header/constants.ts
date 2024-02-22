@@ -1,10 +1,16 @@
 import {
-  aboutUs,
+  ic_aboutus,
+  ic_work,
+  ic_career,
+  ic_case,
+  ic_blog,
+  ic_customer,
+  ic_workculter,
+  ic_contactus,
   beDev,
   customSoftwareDev,
   feDev,
   frontend,
-  life,
   maintenance,
   mobileApp,
   multiTenatSystem,
@@ -16,7 +22,6 @@ import {
   uiux,
   webApp,
   webDesigning,
-  whyCodewinglet,
 } from '@codewinglet/assets';
 import { ChildItemType } from './types';
 
@@ -90,17 +95,46 @@ const services: ChildItemType = [
 
 const companyMenu: ChildItemType = [
   {
-    icon: aboutUs,
+    icon: ic_aboutus,
     label: 'About Us',
     path: '',
+    description: 'Learn about our story and our mission statement.',
   },
   {
-    icon: whyCodewinglet,
-    label: 'Why Codewinglet',
+    icon: ic_work,
+    label: 'Work',
+    description: 'News and writings, press releases, and press resources.',
   },
   {
-    icon: life,
-    label: 'Life At Codewinglet',
+    icon: ic_career,
+    label: 'Careers',
+    description: 'We’re always looking for talented people. Join our team!',
+  },
+  {
+    icon: ic_case,
+    label: 'Case studies',
+    path: '',
+    description: 'All the boring stuff that we Dan from legal made us add.',
+  },
+  {
+    icon: ic_blog,
+    label: 'Blog',
+    description: 'The latest industry news, updates and info.',
+  },
+  {
+    icon: ic_customer,
+    label: 'Customer stories',
+    description: 'Learn how our customers are making big changes.',
+  },
+  {
+    icon: ic_workculter,
+    label: 'Work culture',
+    description: 'Get up and running on new features and techniques.',
+  },
+  {
+    icon: ic_contactus,
+    label: 'Contact us',
+    description: 'All the boring stuff that you (hopefully won’t) need.',
   },
 ];
 
@@ -332,11 +366,33 @@ const technology: ChildItemType = [
 ];
 
 export const navMenu = [
+  {
+    path: '',
+    label: 'Services',
+    children: services,
+    left: 'left-[-21rem]',
+  },
+
+  {
+    path: '',
+    label: 'Technology',
+    category: true,
+    children: technology,
+    left: 'left-[-28rem]',
+  },
+  {
+    path: '',
+    label: 'Industries',
+    children: services,
+    left: 'left-[-36rem]',
+  },
+  {
+    path: '/not-found',
+    label: 'Portfolio',
+  },
   // {
-  //   path: '',
-  //   label: 'Services',
-  //   children: services,
-  //   left: 'left-[-170px]',
+  //   path: '/career',
+  //   label: 'Career',
   // },
   {
     path: '/jobs',
@@ -345,30 +401,12 @@ export const navMenu = [
     left: 'left-[-50px]',
   },
   {
-    path: '',
-    label: 'Technology',
-    category: true,
-    children: technology,
-    left: 'left-[-50px]',
+    path: '/not-found',
+    label: 'Blog',
   },
-
-  // {
-  //   path: '',
-  //   label: 'Industries',
-  //   children: industriesMenu,
-  //   left: 'left-[-340px]',
-  // },
-  // {
-  //   path: '/career',
-  //   label: 'Career',
-  // },
-  // {
-  //   label: 'Company',
-  //   children: companyMenu,
-  //   left: 'left-0',
-  // },
-  // {
-  //   path: '/not-found',
-  //   label: 'Blog',
-  // },
+  {
+    label: 'Company',
+    children: companyMenu,
+    left: 'left-[-59rem]',
+  },
 ];

@@ -20,15 +20,11 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
       id='header'
       className={getClassNames(
         'fixed h-[90px] flex items-center top-0 z-50 w-full',
-        showMenu
-          ? 'bg-white'
-          : isScroll
-          ? 'bg-white shadow-lg'
-          : 'bg-transparent'
+        showMenu ? 'bg-white' : isScroll ? 'bg-primary' : 'bg-transparent'
       )}
     >
       <div className='container'>
-        <div className='flex items-center max-w-screen-xl justify-between mx-[20px] md:mx-[38px] xl:mx-auto relative'>
+        <div className='flex items-center max-w-[1410px] justify-between relative px-[15px]'>
           <div>
             <Image
               src={Logo}

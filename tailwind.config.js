@@ -103,9 +103,10 @@ module.exports = {
       },
       colors: {
         white: '#FFFFFF',
+        black: '#000000',
         paleWhite: '#F8FCFF',
         primary: '#141414',
-        secondary: '#f9f9f9',
+        secondary: '#f5f5f5',
         lightBlack: '#506B82',
         lightGray: '#b8bbc6',
         error: '#F44336',
@@ -120,6 +121,9 @@ module.exports = {
         info: 'rgb(2, 136, 209)',
         warn: 'rgb(237, 108, 2)',
         popupError: 'rgb(211, 47, 47)',
+        silver: '#BCBCBC',
+        headText: '#bcbcbc',
+        dropdownText: '#606060',
       },
     },
 
@@ -154,13 +158,13 @@ module.exports = {
       h3: [
         '30px',
         {
-          fontWeight: 600,
+          fontWeight: 300,
         },
       ],
       h4: [
         '25px',
         {
-          fontWeight: 400,
+          fontWeight: 300,
         },
       ],
       h5: [

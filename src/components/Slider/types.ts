@@ -16,4 +16,5 @@ export interface SliderProps {
 export interface ArrowProps {
   arrowPosition?: ArrowPosition;
   sliderRef: MutableRefObject<SlickSlider | undefined>;
+  activeIndex: number;
 }

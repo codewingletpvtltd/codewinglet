@@ -60,3 +60,157 @@
     opacity: 0;
   }
 }
+
+/* Media Query */
+
+@media only screen and (min-width: 1600px) and (max-width: 1799px) {
+  @keyframes animate {
+    0% {
+      width: 0px;
+      height: 0px;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      width: 820px;
+      height: 820px;
+      opacity: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1599px) {
+  @keyframes animate {
+    0% {
+      width: 0px;
+      height: 0px;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      width: 600px;
+      height: 600px;
+      opacity: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  @keyframes animate {
+    0% {
+      width: 0px;
+      height: 0px;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      width: 720px;
+      height: 720px;
+      opacity: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  @keyframes animate {
+    0% {
+      width: 0px;
+      height: 0px;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      width: 730px;
+      height: 730px;
+      opacity: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .box {
+    top: 36%;
+  }
+
+  @keyframes animate {
+    0% {
+      width: 0px;
+      height: 0px;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      width: 750px;
+      height: 750px;
+      opacity: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 640px) and (max-width: 767px) {
+  .box {
+    top: 36%;
+  }
+
+  @keyframes animate {
+    0% {
+      width: 0px;
+      height: 0px;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      width: 520px;
+      height: 520px;
+      opacity: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 639px) {
+  .box {
+    top: 36%;
+  }
+
+  @keyframes animate {
+    0% {
+      width: 0px;
+      height: 0px;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      width: 350px;
+      height: 350px;
+      opacity: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .box {
+    top: 36%;
+  }
+
+  @keyframes animate {
+    0% {
+      width: 0px;
+      height: 0px;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      width: 350px;
+      height: 350px;
+      opacity: 0;
+    }
+  }
+}

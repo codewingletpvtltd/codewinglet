@@ -21,13 +21,45 @@ const settings = {
 
 const InfiniteSlider = () => (
   <div className='py-8'>
-    <Slider {...settings}>
+    <Slider
+      {...settings}
+      responsive={[
+        {
+          breakpoint: 1199,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          },
+        },
+      ]}
+    >
       {techList.map((tech, index) => (
         <div key={index + 'abc'}>
           <Image
             alt='logo'
             src={tech.image}
-            className='h-[30px] w-auto mx-12'
+            className='sm:h-[30px] h-[24px] w-auto mx-12'
           />
         </div>
       ))}
