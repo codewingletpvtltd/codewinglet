@@ -1,5 +1,7 @@
 import Image from 'next/image';
-import { SectionHeader, Typography } from '@codewinglet/components';
+import Link from 'next/link';
+import { Button, SectionHeader, Typography } from '@codewinglet/components';
+
 import {
   realEstate,
   travel,
@@ -67,31 +69,41 @@ const INDUCARD = [
 ];
 
 const ContactUs = () => (
-  <section className='bg-white py-20'>
-    <div className='max-w-[1410px] w-full px-[15px] mx-auto'>
+  <section className='bg-secondary lg:py-20 py-10'>
+    <div className='container w-full px-[15px] mx-auto'>
       <SectionHeader
         title={<>Industries We Serve</>}
         description={
           <>
-            "Here, we make almost every genre of applications. <br /> You name
-            it and we build it."
+            "Here, we make almost every genre of applications. You name it and
+            we build it."
           </>
         }
         headingClassName=''
       />
 
-      <div className='grid grid-cols-4 gap-[30px] pt-10'>
+      <div className='grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 sm:gap-[30px] gap-5 md:mt-12 mt-7'>
         {INDUCARD.map((card) => (
           <>
             <div>
               <Image src={card.image} alt='Menu Icon' className='w-full' />
-              <Typography variant='h6' className='text-black mt-3'>
+              <Typography className='text-black mt-3 sm:text-h6 text-subtitle2'>
                 {card.title}
               </Typography>
             </div>
           </>
         ))}
       </div>
+      <Button className='w-full text-black mt-[30px] sm:hidden block'>
+        <Link
+          href='#'
+          rel='noopener noreferrer'
+          target='_blank'
+          className='text-black'
+        >
+          View All
+        </Link>
+      </Button>
     </div>
   </section>
 );

@@ -25,8 +25,8 @@ const clientLogo = [
 ];
 
 const OurClient = () => (
-  <section className='relative overflow-hidden py-[50px] lg:py-[80px] xl:py-[120px] 2xl:py-[80px] 2xl:!pb-[80px]  px-[20px] bg-white'>
-    <section className='max-w-screen-xl md:w-full  mx-auto'>
+  <section className='relative overflow-hidden lg:py-20 py-10 bg-white'>
+    <section className='container w-full px-[15px] mx-auto'>
       <SectionHeader
         title={<>Our Clients</>}
         description='"Our Global Clients"'
@@ -34,7 +34,7 @@ const OurClient = () => (
       />
       <div
         className={getClassNames(
-          'grid grid-cols-2 lg:grid-cols-4 [&>*]:border-r-[1px] [&>*]:border-b-[1px] pt-[37px] lg:pt-[60px]',
+          'grid grid-cols-2 lg:grid-cols-4 [&>*]:border-r-[1px] [&>*]:border-b-[1px] md:mt-12 mt-7 lg:pt-[60px]',
           '[&>:nth-child(2n)]:!border-r-0 [&>:nth-last-child(-n+2)]:border-b-0',
           '[&>*]:border-lightBlack/30 lg:[&>:nth-child(2n)]:!border-r-[1px] lg:[&>:not(:nth-last-child(-n+4))]:border-b-[1px] lg:[&>:nth-last-child(-n+4)]:!border-b-0 lg:[&>:nth-child(4n)]:!border-r-0'
         )}

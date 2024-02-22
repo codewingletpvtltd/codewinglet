@@ -23,6 +23,7 @@ export interface MenuContentProps {
 export interface ListItemProps {
   icon?: string;
   label: string;
+  description?: string;
   isHeader?: boolean;
   labelClassName?: string;
   onClick?: () => void;
@@ -40,6 +41,7 @@ export type ChildItemType = {
   label: string;
   icon?: string;
   path?: string;
+  description?: string;
   menu?: {
     label: string;
     icon?: string;

@@ -12,8 +12,8 @@ import useForwardRef from './hooks/useForwardRef';
 import { typingMain } from './utils/typical';
 import './TypeAnimation.css';
 
-const DEFAULT_SPEED = 70;
-const DEFAULT_WORD_DELAY = 300;
+const DEFAULT_SPEED = 100;
+const DEFAULT_WORD_DELAY = 500;
 
 const TypeAnimation = forwardRef<
   ElementByTypographyVariant[TypographyVariant],

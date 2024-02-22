@@ -81,6 +81,11 @@ export { default as fitness } from './industries/fitness.png';
 export { default as shopping } from './industries/shopping.png';
 export { default as event } from './industries/event.png';
 
+export { default as EmailIcon } from './icons/EmailIcon';
+export { default as CallIcon } from './icons/CallIcon';
+export { default as LocationIcon } from './icons/LocationIcon';
+export { default as DownArrows } from './icons/DownArrows';
+
 export * from './heroSection';
 export * from './ourClient';
 export * from './navigation';

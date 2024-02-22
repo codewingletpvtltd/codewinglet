@@ -1,17 +1,17 @@
 import { SectionHeader, Typography } from '@codewinglet/components';
 
 const ContactUs = () => (
-  <section className='py-20 bg-secondary'>
-    <div className='max-w-[1410px] w-full px-[15px] mx-auto'>
-      <SectionHeader
-        title={<>Contact Us</>}
-        description={<>Awesomeness awaits! Connect with our experts.</>}
-      />
-      <div className='flex mt-12'>
-        <div className='w-[55%]'>
+  <section className='lg:py-20 py-10 bg-secondary'>
+    <div className='container w-full px-[15px] mx-auto'>
+      <div className='flex lg:flex-row flex-col'>
+        <div className='lg:w-[55%] w-full md:m-0 mb-7 xl:pr-0 lg:pr-[30px] md:p-0 pr-0'>
+          <SectionHeader
+            title={<>Contact Us</>}
+            description={<>Awesomeness awaits! Connect with our experts.</>}
+          />
           <Typography
             variant='body1'
-            className='!text-[20px] font-300 mb-10 text-primary'
+            className='!text-[20px] font-300 text-primary mt-[50px] mb-[38px] text-justify md:block hidden'
           >
             If you are looking for a way to optimize your business processes and
             operations with data and analytics, talk to our business analytics
@@ -20,18 +20,18 @@ const ContactUs = () => (
           <iframe
             src='https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=codewinglet&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed'
             id='gmap_canvas'
-            className='w-[100%] h-[336px] md:h-[400px] lg:h-[470px]'
+            className='w-[100%] h-[336px] md:h-[271px] lg:h-[310px] xl:h-[371px] md:block hidden'
           ></iframe>
         </div>
-        <div className='w-[45%]'>
+        <div className='lg:w-[45%] w-full'>
           <div
-            className='bg-white p-[60px] w-[510px] float-right'
+            className='bg-white xl:p-[60px] lg:p-10 md:p-[60px] p-[16px] xl:w-[510px] lg:w-full md:w-[75%] w-full float-right md:float-none lg:float-right md:mt-3 block mx-auto'
             data-wow-duration='2s'
           >
-            <h3 className='text-[30px] font-500 relative text-primary mb-2'>
+            <h3 className='md:text-[30px] text-body2 font-500 relative text-primary mb-2'>
               Get in touch
             </h3>
-            <Typography variant='body2' className=' text-primary mb-5'>
+            <Typography className=' text-primary mb-5 md:text-body2 text-subtitle1'>
               Fill up the form and our Team will get back to you within 24
               hours.
             </Typography>
