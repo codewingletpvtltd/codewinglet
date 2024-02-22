@@ -6,7 +6,7 @@ import { GET } from './api/route';
 export default async function Page({ params }: { params: { slug: string } }) {
   const data = await GET(params.slug);
 
-  if (!data.data.length) {
+  if (!data?.data?.length) {
     notFound();
   }
 

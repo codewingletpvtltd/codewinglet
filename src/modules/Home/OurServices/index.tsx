@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { SectionHeader } from '@codewinglet/components';
 import { accordionData } from '../../../components/TechnologiesTab/constant';
 import Accordion from '../../../components/TechnologiesTab/index';
-import './scss/technologies.css';
+import './scss/main.css';
 
 const Technologies = () => {
   const [expanded, setExpanded] = useState<String>('01');

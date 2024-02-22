@@ -106,7 +106,7 @@ module.exports = {
         black: '#000000',
         paleWhite: '#F8FCFF',
         primary: '#141414',
-        secondary: '#f9f9f9',
+        secondary: '#f5f5f5',
         lightBlack: '#506B82',
         lightGray: '#b8bbc6',
         error: '#F44336',

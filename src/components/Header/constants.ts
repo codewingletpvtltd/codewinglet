@@ -12,28 +12,17 @@ import {
   customSoftware,
   webApplication,
   mobileApplication,
-  beDev,
-  customSoftwareDev,
-  feDev,
+  devops,
+  cloud,
+  artificial,
+  sustainability,
+  qaTest,
+  uiuxDesign,
+  hireDedicated,
+  support,
   frontend,
-  maintenance,
-  multiTenatSystem,
   react,
-  teamDev,
-  uiComponent,
-  webApp,
-  eCommerces,
-  edTechs,
-  fintech,
-  healthcares,
-  iot,
-  logistics,
-  manufacturing,
-  media,
-  staffing,
   waste,
-  travels,
-  realEstates,
 } from '@codewinglet/assets';
 import { ChildItemType } from './types';
 
@@ -66,45 +55,44 @@ const services: ChildItemType = [
   {
     path: 'devOps',
     label: 'DevOps',
-    icon: multiTenatSystem,
+    icon: devops,
   },
   {
     path: 'cloud-computing',
     label: 'Cloud Computing',
-    icon: feDev,
+    icon: cloud,
   },
   {
     path: 'artificial-intelligence',
     label: 'Artificial Intelligence',
-    icon: maintenance,
+    icon: artificial,
   },
   {
     path: 'sustainability-services',
     label: 'Sustainability Services',
-    icon: uiComponent,
+    icon: sustainability,
   },
-
   {
     path: 'qa-and-testing',
     label: 'QA and Testing',
-    icon: teamDev,
+    icon: qaTest,
   },
   {
     path: 'ui-ux-development',
     label: 'UI/UX Design & Development',
-    icon: webApp,
+    icon: uiuxDesign,
   },
 
   {
     path: 'hire-dedicated-team-and-developers',
     label: 'Hire dedicated team and developers',
-    icon: beDev,
+    icon: hireDedicated,
   },
 
   {
     path: 'support-and-maintenance',
     label: 'Support and maintenance',
-    icon: customSoftwareDev,
+    icon: support,
   },
 ];
 
@@ -112,86 +100,76 @@ const industries: ChildItemType = [
   {
     path: 'project-consulting',
     label: 'Waste management',
-    description:
-      'Sustainability is one area where better use of resources is critical. ',
+    description: 'Optimize waste management with digital solution.',
     icon: waste,
   },
   {
     path: 'multi-tenant-system',
     label: 'Sustainable IoT Solution',
-    description:
-      'Sustainability is one area where better use of resources is critical. ',
-    icon: iot,
+    description: 'Eco-friendly IoT solutions for sustainability.',
+    icon: waste,
   },
   {
     path: 'web-application-development',
-    description:
-      'Sustainability is one area where better use of resources is critical. ',
+    description: 'Recruit, Onboard, Manage: Simplified Workforce Software',
     label: 'Staffing management',
-    icon: staffing,
+    icon: waste,
   },
   {
     path: 'mobile-application-development',
-    description:
-      'Sustainability is one area where better use of resources is critical. ',
+    description: 'Crafting digital platforms for seamless online transactions.',
     label: 'E-commerce',
-    icon: eCommerces,
+    icon: waste,
   },
   {
     path: 'frontend-development',
     description:
-      'Sustainability is one area where better use of resources is critical. ',
+      'Enhancing healthcare: electronic records, telemedicine, monitoring. ',
     label: 'Healthcare',
-    icon: healthcares,
+    icon: waste,
   },
   {
     path: 'backend-development',
-    description:
-      'Sustainability is one area where better use of resources is critical. ',
+    description: 'Streamline supply chains with integrated IT systems.',
     label: 'Logistics',
-    icon: logistics,
+    icon: waste,
   },
   {
     path: 'qa-testing',
     label: 'Ed-tech',
-    description:
-      'Sustainability is one area where better use of resources is critical. ',
-    icon: edTechs,
+    description: 'Enhancing education through digital platforms.',
+    icon: waste,
   },
   {
     path: 'support-maintenance',
-    description:
-      'Sustainability is one area where better use of resources is critical. ',
+    description: 'Revolutionizing finance: online banking, robo-advisors.',
     label: 'Fintech',
-    icon: fintech,
+    icon: waste,
   },
   {
     path: 'custom-software-development',
     label: 'Manufacturing & retails',
-    description:
-      'Sustainability is one area where better use of resources is critical. ',
-    icon: manufacturing,
+    description: 'Integrating IT: Inventory & Customer Management',
+    icon: waste,
   },
   {
     path: 'web-designing',
     label: 'real Estate',
     description:
-      'Sustainability is one area where better use of resources is critical. ',
-    icon: realEstates,
+      'Digitalising property management, sales, and leasing processes.',
+    icon: waste,
   },
   {
     path: 'ui-component-library',
     label: 'Travel & hospitality',
-    description:
-      'Sustainability is one area where better use of resources is critical. ',
-    icon: travels,
+    description: 'Streamlined booking, tailored personalized experiences.',
+    icon: waste,
   },
   {
     path: 'ui-ux-development',
     label: 'Media & Entertainment',
-    description:
-      'Sustainability is one area where better use of resources is critical. ',
-    icon: media,
+    description: 'Streaming, Social Media: Content Delivery Powerhouses.',
+    icon: waste,
   },
 ];
 
@@ -493,10 +471,8 @@ export const navMenu = [
     label: 'Portfolio',
   },
   // {
-  //   path: '',
-  //   label: 'Services',
-  //   children: services,
-  //   left: 'left-[-170px]',
+  //   path: '/career',
+  //   label: 'Career',
   // },
   {
     path: '/jobs',
@@ -505,30 +481,12 @@ export const navMenu = [
     left: 'left-[-50px]',
   },
   {
-    path: '',
-    label: 'Technology',
-    category: true,
-    children: technology,
-    left: 'left-[-50px]',
+    path: '/not-found',
+    label: 'Blog',
   },
-
-  // {
-  //   path: '',
-  //   label: 'Industries',
-  //   children: industriesMenu,
-  //   left: 'left-[-340px]',
-  // },
-  // {
-  //   path: '/career',
-  //   label: 'Career',
-  // },
-  // {
-  //   label: 'Company',
-  //   children: companyMenu,
-  //   left: 'left-0',
-  // },
-  // {
-  //   path: '/not-found',
-  //   label: 'Blog',
-  // },
+  {
+    label: 'Company',
+    children: companyMenu,
+    left: 'left-[-59rem]',
+  },
 ];

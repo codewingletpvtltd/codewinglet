@@ -48,11 +48,19 @@ iframe .gm-style-mtc {
 }
 
 .footerTitle {
-  padding-left: 280px !important;
+  padding-left: 250px !important;
 }
 
 .footerTitle::after {
-  left: 16rem !important;
+  left: 14rem !important;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 639px) {

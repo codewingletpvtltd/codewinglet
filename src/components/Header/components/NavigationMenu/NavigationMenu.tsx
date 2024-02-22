@@ -8,7 +8,6 @@ import MenuList from './MenuList';
 import useNavigation from './useNavigation';
 import MenuItems from './MenuItems';
 import MenuTrigger from './MenuTrigger';
-import MenuIndicator from './MenuIndicator';
 import MenuContent from './MenuContent';
 // import ListItem from './ListItem';
 import {
@@ -21,8 +20,9 @@ import {
 const NavigationMenu = () => {
   const { onMouseEnter, onMouseLeave, gridRows, onNavigate, anchorEle } =
     useNavigation();
+  console.log('navMenu', navMenu);
   return (
-    <nav className='flex-row items-center gap-[15px] xl:gap-[32px] hidden xl:flex'>
+    <nav className='flex-row items-center gap-[15px] xl:gap-52 hidden xl:flex'>
       {/* TODO_1.0: In the first release this menu is not working so commented this in 1.0*/}
 
       <MenuList>
@@ -41,7 +41,6 @@ const NavigationMenu = () => {
                 item.children && item.children.length > 0 ? true : false
               }
             />
-            {item.children && <MenuIndicator />}
             {item.children ? (
               // item.category ? (
               <MenuContent
@@ -68,6 +67,7 @@ const NavigationMenu = () => {
                         <ListItem
                           icon={menu.icon}
                           label={menu.label}
+                          description={menu.description}
                           isHeader
                         />
 
@@ -80,7 +80,7 @@ const NavigationMenu = () => {
                               onClick={onMouseLeave}
                               href={val.path ? val.path : '/not-found'}
                             />
-                          ))}
+                          ))} 
                       </ul>
                     </li>
                   ))}
@@ -100,17 +100,23 @@ const NavigationMenu = () => {
                       key={`menu-item-${index}`}
                       icon={val.icon}
                       label={val.label}
+                      description={val.description}
                       onClick={onMouseLeave}
                       href={val.path ? val.path : '/not-found'}
                     />
-                  ))} */}
+                  ))}  */}
               </MenuContent>
             ) : // )
             null}
           </MenuItems>
         ))}
       </MenuList>
-      <Button onClick={onNavigate('contact-us')}>Contact Us</Button>
+      <Button
+        onClick={onNavigate('contact-us')}
+        className='w-[143px] border-white'
+      >
+        Contact Us
+      </Button>
     </nav>
   );
 };

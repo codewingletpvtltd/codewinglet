@@ -25,7 +25,7 @@ const AboutUs = () => (
         descriptionClassName='text-white'
       />
 
-      <div className='lg:flex block gap-5 mt-12'>
+      <div className='lg:flex block gap-5 md:mt-12 mt-7'>
         <div className='lg:w-[70%] w-full xl:pr-[60px] lg:pr-[20px] pr-0'>
           <Typography className='xl:text-body1 lg:text-body2 md:text-body1 text-subtitle1 pb-[20px] md:leading-[40px] text-white md:text-justify text-left'>
             Codewinglet Private Limited excels as a globally recognized,
@@ -79,7 +79,7 @@ const AboutUs = () => (
                   variant='h3'
                   className=' text-white flex item-center'
                 >
-                  5 <Image src={rating} alt='rating' className='ml-[8px]' />
+                  5.0 <Image src={rating} alt='rating' className='ml-[8px]' />
                 </Typography>
                 <Typography className=' text-white md:text-body2 text-subtitle2'>
                   Upwork Ratings
@@ -89,7 +89,7 @@ const AboutUs = () => (
             <div className='xl:w-[408px] lg:w-[292px] md:w-[358px] w-full bg-primary p-[18px] mb-10 xl:mt-10'>
               <div className='w-full overflow-hidden'>
                 <Image
-                  className='w-full object-cover object-center transition-transform duration-[0.5s] hover:scale-110'
+                  className='w-full object-cover object-center transition-transform duration-500 hover:scale-110'
                   src={building}
                   alt='building'
                 />
@@ -107,10 +107,10 @@ const AboutUs = () => (
           </div>
         </div>
         <div className='lg:w-[30%] w-full lg:block md:flex block md:gap-6'>
-          <div className='bg-[#131315] p-[18px] lg:mb-10 md:mb-0 mb-10'>
+          <div className='bg-primary p-[18px] lg:mb-10 md:mb-0 mb-10'>
             <div className='w-full overflow-hidden'>
               <Image
-                className='w-full object-cover object-center transition-transform duration-[0.5s] hover:scale-110'
+                className='w-full object-cover object-center transition-transform duration-500 hover:scale-110'
                 src={pioneering}
                 alt='pioneering'
               />
@@ -125,10 +125,10 @@ const AboutUs = () => (
               operational reach.
             </Typography>
           </div>
-          <div className=' bg-[#131315] p-[18px] lg:mb-10 mb-0'>
+          <div className=' bg-primary p-[18px] lg:mb-10 mb-0'>
             <div className='w-full overflow-hidden'>
               <Image
-                className='w-full object-cover object-center transition-transform duration-[0.5s] hover:scale-110'
+                className='w-full object-cover object-center transition-transform duration-500 hover:scale-110'
                 src={crafting}
                 alt='crafting'
               />

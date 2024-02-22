@@ -23,6 +23,7 @@ export interface MenuContentProps {
 export interface ListItemProps {
   icon?: string;
   label: string;
+  description?: string;
   isHeader?: boolean;
   labelClassName?: string;
   onClick?: () => void;

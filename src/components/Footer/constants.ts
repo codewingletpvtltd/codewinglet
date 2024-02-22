@@ -1,61 +1,159 @@
-export const technologyMenu = [
+export const serviceMenu = [
   {
     id: 1,
     path: '/technology/react-js',
-    label: 'Frontend Backend',
+    label: 'Internet of Things(IoT)',
   },
   {
     id: 2,
     path: '/technology/angularjs-development-company',
-    label: 'Frontend Backend',
+    label: 'IT Consulting',
   },
   {
     id: 3,
     path: '/technology/nodejs-development-company',
-    label: 'Mobile',
+    label: 'Custom Software Development',
   },
   {
     id: 4,
     path: '/technology/react-native-app-development',
-    label: 'DevOps/Cloud',
+    label: 'Web App Development',
   },
   {
     id: 5,
     path: '/technology/nextjs-development-company',
-    label: 'Database',
+    label: 'Mobile App Development',
   },
   {
     id: 6,
     path: '/technology/vuejs-development-company',
-    label: 'UI/UX Design & Development',
+    label: 'UI/UX Design',
+  },
+  {
+    id: 7,
+    path: '/technology/vuejs-development-company',
+    label: 'QA & Testing',
+  },
+  {
+    id: 8,
+    path: '/technology/vuejs-development-company',
+    label: 'Hire Dedicated Team',
+  },
+  {
+    id: 9,
+    path: '/technology/vuejs-development-company',
+    label: 'Support & Maintenance',
+  },
+  {
+    id: 10,
+    path: '/technology/vuejs-development-company',
+    label: 'Cloud Computing',
+  },
+  {
+    id: 11,
+    path: '/technology/vuejs-development-company',
+    label: 'DevOps',
+  },
+  {
+    id: 12,
+    path: '/technology/vuejs-development-company',
+    label: 'Artificial Intelligence',
+  },
+  {
+    id: 13,
+    path: '/technology/vuejs-development-company',
+    label: 'Sustainability Services',
   },
 ];
 
-export const serviceMenu = [
+export const industryMenu = [
   {
     id: 1,
     path: '/ui-ux-development-company',
-    label: 'E-commerce',
+    label: 'Waste Management',
   },
   {
     id: 2,
     path: '/qa-and-testing',
-    label: 'Finance',
+    label: 'Sustainable IoT Solutions',
   },
   {
     id: 3,
     path: '/custom-software-development',
-    label: 'Ed-tech',
+    label: 'Staffing Management',
   },
   {
     id: 4,
     path: '/web-application-development',
-    label: 'Real estate',
+    label: 'E-commerce',
   },
   {
     id: 5,
     path: '/mobile-application-development',
-    label: 'Health and fitness',
+    label: 'Healthcare',
+  },
+  {
+    id: 6,
+    path: '/hire-dedicated-team',
+    label: 'Logistics',
+  },
+  {
+    id: 7,
+    path: '/hire-dedicated-team',
+    label: 'EdTech',
+  },
+  {
+    id: 8,
+    path: '/hire-dedicated-team',
+    label: 'Fintech',
+  },
+  {
+    id: 9,
+    path: '/hire-dedicated-team',
+    label: 'Manufacturing & Retails',
+  },
+  {
+    id: 10,
+    path: '/hire-dedicated-team',
+    label: 'Real Estate',
+  },
+  {
+    id: 11,
+    path: '/hire-dedicated-team',
+    label: 'Travel & Hospitality',
+  },
+  {
+    id: 12,
+    path: '/hire-dedicated-team',
+    label: 'Media & Entertainment',
+  },
+];
+
+export const technologyMenu = [
+  {
+    id: 1,
+    path: '/ui-ux-development-company',
+    label: 'React Js',
+  },
+  {
+    id: 2,
+    path: '/qa-and-testing',
+    label: 'Angular Js',
+  },
+  {
+    id: 3,
+    path: '/custom-software-development',
+    label: 'Node Js',
+  },
+  {
+    id: 4,
+    path: '/web-application-development',
+    label: 'React Native',
+  },
+  {
+    id: 5,
+    path: '/mobile-application-development',
+    label: 'PHP',
   },
   {
     id: 6,

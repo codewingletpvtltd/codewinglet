@@ -4,20 +4,22 @@ import { useRouter } from 'next/navigation';
 import React, { useState } from 'react';
 import Image from 'next/image';
 import LogoWhite from '@codewinglet/assets/logo_white.svg';
-
-import { Typography, Button } from '@codewinglet/components';
+import { Button, Typography } from '@codewinglet/components';
 import {
   FacebookLogo,
   InstagramLogo,
   LinkedInLogo,
   TwitterLogo,
-  // LocationIcon,
-  // CallIcon,
+  EmailIcon,
+  DownArrows,
+  CallIcon,
+  LocationIcon,
 } from '@codewinglet/assets';
+import { getClassNames } from '@codewinglet/utils';
 import {
   companyTermsMenu,
   serviceMenu,
-  // industryMenu,
+  industryMenu,
   technologyMenu,
   companyMenu,
 } from './constants';
@@ -33,7 +35,7 @@ const footerTitle = [
     title: 'Industry',
     responsiveClass:
       'xl:max-w-[20%] xl:flex-[0_0_20%] lg:max-w-[40%] lg:flex-[0_0_40%] md:max-w-[50%] md:flex-[0_0_50%] sm:max-w-[49%] sm:flex-[0_0_49%] max-w-[100%] flex-[0_0_100%] min-h-[1px] lg:mt-0 md:mt-0 m-0',
-    // menu: industryMenu,
+    menu: industryMenu,
   },
   {
     title: 'Technology',
@@ -51,8 +53,7 @@ const footerTitle = [
 
 const Footer = () => {
   const router = useRouter();
-  const [expandedOption, setExpandedOption] = useState(-1);
-
+  const [expandedOption, setExpandedOption] = useState<number>(-1);
   return (
     <>
       <footer className='bg-black text-white relative xl:py-[60px] md:py-[40px] py-[30px]'>
@@ -83,14 +84,15 @@ const Footer = () => {
             </div>
           </div>
           <div className='md:gap-0 gap-[10px] flex px-[15px] relative  mx-0 flex-wrap '>
-            {/* {footerTitle.map((menuItem, index) => (
+            {footerTitle.map((menuItem, index) => (
               <div
                 className={`px-[15px] w-full relative ${menuItem.responsiveClass}`}
                 key={menuItem.title}
               >
                 <div className='my-1 sm:hidden' />
                 <Typography
-                  className='lg:mb-[20px] mb-[20px] flex items-center justify-between sm:text-h6 text-body2 font-400'
+                  variant='h6'
+                  className='lg:mb-[20px] mb-[20px] flex items-center justify-between'
                   onClick={() =>
                     setExpandedOption((prev) =>
                       prev === -1 || prev !== index ? index : -1
@@ -104,13 +106,30 @@ const Footer = () => {
                       index === expandedOption ? '-rotate-180' : ''
                     )}
                   >
-                    <Link className='' href={item.path}>
-                      {item.label}
-                    </Link>
+                    <DownArrows />
                   </Button>
                 </Typography>
+                <div
+                  className={getClassNames(
+                    'flex flex-col gap-[6px] sm:max-h-full max-h-0 overflow-hidden transition-all ease-in-out duration-500 sm:pl-0 pl-4',
+                    index === expandedOption ? 'max-h-[566px]' : ''
+                  )}
+                >
+                  {menuItem.menu.map((item) => (
+                    <div key={item.id}>
+                      <Typography
+                        variant='subtitle1'
+                        className=' leading-normal mb-3.5 min-h-0 text-silver hover:text-white'
+                      >
+                        <Link className='' href={item.path}>
+                          {item.label}
+                        </Link>
+                      </Typography>
+                    </div>
+                  ))}
+                </div>
               </div>
-            ))} */}
+            ))}
             <div className='px-[15px] w-full relative doubleXl:max-w-[20%] doubleXl:flex-[0_0_20%] xl:max-w-[23%] xl:flex-[0_0_23%] lg:max-w-[70%] lg:flex-[0_0_70%] md:max-w-[50%] md:flex-[0_0_50%] sm:max-w-[100%] sm:flex-[0_0_100%] max-w-[100%] flex-[0_0_100%] min-h-[1px] xl:mt-0 lg:mt-7 md:mt-7 m-0'>
               <Typography className=' mb-[20px] sm:mt-0 mt-3 sm:text-h6 text-body2 font-400'>
                 Get in touch
@@ -120,7 +139,7 @@ const Footer = () => {
                   variant='subtitle1'
                   className='leading-normal mb-3.5 min-h-0 text-silver flex gap-3'
                 >
-                  {/* <CallIcon /> */}
+                  <CallIcon />
                   <div className='flex flex-col'>
                     <div>Contact us :</div>
                     <Link href='tel:+918320111741'>+91 83201 11741 (Jobs)</Link>
@@ -129,18 +148,28 @@ const Footer = () => {
 
                 <Typography
                   variant='subtitle1'
-                  className=' leading-[34px] mb-[5px] min-h-0'
+                  className=' leading-normal mb-3.5 min-h-0 text-silver flex gap-3'
                 >
-                  <Link href='mailto:jobs@codewinglet.com'>
-                    jobs@codewinglet.com
-                  </Link>
+                  <EmailIcon />
+                  <div className='flex flex-col'>
+                    <div>Email us on :</div>
+                    <Link href='mailto:jobs@codewinglet.com'>
+                      jobs@codewinglet.com
+                    </Link>
+                    <Link href='mailto:Info@codewinglet.com'>
+                      Info@codewinglet.com
+                    </Link>
+                    <Link href='mailto:sales@codewinglet.com'>
+                      sales@codewinglet.com
+                    </Link>
+                  </div>
                 </Typography>
 
                 <Typography
                   variant='subtitle1'
                   className='leading-normal mb-3.5 min-h-0 text-silver flex gap-3'
                 >
-                  {/* <LocationIcon className='xl:w-[21%] lg:w-[6%] md:w-[10%] sm:w-[20px] w-[13%] mt-[2px]' /> */}
+                  <LocationIcon className='xl:w-[21%] lg:w-[6%] md:w-[10%] sm:w-[20px] w-[13%] mt-[2px]' />
                   <div className='flex flex-col'>
                     <div>Address :</div>
                     <Typography className='xl:pr-0 lg:pr-[370px] pr-0'>

@@ -6,3 +6,4 @@ export { default as ic_blog } from './ic_blog.svg';
 export { default as ic_customer } from './ic_customer.svg';
 export { default as ic_workculter } from './ic_workculter.svg';
 export { default as ic_contactus } from './ic_contactus.svg';
+export { default as whyjoin } from './whyjoin.svg';

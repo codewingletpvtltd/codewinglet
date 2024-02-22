@@ -2,6 +2,7 @@
 import { memo } from 'react';
 import Link from 'next/link';
 import { Button, TypeAnimation, Typography } from '@codewinglet/components';
+import { Arrow } from '@codewinglet/assets';
 import './main.css';
 
 import InfiniteSlider from './logoSlider';
@@ -38,8 +39,13 @@ const HeroSection = () => (
         </Typography>
 
         <Button link className=' w-[222px]'>
-          <Link href='#' rel='noopener noreferrer' target='_blank'>
-            Request a Quote
+          <Link
+            href='#'
+            rel='noopener noreferrer'
+            target='_blank'
+            className='flex items-center justify-center gap-3'
+          >
+            Request a Quote <Arrow />
           </Link>
         </Button>
       </div>

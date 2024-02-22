@@ -57,14 +57,14 @@ export { default as btnArrow } from './btnArrow.svg';
 export { default as react } from './navigation/technology/react.svg';
 export { default as vuejs } from './navigation/technology/vuejs.svg';
 export { default as angular } from './navigation/technology/angular.svg';
-export { default as postgreSQL } from './navigation/technology/postgreSQL.svg';
-export { default as javaScript } from './navigation/technology/javaScript.svg';
+export { default as postgreSQL } from './navigation/technology/postgresql.svg';
+export { default as javaScript } from './navigation/technology/javascript.svg';
 export { default as nextjs } from './navigation/technology/nextjs.svg';
 export { default as typescript } from './navigation/technology/typescript.svg';
 export { default as nodejs } from './navigation/technology/nodejs.svg';
 export { default as php } from './navigation/technology/php.svg';
 export { default as laravel } from './navigation/technology/laravel.svg';
-export { default as mySQL } from './navigation/technology/mySQL.svg';
+export { default as mySQL } from './navigation/technology/mysql.svg';
 export { default as codeigniter } from './navigation/technology/codeigniter.svg';
 export { default as docker } from './navigation/technology/docker.svg';
 
@@ -80,6 +80,11 @@ export { default as food } from './industries/food.png';
 export { default as fitness } from './industries/fitness.png';
 export { default as shopping } from './industries/shopping.png';
 export { default as event } from './industries/event.png';
+
+export { default as EmailIcon } from './icons/EmailIcon';
+export { default as CallIcon } from './icons/CallIcon';
+export { default as LocationIcon } from './icons/LocationIcon';
+export { default as DownArrows } from './icons/DownArrows';
 
 export * from './heroSection';
 export * from './ourClient';
