@@ -89,7 +89,7 @@ const AboutUs = () => (
             <div className='xl:w-[408px] lg:w-[292px] md:w-[358px] w-full bg-primary p-[18px] mb-10'>
               <div className='w-full overflow-hidden'>
                 <Image
-                  className='w-full object-cover object-center transition-transform duration-[0.5s] hover:scale-110'
+                  className='w-full object-cover object-center transition-transform duration-500 hover:scale-110'
                   src={building}
                   alt='building'
                 />
@@ -110,7 +110,7 @@ const AboutUs = () => (
           <div className='bg-primary p-[18px] lg:mb-10 md:mb-0 mb-10'>
             <div className='w-full overflow-hidden'>
               <Image
-                className='w-full object-cover object-center transition-transform duration-[0.5s] hover:scale-110'
+                className='w-full object-cover object-center transition-transform duration-500 hover:scale-110'
                 src={pioneering}
                 alt='pioneering'
               />
@@ -128,7 +128,7 @@ const AboutUs = () => (
           <div className=' bg-primary p-[18px] lg:mb-10 mb-0'>
             <div className='w-full overflow-hidden'>
               <Image
-                className='w-full object-cover object-center transition-transform duration-[0.5s] hover:scale-110'
+                className='w-full object-cover object-center transition-transform duration-500 hover:scale-110'
                 src={crafting}
                 alt='crafting'
               />
