@@ -14,7 +14,7 @@ import {
   ServicesContent,
   IndustryContent,
   TechnologyContent,
-  CompanyContent,
+  // CompanyContent,
 } from './SubMenu';
 
 const NavigationMenu = () => {
@@ -22,7 +22,7 @@ const NavigationMenu = () => {
     useNavigation();
   console.log('navMenu', navMenu);
   return (
-    <nav className='flex-row items-center gap-[15px] xl:gap-52 hidden xl:flex'>
+    <nav className='flex-row items-center gap-[15px] xl:gap-40 hidden xl:flex'>
       {/* TODO_1.0: In the first release this menu is not working so commented this in 1.0*/}
 
       <MenuList>
@@ -58,9 +58,9 @@ const NavigationMenu = () => {
                 {item.label === 'Industries' && (
                   <IndustryContent childItems={item.children} index={index} />
                 )}
-                {item.label === 'Company' && (
+                {/* {item.label === 'Company' && (
                   <CompanyContent childItems={item.children} index={index} />
-                )}
+                )} */}
                 {/* {item.children.map((menu, menuIdx) => (
                     <li key={`menu-header-${index}-${menuIdx}`}>
                       <ul className='grid grid-flow-row gap-[15px]'>

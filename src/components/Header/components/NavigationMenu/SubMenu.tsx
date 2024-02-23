@@ -24,17 +24,17 @@ export const ServicesContent: FC<SubMenuContentProps> = ({
       ))}
     </ul>
     <div className='bg-[#F4F4F4] flex items-center absolute right-[30px] bottom-[30px] w-[35%] p-[20px]'>
-      <Typography className='text-body2 text-primary font-400 w-[60%]'>
-        Get free consultation from our industry experts
+      <Typography className='text-[17px] text-primary font-400 w-[60%]'>
+        Get consultation from our Service experts
       </Typography>
-      <Button className='bg-primary w-[156px] m-[initial] ml-[40px]'>
+      <Button className='bg-primary w-[210px] m-[initial]'>
         <Link
           href='#'
           rel='noopener noreferrer'
           target='_blank'
           className='flex items-center justify-center gap-3'
         >
-          Let's Talk <Arrow />
+          Schedule a Call <Arrow />
         </Link>
       </Button>
     </div>
@@ -48,7 +48,7 @@ export const IndustryContent: FC<SubMenuContentProps> = ({
 }) => (
   <>
     <div className='flex'>
-      <ul className='grid grid-rows-4 grid-flow-col grid-cols-[29%_32%_29%] gap-6  before:content before:absolute before:top-[12%] before:left-[69%] before:bg-dropBorder before:w-[1px] before:h-[80%]'>
+      {/* <ul className='grid grid-rows-4 grid-flow-col grid-cols-[29%_32%_29%] gap-6  before:content before:absolute before:top-[12%] before:left-[66%] before:bg-dropBorder before:w-[1px] before:h-[80%]'>
         {childItems.map((menu, menuIdx) => (
           <ListItem
             key={`menu-header-${index}-${menuIdx}`}
@@ -61,17 +61,43 @@ export const IndustryContent: FC<SubMenuContentProps> = ({
       </ul>
       <div>
         <Typography className='text-[28px] text-primary font-300 mb-2.5'>
-          Diverse Capabilities
+          Our Industry experts
         </Typography>
         <Typography className='text-dropdownText font-300 text-[14px] mb-2.5'>
-          that deploy customized solution in a wide range of industries
+          can help you become the unparalleled leader in your industry.
         </Typography>
-        <Image src={diverse} alt='whyjoin' />
-        <Typography className='subtitle1 mt-2.5'>How to get started</Typography>
-        <Typography className='text-dropdownText font-300 text-subtitle2 mb-2.5'>
-          Read our developments that has helped the supply chain industry bool
-          in India
+        <Image src={diverse} alt='whyjoin' className='max-w-none mb-5' />
+        <Button className='bg-primary w-[258px] m-[initial]'>
+          <Link
+            href='#'
+            rel='noopener noreferrer'
+            target='_blank'
+            className='flex items-center justify-center gap-3'
+          >
+            Consult Codewinglet <Arrow />
+          </Link>
+        </Button>
+      </div> */}
+
+      <ul className='w-[935px] grid grid-rows-4 grid-flow-col grid-cols-[35%_22%_35%] gap-6  before:content before:absolute before:top-[12%] before:left-[64%] before:bg-dropBorder before:w-[1px] before:h-[80%]'>
+        {childItems.map((menu, menuIdx) => (
+          <ListItem
+            key={`menu-header-${index}-${menuIdx}`}
+            icon={menu.icon}
+            label={menu.label}
+            // description={menu.description}
+            isHeader
+          />
+        ))}
+      </ul>
+      <div>
+        <Typography className='text-[28px] text-primary font-300 mb-2.5'>
+          Our Industry experts
         </Typography>
+        <Typography className='text-dropdownText font-300 text-[14px] mb-2.5'>
+          can help you become the unparalleled leader in your industry.
+        </Typography>
+        <Image src={diverse} alt='whyjoin' className='max-w-none mb-5' />
         <Button className='bg-primary w-[258px] m-[initial]'>
           <Link
             href='#'
@@ -87,23 +113,23 @@ export const IndustryContent: FC<SubMenuContentProps> = ({
   </>
 );
 
-export const CompanyContent: FC<SubMenuContentProps> = ({
-  childItems,
-  index,
-}) => (
-  <>
-    <h5>Company Menu</h5>
-    {/* {childItems.map((menu, menuIdx) => (
-      <li key={`menu-header-${index}-${menuIdx}`}>
-        <ul className='grid grid-flow-row gap-[15px]'>
-          <ListItem
-            icon={menu.icon}
-            label={menu.label}
-            description={menu.description}
-            isHeader
-          />
-        </ul>
-      </li>
-    ))} */}
-  </>
-);
+// export const CompanyContent: FC<SubMenuContentProps> = ({
+//   childItems,
+//   index,
+// }) => (
+//   <>
+//     <h5>Company Menu</h5>
+//     {childItems.map((menu, menuIdx) => (
+//       <li key={`menu-header-${index}-${menuIdx}`}>
+//         <ul className='grid grid-flow-row gap-[15px]'>
+//           <ListItem
+//             icon={menu.icon}
+//             label={menu.label}
+//             description={menu.description}
+//             isHeader
+//           />
+//         </ul>
+//       </li>
+//     ))}
+//   </>
+// );

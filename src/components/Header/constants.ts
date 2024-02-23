@@ -23,6 +23,17 @@ import {
   frontend,
   react,
   waste,
+  logistics,
+  staffing,
+  sustainable,
+  media,
+  hospitality,
+  realEsate,
+  manufacturing,
+  ecommerce,
+  health,
+  fintech,
+  edTechs,
 } from '@codewinglet/assets';
 import { ChildItemType } from './types';
 
@@ -107,69 +118,69 @@ const industries: ChildItemType = [
     path: 'multi-tenant-system',
     label: 'Sustainable IoT Solution',
     description: 'Eco-friendly IoT solutions for sustainability.',
-    icon: waste,
+    icon: sustainable,
   },
   {
     path: 'web-application-development',
     description: 'Recruit, Onboard, Manage: Simplified Workforce Software',
     label: 'Staffing management',
-    icon: waste,
+    icon: staffing,
   },
   {
     path: 'mobile-application-development',
     description: 'Crafting digital platforms for seamless online transactions.',
     label: 'E-commerce',
-    icon: waste,
+    icon: ecommerce,
   },
   {
     path: 'frontend-development',
     description:
       'Enhancing healthcare: electronic records, telemedicine, monitoring. ',
     label: 'Healthcare',
-    icon: waste,
+    icon: health,
   },
   {
     path: 'backend-development',
     description: 'Streamline supply chains with integrated IT systems.',
     label: 'Logistics',
-    icon: waste,
+    icon: logistics,
   },
   {
     path: 'qa-testing',
     label: 'Ed-tech',
     description: 'Enhancing education through digital platforms.',
-    icon: waste,
+    icon: edTechs,
   },
   {
     path: 'support-maintenance',
     description: 'Revolutionizing finance: online banking, robo-advisors.',
     label: 'Fintech',
-    icon: waste,
+    icon: fintech,
   },
   {
     path: 'custom-software-development',
     label: 'Manufacturing & retails',
     description: 'Integrating IT: Inventory & Customer Management',
-    icon: waste,
+    icon: manufacturing,
   },
   {
     path: 'web-designing',
     label: 'real Estate',
     description:
       'Digitalising property management, sales, and leasing processes.',
-    icon: waste,
+    icon: realEsate,
   },
   {
     path: 'ui-component-library',
     label: 'Travel & hospitality',
     description: 'Streamlined booking, tailored personalized experiences.',
-    icon: waste,
+    icon: hospitality,
   },
   {
     path: 'ui-ux-development',
     label: 'Media & Entertainment',
     description: 'Streaming, Social Media: Content Delivery Powerhouses.',
-    icon: waste,
+    icon: media,
   },
 ];
 
@@ -458,7 +469,7 @@ export const navMenu = [
     label: 'Technology',
     category: true,
     children: technology,
-    left: 'left-[-28rem]',
+    left: 'left-[-31rem]',
   },
   {
     path: '',
@@ -485,8 +496,8 @@ export const navMenu = [
     label: 'Blog',
   },
   {
-    label: 'Company',
-    children: companyMenu,
+    label: 'About us',
+    // children: companyMenu,
     left: 'left-[-59rem]',
   },
 ];
