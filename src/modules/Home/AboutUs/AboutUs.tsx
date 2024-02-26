@@ -9,7 +9,7 @@ import { SectionHeader, Typography } from '@codewinglet/components';
 
 const AboutUs = () => (
   <section
-    className='md:py-20 py-10'
+    className='xl:py-20 lg:py-14 py-10'
     style={{
       backgroundImage: `url(${require('./about-bg-boxline.png').default.src})`,
       backgroundRepeat: 'no-repeat',
@@ -17,10 +17,10 @@ const AboutUs = () => (
       backgroundPositionY: 'bottom',
     }}
   >
-    <div className='container w-full px-[15px] mx-auto'>
+    <div className='container w-full lg:px-[15px] sm:px-[30px] px-[15px] mx-auto'>
       <SectionHeader
         title={<>About us</>}
-        description={<>"We are more than digital agency”</>}
+        description={<>We are more than digital agency</>}
         headingClassName='text-white'
         descriptionClassName='text-white'
       />
@@ -40,7 +40,7 @@ const AboutUs = () => (
           </Typography>
 
           <div className='md:flex block justify-between items-center'>
-            <ul className='lg:mt-[60px] mt-2.5 lg:block md:block grid grid-cols-2'>
+            <ul className='doubleXl:mt-[60px] xl:mt-[0] mt-2.5 lg:block md:block grid grid-cols-2'>
               <li className='relative mb-[30px]'>
                 <Typography
                   variant='h3'
@@ -86,7 +86,7 @@ const AboutUs = () => (
                 </Typography>
               </li>
             </ul>
-            <div className='xl:w-[408px] lg:w-[292px] md:w-[358px] w-full bg-primary p-[18px] mb-10'>
+            <div className='about_box w-full bg-primary p-[18px] mb-10 xl:mt-10'>
               <div className='w-full overflow-hidden'>
                 <Image
                   className='w-full object-cover object-center transition-transform duration-500 hover:scale-110'
@@ -95,11 +95,11 @@ const AboutUs = () => (
                 />
               </div>
               <div className='flex justify-between items-baseline mt-[10px]'>
-                <Typography className='text-white leading-[1.2] font-300 xl:text-h4 lg:text-[20px] text-[16px]'>
+                <Typography className='text-white leading-[1.2] font-300 xl:text-h4 lg:text-[20px] sm:text-[20px] text-[16px]'>
                   XtendR for extended reach of robots
                 </Typography>
               </div>
-              <Typography className='text-white sm:mt-6 mt-3 md:text-body2 text-[13px] font-300'>
+              <Typography className='text-white sm:mt-4 mt-3 xl:text-body2 lg:text-subtitle2 md:text-subtitle1 sm:text-body2 text-[13px] font-300'>
                 A plug produce solution for cobot applications demanding
                 extended operational reach.
               </Typography>
@@ -116,11 +116,11 @@ const AboutUs = () => (
               />
             </div>
             <div className='flex justify-between items-baseline mt-[10px]'>
-              <Typography className='text-white leading-[1.2] font-300 xl:text-h4 lg:text-[20px] text-[16px]'>
+              <Typography className='text-white leading-[1.2] font-300 xl:text-h4 lg:text-[20px] sm:text-[20px] text-[16px]'>
                 XtendR for extended reach of robots
               </Typography>
             </div>
-            <Typography className='text-white sm:mt-6 mt-3 xl:text-body2 lg:text-subtitle2 md:text-body2 text-[13px] font-300'>
+            <Typography className='text-white sm:mt-4 mt-3 xl:text-body2 lg:text-subtitle2 md:text-subtitle1 sm:text-body2 text-[13px] font-300'>
               A plug produce solution for cobot applications demanding extended
               operational reach.
             </Typography>
@@ -134,11 +134,11 @@ const AboutUs = () => (
               />
             </div>
             <div className='flex justify-between items-baseline mt-[10px]'>
-              <Typography className='text-white leading-[1.2] font-300 xl:text-h4 lg:text-[20px] text-[16px]'>
+              <Typography className='text-white leading-[1.2] font-300 xl:text-h4 lg:text-[20px] sm:text-[20px] text-[16px]'>
                 XtendR for extended reach of robots
               </Typography>
             </div>
-            <Typography className='text-white sm:mt-6 mt-3 xl:text-body2 lg:text-subtitle2 md:text-body2 text-[13px] font-300'>
+            <Typography className='text-white sm:mt-4 mt-3 xl:text-body2 lg:text-subtitle2 md:text-subtitle1 sm:text-body2 text-[13px] font-300'>
               A plug produce solution for cobot applications demanding extended
               operational reach.
             </Typography>

@@ -29,7 +29,7 @@ const OurClient = () => (
     <section className='container w-full px-[15px] mx-auto'>
       <SectionHeader
         title={<>Our Clients</>}
-        description='"Our Global Clients"'
+        description='Our Global Clients'
         headingClassName='text-[22px]'
       />
       <div

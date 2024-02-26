@@ -178,7 +178,7 @@ export const technologyMenu = [
   {
     id: 10,
     path: '/hire-dedicated-team',
-    label: 'newSQL',
+    label: 'NewSQL',
   },
   {
     id: 11,

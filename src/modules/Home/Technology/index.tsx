@@ -23,8 +23,8 @@ const clientLogo = [
 ];
 
 const Technology = () => (
-  <section className='relative overflow-hidden lg:py-20 py-10 bg-white'>
-    <section className='container w-full px-[15px] mx-auto'>
+  <section className='relative overflow-hidden xl:py-20 lg:py-14 py-10 bg-white'>
+    <section className='container w-full lg:px-[15px] sm:px-[30px] px-[15px] mx-auto'>
       <SectionHeader
         title={<>Technology</>}
         description='In Progress'

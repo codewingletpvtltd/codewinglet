@@ -7,89 +7,375 @@ import {
   ic_customer,
   ic_workculter,
   ic_contactus,
-  beDev,
-  customSoftwareDev,
-  feDev,
-  frontend,
-  maintenance,
-  mobileApp,
-  multiTenatSystem,
-  projectConsulting,
-  qa,
-  react,
-  teamDev,
-  uiComponent,
-  uiux,
-  webApp,
-  webDesigning,
+  cpu,
+  itConsulting,
+  customSoftware,
+  webApplication,
+  mobileApplication,
+  devops,
+  cloud,
+  artificial,
+  sustainability,
+  qaTest,
+  uiuxDesign,
+  hireDedicated,
+  support,
+  waste,
+  logistics,
+  staffing,
+  sustainable,
+  media,
+  hospitality,
+  realEsate,
+  manufacturing,
+  ecommerce,
+  health,
+  fintech,
+  edTechs,
 } from '@codewinglet/assets';
 import { ChildItemType } from './types';
 
 const services: ChildItemType = [
   {
-    path: 'project-consulting',
-    label: 'Project Consulting',
-    icon: projectConsulting,
+    path: 'internet-if-things',
+    label: 'Internet of Things(IoT)',
+    icon: cpu,
   },
   {
-    path: 'multi-tenant-system',
-    label: 'Multi Tenat System',
-    icon: multiTenatSystem,
-  },
-  {
-    path: 'web-application-development',
-    label: 'Web Application Development',
-    icon: webApp,
-  },
-  {
-    path: 'mobile-application-development',
-    label: 'Mobile Application Development',
-    icon: mobileApp,
-  },
-  {
-    path: 'frontend-development',
-    label: 'Frontend Development',
-    icon: feDev,
-  },
-  {
-    path: 'backend-development',
-    label: 'Backend Development',
-    icon: beDev,
-  },
-  {
-    path: 'qa-testing',
-    label: 'QA & Testing',
-    icon: qa,
-  },
-  {
-    path: 'support-maintenance',
-    label: 'Support & Maintenance',
-    icon: maintenance,
+    path: 'it-consulting',
+    label: 'IT Consulting',
+    icon: itConsulting,
   },
   {
     path: 'custom-software-development',
-    label: 'Custom Software Development',
-    icon: customSoftwareDev,
+    label: 'Custom software development',
+    icon: customSoftware,
   },
   {
-    path: 'web-designing',
-    label: 'Web Designing',
-    icon: webDesigning,
+    path: 'web-application-development',
+    label: 'Web application development',
+    icon: webApplication,
   },
   {
-    path: 'ui-component-library',
-    label: 'UI Component Library',
-    icon: uiComponent,
+    path: 'mobile-application-development',
+    label: 'Mobile application development',
+    icon: mobileApplication,
+  },
+  {
+    path: 'devOps',
+    label: 'DevOps',
+    icon: devops,
+  },
+  {
+    path: 'cloud-computing',
+    label: 'Cloud Computing',
+    icon: cloud,
+  },
+  {
+    path: 'artificial-intelligence',
+    label: 'Artificial Intelligence',
+    icon: artificial,
+  },
+  {
+    path: 'sustainability-services',
+    label: 'Sustainability Services',
+    icon: sustainability,
+  },
+  {
+    path: 'qa-and-testing',
+    label: 'QA and Testing',
+    icon: qaTest,
   },
   {
     path: 'ui-ux-development',
-    label: 'UI/UX development',
-    icon: uiux,
+    label: 'UI/UX Design & Development',
+    icon: uiuxDesign,
+  },
+
+  {
+    path: 'hire-dedicated-team-and-developers',
+    label: 'Hire dedicated team and developers',
+    icon: hireDedicated,
+  },
+
+  {
+    path: 'support-and-maintenance',
+    label: 'Support and maintenance',
+    icon: support,
+  },
+];
+
+const industries: ChildItemType = [
+  {
+    path: 'project-consulting',
+    label: 'Waste management',
+    description: 'Optimize waste management with digital solution.',
+    icon: waste,
   },
   {
-    path: 'hire-dedicated-team',
-    label: 'Hire Dedicated Team and Developer',
-    icon: teamDev,
+    path: 'multi-tenant-system',
+    label: 'Sustainable IoT Solution',
+    description: 'Eco-friendly IoT solutions for sustainability.',
+    icon: sustainable,
+  },
+  {
+    path: 'web-application-development',
+    description: 'Recruit, Onboard, Manage: Simplified Workforce Software',
+    label: 'Staffing management',
+    icon: staffing,
+  },
+  {
+    path: 'mobile-application-development',
+    description: 'Crafting digital platforms for seamless online transactions.',
+    label: 'E-commerce',
+    icon: ecommerce,
+  },
+  {
+    path: 'frontend-development',
+    description:
+      'Enhancing healthcare: electronic records, telemedicine, monitoring. ',
+    label: 'Healthcare',
+    icon: health,
+  },
+  {
+    path: 'backend-development',
+    description: 'Streamline supply chains with integrated IT systems.',
+    label: 'Logistics',
+    icon: logistics,
+  },
+  {
+    path: 'qa-testing',
+    label: 'Ed-tech',
+    description: 'Enhancing education through digital platforms.',
+    icon: edTechs,
+  },
+  {
+    path: 'support-maintenance',
+    description: 'Revolutionizing finance: online banking, robo-advisors.',
+    label: 'Fintech',
+    icon: fintech,
+  },
+  {
+    path: 'custom-software-development',
+    label: 'Manufacturing & retails',
+    description: 'Integrating IT: Inventory & Customer Management',
+    icon: manufacturing,
+  },
+  {
+    path: 'web-designing',
+    label: 'real Estate',
+    description:
+      'Digitalising property management, sales, and leasing processes.',
+    icon: realEsate,
+  },
+  {
+    path: 'ui-component-library',
+    label: 'Travel & hospitality',
+    description: 'Streamlined booking, tailored personalized experiences.',
+    icon: hospitality,
+  },
+  {
+    path: 'ui-ux-development',
+    label: 'Media & Entertainment',
+    description: 'Streaming, Social Media: Content Delivery Powerhouses.',
+    icon: media,
+  },
+];
+
+const technology: ChildItemType = [
+  {
+    path: '',
+    label: 'Frontend',
+    menu: [
+      {
+        path: '/technology/react-js',
+        label: 'React',
+      },
+      {
+        path: '/technology/next-js',
+        label: 'Next.js',
+      },
+      {
+        path: '/technology/gatsby',
+        label: 'Remix',
+      },
+      {
+        path: '/technology/vue',
+        label: 'Vue.js',
+      },
+      {
+        path: '/technology/angular',
+        label: 'Angular',
+      },
+    ],
+  },
+  {
+    path: '',
+    label: 'Mobile',
+    menu: [
+      {
+        path: '/technology/react-native',
+        label: 'React Native',
+      },
+      {
+        path: '/technology/flutter',
+        label: 'Flutter',
+      },
+      {
+        path: '/technology/ionic',
+        label: 'Ionic',
+      },
+      {
+        path: '/technology/ionic',
+        label: 'Android',
+      },
+      {
+        path: '/technology/ionic',
+        label: 'iOS',
+      },
+    ],
+  },
+  {
+    path: '',
+    label: 'Backend',
+    menu: [
+      {
+        path: '/technology/node-js',
+        label: 'Node.js',
+      },
+      {
+        path: '/technology/python',
+        label: 'PHP',
+      },
+      {
+        path: '/technology/express',
+        label: 'CodeIgniter',
+      },
+      {
+        path: '/technology/nest',
+        label: 'Laravel',
+      },
+      {
+        path: '/technology/python',
+        label: 'Python',
+      },
+      {
+        path: '/technology/python',
+        label: 'Java',
+      },
+      {
+        path: '/technology/python',
+        label: 'ASP.NET',
+      },
+    ],
+  },
+  {
+    path: '',
+    label: 'Headless CMS',
+    menu: [
+      {
+        path: '/technology/aws',
+        label: 'Strapi',
+      },
+      {
+        path: '/technology/azure',
+        label: 'Sanity',
+      },
+      {
+        path: '/technology/google-cloud',
+        label: 'Contentstack',
+      },
+      {
+        path: '/technology/docker',
+        label: 'Contentful',
+      },
+    ],
+  },
+  {
+    path: '',
+    label: 'DevOps/Cloud',
+    menu: [
+      {
+        path: '/technology/aws',
+        label: 'AWS',
+      },
+      {
+        path: '/technology/azure',
+        label: 'Azure',
+      },
+      {
+        path: '/technology/google-cloud',
+        label: 'Google Cloud',
+      },
+      {
+        path: '/technology/docker',
+        label: 'Docker',
+      },
+      {
+        path: '/technology/jenkins',
+        label: 'Jenkins',
+      },
+      {
+        path: '/technology/jenkins',
+        label: 'CI/CD ',
+      },
+    ],
+  },
+  {
+    path: '',
+    label: 'Database',
+    menu: [
+      {
+        path: '/technology/mongodb',
+        label: 'MongoDB',
+      },
+      {
+        path: '/technology/mysql',
+        label: 'MySQL',
+      },
+      {
+        path: '/technology/postgresql',
+        label: 'SQLite',
+      },
+      {
+        path: '/technology/postgresql',
+        label: 'PostgreSQL',
+      },
+      {
+        path: '/technology/mariadb',
+        label: 'Firebase',
+      },
+      {
+        path: '/technology/dynamodb',
+        label: 'DynamoDB',
+      },
+      {
+        path: '/technology/redis',
+        label: 'Redis',
+      },
+    ],
+  },
+  {
+    path: '',
+    label: 'Others',
+    menu: [
+      {
+        path: '/technology/storybook',
+        label: 'Storybook',
+      },
+      {
+        path: '/technology/web3',
+        label: 'Web3',
+      },
+      {
+        path: '/technology/blockchain',
+        label: 'Blockchain',
+      },
+      {
+        path: '/technology/component-library',
+        label: 'Generative AI',
+      },
+    ],
   },
 ];
 
@@ -138,239 +424,12 @@ const companyMenu: ChildItemType = [
   },
 ];
 
-const technology: ChildItemType = [
-  {
-    path: '',
-    icon: frontend,
-    label: 'Frontend',
-    menu: [
-      {
-        path: '/technology/react-js',
-        label: 'ReactJs',
-        icon: react,
-      },
-      // {
-      //   path: '/technology/next-js',
-      //   label: 'NextJs',
-      //   icon: nextjs,
-      // },
-      // {
-      //   path: '/technology/gatsby',
-      //   label: 'Gatsby',
-      //   icon: gatsby,
-      // },
-      // {
-      //   path: '/technology/angular',
-      //   label: 'Anugalr',
-      //   icon: angular,
-      // },
-      // {
-      //   path: '/technology/vue',
-      //   label: 'Vue',
-      //   icon: vue,
-      // },
-      // {
-      //   path: '/technology/remix',
-      //   label: 'Remix',
-      //   icon: remix,
-      // },
-      // {
-      //   path: '/technology/knockout-js',
-      //   label: 'knockoutJs',
-      //   icon: knockoutjs,
-      // },
-    ],
-  },
-  // {
-  //   path: '',
-  //   icon: backend,
-  //   label: 'Backend',
-  //   menu: [
-  //     {
-  //       path: '/technology/node-js',
-  //       label: 'NodeJs',
-  //       icon: nodejs,
-  //     },
-  //     {
-  //       path: '/technology/python',
-  //       label: 'Python',
-  //       icon: python,
-  //     },
-  //     {
-  //       path: '/technology/express',
-  //       label: 'Express',
-  //       icon: express,
-  //     },
-  //     {
-  //       path: '/technology/nest',
-  //       label: 'Nest',
-  //       icon: nest,
-  //     },
-  //   ],
-  // },
-  // {
-  //   path: '',
-  //   icon: mobile,
-  //   label: 'Mobile',
-  //   menu: [
-  //     {
-  //       path: '/technology/react-native',
-  //       label: 'React Native',
-  //       icon: react,
-  //     },
-  //     {
-  //       path: '/technology/flutter',
-  //       label: 'Flutter',
-  //       icon: flutter,
-  //     },
-  //     {
-  //       path: '/technology/ionic',
-  //       label: 'Ionic',
-  //       icon: ionic,
-  //     },
-  //   ],
-  // },
-  // {
-  //   path: '',
-  //   icon: cloud,
-  //   label: 'DevOps/Cloud',
-  //   menu: [
-  //     {
-  //       path: '/technology/aws',
-  //       label: 'Aws',
-  //       icon: aws,
-  //     },
-  //     {
-  //       path: '/technology/azure',
-  //       label: 'Azure',
-  //       icon: azure,
-  //     },
-  //     {
-  //       path: '/technology/google-cloud',
-  //       label: 'Google Cloud',
-  //       icon: googleCloud,
-  //     },
-  //     {
-  //       path: '/technology/docker',
-  //       label: 'Docker',
-  //       icon: docker,
-  //     },
-  //     {
-  //       path: '/technology/jenkins',
-  //       label: 'Jenkins',
-  //       icon: jenkins,
-  //     },
-  //   ],
-  // },
-  // {
-  //   path: '',
-  //   icon: database,
-  //   label: 'Database',
-  //   menu: [
-  //     {
-  //       path: '/technology/mongodb',
-  //       label: 'MongoDB',
-  //       icon: mongodb,
-  //     },
-  //     {
-  //       path: '/technology/mysql',
-  //       label: 'MySQL',
-  //       icon: mysql,
-  //     },
-  //     {
-  //       path: '/technology/postgresql',
-  //       label: 'PostgreSQL',
-  //       icon: postgresql,
-  //     },
-  //     {
-  //       path: '/technology/redis',
-  //       label: 'Rediis',
-  //       icon: rediis,
-  //     },
-  //     {
-  //       path: '/technology/mariadb',
-  //       label: 'MariaDB',
-  //       icon: mariadb,
-  //     },
-  //     {
-  //       path: '/technology/dynamodb',
-  //       label: 'DynamoDB',
-  //       icon: dynamodb,
-  //     },
-  //   ],
-  // },
-  // {
-  //   path: '',
-  //   icon: others,
-  //   label: 'Others',
-  //   menu: [
-  //     {
-  //       path: '/technology/storybook',
-  //       label: 'Storybook',
-  //       icon: storybook,
-  //     },
-  //     {
-  //       path: '/technology/pwa',
-  //       label: 'PWA',
-  //       icon: pwa,
-  //     },
-  //     {
-  //       path: '/technology/web3',
-  //       label: 'Web3',
-  //       icon: web3,
-  //     },
-  //     {
-  //       path: '/technology/blockchain',
-  //       label: 'BlockChain',
-  //       icon: blockChain,
-  //     },
-  //     {
-  //       path: '/technology/component-library',
-  //       label: 'Component Library',
-  //       icon: react,
-  //     },
-  //   ],
-  // },
-  // {
-  // path: '',
-  // icon: ai,
-  // label: 'Generative AI',
-  // menu: [
-  //   {
-  //     path: '/technology/generative-ai-development',
-  //     label: 'Generative AI Development',
-  //     icon: aiDev,
-  //   },
-  //   {
-  //     path: '/technology/generative-ai-integration',
-  //     label: 'Generative AI Integration',
-  //     icon: aiIntegration,
-  //   },
-  //   {
-  //     path: '/technology/chatgpt-developer',
-  //     label: 'ChatGPT Developer',
-  //     icon: chatgtp,
-  //   },
-  //   {
-  //     path: '/technology/chatgpt-integration-service',
-  //     label: 'ChatGPT Integration Service',
-  //     icon: chatGtpService,
-  //   },
-  //   {
-  //     path: '/technology/generative-ai-consulting',
-  //     label: 'Generative AI Consulting',
-  //     icon: aiConsulting,
-  //   },
-  // ],
-  // },
-];
-
 export const navMenu = [
   {
     path: '',
     label: 'Services',
     children: services,
-    left: 'left-[-21rem]',
+    left: 'left-[-27.1rem]',
   },
 
   {
@@ -378,18 +437,18 @@ export const navMenu = [
     label: 'Technology',
     category: true,
     children: technology,
-    left: 'left-[-28rem]',
+    left: 'left-[-33.7rem]',
   },
   {
     path: '',
     label: 'Industries',
-    children: services,
-    left: 'left-[-36rem]',
+    children: industries,
+    left: 'left-[-42rem]',
   },
-  {
-    path: '/not-found',
-    label: 'Portfolio',
-  },
+  // {
+  //   path: '/not-found',
+  //   label: 'Portfolio',
+  // },
   // {
   //   path: '/career',
   //   label: 'Career',
@@ -405,8 +464,8 @@ export const navMenu = [
     label: 'Blog',
   },
   {
-    label: 'Company',
-    children: companyMenu,
+    label: 'About us',
+    // children: companyMenu,
     left: 'left-[-59rem]',
   },
 ];

@@ -16,7 +16,7 @@ const Button: React.FC<ButtonProps> = ({
     )}
     {...rest}
   >
-    <span className='text-white relative'>{children}</span>
+    {children}
   </button>
 );
 

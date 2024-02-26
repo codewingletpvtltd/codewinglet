@@ -9,14 +9,20 @@ import useNavigation from './useNavigation';
 import MenuItems from './MenuItems';
 import MenuTrigger from './MenuTrigger';
 import MenuContent from './MenuContent';
-import ListItem from './ListItem';
+// import ListItem from './ListItem';
+import {
+  ServicesContent,
+  IndustryContent,
+  TechnologyContent,
+  // CompanyContent,
+} from './SubMenu';
 
 const NavigationMenu = () => {
   const { onMouseEnter, onMouseLeave, gridRows, onNavigate, anchorEle } =
     useNavigation();
   console.log('navMenu', navMenu);
   return (
-    <nav className='flex-row items-center gap-[15px] xl:gap-52 hidden xl:flex'>
+    <nav className='flex-row items-center gap-[15px] xl:gap-56 hidden xl:flex'>
       {/* TODO_1.0: In the first release this menu is not working so commented this in 1.0*/}
 
       <MenuList>
@@ -36,16 +42,28 @@ const NavigationMenu = () => {
               }
             />
             {item.children ? (
-              item.category ? (
-                <MenuContent
-                  wrapperClassName={getClassNames(
-                    item.left,
-                    anchorEle?.id === `menu-${index}`
-                      ? 'group-hover:block'
-                      : 'hidden'
-                  )}
-                >
-                  {item.children.map((menu, menuIdx) => (
+              // item.category ? (
+              <MenuContent
+                wrapperClassName={getClassNames(
+                  item.left,
+                  anchorEle?.id === `menu-${index}`
+                    ? 'group-hover:block'
+                    : 'hidden'
+                )}
+              >
+                {item.label === 'Services' && (
+                  <ServicesContent childItems={item.children} index={index} />
+                )}
+                {item.label === 'Technology' && (
+                  <TechnologyContent childItems={item.children} index={index} />
+                )}
+                {item.label === 'Industries' && (
+                  <IndustryContent childItems={item.children} index={index} />
+                )}
+                {/* {item.label === 'Company' && (
+                  <CompanyContent childItems={item.children} index={index} />
+                )} */}
+                {/* {item.children.map((menu, menuIdx) => (
                     <li key={`menu-header-${index}-${menuIdx}`}>
                       <ul className='grid grid-flow-row gap-[15px]'>
                         <ListItem
@@ -55,7 +73,7 @@ const NavigationMenu = () => {
                           isHeader
                         />
 
-                        {/* {menu.menu &&
+                        {menu.menu &&
                           menu.menu.map((val, idx) => (
                             <ListItem
                               key={`menu-item-${index}-${menuIdx}-${idx}`}
@@ -64,7 +82,7 @@ const NavigationMenu = () => {
                               onClick={onMouseLeave}
                               href={val.path ? val.path : '/not-found'}
                             />
-                          ))} */}
+                          ))} 
                       </ul>
                     </li>
                   ))}
@@ -88,10 +106,10 @@ const NavigationMenu = () => {
                       onClick={onMouseLeave}
                       href={val.path ? val.path : '/not-found'}
                     />
-                  ))}
-                </MenuContent>
-              )
-            ) : null}
+                  ))}  */}
+              </MenuContent>
+            ) : // )
+            null}
           </MenuItems>
         ))}
       </MenuList>

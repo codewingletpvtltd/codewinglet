@@ -28,6 +28,7 @@ export interface ListItemProps {
   labelClassName?: string;
   onClick?: () => void;
   href?: string;
+  hasMenu?: boolean;
 }
 
 export interface MenuTriggerProps {
@@ -40,8 +41,8 @@ export interface MenuTriggerProps {
 export type ChildItemType = {
   label: string;
   icon?: string;
-  path?: string;
   description?: string;
+  path?: string;
   menu?: {
     label: string;
     icon?: string;
@@ -51,4 +52,9 @@ export type ChildItemType = {
 
 export interface MobileMenuProps {
   onMenu: () => void;
+}
+
+export interface SubMenuContentProps {
+  childItems: ChildItemType;
+  index: number;
 }

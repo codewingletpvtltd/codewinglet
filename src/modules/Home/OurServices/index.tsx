@@ -13,19 +13,19 @@ const Technologies = () => {
   };
 
   return (
-    <section className='lg:py-20 py-10 bg-secondary'>
-      <section className='container w-full px-[15px] mx-auto'>
+    <section className='xl:py-20 lg:py-14 py-10 bg-secondary'>
+      <section className='container w-full lg:px-[15px] sm:px-[30px] px-[15px] mx-auto'>
         <SectionHeader
           title={<>Our Services</>}
           description={
-            <>"Cutting-Edge Technologies We Work With for Optimal Results”</>
+            <>Cutting-Edge Technologies We Work With for Optimal Results</>
           }
           headingClassName=''
           descriptionClassName=''
         />
 
         <div
-          className='accord flex flex-row content-center items-center relative w-full gap-5 md:mt-12 mt-7 [transition: all 200ms ease-in-out 50ms]'
+          className='accord flex flex-row content-center items-center relative w-full gap-5 lg:mt-6 md:mt-6 mt-7 [transition: all 200ms ease-in-out 50ms]'
           style={{ opacity: 1 }}
         >
           {accordionData.map((data) => (

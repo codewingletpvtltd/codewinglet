@@ -211,7 +211,7 @@ export const WithHeader = () => {
                 <Menu.List key={`menu1-${parseInt(key) * 2}-${key}-${idx}`}>
                   <Menu.Item
                     key={`menu1-${key}-${idx}-${index}`}
-                    className='border-b border-aqua pb-[13px]'
+                    className='border- pb-[13px]'
                   >
                     <Menu.ItemIcon>
                       <Image src={items.icon} alt='' />

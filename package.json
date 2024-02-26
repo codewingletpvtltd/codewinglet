@@ -30,6 +30,7 @@
     "clsx": "^2.0.0",
     "eslint": "8.40.0",
     "eslint-config-next": "13.4.2",
+    "gsap-trial": "^3.12.5",
     "jquery": "^3.7.1",
     "lucide-react": "^0.268.0",
     "moment": "^2.29.4",
