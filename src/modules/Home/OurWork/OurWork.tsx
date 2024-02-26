@@ -47,7 +47,7 @@ const OurWork = () => (
                 >
                   {data.subtitle}
                 </Typography>
-                <h3 className='text-primary font-300 lg:text-[22px] sm:text-[22px] text-[18px] sm:mb-2 mb-1'>
+                <h3 className='text-primary font-300 lg:text-[22px] sm:text-[20px] text-[18px] sm:mb-2 mb-1'>
                   {data.title}
                 </h3>
                 <p className='text-primary sm:text-[16px] text-[14px] font-300 mb-0'>

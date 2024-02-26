@@ -41,7 +41,54 @@ export const ServicesContent: FC<SubMenuContentProps> = ({
   </>
 );
 
-export const TechnologyContent = () => <h1>TechnologyContent Menu</h1>;
+export const TechnologyContent: FC<SubMenuContentProps> = ({
+  childItems,
+  index,
+}) => (
+  <>
+    <ul className='grid grid-rows-1 grid-flow-col grid-cols-[30% 27.7% 42.3%] gap-9 '>
+      {childItems.map((menu, menuIdx) => (
+        <ul key={menu.label}>
+          <ListItem
+            key={`menu-header-${index}-${menuIdx}`}
+            icon={menu.icon}
+            label={menu.label}
+            description={menu.description}
+            isHeader
+            hasMenu
+          />
+
+          {menu?.menu?.map((val, idx) => (
+            <ListItem
+              key={`menu-item-${index}-${menuIdx}-${idx}`}
+              icon={val.icon}
+              label={val.label}
+              // onClick={onMouseLeave}
+              href={val.path ? val.path : '/not-found'}
+              hasMenu
+            />
+          ))}
+        </ul>
+      ))}
+    </ul>
+    <div className='bg-[#F4F4F4] flex items-center justify-between right-[30px] bottom-[30px] w-full p-2.5 mt-9 pl-6'>
+      <Typography className='text-body2 text-primary font-400 w-[60%]'>
+        See how Codewinglet delivers smart solutions through technology
+      </Typography>
+      <Button className='bg-primary w-[208px] m-[initial]'>
+        <Link
+          href='#'
+          rel='noopener noreferrer'
+          target='_blank'
+          className='flex items-center justify-center gap-3'
+        >
+          Hire Developers <Arrow />
+        </Link>
+      </Button>
+    </div>
+  </>
+);
+
 export const IndustryContent: FC<SubMenuContentProps> = ({
   childItems,
   index,

@@ -28,6 +28,7 @@ export interface ListItemProps {
   labelClassName?: string;
   onClick?: () => void;
   href?: string;
+  hasMenu?: boolean;
 }
 
 export interface MenuTriggerProps {

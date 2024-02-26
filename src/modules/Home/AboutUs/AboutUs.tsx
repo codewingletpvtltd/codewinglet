@@ -86,7 +86,7 @@ const AboutUs = () => (
                 </Typography>
               </li>
             </ul>
-            <div className='xl:w-[408px] lg:w-[292px] md:w-[358px] w-full bg-primary p-[18px] mb-10 xl:mt-10'>
+            <div className='about_box w-full bg-primary p-[18px] mb-10 xl:mt-10'>
               <div className='w-full overflow-hidden'>
                 <Image
                   className='w-full object-cover object-center transition-transform duration-500 hover:scale-110'

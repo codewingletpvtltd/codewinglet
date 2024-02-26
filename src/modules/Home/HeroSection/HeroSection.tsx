@@ -32,7 +32,7 @@ const HeroSection = () => (
           className='text-center text-white xl:text-h1 md:text-[42px] sm:text-[37px] text-h6 !font-300'
         />
 
-        <Typography className='lg:text-body1 md:text-[18px] text-subtitle1 text-center my-[41px] mb-[84px] text-white md:px-0 sm:px-[0px] px-0'>
+        <Typography className='lg:text-body1 md:text-[18px] sm:text-subtitle1 text-[14px] sm:font-300 font-200 text-center my-[41px] mb-[84px] text-white md:px-0 sm:px-[0px] px-0'>
           Do you have a concept for project? connect with codewinglet right away
           to secure a technologically advanced and cost effective development
           solution!

@@ -11,6 +11,7 @@ export const ListItem: FC<ListItemProps> = ({
   label,
   description,
   isHeader = false,
+  hasMenu = false,
   labelClassName = '',
   href,
   ...props
@@ -18,71 +19,142 @@ export const ListItem: FC<ListItemProps> = ({
   console.log(icon, label, description, href);
   return (
     <>
-      <li>
-        {isHeader ? (
-          <span
-            className={`flex flex-row items-${
-              description ? 'start' : 'center'
-            } cursor-pointer`}
-            aria-label='menu-item'
-            {...props}
-          >
-            {icon && <Image src={icon} alt='Menu Icon' />}
-            <div>
-              <Typography
-                variant='subtitle1'
-                className={getClassNames(
-                  'font-bold capitalize  ml-[16px] text-[18px] font-400 text-primary',
-                  labelClassName
-                )}
-              >
-                {label}
-              </Typography>
-              {description && (
+      {!hasMenu && (
+        <li>
+          {isHeader ? (
+            <span
+              className={`flex flex-row items-${
+                description ? 'start' : 'center'
+              } cursor-pointer`}
+              aria-label='menu-item'
+              {...props}
+            >
+              {icon && <Image src={icon} alt='Menu Icon' />}
+              <div>
                 <Typography
+                  variant='subtitle1'
                   className={getClassNames(
-                    'font-bold capitalize ml-[16px] text-[14px] font-300 text-dropdownText w-[92%]',
+                    'font-bold capitalize  ml-[16px] text-[18px] font-400 text-primary',
                     labelClassName
                   )}
                 >
-                  {description}
+                  {label}
                 </Typography>
-              )}
-            </div>
-          </span>
-        ) : (
-          <Link
-            href={href as unknown as Url}
-            className='flex flex-row items-start cursor-pointer'
-            aria-label='menu-item'
-            {...props}
-          >
-            <div>
+                {description && (
+                  <Typography
+                    className={getClassNames(
+                      'font-bold capitalize ml-[16px] text-[14px] font-300 text-dropdownText w-[92%]',
+                      labelClassName
+                    )}
+                  >
+                    {description}
+                  </Typography>
+                )}
+              </div>
+            </span>
+          ) : (
+            <Link
+              href={href as unknown as Url}
+              className='flex flex-row items-start cursor-pointer'
+              aria-label='menu-item'
+              {...props}
+            >
               {icon && <Image src={icon} alt='Menu Icon' className='' />}
-            </div>
-            <div>
-              <Typography
-                variant='subtitle1'
-                className={getClassNames(
-                  'font-bold capitalize text-primary whitespace-nowrap ml-2 font-400',
-                  labelClassName
+
+              <div>
+                <Typography
+                  variant='subtitle1'
+                  className={getClassNames(
+                    'font-bold capitalize text-primary whitespace-nowrap ml-2 font-400',
+                    labelClassName
+                  )}
+                >
+                  {label}
+                </Typography>
+                {description && (
+                  <Typography
+                    variant='subtitle2'
+                    className={getClassNames(
+                      'font-bold capitalize text-dropdownText whitespace-nowrap ml-2',
+                      labelClassName
+                    )}
+                  >
+                    {description}
+                  </Typography>
                 )}
-              >
-                {label}
-              </Typography>
-              <Typography
-                variant='subtitle2'
-                className={getClassNames(
-                  'font-bold capitalize text-dropdownText whitespace-nowrap ml-2',
-                  labelClassName
+              </div>
+            </Link>
+          )}
+        </li>
+      )}
+
+      {hasMenu && (
+        <li className='group'>
+          {isHeader ? (
+            <span
+              className={`flex flex-row items-${
+                description ? 'start' : 'center'
+              } cursor-pointer`}
+              aria-label='menu-item'
+              {...props}
+            >
+              {icon && <Image src={icon} alt='Menu Icon' />}
+              <div>
+                <Typography
+                  variant='subtitle1'
+                  className={getClassNames(
+                    'font-bold capitalize text-[18px] font-500 text-primary mb-5',
+                    labelClassName
+                  )}
+                >
+                  {label}
+                </Typography>
+                {description && (
+                  <Typography
+                    className={getClassNames(
+                      'font-bold capitalize ml-[16px] text-[14px] font-300 text-dropdownText w-[92%]',
+                      labelClassName
+                    )}
+                  >
+                    {description}
+                  </Typography>
                 )}
-              >
-                {description}
-              </Typography>
-            </div>
-          </Link>
-        )}
-      </li>
+              </div>
+            </span>
+          ) : (
+            <Link
+              href={href as unknown as Url}
+              className='flex flex-row items-start cursor-pointer border-l border-dropBorderLeft'
+              aria-label='menu-item'
+              {...props}
+            >
+              {icon && <Image src={icon} alt='Menu Icon' className='' />}
+
+              <div>
+                <Typography
+                  className={getClassNames(
+                    'font-bold text-primary hover:text-dropdownText whitespace-nowrap ml-5 font-400 mb-5 group-last:mb-0 text-[14px]',
+                    labelClassName
+                  )}
+                >
+                  {label}
+                </Typography>
+                {description && (
+                  <Typography
+                    variant='subtitle2'
+                    className={getClassNames(
+                      'font-bold capitalize text-dropdownText whitespace-nowrap ml-2',
+                      labelClassName
+                    )}
+                  >
+                    {description}
+                  </Typography>
+                )}
+              </div>
+            </Link>
+          )}
+        </li>
+      )}
     </>
   );
 };

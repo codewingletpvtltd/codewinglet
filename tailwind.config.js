@@ -124,6 +124,7 @@ module.exports = {
         silver: '#BCBCBC',
         dropdownText: '#606060',
         dropBorder: '#dadada',
+        dropBorderLeft: '#E6E6E6',
       },
     },
 

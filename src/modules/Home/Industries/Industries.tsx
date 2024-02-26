@@ -87,7 +87,7 @@ const ContactUs = () => (
           <>
             <div className={i >= 6 ? 'sm:block hidden' : undefined}>
               <Image src={card.image} alt='Menu Icon' className='w-full' />
-              <Typography className='text-primary mt-3 lg:text-h6 md:text-body2 sm:text-h6 text-subtitle2'>
+              <Typography className='text-primary mt-3 lg:text-h6 md:text-body2 sm:text-body2 text-subtitle2'>
                 {card.title}
               </Typography>
             </div>

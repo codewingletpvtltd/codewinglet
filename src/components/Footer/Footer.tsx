@@ -46,7 +46,7 @@ const footerTitle = [
   {
     title: 'Company',
     responsiveClass:
-      'xl:max-w-[15%] xl:flex-[0_0_15%] lg:max-w-[30%] lg:flex-[0_0_30%] md:max-w-[50%] md:flex-[0_0_49%] sm:max-w-[49%] sm:flex-[0_0_100%] max-w-[100%] flex-[0_0_100%] min-h-[1px] xl:mt-0 lg:mt-7 md:mt-7 m-0',
+      'xl:max-w-[15%] xl:flex-[0_0_15%] lg:max-w-[40%] lg:flex-[0_0_40%] md:max-w-[50%] md:flex-[0_0_49%] sm:max-w-[49%] sm:flex-[0_0_100%] max-w-[100%] flex-[0_0_100%] min-h-[1px] xl:mt-0 lg:mt-7 md:mt-7 m-0',
     menu: companyMenu,
   },
 ];
@@ -68,7 +68,7 @@ const Footer = () => {
             />
             <hr className='lg:hidden block w-full border-[#575757] my-7' />
             <div className='flex items-center relative flex-col sm:flex-row md:gap-0 gap-3.5'>
-              <Typography className='footerTitle doubleXl:text-h4 xl:text-h4 lg:text-body1 md:text-body2 text-body2 font-300 lg:pl-[80px] pl-0 relative md:after:content lg:after:block after:hidden after:absolute after:left-14 after:top-2 after:bg-white after:w-[0.1rem] doubleXl:after:h-[3.5rem] doubleXl:h-[3.5rem] xl:h-[3rem] lg:after:h-[3rem] after:h-[3.5rem]'>
+              <Typography className='footerTitle doubleXl:text-h4 xl:text-h4 lg:text-body1 md:text-body2 text-body2 font-300 lg:pl-[80px] pl-0 relative md:after:content lg:after:block after:hidden after:absolute after:left-14 after:top-2 after:bg-white after:w-[0.1rem] doubleXl:after:h-[3.5rem] doubleXl:h-[3.5rem] xl:h-[3rem] lg:after:h-[3.6rem] after:h-[3.5rem]'>
                 Do you want to talk more about the project? Reach out to us
               </Typography>
               <Link
@@ -91,8 +91,7 @@ const Footer = () => {
               >
                 <div className='my-1 sm:hidden' />
                 <Typography
-                  variant='h6'
-                  className='lg:mb-[20px] mb-[20px] flex items-center justify-between'
+                  className='lg:mb-[20px] mb-[20px] flex items-center justify-between sm:text-h6 text-body2 font-400'
                   onClick={() =>
                     setExpandedOption((prev) =>
                       prev === -1 || prev !== index ? index : -1
@@ -130,11 +129,11 @@ const Footer = () => {
                 </div>
               </div>
             ))}
-            <div className='px-[15px] w-full relative doubleXl:max-w-[20%] doubleXl:flex-[0_0_20%] xl:max-w-[23%] xl:flex-[0_0_23%] lg:max-w-[70%] lg:flex-[0_0_70%] md:max-w-[50%] md:flex-[0_0_50%] sm:max-w-[100%] sm:flex-[0_0_100%] max-w-[100%] flex-[0_0_100%] min-h-[1px] xl:mt-0 lg:mt-7 md:mt-7 m-0'>
+            <div className='px-[15px] w-full relative doubleXl:max-w-[20%] doubleXl:flex-[0_0_20%] xl:max-w-[23%] xl:flex-[0_0_23%] lg:max-w-[60%] lg:flex-[0_0_60%] md:max-w-[50%] md:flex-[0_0_50%] sm:max-w-[100%] sm:flex-[0_0_100%] max-w-[100%] flex-[0_0_100%] min-h-[1px] xl:mt-0 lg:mt-7 md:mt-7 m-0'>
               <Typography className=' mb-[20px] sm:mt-0 mt-3 sm:text-h6 text-body2 font-400'>
                 Get in touch
               </Typography>
-              <div>
+              <div className='md:block sm:grid sm:grid-cols-2 block'>
                 <Typography
                   variant='subtitle1'
                   className='leading-normal mb-3.5 min-h-0 text-silver flex gap-3'
@@ -167,12 +166,12 @@ const Footer = () => {
 
                 <Typography
                   variant='subtitle1'
-                  className='leading-normal mb-3.5 min-h-0 text-silver flex gap-3'
+                  className='address leading-normal mb-3.5 min-h-0 text-silver flex gap-3 md:mt-0 sm:mt-[-35px] mt-0'
                 >
-                  <LocationIcon className='xl:w-[21%] lg:w-[6%] md:w-[10%] sm:w-[20px] w-[13%] mt-[2px]' />
+                  <LocationIcon className='mt-[2px]' />
                   <div className='flex flex-col'>
                     <div>Address :</div>
-                    <Typography className='xl:pr-0 lg:pr-[370px] pr-0'>
+                    <Typography className='xl:pr-0 lg:pr-[230px] pr-0'>
                       A901-905, Vivanta Icon Opp. Shell Petrol Pump, Adajan,
                       Surat, Gujarat 395009.
                     </Typography>
@@ -223,7 +222,7 @@ const Footer = () => {
           <Typography className='sm:text-left text-center md:text-subtitle1 sm:text-[14px] text-subtitle1 font-300'>
             © {new Date().getFullYear()} All rights reserved. Codewinglet
           </Typography>
-          <ul className='flex md:gap-12 sm:gap-8 gap-12'>
+          <ul className='flex md:gap-12 sm:gap-6 gap-12'>
             {companyTermsMenu.map((item) => (
               <li key={item.id}>
                 <Typography className='md:text-subtitle1 sm:text-[14px] text-subtitle1 font-300'>

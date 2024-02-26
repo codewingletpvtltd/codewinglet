@@ -1,5 +1,5 @@
 export { default as waste } from './waste.svg';
-export { default as ecommerce } from './eCommerce.svg';
+export { default as ecommerce } from './ecommerce.svg';
 export { default as edTechs } from './edTechs.svg';
 export { default as fintech } from './fintech.svg';
 export { default as logistics } from './logistics.svg';
