@@ -21,19 +21,12 @@ const useGetInTouch = () => {
   });
 
   const onChangeFormData = (value: object) => {
-    const isFormValid =
-      formData.isSubmitted &&
-      validateFields({
-        ...formData,
-        ...Object.assign({ ...formData }, value),
-      });
-
     if (!formData.isSubmitted)
       setFormData(Object.assign({ ...formData }, value));
   };
 
   const validateFields = (validateValues: typeof formData) => {
-    const { email, phone, message, name, errors } = validateValues;
+    const { email, message, name, errors } = validateValues;
 
     const isValidEmail = getIsValidEmail(email);
 
