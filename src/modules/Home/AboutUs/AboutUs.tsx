@@ -1,22 +1,10 @@
-import Image from 'next/image';
-import {
-  pioneering,
-  crafting,
-  building,
-  rating,
-} from '@codewinglet/assets/AboutUs';
+import { pioneering, crafting, building } from '@codewinglet/assets/AboutUs';
 import { SectionHeader, Typography } from '@codewinglet/components';
+import AboutUsCard from './components/AboutUsCard';
+import Statistics from './components/Statistics';
 
 const AboutUs = () => (
-  <section
-    className='xl:py-20 lg:py-14 py-10'
-    style={{
-      backgroundImage: `url(${require('./about-bg-boxline.png').default.src})`,
-      backgroundRepeat: 'no-repeat',
-      backgroundPositionX: 'left',
-      backgroundPositionY: 'bottom',
-    }}
-  >
+  <section className='xl:py-20 lg:py-14 py-10 bg-[url("/about-bg-boxline.png")] bg-no-repeat bg-left-bottom'>
     <div className='container w-full lg:px-[15px] sm:px-[30px] px-[15px] mx-auto'>
       <SectionHeader
         title={<>About us</>}
@@ -40,109 +28,27 @@ const AboutUs = () => (
           </Typography>
 
           <div className='md:flex block justify-between items-center'>
-            <ul className='doubleXl:mt-[60px] xl:mt-[0] mt-2.5 lg:block md:block grid grid-cols-2'>
-              <li className='relative mb-[30px]'>
-                <Typography
-                  variant='h3'
-                  className=' text-white flex item-center'
-                >
-                  250+
-                </Typography>
-                <Typography className=' text-white md:text-body2 text-subtitle2'>
-                  Successful Projects
-                </Typography>
-              </li>
-              <li className='relative mb-[30px]'>
-                <Typography
-                  variant='h3'
-                  className=' text-white flex item-center'
-                >
-                  10+
-                </Typography>
-                <Typography className=' text-white md:text-body2 text-subtitle2'>
-                  Year’s in industry
-                </Typography>
-              </li>
-              <li className='relative mb-[30px]'>
-                <Typography
-                  variant='h3'
-                  className=' text-white flex item-center'
-                >
-                  100%
-                </Typography>
-                <Typography className=' text-white md:text-body2 text-subtitle2'>
-                  Client Satisfaction
-                </Typography>
-              </li>
-              <li className='relative mb-[30px]'>
-                <Typography
-                  variant='h3'
-                  className=' text-white flex item-center'
-                >
-                  5.0 <Image src={rating} alt='rating' className='ml-[8px]' />
-                </Typography>
-                <Typography className=' text-white md:text-body2 text-subtitle2'>
-                  Upwork Ratings
-                </Typography>
-              </li>
-            </ul>
-            <div className='about_box w-full bg-primary p-[18px] mb-10 xl:mt-10'>
-              <div className='w-full overflow-hidden'>
-                <Image
-                  className='w-full object-cover object-center transition-transform duration-500 hover:scale-110'
-                  src={building}
-                  alt='building'
-                />
-              </div>
-              <div className='flex justify-between items-baseline mt-[10px]'>
-                <Typography className='text-white leading-[1.2] font-300 xl:text-h4 lg:text-[20px] sm:text-[20px] text-[16px]'>
-                  XtendR for extended reach of robots
-                </Typography>
-              </div>
-              <Typography className='text-white sm:mt-4 mt-3 xl:text-body2 lg:text-subtitle2 md:text-subtitle1 sm:text-body2 text-[13px] font-300'>
-                A plug produce solution for cobot applications demanding
-                extended operational reach.
-              </Typography>
+            <Statistics />
+            <div className='about_box'>
+              <AboutUsCard
+                image={building}
+                title='XtendR for extended reach of robots'
+                description='A plug produce solution for cobot applications demanding extended operational reach.'
+              />
             </div>
           </div>
         </div>
         <div className='lg:w-[30%] w-full lg:block md:flex block md:gap-6'>
-          <div className='bg-primary p-[18px] lg:mb-10 md:mb-0 mb-10'>
-            <div className='w-full overflow-hidden'>
-              <Image
-                className='w-full object-cover object-center transition-transform duration-500 hover:scale-110'
-                src={pioneering}
-                alt='pioneering'
-              />
-            </div>
-            <div className='flex justify-between items-baseline mt-[10px]'>
-              <Typography className='text-white leading-[1.2] font-300 xl:text-h4 lg:text-[20px] sm:text-[20px] text-[16px]'>
-                XtendR for extended reach of robots
-              </Typography>
-            </div>
-            <Typography className='text-white sm:mt-4 mt-3 xl:text-body2 lg:text-subtitle2 md:text-subtitle1 sm:text-body2 text-[13px] font-300'>
-              A plug produce solution for cobot applications demanding extended
-              operational reach.
-            </Typography>
-          </div>
-          <div className=' bg-primary p-[18px] lg:mb-10 mb-0'>
-            <div className='w-full overflow-hidden'>
-              <Image
-                className='w-full object-cover object-center transition-transform duration-500 hover:scale-110'
-                src={crafting}
-                alt='crafting'
-              />
-            </div>
-            <div className='flex justify-between items-baseline mt-[10px]'>
-              <Typography className='text-white leading-[1.2] font-300 xl:text-h4 lg:text-[20px] sm:text-[20px] text-[16px]'>
-                XtendR for extended reach of robots
-              </Typography>
-            </div>
-            <Typography className='text-white sm:mt-4 mt-3 xl:text-body2 lg:text-subtitle2 md:text-subtitle1 sm:text-body2 text-[13px] font-300'>
-              A plug produce solution for cobot applications demanding extended
-              operational reach.
-            </Typography>
-          </div>
+          <AboutUsCard
+            image={pioneering}
+            title='XtendR for extended reach of robots'
+            description='A plug produce solution for cobot applications demanding extended operational reach.'
+          />
+          <AboutUsCard
+            image={crafting}
+            title='XtendR for extended reach of robots'
+            description='A plug produce solution for cobot applications demanding extended operational reach.'
+          />
         </div>
       </div>
     </div>
