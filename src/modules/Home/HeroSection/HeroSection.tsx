@@ -1,11 +1,10 @@
 'use client';
-import { memo } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Button, TypeAnimation, Typography } from '@codewinglet/components';
 import { Arrow } from '@codewinglet/assets';
-import './main.css';
-
-import InfiniteSlider from './logoSlider';
+import './herosection.css';
+import { techList } from './utils';
 
 const sequence = ['EdTech', 'E-Commerce', 'Healthcare', 'Real Estate', 'CRM'];
 
@@ -51,8 +50,18 @@ const HeroSection = () => (
       </div>
     </div>
 
-    <InfiniteSlider />
+    <div className='py-8 flex shrink-0 gap-10 sm:gap-20 marquee'>
+      {techList.map((tech) => (
+        <div key={tech.id} className='flex shrink-0 w-auto'>
+          <Image
+            alt={tech.alt}
+            src={tech.image}
+            className='sm:h-[30px] h-[24px] w-auto'
+          />
+        </div>
+      ))}
+    </div>
   </div>
 );
 
-export default memo(HeroSection);
+export default HeroSection;
