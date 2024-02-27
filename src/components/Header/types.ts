@@ -53,8 +53,12 @@ export type ChildItemType = {
 export interface MobileMenuProps {
   onMenu: () => void;
 }
-
 export interface SubMenuContentProps {
   childItems: ChildItemType;
   index: number;
+}
+
+export interface MobileSubMenuProps {
+  parentMenu: any; // change the type later
+  onBack: () => void;
 }
