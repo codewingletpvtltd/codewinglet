@@ -22,7 +22,7 @@ const HeroSection = () => (
     <div className='max-w-[1410px] md:px-[15px] sm:px-[30px] px-[15px] mx-auto w-full m-auto'>
       <div className='xl:px-[200px] lg:px-[120px] md:px-14 sm:px-0 px-0'>
         <Typography className='xl:text-h1 md:text-[36px] sm:text-[36px] text-[28px] !font-300 text-center text-white leading-[1.2]'>
-          Your Trusted Software Development Partner- Crafting Innovative
+          Your Trusted Software Development Partner - Crafting Innovative
           Solutions for{' '}
         </Typography>
 
@@ -31,10 +31,10 @@ const HeroSection = () => (
           className='text-center text-white xl:text-h1 md:text-[42px] sm:text-[37px] text-body1 !font-300'
         />
 
-        <Typography className='lg:text-body1 md:text-[18px] sm:text-subtitle1 text-[14px] sm:font-300 font-200 text-center my-[41px] mb-[84px] text-white md:px-0 sm:px-[0px] px-0'>
-          Do you have a concept for project? connect with codewinglet right away
-          to secure a technologically advanced and cost effective development
-          solution!
+        <Typography className='xl:px-10 p-0 lg:text-h5 md:text-[18px] sm:text-subtitle1 text-[14px] sm:font-300 font-200 text-center my-[60px] text-white md:px-0 sm:px-[0px] px-0'>
+          Elevate your business's efficiency and profitability with
+          Codewinglet's advanced software solutions. Book your consultation
+          today for digital transformation and success.
         </Typography>
 
         <Button link className=' w-[222px]'>
@@ -49,7 +49,6 @@ const HeroSection = () => (
         </Button>
       </div>
     </div>
-
     <div className='overflow-hidden'>
       <div className='py-8 flex shrink-0 gap-10 sm:gap-20 marquee'>
         {techList.map((tech) => (
