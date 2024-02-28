@@ -2,19 +2,9 @@ import { ChildItemType } from './types';
 
 const services: ChildItemType = [
   {
-    path: 'internet-if-things',
-    label: 'Internet of Things(IoT)',
-    icon: '/assets/navigation/services/cpu.svg',
-  },
-  {
     path: 'it-consulting',
     label: 'IT Consulting',
     icon: '/assets/navigation/services/itConsulting.svg',
-  },
-  {
-    path: 'custom-software-development',
-    label: 'Custom software development',
-    icon: '/assets/navigation/services/customSoftware.svg',
   },
   {
     path: 'web-application-development',
@@ -27,14 +17,14 @@ const services: ChildItemType = [
     icon: '/assets/navigation/services/mobileApplication.svg',
   },
   {
-    path: 'devOps',
-    label: 'DevOps',
-    icon: '/assets/navigation/services/devops.svg',
+    path: 'custom-software-development',
+    label: 'Custom software development',
+    icon: '/assets/navigation/services/customSoftware.svg',
   },
   {
-    path: 'cloud-computing',
-    label: 'Cloud Computing',
-    icon: '/assets/navigation/services/cloud.svg',
+    path: 'internet-if-things',
+    label: 'Internet of Things(IoT)',
+    icon: '/assets/navigation/services/cpu.svg',
   },
   {
     path: 'artificial-intelligence',
@@ -42,30 +32,33 @@ const services: ChildItemType = [
     icon: '/assets/navigation/services/artificial.svg',
   },
   {
-    path: 'sustainability-services',
-    label: 'Sustainability Services',
-    icon: '/assets/navigation/services/sustainability.svg',
+    path: 'devOps',
+    label: 'DevOps',
+    icon: '/assets/navigation/services/devops.svg',
   },
   {
-    path: 'qa-and-testing',
-    label: 'QA and Testing',
-    icon: '/assets/navigation/services/qaTest.svg',
+    path: 'cloud-engineering',
+    label: 'Cloud Engineering',
+    icon: '/assets/navigation/services/cloud.svg',
   },
   {
     path: 'ui-ux-development',
     label: 'UI/UX Design & Development',
     icon: '/assets/navigation/services/uiuxDesign.svg',
   },
-
   {
-    path: 'hire-dedicated-team-and-developers',
-    label: 'Hire dedicated team and developers',
-    icon: '/assets/navigation/services/hireDedicated.svg',
+    path: 'qa-and-testing',
+    label: 'QA & Testing Service',
+    icon: '/assets/navigation/services/qaTest.svg',
   },
-
+  {
+    path: 'sustainability-services',
+    label: 'Staff Augmentation',
+    icon: '/assets/navigation/services/sustainability.svg',
+  },
   {
     path: 'support-and-maintenance',
-    label: 'Support and maintenance',
+    label: 'Support & Maintenance',
     icon: '/assets/navigation/services/support.svg',
   },
 ];
@@ -394,22 +387,22 @@ export const navMenu = [
     path: '',
     label: 'Services',
     children: services,
-    left: '2xl:left-[-27.1rem] xl:left-[-21rem]',
-  },
-
-  {
-    path: '',
-    label: 'Technology',
-    category: true,
-    children: technology,
-    left: '2xl:left-[-33.7rem] xl:left-[-27.6rem]',
+    left: '2xl:left-[-25.5rem] xl:left-[-20.3rem]',
   },
   {
     path: '',
     label: 'Industries',
     children: industries,
-    left: '2xl:left-[-42rem] xl:left-[-35.9rem]',
+    left: '2xl:left-[-32.1rem] xl:left-[-26.9rem]',
   },
+  {
+    path: '',
+    label: 'Technology',
+    category: true,
+    children: technology,
+    left: '2xl:left-[-39.5rem] xl:left-[-34.3rem]',
+  },
+
   // {
   //   path: '/not-found',
   //   label: 'Portfolio',
@@ -420,13 +413,13 @@ export const navMenu = [
   // },
   {
     path: '/jobs',
-    label: 'Jobs',
+    label: 'Career',
     category: true,
     left: 'left-[-50px]',
   },
   {
     path: '/not-found',
-    label: 'Blog',
+    label: 'Blogs',
   },
   {
     label: 'About us',
