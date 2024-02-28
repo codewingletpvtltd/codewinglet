@@ -11,7 +11,7 @@ const Button: React.FC<ButtonProps> = ({
 }) => (
   <button
     className={twMerge(
-      'relative bg-transparent text-white text-base cursor-pointer h-[50px] block mx-auto border border-[#5b5b5b]',
+      'relative bg-transparent text-white text-base cursor-pointer h-[50px] block mx-auto border border-white',
       className
     )}
     {...rest}
