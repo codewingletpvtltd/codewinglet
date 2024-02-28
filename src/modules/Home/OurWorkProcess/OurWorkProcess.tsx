@@ -55,7 +55,7 @@ const ContactUs = () => (
         headingClassName=''
       />
 
-      <div className='grid sm:gap-[30px] gap-2.5 lg:grid-cols-3 grid-cols-2 lg:mt-12 md:mt-6 mt-7 process-card'>
+      <div className='grid sm:gap-[30px] gap-2.5 lg:grid-cols-3 grid-cols-2 lg:mt-[50px] md:mt-6 mt-7 process-card'>
         {PROCESS.map((card) => (
           <>
             <div className='soft-card xl:p-10 lg:p-7 md:p-8 sm:p-5 p-2.5 bg-white hover:bg-primary hover:text-white'>

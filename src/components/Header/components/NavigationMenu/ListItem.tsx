@@ -32,9 +32,8 @@ export const ListItem: FC<ListItemProps> = ({
               {icon && <Image src={icon} alt='Menu Icon' />}
               <div>
                 <Typography
-                  variant='subtitle1'
                   className={getClassNames(
-                    'font-bold capitalize  ml-[16px] text-[18px] font-400 text-primary',
+                    'font-bold capitalize ml-[16px] text-[18px] font-400 text-primary 2xl:text-subtitle1 xl:text-[14px]',
                     labelClassName
                   )}
                 >

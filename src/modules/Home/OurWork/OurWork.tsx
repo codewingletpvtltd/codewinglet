@@ -18,7 +18,7 @@ const OurWork = () => (
         descriptionClassName=''
       />
       <div className='relative'>
-        <div className='grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-10 gap-5 lg:mt-12 md:mt-6 mt-7'>
+        <div className='grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-10 gap-5 lg:mt-[50px] md:mt-6 mt-7'>
           {portfolio.map((data, index) => (
             <div
               key={`portfolio-${data.id}-${index}`}
@@ -41,16 +41,13 @@ const OurWork = () => (
                 </a>
               </div>
               <div className='project-head'>
-                <Typography
-                  variant='subtitle2'
-                  className='mt-[10px] text-primary '
-                >
+                <Typography className='mt-[10px] text-primary text-subtitle1 font-500'>
                   {data.subtitle}
                 </Typography>
-                <h3 className='text-primary font-300 lg:text-[22px] sm:text-[20px] text-[18px] sm:mb-2 mb-1'>
+                <h3 className='text-primary font-500 lg:text-[28px] sm:text-[20px] text-[18px] md:mb-[5px] sm:mb-2 mb-1'>
                   {data.title}
                 </h3>
-                <p className='text-primary sm:text-[16px] text-[14px] font-300 mb-0'>
+                <p className='text-primary sm:text-[15px] text-[14px] font-300 mb-0'>
                   {data.description}
                 </p>
               </div>
