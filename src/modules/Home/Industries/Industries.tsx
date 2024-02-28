@@ -24,7 +24,7 @@ const INDUCARD = [
   },
   {
     image: travel,
-    title: 'Sustainable IoT Solution',
+    title: 'Sustainable Solution',
   },
   {
     image: healthcare,
@@ -44,7 +44,7 @@ const INDUCARD = [
   },
   {
     image: finance,
-    title: 'Ed-Tech',
+    title: 'EdTech',
   },
   {
     image: social,
@@ -74,10 +74,7 @@ const ContactUs = () => (
       <SectionHeader
         title={<>Industries We Serve</>}
         description={
-          <>
-            Here, we make almost every genre of applications. You name it and we
-            build it.
-          </>
+          <>Diverse Industry Experience to accelerate Your Business Outcomes</>
         }
         headingClassName=''
       />
