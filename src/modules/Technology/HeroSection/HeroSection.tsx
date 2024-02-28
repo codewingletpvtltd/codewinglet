@@ -1,12 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import {
-  LeftLineMediumSVG,
-  RectangleSVG,
-  RightLineSVG,
-  StarsSVG,
-} from '@codewinglet/assets';
-import {
   Button,
   SectionHeader,
   Slider,
@@ -25,9 +19,27 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 }) => (
   <>
     <div className='bg-aliceBlue pt-[50px] pb-[120px] relative mt-[80px] z-0 overflow-hidden'>
-      <LeftLineMediumSVG className='absolute left-[-133px] -z-[1] xl:left-0' />
-      <RectangleSVG className='absolute right-[50px] top-5 lg:h-[24px] lg:w-[24px]' />
-      <StarsSVG className='absolute h-[30px] w-[30px] left-[-5px] top-[40%] md:left-[50%] md:top-[60%] 2xl:top-[50px] 2xl:left-[100px] lg:h-[50px] lg:w-[50px]' />
+      <Image
+        className='absolute left-[-133px] -z-[1] xl:left-0'
+        src={'/assets/icons/LeftLineMediumSVG.svg'}
+        alt={'LeftLineMediumSVG'}
+        width={30}
+        height={30}
+      />
+      <Image
+        className='absolute right-[50px] top-5 lg:h-[24px] lg:w-[24px]'
+        src={'/assets/icons/RectangleSVG.svg'}
+        alt={'LeftLineMediumSVG'}
+        width={30}
+        height={30}
+      />
+      <Image
+        className='absolute h-[30px] w-[30px] left-[-5px] top-[40%] md:left-[50%] md:top-[60%] 2xl:top-[50px] 2xl:left-[100px] lg:h-[50px] lg:w-[50px]'
+        src={'/assets/icons/StarsSVG.svg'}
+        alt={'LeftLineMediumSVG'}
+        width={30}
+        height={30}
+      />
       <div className='max-w-screen-xl mx-[20px] md:mx-[38px] xl:mx-auto'>
         <div className='flex flex-col gap-[18px] md:gap-[30px] lg:gap-[50px] xl:gap-[120px] mb-10 items-center md:flex-row'>
           <div className='md:col-span-4 lg:col-span-5 lg:w-[70%]'>
@@ -71,7 +83,13 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           </div>
         </div>
       </div>
-      <RightLineSVG className='absolute top-[-100px] z-[-1] right-[-175px] xl:right-0' />
+      <Image
+        className='absolute top-[-100px] z-[-1] right-[-175px] xl:right-0'
+        src={'/assets/icons/RightLineSVG.svg'}
+        alt='RightLineSVG'
+        width={100}
+        height={100}
+      />
     </div>
     <div className='max-w-screen-xl mx-[20px] md:mx-[38px] xl:mx-auto bg-white rounded-10 shadow-lg py-[33px] px-[32px] relative bottom-[100px] z-5'>
       <SectionHeader

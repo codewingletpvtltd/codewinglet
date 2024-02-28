@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { rating } from '@codewinglet/assets/AboutUs';
 import { Typography } from '@codewinglet/components';
 
 type ListItemProps = {
@@ -23,7 +22,14 @@ const data = [
   {
     number: (
       <>
-        5.0 <Image src={rating} alt='rating' className='ml-[8px]' />
+        5.0{' '}
+        <Image
+          src={'/assets/icons/rating.svg'}
+          alt='rating'
+          className='ml-[8px]'
+          width={18}
+          height={18}
+        />
       </>
     ),
     label: 'Upwork Ratings',

@@ -2,7 +2,6 @@
 import { useRouter } from 'next/navigation';
 import React, { FC } from 'react';
 import Image from 'next/image';
-import Logo from '@codewinglet/assets/logo_black.svg';
 import { useScreenSize } from '@codewinglet/hooks';
 import { getClassNames } from '@codewinglet/utils';
 import { xl } from '@codewinglet/constants/mediaQueryConst';
@@ -27,7 +26,9 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
         <div className='flex items-center max-w-[1410px] justify-between relative px-[15px]'>
           <div>
             <Image
-              src={Logo}
+              src={'assets/icons/LogoBlack.svg'}
+              width={20}
+              height={20}
               alt='Codewinglet Private Limited Logo'
               className='w-[191px] xl:w-[252px] cursor-pointer invert'
               onClick={() => router.push('/')}

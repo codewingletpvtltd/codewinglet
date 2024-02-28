@@ -1,5 +1,5 @@
 import { memo } from 'react';
-import { DownArrow } from '@codewinglet/assets';
+import Image from 'next/image';
 import Button from '../../../Button';
 import Typography from '../../../Typography';
 import { useAccordionContext } from '../../context/AccordionContext';
@@ -39,7 +39,12 @@ const Heading = () => {
       <div className='flex row items-center justify-between'>
         <Button>Apply Now</Button>
         <div className='h-[26px] w-[26px] pt-[2px] rounded-full bg-primary flex items-center justify-center'>
-          <DownArrow />
+          <Image
+            src={'/assets/icons/DownArrow.svg'}
+            alt='Down Arrow'
+            width={50}
+            height={50}
+          />
         </div>
       </div>
     </div>

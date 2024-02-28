@@ -1,4 +1,4 @@
-import { ClosingQuote, StartQuote } from '@codewinglet/assets';
+import Image from 'next/image';
 import SectionHeader from '../SectionHeader/SectionHeader';
 import Typography from '../Typography/Typography';
 import Slider from '../Slider/Slider';
@@ -24,14 +24,19 @@ const ClientTestimonials = () => (
       <div
         className='md:mt-12 mt-7 xl:h-[481px] h-auto relative'
         style={{
-          backgroundImage: `url(${
-            require('../../assets/testimonial/testimonial_img.svg').default.src
-          })`,
+          backgroundImage: 'url("/assets/testimonial/testimonial_img.svg")',
           backgroundRepeat: 'no-repeat',
           backgroundPositionX: 'right',
         }}
       >
-        <StartQuote />
+        {/* <StartQuote /> */}
+        <Image
+          className='lg:w-[99px] md:w-[75px] absolute left-0 z-[-1] xl:top-[11rem] lg:top-[20rem] md:top-[15rem] md:block hidden'
+          src={'/assets/icons/StartQuote.svg'}
+          alt='StartQuote'
+          width={100}
+          height={75}
+        />
         <div className='relative'>
           <Slider
             className='lg:ml-[120px] ml-0'
@@ -56,7 +61,14 @@ const ClientTestimonials = () => (
             ))}
           </Slider>
         </div>
-        <ClosingQuote />
+        <Image
+          className='lg:w-[99px] md:w-[75px] absolute xl:right-[24rem] right-0 lg:bottom-[-1rem] md:bottom-2.5 z-[-1] md:block hidden'
+          src={'/assets/icons/ClosingQuote.svg'}
+          alt='ClosingQuote'
+          width={100}
+          height={75}
+        />
+        {/* <ClosingQuote /> */}
       </div>
     </div>
   </div>
