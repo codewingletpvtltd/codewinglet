@@ -59,7 +59,7 @@ const Footer = () => {
             />
             <hr className='lg:hidden block w-full border-[#575757] my-7' />
             <div className='flex items-center relative flex-col sm:flex-row md:gap-0 gap-3.5'>
-              <Typography className='footerTitle doubleXl:text-h4 xl:text-h4 lg:text-body1 md:text-body2 text-body2 font-300 lg:pl-[80px] pl-0 relative md:after:content lg:after:block after:hidden after:absolute after:left-14 after:top-2 after:bg-white after:w-[0.1rem] doubleXl:after:h-[3.5rem] doubleXl:h-[3.5rem] xl:h-[3rem] lg:after:h-[3.6rem] after:h-[3.5rem]'>
+              <Typography className='footerTitle 2xl:text-h4 xl:text-h4 lg:text-body1 md:text-body2 text-body2 font-300 2xl:pl-[260px] xl:pl-[180px] pl-0 relative md:after:content lg:after:block after:hidden after:absolute 2xl:after:left-60 xl:after:left-40 after:top-2 after:bg-white after:w-[0.1rem] 2xl:after:h-[3.5rem] 2xl:h-[3.5rem] xl:h-[3rem] lg:after:h-[3.6rem] after:h-[3.5rem]'>
                 Do you want to talk more about the project? Reach out to us
               </Typography>
               <Link
@@ -68,7 +68,7 @@ const Footer = () => {
                 target='_blank'
                 aria-label='Instagram'
               >
-                <Button className='doubleXl:w-[230px] xl:w-[230px] md:w-[190px] sm:w-[164px] w-full h-[56px]'>
+                <Button className='2xl:w-[230px] xl:w-[199px] md:w-[190px] sm:w-[164px] w-full h-[56px]'>
                   Schedule a call
                 </Button>
               </Link>

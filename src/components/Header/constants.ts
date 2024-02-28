@@ -394,7 +394,7 @@ export const navMenu = [
     path: '',
     label: 'Services',
     children: services,
-    left: 'left-[-27.1rem]',
+    left: '2xl:left-[-27.1rem] xl:left-[-21rem]',
   },
 
   {
@@ -402,13 +402,13 @@ export const navMenu = [
     label: 'Technology',
     category: true,
     children: technology,
-    left: 'left-[-33.7rem]',
+    left: '2xl:left-[-33.7rem] xl:left-[-27.6rem]',
   },
   {
     path: '',
     label: 'Industries',
     children: industries,
-    left: 'left-[-42rem]',
+    left: '2xl:left-[-42rem] xl:left-[-35.9rem]',
   },
   // {
   //   path: '/not-found',

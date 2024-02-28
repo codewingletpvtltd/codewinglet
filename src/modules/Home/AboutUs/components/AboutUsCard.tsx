@@ -9,7 +9,7 @@ type AboutUsCardProps = {
 };
 
 const AboutUsCard: FC<AboutUsCardProps> = ({ image, title, description }) => (
-  <div className='w-full bg-primary p-[18px] mb-10'>
+  <div className='2xl:w-[414px] xl:w-[425px] lg:w-[269px] md:w-[342px] w-full bg-primary p-[18px] mb-10 '>
     <div className='w-full overflow-hidden'>
       <Image
         className='w-full object-cover object-center transition-transform duration-500 hover:scale-110'

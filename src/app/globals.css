@@ -44,18 +44,6 @@ iframe .gm-style-mtc {
 
 /* Testimonial Section */
 
-.about_box {
-  width: 408px;
-}
-
-.footerTitle {
-  padding-left: 250px !important;
-}
-
-.footerTitle::after {
-  left: 14rem !important;
-}
-
 input[type='number']::-webkit-inner-spin-button,
 input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -83,12 +71,7 @@ input[type='number']::-webkit-outer-spin-button {
   .container {
     max-width: 1280px;
   }
-  .about_box {
-    width: 368px;
-  }
-  .footerTitle {
-    font-size: 22px !important;
-  }
+
   .address svg {
     width: 19.8%;
   }
@@ -107,9 +90,6 @@ input[type='number']::-webkit-outer-spin-button {
   }
   .process-card h1 {
     font-size: 46px;
-  }
-  .about_box {
-    width: 269px;
   }
   .footerTitle {
     padding-left: 85px !important;
@@ -134,9 +114,7 @@ input[type='number']::-webkit-outer-spin-button {
   .process-card h1 {
     font-size: 45px;
   }
-  .about_box {
-    width: 342px;
-  }
+
   .footerTitle {
     padding-left: 0 !important;
     padding-right: 45px;
@@ -149,9 +127,7 @@ input[type='number']::-webkit-outer-spin-button {
   .container {
     max-width: 100%;
   }
-  .about_box {
-    width: 100%;
-  }
+
   .process-card h1 {
     font-size: 46px;
   }
@@ -179,9 +155,7 @@ input[type='number']::-webkit-outer-spin-button {
   .container {
     max-width: 100%;
   }
-  .about_box {
-    width: 100%;
-  }
+
   .footerTitle {
     padding-left: 0 !important;
   }

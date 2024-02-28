@@ -12,11 +12,7 @@ const ClientTestimonials = () => (
       <SectionHeader
         title={<>Testimonials</>}
         description={
-          <>
-            We let our work prove beyond expectations for a blissful client
-            experience. Here’s a glimpse into what Our Clients have to say about
-            us.
-          </>
+          <>Here’s a glimpse into what Our Clients have to say about us.</>
         }
         headingClassName='text-[22px] text-white'
         descriptionClassName=' mt-[9px] text-white !font-300'

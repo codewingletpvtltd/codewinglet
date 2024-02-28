@@ -12,23 +12,23 @@ const AboutUs = () => (
         descriptionClassName='text-white'
       />
 
-      <div className='lg:flex block md:mt-12 mt-7'>
-        <div className='lg:w-[70%] w-full xl:pr-[75px] lg:pr-[20px] pr-0'>
-          <Typography className='xl:text-body1 lg:text-body2 md:text-body1 text-subtitle1 pb-[30px] md:leading-[40px] text-white md:text-justify text-left'>
+      <div className='lg:flex block md:mt-[50px] mt-7'>
+        <div className='2xl:lg:w-[70%] xl:lg:w-[60%] w-full 2xl:pr-[75px] xl:p-0 lg:pr-[20px] pr-0'>
+          <Typography className='2xl:text-body1 xl:text-h5 lg:text-body2 md:text-body1 text-subtitle1 pb-[30px] md:leading-[40px] text-white md:text-justify text-left'>
             Welcome to Codewinglet, your premier destination for cutting-edge
             software solutions. Specialising in strategic planning, designing,
             and developing world-class software's across diverse industries.
           </Typography>
-          <Typography className='xl:text-body1 lg:text-body2 md:text-body1 text-subtitle1 md:leading-[40px] text-white md:text-justify text-left'>
+          <Typography className='2xl:text-body1 xl:text-h5 lg:text-body2 md:text-body1 text-subtitle1 md:leading-[40px] text-white md:text-justify text-left'>
             We're the trusted choice of leading engineers and companies
             globally. Our smart minds and smart systems create modern solutions
             that empower your business with innovative software solutions,
             driving unparalleled growth and success.
           </Typography>
 
-          <div className='md:flex block justify-between items-center mt-[98px]'>
+          <div className='md:flex block justify-between items-center 2xl:mt-[98px] xl:mt-[48px]'>
             <Statistics />
-            <div className='about_box'>
+            <div>
               <AboutUsCard
                 image={'/assets/AboutUs/building.png'}
                 title='"Vision, Mission, Excellence"'
@@ -38,7 +38,7 @@ const AboutUs = () => (
             </div>
           </div>
         </div>
-        <div className='lg:w-[30%] w-full lg:block md:flex block md:gap-6'>
+        <div className='2xl:lg:w-[30%] xl:lg:w-[40%] w-full 2xl:block xl:flex xl:flex-col xl:items-end lg:block md:flex block md:gap-6'>
           <AboutUsCard
             image={'/assets/AboutUs/pioneering.png'}
             title='"Integrity, Quality, Trust: Our 
