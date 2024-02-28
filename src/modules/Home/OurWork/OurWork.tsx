@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { memo } from 'react';
-import { btnArrow } from '@codewinglet/assets';
 import { Button, SectionHeader, Typography } from '@codewinglet/components';
 
 import { portfolio } from './data';
@@ -31,11 +30,20 @@ const OurWork = () => (
                     className='w-full transition-transform duration-500 group-hover:scale-110'
                     src={data.image}
                     alt='portfolio image'
+                    width={500}
+                    height={500}
+                    quality={100}
                   />
-                  <div className='absolute px-4 top-2/4 left-1/2 opacity-0 z-[2] bg-[#00000099] transform -translate-x-1/2 -translate-y-1/2 transition-all ease-in-out duration-[0.3s] group-hover:opacity-[1]'>
+                  <div className='absolute px-4 top-2/4 left-1/2 opacity-0 z-[2] bg-[#00000099] transform -translate-x-1/2 -translate-y-1/2 transition-all ease-in-out duration-500 group-hover:opacity-[1]'>
                     <button className='w-[180px] h-[50px] text-white block border-none cursor-pointer mx-auto flex items-center justify-center'>
                       {data.button}{' '}
-                      <Image className='ml-[10px]' src={btnArrow} alt='Arrow' />
+                      <Image
+                        className='ml-[10px]'
+                        src={'/assets/icons/BtnArrow.svg'}
+                        alt='Arrow'
+                        width={16}
+                        height={16}
+                      />
                     </button>
                   </div>
                 </a>

@@ -1,5 +1,5 @@
 import { FC, memo } from 'react';
-import { Close } from '@codewinglet/assets';
+import Image from 'next/image';
 import { getClassNames } from '@codewinglet/utils';
 import Typography from '../Typography';
 import Button from '../Button';
@@ -38,7 +38,14 @@ const Modal: FC<ModalProps> = ({
             >
               {title}
             </Typography>
-            <Close className='cursor-pointer' onClick={onClose} />
+            <Image
+              src={'/assets/icons/Close.svg'}
+              alt='Close'
+              className='cursor-pointer'
+              onClick={onClose}
+              width={20}
+              height={20}
+            />
           </div>
         )}
         {children}

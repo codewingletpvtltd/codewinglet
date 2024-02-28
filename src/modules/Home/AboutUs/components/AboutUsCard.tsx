@@ -1,9 +1,9 @@
-import Image, { StaticImageData } from 'next/image';
+import Image from 'next/image';
 import { FC } from 'react';
 import { Typography } from '@codewinglet/components';
 
 type AboutUsCardProps = {
-  image: StaticImageData;
+  image: string;
   title: string;
   description: string;
 };
@@ -15,6 +15,8 @@ const AboutUsCard: FC<AboutUsCardProps> = ({ image, title, description }) => (
         className='w-full object-cover object-center transition-transform duration-500 hover:scale-110'
         src={image}
         alt='building'
+        width={1000}
+        height={1000}
       />
     </div>
     <div className='flex justify-between items-baseline mt-[10px]'>

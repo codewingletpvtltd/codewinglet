@@ -2,7 +2,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button, TypeAnimation, Typography } from '@codewinglet/components';
-import { Arrow } from '@codewinglet/assets';
 import './herosection.css';
 import { techList } from './utils';
 
@@ -44,7 +43,13 @@ const HeroSection = () => (
             target='_blank'
             className='flex items-center justify-center gap-3'
           >
-            Book a meeting <Arrow />
+            Book a meeting{' '}
+            <Image
+              src={'/assets/icons/Arrow.svg'}
+              alt='Arrow'
+              width={16}
+              height={16}
+            />
           </Link>
         </Button>
       </div>
@@ -57,6 +62,8 @@ const HeroSection = () => (
               alt={tech.alt}
               src={tech.image}
               className='sm:h-[30px] h-[24px] w-auto'
+              height={30}
+              width={24}
             />
           </div>
         ))}

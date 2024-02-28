@@ -1,5 +1,5 @@
 import { FC, memo } from 'react';
-import { BreadcrumbSeparator } from '@codewinglet/assets';
+import Image from 'next/image';
 import Typography from '../Typography/Typography';
 import { BreadcrumbProps } from './types';
 
@@ -16,7 +16,12 @@ const Breadcrumb: FC<BreadcrumbProps> = ({ breadcrumbs }) => (
           </Typography>
         </li>
         <li className='last-of-type:hidden'>
-          <BreadcrumbSeparator />
+          <Image
+            src={'/assets/icons/BreadcrumbSeparator.svg'}
+            alt='BreadcrumbSeparator'
+            width={24}
+            height={24}
+          />
         </li>
       </>
     ))}

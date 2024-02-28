@@ -1,7 +1,5 @@
 import Image from 'next/image';
 import { FC, memo } from 'react';
-import { COLORS } from '@codewinglet/constants';
-import { Calender } from '@codewinglet/assets';
 import Typography from '../Typography';
 import Button from '../Button';
 import { BlogCardProps } from './types';
@@ -13,6 +11,8 @@ const BlogCard: FC<BlogCardProps> = ({ image, desc, title, date }) => (
         src={image}
         alt='Blog Image'
         className='rounded-10 z-[-10] w-full'
+        width={500}
+        height={500}
       />
     ) : (
       <div className='h-[400px] md:h-[390px] xl:h-[450px] w-full rounded-10 z-[-10]' />
@@ -25,7 +25,12 @@ const BlogCard: FC<BlogCardProps> = ({ image, desc, title, date }) => (
         {desc}
       </Typography>
       <div className='flex flex-row items-center mt-[6px] mb-[11px]'>
-        <Calender color={COLORS.lightBlack} />
+        <Image
+          src={'/assets/icons/Calender.svg'}
+          alt='Calender'
+          height={50}
+          width={50}
+        />
         {date && (
           <Typography
             variant='subtitle2'

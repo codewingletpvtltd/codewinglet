@@ -103,7 +103,7 @@ export const WithoutHeader = () => {
                   {items.items.map((item, index) => (
                     <Menu.Item key={`menu1-${key}-${idx}-${index}`}>
                       <Menu.ItemIcon>
-                        <Image src={item.icon} alt='' />
+                        <Image src={item.icon} alt='' width={28} height={28} />
                       </Menu.ItemIcon>
                       <Menu.ItemText
                         className='ml-2'
@@ -214,14 +214,14 @@ export const WithHeader = () => {
                     className='border- pb-[13px]'
                   >
                     <Menu.ItemIcon>
-                      <Image src={items.icon} alt='' />
+                      <Image src={items.icon} alt='' width={28} height={28} />
                     </Menu.ItemIcon>
                     <Menu.ItemText className='ml-2'>{key}</Menu.ItemText>
                   </Menu.Item>
                   {items.items.map((item, index) => (
                     <Menu.Item key={`menu1-${key}-${idx}-${index}`}>
                       <Menu.ItemIcon>
-                        <Image src={item.icon} alt='' />
+                        <Image src={item.icon} alt='' width={28} height={28} />
                       </Menu.ItemIcon>
                       <Menu.ItemText
                         className='ml-2'
