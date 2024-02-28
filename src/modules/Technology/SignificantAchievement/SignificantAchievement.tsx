@@ -1,6 +1,5 @@
 'use client';
-
-import { BgWave, StarIcon } from '@codewinglet/assets';
+import Image from 'next/image';
 import { SectionHeader, Slider } from '@codewinglet/components';
 import { md } from '@codewinglet/constants/mediaQueryConst';
 import { useScreenSize } from '@codewinglet/hooks';
@@ -23,9 +22,21 @@ const SignificantAchievement: React.FC<SignificantAchievementProps> = ({
       )}
     >
       {isLarge && (
-        <BgWave className='z-[-1] absolute top-0 bottom-0 left-0 h-[100%] w-[100%] ' />
+        <Image
+          className='z-[-1] absolute top-0 bottom-0 left-0 h-[100%] w-[100%] '
+          src={'/assets/icons/BgWave.svg'}
+          alt='BgWave'
+          width={100}
+          height={100}
+        />
       )}
-      <StarIcon className='absolute hidden md:block right-12 top-[69px] lg:w-[54px] lg:h-[53px] xl:w-[69px] xl:h-[69px] 2xl:w-[92px] 2xl:h-[91px] animate-spin' />
+      <Image
+        className='absolute hidden md:block right-12 top-[69px] lg:w-[54px] lg:h-[53px] xl:w-[69px] xl:h-[69px] 2xl:w-[92px] 2xl:h-[91px] animate-spin'
+        src={'/assets/icons/StarIcon.svg'}
+        alt='StarIcon'
+        width={100}
+        height={100}
+      />
       <div className='max-w-screen-xl xl:mx-auto'>
         <SectionHeader
           title={

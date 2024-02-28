@@ -25,7 +25,7 @@ const Technologies = () => {
         />
 
         <div
-          className='accord flex flex-row content-center items-center relative w-full gap-5 lg:mt-6 md:mt-6 mt-7 [transition: all 200ms ease-in-out 50ms]'
+          className='accord flex flex-row content-center items-center relative w-full gap-5 lg:mt-[50px] md:mt-[50px] mt-7 [transition: all 200ms ease-in-out 50ms]'
           style={{ opacity: 1 }}
         >
           {accordionData.map((data) => (

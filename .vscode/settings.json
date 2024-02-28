@@ -10,11 +10,14 @@
   "explorer.confirmDelete": false,
   "editor.minimap.enabled": true,
   "editor.codeActionsOnSave": {
-    "source.removeUnusedImports": true,
-    "source.fixAll.eslint": true,
-    "source.sortMembers": true
+    "source.removeUnusedImports": "explicit",
+    "source.fixAll.eslint": "explicit",
+    "source.sortMembers": "explicit"
   },
   "eslint.format.enable": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "liveServer.settings.port": 5501
+  "liveServer.settings.port": 5501,
+  "[svg]": {
+    "editor.defaultFormatter": "jock.svg"
+  }
 }

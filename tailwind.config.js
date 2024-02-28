@@ -145,7 +145,7 @@ module.exports = {
     },
     fontSize: {
       h1: [
-        '55px',
+        '50px',
         {
           fontWeight: 300,
         },
@@ -171,7 +171,7 @@ module.exports = {
       h5: [
         '20px',
         {
-          fontWeight: 800,
+          fontWeight: 300,
         },
       ],
       h6: [

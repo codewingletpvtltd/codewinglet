@@ -1,4 +1,4 @@
-import { StarsSVG } from '@codewinglet/assets';
+import Image from 'next/image';
 import { SectionHeader, TechnologiesTab } from '@codewinglet/components';
 
 const Technologies = () => (
@@ -26,7 +26,13 @@ const Technologies = () => (
         />
       </div>
     </section>
-    <StarsSVG className='hidden 2xl:inline-block absolute top-[400px] left-[100px] h-[90px] w-[90px] ' />
+    <Image
+      className='hidden 2xl:inline-block absolute top-[400px] left-[100px] h-[90px] w-[90px]'
+      src={'/assets/icons/StarsSVG.svg'}
+      alt='StarsSVG'
+      width={90}
+      height={90}
+    />
   </section>
 );
 

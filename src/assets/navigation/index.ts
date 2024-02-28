@@ -1,4 +1,0 @@
-export * from './company';
-export * from './services';
-export * from './technology';
-export * from './industries';

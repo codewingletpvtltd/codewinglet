@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { memo } from 'react';
-import { btnArrow } from '@codewinglet/assets';
 import { Button, SectionHeader, Typography } from '@codewinglet/components';
 
 import { portfolio } from './data';
@@ -18,7 +17,7 @@ const OurWork = () => (
         descriptionClassName=''
       />
       <div className='relative'>
-        <div className='grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-10 gap-5 lg:mt-12 md:mt-6 mt-7'>
+        <div className='grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-10 gap-5 lg:mt-[50px] md:mt-6 mt-7'>
           {portfolio.map((data, index) => (
             <div
               key={`portfolio-${data.id}-${index}`}
@@ -31,26 +30,32 @@ const OurWork = () => (
                     className='w-full transition-transform duration-500 group-hover:scale-110'
                     src={data.image}
                     alt='portfolio image'
+                    width={500}
+                    height={500}
+                    quality={100}
                   />
-                  <div className='absolute px-4 top-2/4 left-1/2 opacity-0 z-[2] bg-[#00000099] transform -translate-x-1/2 -translate-y-1/2 transition-all ease-in-out duration-[0.3s] group-hover:opacity-[1]'>
+                  <div className='absolute px-4 top-2/4 left-1/2 opacity-0 z-[2] bg-[#00000099] transform -translate-x-1/2 -translate-y-1/2 transition-all ease-in-out duration-500 group-hover:opacity-[1]'>
                     <button className='w-[180px] h-[50px] text-white block border-none cursor-pointer mx-auto flex items-center justify-center'>
                       {data.button}{' '}
-                      <Image className='ml-[10px]' src={btnArrow} alt='Arrow' />
+                      <Image
+                        className='ml-[10px]'
+                        src={'/assets/icons/BtnArrow.svg'}
+                        alt='Arrow'
+                        width={16}
+                        height={16}
+                      />
                     </button>
                   </div>
                 </a>
               </div>
               <div className='project-head'>
-                <Typography
-                  variant='subtitle2'
-                  className='mt-[10px] text-primary '
-                >
+                <Typography className='mt-[10px] text-primary text-subtitle1 font-500'>
                   {data.subtitle}
                 </Typography>
-                <h3 className='text-primary font-300 lg:text-[22px] sm:text-[20px] text-[18px] sm:mb-2 mb-1'>
+                <h3 className='text-primary font-500 lg:text-[28px] sm:text-[20px] text-[18px] md:mb-[5px] sm:mb-2 mb-1'>
                   {data.title}
                 </h3>
-                <p className='text-primary sm:text-[16px] text-[14px] font-300 mb-0'>
+                <p className='text-primary sm:text-[15px] text-[14px] font-300 mb-0'>
                   {data.description}
                 </p>
               </div>

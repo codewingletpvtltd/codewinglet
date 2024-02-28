@@ -1,12 +1,18 @@
 import Link from 'next/link';
-import { Email, LocationPin, Phone } from '@codewinglet/assets';
+import Image from 'next/image';
 import { Typography } from '@codewinglet/components';
 
 export const info = [
   {
     id: 1,
     icon: (
-      <LocationPin className='h-[40px] w-[90px] md:w-[100px] 2xl:w-[60px]' />
+      <Image
+        src={'/assets/icons/LocationPin.svg'}
+        alt='LocationPin'
+        width={50}
+        height={50}
+        className='h-[40px] w-[90px] md:w-[100px] 2xl:w-[60px]'
+      />
     ),
     title: 'Address',
     detail:
@@ -14,7 +20,14 @@ export const info = [
   },
   {
     id: 2,
-    icon: <Phone />,
+    icon: (
+      <Image
+        src={'/assets/icons/Phone.svg'}
+        alt='Phone'
+        width={50}
+        height={50}
+      />
+    ),
     title: 'Phone',
     detail: (
       <div className='flex flex-col gap-2'>
@@ -38,7 +51,14 @@ export const info = [
   },
   {
     id: 3,
-    icon: <Email />,
+    icon: (
+      <Image
+        src={'/assets/icons/Email.svg'}
+        alt='Email'
+        width={50}
+        height={50}
+      />
+    ),
     title: 'Email',
     detail: (
       <div className='flex flex-col gap-2'>

@@ -1,6 +1,6 @@
 import { FC, memo } from 'react';
 import Link from 'next/link';
-import { MenuDownArrow } from '@codewinglet/assets';
+import Image from 'next/image';
 import { MenuTriggerProps } from '../../types';
 import Typography from '../../../Typography';
 
@@ -28,7 +28,13 @@ const MenuTrigger: FC<MenuTriggerProps> = ({
         {label}
       </Typography>
       {showIcon && (
-        <MenuDownArrow className='transition duration-200 group-hover:rotate-[180deg] ml-[3px]' />
+        <Image
+          src={'/assets/icons/MenuDownArrow.svg'}
+          alt='MenuDownArrow'
+          width={50}
+          height={50}
+          className='transition duration-200 group-hover:rotate-[180deg] ml-[3px]'
+        />
       )}
     </Link>
   );

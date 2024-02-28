@@ -2,7 +2,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button, TypeAnimation, Typography } from '@codewinglet/components';
-import { Arrow } from '@codewinglet/assets';
 import './herosection.css';
 import { techList } from './utils';
 
@@ -20,21 +19,21 @@ const HeroSection = () => (
     </div>
 
     <div className='max-w-[1410px] md:px-[15px] sm:px-[30px] px-[15px] mx-auto w-full m-auto'>
-      <div className='xl:px-[200px] lg:px-[120px] md:px-14 sm:px-0 px-0'>
-        <Typography className='xl:text-h1 md:text-[36px] sm:text-[36px] text-h6 !font-300 text-center text-white leading-[1.2]'>
-          Your Trusted Custom Software Development Partner - Crafting Innovative
+      <div className='xl:px-[150px] lg:px-[120px] md:px-14 sm:px-0 px-0'>
+        <Typography className='xl:text-h1 md:text-[36px] sm:text-[36px] text-[28px] !font-300 text-center text-white leading-[1.2]'>
+          Your Trusted Software Development Partner - Crafting Innovative
           Solutions for{' '}
         </Typography>
 
         <TypeAnimation
           sequence={sequence}
-          className='text-center text-white xl:text-h1 md:text-[42px] sm:text-[37px] text-h6 !font-300'
+          className='text-center text-white xl:text-h1 md:text-[42px] sm:text-[37px] text-body1 !font-300'
         />
 
-        <Typography className='lg:text-body1 md:text-[18px] sm:text-subtitle1 text-[14px] sm:font-300 font-200 text-center my-[41px] mb-[84px] text-white md:px-0 sm:px-[0px] px-0'>
-          Do you have a concept for project? connect with codewinglet right away
-          to secure a technologically advanced and cost effective development
-          solution!
+        <Typography className='xl:px-3 p-0 lg:text-h5 md:text-[18px] sm:text-subtitle1 text-[14px] sm:font-300 font-200 text-center my-[60px] text-white md:px-0 sm:px-[0px] px-0'>
+          Elevate your business's efficiency and profitability with
+          Codewinglet's advanced software solutions. Book your consultation
+          today for digital transformation and success.
         </Typography>
 
         <Button link className=' w-[222px]'>
@@ -44,22 +43,31 @@ const HeroSection = () => (
             target='_blank'
             className='flex items-center justify-center gap-3'
           >
-            Request a Quote <Arrow />
+            Book a meeting{' '}
+            <Image
+              src={'/assets/icons/Arrow.svg'}
+              alt='Arrow'
+              width={16}
+              height={16}
+            />
           </Link>
         </Button>
       </div>
     </div>
-
-    <div className='py-8 flex shrink-0 gap-10 sm:gap-20 marquee'>
-      {techList.map((tech) => (
-        <div key={tech.id} className='flex shrink-0 w-auto'>
-          <Image
-            alt={tech.alt}
-            src={tech.image}
-            className='sm:h-[30px] h-[24px] w-auto'
-          />
-        </div>
-      ))}
+    <div className='overflow-hidden'>
+      <div className='py-8 flex shrink-0 gap-10 sm:gap-20 marquee'>
+        {techList.map((tech) => (
+          <div key={tech.id} className='flex shrink-0 w-auto'>
+            <Image
+              alt={tech.alt}
+              src={tech.image}
+              className='sm:h-[30px] h-[24px] w-auto'
+              height={30}
+              width={24}
+            />
+          </div>
+        ))}
+      </div>
     </div>
   </div>
 );

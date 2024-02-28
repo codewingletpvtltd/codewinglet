@@ -1,5 +1,5 @@
 import { memo } from 'react';
-import { DownArrow, MinusIcon, PlusIcon } from '@codewinglet/assets';
+import Image from 'next/image';
 import { getClassNames } from '@codewinglet/utils';
 import Button from '../../../Button';
 import Typography from '../../../Typography';
@@ -69,9 +69,21 @@ const Summary = () => {
       ) : isSecondary ? (
         <div className='flex items-center justify-end'>
           {expanded ? (
-            <MinusIcon onClick={onChange} className='hover:cursor-pointer' />
+            <Image
+              className='hover:cursor-pointer'
+              src='/assets/icons/MinusIcon.svg'
+              alt='MinusIcon'
+              width={50}
+              height={50}
+            />
           ) : (
-            <PlusIcon onClick={onChange} className='hover:cursor-pointer' />
+            <Image
+              className='hover:cursor-pointer'
+              src='/assets/icons/PlusIcon.svg'
+              alt='PlusIcon'
+              width={50}
+              height={50}
+            />
           )}
         </div>
       ) : (
@@ -84,11 +96,15 @@ const Summary = () => {
             )}
             onClick={onChange}
           >
-            <DownArrow
+            <Image
               className={getClassNames(
                 'transitio duration-400 ease-linear',
                 expanded ? 'rotate-[180deg]' : ''
               )}
+              src='/assets/icons/DownArrow.svg'
+              alt='DownArrow'
+              width={50}
+              height={50}
             />
           </div>
         </div>

@@ -1,27 +1,17 @@
 import Image from 'next/image';
 import { memo } from 'react';
-import {
-  circle_dna,
-  content_stack,
-  infineo,
-  junomoneta,
-  magics,
-  ninja_van,
-  prime_lab,
-  vidiren,
-} from '@codewinglet/assets';
 import { SectionHeader } from '@codewinglet/components';
 import { getClassNames } from '@codewinglet/utils';
 
 const clientLogo = [
-  vidiren,
-  infineo,
-  content_stack,
-  magics,
-  ninja_van,
-  prime_lab,
-  junomoneta,
-  circle_dna,
+  '/assets/ourClient/vidiren.png',
+  '/assets/ourClient/infineo.png',
+  '/assets/ourClient/content_stack.png',
+  '/assets/ourClient/magics.png',
+  '/assets/ourClient/ninja_van.png',
+  '/assets/ourClient/prime_lab.png',
+  '/assets/ourClient/junomoneta.png',
+  '/assets/ourClient/circle_dna.png',
 ];
 
 const OurClient = () => (
@@ -48,6 +38,8 @@ const OurClient = () => (
               src={img}
               alt='client-logo'
               className='object-contain h-full w-full '
+              width={500}
+              height={500}
             />
           </div>
         ))}

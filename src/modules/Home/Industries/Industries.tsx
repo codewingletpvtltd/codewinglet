@@ -2,68 +2,53 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button, SectionHeader, Typography } from '@codewinglet/components';
 
-import {
-  realEstate,
-  travel,
-  healthcare,
-  eCommerce,
-  edTech,
-  crm,
-  finance,
-  social,
-  food,
-  fitness,
-  shopping,
-  event,
-} from '@codewinglet/assets';
-
 const INDUCARD = [
   {
-    image: realEstate,
+    image: '/assets/industries/realEstate.png',
     title: 'Waste Management',
   },
   {
-    image: travel,
+    image: '/assets/industries/travel.png',
     title: 'Sustainable Solution',
   },
   {
-    image: healthcare,
+    image: '/assets/industries/healthcare.png',
     title: 'Staffing Management',
   },
   {
-    image: eCommerce,
+    image: '/assets/industries/eCommerce.png',
     title: 'E-commerce',
   },
   {
-    image: edTech,
+    image: '/assets/industries/edTech.png',
     title: 'Healthcare',
   },
   {
-    image: crm,
+    image: '/assets/industries/crm.png',
     title: 'Logistics',
   },
   {
-    image: finance,
+    image: '/assets/industries/finance.png',
     title: 'EdTech',
   },
   {
-    image: social,
+    image: '/assets/industries/social.png',
     title: 'Fintech',
   },
   {
-    image: food,
+    image: '/assets/industries/food.png',
     title: 'Manufacturing & Retails',
   },
   {
-    image: fitness,
+    image: '/assets/industries/fitness.png',
     title: 'Real Estate',
   },
   {
-    image: shopping,
+    image: '/assets/industries/shopping.png',
     title: 'Travel & Hospitality',
   },
   {
-    image: event,
+    image: '/assets/industries/event.png',
     title: 'Media & Entertainment',
   },
 ];
@@ -83,7 +68,13 @@ const ContactUs = () => (
         {INDUCARD.map((card, i) => (
           <>
             <div className={i >= 6 ? 'sm:block hidden' : undefined}>
-              <Image src={card.image} alt='Menu Icon' className='w-full' />
+              <Image
+                src={card.image}
+                alt='Menu Icon'
+                className='w-full'
+                width={500}
+                height={500}
+              />
               <Typography className='text-primary mt-3 lg:text-h6 md:text-body2 sm:text-body2 text-subtitle2'>
                 {card.title}
               </Typography>

@@ -11,7 +11,13 @@ const HiringBoard: FC<HiringBoardProps> = ({
   className = '',
 }) => (
   <div>
-    <Image src={HiringImg} alt='Hiring Image' className='ml-[1.9rem]' />
+    <Image
+      src={HiringImg}
+      alt='Hiring Image'
+      className='ml-[1.9rem]'
+      width={500}
+      height={500}
+    />
     <div className='content-[""] absolute w-[10px] h-[10px] top-[83px] left-[78px] z-[5] rounded-[50%] bg-primary border-[2px]' />
     <figure
       className={getClassNames(

@@ -3,18 +3,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import React, { useState } from 'react';
 import Image from 'next/image';
-import LogoWhite from '@codewinglet/assets/logo_white.svg';
 import { Button, Typography } from '@codewinglet/components';
-import {
-  FacebookLogo,
-  InstagramLogo,
-  LinkedInLogo,
-  TwitterLogo,
-  EmailIcon,
-  DownArrows,
-  CallIcon,
-  LocationIcon,
-} from '@codewinglet/assets';
 import { getClassNames } from '@codewinglet/utils';
 import {
   companyTermsMenu,
@@ -60,7 +49,9 @@ const Footer = () => {
         <div className='container'>
           <div className='md:mb-16 mb-10 flex justify-between items-center flex-col md:flex-col lg:flex-row lg:px-[15px] sm:px-[30px] px-[15px]'>
             <Image
-              src={LogoWhite}
+              src={'/assets/icons/LogoWhite.svg'}
+              width={100}
+              height={100}
               alt='Codewinglet White Logo'
               className='w-[253px] sm:[w-191px] xl:w-[252px] cursor-pointer'
               onClick={() => router.push('/')}
@@ -68,7 +59,7 @@ const Footer = () => {
             />
             <hr className='lg:hidden block w-full border-[#575757] my-7' />
             <div className='flex items-center relative flex-col sm:flex-row md:gap-0 gap-3.5'>
-              <Typography className='footerTitle doubleXl:text-h4 xl:text-h4 lg:text-body1 md:text-body2 text-body2 font-300 lg:pl-[80px] pl-0 relative md:after:content lg:after:block after:hidden after:absolute after:left-14 after:top-2 after:bg-white after:w-[0.1rem] doubleXl:after:h-[3.5rem] doubleXl:h-[3.5rem] xl:h-[3rem] lg:after:h-[3.6rem] after:h-[3.5rem]'>
+              <Typography className='footerTitle 2xl:text-h4 xl:text-h4 lg:text-body1 md:text-body2 text-body2 font-300 2xl:pl-[260px] xl:pl-[180px] pl-0 relative md:after:content lg:after:block after:hidden after:absolute 2xl:after:left-60 xl:after:left-40 after:top-2 after:bg-white after:w-[0.1rem] 2xl:after:h-[3.5rem] 2xl:h-[3.5rem] xl:h-[3rem] lg:after:h-[3.6rem] after:h-[3.5rem]'>
                 Do you want to talk more about the project? Reach out to us
               </Typography>
               <Link
@@ -77,7 +68,7 @@ const Footer = () => {
                 target='_blank'
                 aria-label='Instagram'
               >
-                <Button className='doubleXl:w-[230px] xl:w-[230px] md:w-[190px] sm:w-[164px] w-full h-[56px]'>
+                <Button className='2xl:w-[230px] xl:w-[199px] md:w-[190px] sm:w-[164px] w-full h-[56px]'>
                   Schedule a call
                 </Button>
               </Link>
@@ -105,7 +96,12 @@ const Footer = () => {
                       index === expandedOption ? '-rotate-180' : ''
                     )}
                   >
-                    <DownArrows />
+                    <Image
+                      src={'/assets/icons/DownArrows.svg'}
+                      width={12}
+                      height={18}
+                      alt='DownArrows'
+                    />
                   </Button>
                 </Typography>
                 <div
@@ -136,9 +132,15 @@ const Footer = () => {
               <div className='md:block sm:grid sm:grid-cols-2 block'>
                 <Typography
                   variant='subtitle1'
-                  className='leading-normal mb-3.5 min-h-0 text-silver flex gap-3'
+                  className='leading-normal mb-3.5 min-h-0 text-silver flex gap-3 items-start'
                 >
-                  <CallIcon />
+                  <Image
+                    src={'/assets/icons/CallIcon.svg'}
+                    alt='CallIcon'
+                    width={18}
+                    height={18}
+                    className='mt-1'
+                  />
                   <div className='flex flex-col'>
                     <div>Contact us :</div>
                     <Link href='tel:+918320111741'>+91 83201 11741 (Jobs)</Link>
@@ -147,9 +149,15 @@ const Footer = () => {
 
                 <Typography
                   variant='subtitle1'
-                  className=' leading-normal mb-3.5 min-h-0 text-silver flex gap-3'
+                  className=' leading-normal mb-3.5 min-h-0 text-silver flex gap-3 items-start'
                 >
-                  <EmailIcon />
+                  <Image
+                    src={'/assets/icons/EmailIcon.svg'}
+                    alt='EmailIcon'
+                    width={18}
+                    height={18}
+                    className='mt-1'
+                  />
                   <div className='flex flex-col'>
                     <div>Email us on :</div>
                     <Link href='mailto:jobs@codewinglet.com'>
@@ -166,9 +174,15 @@ const Footer = () => {
 
                 <Typography
                   variant='subtitle1'
-                  className='address leading-normal mb-3.5 min-h-0 text-silver flex gap-3 md:mt-0 sm:mt-[-35px] mt-0'
+                  className='address leading-normal mb-3.5 min-h-0 text-silver flex gap-3 md:mt-0 sm:mt-[-35px] mt-0 items-start'
                 >
-                  <LocationIcon className='mt-[2px]' />
+                  <Image
+                    src={'/assets/icons/LocationIcon.svg'}
+                    alt='LocationIcon'
+                    width={18}
+                    height={18}
+                    className='mt-1'
+                  />
                   <div className='flex flex-col'>
                     <div>Address :</div>
                     <Typography className='xl:pr-0 lg:pr-[230px] pr-0'>
@@ -185,7 +199,12 @@ const Footer = () => {
                   target='_blank'
                   aria-label='Linkedin'
                 >
-                  <LinkedInLogo />
+                  <Image
+                    src={'/assets/icons/LinkedInLogo.svg'}
+                    width={15}
+                    height={18}
+                    alt='LinkedInLogo'
+                  />
                 </Link>
                 <Link
                   className='flex items-center justify-center w-8 h-8 border border-solid border-white rounded-full bg-white'
@@ -193,7 +212,12 @@ const Footer = () => {
                   target='_blank'
                   aria-label='Instagram'
                 >
-                  <InstagramLogo />
+                  <Image
+                    src={'/assets/icons/InstagramLogo.svg'}
+                    width={15}
+                    height={18}
+                    alt='InstagramLogo'
+                  />
                 </Link>
                 <Link
                   className='flex items-center justify-center w-8 h-8 border border-solid border-white rounded-full bg-white'
@@ -201,7 +225,12 @@ const Footer = () => {
                   target='_blank'
                   aria-label='Facebook'
                 >
-                  <FacebookLogo />
+                  <Image
+                    src={'/assets/icons/FacebookLogo.svg'}
+                    width={12}
+                    height={18}
+                    alt='FacebookLogo'
+                  />
                 </Link>
                 <Link
                   className='flex items-center justify-center w-8 h-8 border border-solid border-white rounded-full bg-white'
@@ -209,7 +238,12 @@ const Footer = () => {
                   target='_blank'
                   aria-label='Twitter'
                 >
-                  <TwitterLogo />
+                  <Image
+                    src={'/assets/icons/TwitterLogo.svg'}
+                    width={15}
+                    height={18}
+                    alt='TwitterLogo'
+                  />
                 </Link>
               </div>
             </div>
