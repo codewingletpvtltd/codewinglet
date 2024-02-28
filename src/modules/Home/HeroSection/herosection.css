@@ -6,7 +6,7 @@
   position: absolute;
   z-index: -1;
   transform: translate(-50%, -50%);
-  top: 50%;
+  top: 40%;
   left: 50%;
 }
 
@@ -68,8 +68,8 @@
     opacity: 1;
   }
   100% {
-    width: 1080px;
-    height: 1080px;
+    width: 880px;
+    height: 880px;
     opacity: 0;
   }
 }
