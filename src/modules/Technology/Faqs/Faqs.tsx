@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 import {
   Accordion,
   AccordionContent,
@@ -6,7 +7,6 @@ import {
   AccordionTrigger,
   SectionHeader,
 } from '@codewinglet/components';
-import { LeftArrowsSVG } from '@codewinglet/assets';
 import { FaqsProps } from './types';
 
 const Faqs: React.FC<FaqsProps> = ({ faqs }) => (
@@ -36,7 +36,13 @@ const Faqs: React.FC<FaqsProps> = ({ faqs }) => (
         </div>
       )}
     </div>
-    <LeftArrowsSVG className='absolute invisible lg:visible top-[50px] right-0 xl:w-[200px] xl:h-[22px]' />
+    <Image
+      className='absolute invisible lg:visible top-[50px] right-0 xl:w-[200px] xl:h-[22px]'
+      width={200}
+      src={'/assets/icons/LeftArrowsSVG.svg'}
+      alt='LeftArrowsSVG'
+      height={200}
+    />
   </div>
 );
 

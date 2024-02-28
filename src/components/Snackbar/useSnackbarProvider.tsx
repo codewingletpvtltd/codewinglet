@@ -1,12 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import {
-  ErrorIcon,
-  InfoIcon,
-  SuccessIcon,
-  WarningIcon,
-} from '@codewinglet/assets';
+
+import Image from 'next/image';
 
 const useSnackbarProvider = () => {
   const [open, setOpen] = useState(false);
@@ -29,13 +25,41 @@ const useSnackbarProvider = () => {
   const showIcon = () => {
     switch (data.type) {
       case 'success':
-        return <SuccessIcon />;
+        return (
+          <Image
+            src={'/assets/icons/SuccessIcon.svg'}
+            alt='SuccessIcon'
+            width={24}
+            height={24}
+          />
+        );
       case 'warn':
-        return <WarningIcon />;
+        return (
+          <Image
+            src={'/assets/icons/WarningIcon.svg'}
+            alt='WarningIcon'
+            width={24}
+            height={24}
+          />
+        );
       case 'error':
-        return <ErrorIcon />;
+        return (
+          <Image
+            src={'/assets/icons/ErrorIcon.svg'}
+            alt='ErrorIcon'
+            width={24}
+            height={24}
+          />
+        );
       case 'info':
-        return <InfoIcon />;
+        return (
+          <Image
+            src={'/assets/icons/InfoIcon.svg'}
+            alt='InfoIcon'
+            width={24}
+            height={24}
+          />
+        );
       default:
         return;
     }

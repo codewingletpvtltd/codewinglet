@@ -1,6 +1,5 @@
 import { SectionHeader } from '@codewinglet/components';
 import { getClassNames } from '@codewinglet/utils';
-import { getStrapiMediaFullURL } from '@codewinglet/helper';
 import { ServiceProps } from './types';
 import Card from './components/Card';
 
@@ -35,7 +34,7 @@ const Services: React.FC<ServiceProps> = ({ services, technologyName }) => (
         <Card
           key={`service-card-${index}`}
           title={service.title}
-          icon={getStrapiMediaFullURL(service.icon.data.attributes.url)}
+          icon={service.icon}
           desc={service.description}
         />
       ))}

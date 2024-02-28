@@ -62,9 +62,7 @@ export interface DevelopmentService {
   id: number;
   title: string;
   description: string;
-  icon: {
-    data: IconData;
-  };
+  icon: string;
 }
 
 export interface WhyChooseUs {

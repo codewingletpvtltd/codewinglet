@@ -1,4 +1,4 @@
-import { HighlightArrow } from '@codewinglet/assets';
+import Image from 'next/image';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../Tabs';
 import Typography from '../Typography/Typography';
 import { tabs } from './constant';
@@ -47,7 +47,13 @@ const BusinessModelTab = () => (
               className='flex flex-row gap-[15px]'
             >
               <span>
-                <HighlightArrow className='mt-[4px] h-[16px] w-[9px] md:h-[19px] md:w-[10px] lg:h-[22px] lg:w-[12px]' />
+                <Image
+                  src={'/assets/icons/HighlightArrow.svg'}
+                  className='mt-[4px] h-[16px] w-[9px] md:h-[19px] md:w-[10px] lg:h-[22px] lg:w-[12px]'
+                  alt='HighlightArrow'
+                  width={50}
+                  height={50}
+                />
               </span>
               <Typography
                 variant='subtitle1'

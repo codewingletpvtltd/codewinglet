@@ -1,4 +1,3 @@
-import { pioneering, crafting, building } from '@codewinglet/assets/AboutUs';
 import { SectionHeader, Typography } from '@codewinglet/components';
 import AboutUsCard from './components/AboutUsCard';
 import Statistics from './components/Statistics';
@@ -31,7 +30,7 @@ const AboutUs = () => (
             <Statistics />
             <div className='about_box'>
               <AboutUsCard
-                image={building}
+                image={'/assets/AboutUs/building.png'}
                 title='"Vision, Mission, Excellence"'
                 description='Guided by Vision, Driven by Mission: Crafting 
                 Excellence Together'
@@ -41,14 +40,14 @@ const AboutUs = () => (
         </div>
         <div className='lg:w-[30%] w-full lg:block md:flex block md:gap-6'>
           <AboutUsCard
-            image={pioneering}
+            image={'/assets/AboutUs/pioneering.png'}
             title='"Integrity, Quality, Trust: Our 
             Commitment."'
             description='Dedicated to delivering value-based service 
             founded on ethics and trustworthiness.'
           />
           <AboutUsCard
-            image={crafting}
+            image={'/assets/AboutUs/crafting.png'}
             title='"Crafting Reliable Solution, Ensuring 
             Seamless Experiences"'
             description='Delivering secure, reliable software for seamless 

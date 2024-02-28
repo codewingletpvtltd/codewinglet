@@ -6,7 +6,15 @@ import { CardProps } from '../../types';
 const Card: FC<CardProps> = ({ index, icon, title, desc }) => (
   <div className='rounded-10 bg-white shadow-lg flex flex-col items-center justify-center px-[17px] py-[35px] gap-[8px]'>
     <div className='relative'>
-      {icon && <Image src={icon} alt='card image' className='absolute top-5' />}
+      {icon && (
+        <Image
+          src={icon}
+          alt='card image'
+          className='absolute top-5'
+          width={28}
+          height={28}
+        />
+      )}
       <Typography
         variant='h2'
         className='text-darkBlue text-[45px] font-700 lg:text-[50px] opacity-20 -z-10 text-center'

@@ -1,7 +1,6 @@
 import { FC } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Arrow, diverse } from '@codewinglet/assets';
 import Button from '@codewinglet/components/Button';
 import Typography from '@codewinglet/components/Typography';
 import { SubMenuContentProps } from '../../types';
@@ -34,7 +33,13 @@ export const ServicesContent: FC<SubMenuContentProps> = ({
           target='_blank'
           className='flex items-center justify-center gap-3'
         >
-          Schedule a Call <Arrow />
+          Schedule a Call{' '}
+          <Image
+            src={'/assets/icons/Arrow.svg'}
+            alt='Arrow'
+            width={16}
+            height={16}
+          />
         </Link>
       </Button>
     </div>
@@ -82,7 +87,13 @@ export const TechnologyContent: FC<SubMenuContentProps> = ({
           target='_blank'
           className='flex items-center justify-center gap-3'
         >
-          Hire Developers <Arrow />
+          Hire Developers{' '}
+          <Image
+            src={'/assets/icons/Arrow.svg'}
+            alt='Arrow'
+            width={16}
+            height={16}
+          />
         </Link>
       </Button>
     </div>
@@ -144,7 +155,13 @@ export const IndustryContent: FC<SubMenuContentProps> = ({
         <Typography className='text-dropdownText font-300 text-[14px] mb-2.5'>
           can help you become the unparalleled leader in your industry.
         </Typography>
-        <Image src={diverse} alt='whyjoin' className='max-w-none mb-5' />
+        <Image
+          src={'/assets/icons/Diverse.svg'}
+          alt='whyjoin'
+          className='max-w-none mb-5'
+          width={500}
+          height={500}
+        />
         <Button className='bg-primary w-[258px] m-[initial]'>
           <Link
             href='#'
@@ -152,7 +169,13 @@ export const IndustryContent: FC<SubMenuContentProps> = ({
             target='_blank'
             className='flex items-center justify-center gap-3'
           >
-            Consult Codewinglet <Arrow />
+            Consult Codewinglet
+            <Image
+              src={'/assets/icons/Arrow.svg'}
+              alt='Arrow'
+              width={16}
+              height={16}
+            />
           </Link>
         </Button>
       </div>
