@@ -20,15 +20,15 @@ const HeroSection = () => (
     </div>
 
     <div className='max-w-[1410px] md:px-[15px] sm:px-[30px] px-[15px] mx-auto w-full m-auto'>
-      <div className='xl:px-[130px] lg:px-[120px] md:px-14 sm:px-0 px-0'>
-        <Typography className='xl:text-h1 md:text-[36px] sm:text-[36px] text-h6 !font-300 text-center text-white leading-[1.2]'>
-          Your Trusted Custom Software Development Partner - Crafting Innovative
+      <div className='xl:px-[200px] lg:px-[120px] md:px-14 sm:px-0 px-0'>
+        <Typography className='xl:text-h1 md:text-[36px] sm:text-[36px] text-[28px] !font-300 text-center text-white leading-[1.2]'>
+          Your Trusted Software Development Partner - Crafting Innovative
           Solutions for{' '}
         </Typography>
 
         <TypeAnimation
           sequence={sequence}
-          className='text-center text-white xl:text-h1 md:text-[42px] sm:text-[37px] text-h6 !font-300'
+          className='text-center text-white xl:text-h1 md:text-[42px] sm:text-[37px] text-body1 !font-300'
         />
 
         <Typography className='xl:px-10 p-0 lg:text-h5 md:text-[18px] sm:text-subtitle1 text-[14px] sm:font-300 font-200 text-center my-[60px] text-white md:px-0 sm:px-[0px] px-0'>

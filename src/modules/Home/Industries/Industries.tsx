@@ -20,15 +20,15 @@ import {
 const INDUCARD = [
   {
     image: realEstate,
-    title: 'Real Estate',
+    title: 'Waste Management',
   },
   {
     image: travel,
-    title: 'Tour & Travel',
+    title: 'Sustainable IoT Solution',
   },
   {
     image: healthcare,
-    title: 'Healthcare',
+    title: 'Staffing Management',
   },
   {
     image: eCommerce,
@@ -36,35 +36,35 @@ const INDUCARD = [
   },
   {
     image: edTech,
-    title: 'Ed-tech',
+    title: 'Healthcare',
   },
   {
     image: crm,
-    title: 'CRM-ERM',
+    title: 'Logistics',
   },
   {
     image: finance,
-    title: 'Finance',
+    title: 'Ed-Tech',
   },
   {
     image: social,
-    title: 'Social Networking',
+    title: 'Fintech',
   },
   {
     image: food,
-    title: 'Food & Delivery',
+    title: 'Manufacturing & Retails',
   },
   {
     image: fitness,
-    title: 'Health & Fitness',
+    title: 'Real Estate',
   },
   {
     image: shopping,
-    title: 'Shopping',
+    title: 'Travel & Hospitality',
   },
   {
     image: event,
-    title: 'Event & Ticket',
+    title: 'Media & Entertainment',
   },
 ];
 
@@ -82,7 +82,7 @@ const ContactUs = () => (
         headingClassName=''
       />
 
-      <div className='grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 sm:gap-[30px] gap-5 lg:mt-12 md:mt-6 mt-7'>
+      <div className='grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 sm:gap-[30px] gap-5 lg:mt-[50px] md:mt-6 mt-7'>
         {INDUCARD.map((card, i) => (
           <>
             <div className={i >= 6 ? 'sm:block hidden' : undefined}>

@@ -34,7 +34,10 @@ const ListItem = ({ data }: { data: ListItemProps[] }) => (
   <>
     {data.map(({ number, label }, index) => (
       <li key={index} className='relative mb-[30px]'>
-        <Typography variant='h3' className=' text-white flex item-center'>
+        <Typography
+          variant='h3'
+          className=' text-white flex item-center !font-500'
+        >
           {number}
         </Typography>
         <Typography className=' text-white md:text-body2 text-subtitle2'>
