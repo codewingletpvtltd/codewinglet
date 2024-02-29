@@ -143,7 +143,10 @@ const Footer = () => {
                   />
                   <div className='flex flex-col'>
                     <div>Contact us :</div>
-                    <Link href='tel:+918320111741'>+91 83201 11741 (Jobs)</Link>
+                    <Link href='tel:+918160868310'>+91 8160868310 (Jobs)</Link>
+                    <Link href='tel:+918320111741'>
+                      +91 8320111741 (Inquiry)
+                    </Link>
                   </div>
                 </Typography>
 
