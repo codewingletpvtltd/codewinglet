@@ -33,7 +33,7 @@ export const ListItem: FC<ListItemProps> = ({
             <div>
               <Typography
                 className={getClassNames(
-                  'font-bold capitalize ml-[16px] text-[18px] !font-400 text-primary 2xl:text-subtitle1 xl:text-[14px]',
+                  'font-bold capitalize ml-[16px] mb-[14px] text-[18px] !font-400 text-primary 2xl:text-subtitle1 xl:text-[14px]',
                   labelClassName
                 )}
               >
