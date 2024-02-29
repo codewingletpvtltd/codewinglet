@@ -17,7 +17,7 @@ export interface MenuItemsProps {
 export interface MenuContentProps {
   wrapperClassName: string;
   children: React.ReactNode;
-  className?: string;
+  className?: any;
 }
 
 export interface ListItemProps {
