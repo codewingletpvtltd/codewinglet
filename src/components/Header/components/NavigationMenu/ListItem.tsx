@@ -27,7 +27,7 @@ export const ListItem: FC<ListItemProps> = ({
         <Typography
           variant='subtitle1'
           className={getClassNames(
-            'font-bold capitalize whitespace-nowrap ml-2 text-[18px] font-800 text-black',
+            'font-bold capitalize  w-2 hitespace-nowrap ml-2 text-[18px] font-800 text-black',
             labelClassName
           )}
         >
