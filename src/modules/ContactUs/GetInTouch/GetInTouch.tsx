@@ -12,9 +12,9 @@ const GetInTouch = () => {
   const { formData, onChangeFormData, onSubmit, isLoading } = useGetInTouch();
 
   return (
-    <div className=' bg-white mt-[90px] pt-20 pb-[160px]'>
+    <div className=' bg-white mt-[90px] pt-20 2xl:pb-[160px] xl:pb-[140px]'>
       <div className='container w-full lg:px-[15px] sm:px-[30px] px-[15px] mx-auto'>
-        <div className='flex gap-[90px]'>
+        <div className='flex 2xl:gap-[90px] xl:gap-[25px]'>
           <div className='w-[52%]'>
             <Typography className='relative text-h5 font-300 mb-2 '>
               Contact us
