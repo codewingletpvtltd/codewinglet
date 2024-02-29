@@ -29,7 +29,7 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
               src={'assets/icons/LogoBlack.svg'}
               width={20}
               height={20}
-              alt='Codewinglet Private Limited Logo'
+              alt='Codewinglet Private Limited Logo1'
               className='w-[191px] xl:w-[252px] cursor-pointer invert'
               onClick={() => router.push('/')}
               loading='eager'
