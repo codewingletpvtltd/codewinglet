@@ -1,8 +1,7 @@
 'use client';
-import { useRouter } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation';
 import React, { FC } from 'react';
 import Image from 'next/image';
-import Logo from '@codewinglet/assets/logo_black.svg';
 import { useScreenSize } from '@codewinglet/hooks';
 import { getClassNames } from '@codewinglet/utils';
 import { xl } from '@codewinglet/constants/mediaQueryConst';
@@ -19,19 +18,29 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
   const isLarge = useScreenSize(xl);
   const { showMenu, onMenu } = useHeader();
 
+  const pathName = usePathname();
+
   return (
     <header
       id='header'
       className={getClassNames(
         'fixed h-[90px] flex items-center top-0 z-50 w-full',
-        isScroll ? 'bg-primary' : 'bg-transparent'
+        showMenu
+          ? 'bg-white'
+          : isScroll
+          ? 'bg-primary'
+          : pathName === '/contact-us'
+          ? 'bg-primary'
+          : 'bg-transparent'
       )}
     >
       <div className='flex items-center max-w-[1410px] justify-between relative px-[15px] w-full lg:px-[15px] sm:px-[30px] mx-auto'>
         <div>
           <Image
-            src={Logo}
-            alt='Codewinglet Private Limited Logo'
+            src={'assets/icons/LogoBlack.svg'}
+            width={20}
+            height={20}
+            alt='Codewinglet Private Limited Logo1'
             className='w-[191px] xl:w-[252px] cursor-pointer invert'
             onClick={() => router.push('/')}
             loading='eager'

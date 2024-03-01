@@ -1,18 +1,9 @@
-import {
-  digital,
-  identity,
-  electronic,
-  consumer,
-  market,
-  horizons,
-} from '@codewinglet/assets';
-
 export const portfolio = [
   {
     id: 1,
     subtitle: 'Service',
     title: 'Product Name',
-    image: digital,
+    image: '/assets/OurWork/digital.png',
     button: 'View Project',
     description:
       'Heim: New digital identity to the electronic consumer market across the horizons of innovation',
@@ -21,7 +12,7 @@ export const portfolio = [
     id: 2,
     subtitle: 'Service',
     title: 'Product Name',
-    image: identity,
+    image: '/assets/OurWork/identity.png',
     button: 'View Project',
     description:
       'Heim: New digital identity to the electronic consumer market across the horizons of innovation',
@@ -30,7 +21,7 @@ export const portfolio = [
     id: 3,
     subtitle: 'Service',
     title: 'Product Name',
-    image: electronic,
+    image: '/assets/OurWork/electronic.png',
     button: 'View Project',
     description:
       'Heim: New digital identity to the electronic consumer market across the horizons of innovation',
@@ -39,7 +30,7 @@ export const portfolio = [
     id: 4,
     subtitle: 'Service',
     title: 'Product Name',
-    image: consumer,
+    image: '/assets/OurWork/consumer.png',
     button: 'View Project',
     description:
       'Heim: New digital identity to the electronic consumer market across the horizons of innovation',
@@ -48,7 +39,7 @@ export const portfolio = [
     id: 5,
     subtitle: 'Service',
     title: 'Product Name',
-    image: market,
+    image: '/assets/OurWork/market.png',
     button: 'View Project',
     description:
       'Heim: New digital identity to the electronic consumer market across the horizons of innovation',
@@ -57,7 +48,7 @@ export const portfolio = [
     id: 6,
     subtitle: 'Service',
     title: 'Product Name',
-    image: horizons,
+    image: '/assets/OurWork/horizons.png',
     button: 'View Project',
     description:
       'Heim: New digital identity to the electronic consumer market across the horizons of innovation',

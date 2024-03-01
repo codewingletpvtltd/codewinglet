@@ -20,9 +20,8 @@ import {
 const NavigationMenu = () => {
   const { onMouseEnter, onMouseLeave, gridRows, onNavigate, anchorEle } =
     useNavigation();
-  console.log('navMenu', navMenu);
   return (
-    <nav className='flex-row items-center gap-[15px] xl:gap-56 hidden xl:flex'>
+    <nav className='flex-row items-center gap-[15px] 2xl:gap-56 xl:gap-44 hidden xl:flex'>
       {/* TODO_1.0: In the first release this menu is not working so commented this in 1.0*/}
 
       <MenuList>

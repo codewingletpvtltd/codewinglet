@@ -11,13 +11,13 @@ export interface MenuItemsProps {
   onMouseEnter: (e: MouseEvent<HTMLLIElement>) => void;
   onMouseLeave: () => void;
   children: React.ReactNode;
-  id?: string;
+  id?: any;
 }
 
 export interface MenuContentProps {
   wrapperClassName: string;
   children: React.ReactNode;
-  className?: string;
+  className?: any;
 }
 
 export interface ListItemProps {

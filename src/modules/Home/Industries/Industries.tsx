@@ -2,69 +2,54 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button, SectionHeader, Typography } from '@codewinglet/components';
 
-import {
-  realEstate,
-  travel,
-  healthcare,
-  eCommerce,
-  edTech,
-  crm,
-  finance,
-  social,
-  food,
-  fitness,
-  shopping,
-  event,
-} from '@codewinglet/assets';
-
 const INDUCARD = [
   {
-    image: realEstate,
-    title: 'Real Estate',
+    image: '/assets/industries/wasteManagement.png',
+    title: 'Waste Management',
   },
   {
-    image: travel,
-    title: 'Tour & Travel',
+    image: '/assets/industries/sustainableSolution.png',
+    title: 'Sustainable Solution',
   },
   {
-    image: healthcare,
-    title: 'Healthcare',
+    image: '/assets/industries/staffingManagement.png',
+    title: 'Staffing Management',
   },
   {
-    image: eCommerce,
+    image: '/assets/industries/eCommerces.png',
     title: 'E-commerce',
   },
   {
-    image: edTech,
-    title: 'Ed-tech',
+    image: '/assets/industries/healthcares.png',
+    title: 'Healthcare',
   },
   {
-    image: crm,
-    title: 'CRM-ERM',
+    image: '/assets/industries/logistics.png',
+    title: 'Logistics',
   },
   {
-    image: finance,
-    title: 'Finance',
+    image: '/assets/industries/edTechs.png',
+    title: 'EdTech',
   },
   {
-    image: social,
-    title: 'Social Networking',
+    image: '/assets/industries/fintech.png',
+    title: 'Fintech',
   },
   {
-    image: food,
-    title: 'Food & Delivery',
+    image: '/assets/industries/manufacturingRetails.png',
+    title: 'Manufacturing & Retails',
   },
   {
-    image: fitness,
-    title: 'Health & Fitness',
+    image: '/assets/industries/realEstates.png',
+    title: 'Real Estate',
   },
   {
-    image: shopping,
-    title: 'Shopping',
+    image: '/assets/industries/travelHospitality.png',
+    title: 'Travel & Hospitality',
   },
   {
-    image: event,
-    title: 'Event & Ticket',
+    image: '/assets/industries/mediaEntertainment.png',
+    title: 'Media & Entertainment',
   },
 ];
 
@@ -74,19 +59,24 @@ const ContactUs = () => (
       <SectionHeader
         title={<>Industries We Serve</>}
         description={
-          <>
-            Here, we make almost every genre of applications. You name it and we
-            build it.
-          </>
+          <>Diverse Industry Experience to accelerate Your Business Outcomes</>
         }
         headingClassName=''
       />
 
-      <div className='grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 sm:gap-[30px] gap-5 lg:mt-12 md:mt-6 mt-7'>
+      <div className='grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 sm:gap-[30px] gap-5 lg:mt-[50px] md:mt-6 mt-7'>
         {INDUCARD.map((card, i) => (
           <>
             <div className={i >= 6 ? 'sm:block hidden' : undefined}>
-              <Image src={card.image} alt='Menu Icon' className='w-full' />
+              <div className='w-full overflow-hidden cursor-pointer'>
+                <Image
+                  src={card.image}
+                  alt='Menu Icon'
+                  className='w-full object-cover object-center transition-transform duration-500 hover:scale-110'
+                  width={800}
+                  height={800}
+                />
+              </div>
               <Typography className='text-primary mt-3 lg:text-h6 md:text-body2 sm:text-body2 text-subtitle2'>
                 {card.title}
               </Typography>

@@ -1,6 +1,6 @@
 import type { Meta } from '@storybook/react';
 import Image from 'next/image';
-import { frontend } from '@codewinglet/assets';
+import Frontend from '../../../public/assets/icons/Frontend.svg';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './tabs';
 
 const meta = {
@@ -21,7 +21,13 @@ export const DefaultTabs = () => (
     <TabsList className='w-full'>
       {tabs.map((label, index) => (
         <TabsTrigger value={label} key={index} className='w-full'>
-          <Image src={frontend} alt='Frontend' className='h-[31px] w-[31px]' />
+          <Image
+            src={Frontend}
+            alt='Frontend'
+            className='h-[31px] w-[31px]'
+            width={31}
+            height={31}
+          />
           {label}
         </TabsTrigger>
       ))}

@@ -1,7 +1,7 @@
 'use client';
 import React, { FC, useContext } from 'react';
+import Image from 'next/image';
 import { getClassNames } from '@codewinglet/utils';
-import { SnackbarClose } from '@codewinglet/assets';
 import Typography from '../Typography';
 import { SnacbarProviderProps } from './types';
 import useSnackbarProvider from './useSnackbarProvider';
@@ -43,7 +43,13 @@ export const SnackbarProvider: FC<SnacbarProviderProps> = ({ children }) => {
               className='flex justify-end ml-[20px] hover:shadow-lg hover:rounded-full hover:bg-[rgba(0,0,0,0.08)] p-[10px] cursor-pointer hover:transition-opacity hover:duration-300 hover:ease-linear'
               onClick={closeHandler}
             >
-              <SnackbarClose className='h-[20px] w-[20px]' />
+              <Image
+                src={'/assets/icons/SnackbarClose.svg'}
+                alt='SnackbarClose'
+                className='h-[20px] w-[20px]'
+                width={20}
+                height={20}
+              />
             </span>
           </div>
         </div>

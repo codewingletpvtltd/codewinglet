@@ -21,7 +21,7 @@ const TextField: React.FC<TextFieldProps> = ({
         <label
           htmlFor={rest.id || inputId}
           className={getClassNames(
-            'font-secondary text-subtitle1 font-600 mb-[13px]',
+            'font-secondary text-subtitle1 font-400 mb-[15px]',
             error ? 'text-error' : '',
             labelClassName
           )}
@@ -36,9 +36,9 @@ const TextField: React.FC<TextFieldProps> = ({
           type={type}
           disabled={disabled}
           className={getClassNames(
-            'border-solid border h-[40px] px-[13px] rounded-10 w-[200px] text-subtitle2 font-400 focus:outline-none focus:border-primary',
-            error ? 'border-error' : 'border-gray',
-            disabled ? 'pointer-events-none bg-gray' : '',
+            'border-solid border-b border-dropdownText h-[40px] w-[200px] text-subtitle2 bg-transparent placeholder:text-placeholderText font-400 focus:outline-none focus:border-primary  mb-[30px]',
+            error ? 'border-error' : 'border-dropdownText',
+            disabled ? 'pointer-events-none bg-dropdownText' : '',
             fullWidth ? 'w-full' : ''
           )}
           {...rest}

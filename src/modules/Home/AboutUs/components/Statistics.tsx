@@ -1,5 +1,3 @@
-import Image from 'next/image';
-import { rating } from '@codewinglet/assets/AboutUs';
 import { Typography } from '@codewinglet/components';
 
 type ListItemProps = {
@@ -9,24 +7,20 @@ type ListItemProps = {
 
 const data = [
   {
-    number: '250+',
-    label: 'Successful Projects',
+    number: '150+',
+    label: 'Happy Clients across the globe',
   },
   {
-    number: '10+',
-    label: <>Year's in industry</>,
+    number: '250+',
+    label: <>Successful Projects</>,
+  },
+  {
+    number: '7+',
+    label: 'years in the IT Industry',
   },
   {
     number: '100%',
-    label: 'Client Satisfaction',
-  },
-  {
-    number: (
-      <>
-        5.0 <Image src={rating} alt='rating' className='ml-[8px]' />
-      </>
-    ),
-    label: 'Upwork Ratings',
+    label: 'Client’s satisfaction',
   },
 ];
 
@@ -34,7 +28,10 @@ const ListItem = ({ data }: { data: ListItemProps[] }) => (
   <>
     {data.map(({ number, label }, index) => (
       <li key={index} className='relative mb-[30px]'>
-        <Typography variant='h3' className=' text-white flex item-center'>
+        <Typography
+          variant='h3'
+          className=' text-white flex item-center !font-500'
+        >
           {number}
         </Typography>
         <Typography className=' text-white md:text-body2 text-subtitle2'>
