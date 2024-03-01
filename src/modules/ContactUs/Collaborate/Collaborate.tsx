@@ -8,13 +8,13 @@ const Collaborate = () => (
   <div className='text-white py-20 relative'>
     <div className='container w-full lg:px-[15px] sm:px-[30px] px-[15px] mx-auto'>
       <div className='flex justify-between items-center gap-[113px]'>
-        <div className='w-[30%]'>
+        <div className='2xl:w-[30%] xl:w-6/12'>
           <Image
             src={'/assets/ContactUs/collaborate.png'}
             alt='Arrow'
             width={383}
             height={559}
-            className='absolute top-[-13.3%]'
+            className='absolute 2xl:top-[-13.2%] xl:top-[-10.2%]'
           />
         </div>
 
@@ -24,11 +24,11 @@ const Collaborate = () => (
             headingClassName='text-white pr-5'
             descriptionClassName='!hidden'
           />
-          <Typography className='text-h5 flex gap-10 mt-5 mb-14'>
-            <span className='relative after:content after:absolute after:top-[5px] after:right-[-22px] after:w-[1px] after:h-[24px] after:bg-dropBorder'>
+          <Typography className='text-h5 2xl:flex xl:block gap-10 mt-5 2xl:mb-14 xl:mb-[50px]'>
+            <span className='relative after:content after:absolute after:top-[5px] 2xl:after:right-[-22px] xl:after:right-[22px] after:w-[1px] after:h-[24px] after:bg-dropBorder 2xl:w-auto xl:w-[47%] 2xl:block xl:inline-block'>
               Get personalized quotations
             </span>
-            <span className='relative after:content after:absolute after:top-[5px] after:right-[-22px] after:w-[1px] after:h-[24px] after:bg-dropBorder'>
+            <span className='relative 2xl:after:block xl:after:hidden after:content after:absolute after:top-[5px] after:right-[-22px] after:w-[1px] after:h-[24px] after:bg-dropBorder 2xl:w-auto xl:w-[50%] 2xl:block xl:inline-block'>
               Kickstart your dream project
             </span>
             <span>Kickstart your dream</span>
@@ -38,7 +38,7 @@ const Collaborate = () => (
             <span className='text-white'> 30 minutes expert </span>
             consultation now
           </Typography>
-          <Button className=' w-[233px] m-[initial] mt-[30px]'>
+          <Button className=' w-[233px] m-[initial] 2xl:mt-[30px] xl:mt-5'>
             <Link
               href='#'
               rel='noopener noreferrer'
