@@ -68,13 +68,15 @@ const ContactUs = () => (
         {INDUCARD.map((card, i) => (
           <>
             <div className={i >= 6 ? 'sm:block hidden' : undefined}>
-              <Image
-                src={card.image}
-                alt='Menu Icon'
-                className='w-full'
-                width={500}
-                height={500}
-              />
+              <div className='w-full overflow-hidden cursor-pointer'>
+                <Image
+                  src={card.image}
+                  alt='Menu Icon'
+                  className='w-full object-cover object-center transition-transform duration-500 hover:scale-110'
+                  width={800}
+                  height={800}
+                />
+              </div>
               <Typography className='text-primary mt-3 lg:text-h6 md:text-body2 sm:text-body2 text-subtitle2'>
                 {card.title}
               </Typography>
