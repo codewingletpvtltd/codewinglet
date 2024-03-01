@@ -4,51 +4,51 @@ import { Button, SectionHeader, Typography } from '@codewinglet/components';
 
 const INDUCARD = [
   {
-    image: '/assets/industries/realEstate.png',
+    image: '/assets/industries/wasteManagement.png',
     title: 'Waste Management',
   },
   {
-    image: '/assets/industries/travel.png',
+    image: '/assets/industries/sustainableSolution.png',
     title: 'Sustainable Solution',
   },
   {
-    image: '/assets/industries/healthcare.png',
+    image: '/assets/industries/staffingManagement.png',
     title: 'Staffing Management',
   },
   {
-    image: '/assets/industries/eCommerce.png',
+    image: '/assets/industries/eCommerces.png',
     title: 'E-commerce',
   },
   {
-    image: '/assets/industries/edTech.png',
+    image: '/assets/industries/healthcares.png',
     title: 'Healthcare',
   },
   {
-    image: '/assets/industries/crm.png',
+    image: '/assets/industries/logistics.png',
     title: 'Logistics',
   },
   {
-    image: '/assets/industries/finance.png',
+    image: '/assets/industries/edTechs.png',
     title: 'EdTech',
   },
   {
-    image: '/assets/industries/social.png',
+    image: '/assets/industries/fintech.png',
     title: 'Fintech',
   },
   {
-    image: '/assets/industries/food.png',
+    image: '/assets/industries/manufacturingRetails.png',
     title: 'Manufacturing & Retails',
   },
   {
-    image: '/assets/industries/fitness.png',
+    image: '/assets/industries/realEstates.png',
     title: 'Real Estate',
   },
   {
-    image: '/assets/industries/shopping.png',
+    image: '/assets/industries/travelHospitality.png',
     title: 'Travel & Hospitality',
   },
   {
-    image: '/assets/industries/event.png',
+    image: '/assets/industries/mediaEntertainment.png',
     title: 'Media & Entertainment',
   },
 ];
@@ -68,13 +68,15 @@ const ContactUs = () => (
         {INDUCARD.map((card, i) => (
           <>
             <div className={i >= 6 ? 'sm:block hidden' : undefined}>
-              <Image
-                src={card.image}
-                alt='Menu Icon'
-                className='w-full'
-                width={500}
-                height={500}
-              />
+              <div className='w-full overflow-hidden cursor-pointer'>
+                <Image
+                  src={card.image}
+                  alt='Menu Icon'
+                  className='w-full object-cover object-center transition-transform duration-500 hover:scale-110'
+                  width={800}
+                  height={800}
+                />
+              </div>
               <Typography className='text-primary mt-3 lg:text-h6 md:text-body2 sm:text-body2 text-subtitle2'>
                 {card.title}
               </Typography>
