@@ -8,21 +8,21 @@ type ListItemProps = {
 
 const data = [
   {
+    number: '150+',
+    label: 'Happy Clients across the globe',
+  },
+  {
     number: '250+',
-    label: 'Successful Projects',
+    label: <>Successful Projects</>,
   },
   {
-    number: '10+',
-    label: <>Year's in industry</>,
-  },
-  {
-    number: '100%',
-    label: 'Client Satisfaction',
+    number: '7+',
+    label: 'years in the IT Industry',
   },
   {
     number: (
       <>
-        5.0{' '}
+        100%{' '}
         <Image
           src={'/assets/icons/rating.svg'}
           alt='rating'
@@ -32,7 +32,7 @@ const data = [
         />
       </>
     ),
-    label: 'Upwork Ratings',
+    label: 'Client’s satisfaction',
   },
 ];
 
