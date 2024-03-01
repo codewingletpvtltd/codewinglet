@@ -1,22 +1,18 @@
 import { FC } from 'react';
+import { Typography } from '@codewinglet/components';
 import Textarea from '../../../../../components/Textarea';
 import Button from '../../../../../components/Button';
 import TextField from '../../../../../components/TextField';
 import { FormProps } from '../../types';
 
-const Form: FC<FormProps> = ({
-  formData,
-  onChangeFormData,
-  onSubmit,
-  isDisabled,
-}) => (
-  <form onSubmit={onSubmit} className='col-span-2'>
-    <div className='grid grid-cols-1 md:grid-cols-2 gap-[20px]'>
+const Form: FC<FormProps> = ({ formData, onChangeFormData, onSubmit }) => (
+  <form onSubmit={onSubmit} className='col-span-1'>
+    <div className=''>
       <TextField
         fullWidth
-        label='Name'
+        label='Full name'
         required
-        placeholder='Name'
+        placeholder='John Williams'
         value={formData.name}
         onChange={(e) => onChangeFormData({ name: e.target.value })}
         helperText={formData.errors.name}
@@ -25,7 +21,7 @@ const Form: FC<FormProps> = ({
       <TextField
         fullWidth
         label='Email'
-        placeholder='Email'
+        placeholder='john@example.com'
         value={formData.email}
         required
         onChange={(e) => onChangeFormData({ email: e.target.value })}
@@ -34,33 +30,32 @@ const Form: FC<FormProps> = ({
       />
       <TextField
         fullWidth
-        label='Phone'
-        placeholder='Phone'
+        label='Phone number'
+        placeholder='+91 89563 43223'
         value={formData.phone}
         onChange={(e) => onChangeFormData({ phone: e.target.value })}
-      />
-      <TextField
-        fullWidth
-        label='What service are you looking for?'
-        placeholder='Web Design, Web Development'
-        value={formData.service}
-        onChange={(e) => onChangeFormData({ service: e.target.value })}
+        type='tel'
+        maxLength={10}
       />
       <Textarea
         fullWidth
-        label='Message'
-        placeholder='Your Message'
+        label='Tell us more'
+        placeholder='Brief about your project'
         value={formData.message}
         required
         error={!!formData.errors.message}
         helperText={formData.errors.message}
         rootClasseName='md:col-span-2'
-        rows={10}
+        rows={3}
         onChange={(e) => onChangeFormData({ message: e.target.value })}
       />
     </div>
     <div className='flex items-center justify-center mt-[40px]'>
-      <Button type='submit' disabled={isDisabled}>
+      <Typography className='text-dropdownText text-[14px] font-300 mr-5'>
+        By clicking submit button of form, you agree to our{' '}
+        <span className='text-primary font-400'>Privacy policy.</span>
+      </Typography>
+      <Button type='submit' className='bg-primary w-[239px] mr-[inherit]'>
         Submit
       </Button>
     </div>

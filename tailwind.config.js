@@ -125,6 +125,7 @@ module.exports = {
         dropdownText: '#606060',
         dropBorder: '#dadada',
         dropBorderLeft: '#E6E6E6',
+        placeholderText: '#A1A1A1',
       },
     },
 

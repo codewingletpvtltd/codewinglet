@@ -1,5 +1,5 @@
 'use client';
-import { useRouter } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation';
 import React, { FC } from 'react';
 import Image from 'next/image';
 import { useScreenSize } from '@codewinglet/hooks';
@@ -14,12 +14,21 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
   const router = useRouter();
   const isLarge = useScreenSize(xl);
   const { showMenu, onMenu } = useHeader();
+
+  const pathName = usePathname();
+
   return (
     <header
       id='header'
       className={getClassNames(
         'fixed h-[90px] flex items-center top-0 z-50 w-full',
-        showMenu ? 'bg-white' : isScroll ? 'bg-primary' : 'bg-transparent'
+        showMenu
+          ? 'bg-white'
+          : isScroll
+          ? 'bg-primary'
+          : pathName === '/contact-us'
+          ? 'bg-primary'
+          : 'bg-transparent'
       )}
     >
       <div className='container'>

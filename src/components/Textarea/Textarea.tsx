@@ -22,7 +22,7 @@ const Textarea: React.FC<TextareaProps> = ({
         <label
           htmlFor={rest.id || inputId}
           className={getClassNames(
-            'font-secondary text-subtitle1 font-600 mb-[13px] ',
+            'font-secondary text-subtitle1 font-400 mb-[15px] ',
             error ? 'text-error' : '',
             labelClassName
           )}
@@ -36,12 +36,12 @@ const Textarea: React.FC<TextareaProps> = ({
           id={rest.id || inputId}
           disabled={disabled}
           className={getClassNames(
-            'border-solid border px-[13px] pt-[10px] rounded-10 w-[200px] text-subtitle2 font-400 focus:outline-none focus:border-primary',
+            'border-solid border-b border-dropdownText placeholder:text-placeholderText bg-transparent  pt-[10px] w-[200px] text-subtitle2 font-400 focus:outline-none focus:border-primary',
             error ? 'border-error' : 'border-gray',
             disabled ? 'pointer-events-none bg-gray' : '',
             fullWidth ? 'w-full' : ''
           )}
-          rows={3}
+          rows={2}
           {...rest}
         />
       </div>
