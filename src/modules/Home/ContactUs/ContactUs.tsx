@@ -11,7 +11,7 @@ const ContactUs = () => {
   return (
     <section className='lg:py-20 py-10 bg-secondary'>
       <div className='container w-full lg:px-[15px] sm:px-[30px] px-[15px] mx-auto'>
-        <div className='flex lg:flex-row flex-col gap-[90px]'>
+        <div className='flex lg:flex-row flex-col 2xl:gap-[90px] xl:gap-[60px]'>
           <div className='lg:w-[52%] w-full md:m-0 mb-7 xl:pr-0 lg:pr-[30px] md:p-0 pr-0'>
             <SectionHeader
               title={<>Contact Us</>}
@@ -19,12 +19,12 @@ const ContactUs = () => {
                 <>Shape Your Digital Destiny with Codewinglet, today!</>
               }
             />
-            <Typography className='leading-9 mt-10 mb-[100px] text-body1 text-dropdownText'>
+            <Typography className='leading-9 mt-10 mb-[100px] 2xl:text-body1 xl:text-h5 text-dropdownText'>
               Tell us about your project and discover how our experts can assist
               you in achieving your goals through digital transformation,
               product outsourcing, or staff augmentation.
             </Typography>
-            <div className='relative flex gap-[160px] mb-[60px] after:content after:absolute after:top-[12px] after:left-[35%] after:w-[1px] after:h-[57px] after:bg-dropBorder'>
+            <div className='relative flex gap-[160px] mb-[60px] after:content after:absolute after:top-[12px] 2xl:after:left-[35%] xl:after:left-[39%] after:w-[1px] after:h-[57px] after:bg-dropBorder'>
               <Image
                 src={'/assets/ContactUs/google.svg'}
                 width={165}
