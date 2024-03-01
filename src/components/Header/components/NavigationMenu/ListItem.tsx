@@ -12,7 +12,7 @@ export const ListItem: FC<ListItemProps> = ({
   description,
   isHeader = false,
   hasMenu = false,
-  labelClassName = '',
+  labelClassName = ' ',
   href,
   ...props
 }) => (
