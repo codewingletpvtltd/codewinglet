@@ -9,6 +9,7 @@ const ContactUs = dynamic(() => import('./ContactUs'));
 const Industries = dynamic(() => import('./Industries'));
 const OurWorkProcess = dynamic(() => import('./OurWorkProcess'));
 const Technology = dynamic(() => import('./Technology'));
+const Blog = dynamic(() => import('./Blog'));
 
 const Home = () => (
   <>
@@ -21,6 +22,7 @@ const Home = () => (
     <ClientTestimonials />
     <OurWorkProcess />
     {/* <OurClient /> */}
+    <Blog />
     <ContactUs />
   </>
 );
