@@ -71,7 +71,7 @@ const ContactUs = () => (
               <Image
                 src={card.image}
                 alt='Menu Icon'
-                className='w-full h-[200px]'
+                className='w-full'
                 width={500}
                 height={500}
               />
