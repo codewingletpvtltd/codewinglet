@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { Typography } from '@codewinglet/components';
 
 type ListItemProps = {
@@ -8,31 +7,20 @@ type ListItemProps = {
 
 const data = [
   {
-    number: '250+',
-    label: 'Successful Projects',
+    number: '150+',
+    label: 'Happy Clients across the globe',
   },
   {
-    number: '10+',
-    label: <>Year's in industry</>,
+    number: '250+',
+    label: <>Successful Projects</>,
+  },
+  {
+    number: '7+',
+    label: 'years in the IT Industry',
   },
   {
     number: '100%',
-    label: 'Client Satisfaction',
-  },
-  {
-    number: (
-      <>
-        5.0{' '}
-        <Image
-          src={'/assets/icons/rating.svg'}
-          alt='rating'
-          className='ml-[8px]'
-          width={18}
-          height={18}
-        />
-      </>
-    ),
-    label: 'Upwork Ratings',
+    label: 'Client’s satisfaction',
   },
 ];
 
