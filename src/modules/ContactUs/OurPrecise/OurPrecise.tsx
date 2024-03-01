@@ -7,7 +7,7 @@ import SectionHeader from '../../../components/SectionHeader/SectionHeader';
 const OurPrecise = () => (
   <div className='bg-secondary py-20'>
     <div className='container w-full lg:px-[15px] sm:px-[30px] px-[15px] mx-auto'>
-      <div className='flex justify-between items-center 2xl:gap-[57px] gap-[48px]'>
+      <div className='flex justify-between items-center 2xl:gap-[37px] gap-[48px]'>
         <div className='2xl:w-[30%] w-[35%]'>
           <SectionHeader
             title={<>Our Precise Location</>}
@@ -35,7 +35,7 @@ const OurPrecise = () => (
                 A901-905, Vivanta Icon Opp. Shell Petrol Pump, Adajan, Surat,
                 Gujarat 395009.
               </Typography>
-              <div className='flex'>
+              <div className='flex group cursor-pointer'>
                 <Link href='#' className='text-subtitle1 font-400 underline'>
                   Google map
                 </Link>
@@ -44,7 +44,7 @@ const OurPrecise = () => (
                   alt='contactArrow'
                   width={14}
                   height={14}
-                  className='ml-1.5'
+                  className='ml-1.5 group-hover:transition-all duration-700 group-hover:translate-x-1'
                 />
               </div>
             </div>
