@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import React from 'react';
 import { twMerge } from 'tailwind-merge';
 import { ButtonProps } from './types';
 
@@ -20,4 +20,4 @@ const Button: React.FC<ButtonProps> = ({
   </button>
 );
 
-export default memo(Button);
+export default Button;

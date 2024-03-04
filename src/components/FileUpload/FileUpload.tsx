@@ -1,4 +1,4 @@
-import { FC, memo } from 'react';
+import { FC } from 'react';
 import Typography from '../Typography';
 import { FileUploadProps } from './types';
 
@@ -19,4 +19,4 @@ const FileUpload: FC<FileUploadProps> = ({ fileRef, fileName }) => (
   </div>
 );
 
-export default memo(FileUpload);
+export default FileUpload;

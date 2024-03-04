@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { memo } from 'react';
 import { Button, SectionHeader, Typography } from '@codewinglet/components';
 
 import { portfolio } from './data';
@@ -77,4 +76,4 @@ const OurWork = () => (
   </section>
 );
 
-export default memo(OurWork);
+export default OurWork;

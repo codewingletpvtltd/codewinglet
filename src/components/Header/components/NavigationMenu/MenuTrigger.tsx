@@ -1,4 +1,4 @@
-import { FC, memo } from 'react';
+import { FC } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { MenuTriggerProps } from '../../types';
@@ -39,4 +39,4 @@ const MenuTrigger: FC<MenuTriggerProps> = ({
     </Link>
   );
 
-export default memo(MenuTrigger);
+export default MenuTrigger;

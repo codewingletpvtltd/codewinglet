@@ -1,5 +1,5 @@
 'use client';
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { ChevronDownIcon } from 'lucide-react';
 import {
   Accordion,
@@ -152,4 +152,4 @@ const MobileMenu: FC<MobileMenuProps> = ({ onMenu }) => {
   );
 };
 
-export default React.memo(MobileMenu);
+export default MobileMenu;
