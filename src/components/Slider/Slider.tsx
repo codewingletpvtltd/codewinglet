@@ -1,5 +1,5 @@
 'use client';
-import { FC, memo, useRef, useState } from 'react';
+import { FC, useRef, useState } from 'react';
 import SlickSlider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -47,4 +47,4 @@ const Slider: FC<SliderProps> = ({
   );
 };
 
-export default memo(Slider);
+export default Slider;

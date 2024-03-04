@@ -55,4 +55,4 @@ const TextField: React.FC<TextFieldProps> = ({
   );
 };
 
-export default React.memo(TextField);
+export default TextField;

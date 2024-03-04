@@ -42,4 +42,4 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   </div>
 );
 
-export default React.memo(ServiceCard);
+export default ServiceCard;

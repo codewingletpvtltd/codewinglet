@@ -1,5 +1,5 @@
 'use client';
-import { ChangeEvent, FC, memo, useRef, useState } from 'react';
+import { ChangeEvent, FC, useRef, useState } from 'react';
 import { FileUpload, Modal, TextField } from '@codewinglet/components';
 import { CareerApplyNowProps } from './types';
 
@@ -31,4 +31,4 @@ const CareerApplyNow: FC<CareerApplyNowProps> = ({ open, onClose }) => {
   );
 };
 
-export default memo(CareerApplyNow);
+export default CareerApplyNow;
