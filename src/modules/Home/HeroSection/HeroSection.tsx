@@ -36,7 +36,7 @@ const HeroSection = () => (
           today for digital transformation and success.
         </Typography>
 
-        <Button link className=' w-[222px]'>
+        <Button variant='link' className=' w-[222px]'>
           <Link
             href='#'
             rel='noopener noreferrer'
