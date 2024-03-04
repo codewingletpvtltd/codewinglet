@@ -1,4 +1,4 @@
-import { FC, memo } from 'react';
+import { FC } from 'react';
 import { getClassNames } from '@codewinglet/utils';
 import { MenuIconProps } from './types';
 
@@ -21,4 +21,4 @@ const MenuIcon: FC<MenuIconProps> = ({ isOpen, onClick }) => (
   </div>
 );
 
-export default memo(MenuIcon);
+export default MenuIcon;

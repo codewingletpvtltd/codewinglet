@@ -1,4 +1,4 @@
-import { FC, memo } from 'react';
+import { FC } from 'react';
 import { LeftArrow, RightArrow } from '@codewinglet/assets';
 import { getClassNames } from '@codewinglet/utils';
 import { _arrowPosition, verticalPosition } from '../constants';
@@ -58,4 +58,4 @@ const Arrows: FC<ArrowProps> = ({
   </>
 );
 
-export default memo(Arrows);
+export default Arrows;

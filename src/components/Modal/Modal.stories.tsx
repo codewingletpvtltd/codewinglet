@@ -10,6 +10,7 @@ export default {
 export const Basic: StoryObj<typeof Modal> = {
   args: {
     title: 'Title',
+    open: true,
     children: (
       <>
         <TextField placeholder='Full Name*' fullWidth />

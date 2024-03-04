@@ -1,4 +1,4 @@
-import { FC, memo } from 'react';
+import { FC } from 'react';
 // import Image from 'next/image';
 import { getClassNames } from '@codewinglet/utils';
 // import Typography from '@codewinglet/components/Typography';
@@ -36,4 +36,4 @@ const MenuContent: FC<MenuContentProps> = ({
   </div>
 );
 
-export default memo(MenuContent);
+export default MenuContent;

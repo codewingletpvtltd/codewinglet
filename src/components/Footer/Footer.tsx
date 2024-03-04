@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Image from 'next/image';
 import { Button, Typography } from '@codewinglet/components';
 import { getClassNames } from '@codewinglet/utils';
@@ -273,4 +273,4 @@ const Footer = () => {
     </>
   );
 };
-export default React.memo(Footer);
+export default Footer;

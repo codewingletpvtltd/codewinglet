@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { memo } from 'react';
 import { SectionHeader } from '@codewinglet/components';
 import { getClassNames } from '@codewinglet/utils';
 
@@ -47,4 +46,4 @@ const OurClient = () => (
     </section>
   </section>
 );
-export default memo(OurClient);
+export default OurClient;

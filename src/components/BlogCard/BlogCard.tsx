@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { FC, memo } from 'react';
+import { FC } from 'react';
 import Typography from '../Typography';
 import Button from '../Button';
 import { BlogCardProps } from './types';
@@ -52,4 +52,4 @@ const BlogCard: FC<BlogCardProps> = ({ image, desc, title, date }) => (
   </div>
 );
 
-export default memo(BlogCard);
+export default BlogCard;
