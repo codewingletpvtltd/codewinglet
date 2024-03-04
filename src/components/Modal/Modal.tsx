@@ -1,4 +1,4 @@
-import { FC, memo } from 'react';
+import { FC } from 'react';
 import Image from 'next/image';
 import { getClassNames } from '@codewinglet/utils';
 import Typography from '../Typography';
@@ -59,4 +59,4 @@ const Modal: FC<ModalProps> = ({
   </div>
 );
 
-export default memo(Modal);
+export default Modal;

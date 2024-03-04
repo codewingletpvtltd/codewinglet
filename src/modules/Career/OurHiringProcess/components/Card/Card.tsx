@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { FC, memo } from 'react';
+import { FC } from 'react';
 import { Typography } from '@codewinglet/components';
 import { CardProps } from '../../types';
 
@@ -34,4 +34,4 @@ const Card: FC<CardProps> = ({ index, icon, title, desc }) => (
   </div>
 );
 
-export default memo(Card);
+export default Card;

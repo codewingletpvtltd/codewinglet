@@ -25,7 +25,6 @@ const ClientTestimonials = () => (
           backgroundPositionX: 'right',
         }}
       >
-        {/* <StartQuote /> */}
         <Image
           className='lg:w-[99px] md:w-[75px] absolute left-0 z-[-1] xl:top-[11rem] lg:top-[20rem] md:top-[15rem] md:block hidden'
           src={'/assets/icons/StartQuote.svg'}
@@ -64,7 +63,6 @@ const ClientTestimonials = () => (
           width={100}
           height={75}
         />
-        {/* <ClosingQuote /> */}
       </div>
     </div>
   </div>

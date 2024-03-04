@@ -9,7 +9,7 @@ const theme = create({
 
   brandTitle: 'CodeWinglet',
   brandUrl: 'https://www.codewinglet.com',
-  brandImage: 'https://develop.codewinglet.com/assets/icons/LogoBlack.svg',
+  brandImage: 'https://codewinglet.com/assets/icons/LogoBlack.svg',
 });
 
 addons.setConfig({

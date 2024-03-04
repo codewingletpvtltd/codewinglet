@@ -1,5 +1,3 @@
-import { memo } from 'react';
-
 import { SectionHeader } from '@codewinglet/components';
 
 const Technology = () => (
@@ -13,4 +11,5 @@ const Technology = () => (
     </section>
   </section>
 );
-export default memo(Technology);
+
+export default Technology;

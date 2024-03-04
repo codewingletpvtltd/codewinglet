@@ -1,4 +1,4 @@
-import { FC, memo } from 'react';
+import { FC } from 'react';
 import Image from 'next/image';
 import Typography from '../Typography/Typography';
 import { BreadcrumbProps } from './types';
@@ -28,4 +28,4 @@ const Breadcrumb: FC<BreadcrumbProps> = ({ breadcrumbs }) => (
   </ol>
 );
 
-export default memo(Breadcrumb);
+export default Breadcrumb;

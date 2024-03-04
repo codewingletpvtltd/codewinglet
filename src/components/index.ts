@@ -16,7 +16,6 @@ export { default as TechnologiesTab } from './TechnologiesTab';
 export { default as BlogCard } from './BlogCard';
 export { default as MenuIcon } from './MenuIcon';
 export { default as ClientTestimonials } from './ClientTestimonials';
-export { default as BusinessModelTab } from './BusinessModelTab';
 export * from './Snackbar';
 export {
   Accordion,

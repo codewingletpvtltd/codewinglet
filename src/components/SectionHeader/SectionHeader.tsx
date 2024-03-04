@@ -34,4 +34,4 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
     )}
   </div>
 );
-export default React.memo(SectionHeader);
+export default SectionHeader;
