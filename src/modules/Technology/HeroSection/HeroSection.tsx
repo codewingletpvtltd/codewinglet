@@ -55,7 +55,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             >
               {description}
             </Typography>
-            <Button link>
+            <Button variant='link'>
               {' '}
               <Link
                 href='https://calendly.com/slapani'

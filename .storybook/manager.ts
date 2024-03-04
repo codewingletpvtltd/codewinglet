@@ -4,12 +4,12 @@ import { create } from '@storybook/theming';
 const theme = create({
   base: 'light',
 
-  colorPrimary: '#0278BE',
-  colorSecondary: '#02457C',
+  colorPrimary: '#141414',
+  colorSecondary: '#141414',
 
   brandTitle: 'CodeWinglet',
-  brandUrl: 'https://www.codewinglet.com/',
-  brandImage: '/company_logo_white.svg',
+  brandUrl: 'https://www.codewinglet.com',
+  brandImage: 'https://develop.codewinglet.com/assets/icons/LogoBlack.svg',
 });
 
 addons.setConfig({
