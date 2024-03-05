@@ -69,10 +69,10 @@ const OurPrecise = () => (
                 jobs@codewinglet.com
               </Link>
               <Link
-                href='mailto:Info@codewinglet.com'
+                href='mailto:info@codewinglet.com'
                 className='text-secondary text-paragraph2Light mt-[15px]'
               >
-                Info@codewinglet.com
+                info@codewinglet.com
               </Link>
               <Link
                 href='mailto:sales@codewinglet.com'
@@ -99,13 +99,13 @@ const OurPrecise = () => (
                 href='tel:+918160868310'
                 className=' text-secondary text-paragraph2Light mt-5'
               >
-                +91 8160868310 (Jobs)
+                +91 81608 68310 (Jobs)
               </Link>
               <Link
                 href='tel:+918320111741'
                 className='text-secondary text-paragraph2Light mt-[15px]'
               >
-                +91 8320111741 (Inquiry)
+                +91 83201 11741 (Inquiry)
               </Link>
             </div>
           </div>
@@ -164,10 +164,10 @@ const OurPrecise = () => (
                   jobs@codewinglet.com
                 </Link>
                 <Link
-                  href='mailto:Info@codewinglet.com'
+                  href='mailto:info@codewinglet.com'
                   className='text-secondary text-paragraph2Light mt-[15px] pr-[60px]'
                 >
-                  Info@codewinglet.com
+                  info@codewinglet.com
                 </Link>
                 <Link
                   href='mailto:sales@codewinglet.com'
@@ -195,13 +195,13 @@ const OurPrecise = () => (
                   href='tel:+918160868310'
                   className=' text-secondary text-paragraph2Light mt-5'
                 >
-                  +91 8160868310 (Jobs)
+                  +91 81608 68310 (Jobs)
                 </Link>
                 <Link
                   href='tel:+918320111741'
                   className='text-secondary text-paragraph2Light mt-[15px]'
                 >
-                  +91 8320111741 (Inquiry)
+                  +91 83201 11741 (Inquiry)
                 </Link>
               </div>
             </div>

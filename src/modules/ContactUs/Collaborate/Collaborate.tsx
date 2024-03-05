@@ -5,7 +5,15 @@ import { Button, Typography } from '@codewinglet/components';
 import SectionHeader from '../../../components/SectionHeader/SectionHeader';
 
 const Collaborate = () => (
-  <div className='text-white lg:py-[50px] sm:py-[50px] py-[30px] relative'>
+  <div
+    className='text-white lg:py-[50px] sm:py-[50px] py-[30px] relative'
+    style={{
+      backgroundImage: 'url("/assets/ContactUs/professionalBg.png")',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'center',
+      backgroundSize: 'cover',
+    }}
+  >
     <div className='container w-full lg:px-[15px] sm:px-[30px] px-[20px] mx-auto'>
       <div className='flex justify-between items-center'>
         <div className='2xl:w-[356px] xl:w-[480px]'>
