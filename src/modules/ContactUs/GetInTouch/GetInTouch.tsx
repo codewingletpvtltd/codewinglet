@@ -16,7 +16,7 @@ const GetInTouch = () => {
       <div className='container w-full lg:px-[15px] sm:px-[30px] px-[20px] mx-auto'>
         <div className='lg:flex block 2xl:gap-[90px] xl:gap-[25px]'>
           <div className='lg:w-[52%] w-full'>
-            <Typography className='relative sm:text-subtitle2 text-tagLight sm:mb-1.5 mb-0'>
+            <Typography className='relative sm:text-subtitle2 text-tagLight sm:mb-2.5 mb-0'>
               Contact us
             </Typography>
             <SectionHeader
@@ -103,7 +103,7 @@ const GetInTouch = () => {
             </div>
           </div>
           <div className='lg:w-[48%] w-full bg-bg sm:py-[50px] sm:px-[60px] lg:mt-0 sm:mt-10 mt-5 p-5'>
-            <Typography className='relative mb-10 sm:text-subtitle2 text-paragraph2 font-400 after:content after:absolute after:top-[36px] after:left-0 after:w-[30px] after:h-[2px] after:bg-primary'>
+            <Typography className='relative mb-10 sm:text-subtitle2 text-paragraph2 font-400 after:content after:absolute sm:after:top-[36px] after:top-[30px] after:left-0 after:w-[30px] after:h-[2px] after:bg-primary'>
               Business Enquiry
             </Typography>
             <Form
