@@ -16,7 +16,7 @@ const GetInTouch = () => {
       <div className='container w-full lg:px-[15px] sm:px-[30px] px-[15px] mx-auto'>
         <div className='flex 2xl:gap-[90px] xl:gap-[25px]'>
           <div className='w-[52%]'>
-            <Typography className='relative text-h5 font-300 mb-2 '>
+            <Typography className='relative sm:text-subtitle2 text-tagLight mb-1.5 '>
               Contact us
             </Typography>
             <SectionHeader
@@ -34,9 +34,9 @@ const GetInTouch = () => {
                   product outsourcing, or staff augmentation.
                 </>
               }
-              descriptionClassName='!text-dropdownText !mt-[25px] leading-9'
+              descriptionClassName='!text-subtitle2Light !mt-[31px]'
             />
-            <div className='relative flex gap-[100px] my-[50px] after:content after:absolute after:top-[12px] after:left-[32%] after:w-[1px] after:h-[57px] after:bg-dropBorder'>
+            <div className='relative flex gap-[100px] my-[50px] after:content after:absolute after:top-[12px] after:left-[32%] after:w-[1px] after:h-[57px] after:bg-headerBoxBorder'>
               <Image
                 src={'/assets/ContactUs/google.svg'}
                 width={165}
@@ -51,7 +51,7 @@ const GetInTouch = () => {
               />
             </div>
             <div>
-              <Typography className='text-h5 font-400 mb-[25px]'>
+              <Typography className='text-subtitle2 mb-[25px]'>
                 Follow us in media :
               </Typography>
               <div className='flex gap-[30px]'>
@@ -107,8 +107,8 @@ const GetInTouch = () => {
               </div>
             </div>
           </div>
-          <div className='w-[48%] bg-secondary py-[50px] px-[60px]'>
-            <Typography className='relative mb-10 uppercase text-h5 font-400 after:content after:absolute after:top-[36px] after:left-0 after:w-[30px] after:h-[2px] after:bg-primary'>
+          <div className='w-[48%] bg-bg py-[50px] px-[60px]'>
+            <Typography className='relative mb-10 uppercase text-subtitle2 font-400 after:content after:absolute after:top-[36px] after:left-0 after:w-[30px] after:h-[2px] after:bg-primary'>
               Business Enquiry
             </Typography>
             <Form

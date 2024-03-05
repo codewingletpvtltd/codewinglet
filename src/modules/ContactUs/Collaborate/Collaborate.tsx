@@ -7,33 +7,76 @@ import SectionHeader from '../../../components/SectionHeader/SectionHeader';
 const Collaborate = () => (
   <div className='text-white py-20 relative'>
     <div className='container w-full lg:px-[15px] sm:px-[30px] px-[15px] mx-auto'>
-      <div className='flex justify-between items-center gap-[113px]'>
-        <div className='2xl:w-[30%] xl:w-6/12'>
+      <div className='flex justify-between items-center'>
+        <div className='2xl:w-[356px] xl:w-[480px]'>
           <Image
-            src={'/assets/ContactUs/collaborate.png'}
+            src={'/assets/ContactUs/guidance.png'}
             alt='Arrow'
-            width={383}
-            height={559}
-            className='absolute 2xl:top-[-13.2%] xl:top-[-10.2%]'
+            width={401}
+            height={630}
+            className='absolute 2xl:top-[-5.1%] xl:top-[-10.2%] 2xl:w-[19%] xl:[w-28%]'
           />
         </div>
 
-        <div className='relative'>
+        <div className='relative 2xl:w-[1024px] xl:w-[800px] 2xl:pl-[30px] xl:pl-0'>
           <SectionHeader
             title={<>Collaborate with our experts for professional guidance</>}
             headingClassName='text-white pr-5'
             descriptionClassName='!hidden'
           />
-          <Typography className='text-h5 2xl:flex xl:block gap-10 mt-5 2xl:mb-14 xl:mb-[50px]'>
-            <span className='relative after:content after:absolute after:top-[5px] 2xl:after:right-[-22px] xl:after:right-[22px] after:w-[1px] after:h-[24px] after:bg-dropBorder 2xl:w-auto xl:w-[47%] 2xl:block xl:inline-block'>
-              Get personalized quotations
+          <Typography className='text-paragraph1Light  mt-5 2xl:mb-14 xl:mb-[50px] flex flex-wrap gap-[18px]'>
+            <span className='relative pl-8 2xl:order-1'>
+              <Image
+                src={'/assets/ContactUs/check.svg'}
+                alt='Arrow'
+                width={20}
+                height={20}
+                className='absolute left-0 top-1.5'
+              />
+              Unlock personalized quotations
             </span>
-            <span className='relative 2xl:after:block xl:after:hidden after:content after:absolute after:top-[5px] after:right-[-22px] after:w-[1px] after:h-[24px] after:bg-dropBorder 2xl:w-auto xl:w-[50%] 2xl:block xl:inline-block'>
-              Kickstart your dream project
+            <span className='relative pl-8 2xl:order-2'>
+              <Image
+                src={'/assets/ContactUs/check.svg'}
+                alt='Arrow'
+                width={20}
+                height={20}
+                className='absolute left-0 top-1.5'
+              />{' '}
+              Discover industry-specific solutions
             </span>
-            <span>Kickstart your dream</span>
+            <span className='relative pl-8 2xl:order-3 xl:order-5'>
+              <Image
+                src={'/assets/ContactUs/check.svg'}
+                alt='Arrow'
+                width={20}
+                height={20}
+                className='absolute left-0 top-1.5'
+              />{' '}
+              Boost business growth
+            </span>
+            <span className='relative pl-8 2xl:order-4'>
+              <Image
+                src={'/assets/ContactUs/check.svg'}
+                alt='Arrow'
+                width={20}
+                height={20}
+                className='absolute left-0 top-1.5'
+              />{' '}
+              Overcome business challenges
+            </span>
+            <span className='relative pl-8 2xl:order-5'>
+              <Image
+                src={'/assets/ContactUs/check.svg'}
+                alt='Arrow'
+                width={20}
+                height={20}
+                className='absolute left-0 top-1.5'
+              />{' '}
+              Experience our dedicated support
+            </span>
           </Typography>
-          <Typography className='text-body2 font-300 text-dropdownText'>
+          <Typography className='text-paragraph1 font-300 text-secondary'>
             Book your Free
             <span className='text-white'> 30 minutes expert </span>
             consultation now
