@@ -47,7 +47,7 @@ const Footer = () => {
     <>
       <footer className='bg-black text-white relative xl:py-[60px] md:py-[40px] py-[30px]'>
         <div className='container'>
-          <div className='md:mb-16 mb-10 flex justify-between items-center flex-col md:flex-col lg:flex-row lg:px-[15px] sm:px-[30px] px-[15px]'>
+          <div className='md:mb-16 mb-10 flex justify-between items-center flex-col md:flex-col lg:flex-row lg:px-[15px] sm:px-[40px] px-[20px]'>
             <Image
               src={'/assets/icons/LogoWhite.svg'}
               width={100}
@@ -59,7 +59,7 @@ const Footer = () => {
             />
             <hr className='lg:hidden block w-full border-[#575757] my-7' />
             <div className='flex items-center relative flex-col sm:flex-row md:gap-0 gap-3.5'>
-              <Typography className='footerTitle 2xl:text-h4 xl:text-h4 lg:text-body1 md:text-body2 text-body2 font-300 2xl:pl-[260px] xl:pl-[180px] pl-0 relative md:after:content lg:after:block after:hidden after:absolute 2xl:after:left-60 xl:after:left-40 after:top-2 after:bg-white after:w-[0.1rem] 2xl:after:h-[3.5rem] 2xl:h-[3.5rem] xl:h-[3rem] lg:after:h-[3.6rem] after:h-[3.5rem]'>
+              <Typography className='footerTitle lg:text-h5 md:text-subtitle2 leading-[1.4] text-paragraph2Light 2xl:pl-[260px] xl:pl-[180px] pl-0 relative md:after:content lg:after:block after:hidden after:absolute 2xl:after:left-60 xl:after:left-40 after:top-2 after:bg-white after:w-[0.1rem] 2xl:after:h-[3.5rem] 2xl:h-[3.5rem] xl:h-[3rem] lg:after:h-[3.6rem] after:h-[3.5rem]'>
                 Do you want to talk more about the project? Reach out to us
               </Typography>
               <Link
@@ -74,7 +74,7 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-          <div className='md:gap-0 gap-[10px] flex px-[15px] relative  mx-0 flex-wrap '>
+          <div className='md:gap-0 gap-[10px] flex lg:px-[15px] sm:px-[25px] px-[15px] relative mx-0 flex-wrap '>
             {footerTitle.map((menuItem, index) => (
               <div
                 className={`px-[15px] w-full relative ${menuItem.responsiveClass}`}
@@ -82,7 +82,7 @@ const Footer = () => {
               >
                 <div className='my-1 sm:hidden' />
                 <Typography
-                  className='lg:mb-[20px] mb-[20px] flex items-center justify-between sm:text-h6 text-body2 font-400'
+                  className='lg:mb-[20px] mb-[20px] flex items-center justify-between lg:text-paragraph1  md:text-subtitle1 text-subtitle2 '
                   onClick={() =>
                     setExpandedOption((prev) =>
                       prev === -1 || prev !== index ? index : -1
@@ -92,13 +92,13 @@ const Footer = () => {
                   {menuItem.title}
                   <Button
                     className={getClassNames(
-                      'w-auto h-6 sm:hidden transition-all ease-in-out duration-500 border-none m-[initial]',
+                      'w-auto h-6 sm:hidden transition-all ease-in-out duration-500 border-none m-[initial] !bg-black !hover:bg-black !px-0',
                       index === expandedOption ? '-rotate-180' : ''
                     )}
                   >
                     <Image
                       src={'/assets/icons/DownArrows.svg'}
-                      width={12}
+                      width={18}
                       height={18}
                       alt='DownArrows'
                     />
@@ -112,10 +112,7 @@ const Footer = () => {
                 >
                   {menuItem.menu.map((item) => (
                     <div key={item.id}>
-                      <Typography
-                        variant='subtitle1'
-                        className=' leading-normal mb-3.5 min-h-0 text-silver hover:text-white'
-                      >
+                      <Typography className='text-paragraph2Light leading-normal mb-3.5 min-h-0 text-placeholderText hover:text-white'>
                         <Link className='' href={item.path}>
                           {item.label}
                         </Link>
@@ -125,15 +122,12 @@ const Footer = () => {
                 </div>
               </div>
             ))}
-            <div className='px-[15px] w-full relative doubleXl:max-w-[20%] doubleXl:flex-[0_0_20%] xl:max-w-[23%] xl:flex-[0_0_23%] lg:max-w-[60%] lg:flex-[0_0_60%] md:max-w-[50%] md:flex-[0_0_50%] sm:max-w-[100%] sm:flex-[0_0_100%] max-w-[100%] flex-[0_0_100%] min-h-[1px] xl:mt-0 lg:mt-7 md:mt-7 m-0'>
-              <Typography className=' mb-[20px] sm:mt-0 mt-3 sm:text-h6 text-body2 font-400'>
+            <div className='px-[15px] w-full relative doubleXl:max-w-[20%] doubleXl:flex-[0_0_20%] xl:max-w-[23%] xl:flex-[0_0_23%] lg:max-w-[60%] lg:flex-[0_0_60%]  sm:max-w-[100%] sm:flex-[0_0_100%] max-w-[100%] flex-[0_0_100%] min-h-[1px] xl:mt-0 lg:mt-7 md:mt-7 m-0'>
+              <Typography className=' mb-[20px] sm:mt-0 mt-3 lg:text-paragraph1  md:text-subtitle1 text-subtitle2 '>
                 Get in touch
               </Typography>
-              <div className='md:block sm:grid sm:grid-cols-2 block'>
-                <Typography
-                  variant='subtitle1'
-                  className='leading-normal mb-3.5 min-h-0 text-silver flex gap-3 items-start'
-                >
+              <div className='lg:block md:grid md:grid-cols-2 block'>
+                <Typography className='text-paragraph2Light leading-normal mb-3.5 min-h-0 text-placeholderText flex gap-3 items-start lg:order-1 md:order-2'>
                   <Image
                     src={'/assets/icons/CallIcon.svg'}
                     alt='CallIcon'
@@ -143,17 +137,14 @@ const Footer = () => {
                   />
                   <div className='flex flex-col'>
                     <div>Contact us :</div>
-                    <Link href='tel:+918160868310'>+91 8160868310 (Jobs)</Link>
+                    <Link href='tel:+918160868310'>+91 81608 68310 (Jobs)</Link>
                     <Link href='tel:+918320111741'>
-                      +91 8320111741 (Inquiry)
+                      +91 83201 11741 (Inquiry)
                     </Link>
                   </div>
                 </Typography>
 
-                <Typography
-                  variant='subtitle1'
-                  className=' leading-normal mb-3.5 min-h-0 text-silver flex gap-3 items-start'
-                >
+                <Typography className='text-paragraph2Light leading-normal lg:mb-3.5 mb-[30px] min-h-0 text-placeholderText flex gap-3 items-start lg:order-2 md:order-1'>
                   <Image
                     src={'/assets/icons/EmailIcon.svg'}
                     alt='EmailIcon'
@@ -175,10 +166,7 @@ const Footer = () => {
                   </div>
                 </Typography>
 
-                <Typography
-                  variant='subtitle1'
-                  className='address leading-normal mb-3.5 min-h-0 text-silver flex gap-3 md:mt-0 sm:mt-[-35px] mt-0 items-start'
-                >
+                <Typography className='address text-paragraph2Light leading-normal mb-3.5 min-h-0 text-placeholderText flex gap-3 md:mt-0 sm:mt-[-35px] mt-0 items-start order-3'>
                   <Image
                     src={'/assets/icons/LocationIcon.svg'}
                     alt='LocationIcon'
@@ -192,6 +180,18 @@ const Footer = () => {
                       A901-905, Vivanta Icon Opp. Shell Petrol Pump, Adajan,
                       Surat, Gujarat 395009.
                     </Typography>
+                    <div className='flex group cursor-pointer text-white mt-[10px]'>
+                      <Link href='#' className='text-paragraph2Light'>
+                        Google map
+                      </Link>
+                      <Image
+                        src={'/assets/icons/Arrow.svg'}
+                        alt='contactArrow'
+                        width={14}
+                        height={14}
+                        className='ml-1.5 group-hover:transition-all duration-700 group-hover:translate-x-1'
+                      />
+                    </div>
                   </div>
                 </Typography>
               </div>
@@ -254,16 +254,18 @@ const Footer = () => {
         </div>
       </footer>
 
-      <div className='lg:gap-0 gap-4 relative bg-white'>
-        <div className='container flex flex-col sm:flex-row items-center sm:justify-between justify-center p-3.5 md:gap-0 gap-2.5'>
-          <Typography className='sm:text-left text-center md:text-subtitle1 sm:text-[14px] text-subtitle1 font-300'>
+      <div className='lg:gap-0 gap-4 relative text-placeholderText border-t border-secondary'>
+        <div className='container flex flex-col sm:flex-row items-start sm:justify-between justify-start lg:px-3.5 sm:p-10 sm:py-3.5 p-5 md:gap-0 gap-2.5'>
+          <Typography className='sm:text-left text-left md:text-paragraph2Light sm:text-[14px] text-tagLight'>
             © {new Date().getFullYear()} All rights reserved. Codewinglet
           </Typography>
-          <ul className='flex md:gap-12 sm:gap-6 gap-12'>
+          <ul className='flex md:gap-6 sm:gap-6 gap-12'>
             {companyTermsMenu.map((item) => (
               <li key={item.id}>
-                <Typography className='md:text-subtitle1 sm:text-[14px] text-subtitle1 font-300'>
-                  <Link href={item.path}>{item.label}</Link>
+                <Typography className='md:text-paragraph2Light sm:text-[14px] text-tagLight'>
+                  <Link className='hover:text-white' href={item.path}>
+                    {item.label}
+                  </Link>
                 </Typography>
               </li>
             ))}

@@ -69,10 +69,10 @@ const OurPrecise = () => (
                 jobs@codewinglet.com
               </Link>
               <Link
-                href='mailto:Info@codewinglet.com'
+                href='mailto:info@codewinglet.com'
                 className='text-secondary text-paragraph2Light mt-[15px]'
               >
-                Info@codewinglet.com
+                info@codewinglet.com
               </Link>
               <Link
                 href='mailto:sales@codewinglet.com'
@@ -99,13 +99,13 @@ const OurPrecise = () => (
                 href='tel:+918160868310'
                 className=' text-secondary text-paragraph2Light mt-5'
               >
-                +91 8160868310 (Jobs)
+                +91 81608 68310 (Jobs)
               </Link>
               <Link
                 href='tel:+918320111741'
                 className='text-secondary text-paragraph2Light mt-[15px]'
               >
-                +91 8320111741 (Inquiry)
+                +91 83201 11741 (Inquiry)
               </Link>
             </div>
           </div>
@@ -125,7 +125,7 @@ const OurPrecise = () => (
                 Address
               </Typography>
               <div>
-                <Typography className='text-secondary text-paragraph2Light mt-5 mb-[15px] sm:w-[80%] w-full'>
+                <Typography className='text-secondary text-paragraph2Light sm:mt-5 mt-[12px] mb-[15px] sm:w-[80%] w-full'>
                   A901-905, Vivanta Icon Opp. Shell Petrol Pump, Adajan, Surat,
                   Gujarat 395009.
                 </Typography>
@@ -159,19 +159,19 @@ const OurPrecise = () => (
               <div className='relative flex items-center flex-wrap after:sm:block after:hidden after:content after:absolute after:left-[36%] after:top-5 after:bg-headerBoxBorder after:w-[1px] after:h-[22px]'>
                 <Link
                   href='mailto:jobs@codewinglet.com'
-                  className=' text-secondary text-paragraph2Light mt-5 pr-[60px]'
+                  className=' text-secondary text-paragraph2Light sm:mt-5 mt-[12px] pr-[60px]'
                 >
                   jobs@codewinglet.com
                 </Link>
                 <Link
-                  href='mailto:Info@codewinglet.com'
-                  className='text-secondary text-paragraph2Light mt-[15px] pr-[60px]'
+                  href='mailto:info@codewinglet.com'
+                  className='text-secondary text-paragraph2Light sm:mt-5 mt-2 pr-[60px]'
                 >
-                  Info@codewinglet.com
+                  info@codewinglet.com
                 </Link>
                 <Link
                   href='mailto:sales@codewinglet.com'
-                  className='text-secondary text-paragraph2Light mt-[15px]'
+                  className='text-secondary text-paragraph2Light sm:mt-5 mt-2'
                 >
                   sales@codewinglet.com
                 </Link>
@@ -193,15 +193,15 @@ const OurPrecise = () => (
               <div className='relative flex sm:flex-row flex-col sm:items-center items-start sm:gap-10 gap-0 sm:after:block after:hidden after:content after:absolute after:left-[33%] after:top-5 after:bg-headerBoxBorder after:w-[1px] after:h-[22px]'>
                 <Link
                   href='tel:+918160868310'
-                  className=' text-secondary text-paragraph2Light mt-5'
+                  className=' text-secondary text-paragraph2Light sm:mt-5 mt-[12px]'
                 >
-                  +91 8160868310 (Jobs)
+                  +91 81608 68310 (Jobs)
                 </Link>
                 <Link
                   href='tel:+918320111741'
-                  className='text-secondary text-paragraph2Light mt-[15px]'
+                  className='text-secondary text-paragraph2Light sm:mt-5 mt-2'
                 >
-                  +91 8320111741 (Inquiry)
+                  +91 83201 11741 (Inquiry)
                 </Link>
               </div>
             </div>

@@ -5,7 +5,15 @@ import { Button, Typography } from '@codewinglet/components';
 import SectionHeader from '../../../components/SectionHeader/SectionHeader';
 
 const Collaborate = () => (
-  <div className='text-white lg:py-[50px] sm:py-[50px] py-[30px] relative'>
+  <div
+    className='text-white lg:py-[50px] sm:py-[50px] py-[30px] relative'
+    style={{
+      backgroundImage: 'url("/assets/ContactUs/professionalBg.png")',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'center',
+      backgroundSize: 'cover',
+    }}
+  >
     <div className='container w-full lg:px-[15px] sm:px-[30px] px-[20px] mx-auto'>
       <div className='flex justify-between items-center'>
         <div className='2xl:w-[356px] xl:w-[480px]'>
@@ -14,7 +22,7 @@ const Collaborate = () => (
             alt='Arrow'
             width={600}
             height={630}
-            className='absolute 2xl:top-[-5.8%] xl:top-[-10.2%] 2xl:w-[19%] xl:w-[28%] lg:block hidden'
+            className='absolute 2xl:top-[-3.7%] xl:top-[-8.3%] 2xl:w-[19%] xl:w-[28%] lg:block hidden'
           />
         </div>
 
@@ -24,7 +32,7 @@ const Collaborate = () => (
             headingClassName='text-white lg:pr-20 lg:text-left sm:text-center text-left'
             descriptionClassName='!hidden'
           />
-          <Typography className='lg:text-paragraph1Light sm:text-paragraph2Light text-tagLight mt-5 2xl:mb-14 xl:mb-[50px] flex flex-wrap lg:justify-start sm:justify-center justify-start gap-[18px]'>
+          <Typography className='lg:text-paragraph1Light sm:text-paragraph2Light text-tagLight sm:mt-[30px] mt-5 2xl:mb-14 xl:mb-[50px] flex flex-wrap lg:justify-start sm:justify-center justify-start gap-[18px]'>
             <span className='relative sm:pl-8 pl-6 2xl:order-1'>
               <Image
                 src={'/assets/ContactUs/check.svg'}
@@ -76,7 +84,7 @@ const Collaborate = () => (
               Experience our dedicated support
             </span>
           </Typography>
-          <Typography className='sm:text-paragraph1 text-tagLight font-300 text-secondary lg:text-left sm:text-center text-left lg:mb-0 lg:mt-0 mb-5 mt-10'>
+          <Typography className='sm:text-paragraph1 text-tagLight font-300 text-secondary lg:text-left sm:text-center text-left lg:mb-0 sm:mt-10 mb-5 mt-5'>
             Book your Free
             <span className='text-white'> 30 minutes expert </span>
             consultation now
