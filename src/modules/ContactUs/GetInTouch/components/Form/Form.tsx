@@ -52,7 +52,7 @@ const Form: FC<FormProps> = ({ formData, onChangeFormData, onSubmit }) => (
     </div>
     <div className='flex items-center justify-end mt-[40px]'>
       <Button
-        className='w-[239px] mr-[inherit]'
+        className='sm:w-[239px] w-full mr-[inherit]'
         variant='default'
         type='submit'
       >
