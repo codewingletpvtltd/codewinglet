@@ -5,8 +5,8 @@ import { Typography } from '@codewinglet/components';
 import SectionHeader from '../../../components/SectionHeader/SectionHeader';
 
 const OurPrecise = () => (
-  <div className='bg-bg py-20'>
-    <div className='container w-full lg:px-[15px] sm:px-[40px] px-[15px] mx-auto'>
+  <div className='bg-bg sm:py-20 py-[30px]'>
+    <div className='container w-full lg:px-[15px] sm:px-[40px] px-[20px] mx-auto'>
       <div className='lg:flex block justify-between items-center 2xl:gap-[37px] gap-[48px]'>
         <div className='2xl:w-[30%] lg:w-[35%] w-full'>
           <SectionHeader
@@ -14,7 +14,7 @@ const OurPrecise = () => (
             description={
               <>Step in our vibrant work environ -ment where innovation.</>
             }
-            descriptionClassName='!text-subtitle2Light lg:!mt-[25px] mt-0'
+            descriptionClassName='sm:!text-subtitle2Light text-tagLight lg:!mt-[25px] mt-0 leading-normal'
           />
         </div>
 
@@ -111,7 +111,7 @@ const OurPrecise = () => (
           </div>
         </div>
 
-        <div className='lg:hidden block mt-10'>
+        <div className='lg:hidden block sm:mt-10 mt-5'>
           <div className='bg-white p-[30px]'>
             <div className='flex flex-col'>
               <Typography className='text-primary uppercase text-paragraph1 flex items-center'>
@@ -125,7 +125,7 @@ const OurPrecise = () => (
                 Address
               </Typography>
               <div>
-                <Typography className='text-secondary text-paragraph2Light mt-5 mb-[15px] w-[80%]'>
+                <Typography className='text-secondary text-paragraph2Light mt-5 mb-[15px] sm:w-[80%] w-full'>
                   A901-905, Vivanta Icon Opp. Shell Petrol Pump, Adajan, Surat,
                   Gujarat 395009.
                 </Typography>
@@ -156,7 +156,7 @@ const OurPrecise = () => (
                 />
                 Email
               </Typography>
-              <div className='relative flex items-center flex-wrap after:content after:absolute after:left-[36%] after:top-5 after:bg-headerBoxBorder after:w-[1px] after:h-[22px]'>
+              <div className='relative flex items-center flex-wrap after:sm:block after:hidden after:content after:absolute after:left-[36%] after:top-5 after:bg-headerBoxBorder after:w-[1px] after:h-[22px]'>
                 <Link
                   href='mailto:jobs@codewinglet.com'
                   className=' text-secondary text-paragraph2Light mt-5 pr-[60px]'
@@ -190,7 +190,7 @@ const OurPrecise = () => (
                 />
                 Contact
               </Typography>
-              <div className='relative flex items-center gap-10 after:content after:absolute after:left-[33%] after:top-5 after:bg-headerBoxBorder after:w-[1px] after:h-[22px]'>
+              <div className='relative flex sm:flex-row flex-col sm:items-center items-start sm:gap-10 gap-0 sm:after:block after:hidden after:content after:absolute after:left-[33%] after:top-5 after:bg-headerBoxBorder after:w-[1px] after:h-[22px]'>
                 <Link
                   href='tel:+918160868310'
                   className=' text-secondary text-paragraph2Light mt-5'
