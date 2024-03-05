@@ -5,7 +5,7 @@ import { Typography } from '@codewinglet/components';
 import SectionHeader from '../../../components/SectionHeader/SectionHeader';
 
 const OurPrecise = () => (
-  <div className='bg-secondary py-20'>
+  <div className='bg-bg py-20'>
     <div className='container w-full lg:px-[15px] sm:px-[30px] px-[15px] mx-auto'>
       <div className='flex justify-between items-center 2xl:gap-[37px] gap-[48px]'>
         <div className='2xl:w-[30%] w-[35%]'>
@@ -18,9 +18,9 @@ const OurPrecise = () => (
           />
         </div>
 
-        <div className='relative p-10 grid bg-white grid-flow-col 2xl:grid-cols-[42%_33%_25%] xl:grid-cols-[39%_33%_25%] grid-rows-1 after:content after:absolute 2xl:after:top-[43%] 2xl:after:left-[40%] xl:after:top-[40%] xl:after:left-[36%] after:bg-dropBorder after:w-[1px] after:h-[40%] before:content before:absolute 2xl:before:top-[43%] 2xl:before:left-[69%] xl:before:top-[40%] xl:before:left-[67%] before:bg-dropBorder before:w-[1px] before:h-[40%]'>
+        <div className='relative p-10 grid bg-white grid-flow-col 2xl:grid-cols-[42%_33%_25%] xl:grid-cols-[39%_33%_25%] grid-rows-1 after:content after:absolute 2xl:after:top-[43%] 2xl:after:left-[40%] xl:after:top-[40%] xl:after:left-[36%] after:bg-headerBoxBorder after:w-[1px] after:h-[40%] before:content before:absolute 2xl:before:top-[43%] 2xl:before:left-[69%] xl:before:top-[40%] xl:before:left-[67%] before:bg-headerBoxBorder before:w-[1px] before:h-[40%]'>
           <div className='flex flex-col'>
-            <Typography className='text-primary uppercase text-body2 !font-400 flex items-center'>
+            <Typography className='text-primary uppercase text-paragraph1 flex items-center'>
               <Image
                 src={'/assets/icons/contactLocation.svg'}
                 alt='contactLocation'
@@ -31,12 +31,12 @@ const OurPrecise = () => (
               Address
             </Typography>
             <div>
-              <Typography className='text-dropdownText text-subtitle1 font-300 mt-5 mb-[27px] 2xl:w-full xl:w-[80%]'>
+              <Typography className='text-secondary text-paragraph2Light mt-5 mb-[27px] 2xl:w-full xl:w-[80%]'>
                 A901-905, Vivanta Icon Opp. Shell Petrol Pump, Adajan, Surat,
                 Gujarat 395009.
               </Typography>
               <div className='flex group cursor-pointer'>
-                <Link href='#' className='text-subtitle1 font-400 underline'>
+                <Link href='#' className='text-paragraph2 underline'>
                   Google map
                 </Link>
                 <Image
@@ -51,7 +51,7 @@ const OurPrecise = () => (
           </div>
 
           <div className='flex flex-col'>
-            <Typography className='text-primary uppercase text-body2 font-400 flex items-center'>
+            <Typography className='text-primary uppercase text-paragraph1 flex items-center'>
               <Image
                 src={'/assets/icons/contactEmail.svg'}
                 alt='contactEmail'
@@ -64,19 +64,19 @@ const OurPrecise = () => (
             <div className='flex flex-col'>
               <Link
                 href='mailto:jobs@codewinglet.com'
-                className=' text-dropdownText text-subtitle1 font-300 mt-5'
+                className=' text-secondary text-paragraph2Light mt-5'
               >
                 jobs@codewinglet.com
               </Link>
               <Link
                 href='mailto:Info@codewinglet.com'
-                className='text-dropdownText text-subtitle1 font-300 mt-[15px]'
+                className='text-secondary text-paragraph2Light mt-[15px]'
               >
                 Info@codewinglet.com
               </Link>
               <Link
                 href='mailto:sales@codewinglet.com'
-                className='text-dropdownText text-subtitle1 font-300 mt-[15px]'
+                className='text-secondary text-paragraph2Light mt-[15px]'
               >
                 sales@codewinglet.com
               </Link>
@@ -84,7 +84,7 @@ const OurPrecise = () => (
           </div>
 
           <div className='flex flex-col'>
-            <Typography className='text-primary uppercase text-body2 font-400 flex items-center'>
+            <Typography className='text-primary uppercase text-paragraph1 flex items-center'>
               <Image
                 src={'/assets/icons/contactCall.svg'}
                 alt='contactCall'
@@ -97,13 +97,13 @@ const OurPrecise = () => (
             <div className='flex flex-col'>
               <Link
                 href='tel:+918160868310'
-                className=' text-dropdownText text-subtitle1 font-300 mt-5'
+                className=' text-secondary text-paragraph2Light mt-5'
               >
                 +91 8160868310 (Jobs)
               </Link>
               <Link
                 href='tel:+918320111741'
-                className='text-dropdownText text-subtitle1 font-300 mt-[15px]'
+                className='text-secondary text-paragraph2Light mt-[15px]'
               >
                 +91 8320111741 (Inquiry)
               </Link>
