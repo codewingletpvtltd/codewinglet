@@ -14,19 +14,13 @@ const GetInTouch = () => {
   return (
     <div className=' bg-white mt-[90px] pt-20 2xl:pb-[160px] xl:pb-[140px]'>
       <div className='container w-full lg:px-[15px] sm:px-[30px] px-[15px] mx-auto'>
-        <div className='flex 2xl:gap-[90px] xl:gap-[25px]'>
-          <div className='w-[52%]'>
+        <div className='lg:flex block 2xl:gap-[90px] xl:gap-[25px]'>
+          <div className='lg:w-[52%] w-full'>
             <Typography className='relative sm:text-subtitle2 text-tagLight mb-1.5 '>
               Contact us
             </Typography>
             <SectionHeader
-              title={
-                <>
-                  Shape Your Digital <br />
-                  Destiny with Codewinglet, <br />
-                  today!
-                </>
-              }
+              title={<>Shape Your Digital Destiny with Codewinglet, today!</>}
               description={
                 <>
                   Tell us about your project and explore how our experts can
@@ -34,9 +28,10 @@ const GetInTouch = () => {
                   product outsourcing, or staff augmentation.
                 </>
               }
-              descriptionClassName='!text-subtitle2Light !mt-[31px]'
+              headingClassName='lg:pr-[130px] pr-0'
+              descriptionClassName='!text-subtitle2Light !mt-[31px] lg:block hidden'
             />
-            <div className='relative flex gap-[100px] my-[50px] after:content after:absolute after:top-[12px] after:left-[32%] after:w-[1px] after:h-[57px] after:bg-headerBoxBorder'>
+            <div className='relative lg:flex hidden gap-[100px] my-[50px] after:content after:absolute after:top-[12px] after:left-[32%] after:w-[1px] after:h-[57px] after:bg-headerBoxBorder'>
               <Image
                 src={'/assets/ContactUs/google.svg'}
                 width={165}
@@ -50,7 +45,7 @@ const GetInTouch = () => {
                 alt='upWork'
               />
             </div>
-            <div>
+            <div className='lg:block hidden'>
               <Typography className='text-subtitle2 mb-[25px]'>
                 Follow us in media :
               </Typography>
@@ -107,7 +102,7 @@ const GetInTouch = () => {
               </div>
             </div>
           </div>
-          <div className='w-[48%] bg-bg py-[50px] px-[60px]'>
+          <div className='lg:w-[48%] w-full bg-bg py-[50px] px-[60px] lg:mt-0 mt-10'>
             <Typography className='relative mb-10 uppercase text-subtitle2 font-400 after:content after:absolute after:top-[36px] after:left-0 after:w-[30px] after:h-[2px] after:bg-primary'>
               Business Enquiry
             </Typography>
@@ -118,6 +113,11 @@ const GetInTouch = () => {
               isDisabled={isLoading}
             />
           </div>
+          <Typography className='lg:hidden block text-subtitle2Light pb-20 pt-10'>
+            Tell us about your project and explore how our experts can help you
+            achieve your goals through digital transformation, product
+            outsourcing, or staff augmentation.
+          </Typography>
         </div>
       </div>
     </div>
