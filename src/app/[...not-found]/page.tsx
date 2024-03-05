@@ -10,9 +10,7 @@ export default function NotFound() {
       <Typography variant='h4' className='text-primary md:text-h3 lg:text-h1'>
         This page is under construction.
       </Typography>
-      <Button className='mt-[20px]' onClick={() => router.push('/')}>
-        Go To Home Page
-      </Button>
+      <Button onClick={() => router.push('/')}>Go To Home Page</Button>
     </div>
   );
 }

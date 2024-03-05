@@ -19,15 +19,15 @@ const HeroSection = () => (
     </div>
 
     <div className='max-w-[1410px] md:px-[15px] sm:px-[30px] px-[15px] mx-auto w-full m-auto'>
-      <div className='xl:px-[150px] lg:px-[120px] md:px-14 sm:px-0 px-0'>
-        <Typography className='xl:text-h1 md:text-[36px] sm:text-[36px] text-[28px] !font-300 text-center text-white leading-[1.2]'>
+      <div className='xl:px-20 lg:px-[120px] md:px-14 sm:px-0 px-0'>
+        <Typography className='xl:text-h1 md:text-[36px] sm:text-[36px] text-[28px] text-center text-white'>
           Your Trusted Software Development Partner - Crafting Innovative
           Solutions for{' '}
         </Typography>
 
         <TypeAnimation
           sequence={sequence}
-          className='text-center text-white xl:text-h1 md:text-[42px] sm:text-[37px] text-body1 !font-300'
+          className='text-center text-white xl:text-h1 md:text-[42px] sm:text-[37px] text-body1'
         />
 
         <Typography className='xl:px-3 p-0 lg:text-h5 md:text-[18px] sm:text-subtitle1 text-[14px] sm:font-300 font-200 text-center my-[60px] text-white md:px-0 sm:px-[0px] px-0'>
@@ -36,7 +36,7 @@ const HeroSection = () => (
           today for digital transformation and success.
         </Typography>
 
-        <Button link className=' w-[222px]'>
+        <Button variant='link' className=' w-[222px]'>
           <Link
             href='#'
             rel='noopener noreferrer'
