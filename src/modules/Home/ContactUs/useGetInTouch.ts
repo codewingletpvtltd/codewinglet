@@ -21,8 +21,7 @@ const useGetInTouch = () => {
   });
 
   const onChangeFormData = (value: object) => {
-    if (!formData.isSubmitted)
-      setFormData(Object.assign({ ...formData }, value));
+    setFormData(Object.assign({ ...formData }, value));
   };
 
   const validateFields = (validateValues: typeof formData) => {
@@ -67,7 +66,7 @@ const useGetInTouch = () => {
     return true;
   };
 
-  const onSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const isValid = validateFields(formData);
 
@@ -77,7 +76,17 @@ const useGetInTouch = () => {
 
     if (isValid) {
       setIsLoading(true);
-      axios
+
+      await axios.post('/api/slack-alert', {
+        data: {
+          email: formData.email,
+          message: formData.message,
+          name: formData.name,
+          phone: formData.phone,
+        },
+      });
+
+      await axios
         .post(STRAPI_API_URL + '/api/contacts', {
           data: {
             ...formData,
@@ -99,15 +108,13 @@ const useGetInTouch = () => {
             errors: { email: '', message: '', name: '' },
             isSubmitted: true,
           });
-          setIsLoading(false);
         })
         .catch((error) => {
           showSnackbar({ msg: error.message, type: 'error' });
-          setIsLoading(false);
         });
+      setIsLoading(false);
     }
   };
-
   return {
     formData,
     onChangeFormData,
