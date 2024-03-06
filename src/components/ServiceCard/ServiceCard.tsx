@@ -8,7 +8,6 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   title,
   children,
   className = '',
-  buttonText,
   ...rest
 }) => (
   <div
