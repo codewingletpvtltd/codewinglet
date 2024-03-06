@@ -55,7 +55,7 @@ const ContactUs = () => (
         headingClassName=''
       />
 
-      <div className='grid sm:gap-[30px] gap-2.5 lg:grid-cols-3 grid-cols-2 lg:mt-[50px] md:mt-6 mt-7 process-card'>
+      <div className='grid sm:gap-[30px] gap-2.5 lg:grid-cols-3 grid-cols-2 lg:mt-[50px] md:mt-6 mt-5 process-card'>
         {process.map((card) => (
           <>
             <div className='soft-card xl:p-10 lg:p-7 md:p-8 sm:p-5 p-2.5 bg-white hover:bg-primary hover:text-white'>
@@ -65,10 +65,10 @@ const ContactUs = () => (
               >
                 {card.number}
               </Typography>
-              <Typography className='sm:text-paragraph1 text-[12px] sm:mb-3 sm:mt-3 mb-1 mt-1 text-primary'>
+              <Typography className='sm:text-paragraph1 text-paragraph2 sm:mb-3 sm:mt-3 mb-1 mt-1 text-primary'>
                 {card.title}
               </Typography>
-              <Typography className='m-0 sm:text-paragraph2Light text-[12px] text-primary'>
+              <Typography className='m-0 sm:text-paragraph2Light text-tagLight text-primary'>
                 {card.description}
               </Typography>
             </div>
