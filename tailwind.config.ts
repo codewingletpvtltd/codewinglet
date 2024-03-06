@@ -9,7 +9,7 @@ export default {
       h2: ['40px', { fontWeight: 500 }],
       h3: ['38px', { fontWeight: 500 }],
       h4: ['30px', { fontWeight: 600 }],
-      h5: ['26px', { fontWeight: 600 }],
+      h5: ['26px', { fontWeight: 500 }],
       h6: ['24px', { fontWeight: 500 }],
       subtitle1: ['22px', { fontWeight: 500, lineHeight: '35px' }],
       subtitle1Light: ['22px', { fontWeight: 400 }],
