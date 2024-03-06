@@ -54,7 +54,7 @@ const INDUCARD = [
 ];
 
 const ContactUs = () => (
-  <section className='bg-secondary xl:py-20 lg:py-14 py-10'>
+  <section className='bg-white xl:py-20 lg:py-14 py-10'>
     <div className='container w-full lg:px-[15px] sm:px-[30px] px-[15px] mx-auto'>
       <SectionHeader
         title={<>Industries We Serve</>}
@@ -64,7 +64,7 @@ const ContactUs = () => (
         headingClassName=''
       />
 
-      <div className='grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 sm:gap-[30px] gap-5 lg:mt-[50px] md:mt-6 mt-7'>
+      <div className='grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 sm:gap-[30px] gap-5 lg:my-[50px] md:mt-6 mt-7'>
         {INDUCARD.map((card, i) => (
           <>
             <div className={i >= 6 ? 'sm:block hidden' : undefined}>
@@ -77,21 +77,31 @@ const ContactUs = () => (
                   height={800}
                 />
               </div>
-              <Typography className='text-primary mt-3 lg:text-h6 md:text-body2 sm:text-body2 text-subtitle2'>
+              <Typography className='text-primary mt-3 lg:text-subtitle2 md:text-body2 sm:text-body2 text-subtitle2'>
                 {card.title}
               </Typography>
             </div>
           </>
         ))}
       </div>
-      <Button className='w-full text-primary mt-[30px] sm:hidden block'>
+      <Button
+        className='w-[333px] mt-[30px] block border-primary m-auto text-center'
+        variant='outline'
+      >
         <Link
           href='#'
           rel='noopener noreferrer'
           target='_blank'
-          className='text-black'
+          className='text-black text-center flex items-center justify-center gap-3'
         >
-          View All
+          Talk to our industry expert
+          <Image
+            src={'/assets/icons/BlackArrow.svg'}
+            alt='BlackArrow'
+            className=''
+            width={18}
+            height={18}
+          ></Image>
         </Link>
       </Button>
     </div>

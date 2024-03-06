@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { Typography } from '@codewinglet/components';
+import Image from 'next/image';
 import Textarea from '../../../../components/Textarea';
 import Button from '../../../../components/Button';
 import TextField from '../../../../components/TextField';
@@ -61,13 +61,16 @@ const Form: FC<FormProps> = ({ formData, onChangeFormData, onSubmit }) => (
         onChange={(e) => onChangeFormData({ message: e.target.value })}
       />
     </div>
-    <div className='flex items-center justify-center mt-[40px]'>
-      <Typography className='text-dropdownText text-[14px] font-300 mr-5'>
-        By clicking submit button of form, you agree to our{' '}
-        <span className='text-primary font-400'>Privacy policy.</span>
-      </Typography>
+    <div className='flex items-center justify-end mt-[40px]'>
       <Button type='submit' className='bg-primary w-[239px] mr-[inherit]'>
-        Submit
+        Submit{' '}
+        <Image
+          src={'/assets/icons/Arrow.svg'}
+          alt='Arrow'
+          width={16}
+          height={16}
+          className='ml-2'
+        />
       </Button>
     </div>
   </form>

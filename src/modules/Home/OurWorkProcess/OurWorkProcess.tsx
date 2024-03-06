@@ -42,7 +42,7 @@ const process = [
 ];
 
 const ContactUs = () => (
-  <section className='relative xl:py-20 lg:py-14 py-10 bg-secondary'>
+  <section className='relative xl:py-20 lg:py-14 py-10 bg-bg'>
     <div className='container w-full lg:px-[15px] sm:px-[30px] px-[15px] mx-auto'>
       <SectionHeader
         title={<>Our Work Process</>}
@@ -61,14 +61,14 @@ const ContactUs = () => (
             <div className='soft-card xl:p-10 lg:p-7 md:p-8 sm:p-5 p-2.5 bg-white hover:bg-primary hover:text-white'>
               <Typography
                 variant='h1'
-                className='soft-head font-700 leading-[50px] relative after:content after:absolute after:bottom-2.5 sm:after:left-[70px] after:left-[60px] after:w-[30px] after:h-[2px] after:bg-primary hover:after:bg-white after:duration-[0.9s] after:transition-all after:ease-in'
+                className='soft-head leading-[50px] relative after:content after:absolute after:bottom-2.5 sm:after:left-[70px] after:left-[60px] after:w-[30px] after:h-[2px] after:bg-primary hover:after:bg-white after:duration-[0.9s] after:transition-all after:ease-in'
               >
                 {card.number}
               </Typography>
-              <Typography className='sm:text-[18px] text-[12px] font-500  sm:mb-3 sm:mt-3 mb-1 mt-1 text-primary'>
+              <Typography className='sm:text-paragraph1 text-[12px] sm:mb-3 sm:mt-3 mb-1 mt-1 text-primary'>
                 {card.title}
               </Typography>
-              <Typography className='m-0 sm:text-[15px] text-[12px] font-300 text-primary'>
+              <Typography className='m-0 sm:text-paragraph2Light text-[12px] text-primary'>
                 {card.description}
               </Typography>
             </div>

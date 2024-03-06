@@ -21,7 +21,7 @@ const TextField: React.FC<TextFieldProps> = ({
         <label
           htmlFor={rest.id || inputId}
           className={getClassNames(
-            'font-primary sm:text-paragraph1 text-tag mb-[10px]',
+            'font-primary sm:text-paragraph1 text-tag mb-[10px] mt-[30px]',
             error ? 'text-error' : '',
             labelClassName
           )}
@@ -36,7 +36,7 @@ const TextField: React.FC<TextFieldProps> = ({
           type={type}
           disabled={disabled}
           className={getClassNames(
-            'border-solid border-b border-dropdownText h-[40px] w-[200px] sm:text-paragraph1 text-tag bg-bg placeholder:text-placeholderText focus:outline-none focus:border-primary  mb-[30px]',
+            'border-solid border-b border-dropdownText h-[40px] w-[200px] sm:text-paragraph1 text-tag bg-transparent placeholder:text-placeholderText focus:outline-none focus:border-primary ',
             error ? 'border-error' : 'border-dropdownText',
             disabled ? 'pointer-events-none bg-dropdownText' : '',
             fullWidth ? 'w-full' : ''
@@ -46,7 +46,7 @@ const TextField: React.FC<TextFieldProps> = ({
       </div>
       {helperText && (
         <div
-          className={getClassNames('text-[12px]', error ? 'text-error' : '')}
+          className={getClassNames('text-tagLight', error ? 'text-error' : '')}
         >
           {helperText}
         </div>
