@@ -23,7 +23,7 @@ const services: ChildItemType = [
   },
   {
     path: 'internet-if-things',
-    label: 'Internet of Things(IoT)',
+    label: 'Internet of Things (IoT) ',
     icon: '/assets/navigation/services/cpu.svg',
   },
   {
@@ -43,7 +43,7 @@ const services: ChildItemType = [
   },
   {
     path: 'ui-ux-development',
-    label: 'UI/UX Design & Development',
+    label: 'UI/UX  Development',
     icon: '/assets/navigation/services/uiuxDesign.svg',
   },
   {
@@ -72,14 +72,14 @@ const industries: ChildItemType = [
   },
   {
     path: 'multi-tenant-system',
-    label: 'Sustainable IoT Solution',
+    label: 'Sustainable Solution',
     description: 'Eco-friendly IoT solutions for sustainability.',
     icon: '/assets/navigation/industries/sustainable.svg',
   },
   {
     path: 'web-application-development',
     description: 'Recruit, Onboard, Manage: Simplified Workforce Software',
-    label: 'Staffing management',
+    label: 'Staffing Management',
     icon: '/assets/navigation/industries/staffing.svg',
   },
   {
@@ -103,7 +103,7 @@ const industries: ChildItemType = [
   },
   {
     path: 'qa-testing',
-    label: 'Ed-tech',
+    label: 'Ed-Tech',
     description: 'Enhancing education through digital platforms.',
     icon: '/assets/navigation/industries/edTechs.svg',
   },
@@ -115,20 +115,20 @@ const industries: ChildItemType = [
   },
   {
     path: 'custom-software-development',
-    label: 'Manufacturing & retails',
+    label: 'Manufacturing & Retails',
     description: 'Integrating IT: Inventory & Customer Management',
     icon: '/assets/navigation/industries/manufacturing.svg',
   },
   {
     path: 'web-designing',
-    label: 'real Estate',
+    label: 'Real Estate',
     description:
       'Digitalising property management, sales, and leasing processes.',
     icon: '/assets/navigation/industries/realEsate.svg',
   },
   {
     path: 'ui-component-library',
-    label: 'Travel & hospitality',
+    label: 'Travel & Hospitality',
     description: 'Streamlined booking, tailored personalized experiences.',
     icon: '/assets/navigation/industries/hospitality.svg',
   },

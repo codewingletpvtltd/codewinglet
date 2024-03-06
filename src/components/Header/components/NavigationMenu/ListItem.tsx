@@ -28,12 +28,14 @@ export const ListItem: FC<ListItemProps> = ({
             {...props}
           >
             {icon && (
-              <Image src={icon} alt='Menu Icon' width={52} height={52} />
+              <span className='flex items-center justify-center w-[52px] h-[52px] bg-bg rounded-md'>
+                <Image src={icon} alt='Menu Icon' width={28} height={28} />
+              </span>
             )}
             <div>
               <Typography
                 className={getClassNames(
-                  'font-bold capitalize ml-[16px] mb-[14px] text-[18px] !font-400 text-primary 2xl:text-subtitle1 xl:text-[14px]',
+                  'font-bold capitalize ml-[16px] text-[18px] !font-600 text-primary 2xl:text-subtitle1 xl:text-[16px]',
                   labelClassName
                 )}
               >

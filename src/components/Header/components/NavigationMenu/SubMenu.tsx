@@ -24,7 +24,7 @@ export const ServicesContent: FC<SubMenuContentProps> = ({
     </ul>
     <div className='bg-[#F4F4F4] flex items-center absolute right-[30px] bottom-[30px] w-[35%] p-[20px]'>
       <Typography className='text-[17px] text-primary font-400 w-[60%]'>
-        Get consultation from our Service experts
+        Get Consultation from our Service Experts
       </Typography>
       <Button className='bg-primary w-[210px] m-[initial]'>
         <Link
@@ -33,7 +33,7 @@ export const ServicesContent: FC<SubMenuContentProps> = ({
           target='_blank'
           className='flex items-center justify-center gap-3'
         >
-          Schedule a Call{' '}
+          Book a meeting{' '}
           <Image
             src={'/assets/icons/Arrow.svg'}
             alt='Arrow'
@@ -136,7 +136,7 @@ export const IndustryContent: FC<SubMenuContentProps> = ({
             target='_blank'
             className='flex items-center justify-center gap-3'
           >
-            Schedule a Call
+            Book a meeting
             <Image
               src={'/assets/icons/Arrow.svg'}
               alt='Arrow'
