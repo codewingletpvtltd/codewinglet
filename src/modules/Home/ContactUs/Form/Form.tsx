@@ -62,8 +62,11 @@ const Form: FC<FormProps> = ({ formData, onChangeFormData, onSubmit }) => (
       />
     </div>
     <div className='flex items-center justify-end mt-[40px]'>
-      <Button type='submit' className='bg-primary w-[239px] mr-[inherit]'>
-        Submit{' '}
+      <Button
+        type='submit'
+        className='bg-primary lg:w-[239px] w-full mr-[inherit]'
+      >
+        Book a meeting
         <Image
           src={'/assets/icons/Arrow.svg'}
           alt='Arrow'

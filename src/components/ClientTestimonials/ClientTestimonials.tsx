@@ -44,7 +44,7 @@ const ClientTestimonials = () => (
                   key={`testimonials-${data.id}-${index}`}
                   className='bg-primary lg:py-[42px] lg:px-[57px] md:p-[30px] sm:py-[22px] sm:px-[37px] p-6 lg:!w-[754px] md:!w-[570px] !w-[100%] sm:h-auto h-auto xl:mt-[170px] lg:mt-[350px] md:mt-[240px] sm:mt-[370px] mt-[350px] lg:mx-0 !block mx-auto'
                 >
-                  <Typography className='lg:text-subtitle1Light md:text-[17px] text-subtitle2 text-white'>
+                  <Typography className='lg:text-subtitle1Light md:text-[17px] text-tagLight text-white'>
                     {data.comment}
                   </Typography>
                   <ClientDetails
