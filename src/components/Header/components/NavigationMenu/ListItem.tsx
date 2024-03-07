@@ -35,7 +35,7 @@ export const ListItem: FC<ListItemProps> = ({
             <div>
               <Typography
                 className={getClassNames(
-                  'font-bold capitalize ml-[16px] text-[18px] !font-600 text-primary 2xl:text-subtitle1 xl:text-[16px]',
+                  'capitalize ml-[16px]  text-primary text-paragraph2 ',
                   labelClassName
                 )}
               >
@@ -108,7 +108,7 @@ export const ListItem: FC<ListItemProps> = ({
               <Typography
                 variant='subtitle1'
                 className={getClassNames(
-                  'font-bold capitalize text-[18px] font-500 text-primary mb-5',
+                  'text-paragraph2 capitalize text-primary mb-5',
                   labelClassName
                 )}
               >
@@ -129,7 +129,7 @@ export const ListItem: FC<ListItemProps> = ({
         ) : (
           <Link
             href={href as unknown as Url}
-            className='flex flex-row items-start cursor-pointer border-l border-dropBorderLeft'
+            className='flex flex-row items-start cursor-pointer border-l border-dropBorderLeft border-headerBoxBorder'
             aria-label='menu-item'
             {...props}
           >
@@ -140,7 +140,7 @@ export const ListItem: FC<ListItemProps> = ({
             <div>
               <Typography
                 className={getClassNames(
-                  'font-bold text-primary hover:text-dropdownText whitespace-nowrap ml-5 font-400 mb-5 group-last:mb-0 text-[14px]',
+                  'text-tag text-primary whitespace-nowrap ml-5  mb-5 group-last:mb-0',
                   labelClassName
                 )}
               >

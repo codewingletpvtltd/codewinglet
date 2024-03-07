@@ -11,7 +11,7 @@ export const ServicesContent: FC<SubMenuContentProps> = ({
   index,
 }) => (
   <>
-    <ul className='grid grid-rows-5 grid-flow-col 2xl:grid-cols-[31%_27%_25%] xl:grid-cols-[31%_29%_25%] 2xl:gap-9 xl:gap-[20px] after:content after:absolute after:top-[12%] after:left-[32%] after:bg-dropBorder after:w-[1px] after:h-[82%] before:content before:absolute before:top-[12%] before:left-[61%] before:bg-dropBorder before:w-[1px] before:h-[82%]'>
+    <ul className='grid grid-rows-5 grid-flow-col 2xl:grid-cols-[31%_25%_25%] xl:grid-cols-[31%_25%_25%] 2xl:gap-9 xl:gap-[20px] xl:gap-x-[30px] after:content after:absolute 2xl:after:top-[13%] xl:after:top-[15%] after:left-[32%] after:bg-headerBoxBorder after:w-[1px] 2xl:after:h-[81%] xl:after:h-[78%] before:content before:absolute 2xl:before:top-[13%] xl:before:top-[15%] before:left-[58%] before:bg-headerBoxBorder before:w-[1px] 2xl:before:h-[81%] xl:before:h-[78%]'>
       {childItems.map((menu, menuIdx) => (
         <ListItem
           key={`menu-header-${index}-${menuIdx}`}
@@ -22,18 +22,18 @@ export const ServicesContent: FC<SubMenuContentProps> = ({
         />
       ))}
     </ul>
-    <div className='bg-[#F4F4F4] flex items-center absolute right-[30px] bottom-[30px] w-[35%] p-[20px]'>
-      <Typography className='text-[17px] text-primary font-400 w-[60%]'>
+    <div className='bg-[#F4F4F4] flex items-center absolute right-[30px] bottom-[30px] w-[37%] p-[20px]'>
+      <Typography className='text-paragraph2 text-primary w-[60%]'>
         Get Consultation from our Service Experts
       </Typography>
-      <Button className='bg-primary w-[210px] m-[initial]'>
+      <Button variant='default' className='bg-primary w-[210px] m-[initial]'>
         <Link
           href='#'
           rel='noopener noreferrer'
           target='_blank'
           className='flex items-center justify-center gap-3'
         >
-          Book a meeting{' '}
+          Schedule a call
           <Image
             src={'/assets/icons/Arrow.svg'}
             alt='Arrow'
@@ -76,17 +76,17 @@ export const TechnologyContent: FC<SubMenuContentProps> = ({
       ))}
     </ul>
     <div className='bg-[#F4F4F4] flex items-center justify-between right-[30px] bottom-[30px] w-full p-2.5 mt-9 pl-6'>
-      <Typography className='text-body2 text-primary font-400 w-[60%]'>
+      <Typography className='text-paragraph2 text-primary w-[60%]'>
         Get consultation from our Technical experts
       </Typography>
-      <Button className='bg-primary w-[208px] m-[initial]'>
+      <Button variant='default' className='bg-primary w-[208px] m-[initial]'>
         <Link
           href='#'
           rel='noopener noreferrer'
           target='_blank'
           className='flex items-center justify-center gap-3'
         >
-          Schedule a Call
+          Schedule a call
           <Image
             src={'/assets/icons/Arrow.svg'}
             alt='Arrow'
@@ -105,7 +105,7 @@ export const IndustryContent: FC<SubMenuContentProps> = ({
 }) => (
   <>
     <div className='flex 2xl:gap-3 xl:gap-10'>
-      <ul className='w-[935px] grid grid-rows-4 grid-flow-col grid-cols-[35%_22%_35%] gap-6 before:content before:absolute before:top-[12%] before:left-[65%] before:bg-dropBorder before:w-[1px] before:h-[80%]'>
+      <ul className='w-[935px] grid grid-rows-4 grid-flow-col grid-cols-[35%_22%_35%] gap-6 before:content before:absolute before:top-[17%] 2xl:before:left-[65%] xl:before:left-[66%] before:bg-headerBoxBorder before:w-[1px] before:h-[75%]'>
         {childItems.map((menu, menuIdx) => (
           <ListItem
             key={`menu-header-${index}-${menuIdx}`}
@@ -129,14 +129,14 @@ export const IndustryContent: FC<SubMenuContentProps> = ({
           width={500}
           height={500}
         />
-        <Button className='bg-primary w-[211px] m-[initial]'>
+        <Button variant='default' className='w-[211px] m-[initial]'>
           <Link
             href='#'
             rel='noopener noreferrer'
             target='_blank'
             className='flex items-center justify-center gap-3'
           >
-            Book a meeting
+            Schedule a call
             <Image
               src={'/assets/icons/Arrow.svg'}
               alt='Arrow'

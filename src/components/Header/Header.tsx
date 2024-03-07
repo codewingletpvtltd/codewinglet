@@ -26,7 +26,7 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
     <header
       id='header'
       className={getClassNames(
-        'fixed flex items-center top-0 z-50 w-full sm:py-[20px] md:py-[0px] lg:py-0',
+        'fixed flex items-center top-0 z-50 w-full sm:py-[20px] md:py-[0px] lg:py-0 lg:px-20',
         isScroll
           ? 'bg-primary'
           : pathName === '/contact-us'
