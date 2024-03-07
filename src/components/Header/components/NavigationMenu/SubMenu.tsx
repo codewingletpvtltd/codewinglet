@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Button from '@codewinglet/components/Button';
 import Typography from '@codewinglet/components/Typography';
 import { SubMenuContentProps } from '../../types';
+
 import ListItem from './ListItem';
 
 export const ServicesContent: FC<SubMenuContentProps> = ({
@@ -33,7 +34,7 @@ export const ServicesContent: FC<SubMenuContentProps> = ({
           target='_blank'
           className='flex items-center justify-center gap-3'
         >
-          Schedule a Call
+          Schedule a call
           <Image
             src={'/assets/icons/Arrow.svg'}
             alt='Arrow'
