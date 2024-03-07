@@ -2,7 +2,6 @@ import { FC } from 'react';
 import Image from 'next/image';
 import { getClassNames } from '@codewinglet/utils';
 import {
-  Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
@@ -17,7 +16,6 @@ const MobileListItem: FC<ListItemProps> = ({
   description,
   hasMenu = false,
   labelClassName = '',
-  href,
   menu,
   ...props
 }) => (
@@ -31,11 +29,19 @@ const MobileListItem: FC<ListItemProps> = ({
           aria-label='menu-item'
           {...props}
         >
-          {icon && <Image src={icon} alt='Menu Icon' width={22} height={22} />}
+          {icon && (
+            <Image
+              src={icon}
+              alt='Menu Icon'
+              width={22}
+              height={22}
+              className='md:h-[28px] md:w-[28px]'
+            />
+          )}
           <div>
             <Typography
               className={getClassNames(
-                ' capitalize  ml-[16px] text-[18px] text-paragraph2 text-primary',
+                ' capitalize md:ml-[15px] ml-[12px] text-[18px] md:text-subtitle1  text-paragraph2 text-primary',
                 labelClassName
               )}
             >
@@ -47,45 +53,44 @@ const MobileListItem: FC<ListItemProps> = ({
     )}
 
     {hasMenu && (
-      <Accordion type='single' defaultValue='0' collapsible>
-        <AccordionItem value={label} key={label}>
-          <AccordionTrigger
-            className='[&[data-state=open]>svg]:rotate-180 text-paragraph2 font-medium'
-            icon={<></>}
-          >
-            <div className='text-paragraph2'>{label}</div>
+      <AccordionItem value={label} key={label}>
+        <AccordionTrigger
+          className='[&[data-state=open]>img]:rotate-180 text-paragraph2'
+          icon={
             <Image
               src={'/assets/icons/DownArrowThin.svg'}
               alt='MenuDownArrow'
               width={18}
               height={18}
-              className='transition duration-200 group-hover:rotate-[180deg]'
+              className='md:w-[22px] md:h-[22px] w-[18px] h-[18px] transition duration-200 group-hover:rotate-[180deg]'
             />
-          </AccordionTrigger>
-          <AccordionContent>
-            {menu ? (
-              <ul className='grid grid-cols-1 list-none md:gap-[10px] gap-0'>
-                {menu.map((menuItem: any, menuIndex: number) => (
-                  <li
-                    key={`mobile-menu-item-${label}-${menuIndex}`}
-                    className='group'
-                  >
-                    <ul className='list-none grid grid-flow-row gap-[16px] mb-[30px] group-last:mb-0'>
-                      <ListItem
-                        key={`mobile-menu-item-${label}`}
-                        icon={menuItem.icon}
-                        label={menuItem.label}
-                        labelClassName='!whitespace-normal text-paragraph2Light font-medium'
-                        isHeader
-                      />
-                    </ul>
-                  </li>
-                ))}
-              </ul>
-            ) : null}
-          </AccordionContent>
-        </AccordionItem>
-      </Accordion>
+          }
+        >
+          <div className='md:text-subtitle1 text-paragraph1'>{label}</div>
+        </AccordionTrigger>
+        <AccordionContent>
+          {menu ? (
+            <ul className='grid grid-cols-1 list-none md:gap-[10px] gap-0'>
+              {menu.map((menuItem: any, menuIndex: number) => (
+                <li
+                  key={`mobile-menu-item-${label}-${menuIndex}`}
+                  className='group'
+                >
+                  <ul className='list-none grid grid-flow-row gap-[16px] mb-[30px] group-last:mb-0'>
+                    <ListItem
+                      key={`mobile-menu-item-${label}`}
+                      icon={menuItem.icon}
+                      label={menuItem.label}
+                      labelClassName='md:text-subtitle2Light text-paragraph2Light'
+                      isHeader
+                    />
+                  </ul>
+                </li>
+              ))}
+            </ul>
+          ) : null}
+        </AccordionContent>
+      </AccordionItem>
     )}
   </>
 );

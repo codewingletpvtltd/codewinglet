@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import Image from 'next/image';
+import { Accordion } from '@codewinglet/components/Accordion';
 import { MobileSubMenuProps } from '../../types';
 import MobileListItem from './MobileListItem';
 const MobileSubMenu: FC<MobileSubMenuProps> = ({ parentMenu, onBack }) => (
@@ -10,20 +11,23 @@ const MobileSubMenu: FC<MobileSubMenuProps> = ({ parentMenu, onBack }) => (
         alt='arrow'
         width={22}
         height={22}
+        className=' md:w-[22px] md:h-[22px] w-[16px] h-[16px]'
         onClick={() => onBack()}
       />
-      <div className='text-subtitle1'>{parentMenu.label}</div>
+      <div className='md:text-h5 text-subtitle1'>{parentMenu.label}</div>
     </div>
     <ul className='pointer-events-auto'>
-      {parentMenu.children.map((item: any) => (
-        <MobileListItem
-          icon={item.icon}
-          label={item.label}
-          key={item.label}
-          hasMenu={!!item.menu}
-          menu={item.menu}
-        />
-      ))}
+      <Accordion type='single' defaultValue='0' collapsible>
+        {parentMenu.children.map((item: any) => (
+          <MobileListItem
+            icon={item.icon}
+            label={item.label}
+            key={item.label}
+            hasMenu={!!item.menu}
+            menu={item.menu}
+          />
+        ))}
+      </Accordion>
     </ul>
   </div>
 );

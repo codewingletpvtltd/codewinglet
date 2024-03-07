@@ -24,7 +24,7 @@ const MobileMenu: FC<MobileMenuProps> = ({
             <>
               <li key={item.label} className='mb-10'>
                 <div
-                  className='flex justify-between'
+                  className='flex justify-between md:text-subtitle1 text-paragraph1 !whitespace-nowrap'
                   onClick={() => setSubMenuIndex(index)}
                 >
                   {item.label}
@@ -45,7 +45,7 @@ const MobileMenu: FC<MobileMenuProps> = ({
           <Drawer
             disableBackdrop={true}
             showMenu={subMenuIndex >= 0}
-            className='z-50 md:max-w-[479px]'
+            className='z-50 md:max-w-[500px]'
           >
             {navMenu[subMenuIndex] && (
               <MobileSubMenu

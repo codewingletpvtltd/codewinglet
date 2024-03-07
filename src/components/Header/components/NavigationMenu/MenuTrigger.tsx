@@ -12,13 +12,13 @@ const MenuTrigger: FC<MenuTriggerProps> = ({
 }) =>
   hasChild ? (
     <span className='flex flex-row items-center cursor-pointer'>
-      <Typography className='text-paragraph2  after:transition-all after:duration-500 after:ease-in-out text-white  hover:after:content hover:after:absolute after:w-0 hover:after:w-[65px] hover:after:h-[2px] hover:after:bg-white after:top-auto after:bottom-[-11px] after:left-1/2 after:translate-y-[-50%] after:translate-x-[-50%]'>
+      <Typography className='relative text-paragraph2  after:transition-all after:duration-500 after:ease-in-out text-white  hover:after:content hover:after:absolute after:w-0 hover:after:w-[calc(100%)] hover:after:h-[2px] hover:after:bg-white after:bottom-[-11px] after:left-0'>
         {label}
       </Typography>
     </span>
   ) : (
     <Link href={href} className='flex flex-row items-center'>
-      <Typography className='text-paragraph2  after:transition-all after:duration-500 after:ease-in-out text-white  hover:after:content hover:after:absolute after:w-0 hover:after:w-[65px] hover:after:h-[2px] hover:after:bg-white after:top-auto after:bottom-[-11px] after:left-1/2 after:translate-y-[-50%] after:translate-x-[-50%]'>
+      <Typography className='relative text-paragraph2  after:transition-all after:duration-500 after:ease-in-out text-white  hover:after:content hover:after:absolute after:w-0 hover:after:w-[calc(100%)] hover:after:h-[2px] hover:after:bg-white after:bottom-[-11px] after:left-0'>
         {label}
       </Typography>
       {showIcon && (

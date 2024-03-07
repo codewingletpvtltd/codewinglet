@@ -41,7 +41,7 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
             width={20}
             height={20}
             alt='Codewinglet Private Limited Logo1'
-            className='w-[191px] md:w-[252px] xl:w-[252px] cursor-pointer invert'
+            className='w-[191px] md:w-[240px] xl:w-[252px] cursor-pointer invert'
             onClick={() => router.push('/')}
             loading='eager'
           />
@@ -65,9 +65,10 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
       </div>
       {!isLarge && (
         <Drawer
+          onMenu={onMenu}
           disableBackdrop={false}
           showMenu={showMenu}
-          className='z-40 md:max-w-[479px]'
+          className='z-40 md:max-w-[500px]'
         >
           <div className='px-[30px] md:px-[35px]'>
             <div className='flex items-center max-w-[1410px] justify-between relative w-full md:ml-[-2px] mx-auto lg-auto md:h-[90px] h-auto mb-auto'>
@@ -77,7 +78,7 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
                   width={20}
                   height={10}
                   alt='Codewinglet Private Limited Logo1'
-                  className='w-[191px] md:w-[252px] xl:w-[252px] cursor-pointer invert'
+                  className='w-[191px] sm:h-auto h-[38px] md:w-[240px] xl:w-[252px] cursor-pointer invert'
                   onClick={() => router.push('/')}
                   loading='eager'
                 />
