@@ -27,8 +27,8 @@ const data = [
 const ListItem = ({ data }: { data: ListItemProps[] }) => (
   <>
     {data.map(({ number, label }, index) => (
-      <li key={index} className='relative md:mb-[50px] mb-0'>
-        <Typography className='xl:text-h4 text-h5 text-white flex item-center'>
+      <li key={index} className='relative lg:mb-[50px] mb-0'>
+        <Typography className='xl:text-h4 md:text-h4 text-h5 text-white flex item-center'>
           {number}
         </Typography>
         <Typography className=' text-white md:text-paragraph1 text-paragraph2Light'>
@@ -40,7 +40,7 @@ const ListItem = ({ data }: { data: ListItemProps[] }) => (
 );
 
 const Statistics = () => (
-  <ul className='xl:mt-[0] mt-5 mb-5 lg:block md:block grid grid-cols-2 md:gap-0 gap-4'>
+  <ul className='xl:mt-[0] mt-5 mb-5 lg:block grid grid-cols-2 lg:gap-0 md:gap-5 gap-4'>
     <ListItem data={data} />
   </ul>
 );

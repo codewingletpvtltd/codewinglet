@@ -4,6 +4,7 @@ import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import Image from 'next/image';
 import { Button, Typography } from '@codewinglet/components';
+import { Arrow } from '@codewinglet/assets';
 import { getClassNames } from '@codewinglet/utils';
 import {
   companyTermsMenu,
@@ -45,9 +46,9 @@ const Footer = () => {
   const [expandedOption, setExpandedOption] = useState<number>(-1);
   return (
     <>
-      <footer className='bg-black text-white relative xl:py-[60px] md:py-[40px] py-[30px]'>
+      <footer className='bg-black text-white relative xl:py-[60px] md:py-[40px] md:pt-[60px] py-[30px]'>
         <div className='container'>
-          <div className='md:mb-16 mb-10 flex justify-between sm:items-center items-start flex-col md:flex-col lg:flex-row lg:px-[15px] sm:px-[40px] px-[20px]'>
+          <div className='md:mb-[50px] mb-10 flex justify-between md:items-start sm:items-center items-start flex-col md:flex-col lg:flex-row lg:px-[15px] sm:px-[40px] px-[20px]'>
             <Image
               src={'/assets/icons/LogoWhite.svg'}
               width={100}
@@ -57,7 +58,7 @@ const Footer = () => {
               onClick={() => router.push('/')}
               loading='eager'
             />
-            <hr className='lg:hidden block w-full border-[#575757] my-5' />
+            <hr className='lg:hidden block w-full border-[#575757] md:my-10 my-5' />
             <div className='flex items-center relative flex-col sm:flex-row md:gap-0 gap-3.5'>
               <Typography className='footerTitle lg:text-h5 md:text-subtitle2 leading-[1.4] text-paragraph2Light 2xl:pl-[260px] xl:pl-[180px] pl-0 relative md:after:content lg:after:block after:hidden after:absolute 2xl:after:left-60 xl:after:left-40 after:top-2 after:bg-white after:w-[0.1rem] 2xl:after:h-[3.5rem] 2xl:h-[3.5rem] xl:h-[3rem] lg:after:h-[3.6rem] after:h-[3.5rem]'>
                 Do you want to talk more about the project? Reach out to us
@@ -68,7 +69,10 @@ const Footer = () => {
                 target='_blank'
                 aria-label='Instagram'
               >
-                <Button className='2xl:w-[230px] xl:w-[199px] md:w-[190px] sm:w-[164px] w-[173px] sm:h-[56px] h-[40px]'>
+                <Button
+                  variant='outline'
+                  className='2xl:w-[230px] xl:w-[199px] md:w-[190px] sm:w-[164px] w-[173px] sm:h-[56px] h-[40px]'
+                >
                   Schedule a call
                 </Button>
               </Link>
@@ -77,7 +81,7 @@ const Footer = () => {
           <div className='md:gap-0 gap-[5px] flex lg:px-[15px] sm:px-[25px] px-[15px] relative mx-0 flex-wrap '>
             {footerTitle.map((menuItem, index) => (
               <div
-                className={`px-[15px] w-full relative ${menuItem.responsiveClass}`}
+                className={`lg:px-0 px-[15px] sm:px-[15px] w-full relative ${menuItem.responsiveClass}`}
                 key={menuItem.title}
               >
                 <div className='my-1 sm:hidden' />
@@ -172,7 +176,7 @@ const Footer = () => {
                     alt='LocationIcon'
                     width={18}
                     height={18}
-                    className='mt-1'
+                    className='mt-1 md:w-[37]'
                   />
                   <div className='flex flex-col'>
                     <div>Address :</div>
@@ -180,17 +184,11 @@ const Footer = () => {
                       A901-905, Vivanta Icon Opp. Shell Petrol Pump, Adajan,
                       Surat, Gujarat 395009.
                     </Typography>
-                    <div className='flex group cursor-pointer text-white mt-[10px]'>
-                      <Link href='#' className='text-paragraph2Light'>
+                    <div className='flex group cursor-pointer text-white mt-[10px] items-center'>
+                      <Link href='#' className='text-paragraph2Light underline'>
                         Google map
                       </Link>
-                      <Image
-                        src={'/assets/icons/Arrow.svg'}
-                        alt='contactArrow'
-                        width={14}
-                        height={14}
-                        className='ml-1.5 group-hover:transition-all duration-700 group-hover:translate-x-1'
-                      />
+                      <Arrow />
                     </div>
                   </div>
                 </Typography>

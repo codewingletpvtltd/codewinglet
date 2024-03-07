@@ -1,6 +1,7 @@
 'use client';
 import Link from 'next/link';
 import Image from 'next/image';
+import { Arrow } from '@codewinglet/assets';
 import { Button, Typography } from '@codewinglet/components';
 import SectionHeader from '../../../components/SectionHeader/SectionHeader';
 
@@ -97,12 +98,7 @@ const Collaborate = () => (
               className='flex items-center justify-center gap-3'
             >
               Talk to our expert
-              <Image
-                src={'/assets/icons/Arrow.svg'}
-                alt='Arrow'
-                width={16}
-                height={16}
-              />
+              <Arrow />
             </Link>
           </Button>
         </div>

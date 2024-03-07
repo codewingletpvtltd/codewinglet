@@ -18,7 +18,7 @@ const ClientTestimonials = () => (
         descriptionClassName=' mt-[9px] text-white'
       />
       <div
-        className='md:mt-12 mt-7 xl:h-[481px] h-auto relative'
+        className='md:mt-10 mt-7 xl:h-[481px] h-auto relative lg:[background-size:_auto] md:[background-size:_70%] sm:[background-size:_auto]'
         style={{
           backgroundImage: 'url("/assets/testimonial/testimonial_img.svg")',
           backgroundRepeat: 'no-repeat',
@@ -26,7 +26,7 @@ const ClientTestimonials = () => (
         }}
       >
         <Image
-          className='lg:w-[99px] md:w-[75px] absolute left-0 z-[-1] xl:top-[11rem] lg:top-[20rem] md:top-[15rem] md:block hidden'
+          className='lg:w-[99px] md:w-[75px] absolute left-0 z-[-1] xl:top-[11rem] lg:top-[20rem] md:top-[6rem] md:block hidden'
           src={'/assets/icons/StartQuote.svg'}
           alt='StartQuote'
           width={100}
@@ -42,7 +42,7 @@ const ClientTestimonials = () => (
               <div key={index}>
                 <div
                   key={`testimonials-${data.id}-${index}`}
-                  className='bg-primary lg:py-[42px] lg:px-[57px] md:p-[30px] sm:py-[22px] sm:px-[37px] p-6 lg:!w-[754px] md:!w-[570px] !w-[100%] sm:h-auto h-auto xl:mt-[170px] lg:mt-[350px] md:mt-[240px] sm:mt-[370px] mt-[350px] lg:mx-0 !block mx-auto'
+                  className='bg-primary lg:py-[42px] lg:px-[57px] md:p-[30px] sm:py-[22px] sm:px-[37px] p-6 lg:!w-[754px] md:!w-[455px] !w-[100%] sm:h-auto h-auto xl:mt-[170px] lg:mt-[350px] md:mt-[180px] sm:mt-[370px] mt-[350px] lg:mx-0 md:mx-0 !block sm:mx-auto'
                 >
                   <Typography className='lg:text-subtitle1Light md:text-[17px] text-tagLight text-white'>
                     {data.comment}
@@ -57,7 +57,7 @@ const ClientTestimonials = () => (
           </Slider>
         </div>
         <Image
-          className='lg:w-[99px] md:w-[75px] absolute 2xl:right-[24rem] xl:right-[16rem] right-0 lg:bottom-[-1rem] md:bottom-2.5 z-[-1] md:block hidden'
+          className='lg:w-[99px] md:w-[75px] absolute 2xl:right-[24rem] xl:right-[16rem] md:right-[10rem] sm:right-0 lg:bottom-[-1rem] md:bottom-2.5 z-[-1] md:block hidden'
           src={'/assets/icons/ClosingQuote.svg'}
           alt='ClosingQuote'
           width={100}

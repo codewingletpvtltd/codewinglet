@@ -36,7 +36,7 @@ const TextField: React.FC<TextFieldProps> = ({
           type={type}
           disabled={disabled}
           className={getClassNames(
-            'border-solid border-b border-dropdownText h-[40px] w-[200px] sm:text-paragraph1 text-tag bg-transparent placeholder:text-placeholderText focus:outline-none focus:border-primary ',
+            'rounded-none border-solid border-b border-dropdownText h-[40px] w-[200px] sm:text-paragraph1 text-tag bg-transparent placeholder:text-placeholderText focus:outline-none focus:border-primary ',
             error ? 'border-error' : 'border-dropdownText',
             disabled ? 'pointer-events-none bg-dropdownText' : '',
             fullWidth ? 'w-full' : ''
