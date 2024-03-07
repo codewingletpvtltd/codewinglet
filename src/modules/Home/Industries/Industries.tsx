@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button, SectionHeader, Typography } from '@codewinglet/components';
+import { Arrow } from '@codewinglet/assets';
 
 const INDUCARD = [
   {
@@ -66,7 +67,7 @@ const INDUCARD = [
 ];
 
 const ContactUs = () => (
-  <section className='bg-white xl:py-20 lg:py-14 py-10'>
+  <section className='bg-white xl:py-20 lg:py-14 md:py-[60px] py-10'>
     <div className='container w-full lg:px-[15px] sm:px-[30px] px-[15px] mx-auto'>
       <SectionHeader
         title={<>Industries We Serve</>}
@@ -76,7 +77,7 @@ const ContactUs = () => (
         headingClassName=''
       />
 
-      <div className='grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 sm:gap-[30px] gap-5 lg:my-[50px] my-5'>
+      <div className='grid lg:grid-cols-4 grid-cols-2 md:mt-10 md:mb-0 sm:gap-[30px] gap-5 lg:my-[50px] my-5'>
         {INDUCARD.map((card, i) => (
           <>
             <div>
@@ -89,7 +90,7 @@ const ContactUs = () => (
                   height={800}
                 />
               </div>
-              <Typography className='text-primary md:mt-3 mt-2.5 lg:text-subtitle2 md:text-body2 sm:text-body2 text-tagLight'>
+              <Typography className='text-primary md:mt-3 mt-2.5 lg:text-subtitle2 md:text-subtitle2 text-tagLight'>
                 {card.title}
                 {/* <div className='block sm:hidden'>{card.mobileTitle}</div> */}
               </Typography>
@@ -98,23 +99,17 @@ const ContactUs = () => (
         ))}
       </div>
       <Button
-        className='w-[333px] mt-[30px] block border-primary m-auto text-center'
-        variant='outline'
+        className='w-[333px] mt-[30px] lg:block m-auto text-center md:hidden block group'
+        variant='blackOutline'
       >
         <Link
           href='#'
           rel='noopener noreferrer'
           target='_blank'
-          className='text-black text-center flex items-center justify-center gap-3'
+          className='text-primary group-hover:text-white text-center flex items-center justify-center gap-3'
         >
           Talk to our industry expert
-          <Image
-            src={'/assets/icons/BlackArrow.svg'}
-            alt='BlackArrow'
-            className=''
-            width={18}
-            height={18}
-          ></Image>
+          <Arrow />
         </Link>
       </Button>
     </div>

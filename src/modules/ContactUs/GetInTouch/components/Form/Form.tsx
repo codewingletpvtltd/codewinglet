@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import Image from 'next/image';
+import { Arrow } from '@codewinglet/assets';
 import Textarea from '../../../../../components/Textarea';
 import Button from '../../../../../components/Button';
 import TextField from '../../../../../components/TextField';
@@ -52,18 +52,12 @@ const Form: FC<FormProps> = ({ formData, onChangeFormData, onSubmit }) => (
     </div>
     <div className='flex items-center justify-end mt-[40px]'>
       <Button
-        className='sm:w-[239px] w-full mr-[inherit]'
+        className='sm:w-[239px] w-full mr-[inherit] gap-2'
         variant='default'
         type='submit'
       >
         Submit
-        <Image
-          src={'/assets/icons/Arrow.svg'}
-          alt='Arrow'
-          width={16}
-          height={16}
-          className='ml-2'
-        />
+        <Arrow />
       </Button>
     </div>
   </form>

@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Button, TypeAnimation, Typography } from '@codewinglet/components';
 import './herosection.css';
+import { Arrow } from '@codewinglet/assets';
 import { techList } from './utils';
 
 const sequence = ['EdTech', 'E-Commerce', 'Healthcare', 'Real Estate', 'CRM'];
@@ -20,17 +21,17 @@ const HeroSection = () => (
 
     <div className='max-w-[1410px] md:px-[15px] sm:px-[30px] px-[15px] mx-auto w-full m-auto'>
       <div className='xl:px-20 lg:px-[120px] md:px-14 sm:px-0 px-0'>
-        <Typography className='xl:text-h1 text-subtitle2 text-center text-white'>
+        <Typography className='xl:text-h1 md:text-h3 text-subtitle2 text-center text-white'>
           Your Trusted Software Development Partner - Crafting Innovative
           Solutions for
         </Typography>
 
         <TypeAnimation
           sequence={sequence}
-          className='text-center text-white xl:text-h1 text-subtitle2'
+          className='text-center text-white xl:text-h1 md:text-h3 text-subtitle2'
         />
 
-        <Typography className='xl:px-20 lg:text-subtitle2Light text-tagLight text-center text-white 2xl:mt-5 2xl:mb-14 xl:mt-[50px] xl:mb-10 md:px-0 sm:px-0 px-0 mt-5 mb-[120px]'>
+        <Typography className='xl:px-20 lg:text-subtitle2Light md:text-subtitle2Light text-tagLight text-center text-white 2xl:mt-5 2xl:mb-14 xl:mt-[50px] xl:mb-10 md:px-0 sm:px-0 px-0 mt-5 mb-[120px]'>
           Elevate your business's efficiency and profitability with
           Codewinglet's advanced software solutions. Book your consultation
           today for digital transformation and success.
@@ -38,7 +39,7 @@ const HeroSection = () => (
 
         <Button
           variant='outline'
-          className='2xl:w-[332px] xl:w-[229px] w-[203px] block m-auto'
+          className='2xl:w-[332px] xl:w-[229px] md:w-[229px] w-[203px] block m-auto'
         >
           <Link
             href='#'
@@ -47,12 +48,7 @@ const HeroSection = () => (
             className='flex items-center justify-center gap-3'
           >
             Book a meeting
-            <Image
-              src={'/assets/icons/Arrow.svg'}
-              alt='Arrow'
-              width={16}
-              height={16}
-            />
+            <Arrow />
           </Link>
         </Button>
       </div>

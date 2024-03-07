@@ -9,7 +9,7 @@ const ContactUs = () => {
   const { formData, onChangeFormData, onSubmit, isLoading } = useGetInTouch();
 
   return (
-    <section className='lg:py-20 py-10 bg-bg'>
+    <section className='lg:py-20 md:py-[60px] py-10 bg-bg'>
       <div className='container w-full lg:px-[15px] sm:px-[30px] px-[15px] mx-auto'>
         <div className='flex lg:flex-row flex-col 2xl:gap-[90px] xl:gap-[60px]'>
           <div className='lg:w-[52%] w-full md:m-0 mb-5 xl:pr-0 lg:pr-[30px] md:p-0 pr-0'>
@@ -19,12 +19,12 @@ const ContactUs = () => {
                 <>Shape Your Digital Destiny with Codewinglet, today!</>
               }
             />
-            <Typography className='leading-9 mt-10 mb-[100px] text-subtitle1Light text-secondary hidden sm:block'>
+            <Typography className='leading-9 mt-10 mb-[100px] text-subtitle1Light text-secondary hidden lg:block'>
               Tell us about your project and discover how our experts can assist
               you in achieving your goals through digital transformation,
               product outsourcing, or staff augmentation.
             </Typography>
-            <div className='hidden relative md:flex gap-[160px] mb-[60px] after:content after:absolute after:top-[12px] 2xl:after:left-[30%] xl:after:left-[31%] after:w-[1px] after:h-[57px] after:bg-headerBoxBorder'>
+            <div className='hidden relative lg:flex gap-[160px] mb-[60px] after:content after:absolute after:top-[12px] 2xl:after:left-[30%] xl:after:left-[31%] after:w-[1px] after:h-[57px] after:bg-headerBoxBorder'>
               <Image
                 src={'/assets/ContactUs/upWork.svg'}
                 width={111}
@@ -38,7 +38,7 @@ const ContactUs = () => {
                 alt='google'
               />
             </div>
-            <div className='hidden sm:block'>
+            <div className='hidden lg:block'>
               <Typography className='text-subtitle2 font-400 mb-[25px]'>
                 Follow us in media :
               </Typography>
@@ -95,7 +95,7 @@ const ContactUs = () => {
               </div>
             </div>
           </div>
-          <div className='lg:w-[48%] w-full'>
+          <div className='lg:w-[48%] w-full lg:mt-0 md:mt-10'>
             <div className='bg-white md:py-[50px] md:px-[60px] p-5'>
               <Typography className='relative mb-2.5 md:text-subtitle2 text-paragraph2 after:content after:absolute lg:after:top-[36px] after:top-[30px] after:left-0 after:w-[30px] after:h-[2px] after:bg-primary'>
                 Business Enquiry
@@ -108,6 +108,11 @@ const ContactUs = () => {
               />
             </div>
           </div>
+          <Typography className='leading-9 mt-10 text-subtitle1Light text-secondary hidden md:block lg:hidden'>
+            Tell us about your project and discover how our experts can assist
+            you in achieving your goals through digital transformation, product
+            outsourcing, or staff augmentation.
+          </Typography>
         </div>
       </div>
     </section>

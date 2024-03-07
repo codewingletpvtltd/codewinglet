@@ -33,7 +33,7 @@ export const ServicesContent: FC<SubMenuContentProps> = ({
           target='_blank'
           className='flex items-center justify-center gap-3'
         >
-          Schedule a Call{' '}
+          Schedule a Call
           <Image
             src={'/assets/icons/Arrow.svg'}
             alt='Arrow'

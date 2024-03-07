@@ -32,7 +32,7 @@ const Arrows: FC<ArrowProps> = ({
       </div>
     </div>
 
-    <div className='flex gap-2 xl:hidden [&>*:nth-child(n)]:transition-all [&>*:nth-child(n)]:duration-1000 absolute left-2/4 md:bottom-[-40px] bottom-[-20px] translate-x-[-50%] translate-y-[-50%]'>
+    <div className='z-[-1] flex gap-2 xl:hidden [&>*:nth-child(n)]:transition-all [&>*:nth-child(n)]:duration-1000 absolute lg:left-2/4 md:left-[80%] sm:left-2/4 left-2/4 md:top-[78%] md:bottom-[-40px] bottom-[-20px] translate-x-[-50%] translate-y-[-50%]'>
       <div
         className={getClassNames(
           'h-1 w-5 ',
