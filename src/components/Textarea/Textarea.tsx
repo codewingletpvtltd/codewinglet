@@ -22,7 +22,7 @@ const Textarea: React.FC<TextareaProps> = ({
         <label
           htmlFor={rest.id || inputId}
           className={getClassNames(
-            'font-secondary sm:text-paragraph1 text-tag mb-[10px] ',
+            'font-secondary sm:text-paragraph1 text-tag mb-[10px] mt-[30px]',
             error ? 'text-error' : '',
             labelClassName
           )}
@@ -36,7 +36,7 @@ const Textarea: React.FC<TextareaProps> = ({
           id={rest.id || inputId}
           disabled={disabled}
           className={getClassNames(
-            'border-solid border-b border-dropdownText placeholder:text-placeholderText bg-bg  pt-[10px] w-[200px] sm:text-paragraph1 text-tag focus:outline-none focus:border-primary',
+            'border-solid border-b border-dropdownText placeholder:text-placeholderText bg-transparent  pt-[10px] w-[200px] sm:text-paragraph1 text-tag focus:outline-none focus:border-primary',
             error ? 'border-error' : 'border-gray',
             disabled ? 'pointer-events-none bg-gray' : '',
             fullWidth ? 'w-full' : ''
@@ -47,7 +47,7 @@ const Textarea: React.FC<TextareaProps> = ({
       </div>
       {helperText && (
         <div
-          className={getClassNames('text-[12px]', error ? 'text-error' : '')}
+          className={getClassNames('text-tagLight', error ? 'text-error' : '')}
         >
           {helperText}
         </div>

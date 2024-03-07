@@ -20,7 +20,7 @@ const HeroSection = () => (
 
     <div className='max-w-[1410px] md:px-[15px] sm:px-[30px] px-[15px] mx-auto w-full m-auto'>
       <div className='xl:px-20 lg:px-[120px] md:px-14 sm:px-0 px-0'>
-        <Typography className='xl:text-h1 md:text-[36px] sm:text-[36px] text-[28px] text-center text-white'>
+        <Typography className='xl:text-h1  sm:text-[36px] text-[28px] text-center text-white'>
           Your Trusted Software Development Partner - Crafting Innovative
           Solutions for{' '}
         </Typography>
@@ -30,20 +30,23 @@ const HeroSection = () => (
           className='text-center text-white xl:text-h1 md:text-[42px] sm:text-[37px] text-body1'
         />
 
-        <Typography className='xl:px-3 p-0 lg:text-h5 md:text-[18px] sm:text-subtitle1 text-[14px] sm:font-300 font-200 text-center my-[60px] text-white md:px-0 sm:px-[0px] px-0'>
+        <Typography className='xl:px-20 p-0 lg:text-subtitle2Light md:text-[18px] sm:text-subtitle2Light text-[14px] text-center text-white 2xl:mt-5 2xl:mb-14 xl:mt-[50px] xl:mb-10 md:px-0 sm:px-[0px] px-0'>
           Elevate your business's efficiency and profitability with
           Codewinglet's advanced software solutions. Book your consultation
           today for digital transformation and success.
         </Typography>
 
-        <Button variant='link' className=' w-[222px]'>
+        <Button
+          variant='outline'
+          className='2xl:w-[332px] xl:w-[229px] block m-auto'
+        >
           <Link
             href='#'
             rel='noopener noreferrer'
             target='_blank'
             className='flex items-center justify-center gap-3'
           >
-            Book a meeting{' '}
+            Book a meeting
             <Image
               src={'/assets/icons/Arrow.svg'}
               alt='Arrow'

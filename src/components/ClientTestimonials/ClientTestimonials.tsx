@@ -15,7 +15,7 @@ const ClientTestimonials = () => (
           <>Here’s a glimpse into what Our Clients have to say about us.</>
         }
         headingClassName='text-[22px] text-white'
-        descriptionClassName=' mt-[9px] text-white !font-300'
+        descriptionClassName=' mt-[9px] text-white'
       />
       <div
         className='md:mt-12 mt-7 xl:h-[481px] h-auto relative'
@@ -44,7 +44,7 @@ const ClientTestimonials = () => (
                   key={`testimonials-${data.id}-${index}`}
                   className='bg-primary lg:py-[42px] lg:px-[57px] md:p-[30px] sm:py-[22px] sm:px-[37px] p-6 lg:!w-[754px] md:!w-[570px] !w-[100%] sm:h-auto h-auto xl:mt-[170px] lg:mt-[350px] md:mt-[240px] sm:mt-[370px] mt-[350px] lg:mx-0 !block mx-auto'
                 >
-                  <Typography className='lg:text-body1 md:text-[17px] text-subtitle2 font-300 text-white'>
+                  <Typography className='lg:text-subtitle1Light md:text-[17px] text-subtitle2 text-white'>
                     {data.comment}
                   </Typography>
                   <ClientDetails
@@ -57,7 +57,7 @@ const ClientTestimonials = () => (
           </Slider>
         </div>
         <Image
-          className='lg:w-[99px] md:w-[75px] absolute xl:right-[24rem] right-0 lg:bottom-[-1rem] md:bottom-2.5 z-[-1] md:block hidden'
+          className='lg:w-[99px] md:w-[75px] absolute 2xl:right-[24rem] xl:right-[16rem] right-0 lg:bottom-[-1rem] md:bottom-2.5 z-[-1] md:block hidden'
           src={'/assets/icons/ClosingQuote.svg'}
           alt='ClosingQuote'
           width={100}

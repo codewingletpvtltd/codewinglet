@@ -16,7 +16,7 @@ const data = [
   },
   {
     number: '7+',
-    label: 'years in the IT Industry',
+    label: 'Years in the IT Industry',
   },
   {
     number: '100%',
@@ -27,14 +27,11 @@ const data = [
 const ListItem = ({ data }: { data: ListItemProps[] }) => (
   <>
     {data.map(({ number, label }, index) => (
-      <li key={index} className='relative mb-[30px]'>
-        <Typography
-          variant='h3'
-          className=' text-white flex item-center !font-500'
-        >
+      <li key={index} className='relative mb-[50px]'>
+        <Typography variant='h4' className=' text-white flex item-center'>
           {number}
         </Typography>
-        <Typography className=' text-white md:text-body2 text-subtitle2'>
+        <Typography className=' text-white md:text-paragraph1 text-subtitle2'>
           {label}
         </Typography>
       </li>
