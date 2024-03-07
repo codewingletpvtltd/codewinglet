@@ -23,3 +23,5 @@ export {
   AccordionTrigger,
   AccordionContent,
 } from './Accordion';
+
+export { default as Drawer } from './Drawer';

@@ -28,13 +28,12 @@ const AccordionTrigger = React.forwardRef<
     <AccordionPrimitive.Trigger
       ref={ref}
       className={cn(
-        'flex flex-1 items-center justify-between py-4 font-medium transition-all leading-[30px] [&[data-state=open]>.icon-container>.icon-container]:rotate-90 [&[data-state=open]>.icon-container>.vertical]:rotate-90 [&[data-state=open]>.icon-container>.horizontal]:opacity-0 font-[800] md:text-[22px] lg:text-[25px] border-b border-b-lightBlack',
+        'flex flex-1 items-center justify-between py-[20px] [&[data-state=open]]:py-0 [&[data-state=open]]:pb-[20px] first:pt-0 font-medium transition-all leading-[30px] [&[data-state=open]>.icon-container>.icon-container]:rotate-90 [&[data-state=open]>.icon-container>.vertical]:rotate-90 [&[data-state=open]>.icon-container>.horizontal]:opacity-0 md:text-[22px] lg:text-[25px]',
         className
       )}
       {...props}
     >
       {children}
-      {}
 
       {icon ? (
         icon
@@ -56,12 +55,12 @@ const AccordionContent = React.forwardRef<
   <AccordionPrimitive.Content
     ref={ref}
     className={cn(
-      'overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down',
+      'overflow-hidden text-sm  data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down AccordionContent',
       className
     )}
     {...props}
   >
-    <div className='pb-[9px] pt-[21px]'>{children}</div>
+    <div className='mb-[30px] border-l border-headerBoxBorder'>{children}</div>
   </AccordionPrimitive.Content>
 ));
 AccordionContent.displayName = AccordionPrimitive.Content.displayName;

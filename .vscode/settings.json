@@ -12,7 +12,8 @@
   "editor.codeActionsOnSave": {
     "source.removeUnusedImports": "explicit",
     "source.fixAll.eslint": "explicit",
-    "source.sortMembers": "explicit"
+    "source.sortMembers": "explicit",
+    "headwind.sortTailwindClasses": "always"
   },
   "eslint.format.enable": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",

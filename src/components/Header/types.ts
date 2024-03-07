@@ -1,4 +1,4 @@
-import { MouseEvent } from 'react';
+import { Dispatch, MouseEvent, SetStateAction } from 'react';
 
 export interface HeaderProps {
   isScroll?: boolean;
@@ -29,6 +29,7 @@ export interface ListItemProps {
   onClick?: () => void;
   href?: string;
   hasMenu?: boolean;
+  menu?: any;
 }
 
 export interface MenuTriggerProps {
@@ -52,9 +53,15 @@ export type ChildItemType = {
 
 export interface MobileMenuProps {
   onMenu: () => void;
+  subMenuIndex: number;
+  setSubMenuIndex: Dispatch<SetStateAction<number>>;
 }
-
 export interface SubMenuContentProps {
   childItems: ChildItemType;
   index: number;
+}
+
+export interface MobileSubMenuProps {
+  parentMenu: any; // change the type later
+  onBack: () => void;
 }

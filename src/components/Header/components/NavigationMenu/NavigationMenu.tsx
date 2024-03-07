@@ -2,7 +2,6 @@
 
 import React from 'react';
 import { getClassNames } from '@codewinglet/utils';
-import Button from '../../../Button';
 import { navMenu } from '../../constants';
 import MenuList from './MenuList';
 import useNavigation from './useNavigation';
@@ -112,12 +111,6 @@ const NavigationMenu = () => {
           </MenuItems>
         ))}
       </MenuList>
-      <Button
-        onClick={onNavigate('contact-us')}
-        className='w-[143px] border-white'
-      >
-        Contact Us
-      </Button>
     </nav>
   );
 };

@@ -1,4 +1,6 @@
-import { ChildItemType } from './types';
+// import { ChildItemType } from '.';
+
+import { ChildItemType } from '../../types';
 
 const services: ChildItemType = [
   {
@@ -23,7 +25,7 @@ const services: ChildItemType = [
   },
   {
     path: 'internet-if-things',
-    label: 'Internet of Things (IoT) ',
+    label: 'Internet of Things(IoT)',
     icon: '/assets/navigation/services/cpu.svg',
   },
   {
@@ -43,7 +45,7 @@ const services: ChildItemType = [
   },
   {
     path: 'ui-ux-development',
-    label: 'UI/UX  Development',
+    label: 'UI/UX Design & Development',
     icon: '/assets/navigation/services/uiuxDesign.svg',
   },
   {
@@ -72,14 +74,14 @@ const industries: ChildItemType = [
   },
   {
     path: 'multi-tenant-system',
-    label: 'Sustainable Solution',
+    label: 'Sustainable IoT Solution',
     description: 'Eco-friendly IoT solutions for sustainability.',
     icon: '/assets/navigation/industries/sustainable.svg',
   },
   {
     path: 'web-application-development',
     description: 'Recruit, Onboard, Manage: Simplified Workforce Software',
-    label: 'Staffing Management',
+    label: 'Staffing management',
     icon: '/assets/navigation/industries/staffing.svg',
   },
   {
@@ -103,7 +105,7 @@ const industries: ChildItemType = [
   },
   {
     path: 'qa-testing',
-    label: 'Ed-Tech',
+    label: 'Ed-tech',
     description: 'Enhancing education through digital platforms.',
     icon: '/assets/navigation/industries/edTechs.svg',
   },
@@ -115,20 +117,20 @@ const industries: ChildItemType = [
   },
   {
     path: 'custom-software-development',
-    label: 'Manufacturing & Retails',
+    label: 'Manufacturing & retails',
     description: 'Integrating IT: Inventory & Customer Management',
     icon: '/assets/navigation/industries/manufacturing.svg',
   },
   {
     path: 'web-designing',
-    label: 'Real Estate',
+    label: 'real Estate',
     description:
       'Digitalising property management, sales, and leasing processes.',
     icon: '/assets/navigation/industries/realEsate.svg',
   },
   {
     path: 'ui-component-library',
-    label: 'Travel & Hospitality',
+    label: 'Travel & hospitality',
     description: 'Streamlined booking, tailored personalized experiences.',
     icon: '/assets/navigation/industries/hospitality.svg',
   },
@@ -387,20 +389,20 @@ export const navMenu = [
     path: '',
     label: 'Services',
     children: services,
-    left: '2xl:left-[-26.4rem] xl:left-[-22.3rem]',
+    left: '2xl:left-[-25.5rem] xl:left-[-20.3rem]',
   },
   {
     path: '',
     label: 'Industries',
     children: industries,
-    left: '2xl:left-[-33rem] xl:left-[-28.9rem]',
+    left: '2xl:left-[-32.1rem] xl:left-[-26.9rem]',
   },
   {
     path: '',
     label: 'Technology',
     category: true,
     children: technology,
-    left: '2xl:left-[-40.4rem] xl:left-[-36.3rem]',
+    left: '2xl:left-[-39.5rem] xl:left-[-34.3rem]',
   },
 
   // {

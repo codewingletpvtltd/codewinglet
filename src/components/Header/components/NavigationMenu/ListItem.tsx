@@ -28,12 +28,14 @@ export const ListItem: FC<ListItemProps> = ({
             {...props}
           >
             {icon && (
-              <Image src={icon} alt='Menu Icon' width={52} height={52} />
+              <span className='flex items-center justify-center w-[52px] h-[52px] bg-bg rounded-md'>
+                <Image src={icon} alt='Menu Icon' width={28} height={28} />
+              </span>
             )}
             <div>
               <Typography
                 className={getClassNames(
-                  'font-bold capitalize ml-[16px] mb-[14px] text-[18px] !font-400 text-primary 2xl:text-subtitle1 xl:text-[14px]',
+                  'capitalize ml-[16px]  text-primary text-paragraph2 ',
                   labelClassName
                 )}
               >
@@ -106,7 +108,7 @@ export const ListItem: FC<ListItemProps> = ({
               <Typography
                 variant='subtitle1'
                 className={getClassNames(
-                  'font-bold capitalize text-[18px] font-500 text-primary mb-5',
+                  'text-paragraph2 capitalize text-primary mb-5',
                   labelClassName
                 )}
               >
@@ -127,7 +129,7 @@ export const ListItem: FC<ListItemProps> = ({
         ) : (
           <Link
             href={href as unknown as Url}
-            className='flex flex-row items-start cursor-pointer border-l border-dropBorderLeft'
+            className='flex flex-row items-start cursor-pointer border-l border-dropBorderLeft border-headerBoxBorder'
             aria-label='menu-item'
             {...props}
           >
@@ -138,7 +140,7 @@ export const ListItem: FC<ListItemProps> = ({
             <div>
               <Typography
                 className={getClassNames(
-                  'font-bold text-primary hover:text-dropdownText whitespace-nowrap ml-5 font-400 mb-5 group-last:mb-0 text-[14px]',
+                  'text-tag text-primary whitespace-nowrap ml-5  mb-5 group-last:mb-0',
                   labelClassName
                 )}
               >
