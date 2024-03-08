@@ -24,7 +24,7 @@ const MobileMenu: FC<MobileMenuProps> = ({
             <>
               <li key={item.label} className='py-5'>
                 <div
-                  className='flex justify-between md:text-subtitle1 text-paragraph1 !whitespace-nowrap'
+                  className='cursor-pointer flex justify-between md:text-subtitle1 text-paragraph1 !whitespace-nowrap'
                   onClick={() => setSubMenuIndex(index)}
                 >
                   {item.label}

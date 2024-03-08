@@ -11,10 +11,13 @@ const MobileSubMenu: FC<MobileSubMenuProps> = ({ parentMenu, onBack }) => (
         alt='arrow'
         width={22}
         height={22}
-        className=' md:w-[22px] md:h-[22px] w-[16px] h-[16px]'
+        className='cursor-pointer md:w-[22px] md:h-[22px] w-[16px] h-[16px]'
         onClick={() => onBack()}
       />
-      <div className='md:text-h5 text-subtitle1' onClick={() => onBack()}>
+      <div
+        className='cursor-pointer md:text-h5 text-subtitle1'
+        onClick={() => onBack()}
+      >
         {parentMenu.label}
       </div>
     </div>
