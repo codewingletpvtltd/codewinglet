@@ -45,12 +45,12 @@ export const techList = [
   },
   {
     id: 4,
-    image: '/assets/navigation/technology/postgreSQL.svg',
+    image: '/assets/navigation/technology/postgresql.svg',
     alt: 'PostgreSQL',
   },
   {
     id: 5,
-    image: '/assets/navigation/technology/javaScript.svg',
+    image: '/assets/navigation/technology/javascript.svg',
     alt: 'Javascript',
   },
   {
@@ -80,7 +80,7 @@ export const techList = [
   },
   {
     id: 11,
-    image: '/assets/navigation/technology/mySQL.svg',
+    image: '/assets/navigation/technology/mysql.svg',
     alt: 'mySQL',
   },
   {

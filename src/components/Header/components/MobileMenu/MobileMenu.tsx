@@ -22,9 +22,9 @@ const MobileMenu: FC<MobileMenuProps> = ({
         <ul className='pointer-events-auto'>
           {navMenu.map((item, index) => (
             <>
-              <li key={item.label} className='mb-10'>
+              <li key={item.label} className='py-5'>
                 <div
-                  className='flex justify-between md:text-subtitle1 text-paragraph1 !whitespace-nowrap'
+                  className='cursor-pointer flex justify-between md:text-subtitle1 text-paragraph1 !whitespace-nowrap'
                   onClick={() => setSubMenuIndex(index)}
                 >
                   {item.label}
@@ -57,6 +57,7 @@ const MobileMenu: FC<MobileMenuProps> = ({
         </ul>
         <div className='text-center bottom-10 w-full absolute left-0'>
           <Button
+            variant='blackOutline'
             className='border border-primary w-[315px]'
             onClick={onNavigate('contact-us')}
           >

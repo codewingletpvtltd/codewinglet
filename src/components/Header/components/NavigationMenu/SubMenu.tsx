@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Button from '@codewinglet/components/Button';
 import Typography from '@codewinglet/components/Typography';
+import { Arrow } from '@codewinglet/assets';
 import { SubMenuContentProps } from '../../types';
 
 import ListItem from './ListItem';
@@ -29,18 +30,13 @@ export const ServicesContent: FC<SubMenuContentProps> = ({
       </Typography>
       <Button variant='default' className='bg-primary w-[210px] m-[initial]'>
         <Link
-          href='#'
+          href='/contact-us'
           rel='noopener noreferrer'
           target='_blank'
           className='flex items-center justify-center gap-3'
         >
           Schedule a call
-          <Image
-            src={'/assets/icons/Arrow.svg'}
-            alt='Arrow'
-            width={16}
-            height={16}
-          />
+          <Arrow />
         </Link>
       </Button>
     </div>
@@ -69,7 +65,7 @@ export const TechnologyContent: FC<SubMenuContentProps> = ({
               key={`menu-item-${index}-${menuIdx}-${idx}`}
               icon={val.icon}
               label={val.label}
-              href={val.path ? val.path : '/not-found'}
+              href={val.path ? val.path : ''}
               hasMenu
             />
           ))}
@@ -82,18 +78,13 @@ export const TechnologyContent: FC<SubMenuContentProps> = ({
       </Typography>
       <Button variant='default' className='bg-primary w-[208px] m-[initial]'>
         <Link
-          href='#'
+          href='/contact-us'
           rel='noopener noreferrer'
           target='_blank'
           className='flex items-center justify-center gap-3'
         >
           Schedule a call
-          <Image
-            src={'/assets/icons/Arrow.svg'}
-            alt='Arrow'
-            width={16}
-            height={16}
-          />
+          <Arrow />
         </Link>
       </Button>
     </div>
@@ -132,18 +123,13 @@ export const IndustryContent: FC<SubMenuContentProps> = ({
         />
         <Button variant='default' className='w-[211px] m-[initial]'>
           <Link
-            href='#'
+            href='/contact-us'
             rel='noopener noreferrer'
             target='_blank'
             className='flex items-center justify-center gap-3'
           >
             Schedule a call
-            <Image
-              src={'/assets/icons/Arrow.svg'}
-              alt='Arrow'
-              width={16}
-              height={16}
-            />
+            <Arrow />
           </Link>
         </Button>
       </div>

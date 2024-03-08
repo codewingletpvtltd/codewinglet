@@ -7,7 +7,7 @@ export default {
     fontSize: {
       h1: ['55px', { fontWeight: 500 }],
       h1Light: ['55px', { fontWeight: 500 }],
-      h2: ['40px', { fontWeight: 500 }],
+      h2: ['40px', { fontWeight: 400 }],
       h3: ['38px', { fontWeight: 500 }],
       h4: ['30px', { fontWeight: 500 }],
       h5: ['26px', { fontWeight: 500 }],
@@ -19,6 +19,7 @@ export default {
       paragraph1Bold: ['18px', { fontWeight: 600 }],
       paragraph1: ['18px', { fontWeight: 500 }],
       paragraph1Light: ['18px', { fontWeight: 400 }],
+      paragraph1ExtraLight: ['18px', { fontWeight: 300 }],
       paragraph2: ['16px', { fontWeight: 500 }],
       paragraph2Light: ['16px', { fontWeight: 300, lineHeight: '26px' }],
       tagBold: ['14px', { fontWeight: 600 }],

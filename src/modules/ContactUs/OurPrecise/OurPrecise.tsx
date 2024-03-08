@@ -36,7 +36,11 @@ const OurPrecise = () => (
                 Gujarat 395009.
               </Typography>
               <div className='flex group cursor-pointer'>
-                <Link href='#' className='text-paragraph2 underline'>
+                <Link
+                  href='https://maps.app.goo.gl/mAtBMrDpnf58GjJNA'
+                  target='_blank'
+                  className='text-paragraph2 underline'
+                >
                   Google map
                 </Link>
                 <Image
@@ -64,19 +68,19 @@ const OurPrecise = () => (
             <div className='flex flex-col'>
               <Link
                 href='mailto:jobs@codewinglet.com'
-                className=' text-secondary text-paragraph2Light mt-5'
+                className=' text-secondary hover:text-primary text-paragraph2Light mt-5'
               >
                 jobs@codewinglet.com
               </Link>
               <Link
                 href='mailto:info@codewinglet.com'
-                className='text-secondary text-paragraph2Light mt-[15px]'
+                className='text-secondary hover:text-primary text-paragraph2Light mt-[15px]'
               >
                 info@codewinglet.com
               </Link>
               <Link
                 href='mailto:sales@codewinglet.com'
-                className='text-secondary text-paragraph2Light mt-[15px]'
+                className='text-secondary hover:text-primary text-paragraph2Light mt-[15px]'
               >
                 sales@codewinglet.com
               </Link>
@@ -97,13 +101,13 @@ const OurPrecise = () => (
             <div className='flex flex-col'>
               <Link
                 href='tel:+918160868310'
-                className=' text-secondary text-paragraph2Light mt-5'
+                className=' text-secondary hover:text-primary text-paragraph2Light mt-5'
               >
                 +91 81608 68310 (Jobs)
               </Link>
               <Link
                 href='tel:+918320111741'
-                className='text-secondary text-paragraph2Light mt-[15px]'
+                className='text-secondary hover:text-primary text-paragraph2Light mt-[15px]'
               >
                 +91 83201 11741 (Inquiry)
               </Link>
@@ -130,7 +134,11 @@ const OurPrecise = () => (
                   Gujarat 395009.
                 </Typography>
                 <div className='flex group cursor-pointer'>
-                  <Link href='#' className='text-paragraph2 underline'>
+                  <Link
+                    href='https://maps.app.goo.gl/mAtBMrDpnf58GjJNA'
+                    target='_blank'
+                    className='text-paragraph2 underline'
+                  >
                     Google map
                   </Link>
                   <Image
@@ -193,13 +201,13 @@ const OurPrecise = () => (
               <div className='relative flex sm:flex-row flex-col sm:items-center items-start sm:gap-10 gap-0 sm:after:block after:hidden after:content after:absolute after:left-[33%] after:top-5 after:bg-headerBoxBorder after:w-[1px] after:h-[22px]'>
                 <Link
                   href='tel:+918160868310'
-                  className=' text-secondary text-paragraph2Light sm:mt-5 mt-[12px]'
+                  className=' text-secondary hover:text-primary text-paragraph2Light sm:mt-5 mt-[12px]'
                 >
                   +91 81608 68310 (Jobs)
                 </Link>
                 <Link
                   href='tel:+918320111741'
-                  className='text-secondary text-paragraph2Light sm:mt-5 mt-2'
+                  className='text-secondary hover:text-primary text-paragraph2Light sm:mt-5 mt-2'
                 >
                   +91 83201 11741 (Inquiry)
                 </Link>

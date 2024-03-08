@@ -65,8 +65,7 @@ const Footer = () => {
               </Typography>
               <Link
                 className='sm:w-auto w-full'
-                href='https://calendly.com/slapani'
-                target='_blank'
+                href='/contact-us'
                 aria-label='Instagram'
               >
                 <Button
@@ -117,7 +116,7 @@ const Footer = () => {
                   {menuItem.menu.map((item) => (
                     <div key={item.id}>
                       <Typography className='text-paragraph2Light leading-normal mb-3.5 min-h-0 text-placeholderText hover:text-white'>
-                        <Link className='' href={item.path}>
+                        <Link className='' href={item?.path}>
                           {item.label}
                         </Link>
                       </Typography>
@@ -139,10 +138,12 @@ const Footer = () => {
                     height={18}
                     className='mt-1'
                   />
-                  <div className='flex flex-col'>
+                  <div className='flex flex-col gap-[4px]'>
                     <div>Contact us :</div>
-                    <Link href='tel:+918160868310'>+91 81608 68310 (Jobs)</Link>
-                    <Link href='tel:+918320111741'>
+                    <Link href='tel:+918160868310' className='hover:text-white'>
+                      +91 81608 68310 (Jobs)
+                    </Link>
+                    <Link href='tel:+918320111741' className='hover:text-white'>
                       +91 83201 11741 (Inquiry)
                     </Link>
                   </div>
@@ -156,15 +157,24 @@ const Footer = () => {
                     height={18}
                     className='mt-1'
                   />
-                  <div className='flex flex-col'>
+                  <div className='flex flex-col gap-[4px]'>
                     <div>Email us on :</div>
-                    <Link href='mailto:jobs@codewinglet.com'>
+                    <Link
+                      href='mailto:jobs@codewinglet.com'
+                      className='hover:text-white'
+                    >
                       jobs@codewinglet.com
                     </Link>
-                    <Link href='mailto:Info@codewinglet.com'>
+                    <Link
+                      href='mailto:Info@codewinglet.com'
+                      className='hover:text-white'
+                    >
                       Info@codewinglet.com
                     </Link>
-                    <Link href='mailto:sales@codewinglet.com'>
+                    <Link
+                      href='mailto:sales@codewinglet.com'
+                      className='hover:text-white'
+                    >
                       sales@codewinglet.com
                     </Link>
                   </div>
@@ -184,11 +194,15 @@ const Footer = () => {
                       A901-905, Vivanta Icon Opp. Shell Petrol Pump, Adajan,
                       Surat, Gujarat 395009.
                     </Typography>
-                    <div className='flex group cursor-pointer text-white mt-[10px] items-center'>
-                      <Link href='#' className='text-paragraph2Light underline'>
+                    <div className='flex group cursor-pointer text-white mt-[10px] items-center group'>
+                      <Link
+                        href='https://maps.app.goo.gl/6W7ns2r5VzPFGmkA8'
+                        target='_blank'
+                        className='text-paragraph2Light underline'
+                      >
                         Google map
                       </Link>
-                      <Arrow />
+                      <Arrow className='group-hover:transition-all duration-700 group-hover:translate-x-1' />
                     </div>
                   </div>
                 </Typography>

@@ -42,9 +42,8 @@ const HeroSection = () => (
           className='2xl:w-[332px] xl:w-[229px] md:w-[229px] w-[203px] block m-auto'
         >
           <Link
-            href='#'
+            href='/contact-us'
             rel='noopener noreferrer'
-            target='_blank'
             className='flex items-center justify-center gap-3'
           >
             Book a meeting
