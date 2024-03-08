@@ -13,8 +13,10 @@ const Drawer: React.FC<DrawerProps> = ({
     <div
       role='presentation'
       className={getClassNames(
-        'bg-white fixed top-[0px] right-0 b-0 animate-enterFromTop overflow-y-auto h-[100vh] transition-ease-in-out duration-700 w-full',
-        showMenu ? 'translate-x-0 w-full ' : 'translate-x-full ',
+        'bg-white fixed top-[0px] right-0 b-0 overflow-y-auto h-[100vh] transition-ease-in-out duration-500 w-full',
+        showMenu
+          ? 'translate-x-0 w-full cubic-bezier-0.59,-0.01,0.42,0.98'
+          : 'translate-x-full cubic-bezier-0.59,-0.01,0.42,0.98',
         className as string
       )}
     >

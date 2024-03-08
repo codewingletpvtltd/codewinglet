@@ -4,7 +4,7 @@ import { Accordion } from '@codewinglet/components/Accordion';
 import { MobileSubMenuProps } from '../../types';
 import MobileListItem from './MobileListItem';
 const MobileSubMenu: FC<MobileSubMenuProps> = ({ parentMenu, onBack }) => (
-  <div className='flex flex-col mx-[30px] md:mx-[38px] gap-[10px]'>
+  <div className='flex flex-col mx-[30px] md:mx-[35px] gap-[10px]'>
     <div className='flex gap-3 md:h-[90px] md:items-center h-[78px] items-center '>
       <Image
         src='/assets/icons/LeftArrow.svg'
@@ -14,7 +14,9 @@ const MobileSubMenu: FC<MobileSubMenuProps> = ({ parentMenu, onBack }) => (
         className=' md:w-[22px] md:h-[22px] w-[16px] h-[16px]'
         onClick={() => onBack()}
       />
-      <div className='md:text-h5 text-subtitle1'>{parentMenu.label}</div>
+      <div className='md:text-h5 text-subtitle1' onClick={() => onBack()}>
+        {parentMenu.label}
+      </div>
     </div>
     <ul className='pointer-events-auto'>
       <Accordion type='single' defaultValue='0' collapsible>

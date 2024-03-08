@@ -41,7 +41,7 @@ const MobileListItem: FC<ListItemProps> = ({
           <div>
             <Typography
               className={getClassNames(
-                ' capitalize md:ml-[15px] ml-[12px] text-[18px] md:text-subtitle1  text-paragraph2 text-primary',
+                ' capitalize md:ml-[15px] ml-[12px] text-[18px] md:text-subtitle2  text-paragraph2 text-primary',
                 labelClassName
               )}
             >
@@ -62,11 +62,11 @@ const MobileListItem: FC<ListItemProps> = ({
               alt='MenuDownArrow'
               width={18}
               height={18}
-              className='md:w-[22px] md:h-[22px] w-[18px] h-[18px] transition duration-200 group-hover:rotate-[180deg]'
+              className='md:w-[20px] md:h-[20px] w-[18px] h-[18px] transition duration-500 group-hover:rotate-[180deg]'
             />
           }
         >
-          <div className='md:text-subtitle1 text-paragraph1'>{label}</div>
+          <div className='md:text-subtitle2 text-paragraph1'>{label}</div>
         </AccordionTrigger>
         <AccordionContent>
           {menu ? (

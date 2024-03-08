@@ -72,7 +72,7 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
         >
           <div className='px-[30px] md:px-[35px]'>
             <div className='flex items-center max-w-[1410px] justify-between relative w-full md:ml-[-2px] mx-auto lg-auto md:h-[90px] h-auto mb-auto'>
-              <div className='flex justify-between items-center   my-[20px]'>
+              <div className='flex justify-between items-center my-[20px]'>
                 <Image
                   src={'assets/icons/LogoWhite.svg'}
                   width={20}
@@ -83,11 +83,16 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
                   loading='eager'
                 />
               </div>
-              <MenuIcon
-                isOpen={showMenu}
+              <div
                 onClick={onMenu}
-                className='!my-[0px] z-[100] justify-center'
-              />
+                className='h-[45px] w-[45px]  !my-[0px] z-[100] flex items-center justify-center absolute sm:right-[-15px] right-[-13px]'
+              >
+                <MenuIcon
+                  isOpen={showMenu}
+                  // onClick={onMenu}
+                  // className='!my-[0px] z-[100] justify-center'
+                />
+              </div>
             </div>
             <MobileMenu
               onMenu={onMenu}
