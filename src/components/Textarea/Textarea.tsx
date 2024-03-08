@@ -28,15 +28,25 @@ const Textarea: React.FC<TextareaProps> = ({
           )}
         >
           {label}
-          {required && <span className='text-error'>*</span>}
+          {required && (
+            <span
+              className={getClassNames(
+                '',
+                error ? 'text-error' : 'text-primary'
+              )}
+            >
+              *
+            </span>
+          )}
         </label>
       )}
       <div className='inline-block'>
         <textarea
+          autoComplete='off'
           id={rest.id || inputId}
           disabled={disabled}
           className={getClassNames(
-            'rounded-none border-solid border-b border-dropdownText placeholder:text-placeholderText bg-transparent  pt-[10px] w-[200px] sm:text-paragraph1 text-tag focus:outline-none focus:border-primary',
+            'rounded-none border-solid border-b border-dropdownText placeholder:text-placeholderText bg-transparent  pt-[10px] w-[200px] sm:text-paragraph1ExtraLight text-tag focus:outline-none focus:border-primary',
             error ? 'border-error' : 'border-gray',
             disabled ? 'pointer-events-none bg-gray' : '',
             fullWidth ? 'w-full' : ''

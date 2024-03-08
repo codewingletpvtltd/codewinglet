@@ -34,7 +34,7 @@ const NavigationMenu = () => {
             <MenuTrigger
               label={item.label}
               showIcon={!!item.children}
-              href={item.path || '/not-found'}
+              href={item.path || ' '}
               hasChild={
                 item.children && item.children.length > 0 ? true : false
               }

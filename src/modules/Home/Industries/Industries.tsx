@@ -103,9 +103,8 @@ const ContactUs = () => (
         variant='blackOutline'
       >
         <Link
-          href='#'
+          href='/contact-us'
           rel='noopener noreferrer'
-          target='_blank'
           className='text-primary group-hover:text-white text-center flex items-center justify-center gap-3'
         >
           Talk to our industry expert

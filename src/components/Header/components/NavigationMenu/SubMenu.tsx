@@ -65,7 +65,7 @@ export const TechnologyContent: FC<SubMenuContentProps> = ({
               key={`menu-item-${index}-${menuIdx}-${idx}`}
               icon={val.icon}
               label={val.label}
-              href={val.path ? val.path : '/not-found'}
+              href={val.path ? val.path : ''}
               hasMenu
             />
           ))}

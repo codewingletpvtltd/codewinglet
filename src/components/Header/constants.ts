@@ -418,7 +418,6 @@ export const navMenu = [
     left: 'left-[-50px]',
   },
   {
-    path: '/not-found',
     label: 'Blogs',
   },
   {
