@@ -30,7 +30,7 @@ const AboutUs = () => (
             <Statistics />
             <div>
               <AboutUsCard
-                image={'/assets/AboutUs/building.png'}
+                image={'/assets/AboutUs/vision.png'}
                 title='Vision, Mission, Excellence'
                 description='Guided by Vision, Driven by Mission: Crafting 
                 Excellence Together'
@@ -40,13 +40,13 @@ const AboutUs = () => (
         </div>
         <div className='2xl:lg:w-[30%] xl:lg:w-[37%] lg:w-full !md:w-6/12 w-full 2xl:block xl:flex md:flex-col md:items-end lg:block md:flex block last:mb-0 lg:relative md:absolute sm:relative md:bottom-0 md:right-0  md:top-[32%] lg:gap-0 md:gap-[18px] gap-0'>
           <AboutUsCard
-            image={'/assets/AboutUs/pioneering.png'}
+            image={'/assets/AboutUs/integrity.png'}
             title='Integrity, Quality, Trust: Our Commitment'
             description='Dedicated to delivering value-based service 
             founded on ethics and trustworthiness.'
           />
           <AboutUsCard
-            image={'/assets/AboutUs/crafting.png'}
+            image={'/assets/AboutUs/solution.png'}
             title='Crafting Reliable Solution, Ensuring Seamless Experiences'
             description='Delivering secure, reliable software for seamless 
             business experiences'
