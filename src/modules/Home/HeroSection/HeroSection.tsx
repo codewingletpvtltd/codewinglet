@@ -6,7 +6,20 @@ import './herosection.css';
 import { Arrow } from '@codewinglet/assets';
 import { techList } from './utils';
 
-const sequence = ['EdTech', 'E-Commerce', 'Healthcare', 'Real Estate', 'CRM'];
+const sequence = [
+  'Waste Management',
+  'Sustainable Solution',
+  'Staffing Management',
+  'E-commerce',
+  'Healthcare',
+  'Logistics',
+  'EdTech',
+  'Fintech',
+  'Manufacturing & Retails',
+  'Real Estate',
+  'Travel & Hospitality',
+  'Media & Entertainment',
+];
 
 const HeroSection = () => (
   <div className='relative bg-transparent mb-0 h-[calc(100vh-78px)] mt-[78px] flex flex-col justify-between hero'>
