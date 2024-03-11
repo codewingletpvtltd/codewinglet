@@ -62,6 +62,12 @@ input[type='number']::-webkit-outer-spin-button {
   }
 }
 
+@media only screen and (min-width: 1980px) {
+  .professional-img {
+    width: 15% !important;
+  }
+}
+
 @media only screen and (min-width: 1600px) {
   .container {
     max-width: 1410px;
@@ -148,6 +154,9 @@ input[type='number']::-webkit-outer-spin-button {
   .footerTitle {
     padding-left: 0 !important;
   }
+  .process-card h1 {
+    margin-bottom: 10px;
+  }
   .address svg {
     width: 14.4%;
   }
@@ -159,6 +168,9 @@ input[type='number']::-webkit-outer-spin-button {
 
   .footerTitle {
     padding-left: 0 !important;
+  }
+  .process-card h1 {
+    margin-bottom: 10px;
   }
   .address svg {
     width: 14.4%;

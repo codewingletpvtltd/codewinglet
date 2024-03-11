@@ -7,37 +7,37 @@ const process = [
     number: '01',
     title: 'Requirement Analysis',
     description:
-      'Understand your needs, objectives, and the challenges the software aims, to address.',
+      'We carefully analyze your ideas and needs to improve your strategic plan with valuable suggestions and feature requests.',
   },
   {
     number: '02',
-    title: 'Planning& Design',
+    title: 'Planning & Design',
     description:
-      'Understand your needs, objectives, and the challenges the software aims, to address.',
+      'We apply what weve learned from evaluating your requirements to plan how your digital project will function.',
   },
   {
     number: '03',
     title: 'Development',
     description:
-      'Understand your needs, objectives, and the challenges the software aims, to address.',
+      'We use the latest tech to craft code that suits your goals and audience, guaranteeing top-notch performance.',
   },
   {
     number: '04',
-    title: 'Testing and QA',
+    title: 'QA Testing',
     description:
-      'Understand your needs, objectives, and the challenges the software aims, to address.',
+      'We thoroughly test across platforms to address your needs, employing regression and integration testing.',
   },
   {
     number: '05',
     title: 'Deployment',
     description:
-      'Understand your needs, objectives, and the challenges the software aims, to address.',
+      'After successful QA testing and user acceptance, we proceed confidently to the deployment phase.',
   },
   {
     number: '06 ',
-    title: 'Maintenance & Support',
+    title: 'Support & Maintenance ',
     description:
-      'Understand your needs, objectives, and the challenges the software aims, to address.',
+      'Our commitment extends beyond deployment, encompassing ongoing maintenance and support.',
   },
 ];
 
@@ -55,10 +55,10 @@ const ContactUs = () => (
         headingClassName=''
       />
 
-      <div className='grid sm:gap-[30px] gap-2.5 lg:grid-cols-3 grid-cols-2 lg:mt-[50px] md:mt-10 mt-5 process-card'>
+      <div className='grid sm:gap-[30px] gap-2.5 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:mt-[50px] md:mt-10 mt-5 process-card'>
         {process.map((card) => (
           <>
-            <div className='soft-card xl:p-10 lg:p-7 md:p-8 sm:p-5 p-2.5 bg-white hover:bg-primary hover:text-white'>
+            <div className='soft-card xl:p-[38px] lg:p-7 md:p-8 sm:p-5 p-5 bg-white hover:bg-primary hover:text-white'>
               <Typography
                 variant='h1'
                 className='soft-head leading-[50px] relative after:content after:absolute lg:after:bottom-2.5 md:after:bottom-[12px] after:bottom-2.5 lg:after:left-[70px] md:after:left-[55px] sm:after:left-[70px] after:left-[60px] after:w-[30px] after:h-[2px] after:bg-primary hover:after:bg-white after:duration-[0.9s] after:transition-all after:ease-in'
