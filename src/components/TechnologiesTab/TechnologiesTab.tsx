@@ -1,6 +1,5 @@
 'use client';
 import React from 'react';
-import '../../modules/Home/OurServices/scss/main.css';
 
 interface AccordCompProps {
   title: string;
