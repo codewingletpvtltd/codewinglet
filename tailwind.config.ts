@@ -25,6 +25,7 @@ export default {
       tagBold: ['14px', { fontWeight: 600 }],
       tag: ['14px', { fontWeight: 500 }],
       tagLight: ['14px', { fontWeight: 300 }],
+      tagExtraLight: ['12px', { fontWeight: 400 }],
     },
     colors: {
       primary: '#141414',

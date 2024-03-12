@@ -21,25 +21,23 @@ const MobileMenu: FC<MobileMenuProps> = ({
       <div className='flex flex-col  gap-[10px] z-40 '>
         <ul className='pointer-events-auto'>
           {navMenu.map((item, index) => (
-            <>
-              <li key={item.label} className='py-5'>
-                <div
-                  className='cursor-pointer flex justify-between md:text-subtitle1 text-paragraph1 !whitespace-nowrap'
-                  onClick={() => setSubMenuIndex(index)}
-                >
-                  {item.label}
+            <li key={item.label} className='py-5'>
+              <div
+                className='cursor-pointer flex justify-between md:text-subtitle1 text-paragraph1 !whitespace-nowrap'
+                onClick={() => setSubMenuIndex(index)}
+              >
+                {item.label}
 
-                  {item.children && (
-                    <Image
-                      src='/assets/icons/RightArrow.svg'
-                      alt='RightArrow'
-                      width={16}
-                      height={16}
-                    />
-                  )}
-                </div>
-              </li>
-            </>
+                {item.children && (
+                  <Image
+                    src='/assets/icons/RightArrow.svg'
+                    alt='RightArrow'
+                    width={16}
+                    height={16}
+                  />
+                )}
+              </div>
+            </li>
           ))}
 
           <Drawer
