@@ -19,7 +19,6 @@ const Technologies = () => (
         descriptionClassName=''
       />
       <Services />
-
       <Button
         className='w-[231px] lg:block m-auto text-center md:hidden block group bg-bg'
         variant='blackOutline'
