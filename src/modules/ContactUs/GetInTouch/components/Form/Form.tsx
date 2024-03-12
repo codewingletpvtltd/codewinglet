@@ -12,7 +12,7 @@ const Form: FC<FormProps> = ({ formData, onChangeFormData, onSubmit }) => (
         fullWidth
         label='Full name'
         required
-        placeholder='John Williams'
+        placeholder='Enter your full name'
         value={formData.name}
         onChange={(e) => onChangeFormData({ name: e.target.value })}
         helperText={formData.errors.name}
@@ -21,7 +21,7 @@ const Form: FC<FormProps> = ({ formData, onChangeFormData, onSubmit }) => (
       <TextField
         fullWidth
         label='Email'
-        placeholder='john@example.com'
+        placeholder='Enter your email'
         value={formData.email}
         required
         onChange={(e) => onChangeFormData({ email: e.target.value })}

@@ -56,7 +56,7 @@ const MobileMenu: FC<MobileMenuProps> = ({
         <div className='text-center bottom-10 w-full absolute left-0'>
           <Button
             variant='blackOutline'
-            className='border border-primary w-[315px]'
+            className='border border-primary md:w-[409px] w-[315px]'
             onClick={onNavigate('contact-us')}
           >
             Contact Us

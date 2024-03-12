@@ -70,9 +70,12 @@ const ContactUs = () => (
   <section className='bg-white xl:py-20 lg:py-14 md:py-[60px] py-10'>
     <div className='container w-full lg:px-[15px] sm:px-[30px] px-[15px] mx-auto'>
       <SectionHeader
-        title={<>Industries We Serve</>}
+        title={<>Industries we work</>}
         description={
-          <>Diverse Industry Experience to accelerate Your Business Outcomes</>
+          <>
+            Diverse industry experience to accelerate your business outcomes
+            industries
+          </>
         }
         headingClassName=''
       />

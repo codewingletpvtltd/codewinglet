@@ -60,8 +60,8 @@ const Footer = () => {
             />
             <hr className='lg:hidden block w-full border-[#575757] md:my-10 my-5' />
             <div className='flex items-center relative flex-col sm:flex-row md:gap-0 gap-3.5'>
-              <Typography className='footerTitle lg:text-h5 md:text-subtitle2 leading-[1.4] text-paragraph2Light 2xl:pl-[260px] xl:pl-[180px] pl-0 relative md:after:content lg:after:block after:hidden after:absolute 2xl:after:left-60 xl:after:left-40 after:top-2 after:bg-white after:w-[0.1rem] 2xl:after:h-[3.5rem] 2xl:h-[3.5rem] xl:h-[3rem] lg:after:h-[3.6rem] after:h-[3.5rem]'>
-                Do you want to talk more about the project? Reach out to us
+              <Typography className='footerTitle lg:text-h5 md:text-subtitle2 leading-[1.4] text-paragraph2Light 2xl:pl-[190px] xl:pl-[230px] pl-0 relative md:after:content lg:after:block after:hidden after:absolute 2xl:after:left-40 xl:after:left-52 after:top-2 after:bg-white after:w-[0.1rem] 2xl:after:h-[3.5rem] 2xl:h-[3.5rem] xl:h-[3rem] lg:after:h-[3.6rem] after:h-[3.5rem]'>
+                Have a project in mind but need some guidance? Reach out to us
               </Typography>
               <Link
                 className='sm:w-auto w-full'
@@ -139,7 +139,7 @@ const Footer = () => {
                     className='mt-1'
                   />
                   <div className='flex flex-col gap-[4px]'>
-                    <div>Contact us :</div>
+                    <div className='text-white'>Contact us :</div>
                     <Link href='tel:+918160868310' className='hover:text-white'>
                       +91 81608 68310 (Jobs)
                     </Link>
@@ -158,7 +158,7 @@ const Footer = () => {
                     className='mt-1'
                   />
                   <div className='flex flex-col gap-[4px]'>
-                    <div>Email us on :</div>
+                    <div className='text-white'>Email us on :</div>
                     <Link
                       href='mailto:jobs@codewinglet.com'
                       className='hover:text-white'
@@ -189,9 +189,9 @@ const Footer = () => {
                     className='mt-1 md:w-[37]'
                   />
                   <div className='flex flex-col'>
-                    <div>Address :</div>
+                    <div className='text-white'>Address :</div>
                     <Typography className='xl:pr-0 lg:pr-[230px] pr-0'>
-                      A901-905, Vivanta Icon Opp. Shell Petrol Pump, Adajan,
+                      A901-905, Vivanta Icon, Opp. Shell Petrol Pump, Adajan,
                       Surat, Gujarat 395009.
                     </Typography>
                     <div className='flex group cursor-pointer text-white mt-[10px] items-center group'>

@@ -39,12 +39,13 @@ const GetInTouch = () => {
                 alt='google'
               />
               <Image
-                src={'/assets/ContactUs/upWork.svg'}
-                width={111}
+                src={'/assets/ContactUs/glassdoor.svg'}
+                width={165}
                 height={83}
-                alt='upWork'
+                alt='glassdoor'
               />
             </div>
+
             <div className='lg:block hidden'>
               <Typography className='text-subtitle2 mb-[25px]'>
                 Follow us in media :

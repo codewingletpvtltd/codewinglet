@@ -45,12 +45,9 @@ const ContactUs = () => (
   <section className='relative xl:py-20 md:py-[60px] py-10 bg-bg'>
     <div className='container w-full lg:px-[15px] sm:px-[30px] px-[15px] mx-auto'>
       <SectionHeader
-        title={<>Our Work Process</>}
+        title={<>Our work process</>}
         description={
-          <>
-            Here, we make almost every genre of applications. You name it and we
-            build it.
-          </>
+          <>Our process proves our expertise and commitment to excellence.</>
         }
         headingClassName=''
       />
@@ -58,7 +55,7 @@ const ContactUs = () => (
       <div className='grid sm:gap-[30px] gap-2.5 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:mt-[50px] md:mt-10 mt-5 process-card'>
         {process.map((card) => (
           <>
-            <div className='soft-card xl:p-[38px] lg:p-7 md:p-8 sm:p-5 p-5 bg-white hover:bg-primary hover:text-white'>
+            <div className='soft-card 2xl:p-10 xl:p-[35px] lg:p-7 md:p-5 sm:p-5 p-5 bg-white hover:bg-primary hover:text-white'>
               <Typography
                 variant='h1'
                 className='soft-head leading-[50px] relative after:content after:absolute lg:after:bottom-2.5 md:after:bottom-[12px] after:bottom-2.5 lg:after:left-[70px] md:after:left-[55px] sm:after:left-[70px] after:left-[60px] after:w-[30px] after:h-[2px] after:bg-primary hover:after:bg-white after:duration-[0.9s] after:transition-all after:ease-in'
