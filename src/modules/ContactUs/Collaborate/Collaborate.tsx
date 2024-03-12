@@ -23,11 +23,11 @@ const Collaborate = () => (
             alt='Arrow'
             width={600}
             height={630}
-            className='absolute bottom-0 2xl:w-[19%] xl:w-[28%] lg:block hidden'
+            className='professional-img absolute bottom-0 2xl:w-[21%] xl:w-[28%] lg:block hidden'
           />
         </div>
 
-        <div className='relative 2xl:w-[1024px] xl:w-[800px] 2xl:pl-[30px] xl:pl-0'>
+        <div className='relative 2xl:pl-[15%] xl:pl-[15%]'>
           <SectionHeader
             title={<>Collaborate with our experts for professional guidance</>}
             headingClassName='text-white lg:pr-20 lg:text-left sm:text-center text-left'
