@@ -1,14 +1,5 @@
 'use client';
 import { useState } from 'react';
-import Link from 'next/link';
-import { Arrow } from '@codewinglet/assets';
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-  Button,
-} from '@codewinglet/components';
 import ServiceData from './constants';
 import Content from './components/Content';
 
@@ -24,46 +15,42 @@ const Technologies = () => {
   return (
     <>
       {/* DESKTOP */}
-      <div className='xl:flex mt-[50px] gap-16 lg:block hidden'>
-        <ul className='2xl:w-[18%] border-l border-secondary grid'>
+      <div className='xl:flex lg:mt-[50px] mt-10 gap-16'>
+        <ul className='2xl:w-[18%] w-full lg:border-l lg:border-b-0 border-b border-secondary lg:grid flex lg:gap-0 gap-[20px] md:overscroll-none overflow-y-auto [-ms-overflow-style:_none;] [scrollbar-width:_none;]'>
           {ServiceData.map((service, i) => (
             <li
               key={service.title}
               onClick={() => handleChangeIndex(i)}
-              className={`text-subtitle2Light pl-[30px] ${
+              className={`lg:text-subtitle2Light md:text-paragraph2Light text-tagLight lg:pl-[30px] flex-shrink-0 ${
                 i === selectedIndex
-                  ? 'text-white !text-subtitle2 relative after:content after:absolute after:w-[1px] after:bg-white after:h-[36px] after:top-0 after:left-0'
+                  ? 'text-white !lg:text-subtitle2Light md:text-paragraph2Light text-tagLight relative after:content after:absolute lg:after:w-[1px] after:w-full after:bg-white lg:after:h-[36px] after:h-[1px] lg:after:top-0 after:bottom-0 after:left-0'
                   : 'text-secondary'
-              }  pb-[25px] last:pb-0 cursor-pointer flex items-center justify-between `}
+              }  lg:pb-[25px] pb-3 lg:last:pb-0 cursor-pointer flex items-center justify-between `}
             >
               {service.title}
             </li>
           ))}
         </ul>
-        <div className='2xl:w-[82%]'>
+        <div className='lg:w-[82%] w-full'>
           <Content service={service} />
         </div>
       </div>
 
       {/* TABLET */}
-      <div className='lg:hidden block md:mt-[50px] mt-5 gap-20 mb-[50px]'>
+      {/* <div className='lg:hidden block md:mt-[50px] mt-5 gap-20 mb-[50px]'>
         <Accordion type='single' defaultValue='IT Consulting' collapsible>
           <ul className=''>
             {ServiceData.map((service, i) => (
               <AccordionItem key={service.title} value={service.title}>
-                <AccordionTrigger
-                  className='[&[data-state=open]>svg]:rotate-[45deg] border-b border-headerBoxBorder !pb-0'
-                  icon={
-                    <Arrow className='w-[21px] h-[21px] transition duration-500 group-hover:rotate-[45deg]' />
-                  }
-                >
+                <AccordionTrigger className='flex'>
                   <li
+                    key={service.title}
                     onClick={() => handleChangeIndex(i)}
-                    className={`md:text-subtitle2Light text-paragraph2Light ${
+                    className={`text-subtitle2Light pl-[30px] ${
                       i === selectedIndex
-                        ? 'text-primary md:!text-subtitle2 !text-paragraph2'
+                        ? 'text-white !text-subtitle2 relative after:content after:absolute after:w-[1px] after:bg-white after:h-[36px] after:top-0 after:left-0'
                         : 'text-secondary'
-                    }  py-[22px] cursor-pointer flex items-center justify-between`}
+                    }  pb-[25px] last:pb-0 cursor-pointer flex items-center justify-between `}
                   >
                     {service.title}
                   </li>
@@ -75,23 +62,7 @@ const Technologies = () => {
             ))}
           </ul>
         </Accordion>
-      </div>
-
-      <div className='lg:hidden md:block hidden'>
-        <Button
-          className='lg:w-[231px] md:w-[333px] lg:block m-auto text-center block group bg-bg'
-          variant='blackOutline'
-        >
-          <Link
-            href='/contact-us'
-            rel='noopener noreferrer'
-            className='text-primary group-hover:text-white text-center flex items-center justify-center gap-3'
-          >
-            Book a meeting
-            <Arrow />
-          </Link>
-        </Button>
-      </div>
+      </div> */}
     </>
   );
 };
