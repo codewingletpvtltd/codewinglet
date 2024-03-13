@@ -7,7 +7,7 @@ const AboutUs = () => (
     <div className='container w-full lg:px-[15px] sm:px-[30px] px-[20px] mx-auto'>
       <SectionHeader
         title={<>About us</>}
-        description={<>Future of Your Digital Destiny</>}
+        description={<>Future of your digital destiny</>}
         headingClassName='text-white'
         descriptionClassName='text-white'
       />
@@ -26,14 +26,14 @@ const AboutUs = () => (
             driving unparalleled growth and success.
           </Typography>
 
-          <div className='lg:flex block justify-between 2xl:items-center xl:items-start 2xl:mt-[60px] xl:mt-[50px] md:mt-[30px] mt-0 lg:w-full md:w-6/12 w-full'>
+          <div className='lg:flex block justify-between 2xl:items-center xl:items-start 2xl:mt-[60px] xl:mt-[30px] md:mt-[30px] mt-0 lg:w-full md:w-6/12 w-full'>
             <Statistics />
             <div>
               <AboutUsCard
                 image={'/assets/AboutUs/vision.png'}
                 title='Vision, Mission, Excellence'
-                description='Guided by Vision, Driven by Mission: Crafting 
-                Excellence Together'
+                description='Guided by vision, driven by mission: Crafting 
+                excellence together'
               />
             </div>
           </div>

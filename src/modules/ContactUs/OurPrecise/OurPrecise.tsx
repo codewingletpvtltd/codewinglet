@@ -12,7 +12,7 @@ const OurPrecise = () => (
           <SectionHeader
             title={<>Our Precise Location</>}
             description={
-              <>Step in our vibrant work environ -ment where innovation.</>
+              <>Reach out today to explore how we can empower your business.</>
             }
             descriptionClassName='sm:!text-subtitle2Light text-tagLight lg:!mt-[25px] mt-0 leading-normal'
           />

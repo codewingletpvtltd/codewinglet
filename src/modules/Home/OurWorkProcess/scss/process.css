@@ -1,7 +1,5 @@
 .soft-card:hover .soft-head {
-  -webkit-text-stroke-width: 0;
-  -webkit-text-stroke-color: transparent;
-  color: #fff;
+  -webkit-text-stroke-color: #fff;
 }
 .soft-card:hover .soft-head::after {
   background: #fff;

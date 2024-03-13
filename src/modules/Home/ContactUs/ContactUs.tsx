@@ -16,7 +16,7 @@ const ContactUs = () => {
             <SectionHeader
               title={<>Contact Us</>}
               description={
-                <>Shape Your Digital Destiny with Codewinglet, today!</>
+                <>Shape your digital destiny with codewinglet, today!</>
               }
             />
             <Typography className='leading-9 mt-10 mb-[100px] text-subtitle1Light text-secondary hidden lg:block'>
@@ -24,18 +24,18 @@ const ContactUs = () => {
               you in achieving your goals through digital transformation,
               product outsourcing, or staff augmentation.
             </Typography>
-            <div className='hidden relative lg:flex gap-[160px] mb-[60px] after:content after:absolute after:top-[12px] 2xl:after:left-[30%] xl:after:left-[31%] after:w-[1px] after:h-[57px] after:bg-headerBoxBorder'>
-              <Image
-                src={'/assets/ContactUs/upWork.svg'}
-                width={111}
-                height={83}
-                alt='upWork'
-              />
+            <div className='hidden relative lg:flex gap-[100px] mb-[60px] after:content after:absolute after:top-[12px] 2xl:after:left-[32%] xl:after:left-[34%] after:w-[1px] after:h-[57px] after:bg-headerBoxBorder'>
               <Image
                 src={'/assets/ContactUs/google.svg'}
                 width={165}
                 height={83}
                 alt='google'
+              />
+              <Image
+                src={'/assets/ContactUs/glassdoor.svg'}
+                width={165}
+                height={83}
+                alt='glassdoor'
               />
             </div>
             <div className='hidden lg:block'>
@@ -108,7 +108,7 @@ const ContactUs = () => {
               />
             </div>
           </div>
-          <Typography className='leading-9 mt-10 text-subtitle1Light text-secondary hidden md:block lg:hidden'>
+          <Typography className='leading-9 mt-10 text-subtitle2Light text-secondary hidden md:block lg:hidden'>
             Tell us about your project and discover how our experts can assist
             you in achieving your goals through digital transformation, product
             outsourcing, or staff augmentation.
