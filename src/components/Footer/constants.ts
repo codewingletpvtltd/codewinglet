@@ -275,8 +275,7 @@ export const companyTermsMenu = [
   },
   {
     id: 2,
-    // path: '/privacy-policy',
-    path: '',
+    path: '/privacy-policy',
     label: 'Privacy Policy',
   },
 ];
