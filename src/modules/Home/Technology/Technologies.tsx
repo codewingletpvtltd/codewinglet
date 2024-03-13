@@ -35,34 +35,6 @@ const Technologies = () => {
           <Content service={service} />
         </div>
       </div>
-
-      {/* TABLET */}
-      {/* <div className='lg:hidden block md:mt-[50px] mt-5 gap-20 mb-[50px]'>
-        <Accordion type='single' defaultValue='IT Consulting' collapsible>
-          <ul className=''>
-            {ServiceData.map((service, i) => (
-              <AccordionItem key={service.title} value={service.title}>
-                <AccordionTrigger className='flex'>
-                  <li
-                    key={service.title}
-                    onClick={() => handleChangeIndex(i)}
-                    className={`text-subtitle2Light pl-[30px] ${
-                      i === selectedIndex
-                        ? 'text-white !text-subtitle2 relative after:content after:absolute after:w-[1px] after:bg-white after:h-[36px] after:top-0 after:left-0'
-                        : 'text-secondary'
-                    }  pb-[25px] last:pb-0 cursor-pointer flex items-center justify-between `}
-                  >
-                    {service.title}
-                  </li>
-                </AccordionTrigger>
-                <AccordionContent className='border-remove'>
-                  <Content service={service} />
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </ul>
-        </Accordion>
-      </div> */}
     </>
   );
 };

@@ -18,27 +18,27 @@ const Content: FC<ContentProps> = ({ service }) => (
       <Typography className='text-subtitle1 relative after:content after:absolute after:w-[40px] after:h-[2px] after:left-0 after:bg-primary after:bottom-[-8px]'>
         {service.title}
       </Typography>
-      <div className='flex items-center gap-2'>
+      {/* <div className='flex items-center gap-2'>
         <Link href={service.path} className='underline text-paragraph2'>
           View more
         </Link>
         <Arrow className='w-[18px] h-[18px] rotate-[315deg]' />
-      </div>
+      </div> */}
     </div>
     <Typography className='lg:text-paragraph1ExtraLight md:text-paragraph2Light text-secondary pb-[50px] lg:block hidden'>
       {service.description}
     </Typography>
 
     <div className='lg:hidden flex items-start justify-between pt-[15px]'>
-      <Typography className='lg:text-paragraph1ExtraLight md:text-paragraph2Light text-tagExtraLight text-secondary md:pb-10 pb-[30px] md:w-[78%] w-[65%]'>
+      <Typography className='lg:text-paragraph1ExtraLight md:text-paragraph2Light text-tagExtraLight text-secondary md:pb-10 pb-[30px] w-full'>
         {service.description}
       </Typography>
-      <Link
+      {/* <Link
         href={service.path}
         className='underline md:text-paragraph2 text-tagExtraLight md:w-[15%] w-[23%]'
       >
         View more
-      </Link>
+      </Link> */}
     </div>
 
     <Typography className='md:text-paragraph1Light text-tag lg:mb-5 md:mb-[15px] mb-3'>
