@@ -4,7 +4,7 @@ import { Button, SectionHeader } from '@codewinglet/components';
 import { Arrow } from '@codewinglet/assets';
 import Services from './Services';
 
-const Technologies = () => (
+const OurService = () => (
   <section className='xl:py-20 lg:py-14 py-10 bg-bg'>
     <section className='container w-full lg:px-[15px] sm:px-[30px] px-[15px] mx-auto'>
       <SectionHeader
@@ -36,4 +36,4 @@ const Technologies = () => (
   </section>
 );
 
-export default Technologies;
+export default OurService;
