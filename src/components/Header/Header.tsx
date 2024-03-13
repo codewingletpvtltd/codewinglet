@@ -33,6 +33,8 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
           ? 'bg-primary'
           : pathName === '/privacy-policy'
           ? 'bg-primary'
+          : pathName === '/terms-and-conditions'
+          ? 'bg-primary'
           : 'bg-transparent'
       )}
     >

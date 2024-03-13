@@ -81,7 +81,7 @@ const PrivacyPolicy = () => {
         <div className='container w-full lg:px-[15px] sm:px-[30px] px-[20px] mx-auto lg:pt-0 md:pt-[280px] pt-[200px] relative pb-1'>
           <div className='lg:flex block gap-[50px] items-start'>
             <ScrollHighlightNavbar navHeader={PolicyData} />
-            <div className='lg:w-[68%] w-full'>
+            <div className='2xl:w-[65%] xl:w-[60%] w-full'>
               {/* Introduction : */}
               <div id='introduction' ref={introductionRef}>
                 <Typography className='text-subtitle2 border-b border-headerBoxBorder pb-[15px]'>

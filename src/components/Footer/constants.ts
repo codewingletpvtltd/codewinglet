@@ -269,8 +269,7 @@ export const companyMenu = [
 export const companyTermsMenu = [
   {
     id: 1,
-    // path: '/terms-and-conditions',
-    path: '',
+    path: '/terms-and-conditions',
     label: 'Terms & Conditions',
   },
   {
