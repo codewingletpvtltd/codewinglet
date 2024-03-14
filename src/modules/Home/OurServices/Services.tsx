@@ -60,7 +60,11 @@ const Services = () => {
                   onClick={() => handleChangeIndex(i)}
                   className='[&[data-state=open]>svg]:rotate-[45deg] border-b border-headerBoxBorder !pb-0 group '
                   icon={
-                    <Arrow className='w-[21px] h-[21px] transition duration-500 group-hover:rotate-[45deg]' />
+                    <Arrow
+                      className={`w-[21px] h-[21px] transition duration-500 group-hover:rotate-[45deg] ${
+                        i === selectedIndex ? 'text-primary' : 'text-secondary'
+                      } `}
+                    />
                   }
                 >
                   <li

@@ -172,6 +172,9 @@ input[type='number']::-webkit-outer-spin-button {
   }
   .process-card h1 {
     margin-bottom: 10px;
+    font-size: 26px;
+    -webkit-text-stroke-width: 2px;
+    line-height: normal;
   }
   .address svg {
     width: 14.4%;

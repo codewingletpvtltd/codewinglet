@@ -1,3 +1,4 @@
+'use client';
 import { FC } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -6,7 +7,7 @@ import { Arrow } from '@codewinglet/assets';
 import { ContentProps } from '../types';
 
 const Content: FC<ContentProps> = ({ service }) => (
-  <div className='bg-white lg:p-10 p-5 transition-transform duration-500 ease-in [will-change:_top;] 2xl:w-[690px] xl:w-auto'>
+  <div className='bg-white lg:p-10 p-5 transition-transform duration-500 ease-in [will-change:_top;] 2xl:w-[690px] 2xl:h-[887px] xl:h-[887px] xl:w-auto'>
     <Image
       src={service.img}
       width={900}
@@ -44,7 +45,7 @@ const Content: FC<ContentProps> = ({ service }) => (
     <Typography className='md:text-paragraph1Light text-tag lg:mb-5 md:mb-[15px] mb-3'>
       Service Included :
     </Typography>
-    <div className='flex flex-wrap gap-5'>
+    <div className='flex flex-wrap md:gap-5 gap-[15px]'>
       {service.subService.map((subService) => (
         <Button
           key={subService.label}

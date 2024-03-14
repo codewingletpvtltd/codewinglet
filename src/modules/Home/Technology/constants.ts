@@ -137,10 +137,10 @@ const TechnologyData = [
   },
   {
     img: '/assets/Technologies/hireDeveloper.png',
-    title: 'DevOps/Cloud',
+    title: 'DevOps',
     description:
       'Collaborate better with us for our modern Dev services and upscale your cloud solutions with continuous delivery models through reliable interfaces Codewinglet’s expert in Cloud Engineering helps enterprises craft large-scale cloud infrastructures faster, without the complexities of implementation.',
-    mainTitle: 'DevOps/Cloud',
+    mainTitle: 'DevOps',
     path: '',
 
     subService: [

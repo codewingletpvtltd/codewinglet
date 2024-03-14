@@ -38,7 +38,7 @@ const AboutUs = () => (
             </div>
           </div>
         </div>
-        <div className='2xl:lg:w-[30%] xl:lg:w-[37%] lg:w-full !md:w-6/12 w-full 2xl:block xl:flex md:flex-col md:items-end lg:block md:flex block last:mb-0 lg:relative md:absolute sm:relative md:bottom-0 md:right-0  md:top-[32%] lg:gap-0 md:gap-[25px] gap-0'>
+        <div className='2xl:lg:w-[30%] xl:lg:w-[37%] lg:w-full !md:w-6/12 w-full 2xl:block xl:flex md:flex-col md:items-end lg:block flex flex-col last:mb-0 lg:relative md:absolute sm:relative md:bottom-0 md:right-0  md:top-[32%] lg:gap-0 md:gap-[18px] gap-5 md:mt-0 mt-5'>
           <AboutUsCard
             image={'/assets/AboutUs/integrity.png'}
             title='Integrity, Quality, Trust: Our Commitment'

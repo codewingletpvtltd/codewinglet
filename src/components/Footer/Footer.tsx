@@ -130,7 +130,7 @@ const Footer = () => {
                 Get in touch
               </Typography>
               <div className='lg:block md:grid md:grid-cols-2 block'>
-                <Typography className='text-paragraph2Light leading-normal mb-3.5 min-h-0 text-placeholderText flex gap-3 items-start lg:order-1 md:order-2'>
+                <Typography className='text-paragraph2Light leading-normal mb-5 min-h-0 text-placeholderText flex gap-3 items-start lg:order-1 md:order-2'>
                   <Image
                     src={'/assets/icons/CallIcon.svg'}
                     alt='CallIcon'
@@ -149,7 +149,7 @@ const Footer = () => {
                   </div>
                 </Typography>
 
-                <Typography className='text-paragraph2Light leading-normal lg:mb-3.5 mb-[30px] min-h-0 text-placeholderText flex gap-3 items-start lg:order-2 md:order-1'>
+                <Typography className='text-paragraph2Light leading-normal lg:mb-3.5 mb-5 min-h-0 text-placeholderText flex gap-3 items-start lg:order-2 md:order-1'>
                   <Image
                     src={'/assets/icons/EmailIcon.svg'}
                     alt='EmailIcon'
@@ -180,7 +180,7 @@ const Footer = () => {
                   </div>
                 </Typography>
 
-                <Typography className='address text-paragraph2Light leading-normal mb-3.5 min-h-0 text-placeholderText flex gap-3 md:mt-0 sm:mt-[-35px] mt-0 items-start order-3'>
+                <Typography className='address text-paragraph2Light leading-normal mb-5 min-h-0 text-placeholderText flex gap-3 md:mt-0 sm:mt-[-35px] mt-0 items-start order-3'>
                   <Image
                     src={'/assets/icons/LocationIcon.svg'}
                     alt='LocationIcon'
@@ -207,7 +207,7 @@ const Footer = () => {
                   </div>
                 </Typography>
               </div>
-              <div className='flex gap-5 lg:mt-7 md:mt-7 mt-7 ml-[22px]'>
+              <div className='flex gap-5 lg:mt-7 md:mt-7 mt-7 ml-7'>
                 <Link
                   className='flex items-center justify-center w-8 h-8 border border-solid border-white rounded-full bg-white'
                   href='https://in.linkedin.com/company/codewinglet'
