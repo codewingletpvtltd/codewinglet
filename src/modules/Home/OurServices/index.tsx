@@ -5,7 +5,7 @@ import { Arrow } from '@codewinglet/assets';
 import Services from './Services';
 
 const OurService = () => (
-  <section className='xl:py-20 lg:py-14 py-10 bg-bg'>
+  <section className='xl:py-20 lg:py-14 md:py-[60px] py-10 bg-bg'>
     <section className='container w-full lg:px-[15px] sm:px-[30px] px-[15px] mx-auto'>
       <SectionHeader
         title={<>Our services</>}

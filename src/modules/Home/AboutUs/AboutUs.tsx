@@ -26,7 +26,7 @@ const AboutUs = () => (
             driving unparalleled growth and success.
           </Typography>
 
-          <div className='lg:flex block justify-between 2xl:items-center xl:items-start 2xl:mt-[60px] xl:mt-[30px] md:mt-[30px] mt-0 lg:w-full md:w-6/12 w-full'>
+          <div className='lg:flex block justify-between 2xl:items-center xl:items-start 2xl:mt-[60px] xl:mt-[30px] md:mt-10 mt-0 lg:w-full md:w-6/12 w-full'>
             <Statistics />
             <div>
               <AboutUsCard
@@ -38,7 +38,7 @@ const AboutUs = () => (
             </div>
           </div>
         </div>
-        <div className='2xl:lg:w-[30%] xl:lg:w-[37%] lg:w-full !md:w-6/12 w-full 2xl:block xl:flex md:flex-col md:items-end lg:block md:flex block last:mb-0 lg:relative md:absolute sm:relative md:bottom-0 md:right-0  md:top-[32%] lg:gap-0 md:gap-[18px] gap-0'>
+        <div className='2xl:lg:w-[30%] xl:lg:w-[37%] lg:w-full !md:w-6/12 w-full 2xl:block xl:flex md:flex-col md:items-end lg:block md:flex block last:mb-0 lg:relative md:absolute sm:relative md:bottom-0 md:right-0  md:top-[32%] lg:gap-0 md:gap-[25px] gap-0'>
           <AboutUsCard
             image={'/assets/AboutUs/integrity.png'}
             title='Integrity, Quality, Trust: Our Commitment'
