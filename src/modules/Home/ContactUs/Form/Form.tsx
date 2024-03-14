@@ -67,7 +67,7 @@ const Form: FC<FormProps> = ({ formData, onChangeFormData, onSubmit }) => (
         type='submit'
         className='md:w-[239px] w-full mr-[inherit] gap-2'
       >
-        Book a meeting
+        Submit
         <Arrow />
       </Button>
     </div>
