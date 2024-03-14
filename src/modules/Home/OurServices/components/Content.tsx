@@ -44,7 +44,7 @@ const Content: FC<ContentProps> = ({ service }) => (
     <Typography className='md:text-paragraph1Light text-tag lg:mb-5 md:mb-[15px] mb-3'>
       Service Included :
     </Typography>
-    <div className='flex flex-wrap gap-5'>
+    <div className='flex flex-wrap md:gap-5 gap-[15px]'>
       {service.subService.map((subService) => (
         <Button
           key={subService.label}
