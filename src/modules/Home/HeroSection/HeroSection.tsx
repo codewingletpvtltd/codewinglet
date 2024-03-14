@@ -65,7 +65,7 @@ const HeroSection = () => (
         </Button>
       </div>
     </div>
-    <div className='overflow-hidden md:relative absolute bottom-[40px] w-full'>
+    <div className='overflow-hidden md:relative absolute  md:bottom-0 bottom-[40px] w-full'>
       <div className='py-8 flex shrink-0 gap-10 sm:gap-20 marquee'>
         {techList.map((tech) => (
           <div key={tech.id} className='flex shrink-0 w-auto'>
