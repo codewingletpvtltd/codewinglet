@@ -7,7 +7,7 @@ import { Button, Typography } from '@codewinglet/components';
 import { ContentProps } from '../types';
 
 const Content: FC<ContentProps> = ({ service }) => (
-  <div className='bg-primary md:p-[30px] p-5 transition-transform duration-500 ease-in [will-change:_top;] text-white lg:h-[425px] lg:mt-0 mt-[35px]'>
+  <div className='bg-primary md:p-[30px] p-5 transition-transform duration-500 ease-in [will-change:_top;] text-white lg:h-[425px] lg:mt-0 mt-5'>
     <Typography className='md:text-h6 text-paragraph1 relative after:content after:absolute after:w-[40px] after:h-[2px] after:left-0 after:bg-white after:bottom-[-8px] mb-[30px]'>
       {service.mainTitle}
     </Typography>
@@ -38,7 +38,7 @@ const Content: FC<ContentProps> = ({ service }) => (
         </div>
       </div>
 
-      <div className='block items-start justify-between md:w-[223px] w-full lg:mt-0 md:mt-2.5 mt-10'>
+      <div className='block items-start justify-between md:w-[223px] w-full lg:mt-0 md:mt-2.5 mt-5'>
         <Image
           src={service.img}
           width={223}

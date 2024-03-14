@@ -89,12 +89,12 @@ const ScrollHighlightNavbar: React.FC<ScrollHighlightNavbarProps> = ({
                     : 'text-secondary'
                 } cursor-pointer flex items-center justify-between `}
               >
-                {policy.title}{' '}
-                <Arrow
-                  className={`lg:block hidden ${
-                    i === activeIndex ? 'block' : 'hidden'
-                  }`}
-                />
+                {policy.title}
+                <div className='lg:block hidden'>
+                  <Arrow
+                    className={` ${i === activeIndex ? 'block' : 'hidden'}`}
+                  />
+                </div>
               </div>
             </a>
           </li>

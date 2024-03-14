@@ -3,7 +3,7 @@ import { SectionHeader } from '@codewinglet/components';
 import Technologies from './Technologies';
 
 const Technology = () => (
-  <section className='xl:py-20 lg:py-14 py-10 bg-black'>
+  <section className='bg-black xl:py-20 lg:py-14 md:py-[60px] py-10'>
     <section className='container w-full lg:px-[15px] sm:px-[30px] px-[15px] mx-auto'>
       <SectionHeader
         title={<>Technologies we work with</>}

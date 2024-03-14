@@ -108,7 +108,7 @@ const TermsCondition = () => {
                   Use of the website :
                 </Typography>
                 <ul className='grid gap-[15px] ml-5 my-[25px]'>
-                  <li className='text-paragraph1ExtraLight list-disc'>
+                  <li className='text-paragraph1Light list-disc'>
                     License
                     <Typography className='text-paragraph1ExtraLight text-secondary pt-2.5'>
                       You are given a limited, non-exclusive, and revocable
@@ -116,7 +116,7 @@ const TermsCondition = () => {
                       non-commercial, informative purposes.
                     </Typography>
                   </li>
-                  <li className='text-paragraph1ExtraLight list-disc'>
+                  <li className='text-paragraph1Light list-disc'>
                     Restricted activities
                     <Typography className='text-paragraph1ExtraLight text-secondary pt-2.5'>
                       You promise not to do any of the following
