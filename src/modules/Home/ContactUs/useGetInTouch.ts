@@ -16,7 +16,7 @@ const useGetInTouch = () => {
     phone: '',
     service: '',
     message: '',
-    errors: { email: '', name: '', message: '' },
+    errors: { email: '', phone: '', name: '', message: '' },
     isSubmitted: false,
   });
 
@@ -25,12 +25,21 @@ const useGetInTouch = () => {
   };
 
   const validateFields = (validateValues: typeof formData) => {
-    const { email, message, name, errors } = validateValues;
+    const { email, message, name, errors, phone } = validateValues;
 
     const isValidEmail = getIsValidEmail(email);
 
-    if (!isValidEmail || !message) {
+    const phoneRegex = /^\+?[0-9()\- ]*$/;
+    const isPhoneValid = phone ? phoneRegex.test(phone) : true;
+
+    if (!isValidEmail || !message || !isPhoneValid) {
       let error = { ...errors };
+
+      if (!isPhoneValid) {
+        Object.assign(error, { phone: 'Please enter valid phone address.' });
+      } else {
+        Object.assign(error, { phone: '' });
+      }
 
       if (!email) {
         Object.assign(error, { email: 'Email address is required.' });
@@ -61,7 +70,7 @@ const useGetInTouch = () => {
 
     setFormData({
       ...validateValues,
-      errors: { email: '', message: '', name: '' },
+      errors: { email: '', phone: '', message: '', name: '' },
     });
     return true;
   };
@@ -105,16 +114,18 @@ const useGetInTouch = () => {
             phone: '',
             service: '',
             message: '',
-            errors: { email: '', message: '', name: '' },
+            errors: { email: '', phone: '', message: '', name: '' },
             isSubmitted: true,
           });
+          setIsLoading(false);
         })
         .catch((error) => {
           showSnackbar({ msg: error.message, type: 'error' });
+          setIsLoading(false);
         });
-      setIsLoading(false);
     }
   };
+
   return {
     formData,
     onChangeFormData,

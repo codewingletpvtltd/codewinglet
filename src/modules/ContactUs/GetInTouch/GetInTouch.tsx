@@ -4,9 +4,9 @@ import Link from 'next/link';
 import { Typography } from '@codewinglet/components';
 import SectionHeader from '../../../components/SectionHeader/SectionHeader';
 
-import Form from './components/Form';
+import Form from '../../Home/ContactUs/Form';
 
-import useGetInTouch from './useGetInTouch';
+import useGetInTouch from '../../Home/ContactUs/useGetInTouch';
 
 const GetInTouch = () => {
   const { formData, onChangeFormData, onSubmit, isLoading } = useGetInTouch();

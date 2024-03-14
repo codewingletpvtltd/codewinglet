@@ -16,6 +16,7 @@ export interface FormProps {
     errors: {
       name: string;
       email: string;
+      phone: string;
       message: string;
     };
   };
