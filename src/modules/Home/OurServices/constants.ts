@@ -218,7 +218,7 @@ const ServiceData = [
     ],
   },
   {
-    img: '/assets/OurService/devops.png',
+    img: '/assets/OurService/DevOps.png',
     title: 'DevOps',
     description:
       'Top-notch DevOps services can help you create modified, agile & robust software solutions to give your company infrastructure an extra "zing".',
