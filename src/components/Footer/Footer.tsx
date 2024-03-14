@@ -158,7 +158,7 @@ const Footer = () => {
                     className='mt-1'
                   />
                   <div className='flex flex-col gap-[4px]'>
-                    <div className='text-white'>Email us on :</div>
+                    <div className='text-white'>Email us :</div>
                     <Link
                       href='mailto:jobs@codewinglet.com'
                       className='hover:text-white'
@@ -166,10 +166,10 @@ const Footer = () => {
                       jobs@codewinglet.com
                     </Link>
                     <Link
-                      href='mailto:Info@codewinglet.com'
+                      href='mailto:info@codewinglet.com'
                       className='hover:text-white'
                     >
-                      Info@codewinglet.com
+                      info@codewinglet.com
                     </Link>
                     <Link
                       href='mailto:sales@codewinglet.com'

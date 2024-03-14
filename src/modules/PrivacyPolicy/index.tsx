@@ -79,7 +79,7 @@ const PrivacyPolicy = () => {
 
       <div className=' bg-white pt-10 [scroll-behavior:_smooth;]'>
         <div className='container w-full lg:px-[15px] sm:px-[30px] px-[20px] mx-auto lg:pt-0 md:pt-[280px] pt-[200px] relative pb-1'>
-          <div className='lg:flex block gap-[50px] items-start'>
+          <div className='lg:flex block gap-[50px] items-start mb-[50px]'>
             <ScrollHighlightNavbar navHeader={PolicyData} />
             <div className='2xl:w-[65%] xl:w-[60%] w-full'>
               {/* Introduction : */}
@@ -388,7 +388,7 @@ const PrivacyPolicy = () => {
                 </Typography>
 
                 <ul className='my-[25px] grid gap-5'>
-                  <li className='list-disc ml-5 text-paragraph1ExtraLight'>
+                  <li className='list-disc ml-5 text-paragraph1Light'>
                     Legal requirements
                     <Typography className='text-paragraph1ExtraLight text-secondary pt-2.5'>
                       Your personal information may be disclosed by codewinglet
@@ -411,7 +411,7 @@ const PrivacyPolicy = () => {
                       - To avoid being held liable
                     </Typography>
                   </li>
-                  <li className='list-disc ml-5 text-paragraph1ExtraLight'>
+                  <li className='list-disc ml-5 text-paragraph1Light'>
                     Security of data
                     <Typography className='text-paragraph1ExtraLight text-secondary pt-2.5'>
                       Although we care about the security of your information,
@@ -423,7 +423,7 @@ const PrivacyPolicy = () => {
                       security.
                     </Typography>
                   </li>
-                  <li className='list-disc ml-5 text-paragraph1ExtraLight'>
+                  <li className='list-disc ml-5 text-paragraph1Light'>
                     Service providers
                     <Typography className='text-paragraph1ExtraLight text-secondary pt-2.5'>
                       We may utilize outside businesses and people (referred to
@@ -438,7 +438,7 @@ const PrivacyPolicy = () => {
                       or use it for any other reason.
                     </Typography>
                   </li>
-                  <li className='list-disc ml-5 text-paragraph1ExtraLight'>
+                  <li className='list-disc ml-5 text-paragraph1Light'>
                     Links to other sites
                     <Typography className='text-paragraph1ExtraLight text-secondary pt-2.5'>
                       Links to external websites that are not run by us may be
@@ -453,7 +453,7 @@ const PrivacyPolicy = () => {
                       websites or services.
                     </Typography>
                   </li>
-                  <li className='list-disc ml-5 text-paragraph1ExtraLight'>
+                  <li className='list-disc ml-5 text-paragraph1Light'>
                     Children’s privacy
                     <Typography className='text-paragraph1ExtraLight text-secondary pt-2.5'>
                       Our Service does not address anyone under the age of 18
@@ -504,7 +504,7 @@ const PrivacyPolicy = () => {
 
               {/* Your acceptance of this policy : */}
               <div
-                className='mt-[50px] mb-[100px]'
+                className='mt-[50px] mb-[50px]'
                 id='acceptance'
                 ref={acceptanceRef}
               >

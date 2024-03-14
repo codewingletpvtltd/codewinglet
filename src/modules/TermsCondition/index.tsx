@@ -79,7 +79,7 @@ const TermsCondition = () => {
 
       <div className=' bg-white pt-10 [scroll-behavior:_smooth;]'>
         <div className='container w-full lg:px-[15px] sm:px-[30px] px-[20px] mx-auto lg:pt-0 md:pt-[280px] pt-[200px] relative pb-1'>
-          <div className='lg:flex block gap-[50px] items-start'>
+          <div className='lg:flex block gap-[50px] items-start mb-10'>
             <ScrollHighlightNavbar navHeader={TermsData} />
             <div className='2xl:w-[65%] xl:w-[60%] w-full'>
               {/* Acceptance of terms : */}
@@ -108,7 +108,7 @@ const TermsCondition = () => {
                   Use of the website :
                 </Typography>
                 <ul className='grid gap-[15px] ml-5 my-[25px]'>
-                  <li className='text-paragraph1ExtraLight list-disc'>
+                  <li className='text-paragraph1Light list-disc'>
                     License
                     <Typography className='text-paragraph1ExtraLight text-secondary pt-2.5'>
                       You are given a limited, non-exclusive, and revocable
@@ -116,7 +116,7 @@ const TermsCondition = () => {
                       non-commercial, informative purposes.
                     </Typography>
                   </li>
-                  <li className='text-paragraph1ExtraLight list-disc'>
+                  <li className='text-paragraph1Light list-disc'>
                     Restricted activities
                     <Typography className='text-paragraph1ExtraLight text-secondary pt-2.5'>
                       You promise not to do any of the following
@@ -148,7 +148,7 @@ const TermsCondition = () => {
                   Intellectual Property :
                 </Typography>
                 <ul className='grid gap-[15px] ml-5 my-[25px]'>
-                  <li className='text-paragraph1ExtraLight list-disc'>
+                  <li className='text-paragraph1Light list-disc'>
                     Copyright
                     <Typography className='text-paragraph1ExtraLight text-secondary pt-2.5'>
                       Copyright laws defend all content on the website, which
@@ -156,7 +156,7 @@ const TermsCondition = () => {
                       belongs to Codewinglet.
                     </Typography>
                   </li>
-                  <li className='text-paragraph1ExtraLight list-disc'>
+                  <li className='text-paragraph1Light list-disc'>
                     Trademarks
                     <Typography className='text-paragraph1ExtraLight text-secondary pt-2.5'>
                       Any trademarks or logos that appear on this website belong

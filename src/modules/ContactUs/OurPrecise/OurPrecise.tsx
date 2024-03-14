@@ -32,8 +32,8 @@ const OurPrecise = () => (
             </Typography>
             <div>
               <Typography className='text-secondary text-paragraph2Light mt-5 mb-[27px] 2xl:w-full xl:w-[80%]'>
-                A901-905, Vivanta Icon Opp. Shell Petrol Pump, Adajan, Surat,
-                Gujarat 395009.
+                A901-905, , Opp. Shell Petrol Pump, Adajan, Surat, Gujarat
+                395009.
               </Typography>
               <div className='flex group cursor-pointer'>
                 <Link
@@ -130,7 +130,7 @@ const OurPrecise = () => (
               </Typography>
               <div>
                 <Typography className='text-secondary text-paragraph2Light sm:mt-5 mt-[12px] mb-[15px] sm:w-[80%] w-full'>
-                  A901-905, Vivanta Icon Opp. Shell Petrol Pump, Adajan, Surat,
+                  A901-905, Vivanta Icon, Opp. Shell Petrol Pump, Adajan, Surat,
                   Gujarat 395009.
                 </Typography>
                 <div className='flex group cursor-pointer'>

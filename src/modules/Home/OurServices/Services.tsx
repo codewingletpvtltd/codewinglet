@@ -86,7 +86,7 @@ const Services = () => {
         </Accordion>
       </div>
 
-      <div className='lg:hidden md:block hidden lg:mt-0 md:mt-10 mt-0'>
+      <div className='lg:hidden md:block hidden lg:mt-0 md:mt-10 mt-10'>
         <Button
           className='lg:w-[231px] md:w-[333px] lg:block m-auto text-center block group bg-bg'
           variant='blackOutline'
