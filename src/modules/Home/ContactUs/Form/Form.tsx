@@ -34,19 +34,13 @@ const Form: FC<FormProps> = ({ formData, onChangeFormData, onSubmit }) => (
         placeholder='+91 89563 43223'
         value={formData.phone}
         onChange={(e) => {
-          const phoneNumber = e.target.value;
-          const phoneRegex = /^\+?[0-9()\- ]*$/;
-          if (
-            phoneRegex.test(phoneNumber) ||
-            phoneNumber === '' ||
-            phoneNumber.length <= 17
-          ) {
-            onChangeFormData({ phone: phoneNumber });
-          }
+          onChangeFormData({ phone: e.target.value });
         }}
         type='tel'
         minLength={10}
         maxLength={17}
+        helperText={formData.errors.phone}
+        error={!!formData.errors.phone}
       />
       <Textarea
         fullWidth

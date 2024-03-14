@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import Typography from '../../../../../components/Typography';
-import { InfoProps } from '../../types';
+import { InfoProps } from '../../../../Home/ContactUs/types';
 
 const Info: FC<InfoProps> = ({ icon, title, detail }) => (
   <div className='flex row'>
