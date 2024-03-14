@@ -22,7 +22,7 @@ const Textarea: React.FC<TextareaProps> = ({
         <label
           htmlFor={rest.id || inputId}
           className={getClassNames(
-            'text-secondary sm:text-paragraph1 text-tag mb-[10px] mt-[30px]',
+            'text-primary sm:text-paragraph1 text-tag mb-[10px] mt-[30px]',
             error ? 'text-primary' : '',
             labelClassName
           )}

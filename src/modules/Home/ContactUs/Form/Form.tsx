@@ -31,7 +31,7 @@ const Form: FC<FormProps> = ({ formData, onChangeFormData, onSubmit }) => (
       <TextField
         fullWidth
         label='Phone number'
-        placeholder='+91 89563 43223'
+        placeholder='Enter your number'
         value={formData.phone}
         onChange={(e) => {
           onChangeFormData({ phone: e.target.value });
