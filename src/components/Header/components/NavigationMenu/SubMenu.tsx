@@ -108,10 +108,10 @@ export const IndustryContent: FC<SubMenuContentProps> = ({
         ))}
       </ul>
       <div>
-        <Typography className='text-[28px] text-primary font-300 mb-2.5'>
+        <Typography className='text-h5 text-primary'>
           Our Industry experts
         </Typography>
-        <Typography className='text-dropdownText font-300 text-[14px] mb-2.5'>
+        <Typography className='text-secondary text-tagLight mb-2.5'>
           Get consultation from our Industry experts
         </Typography>
         <Image
