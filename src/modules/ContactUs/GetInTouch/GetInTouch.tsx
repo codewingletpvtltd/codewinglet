@@ -33,7 +33,7 @@ const GetInTouch = () => {
             />
             <div className='relative lg:flex hidden gap-[100px] my-[50px] after:content after:absolute after:top-[12px] after:left-[32%] after:w-[1px] after:h-[57px] after:bg-headerBoxBorder'>
               <Image
-                src={'/assets/ContactUs/google.svg'}
+                src={'/assets/ContactUs/googleReview.svg'}
                 width={165}
                 height={83}
                 alt='google'

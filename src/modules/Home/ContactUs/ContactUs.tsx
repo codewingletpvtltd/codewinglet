@@ -26,7 +26,7 @@ const ContactUs = () => {
             </Typography>
             <div className='hidden relative lg:flex gap-[100px] mb-[60px] after:content after:absolute after:top-[12px] 2xl:after:left-[32%] xl:after:left-[34%] after:w-[1px] after:h-[57px] after:bg-headerBoxBorder'>
               <Image
-                src={'/assets/ContactUs/google.svg'}
+                src={'/assets/ContactUs/googleReview.svg'}
                 width={165}
                 height={83}
                 alt='google'
