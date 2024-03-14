@@ -6,7 +6,7 @@ import { Arrow } from '@codewinglet/assets';
 import { ContentProps } from '../types';
 
 const Content: FC<ContentProps> = ({ service }) => (
-  <div className='bg-white lg:p-10 p-5 transition-transform duration-500 ease-in [will-change:_top;] 2xl:w-[690px] xl:w-auto'>
+  <div className='bg-white lg:p-10 p-5 transition-transform duration-500 ease-in [will-change:_top;] 2xl:w-[690px] 2xl:h-[887px] xl:h-[887px] xl:w-auto'>
     <Image
       src={service.img}
       width={900}
