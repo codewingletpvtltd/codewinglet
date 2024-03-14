@@ -18,13 +18,20 @@ const ClientTestimonials = () => (
         descriptionClassName=' mt-[9px] text-white'
       />
       <div
-        className='md:mt-10 mt-7 xl:h-[481px] h-auto relative lg:[background-size:_auto] md:[background-size:_70%] sm:[background-size:_auto]'
+        className='md:mt-10 mt-7 xl:h-[481px] h-auto relative lg:[background-size:_auto] md:[background-size:_70%] sm:[background-size:_auto] client_img'
         style={{
           backgroundImage: 'url("/assets/testimonial/testimonial_img.svg")',
           backgroundRepeat: 'no-repeat',
           backgroundPositionX: 'right',
         }}
       >
+        <Image
+          className='block md:hidden'
+          src={'/assets/testimonial/testimonialImg.png'}
+          alt='testimonialImg'
+          width={340}
+          height={215}
+        />
         <Image
           className='lg:w-[99px] md:w-[75px] absolute left-0 z-[-1] xl:top-[11rem] lg:top-[20rem] md:top-[6rem] md:block hidden'
           src={'/assets/icons/StartQuote.svg'}
@@ -42,7 +49,7 @@ const ClientTestimonials = () => (
               <div key={index}>
                 <div
                   key={`testimonials-${data.id}-${index}`}
-                  className='z-10 bg-primary lg:py-[42px] lg:px-[57px] md:p-[30px] sm:py-[22px] sm:px-[37px] p-6 lg:!w-[754px] md:!w-[455px] !w-[100%] sm:h-auto h-auto xl:mt-[170px] lg:mt-[350px] md:mt-[180px] sm:mt-[370px] mt-[350px] lg:mx-0 md:mx-0 !block sm:mx-auto'
+                  className='z-10 bg-primary lg:py-[42px] lg:px-[57px] md:p-[30px] sm:py-[22px] sm:px-[37px] p-6 lg:!w-[754px] md:!w-[455px] !w-[98%] sm:h-auto h-auto xl:mt-[170px] lg:mt-[350px] md:mt-[180px] sm:mt-[370px] mt-0 lg:mx-0 md:mx-0 !block mx-auto'
                 >
                   <Typography className='lg:text-subtitle1Light md:text-[17px] text-tagLight text-white'>
                     {data.comment}

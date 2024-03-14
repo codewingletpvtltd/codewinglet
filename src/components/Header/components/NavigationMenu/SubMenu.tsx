@@ -28,17 +28,21 @@ export const ServicesContent: FC<SubMenuContentProps> = ({
       <Typography className='text-paragraph2 text-primary w-[60%]'>
         Get Consultation from our Service Experts
       </Typography>
-      <Button variant='default' className='bg-primary w-[210px] m-[initial]'>
-        <Link
-          href='/contact-us'
-          rel='noopener noreferrer'
-          target='_blank'
-          className='flex items-center justify-center gap-3'
+
+      <Link
+        href='/contact-us'
+        rel='noopener noreferrer'
+        target='_blank'
+        className='flex items-center justify-center '
+      >
+        <Button
+          variant='default'
+          className='bg-primary w-[210px] m-[initial] gap-3'
         >
           Schedule a call
           <Arrow />
-        </Link>
-      </Button>
+        </Button>
+      </Link>
     </div>
   </>
 );
@@ -76,17 +80,20 @@ export const TechnologyContent: FC<SubMenuContentProps> = ({
       <Typography className='text-paragraph2 text-primary w-[60%]'>
         Get consultation from our Technical experts
       </Typography>
-      <Button variant='default' className='bg-primary w-[208px] m-[initial]'>
-        <Link
-          href='/contact-us'
-          rel='noopener noreferrer'
-          target='_blank'
-          className='flex items-center justify-center gap-3'
+
+      <Link
+        href='/contact-us'
+        rel='noopener noreferrer'
+        target='_blank'
+        className='flex items-center justify-center '
+      >
+        <Button
+          variant='default'
+          className='bg-primary w-[208px] m-[initial] gap-3'
         >
-          Schedule a call
-          <Arrow />
-        </Link>
-      </Button>
+          Schedule a call <Arrow />
+        </Button>
+      </Link>
     </div>
   </>
 );
@@ -121,17 +128,18 @@ export const IndustryContent: FC<SubMenuContentProps> = ({
           width={500}
           height={500}
         />
-        <Button variant='default' className='w-[211px] m-[initial]'>
-          <Link
-            href='/contact-us'
-            rel='noopener noreferrer'
-            target='_blank'
-            className='flex items-center justify-center gap-3'
-          >
+
+        <Link
+          href='/contact-us'
+          rel='noopener noreferrer'
+          target='_blank'
+          className='flex items-center m-[initial]'
+        >
+          <Button variant='default' className='w-[211px]  gap-3'>
             Schedule a call
             <Arrow />
-          </Link>
-        </Button>
+          </Button>
+        </Link>
       </div>
     </div>
   </>

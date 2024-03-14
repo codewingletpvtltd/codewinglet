@@ -51,7 +51,7 @@ const Services = () => {
       </div>
 
       {/* TABLET */}
-      <div className='lg:hidden block md:mt-[50px] mt-5 gap-20 mb-10'>
+      <div className='lg:hidden block md:mt-[50px] mt-0 gap-20 mb-0'>
         <Accordion type='single' defaultValue='IT Consulting' collapsible>
           <ul className=''>
             {ServiceData.map((service, i) => (
@@ -86,7 +86,7 @@ const Services = () => {
         </Accordion>
       </div>
 
-      <div className='lg:hidden md:block hidden'>
+      <div className='lg:hidden md:block hidden lg:mt-0 md:mt-10 mt-0'>
         <Button
           className='lg:w-[231px] md:w-[333px] lg:block m-auto text-center block group bg-bg'
           variant='blackOutline'
