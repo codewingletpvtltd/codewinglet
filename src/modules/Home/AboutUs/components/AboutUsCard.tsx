@@ -24,7 +24,7 @@ const AboutUsCard: FC<AboutUsCardProps> = ({ image, title, description }) => (
         {title}
       </Typography>
     </div>
-    <Typography className='text-white lg:mt-1.5 group-first:mt-0 sm:mt-4 mt-3 xl:text-paragraph2Light lg:text-subtitle2 text-tagLight'>
+    <Typography className='text-white lg:mt-1.5 group-first:mt-0 sm:mt-2.5 mt-3 xl:text-paragraph2Light lg:text-subtitle2 text-tagLight'>
       {description}
     </Typography>
   </div>

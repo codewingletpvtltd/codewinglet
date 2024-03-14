@@ -7,7 +7,7 @@ import { slickSetting } from './config';
 import ClientDetails from './components/ClientDetails';
 
 const ClientTestimonials = () => (
-  <div className='md:py-20 py-10'>
+  <div className='lg:py-20 md:py-[60px] py-10'>
     <div className='container w-full lg:px-[15px] sm:px-[30px] px-[15px] mx-auto'>
       <SectionHeader
         title={<>Testimonials</>}

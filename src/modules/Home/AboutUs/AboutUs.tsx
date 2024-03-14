@@ -26,7 +26,7 @@ const AboutUs = () => (
             driving unparalleled growth and success.
           </Typography>
 
-          <div className='lg:flex block justify-between 2xl:items-center xl:items-start 2xl:mt-[60px] xl:mt-[30px] md:mt-[30px] mt-0 lg:w-full md:w-6/12 w-full'>
+          <div className='lg:flex block justify-between 2xl:items-center xl:items-start 2xl:mt-[60px] xl:mt-[30px] md:mt-10 mt-0 lg:w-full md:w-6/12 w-full'>
             <Statistics />
             <div>
               <AboutUsCard

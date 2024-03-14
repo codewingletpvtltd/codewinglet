@@ -31,7 +31,7 @@ const ListItem = ({ data }: { data: ListItemProps[] }) => (
         <Typography className='xl:text-h4 md:text-h4 text-h5 text-white flex item-center'>
           {number}
         </Typography>
-        <Typography className=' text-white md:text-paragraph1 text-paragraph2Light'>
+        <Typography className=' text-white lg:text-paragraph1 md:text-paragraph1ExtraLight text-paragraph2Light'>
           {label}
         </Typography>
       </li>

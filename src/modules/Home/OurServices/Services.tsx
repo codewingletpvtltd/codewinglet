@@ -51,13 +51,14 @@ const Services = () => {
       </div>
 
       {/* TABLET */}
-      <div className='lg:hidden block md:mt-[50px] mt-0 gap-20 mb-[50px]'>
+      <div className='lg:hidden block md:mt-[50px] mt-5 gap-20 mb-10'>
         <Accordion type='single' defaultValue='IT Consulting' collapsible>
           <ul className=''>
             {ServiceData.map((service, i) => (
               <AccordionItem key={service.title} value={service.title}>
                 <AccordionTrigger
-                  className='[&[data-state=open]>svg]:rotate-[45deg] border-b border-headerBoxBorder !pb-0'
+                  onClick={() => handleChangeIndex(i)}
+                  className='[&[data-state=open]>svg]:rotate-[45deg] border-b border-headerBoxBorder !pb-0 group '
                   icon={
                     <Arrow
                       className={`w-[21px] h-[21px] transition duration-500 group-hover:rotate-[45deg] ${
@@ -67,7 +68,6 @@ const Services = () => {
                   }
                 >
                   <li
-                    onClick={() => handleChangeIndex(i)}
                     className={`md:text-subtitle2Light text-paragraph2Light ${
                       i === selectedIndex
                         ? 'text-primary md:!text-subtitle2 !text-paragraph2'

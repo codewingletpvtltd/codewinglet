@@ -41,7 +41,7 @@ const HeroSection = () => (
 
         <TypeAnimation
           sequence={sequence}
-          className='text-center text-white xl:text-h1 md:text-h3 text-subtitle2'
+          className='text-center text-white xl:text-h1 md:text-h3bold text-subtitle2'
         />
 
         <Typography className='xl:px-20 lg:text-subtitle2Light md:text-subtitle2Light text-tagLight text-center text-white 2xl:mt-5 2xl:mb-14 xl:mt-[50px] xl:mb-10 md:px-0 sm:px-0 px-0 mt-5 mb-[120px]'>
