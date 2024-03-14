@@ -32,8 +32,8 @@ const ContactUs = () => {
                 alt='google'
               />
               <Image
-                src={'/assets/ContactUs/glassdoor.svg'}
-                width={165}
+                src={'/assets/ContactUs/glassdoorreview.svg'}
+                width={119}
                 height={83}
                 alt='glassdoor'
               />

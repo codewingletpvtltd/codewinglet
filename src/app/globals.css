@@ -179,6 +179,9 @@ input[type='number']::-webkit-outer-spin-button {
   .address svg {
     width: 14.4%;
   }
+  .client_img {
+    background-image: none !important;
+  }
 }
 
 /* styles.css for accordian open */
@@ -212,5 +215,5 @@ input[type='number']::-webkit-outer-spin-button {
 
 .border-remove > div {
   border-left: none;
-  margin-bottom: 25px;
+  margin-bottom: 0px;
 }
