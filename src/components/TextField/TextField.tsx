@@ -46,9 +46,9 @@ const TextField: React.FC<TextFieldProps> = ({
           autoComplete='off'
           disabled={disabled}
           className={getClassNames(
-            'rounded-none border-solid border-b border-dropdownText h-[40px] w-[200px] sm:text-paragraph1ExtraLight text-tag bg-transparent placeholder:text-placeholderText focus:outline-none focus:border-primary ',
-            error ? 'border-error' : 'border-dropdownText',
-            disabled ? 'pointer-events-none bg-dropdownText' : '',
+            'rounded-none border-solid border-b border-secondary h-[40px] w-[200px] sm:text-paragraph1ExtraLight text-tag bg-transparent placeholder:text-placeholderText focus:outline-none focus:border-primary ',
+            error ? 'border-error' : 'border-secondary',
+            disabled ? 'pointer-events-none bg-secondary' : '',
             fullWidth ? 'w-full' : ''
           )}
           {...rest}
