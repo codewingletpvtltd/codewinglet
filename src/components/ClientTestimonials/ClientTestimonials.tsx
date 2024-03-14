@@ -42,7 +42,7 @@ const ClientTestimonials = () => (
               <div key={index}>
                 <div
                   key={`testimonials-${data.id}-${index}`}
-                  className='bg-primary lg:py-[42px] lg:px-[57px] md:p-[30px] sm:py-[22px] sm:px-[37px] p-6 lg:!w-[754px] md:!w-[455px] !w-[100%] sm:h-auto h-auto xl:mt-[170px] lg:mt-[350px] md:mt-[180px] sm:mt-[370px] mt-[350px] lg:mx-0 md:mx-0 !block sm:mx-auto'
+                  className='z-10 bg-primary lg:py-[42px] lg:px-[57px] md:p-[30px] sm:py-[22px] sm:px-[37px] p-6 lg:!w-[754px] md:!w-[455px] !w-[100%] sm:h-auto h-auto xl:mt-[170px] lg:mt-[350px] md:mt-[180px] sm:mt-[370px] mt-[350px] lg:mx-0 md:mx-0 !block sm:mx-auto'
                 >
                   <Typography className='lg:text-subtitle1Light md:text-[17px] text-tagLight text-white'>
                     {data.comment}
