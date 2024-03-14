@@ -51,7 +51,7 @@ const Services = () => {
       </div>
 
       {/* TABLET */}
-      <div className='lg:hidden block md:mt-[50px] mt-5 gap-20 mb-[50px]'>
+      <div className='lg:hidden block md:mt-[50px] mt-0 gap-20 mb-[50px]'>
         <Accordion type='single' defaultValue='IT Consulting' collapsible>
           <ul className=''>
             {ServiceData.map((service, i) => (
@@ -59,7 +59,11 @@ const Services = () => {
                 <AccordionTrigger
                   className='[&[data-state=open]>svg]:rotate-[45deg] border-b border-headerBoxBorder !pb-0'
                   icon={
-                    <Arrow className='w-[21px] h-[21px] transition duration-500 group-hover:rotate-[45deg]' />
+                    <Arrow
+                      className={`w-[21px] h-[21px] transition duration-500 group-hover:rotate-[45deg] ${
+                        i === selectedIndex ? 'text-primary' : 'text-secondary'
+                      } `}
+                    />
                   }
                 >
                   <li

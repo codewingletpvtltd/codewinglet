@@ -21,7 +21,7 @@ const Content: FC<ContentProps> = ({ service }) => (
           {service.subService.map((subService) => (
             <div
               key={subService.label}
-              className='flex flex-col items-center gap-1.5 lg:mr-[50px] md:mr-10 mr-[15px] last:mr-0 md:mb-[30px] mb-5'
+              className='flex flex-col items-center gap-1.5 lg:mr-[50px] md:mr-10 mr-5 last:mr-0 md:mb-[30px] mb-5'
             >
               <Image
                 src={subService.icon}
