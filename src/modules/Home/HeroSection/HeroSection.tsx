@@ -45,9 +45,9 @@ const HeroSection = () => (
         />
 
         <Typography className='xl:px-20 lg:text-subtitle2Light md:text-subtitle2Light text-tagLight text-center text-white 2xl:mt-5 2xl:mb-14 xl:mt-[50px] xl:mb-10 md:px-0 sm:px-0 px-0 mt-5 mb-[120px]'>
-          Elevate your business's efficiency and profitability with
-          Codewinglet's advanced software solutions. Book your consultation
-          today for digital transformation and success.
+          Upgrade your business efficiency and profitability with Codewinglet's
+          advanced software solutions. Book your consultation today for digital
+          transformation and success.
         </Typography>
 
         <Button
@@ -65,7 +65,20 @@ const HeroSection = () => (
         </Button>
       </div>
     </div>
-    <div className='overflow-hidden md:relative absolute  md:bottom-0 bottom-[40px] w-full'>
+    <div className='overflow-hidden md:relative absolute  md:bottom-0 bottom-[40px] w-full flex gap-10'>
+      <div className='py-8 flex shrink-0 gap-10 sm:gap-20 marquee'>
+        {techList.map((tech) => (
+          <div key={tech.id} className='flex shrink-0 w-auto'>
+            <Image
+              alt={tech.alt}
+              src={tech.image}
+              className='sm:h-[30px] h-[24px] w-auto'
+              height={30}
+              width={24}
+            />
+          </div>
+        ))}
+      </div>
       <div className='py-8 flex shrink-0 gap-10 sm:gap-20 marquee'>
         {techList.map((tech) => (
           <div key={tech.id} className='flex shrink-0 w-auto'>

@@ -26,7 +26,7 @@ const ClientTestimonials = () => (
         }}
       >
         <Image
-          className='block md:hidden'
+          className='block md:hidden w-full'
           src={'/assets/testimonial/testimonialImg.png'}
           alt='testimonialImg'
           width={340}

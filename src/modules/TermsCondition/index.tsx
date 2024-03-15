@@ -176,10 +176,13 @@ const TermsCondition = () => {
                   Privacy policy :
                 </Typography>
                 <Typography className='text-paragraph1ExtraLight text-secondary pt-5'>
-                  Your use of the Website is also governed by our
-                  <span className='underline text-primary'>
+                  Your use of the Website is also governed by our&nbsp;
+                  <Link
+                    href='privacy-policy'
+                    className='underline text-primary'
+                  >
                     Privacy Policy.
-                  </span>
+                  </Link>
                 </Typography>
               </div>
 
