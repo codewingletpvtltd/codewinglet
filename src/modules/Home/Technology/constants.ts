@@ -29,7 +29,7 @@ const TechnologyData = [
         icon: '/assets/Technologies/FrontEnd/angular.svg',
       },
       {
-        label: 'tailwind CSS',
+        label: 'tailwind',
         icon: '/assets/Technologies/FrontEnd/tailwind.svg',
       },
     ],

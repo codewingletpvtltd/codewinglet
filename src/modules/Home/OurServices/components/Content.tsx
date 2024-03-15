@@ -1,9 +1,7 @@
 'use client';
 import { FC } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import { Button, Typography } from '@codewinglet/components';
-import { Arrow } from '@codewinglet/assets';
 import { ContentProps } from '../types';
 
 const Content: FC<ContentProps> = ({ service }) => (
@@ -50,15 +48,17 @@ const Content: FC<ContentProps> = ({ service }) => (
         <Button
           key={subService.label}
           variant='secondary'
-          className='md:px-[25px] md:hover:px-[12px] md:py-5 px-[15px] py-[12px] hover:px-[5px] last:mb-0 group flex items-center md:gap-2 gap-[2px] md:text-paragraph2Light text-tagExtraLight md:text-center text-left whitespace-normal break-word'
+          className='md:px-[25px] md:py-5 px-[15px] py-[12px] cursor-default last:mb-0 group flex items-center md:gap-2 gap-[2px] md:text-paragraph2Light text-tagExtraLight md:text-center text-left whitespace-normal break-word'
         >
-          <Link
+          {' '}
+          {subService.label}
+          {/* <Link
             className='group-hover:translate-x-[-1px] [transition:_all_.5s;]'
             href={subService.path}
           >
-            {subService.label}
-          </Link>
-          <Arrow className='hidden group-hover:block h-[18px] md:group-hover:w-[18px] group-hover:w-[12px]' />
+        
+          </Link> */}
+          {/* <Arrow className='hidden group-hover:block h-[18px] md:group-hover:w-[18px] group-hover:w-[12px]' /> */}
         </Button>
       ))}
     </div>
