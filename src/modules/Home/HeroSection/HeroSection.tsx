@@ -45,9 +45,9 @@ const HeroSection = () => (
         />
 
         <Typography className='xl:px-20 lg:text-subtitle2Light md:text-subtitle2Light text-tagLight text-center text-white 2xl:mt-5 2xl:mb-14 xl:mt-[50px] xl:mb-10 md:px-0 sm:px-0 px-0 mt-5 mb-[120px]'>
-          Elevate your business's efficiency and profitability with
-          Codewinglet's advanced software solutions. Book your consultation
-          today for digital transformation and success.
+          Upgrade your business efficiency and profitability with Codewinglet's
+          advanced software solutions. Book your consultation today for digital
+          transformation and success.
         </Typography>
 
         <Button
