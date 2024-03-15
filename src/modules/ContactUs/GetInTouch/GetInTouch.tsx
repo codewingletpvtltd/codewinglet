@@ -31,10 +31,10 @@ const GetInTouch = () => {
               headingClassName='2xl:pr-[130px] xl:pr-[100px] pr-0'
               descriptionClassName='!text-subtitle2Light !mt-[31px] lg:block hidden'
             />
-            <div className='relative lg:flex hidden gap-[100px] my-[50px] after:content after:absolute after:top-[12px] after:left-[32%] after:w-[1px] after:h-[57px] after:bg-headerBoxBorder'>
+            <div className='relative lg:flex hidden gap-[100px] my-[50px] after:content after:absolute after:top-[12px] after:left-[22%] after:w-[1px] after:h-[57px] after:bg-headerBoxBorder'>
               <Image
-                src={'/assets/ContactUs/googleReview.svg'}
-                width={165}
+                src={'/assets/ContactUs/google-review.svg'}
+                width={97}
                 height={83}
                 alt='google'
               />

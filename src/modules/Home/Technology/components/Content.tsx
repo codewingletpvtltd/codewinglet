@@ -17,11 +17,11 @@ const Content: FC<ContentProps> = ({ service }) => (
         <Typography className='lg:text-paragraph2 md:text-paragraph2Light text-tagExtraLight text-secondary md:pb-5 pb-[25px]'>
           {service.description}
         </Typography>
-        <div className='flex flex-wrap'>
+        <div className='grid 2xl:grid-cols-6 xl:grid-cols-5 md:grid-cols-5 grid-cols-3 gap-y-7'>
           {service.subService.map((subService) => (
             <div
               key={subService.label}
-              className='flex flex-col items-center gap-1.5 lg:mr-[50px] md:mr-10 mr-5 last:mr-0 md:mb-[30px] mb-5'
+              className='flex flex-col items-center gap-1.5'
             >
               <Image
                 src={subService.icon}
@@ -38,7 +38,7 @@ const Content: FC<ContentProps> = ({ service }) => (
         </div>
       </div>
 
-      <div className='block items-start justify-between md:w-[223px] w-full lg:mt-0 md:mt-2.5 mt-5'>
+      <div className='block items-start justify-between md:w-[223px] w-full lg:mt-0 md:mt-10 mt-5'>
         <Image
           src={service.img}
           width={223}
