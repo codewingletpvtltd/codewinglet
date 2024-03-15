@@ -24,10 +24,10 @@ const ContactUs = () => {
               you in achieving your goals through digital transformation,
               product outsourcing, or staff augmentation.
             </Typography>
-            <div className='hidden relative lg:flex gap-[100px] mb-[60px] after:content after:absolute after:top-[12px] 2xl:after:left-[32%] xl:after:left-[34%] after:w-[1px] after:h-[57px] after:bg-headerBoxBorder'>
+            <div className='hidden relative lg:flex gap-[100px] mb-[60px] after:content after:absolute after:top-[12px] 2xl:after:left-[22%] xl:after:left-[24%] after:w-[1px] after:h-[57px] after:bg-headerBoxBorder'>
               <Image
-                src={'/assets/ContactUs/googleReview.svg'}
-                width={165}
+                src={'/assets/ContactUs/google-review.svg'}
+                width={97}
                 height={83}
                 alt='google'
               />

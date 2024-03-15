@@ -29,7 +29,7 @@ const TechnologyData = [
         icon: '/assets/Technologies/FrontEnd/angular.svg',
       },
       {
-        label: 'tailwind CSS',
+        label: 'tailwind',
         icon: '/assets/Technologies/FrontEnd/tailwind.svg',
       },
     ],
@@ -126,12 +126,12 @@ const TechnologyData = [
         icon: '/assets/Technologies/headless/sanity.svg',
       },
       {
-        label: 'Content stack',
-        icon: '/assets/Technologies/headless/contentstack.svg',
-      },
-      {
         label: 'Content full',
         icon: '/assets/Technologies/headless/contentfull.svg',
+      },
+      {
+        label: 'Content stack',
+        icon: '/assets/Technologies/headless/contentstack.svg',
       },
     ],
   },
@@ -153,10 +153,6 @@ const TechnologyData = [
         icon: '/assets/Technologies/DevOps/azure.svg',
       },
       {
-        label: 'Google Cloud',
-        icon: '/assets/Technologies/DevOps/googlecloud.svg',
-      },
-      {
         label: 'Docker',
         icon: '/assets/Technologies/DevOps/docker.svg',
       },
@@ -167,6 +163,10 @@ const TechnologyData = [
       {
         label: 'CI/CD',
         icon: '/assets/Technologies/DevOps/ci:cd.svg',
+      },
+      {
+        label: 'Google Cloud',
+        icon: '/assets/Technologies/DevOps/googlecloud.svg',
       },
     ],
   },

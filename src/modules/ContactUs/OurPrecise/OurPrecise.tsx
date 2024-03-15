@@ -18,7 +18,7 @@ const OurPrecise = () => (
           />
         </div>
 
-        <div className='relative p-10 lg:grid hidden bg-white grid-flow-col 2xl:grid-cols-[42%_33%_25%] xl:grid-cols-[39%_33%_25%] grid-rows-1 after:content after:absolute 2xl:after:top-[43%] 2xl:after:left-[40%] xl:after:top-[40%] xl:after:left-[36%] after:bg-headerBoxBorder after:w-[1px] after:h-[40%] before:content before:absolute 2xl:before:top-[43%] 2xl:before:left-[69%] xl:before:top-[40%] xl:before:left-[67%] before:bg-headerBoxBorder before:w-[1px] before:h-[40%]'>
+        <div className='relative p-10 lg:grid hidden bg-white grid-flow-col 2xl:grid-cols-[42%_33%_25%] xl:grid-cols-[38%_33%_25%] grid-rows-1 after:content after:absolute 2xl:after:top-[43%] 2xl:after:left-[40%] xl:after:top-[40%] xl:after:left-[36%] after:bg-headerBoxBorder after:w-[1px] after:h-[40%] before:content before:absolute 2xl:before:top-[43%] 2xl:before:left-[69%] xl:before:top-[40%] xl:before:left-[67%] before:bg-headerBoxBorder before:w-[1px] before:h-[40%]'>
           <div className='flex flex-col'>
             <Typography className='text-primary uppercase md:text-paragraph1 text-paragraph2Light flex items-center'>
               <Image
@@ -32,8 +32,8 @@ const OurPrecise = () => (
             </Typography>
             <div>
               <Typography className='text-secondary text-paragraph2Light mt-5 mb-[27px] 2xl:w-full xl:w-[80%]'>
-                A901-905, , Opp. Shell Petrol Pump, Adajan, Surat, Gujarat
-                395009.
+                A901-905, Vivanta Icon, Opp. Shell Petrol Pump, Adajan, Surat,
+                Gujarat 395009.
               </Typography>
               <div className='flex group cursor-pointer'>
                 <Link
