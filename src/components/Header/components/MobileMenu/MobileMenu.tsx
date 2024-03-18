@@ -1,6 +1,6 @@
 'use client';
 import { FC } from 'react';
-
+import Link from 'next/link';
 import Image from 'next/image';
 import Drawer from '@codewinglet/components/Drawer/Drawer';
 import Button from '@codewinglet/components/Button';
@@ -22,21 +22,30 @@ const MobileMenu: FC<MobileMenuProps> = ({
         <ul className='pointer-events-auto'>
           {navMenu.map((item, index) => (
             <li key={item.label} className='py-5'>
-              <div
-                className='cursor-pointer flex justify-between md:text-subtitle1 text-paragraph1 !whitespace-nowrap'
-                onClick={() => setSubMenuIndex(index)}
-              >
-                {item.label}
+              {item.children ? (
+                <div
+                  className='cursor-pointer flex justify-between md:text-subtitle1 text-paragraph1 !whitespace-nowrap'
+                  onClick={() => setSubMenuIndex(index)}
+                >
+                  {item.label}
 
-                {item.children && (
-                  <Image
-                    src='/assets/icons/RightArrow.svg'
-                    alt='RightArrow'
-                    width={16}
-                    height={16}
-                  />
-                )}
-              </div>
+                  {item.children && (
+                    <Image
+                      src='/assets/icons/RightArrow.svg'
+                      alt='RightArrow'
+                      width={16}
+                      height={16}
+                    />
+                  )}
+                </div>
+              ) : (
+                <Link
+                  href={item.path || ''}
+                  className='cursor-pointer flex justify-between md:text-subtitle1 text-paragraph1 !whitespace-nowrap'
+                >
+                  {item.label}
+                </Link>
+              )}
             </li>
           ))}
 
