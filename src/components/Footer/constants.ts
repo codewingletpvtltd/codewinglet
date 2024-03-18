@@ -244,7 +244,7 @@ export const companyMenu = [
   {
     id: 3,
     path: '/jobs',
-    label: 'Career',
+    label: 'Jobs',
   },
   {
     id: 4,

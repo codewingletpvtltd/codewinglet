@@ -415,7 +415,7 @@ export const navMenu = [
   // },
   {
     path: '/jobs',
-    label: 'Career',
+    label: 'Jobs',
     category: true,
     left: 'left-[-50px]',
   },
