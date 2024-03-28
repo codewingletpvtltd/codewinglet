@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button, TypeAnimation, Typography } from '@codewinglet/components';
+import { Reveal } from '@codewinglet/modules/Reveal';
 import './herosection.css';
 import { Arrow } from '@codewinglet/assets';
 import { techList } from './utils';
@@ -34,21 +35,29 @@ const HeroSection = () => (
 
     <div className='max-w-[1410px] md:px-[15px] sm:px-[30px] px-[15px] mx-auto w-full m-auto'>
       <div className='xl:px-20 lg:px-[120px] md:px-14 sm:px-0 px-0'>
-        <Typography className='xl:text-h1 md:text-h3 text-subtitle2 text-center text-white'>
-          Your Trusted Software Development Partner - Crafting Innovative
-          Solutions for
-        </Typography>
+        <Reveal>
+          <Typography className='xl:text-h1 md:text-h3 text-subtitle2 text-center text-white'>
+            Your Trusted Software Development Partner - Crafting Innovative
+            Solutions for
+          </Typography>
+        </Reveal>
 
-        <TypeAnimation
-          sequence={sequence}
-          className='text-center text-white xl:text-h1 md:text-h3bold text-subtitle2'
-        />
+        <Reveal>
+          <div>
+            <TypeAnimation
+              sequence={sequence}
+              className='text-center text-white xl:text-h1 md:text-h3bold text-subtitle2'
+            />
+          </div>
+        </Reveal>
 
-        <Typography className='xl:px-20 lg:text-subtitle2Light md:text-subtitle2Light text-tagLight text-center text-white 2xl:mt-5 2xl:mb-14 xl:mt-[50px] xl:mb-10 md:px-0 sm:px-0 px-0 mt-5 mb-[120px]'>
-          Upgrade your business efficiency and profitability with Codewinglet's
-          advanced software solutions. Book your consultation today for digital
-          transformation and success.
-        </Typography>
+        <Reveal>
+          <div className='xl:px-20 lg:text-subtitle2Light md:text-subtitle2Light text-tagLight text-center text-white 2xl:mt-5 2xl:mb-14 xl:mt-[50px] xl:mb-10 md:px-0 sm:px-0 px-0 mt-5 mb-[120px]'>
+            Upgrade your business efficiency and profitability with
+            Codewinglet's advanced software solutions. Book your consultation
+            today for digital transformation and success.
+          </div>
+        </Reveal>
 
         <Button
           variant='outline'

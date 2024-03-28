@@ -19,9 +19,9 @@ const MobileMenu: FC<MobileMenuProps> = ({
   return (
     <>
       <div className='flex flex-col  gap-[10px] z-40 '>
-        <ul className='pointer-events-auto'>
+        <div className='pointer-events-auto'>
           {navMenu.map((item, index) => (
-            <li key={item.label} className='py-5'>
+            <div key={item.label} className='py-5'>
               {item.children ? (
                 <div
                   className='cursor-pointer flex justify-between md:text-subtitle1 text-paragraph1 !whitespace-nowrap'
@@ -46,7 +46,7 @@ const MobileMenu: FC<MobileMenuProps> = ({
                   {item.label}
                 </Link>
               )}
-            </li>
+            </div>
           ))}
 
           <Drawer
@@ -61,7 +61,7 @@ const MobileMenu: FC<MobileMenuProps> = ({
               />
             )}
           </Drawer>
-        </ul>
+        </div>
         <div className='text-center bottom-10 w-full absolute left-0'>
           <Button
             variant='blackOutline'

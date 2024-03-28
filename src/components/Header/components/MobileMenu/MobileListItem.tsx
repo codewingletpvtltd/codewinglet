@@ -21,7 +21,7 @@ const MobileListItem: FC<ListItemProps> = ({
 }) => (
   <>
     {!hasMenu && (
-      <li>
+      <li className='list-none'>
         <span
           className={`flex flex-row mb-[30px] items-${
             description ? 'start' : 'center'

@@ -7,7 +7,6 @@ import { ArrowProps } from '../types';
 const Arrows: FC<ArrowProps> = ({
   sliderRef,
   arrowPosition = _arrowPosition,
-  activeIndex,
 }) => (
   <>
     <div

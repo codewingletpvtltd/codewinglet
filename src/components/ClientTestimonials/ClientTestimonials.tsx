@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { Reveal } from '@codewinglet/modules/Reveal';
 import SectionHeader from '../SectionHeader/SectionHeader';
 import Typography from '../Typography/Typography';
 import Slider from '../Slider/Slider';
@@ -9,14 +10,16 @@ import ClientDetails from './components/ClientDetails';
 const ClientTestimonials = () => (
   <div className='lg:py-20 md:py-[60px] py-10'>
     <div className='container w-full lg:px-[15px] sm:px-[30px] px-[15px] mx-auto'>
-      <SectionHeader
-        title={<>Testimonials</>}
-        description={
-          <>Here’s a glimpse into what Our Clients have to say about us.</>
-        }
-        headingClassName='text-[22px] text-white'
-        descriptionClassName=' mt-[9px] text-white'
-      />
+      <Reveal>
+        <SectionHeader
+          title={<>Testimonials</>}
+          description={
+            <>Here’s a glimpse into what Our Clients have to say about us.</>
+          }
+          headingClassName='text-[22px] text-white'
+          descriptionClassName=' mt-[9px] text-white'
+        />
+      </Reveal>
       <div
         className='md:mt-10 mt-7 xl:h-[481px] h-auto relative lg:[background-size:_auto] md:[background-size:_70%] sm:[background-size:_auto] client_img'
         style={{

@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import { getClassNames } from '@codewinglet/utils';
 import Typography from '../Typography';
@@ -9,10 +10,9 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
   headingClassName = '',
   descriptionTextWrap,
   descriptionClassName = '',
-  wrapperClassName = '',
   showDescription = true,
 }) => (
-  <div className={wrapperClassName}>
+  <div>
     <Typography
       className={getClassNames(
         'mb-41 md:text-h2 sm:text-h3 text-subtitle2 text-primary !font-500',
