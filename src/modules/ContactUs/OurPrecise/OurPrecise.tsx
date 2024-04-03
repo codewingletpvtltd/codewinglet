@@ -7,7 +7,7 @@ import SectionHeader from '../../../components/SectionHeader/SectionHeader';
 
 const OurPrecise = () => (
   <div className='bg-bg sm:py-20 py-[30px]'>
-    <div className='container w-full lg:px-[15px] sm:px-[40px] px-[20px] mx-auto'>
+    <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
       <div className='lg:flex block justify-between items-center 2xl:gap-[37px] gap-[48px]'>
         <div className='2xl:w-[30%] lg:w-[35%] w-full'>
           <Reveal>

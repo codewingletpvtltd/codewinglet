@@ -1,7 +1,5 @@
 'use client';
-import Link from 'next/link';
-import { Button, SectionHeader } from '@codewinglet/components';
-import { Arrow } from '@codewinglet/assets';
+import { SectionHeader } from '@codewinglet/components';
 import { Reveal } from '@codewinglet/modules/Reveal';
 import Services from './Services';
 
@@ -22,16 +20,6 @@ const OurService = () => (
         />
       </Reveal>
       <Services />
-      <Link
-        href='/contact-us'
-        rel='noopener noreferrer'
-        className='text-primary group-hover:text-white  lg:block m-auto text-center md:hidden block group mt-14'
-      >
-        <Button className='w-[231px] bg-bg gap-3' variant='blackOutline'>
-          Book a meeting
-          <Arrow />
-        </Button>
-      </Link>
     </section>
   </section>
 );

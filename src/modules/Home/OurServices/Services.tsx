@@ -1,6 +1,5 @@
 'use client';
 import { useState } from 'react';
-import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Arrow } from '@codewinglet/assets';
 import { Reveal } from '@codewinglet/modules/Reveal';
@@ -9,7 +8,6 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-  Button,
 } from '@codewinglet/components';
 import ServiceData from './constants';
 import Content from './components/Content';
@@ -25,18 +23,18 @@ const Services = () => {
 
   return (
     <>
-      <div className='xl:flex mt-[50px] gap-20 mb-[50px] lg:block hidden'>
-        <div className='2xl:w-1/2 xl:w-[471px]'>
+      <div className='xl:flex mt-[50px] gap-20 lg:block hidden'>
+        <div className='2xl:w-[590px] xl:w-[471px]'>
           {ServiceData.map((service, i) => (
             <Reveal key={i}>
               <div
                 key={service.title}
                 onClick={() => handleChangeIndex(i)}
-                className={`text-subtitle2Light ${
+                className={`text-paragraph1ExtraLight ${
                   i === selectedIndex
-                    ? 'text-primary !text-subtitle2'
+                    ? 'text-primary !text-paragraph1Light'
                     : 'text-secondary'
-                } border-b border-headerBoxBorder py-[22px] cursor-pointer flex items-center justify-between`}
+                } border-b border-headerBoxBorder py-[20px] cursor-pointer flex items-center justify-between hover:text-primary hover:text-paragraph1Light`}
               >
                 {service.title}
                 <Arrow
@@ -48,8 +46,8 @@ const Services = () => {
             </Reveal>
           ))}
         </div>
-        <div className='2xl:w-1/2 xl:w-[739px]'>
-          <div className='bg-white lg:p-10 p-5 transition-transform duration-500 ease-in [will-change:_top;] 2xl:w-[690px] 2xl:h-[887px] xl:h-[887px] xl:w-auto'>
+        <div className='2xl:w-[739px] xl:w-[739px]'>
+          <div className='relative bg-white lg:p-10 p-5 transition-transform duration-500 ease-in [will-change:_top;] 2xl:w-[739px] 2xl:h-[819px] xl:h-[816px] xl:w-auto'>
             <AnimatePresence mode='wait'>
               <motion.div
                 key={selectedIndex ? service.title : 'empty'}
@@ -97,22 +95,6 @@ const Services = () => {
             </AccordionItem>
           ))}
         </Accordion>
-      </div>
-
-      <div className='lg:hidden md:block hidden lg:mt-0 md:mt-10 mt-10'>
-        <Button
-          className='lg:w-[231px] md:w-[333px] lg:block m-auto text-center block group bg-bg'
-          variant='blackOutline'
-        >
-          <Link
-            href='/contact-us'
-            rel='noopener noreferrer'
-            className='text-primary group-hover:text-white text-center flex items-center justify-center gap-3'
-          >
-            Book a meeting
-            <Arrow />
-          </Link>
-        </Button>
       </div>
     </>
   );

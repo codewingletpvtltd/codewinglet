@@ -50,7 +50,7 @@ const Footer = () => {
       <footer className='bg-black text-white relative xl:py-[60px] md:py-[40px] md:pt-[60px] py-[30px]'>
         <div className='container'>
           <Reveal>
-            <div className='md:mb-[50px] mb-10 flex justify-between md:items-start sm:items-center items-start flex-col md:flex-col lg:flex-row lg:px-[15px] sm:px-[40px] px-[20px]'>
+            <div className='md:mb-[50px] mb-10 flex justify-between md:items-start sm:items-center items-start flex-col md:flex-col lg:flex-row lg:px-[15px] sm:px-10 px-5'>
               <Image
                 src={'/assets/icons/LogoWhite.svg'}
                 width={100}

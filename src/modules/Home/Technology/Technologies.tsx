@@ -16,7 +16,6 @@ const Technologies = () => {
   return (
     <>
       {/* DESKTOP */}
-
       <div className='xl:flex lg:mt-[50px] mt-10 gap-16'>
         <div className='2xl:w-[18%] lg:w-[20%] w-full lg:border-l lg:border-b-0 border-b border-secondary lg:grid flex lg:gap-0 gap-[29px] md:overscroll-none overflow-y-auto [-ms-overflow-style:_none;] [scrollbar-width:_none;]'>
           {ServiceData.map((service, i) => (

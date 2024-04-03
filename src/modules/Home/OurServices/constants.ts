@@ -14,10 +14,7 @@ const ServiceData = [
         label: 'IT Project Management',
         path: '',
       },
-      {
-        label: 'Technology Infrastructure Assessment and Implementation',
-        path: '',
-      },
+
       {
         label: 'Data Analytics',
         path: '',
@@ -32,6 +29,10 @@ const ServiceData = [
       },
       {
         label: 'Software and System Integration',
+        path: '',
+      },
+      {
+        label: 'Technology Infrastructure Assessment and Implementation',
         path: '',
       },
     ],
@@ -51,10 +52,7 @@ const ServiceData = [
         label: 'Landing Page Development',
         path: '',
       },
-      {
-        label: 'E-Commerce Web App Development',
-        path: '',
-      },
+
       {
         label: 'MVP Development',
         path: '',
@@ -75,6 +73,10 @@ const ServiceData = [
         label: 'Progressive Web App',
         path: '',
       },
+      {
+        label: 'E-Commerce Web App Development',
+        path: '',
+      },
     ],
   },
   {
@@ -92,10 +94,7 @@ const ServiceData = [
         label: 'iOS App Development',
         path: '',
       },
-      {
-        label: 'React Native Cross Platform App Development',
-        path: '',
-      },
+
       {
         label: 'Mobile App Support & Maintenance',
         path: '',
@@ -106,6 +105,10 @@ const ServiceData = [
       },
       {
         label: 'Flutter Cross Platform App Development',
+        path: '',
+      },
+      {
+        label: 'React Native Cross Platform App Development',
         path: '',
       },
     ],
@@ -225,6 +228,10 @@ const ServiceData = [
     path: '',
     subService: [
       {
+        label: 'Cloud Computing',
+        path: '',
+      },
+      {
         label: 'Microservices in DevOps',
         path: '',
       },
@@ -236,20 +243,17 @@ const ServiceData = [
         label: 'Security & Compliance',
         path: '',
       },
+
+      {
+        label: 'Managed & Implementation',
+        path: '',
+      },
+      {
+        label: 'CI/CD',
+        path: '',
+      },
       {
         label: 'DevOps Automation Service',
-        path: '',
-      },
-      {
-        label: 'Managed & Implementation DevOps',
-        path: '',
-      },
-      {
-        label: 'Cloud Computing',
-        path: '',
-      },
-      {
-        label: 'Continuous Integration and Continuous Deployment (CI/CD)',
         path: '',
       },
     ],
@@ -270,15 +274,15 @@ const ServiceData = [
         path: '',
       },
       {
-        label: 'Highly Available and Fault Tolerant Infra',
-        path: '',
-      },
-      {
         label: 'Cloud Automation',
         path: '',
       },
       {
         label: 'Cloud Migration Services',
+        path: '',
+      },
+      {
+        label: 'Highly Available and Fault Tolerant Infra',
         path: '',
       },
     ],

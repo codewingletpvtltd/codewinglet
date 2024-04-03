@@ -110,7 +110,7 @@ const ContactUs = () => {
           <div className='lg:w-[48%] w-full lg:mt-0 md:mt-10'>
             <div className='bg-white md:py-[50px] md:px-[60px] p-5'>
               <Reveal>
-                <Typography className='relative mb-2.5 md:text-subtitle2 text-paragraph2 after:content after:absolute lg:after:top-[36px] after:top-[30px] after:left-0 after:w-[30px] after:h-[2px] after:bg-primary'>
+                <Typography className='relative md:mb-[46px] mb-[26px] md:text-subtitle2 text-paragraph2 after:content after:absolute lg:after:top-[36px] after:top-[30px] after:left-0 after:w-[30px] after:h-[2px] after:bg-primary'>
                   Business Enquiry
                 </Typography>
               </Reveal>
