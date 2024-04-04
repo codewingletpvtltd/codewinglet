@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Arrow } from '@codewinglet/assets';
 import { Button, Typography } from '@codewinglet/components';
-import { Reveal } from '@codewinglet/modules/Reveal';
+import Reveal from '@codewinglet/components/Reveal';
 import SectionHeader from '../../../components/SectionHeader/SectionHeader';
 
 const Collaborate = () => (
@@ -105,7 +105,6 @@ const Collaborate = () => (
             <Link
               href='/contact-us'
               rel='noopener noreferrer'
-              target='_blank'
               className='flex items-center justify-center gap-3'
             >
               Talk to our expert

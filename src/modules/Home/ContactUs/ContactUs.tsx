@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { SectionHeader, Typography } from '@codewinglet/components';
-import { Reveal } from '@codewinglet/modules/Reveal';
+import Reveal from '@codewinglet/components/Reveal';
 import useGetInTouch from './useGetInTouch';
 import Form from './Form';
 

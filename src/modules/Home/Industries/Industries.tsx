@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button, SectionHeader, Typography } from '@codewinglet/components';
 import { Arrow } from '@codewinglet/assets';
-import { Reveal } from '@codewinglet/modules/Reveal';
+import Reveal from '@codewinglet/components/Reveal';
 
 const industriesCard = [
   {

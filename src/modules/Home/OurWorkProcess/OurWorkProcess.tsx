@@ -1,6 +1,6 @@
 'use client';
 import { SectionHeader } from '@codewinglet/components';
-import { Reveal } from '@codewinglet/modules/Reveal';
+import Reveal from '@codewinglet/components/Reveal';
 import Typography from '../../../components/Typography';
 import './scss/process.css';
 

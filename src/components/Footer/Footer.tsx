@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { Button, Typography } from '@codewinglet/components';
 import { Arrow } from '@codewinglet/assets';
 import { getClassNames } from '@codewinglet/utils';
-import { Reveal } from '@codewinglet/modules/Reveal';
+import Reveal from '@codewinglet/components/Reveal';
 import {
   companyTermsMenu,
   serviceMenu,

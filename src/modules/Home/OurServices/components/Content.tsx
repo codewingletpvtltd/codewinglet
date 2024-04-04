@@ -3,7 +3,7 @@ import { FC } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button, Typography } from '@codewinglet/components';
-import { Reveal } from '@codewinglet/modules/Reveal';
+import Reveal from '@codewinglet/components/Reveal';
 import { Arrow } from '@codewinglet/assets';
 import { ContentProps } from '../types';
 

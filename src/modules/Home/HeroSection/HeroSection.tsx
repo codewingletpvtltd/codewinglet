@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button, TypeAnimation, Typography } from '@codewinglet/components';
-import { Reveal } from '@codewinglet/modules/Reveal';
+import Reveal from '@codewinglet/components/Reveal';
 import './herosection.css';
 import { Arrow } from '@codewinglet/assets';
 import { techList } from './utils';

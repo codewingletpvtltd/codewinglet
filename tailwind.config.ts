@@ -40,6 +40,8 @@ export default {
       headerBoxBorder: '#DADADA',
       placeholderText: '#979797',
       transparent: 'transparent',
+      darkBlack: '#191919',
+      darkBorder: '#1d1d1d',
     },
     fontFamily: {
       primary: ['Poppins', 'sans-serif'],
