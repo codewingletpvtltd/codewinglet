@@ -56,6 +56,10 @@ input[type='number']::-webkit-outer-spin-button {
   width: 15.7%;
 }
 
+.why-work .slick-slide {
+  width: 342px !important;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 639px) {
   .process-card h1 {
     font-size: 40px;
@@ -182,6 +186,10 @@ input[type='number']::-webkit-outer-spin-button {
   .client_img {
     background-image: none !important;
   }
+
+  .why-work .slick-slide {
+    width: 120px !important;
+  }
 }
 
 /* styles.css for accordian open */
@@ -219,4 +227,9 @@ input[type='number']::-webkit-outer-spin-button {
 }
 .faq > div {
   padding-bottom: 25px;
+}
+
+/*  */
+
+.slick-next:before {
 }
