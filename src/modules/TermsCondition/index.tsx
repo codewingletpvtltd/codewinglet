@@ -1,7 +1,8 @@
+/* eslint-disable import/order */
 'use client';
-import { useRef } from 'react';
-import Link from 'next/link';
 import { SectionHeader, Typography } from '@codewinglet/components';
+import Link from 'next/link';
+import { useRef } from 'react';
 import ScrollHighlightNavbar from './ScrollHighlighNavBar';
 
 const TermsCondition = () => {
@@ -262,13 +263,13 @@ const TermsCondition = () => {
                   Your acceptance of this policy :
                 </Typography>
                 <Typography className='text-paragraph1ExtraLight text-secondary mt-5'>
-                  Please email us at
+                  Please email us at{' '}
                   <Link
                     href='mailto:info@codewinglet.com'
-                    className='text-primary'
+                    className='text-primary font-semibold'
                   >
                     info@codewinglet.com
-                  </Link>
+                  </Link>{' '}
                   with any queries or worries you may have regarding these terms
                   and conditions.
                 </Typography>
