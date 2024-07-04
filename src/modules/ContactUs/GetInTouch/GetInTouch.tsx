@@ -100,7 +100,6 @@ const GetInTouch = () => {
                     alt='contactX'
                   />
                 </Link>
-                Your acceptance of this policy :
               </div>
             </div>
           </div>

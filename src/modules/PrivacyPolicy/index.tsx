@@ -515,7 +515,10 @@ const PrivacyPolicy = () => {
                 <Typography className='text-paragraph1ExtraLight text-secondary mt-5'>
                   You agree to this privacy statement by using this website. It
                   is recommended that you refrain from using{' '}
-                  <Link href='http://codewinglet.com' className='font-semibold'>
+                  <Link
+                    href='http://codewinglet.com'
+                    className='text-paragraph1 text-primary'
+                  >
                     http://codewinglet.com
                   </Link>{' '}
                   if you do not want to accept the terms stated in this policy
@@ -524,7 +527,10 @@ const PrivacyPolicy = () => {
                 <Typography className='text-paragraph1ExtraLight text-secondary py-5'>
                   After we make changes to this privacy policy, your continuing
                   use of our website,{' '}
-                  <Link href='http://codewinglet.com' className='font-semibold'>
+                  <Link
+                    href='http://codewinglet.com'
+                    className='text-paragraph1 text-primary'
+                  >
                     http://codewinglet.com
                   </Link>
                   , will be taken as your agreement to the updated terms and
