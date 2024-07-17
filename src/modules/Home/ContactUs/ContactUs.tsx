@@ -1,9 +1,11 @@
 'use client';
-import Link from 'next/link';
-import Image from 'next/image';
+
+// eslint-disable-next-line import/order
 import { SectionHeader, Typography } from '@codewinglet/components';
-import useGetInTouch from './useGetInTouch';
+import Image from 'next/image';
+import Link from 'next/link';
 import Form from './Form';
+import useGetInTouch from './useGetInTouch';
 
 const ContactUs = () => {
   const { formData, onChangeFormData, onSubmit, isLoading } = useGetInTouch();
@@ -44,15 +46,15 @@ const ContactUs = () => {
               </Typography>
               <div className='flex gap-[30px]'>
                 <Link
-                  href='https://www.facebook.com/codewingletpteltd'
+                  href='https://in.linkedin.com/company/codewinglet'
                   target='_blank'
-                  aria-label='Facebook'
+                  aria-label='Linkedin'
                 >
                   <Image
-                    src={'/assets/icons/contactFb.svg'}
+                    src={'/assets/icons/contactLinkedin.svg'}
                     width={40}
                     height={40}
-                    alt='contactFb'
+                    alt='contactLinkedin'
                   />
                 </Link>
                 <Link
@@ -68,18 +70,17 @@ const ContactUs = () => {
                   />
                 </Link>
                 <Link
-                  href='https://in.linkedin.com/company/codewinglet'
+                  href='https://www.facebook.com/codewingletpteltd'
                   target='_blank'
-                  aria-label='Linkedin'
+                  aria-label='Facebook'
                 >
                   <Image
-                    src={'/assets/icons/contactLinkedin.svg'}
+                    src={'/assets/icons/contactFb.svg'}
                     width={40}
                     height={40}
-                    alt='contactLinkedin'
+                    alt='contactFb'
                   />
                 </Link>
-
                 <Link
                   href='https://twitter.com/codewinglet'
                   target='_blank'

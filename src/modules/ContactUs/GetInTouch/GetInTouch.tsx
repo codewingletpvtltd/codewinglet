@@ -1,7 +1,8 @@
 'use client';
+// eslint-disable-next-line import/order
+import { Typography } from '@codewinglet/components';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Typography } from '@codewinglet/components';
 import SectionHeader from '../../../components/SectionHeader/SectionHeader';
 
 import Form from '../../Home/ContactUs/Form';
@@ -52,15 +53,15 @@ const GetInTouch = () => {
               </Typography>
               <div className='flex gap-[30px]'>
                 <Link
-                  href='https://www.facebook.com/codewingletpteltd'
+                  href='https://in.linkedin.com/company/codewinglet'
                   target='_blank'
-                  aria-label='Facebook'
+                  aria-label='Linkedin'
                 >
                   <Image
-                    src={'/assets/icons/contactFb.svg'}
+                    src={'/assets/icons/contactLinkedin.svg'}
                     width={40}
                     height={40}
-                    alt='contactFb'
+                    alt='contactLinkedin'
                   />
                 </Link>
                 <Link
@@ -76,18 +77,17 @@ const GetInTouch = () => {
                   />
                 </Link>
                 <Link
-                  href='https://in.linkedin.com/company/codewinglet'
+                  href='https://www.facebook.com/codewingletpteltd'
                   target='_blank'
-                  aria-label='Linkedin'
+                  aria-label='Facebook'
                 >
                   <Image
-                    src={'/assets/icons/contactLinkedin.svg'}
+                    src={'/assets/icons/contactFb.svg'}
                     width={40}
                     height={40}
-                    alt='contactLinkedin'
+                    alt='contactFb'
                   />
                 </Link>
-
                 <Link
                   href='https://twitter.com/codewinglet'
                   target='_blank'

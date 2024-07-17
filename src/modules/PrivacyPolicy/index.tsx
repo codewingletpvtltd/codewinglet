@@ -1,7 +1,8 @@
+/* eslint-disable import/order */
 'use client';
-import { useRef } from 'react';
-import Link from 'next/link';
 import { SectionHeader, Typography } from '@codewinglet/components';
+import Link from 'next/link';
+import { useRef } from 'react';
 import ScrollHighlightNavbar from './ScrollHighlighNavBar';
 
 const PrivacyPolicy = () => {
@@ -513,14 +514,27 @@ const PrivacyPolicy = () => {
                 </Typography>
                 <Typography className='text-paragraph1ExtraLight text-secondary mt-5'>
                   You agree to this privacy statement by using this website. It
-                  is recommended that you refrain from using
-                  http://Codewinglet.com if you do not want to accept the terms
-                  stated in this policy or if you do not desire to accept them.
+                  is recommended that you refrain from using{' '}
+                  <Link
+                    href='http://codewinglet.com'
+                    className='text-paragraph1 text-primary'
+                  >
+                    http://codewinglet.com
+                  </Link>{' '}
+                  if you do not want to accept the terms stated in this policy
+                  or if you do not desire to accept them.
                 </Typography>
                 <Typography className='text-paragraph1ExtraLight text-secondary py-5'>
                   After we make changes to this privacy policy, your continuing
-                  use of our website, http://www.codewinglet.com, will be taken
-                  as your agreement to the updated terms and conditions.
+                  use of our website,{' '}
+                  <Link
+                    href='http://codewinglet.com'
+                    className='text-paragraph1 text-primary'
+                  >
+                    http://codewinglet.com
+                  </Link>
+                  , will be taken as your agreement to the updated terms and
+                  conditions.
                 </Typography>
               </div>
             </div>
