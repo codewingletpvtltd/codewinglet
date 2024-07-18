@@ -1,10 +1,16 @@
 'use client';
-import Link from 'next/link';
-import Image from 'next/image';
+
+// eslint-disable-next-line import/order
 import { SectionHeader, Typography } from '@codewinglet/components';
+
 import Reveal from '@codewinglet/components/Reveal';
 import useGetInTouch from './useGetInTouch';
+
+import Image from 'next/image';
+import Link from 'next/link';
+
 import Form from './Form';
+import useGetInTouch from './useGetInTouch';
 
 const ContactUs = () => {
   const { formData, onChangeFormData, onSubmit, isLoading } = useGetInTouch();
@@ -29,6 +35,7 @@ const ContactUs = () => {
                 assist you in achieving your goals through digital
                 transformation, product outsourcing, or staff augmentation.
               </Typography>
+
             </Reveal>
 
             <Reveal>
@@ -45,6 +52,57 @@ const ContactUs = () => {
                   height={83}
                   alt='glassdoor'
                 />
+
+              <div className='flex gap-[30px]'>
+                <Link
+                  href='https://in.linkedin.com/company/codewinglet'
+                  target='_blank'
+                  aria-label='Linkedin'
+                >
+                  <Image
+                    src={'/assets/icons/contactLinkedin.svg'}
+                    width={40}
+                    height={40}
+                    alt='contactLinkedin'
+                  />
+                </Link>
+                <Link
+                  href='https://www.instagram.com/codewinglet/'
+                  target='_blank'
+                  aria-label='Instagram'
+                >
+                  <Image
+                    src={'/assets/icons/contactInsta.svg'}
+                    width={40}
+                    height={40}
+                    alt='contactInsta'
+                  />
+                </Link>
+                <Link
+                  href='https://www.facebook.com/codewingletpteltd'
+                  target='_blank'
+                  aria-label='Facebook'
+                >
+                  <Image
+                    src={'/assets/icons/contactFb.svg'}
+                    width={40}
+                    height={40}
+                    alt='contactFb'
+                  />
+                </Link>
+                <Link
+                  href='https://twitter.com/codewinglet'
+                  target='_blank'
+                  aria-label='Twitter'
+                >
+                  <Image
+                    src={'/assets/icons/contactX.svg'}
+                    width={40}
+                    height={40}
+                    alt='contactX'
+                  />
+                </Link>
+
               </div>
             </Reveal>
 
