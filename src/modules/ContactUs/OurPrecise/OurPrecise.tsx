@@ -1,10 +1,15 @@
 'use client';
 import Link from 'next/link';
 import Image from 'next/image';
+
+import { Typography } from '@codewinglet/components';
+import Reveal from '@codewinglet/components/Reveal';
+
 import { Button, Typography } from '@codewinglet/components';
 import Counter from '@codewinglet/components/Counter';
 import Reveal from '@codewinglet/components/Reveal';
 import { Arrow } from '@codewinglet/assets';
+
 import SectionHeader from '../../../components/SectionHeader/SectionHeader';
 
 const OurPrecise = () => (
@@ -262,6 +267,7 @@ const OurPrecise = () => (
         </div>
       </div>
     </div>
+
   </>
 );
 

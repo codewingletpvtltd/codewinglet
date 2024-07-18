@@ -1,5 +1,5 @@
 import { PrivacyPolicyModule } from '@codewinglet/modules';
 
-export default function ContactUs() {
+export default function PrivacyPolicy() {
   return <PrivacyPolicyModule />;
 }

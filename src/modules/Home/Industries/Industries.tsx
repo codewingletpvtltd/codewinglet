@@ -86,7 +86,7 @@ const ContactUs = () => (
       </Reveal>
 
       <div className='grid lg:grid-cols-4 grid-cols-2 md:mt-10 md:mb-0 sm:gap-[30px] gap-5 lg:my-[50px] my-5'>
-        {industriesCard.map((card, i) => (
+        {industriesCard.map((card) => (
           <>
             <Reveal>
               <div>
