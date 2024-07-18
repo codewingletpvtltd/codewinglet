@@ -1,14 +1,9 @@
+/* eslint-disable import/order */
 'use client';
-import Link from 'next/link';
-import Image from 'next/image';
-
 import { Typography } from '@codewinglet/components';
 import Reveal from '@codewinglet/components/Reveal';
-
-import { Button, Typography } from '@codewinglet/components';
-import Counter from '@codewinglet/components/Counter';
-import Reveal from '@codewinglet/components/Reveal';
-import { Arrow } from '@codewinglet/assets';
+import Image from 'next/image';
+import Link from 'next/link';
 
 import SectionHeader from '../../../components/SectionHeader/SectionHeader';
 
@@ -239,7 +234,7 @@ const OurPrecise = () => (
     </div>
 
     {/* Powerful data insights */}
-    <div className='bg-black sm:py-20 py-[30px]'>
+    {/* <div className='bg-black sm:py-20 py-[30px]'>
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
         <Reveal>
           <SectionHeader
@@ -266,8 +261,7 @@ const OurPrecise = () => (
           </Button>
         </div>
       </div>
-    </div>
-
+    </div> */}
   </>
 );
 

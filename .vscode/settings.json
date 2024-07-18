@@ -20,5 +20,6 @@
   "liveServer.settings.port": 5501,
   "[svg]": {
     "editor.defaultFormatter": "jock.svg"
-  }
+  },
+  "cSpell.words": ["codewinglet"]
 }

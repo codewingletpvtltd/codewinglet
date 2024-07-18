@@ -1,11 +1,12 @@
+/* eslint-disable import/order */
 'use client';
-import Link from 'next/link';
 import { Arrow } from '@codewinglet/assets';
 import { BlogCard, Button, SectionHeader } from '@codewinglet/components';
 import Counter from '@codewinglet/components/Counter';
 import RelatedFaq from '@codewinglet/components/RelatedFaq';
 import Reveal from '@codewinglet/components/Reveal';
 import WhyWork from '@codewinglet/components/WhyWork';
+import Link from 'next/link';
 
 const CustomComponent = () => (
   <>
@@ -61,7 +62,6 @@ const CustomComponent = () => (
           <div className='lg:mt-[50px] md:mt-10 mt-5'>
             <div className='flex'>
               <BlogCard
-                date='1 Jan 2023'
                 image='/assets/blog/blog_Img1.png'
                 title='Bill Walsh leadership lessons Bill Walsh leadership lessons'
                 desc='Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?'
