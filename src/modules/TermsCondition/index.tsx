@@ -90,9 +90,15 @@ const TermsCondition = () => {
                 </Typography>
                 <Typography className='text-paragraph1ExtraLight text-secondary pt-5'>
                   You accept responsibility for adhering to and being governed
-                  by these Terms & Conditions by visiting and using our website,
-                  <span className='text-primary'>codewinglet.com.</span> Please
-                  do not use this website if you do not agree to these terms.
+                  by these Terms & Conditions by visiting and using our website,{' '}
+                  <Link
+                    href='https://www.codewinglet.com/'
+                    className='text-primary'
+                  >
+                    www.codewinglet.com.
+                  </Link>{' '}
+                  Please do not use this website if you do not agree to these
+                  terms.
                 </Typography>
               </div>
 
@@ -267,25 +273,15 @@ const TermsCondition = () => {
                   Contact information :
                 </Typography>
                 <Typography className='text-paragraph1ExtraLight text-secondary mt-5'>
-
-              
-
                   Please email us at{' '}
-
                   <Link
                     href='mailto:info@codewinglet.com'
                     className='text-primary font-semibold'
                   >
                     info@codewinglet.com
-
                   </Link>
-                  &nbsp; with any queries or worries you may have regarding
-                  these terms and conditions.
-
-                  </Link>{' '}
-                  with any queries or worries you may have regarding these terms
-                  and conditions.
-
+                  &nbsp;with any queries or worries you may have regarding these
+                  terms and conditions.
                 </Typography>
               </div>
             </div>

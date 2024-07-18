@@ -104,12 +104,17 @@ const PrivacyPolicy = () => {
                   otherwise obtain from you.
                 </Typography>
                 <Typography className='text-paragraph1ExtraLight text-secondary pb-10'>
-                  Make sure you are aware that by accessing and using
-                  http://www.codewinglet.com , you agree to the terms and
-                  conditions outlined in this privacy statement. Additionally,
-                  we frequently update our rules, so it's advisable to check
-                  this page sometimes to stay up to date on the most recent
-                  terms and conditions.
+                  Make sure you are aware that by accessing and using{' '}
+                  <Link
+                    href='http://codewinglet.com'
+                    className='text-paragraph1 text-primary'
+                  >
+                    http://codewinglet.com
+                  </Link>
+                  , you agree to the terms and conditions outlined in this
+                  privacy statement. Additionally, we frequently update our
+                  rules, so it's advisable to check this page sometimes to stay
+                  up to date on the most recent terms and conditions.
                 </Typography>
 
                 <ul className='grid gap-[30px] ml-5'>
@@ -542,21 +547,12 @@ const PrivacyPolicy = () => {
                 </Typography>
                 <Typography className='text-paragraph1ExtraLight text-secondary mt-5'>
                   You agree to this privacy statement by using this website. It
-
                   is recommended that you refrain from using&nbsp;
-                  <Link
-                    className='text-primary text-paragraph1'
-                    href='https://www.codewinglet.com'
-                  >
-                    https://www.codewinglet.com
-
-                  is recommended that you refrain from using{' '}
                   <Link
                     href='http://codewinglet.com'
                     className='text-paragraph1 text-primary'
                   >
                     http://codewinglet.com
-
                   </Link>{' '}
                   if you do not want to accept the terms stated in this policy
                   or if you do not desire to accept them.
@@ -565,17 +561,10 @@ const PrivacyPolicy = () => {
                   After we make changes to this privacy policy, your continuing
                   use of our website,{' '}
                   <Link
-
                     className='text-primary text-paragraph1'
                     href='https://www.codewinglet.com'
                   >
                     https://www.codewinglet.com
-
-                    href='http://codewinglet.com'
-                    className='text-paragraph1 text-primary'
-                  >
-                    http://codewinglet.com
-
                   </Link>
                   , will be taken as your agreement to the updated terms and
                   conditions.

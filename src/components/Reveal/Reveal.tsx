@@ -1,6 +1,6 @@
 'use client';
-import { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
+import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer'; // Import useInView from react-intersection-observer
 
 interface Props {
@@ -27,11 +27,7 @@ const Reveal = ({ children, width = 'auto' }: Props) => {
         }}
         initial='hidden'
         animate={controls}
-
         transition={{ duration: 0.5, delay: 0.5 }}
-
-        transition={{ duration: 0.5, delay: 0.75 }}
-
       >
         {children}
       </motion.div>
