@@ -1,4 +1,6 @@
 'use client';
+// eslint-disable-next-line import/order
+import { Typography } from '@codewinglet/components';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Typography } from '@codewinglet/components';
@@ -53,6 +55,7 @@ const GetInTouch = () => {
             </Reveal>
 
             <div className='lg:block hidden'>
+
               <Reveal>
                 <Typography className='text-subtitle2 mb-[25px]'>
                   Follow us in media :
@@ -111,6 +114,61 @@ const GetInTouch = () => {
                   </Link>
                 </div>
               </Reveal>
+
+              <Typography className='text-subtitle2 mb-[25px]'>
+                Follow us in media :
+              </Typography>
+              <div className='flex gap-[30px]'>
+                <Link
+                  href='https://in.linkedin.com/company/codewinglet'
+                  target='_blank'
+                  aria-label='Linkedin'
+                >
+                  <Image
+                    src={'/assets/icons/contactLinkedin.svg'}
+                    width={40}
+                    height={40}
+                    alt='contactLinkedin'
+                  />
+                </Link>
+                <Link
+                  href='https://www.instagram.com/codewinglet/'
+                  target='_blank'
+                  aria-label='Instagram'
+                >
+                  <Image
+                    src={'/assets/icons/contactInsta.svg'}
+                    width={40}
+                    height={40}
+                    alt='contactInsta'
+                  />
+                </Link>
+                <Link
+                  href='https://www.facebook.com/codewingletpteltd'
+                  target='_blank'
+                  aria-label='Facebook'
+                >
+                  <Image
+                    src={'/assets/icons/contactFb.svg'}
+                    width={40}
+                    height={40}
+                    alt='contactFb'
+                  />
+                </Link>
+                <Link
+                  href='https://twitter.com/codewinglet'
+                  target='_blank'
+                  aria-label='Twitter'
+                >
+                  <Image
+                    src={'/assets/icons/contactX.svg'}
+                    width={40}
+                    height={40}
+                    alt='contactX'
+                  />
+                </Link>
+              </div>
+
             </div>
           </div>
           <div className='lg:w-[48%] w-full bg-bg sm:py-[50px] sm:px-[60px] lg:mt-0 sm:mt-10 mt-5 p-5'>
