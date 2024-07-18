@@ -3,7 +3,7 @@
 // eslint-disable-next-line import/order
 import { SectionHeader, Typography } from '@codewinglet/components';
 
-import { Reveal } from '@codewinglet/modules/Reveal';
+import Reveal from '@codewinglet/components/Reveal';
 import useGetInTouch from './useGetInTouch';
 
 import Image from 'next/image';

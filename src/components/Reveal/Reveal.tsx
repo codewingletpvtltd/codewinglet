@@ -8,7 +8,7 @@ interface Props {
   width?: 'fit-content' | '100%' | 'auto';
 }
 
-export const Reveal = ({ children, width = 'auto' }: Props) => {
+const Reveal = ({ children, width = 'auto' }: Props) => {
   const controls = useAnimation();
   const [ref, inView] = useInView({ triggerOnce: true });
 
@@ -34,3 +34,5 @@ export const Reveal = ({ children, width = 'auto' }: Props) => {
     </div>
   );
 };
+
+export default Reveal;

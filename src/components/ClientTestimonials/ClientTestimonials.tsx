@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Reveal } from '@codewinglet/modules/Reveal';
+import Reveal from '@codewinglet/components/Reveal';
 import SectionHeader from '../SectionHeader/SectionHeader';
 import Typography from '../Typography/Typography';
 import Slider from '../Slider/Slider';

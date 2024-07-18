@@ -4,7 +4,7 @@ import { Typography } from '@codewinglet/components';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Typography } from '@codewinglet/components';
-import { Reveal } from '@codewinglet/modules/Reveal';
+import Reveal from '@codewinglet/components/Reveal';
 import SectionHeader from '../../../components/SectionHeader/SectionHeader';
 import Form from '../../Home/ContactUs/Form';
 import useGetInTouch from '../../Home/ContactUs/useGetInTouch';

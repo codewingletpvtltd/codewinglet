@@ -5,7 +5,7 @@ interface CounterProps {
   endValue: number;
 }
 
-const Counter: React.FC<CounterProps> = ({ endValue }) => {
+const AboutCounter: React.FC<CounterProps> = ({ endValue }) => {
   const [counter, setCounter] = useState(0);
   const controls = useAnimation();
 
@@ -32,14 +32,10 @@ const Counter: React.FC<CounterProps> = ({ endValue }) => {
   }, [counter, endValue]);
 
   return (
-    <motion.div
-      style={{ fontSize: '2rem' }}
-      initial={{ opacity: 0, scale: 0 }}
-      animate={controls}
-    >
+    <motion.div initial={{ opacity: 0, scale: 0 }} animate={controls}>
       {counter}
     </motion.div>
   );
 };
 
-export default Counter;
+export default AboutCounter;

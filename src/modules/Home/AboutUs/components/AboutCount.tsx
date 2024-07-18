@@ -1,14 +1,12 @@
-// pages/index.js
-
 import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import Counter from './Counter';
+import AboutCounter from './AboutCounter';
 
 interface Props {
   number: any;
 }
 
-const Count: React.FC<Props> = ({ number }: Props) => {
+const AboutCount: React.FC<Props> = ({ number }: Props) => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -26,13 +24,13 @@ const Count: React.FC<Props> = ({ number }: Props) => {
 
   return (
     <div className='text-white'>
-      {scrolled && <Counter endValue={number} />}
+      {scrolled && <AboutCounter endValue={number} />}
     </div>
   );
 };
 
-Count.propTypes = {
+AboutCount.propTypes = {
   number: PropTypes.any,
 };
 
-export default Count;
+export default AboutCount;

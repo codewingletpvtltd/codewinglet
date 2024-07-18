@@ -1,6 +1,6 @@
 'use client';
 import { SectionHeader } from '@codewinglet/components';
-import { Reveal } from '@codewinglet/modules/Reveal';
+import Reveal from '@codewinglet/components/Reveal';
 import Services from './Services';
 
 const OurService = () => (

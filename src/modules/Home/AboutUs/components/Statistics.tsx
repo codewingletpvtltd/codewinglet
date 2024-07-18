@@ -1,7 +1,7 @@
 'use client';
 import { Typography } from '@codewinglet/components';
-import { Reveal } from '@codewinglet/modules/Reveal';
-import Count from './Count';
+import Reveal from '@codewinglet/components/Reveal';
+import AboutCount from './AboutCount';
 
 type ListItemProps = {
   number: string | React.ReactNode;
@@ -34,7 +34,7 @@ const ListItem = ({ data }: { data: ListItemProps[] }) => (
         <Typography className='xl:text-h4 md:text-h4 text-h5 text-white flex item-center  '>
           {typeof number === 'number' ? (
             <>
-              <Count number={number} />+
+              <AboutCount number={number} />+
             </>
           ) : (
             <Typography>{number}</Typography>
