@@ -5,8 +5,6 @@ import { SectionHeader, Typography } from '@codewinglet/components';
 
 import Reveal from '@codewinglet/components/Reveal';
 
-import useGetInTouch from './useGetInTouch';
-
 import Image from 'next/image';
 import Link from 'next/link';
 
