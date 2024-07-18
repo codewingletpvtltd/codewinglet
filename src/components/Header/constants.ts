@@ -402,14 +402,9 @@ export const navMenu = [
     children: technology,
     left: '2xl:left-[-666px] xl:left-[-601px]',
   },
-
   // {
   //   path: '/not-found',
   //   label: 'Portfolio',
-  // },
-  // {
-  //   path: '/career',
-  //   label: 'Career',
   // },
   {
     path: '/jobs',

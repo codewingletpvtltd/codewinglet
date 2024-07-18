@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Arrow } from '@codewinglet/assets';
 import { Button, Typography } from '@codewinglet/components';
+import { Reveal } from '@codewinglet/modules/Reveal';
 import SectionHeader from '../../../components/SectionHeader/SectionHeader';
 
 const Collaborate = () => (
@@ -28,68 +29,78 @@ const Collaborate = () => (
         </div>
 
         <div className='relative 2xl:pl-[15%] xl:pl-[15%]'>
-          <SectionHeader
-            title={<>Collaborate with our experts for professional guidance</>}
-            headingClassName='text-white lg:pr-20 lg:text-left sm:text-center text-left'
-            descriptionClassName='!hidden'
-          />
-          <Typography className='lg:text-paragraph1ExtraLight sm:text-paragraph1ExtraLight text-tagLight sm:mt-[30px] mt-5 2xl:mb-14 xl:mb-[50px] flex flex-wrap lg:justify-start sm:justify-center justify-start gap-[18px]'>
-            <span className='relative sm:pl-8 pl-6 2xl:order-1'>
-              <Image
-                src={'/assets/ContactUs/check.svg'}
-                alt='Arrow'
-                width={20}
-                height={20}
-                className='absolute left-0 top-1.5 sm:w-[20px] w-[15px]'
-              />
-              Unlock personalized quotations
-            </span>
-            <span className='relative sm:pl-8 pl-6 2xl:order-2'>
-              <Image
-                src={'/assets/ContactUs/check.svg'}
-                alt='Arrow'
-                width={20}
-                height={20}
-                className='absolute left-0 top-1.5 sm:w-[20px] w-[15px]'
-              />{' '}
-              Discover industry-specific solutions
-            </span>
-            <span className='relative sm:pl-8 pl-6 2xl:order-3 xl:order-5 order-5'>
-              <Image
-                src={'/assets/ContactUs/check.svg'}
-                alt='Arrow'
-                width={20}
-                height={20}
-                className='absolute left-0 top-1.5 sm:w-[20px] w-[15px]'
-              />{' '}
-              Boost business growth
-            </span>
-            <span className='relative sm:pl-8 pl-6 2xl:order-4'>
-              <Image
-                src={'/assets/ContactUs/check.svg'}
-                alt='Arrow'
-                width={20}
-                height={20}
-                className='absolute left-0 top-1.5 sm:w-[20px] w-[15px]'
-              />{' '}
-              Overcome business challenges
-            </span>
-            <span className='relative sm:pl-8 pl-6 2xl:order-5'>
-              <Image
-                src={'/assets/ContactUs/check.svg'}
-                alt='Arrow'
-                width={20}
-                height={20}
-                className='absolute left-0 top-1.5 sm:w-[20px] w-[15px]'
-              />{' '}
-              Experience our dedicated support
-            </span>
-          </Typography>
-          <Typography className='sm:text-paragraph1ExtraLight text-tagLight text-secondary lg:text-left sm:text-center text-left lg:mb-0 sm:mt-10 mb-5 mt-5'>
-            Book your Free
-            <span className='text-white'> 30 minutes expert </span>
-            consultation now
-          </Typography>
+          <Reveal>
+            <SectionHeader
+              title={
+                <>Collaborate with our experts for professional guidance</>
+              }
+              headingClassName='text-white lg:pr-20 lg:text-left sm:text-center text-left'
+              descriptionClassName='!hidden'
+            />
+          </Reveal>
+
+          <Reveal>
+            <Typography className='lg:text-paragraph1ExtraLight sm:text-paragraph1ExtraLight text-tagLight sm:mt-[30px] mt-5 flex flex-wrap lg:justify-start sm:justify-center justify-start gap-[18px]'>
+              <span className='relative sm:pl-8 pl-6 2xl:order-1'>
+                <Image
+                  src={'/assets/ContactUs/check.svg'}
+                  alt='Arrow'
+                  width={20}
+                  height={20}
+                  className='absolute left-0 top-1.5 sm:w-[20px] w-[15px]'
+                />
+                Unlock personalized quotations
+              </span>
+              <span className='relative sm:pl-8 pl-6 2xl:order-2'>
+                <Image
+                  src={'/assets/ContactUs/check.svg'}
+                  alt='Arrow'
+                  width={20}
+                  height={20}
+                  className='absolute left-0 top-1.5 sm:w-[20px] w-[15px]'
+                />
+                Discover industry-specific solutions
+              </span>
+              <span className='relative sm:pl-8 pl-6 2xl:order-3 xl:order-5 order-5'>
+                <Image
+                  src={'/assets/ContactUs/check.svg'}
+                  alt='Arrow'
+                  width={20}
+                  height={20}
+                  className='absolute left-0 top-1.5 sm:w-[20px] w-[15px]'
+                />{' '}
+                Boost business growth
+              </span>
+              <span className='relative sm:pl-8 pl-6 2xl:order-4'>
+                <Image
+                  src={'/assets/ContactUs/check.svg'}
+                  alt='Arrow'
+                  width={20}
+                  height={20}
+                  className='absolute left-0 top-1.5 sm:w-[20px] w-[15px]'
+                />{' '}
+                Overcome business challenges
+              </span>
+              <span className='relative sm:pl-8 pl-6 2xl:order-5'>
+                <Image
+                  src={'/assets/ContactUs/check.svg'}
+                  alt='Arrow'
+                  width={20}
+                  height={20}
+                  className='absolute left-0 top-1.5 sm:w-[20px] w-[15px]'
+                />{' '}
+                Experience our dedicated support
+              </span>
+            </Typography>
+          </Reveal>
+
+          <Reveal>
+            <Typography className='sm:text-paragraph1ExtraLight text-tagLight text-secondary lg:text-left sm:text-center text-left lg:mb-0 sm:mt-[50px] mb-5 mt-5'>
+              Book your Free
+              <span className='text-white'> 30 minutes expert </span>
+              consultation now
+            </Typography>
+          </Reveal>
           <Button className='sm:w-[233px] w-full lg:m-[initial] 2xl:mt-[30px] xl:mt-5 block m-auto'>
             <Link
               href='/contact-us'

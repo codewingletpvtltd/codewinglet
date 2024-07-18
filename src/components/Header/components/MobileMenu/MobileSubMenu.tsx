@@ -21,7 +21,7 @@ const MobileSubMenu: FC<MobileSubMenuProps> = ({ parentMenu, onBack }) => (
         {parentMenu.label}
       </div>
     </div>
-    <ul className='pointer-events-auto'>
+    <div className='pointer-events-auto'>
       <Accordion type='single' defaultValue='0' collapsible>
         {parentMenu.children.map((item: any) => (
           <MobileListItem
@@ -33,7 +33,7 @@ const MobileSubMenu: FC<MobileSubMenuProps> = ({ parentMenu, onBack }) => (
           />
         ))}
       </Accordion>
-    </ul>
+    </div>
   </div>
 );
 

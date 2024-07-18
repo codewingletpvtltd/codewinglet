@@ -16,12 +16,12 @@ const TextField: React.FC<TextFieldProps> = ({
   const inputId = useId();
 
   return (
-    <div className='flex flex-col'>
+    <div className='flex flex-col mb-[30px]'>
       {label && (
         <label
           htmlFor={rest.id || inputId}
           className={getClassNames(
-            'text-primary sm:text-paragraph1 text-tag mb-[10px] mt-[30px]',
+            'text-primary sm:text-paragraph1 text-tag mb-[10px]',
             error ? 'text-primary' : '',
             labelClassName
           )}

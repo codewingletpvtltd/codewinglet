@@ -1,7 +1,6 @@
 import React from 'react';
 import { Metadata } from 'next';
 import './globals.css';
-import './scss/main.css';
 import Head from 'next/head';
 import { COLORS } from '@codewinglet/constants';
 
@@ -23,7 +22,7 @@ export default function RootLayout({
         <meta name='theme-color' content={COLORS.primary} />
         <link rel='icon' type='image/ico' sizes='32x32' href='/favicon.ico' />
       </Head>
-      <body className='font-primary bg-[#000]'>{children}</body>
+      <body className='font-primary bg-black'>{children}</body>
     </html>
   );
 }

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Arrow } from '@codewinglet/assets';
 interface Header {
   id: string;
@@ -60,15 +60,17 @@ const ScrollHighlightNavbar: React.FC<ScrollHighlightNavbarProps> = ({
   navHeader,
 }) => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const timeOutRef = useRef<any>(0);
   useEffect(() => {
     const handleScroll = () => {
+      clearTimeout(timeOutRef.current);
       let index = nearestIndex(
         window.scrollY,
         navHeader,
         0,
         navHeader.length - 1
       );
-      setActiveIndex(index);
+      timeOutRef.current = setTimeout(() => setActiveIndex(index), 50);
     };
     document.addEventListener('scroll', handleScroll);
     return () => {
@@ -77,20 +79,20 @@ const ScrollHighlightNavbar: React.FC<ScrollHighlightNavbarProps> = ({
   }, [navHeader]);
 
   return (
-    <div className='2xl:w-[35%] xl:w-[40%] w-full bg-bg lg:p-[30px] p-5 lg:sticky fixed lg:z-0 z-10 right-auto lg:top-[172px] md:top-[90px] top-[78px] lg:left-auto left-0'>
-      <ul className='lg:grid flex overflow-auto [-ms-overflow-style:_none;] [scrollbar-width:_none;] gap-3'>
+    <div className='2xl:w-[25%] xl:w-[27%] w-full lg:p-0 p-5 bg-white lg:sticky fixed lg:z-0 z-10 right-auto lg:top-[230px] md:top-[90px] top-[78px] lg:left-auto left-0'>
+      <ul className='lg:grid flex overflow-auto [-ms-overflow-style:_none;] [scrollbar-width:_none;] gap-6'>
         {navHeader.map((policy, i) => (
           <li key={policy.id} className='flex-shrink-0'>
             <a href={`#${policy.id}`}>
               <div
-                className={`lg:text-paragraph1ExtraLight md:text-paragraph2Light text-tagLight bg-white p-[15px] ${
+                className={` bg-white p-0 ${
                   i === activeIndex
-                    ? 'text-white !bg-primary lg:text-paragraph1ExtraLight md:text-paragraph2Light text-tagLight'
-                    : 'text-secondary'
+                    ? 'text-primary lg:text-paragraph1Bold md:text-paragraph2 text-tag'
+                    : 'text-secondary lg:text-paragraph1ExtraLight md:text-paragraph2Light text-tagLight'
                 } cursor-pointer flex items-center justify-between `}
               >
                 {policy.title}
-                <div className='lg:block hidden'>
+                <div className='hidden'>
                   <Arrow
                     className={` ${i === activeIndex ? 'block' : 'hidden'}`}
                   />

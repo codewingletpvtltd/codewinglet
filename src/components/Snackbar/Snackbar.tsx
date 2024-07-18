@@ -7,10 +7,7 @@ import { SnacbarProviderProps } from './types';
 import useSnackbarProvider from './useSnackbarProvider';
 
 const SnackbarContext = React.createContext({
-  showSnackbar: ({
-    msg,
-    type,
-  }: {
+  showSnackbar: ({}: {
     msg: string;
     type: 'success' | 'warn' | 'error' | 'info';
   }) => {},

@@ -1,12 +1,18 @@
 export default function Jobs() {
   return (
-    <div className='mt-24'>
+    <div className='md:mt-[86px] mt-[78px]'>
       <iframe
         src='https://codewinglet.oorwin.com/careers/index.html'
         width='100%'
-        height='2000'
-        style={{ border: 'none', margin: 0, marginTop: '50px' }}
+        height='auto'
+        style={{
+          border: 'none',
+          margin: 0,
+        }}
+        className='md:h-[2000px] h-[calc(100vh-90px)]'
       ></iframe>
     </div>
   );
 }
+
+//
