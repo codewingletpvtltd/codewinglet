@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { FC } from 'react';
-import Typography from '../Typography';
 import Button from '../Button';
+import Typography from '../Typography';
 import { BlogCardProps } from './types';
 
 const BlogCard: FC<BlogCardProps> = ({ image, desc, title, date }) => (
@@ -17,10 +17,10 @@ const BlogCard: FC<BlogCardProps> = ({ image, desc, title, date }) => (
     ) : (
       <div className='h-[400px] md:h-[390px] xl:h-[450px] w-full rounded-10 z-[-10]' />
     )}
-    <div className='rounded-10 shadow-lg py-[18px] px-[16px] top-[-100px] relative bg-white z-10 mx-[17px] md:mx-[14px]'>
+    <div className='rounded-10 shadow-lg py-[18px] px-4 top-[-100px] relative bg-white z-10 mx-[17px] md:mx-[14px]'>
       <Typography
         variant='subtitle2'
-        className='font-500 text-primary leading-[18px] md:text-[16px] md:leading-[22px]'
+        className='font-500 text-primary leading-[18px] md:text-4 md:leading-[22px]'
       >
         {desc}
       </Typography>
@@ -34,7 +34,7 @@ const BlogCard: FC<BlogCardProps> = ({ image, desc, title, date }) => (
         {date && (
           <Typography
             variant='subtitle2'
-            className='md:text-[16px] text-lightBlack ml-[8px]'
+            className='md:text-4 text-lightBlack ml-[8px]'
           >
             {date.toLocaleString('default', { month: 'long' })} {date.getDate()}
             , {date.getFullYear()}

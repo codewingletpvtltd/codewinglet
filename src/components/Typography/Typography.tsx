@@ -1,5 +1,6 @@
-import React, { forwardRef } from 'react';
+/* eslint-disable import/order */
 import { getClassNames } from '@codewinglet/utils';
+import React, { forwardRef } from 'react';
 import { TypographyProps } from './types';
 
 const Typography: React.FC<TypographyProps> = forwardRef(
@@ -115,7 +116,7 @@ const Typography: React.FC<TypographyProps> = forwardRef(
         return (
           <div
             ref={ref}
-            className={getClassNames('min-h-[24px]', className)}
+            className={getClassNames('min-h-6', className)}
             {...rest}
           >
             {children}

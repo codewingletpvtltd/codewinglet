@@ -1,17 +1,18 @@
-import { FC } from 'react';
-import Image from 'next/image';
+/* eslint-disable import/order */
 import { Accordion } from '@codewinglet/components/Accordion';
+import Image from 'next/image';
+import { FC } from 'react';
 import { MobileSubMenuProps } from '../../types';
 import MobileListItem from './MobileListItem';
 const MobileSubMenu: FC<MobileSubMenuProps> = ({ parentMenu, onBack }) => (
-  <div className='flex flex-col mx-[30px] md:mx-[35px] gap-[10px]'>
+  <div className='flex flex-col mx-[30px] md:mx-[35px] gap-2.5'>
     <div className='flex gap-3 md:h-[90px] md:items-center h-[78px] items-center '>
       <Image
         src='/assets/icons/LeftArrow.svg'
         alt='arrow'
         width={22}
         height={22}
-        className='cursor-pointer md:w-[22px] md:h-[22px] w-[16px] h-[16px]'
+        className='cursor-pointer md:w-[22px] md:h-[22px] w-4 h-4'
         onClick={() => onBack()}
       />
       <div

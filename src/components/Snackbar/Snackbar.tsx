@@ -1,7 +1,8 @@
+/* eslint-disable import/order */
 'use client';
-import React, { FC, useContext } from 'react';
-import Image from 'next/image';
 import { getClassNames } from '@codewinglet/utils';
+import Image from 'next/image';
+import React, { FC, useContext } from 'react';
 import Typography from '../Typography';
 import { SnacbarProviderProps } from './types';
 import useSnackbarProvider from './useSnackbarProvider';
@@ -20,15 +21,15 @@ export const SnackbarProvider: FC<SnacbarProviderProps> = ({ children }) => {
   return (
     <SnackbarContext.Provider value={{ showSnackbar: showHandler }}>
       {children}
-      <div className='flex justify-end bg-error relative px-[20px] md:px-[38px]'>
+      <div className='flex justify-end bg-error relative px-5 md:px-[38px]'>
         <div
           className={getClassNames(
-            'fixed py-[10px] px-[20px] top-[100px] rounded-10 z-[9999] shadow-lg border',
+            'fixed py-2.5 px-5 top-[100px] rounded-10 z-[9999] shadow-lg border',
             background(),
             open ? 'animate-enterFromRight' : 'right-[-150px]'
           )}
         >
-          <div className='flex flex-row items-center gap-[10px]'>
+          <div className='flex flex-row items-center gap-2.5'>
             {showIcon()}
             <Typography
               variant='subtitle1'
@@ -37,13 +38,13 @@ export const SnackbarProvider: FC<SnacbarProviderProps> = ({ children }) => {
               {data.msg}
             </Typography>
             <span
-              className='flex justify-end ml-[20px] hover:shadow-lg hover:rounded-full hover:bg-[rgba(0,0,0,0.08)] p-[10px] cursor-pointer hover:transition-opacity hover:duration-300 hover:ease-linear'
+              className='flex justify-end ml-5 hover:shadow-lg hover:rounded-full hover:bg-[rgba(0,0,0,0.08)] p-2.5 cursor-pointer hover:transition-opacity hover:duration-300 hover:ease-linear'
               onClick={closeHandler}
             >
               <Image
                 src={'/assets/icons/SnackbarClose.svg'}
                 alt='SnackbarClose'
-                className='h-[20px] w-[20px]'
+                className='h-5 w-5'
                 width={20}
                 height={20}
               />

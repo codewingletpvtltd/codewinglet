@@ -1,8 +1,9 @@
-import { Url } from 'url';
-import { FC } from 'react';
+/* eslint-disable import/order */
+import { getClassNames } from '@codewinglet/utils';
 import Image from 'next/image';
 import Link from 'next/link';
-import { getClassNames } from '@codewinglet/utils';
+import { FC } from 'react';
+import { Url } from 'url';
 import Typography from '../../../Typography';
 import { ListItemProps } from '../../types';
 
@@ -35,7 +36,7 @@ export const ListItem: FC<ListItemProps> = ({
             <div>
               <Typography
                 className={getClassNames(
-                  'capitalize ml-[16px]  text-primary text-paragraph2 ',
+                  'capitalize ml-4  text-primary text-paragraph2 ',
                   labelClassName
                 )}
               >
@@ -44,7 +45,7 @@ export const ListItem: FC<ListItemProps> = ({
               {description && (
                 <Typography
                   className={getClassNames(
-                    'font-bold capitalize ml-[16px] text-[18px] font-400 text-primary 2xl:text-subtitle1 xl:text-[14px]',
+                    'font-bold capitalize ml-4 text-[18px] font-400 text-primary 2xl:text-subtitle1 xl:text-[14px]',
                     labelClassName
                   )}
                 >
@@ -117,7 +118,7 @@ export const ListItem: FC<ListItemProps> = ({
               {description && (
                 <Typography
                   className={getClassNames(
-                    'font-bold capitalize ml-[16px] text-[14px] font-300 text-dropdownText w-[92%]',
+                    'font-bold capitalize ml-4 text-[14px] font-300 text-dropdownText w-[92%]',
                     labelClassName
                   )}
                 >

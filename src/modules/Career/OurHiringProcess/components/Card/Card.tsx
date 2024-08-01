@@ -1,6 +1,7 @@
+/* eslint-disable import/order */
+import { Typography } from '@codewinglet/components';
 import Image from 'next/image';
 import { FC } from 'react';
-import { Typography } from '@codewinglet/components';
 import { CardProps } from '../../types';
 
 const Card: FC<CardProps> = ({ index, icon, title, desc }) => (
@@ -27,7 +28,7 @@ const Card: FC<CardProps> = ({ index, icon, title, desc }) => (
     </Typography>
     <Typography
       variant='subtitle2'
-      className='leading-[20px] md:text-[16px] md:leading-[25px] lg:text-[18px] lg:leading-[30px] text-center'
+      className='leading-[20px] md:text-4 md:leading-[25px] lg:text-[18px] lg:leading-[30px] text-center'
     >
       {desc}
     </Typography>

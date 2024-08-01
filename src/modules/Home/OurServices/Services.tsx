@@ -1,16 +1,17 @@
+/* eslint-disable import/order */
 'use client';
-import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 import { Arrow } from '@codewinglet/assets';
-import Reveal from '@codewinglet/components/Reveal';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from '@codewinglet/components';
-import ServiceData from './constants';
+import Reveal from '@codewinglet/components/Reveal';
+import { AnimatePresence, motion } from 'framer-motion';
+import { useState } from 'react';
 import Content from './components/Content';
+import ServiceData from './constants';
 
 const Services = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -34,7 +35,7 @@ const Services = () => {
                   i === selectedIndex
                     ? 'text-primary !text-paragraph1Light'
                     : 'text-secondary'
-                } border-b border-headerBoxBorder py-[20px] cursor-pointer flex items-center justify-between hover:text-primary hover:text-paragraph1Light`}
+                } border-b border-headerBoxBorder py-5 cursor-pointer flex items-center justify-between hover:text-primary hover:text-paragraph1Light`}
               >
                 {service.title}
                 <Arrow

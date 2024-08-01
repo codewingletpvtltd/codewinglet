@@ -1,9 +1,10 @@
+/* eslint-disable import/order */
 'use client';
-import Link from 'next/link';
-import Image from 'next/image';
 import { Arrow } from '@codewinglet/assets';
 import { Button, Typography } from '@codewinglet/components';
 import Reveal from '@codewinglet/components/Reveal';
+import Image from 'next/image';
+import Link from 'next/link';
 import SectionHeader from '../../../components/SectionHeader/SectionHeader';
 
 const Collaborate = () => (
@@ -16,7 +17,7 @@ const Collaborate = () => (
       backgroundSize: 'cover',
     }}
   >
-    <div className='container w-full lg:px-[15px] sm:px-[30px] px-[20px] mx-auto'>
+    <div className='container w-full lg:px-[15px] sm:px-[30px] px-5 mx-auto'>
       <div className='flex justify-between items-center'>
         <div className='2xl:w-[356px] xl:w-[480px]'>
           <Image
@@ -47,7 +48,7 @@ const Collaborate = () => (
                   alt='Arrow'
                   width={20}
                   height={20}
-                  className='absolute left-0 top-1.5 sm:w-[20px] w-[15px]'
+                  className='absolute left-0 top-1.5 sm:w-5 w-[15px]'
                 />
                 Unlock personalized quotations
               </span>
@@ -57,7 +58,7 @@ const Collaborate = () => (
                   alt='Arrow'
                   width={20}
                   height={20}
-                  className='absolute left-0 top-1.5 sm:w-[20px] w-[15px]'
+                  className='absolute left-0 top-1.5 sm:w-5 w-[15px]'
                 />
                 Discover industry-specific solutions
               </span>
@@ -67,7 +68,7 @@ const Collaborate = () => (
                   alt='Arrow'
                   width={20}
                   height={20}
-                  className='absolute left-0 top-1.5 sm:w-[20px] w-[15px]'
+                  className='absolute left-0 top-1.5 sm:w-5 w-[15px]'
                 />{' '}
                 Boost business growth
               </span>
@@ -77,7 +78,7 @@ const Collaborate = () => (
                   alt='Arrow'
                   width={20}
                   height={20}
-                  className='absolute left-0 top-1.5 sm:w-[20px] w-[15px]'
+                  className='absolute left-0 top-1.5 sm:w-5 w-[15px]'
                 />{' '}
                 Overcome business challenges
               </span>
@@ -87,7 +88,7 @@ const Collaborate = () => (
                   alt='Arrow'
                   width={20}
                   height={20}
-                  className='absolute left-0 top-1.5 sm:w-[20px] w-[15px]'
+                  className='absolute left-0 top-1.5 sm:w-5 w-[15px]'
                 />{' '}
                 Experience our dedicated support
               </span>

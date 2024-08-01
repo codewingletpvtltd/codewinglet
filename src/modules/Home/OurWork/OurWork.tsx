@@ -1,6 +1,7 @@
+/* eslint-disable import/order */
+import { Button, SectionHeader, Typography } from '@codewinglet/components';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Button, SectionHeader, Typography } from '@codewinglet/components';
 
 import { portfolio } from './data';
 
@@ -37,7 +38,7 @@ const OurWork = () => (
                     <button className='w-[180px] h-[50px] text-white block border-none cursor-pointer mx-auto flex items-center justify-center'>
                       {data.button}{' '}
                       <Image
-                        className='ml-[10px]'
+                        className='ml-2.5'
                         src={'/assets/icons/BtnArrow.svg'}
                         alt='Arrow'
                         width={16}
@@ -48,10 +49,10 @@ const OurWork = () => (
                 </a>
               </div>
               <div className='project-head'>
-                <Typography className='mt-[10px] text-primary text-subtitle1 font-500'>
+                <Typography className='mt-2.5 text-primary text-subtitle1 font-500'>
                   {data.subtitle}
                 </Typography>
-                <h3 className='text-primary font-500 lg:text-[28px] sm:text-[20px] text-[18px] md:mb-[5px] sm:mb-2 mb-1'>
+                <h3 className='text-primary font-500 lg:text-7 sm:text-5 text-[18px] md:mb-[5px] sm:mb-2 mb-1'>
                   {data.title}
                 </h3>
                 <p className='text-primary sm:text-[15px] text-[14px] font-300 mb-0'>

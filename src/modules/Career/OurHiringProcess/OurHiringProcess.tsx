@@ -1,6 +1,6 @@
 import { SectionHeader } from '@codewinglet/components';
-import { processSteps } from './constants';
 import { Card } from './components';
+import { processSteps } from './constants';
 
 const OurHiringProcess = () => (
   <div className='max-w-screen-xl xl:mx-auto mx-[20px] md:mx-[38px] my-[150px]'>
@@ -16,7 +16,7 @@ const OurHiringProcess = () => (
       descriptionTextWrap
       headingClassName='text-center'
     />
-    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] mt-[80px]'>
+    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] mt-20'>
       {processSteps.map((step, index) => (
         <Card
           key={`hiring-process-step-${index}`}

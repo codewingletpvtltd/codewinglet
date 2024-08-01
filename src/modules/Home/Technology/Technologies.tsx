@@ -1,8 +1,8 @@
 'use client';
+import { AnimatePresence, motion } from 'framer-motion';
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import ServiceData from './constants';
 import Content from './components/Content';
+import ServiceData from './constants';
 
 const Technologies = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -31,7 +31,7 @@ const Technologies = () => {
               {service.title}
               {i === selectedIndex ? (
                 <motion.div
-                  className='content absolute lg:w-[1px] w-full bg-white lg:h-[36px] h-[1px] lg:top-0 bottom-0 lg:left-0 left-auto'
+                  className='content absolute lg:w-[1px] w-full bg-white lg:h-9 h-[1px] lg:top-0 bottom-0 lg:left-0 left-auto'
                   layoutId='underline'
                 />
               ) : null}

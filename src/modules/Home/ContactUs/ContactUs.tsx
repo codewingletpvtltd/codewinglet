@@ -33,7 +33,7 @@ const ContactUs = () => {
             </Reveal>
 
             <Reveal>
-              <div className='hidden relative lg:flex gap-[100px] mb-[60px] after:content after:absolute after:top-[12px] 2xl:after:left-[22%] xl:after:left-[24%] after:w-[1px] after:h-[57px] after:bg-headerBoxBorder'>
+              <div className='hidden relative lg:flex gap-[100px] mb-[60px] after:content after:absolute after:top-3 2xl:after:left-[22%] xl:after:left-[24%] after:w-[1px] after:h-[57px] after:bg-headerBoxBorder'>
                 <Image
                   src={'/assets/ContactUs/google-review.svg'}
                   width={97}
@@ -110,7 +110,7 @@ const ContactUs = () => {
           <div className='lg:w-[48%] w-full lg:mt-0 md:mt-10'>
             <div className='bg-white md:py-[50px] md:px-[60px] p-5'>
               <Reveal>
-                <Typography className='relative md:mb-[46px] mb-[26px] md:text-subtitle2 text-paragraph2 after:content after:absolute lg:after:top-[36px] after:top-[30px] after:left-0 after:w-[30px] after:h-[2px] after:bg-primary'>
+                <Typography className='relative md:mb-[46px] mb-[26px] md:text-subtitle2 text-paragraph2 after:content after:absolute lg:after:top-9 after:top-[30px] after:left-0 after:w-[30px] after:h-[2px] after:bg-primary'>
                   Business Enquiry
                 </Typography>
               </Reveal>

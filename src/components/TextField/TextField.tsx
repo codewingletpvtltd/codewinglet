@@ -1,5 +1,6 @@
-import React, { useId } from 'react';
+/* eslint-disable import/order */
 import { getClassNames } from '@codewinglet/utils';
+import React, { useId } from 'react';
 import { TextFieldProps } from './types';
 
 const TextField: React.FC<TextFieldProps> = ({
@@ -21,7 +22,7 @@ const TextField: React.FC<TextFieldProps> = ({
         <label
           htmlFor={rest.id || inputId}
           className={getClassNames(
-            'text-primary sm:text-paragraph1 text-tag mb-[10px]',
+            'text-primary sm:text-paragraph1 text-tag mb-2.5',
             error ? 'text-primary' : '',
             labelClassName
           )}
@@ -46,7 +47,7 @@ const TextField: React.FC<TextFieldProps> = ({
           autoComplete='off'
           disabled={disabled}
           className={getClassNames(
-            'rounded-none border-solid h-[40px] w-[200px] sm:text-paragraph1ExtraLight text-tag bg-transparent placeholder:text-placeholderText focus:outline-none focus:border-primary ',
+            'rounded-none border-solid h-10 w-[200px] sm:text-paragraph1ExtraLight text-tag bg-transparent placeholder:text-placeholderText focus:outline-none focus:border-primary ',
             error ? 'border-error border-b' : 'border-b border-secondary ',
             disabled ? 'pointer-events-none bg-secondary' : '',
             fullWidth ? 'w-full' : ''

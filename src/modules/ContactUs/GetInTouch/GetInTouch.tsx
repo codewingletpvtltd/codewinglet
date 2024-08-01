@@ -13,7 +13,7 @@ const GetInTouch = () => {
 
   return (
     <div className=' bg-white mt-[78px] md:pt-20 2xl:pb-[160px] xl:pb-[140px] pt-[30px] sm:pb-0 pb-[30px]'>
-      <div className='container w-full lg:px-[15px] sm:px-[30px] px-[20px] mx-auto'>
+      <div className='container w-full lg:px-[15px] sm:px-[30px] px-5 mx-auto'>
         <div className='lg:flex block 2xl:gap-[90px] xl:gap-[25px]'>
           <div className='lg:w-[52%] w-full'>
             <Reveal>
@@ -37,7 +37,7 @@ const GetInTouch = () => {
             </Reveal>
 
             <Reveal>
-              <div className='relative lg:flex hidden gap-[100px] my-[50px] after:content after:absolute after:top-[12px] after:left-[22%] after:w-[1px] after:h-[57px] after:bg-headerBoxBorder'>
+              <div className='relative lg:flex hidden gap-[100px] my-[50px] after:content after:absolute after:top-3 after:left-[22%] after:w-[1px] after:h-[57px] after:bg-headerBoxBorder'>
                 <Image
                   src={'/assets/ContactUs/google-review.svg'}
                   width={97}
@@ -111,7 +111,7 @@ const GetInTouch = () => {
           </div>
           <div className='lg:w-[48%] w-full bg-bg sm:py-[50px] sm:px-[60px] lg:mt-0 sm:mt-10 mt-5 p-5'>
             <Reveal>
-              <Typography className='relative md:mb-[46px] mb-[26px] sm:text-subtitle2 text-paragraph2 font-400 after:content after:absolute sm:after:top-[36px] after:top-[30px] after:left-0 after:w-[30px] after:h-[2px] after:bg-primary'>
+              <Typography className='relative md:mb-[46px] mb-[26px] sm:text-subtitle2 text-paragraph2 font-400 after:content after:absolute sm:after:top-9 after:top-[30px] after:left-0 after:w-[30px] after:h-[2px] after:bg-primary'>
                 Business Enquiry
               </Typography>
             </Reveal>
