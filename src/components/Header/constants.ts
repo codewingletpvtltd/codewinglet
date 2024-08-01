@@ -417,7 +417,7 @@ export const navMenu = [
   },
   {
     label: 'About us',
-    // children: companyMenu,
+    path: 'about-us',
     left: 'left-[-59rem]',
   },
 ];

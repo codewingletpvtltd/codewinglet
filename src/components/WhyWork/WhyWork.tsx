@@ -1,7 +1,9 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import Slider from 'react-slick';
+/* eslint-disable quotes */
+// eslint-disable-next-line import/order
 import { Arrow } from '@codewinglet/assets';
+import Image from 'next/image';
+import Link from 'next/link';
+import Slider from 'react-slick';
 import Button from '../Button';
 import Reveal from '../Reveal';
 import SectionHeader from '../SectionHeader';
@@ -55,35 +57,81 @@ const WhyWork = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 2800,
+    speed: 1500,
     autoplaySpeed: 2800,
     cssEase: 'linear',
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
-    // responsive: [
-    //   {
-    //     breckpoint: 1024,
-    //     settings: {
-    //       slidesToShow: 3,
-    //       slidesToScroll: 3,
-    //     },
-    //   },
-    //   {
-    //     breckpoint: 600,
-    //     settings: {
-    //       slidesToShow: 2,
-    //       slidesToScroll: 2,
-    //     },
-    //   },
-    //   {
-    //     breckpoint: 480,
-    //     settings: {
-    //       slidesToShow: 1,
-    //       slidesToScroll: 1,
-    //     },
-    //   },
-    // ],
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
+
+  const items = [
+    {
+      imgSrc: '/assets/comman/best-quality.png',
+      imgAlt: 'Best quality',
+      title: 'Best quality',
+      description:
+        'Our track record of excellent work positions as the top choice for all your IT requirements.',
+    },
+    {
+      imgSrc: '/assets/comman/committed.png',
+      imgAlt: 'Committed',
+      title: 'Committed',
+      description:
+        "We're committed to innovative IT solutions that meet clients expectations.",
+    },
+    {
+      imgSrc: '/assets/comman/timely-support.png',
+      imgAlt: 'Timely support',
+      title: 'Timely support',
+      description:
+        'Our support team is available whenever you need assistance, ensuring minimal downtime.',
+    },
+    {
+      imgSrc: '/assets/comman/professional.png',
+      imgAlt: 'Professional',
+      title: 'Professional',
+      description:
+        "We're experts in IT, crafting professional solutions just for you with skill and care.",
+    },
+    {
+      imgSrc: '/assets/comman/user-centered.png',
+      imgAlt: 'User centered',
+      title: 'User centered',
+      description:
+        'We focus on creating user-friendly designs to provide the best experience for everyone.',
+    },
+    {
+      imgSrc: '/assets/comman/teamwork.png',
+      imgAlt: 'Teamwork',
+      title: 'Teamwork',
+      description:
+        'We values teamwork, crafting tailored solutions that excel and deliver top results.',
+    },
+  ];
+
   return (
     <div className='bg-bg xl:py-20 lg:py-14 md:py-[60px] py-10 why-work lg:!pb-24 overflow-hidden'>
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
@@ -121,102 +169,28 @@ const WhyWork = () => {
           </Button>
         </div>
 
-        <div className='relative slider-container 2xl:w-[1261px] w-full lg:pl-10 lg:pt-10 before:content before:absolute before:top-10 before:left-10 before:w-10 before:h-[329px] before:z-10'>
+        <div className='relative slider-container 2xl:w-[1261px] w-full lg:pl-10 lg:pt-10 md:before:content md:before:absolute before:top-10 before:left-10 before:w-10 before:h-[329px] before:z-10'>
           <Slider {...settings}>
-            <div className='bg-white p-[15px] !w-[302px]'>
-              <Image
-                src='/assets/comman/best-quality.png'
-                alt='committed'
-                width='272'
-                height='160'
-              />
-              <Typography className='lg:text-subtitle2 text-tag pt-[15px] pb-2.5'>
-                Best quality
-              </Typography>
-              <Typography className='text-placeholderText lg:text-paragraph2Light text-tagExtraLight'>
-                Our track record of excellent work positions as the top choice
-                for all your IT requirements.
-              </Typography>
-            </div>
-            <div className='bg-white p-[15px] !w-[302px]'>
-              <Image
-                src='/assets/comman/committed.png'
-                alt='committed'
-                width='272'
-                height='160'
-              />
-              <Typography className='lg:text-subtitle2 text-tag pt-[15px] pb-2.5'>
-                Committed
-              </Typography>
-              <Typography className='text-placeholderText lg:text-paragraph2Light text-tagExtraLight'>
-                We're committed to innovative IT solutions that meet clients
-                expectations.
-              </Typography>
-            </div>
-            <div className='bg-white p-[15px] !w-[302px]'>
-              <Image
-                src='/assets/comman/timely-support.png'
-                alt='committed'
-                width='272'
-                height='160'
-              />
-              <Typography className='lg:text-subtitle2 text-tag pt-[15px] pb-2.5'>
-                Timely support
-              </Typography>
-              <Typography className='text-placeholderText lg:text-paragraph2Light text-tagExtraLight'>
-                Our support team is available whenever you need assistance,
-                ensuring minimal downtime.
-              </Typography>
-            </div>
-            <div className='bg-white p-[15px] !w-[302px]'>
-              <Image
-                src='/assets/comman/professional.png'
-                alt='committed'
-                width='272'
-                height='160'
-              />
-              <Typography className='lg:text-subtitle2 text-tag pt-[15px] pb-2.5'>
-                Professional
-              </Typography>
-              <Typography className='text-placeholderText lg:text-paragraph2Light text-tagExtraLight'>
-                We're experts in IT, crafting professional solutions just for
-                you with skill and care.
-              </Typography>
-            </div>
-            <div className='bg-white p-[15px] !w-[302px]'>
-              <Image
-                src='/assets/comman/user-centered.png'
-                alt='committed'
-                width='272'
-                height='160'
-              />
-              <Typography className='lg:text-subtitle2 text-tag pt-[15px] pb-2.5'>
-                User centered
-              </Typography>
-              <Typography className='text-placeholderText lg:text-paragraph2Light text-tagExtraLight'>
-                We focus on creating user-friendly designs to provide the best
-                experience for everyone.
-              </Typography>
-            </div>
-            <div className='bg-white p-[15px] !w-[302px]'>
-              <Image
-                src='/assets/comman/teamwork.png'
-                alt='committed'
-                width='272'
-                height='160'
-              />
-              <Typography className='lg:text-subtitle2 text-tag pt-[15px] pb-2.5'>
-                Teamwork
-              </Typography>
-              <Typography className='text-placeholderText lg:text-paragraph2Light text-tagExtraLight'>
-                We values teamwork, crafting tailored solutions that excel and
-                deliver top results.
-              </Typography>
-            </div>
+            {items.map((item, index) => (
+              <div className='bg-white p-[15px] !w-[302px] mr-5' key={index}>
+                <Image
+                  src={item.imgSrc}
+                  alt={item.imgAlt}
+                  width='272'
+                  height='160'
+                />
+                <Typography className='lg:text-subtitle2 text-tag pt-[15px] pb-2.5'>
+                  {item.title}
+                </Typography>
+                <Typography className='text-placeholderText lg:text-paragraph2Light text-[13px]'>
+                  {item.description}
+                </Typography>
+              </div>
+            ))}
           </Slider>
         </div>
       </div>
-      <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto lg:hidden md:block hidden'>
+      <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
         <Statics />
       </div>
     </div>

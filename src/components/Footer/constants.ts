@@ -232,8 +232,7 @@ export const technologyMenu = [
 export const companyMenu = [
   {
     id: 1,
-    // path: '/terms-and-conditions',
-    path: '',
+    path: '/about-us',
     label: 'About us',
   },
   {
