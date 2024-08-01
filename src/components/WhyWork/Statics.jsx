@@ -1,8 +1,9 @@
+/* eslint-disable import/order */
+import { Arrow } from '@codewinglet/assets';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Arrow } from '@codewinglet/assets';
-import Typography from '../Typography';
 import Button from '../Button';
+import Typography from '../Typography';
 
 const workData = [
   {
@@ -45,8 +46,8 @@ const workData = [
 
 const Statics = () => (
   <>
-    <hr className='border-headerBoxBorder mt-10 mb-[30px]' />
-    <div className='grid grid-cols-2 gap-[30px]'>
+    <hr className='border-headerBoxBorder mt-10 mb-[30px] lg:hidden md:block hidden' />
+    <div className='lg:hidden md:grid grid-cols-2 gap-[30px] hidden'>
       {workData.map((workData, i) => (
         <div className='bg-white p-3' key={i}>
           <Image
@@ -65,7 +66,10 @@ const Statics = () => (
         </div>
       ))}
     </div>
-    <Button className='w-[231px] m-auto mt-10 flex' variant='default'>
+    <Button
+      className='w-[231px] m-auto md:mt-10 mt-16 lg:hidden md:flex block'
+      variant='default'
+    >
       <Link
         href='/contact-us'
         rel='noopener noreferrer'

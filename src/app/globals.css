@@ -30,6 +30,10 @@ iframe .gm-style-mtc {
   display: none;
 }
 
+.slick-initialized .slick-slide {
+  width: auto !important;
+}
+
 /* Our Work Process */
 
 .process-card h1 {
@@ -54,10 +58,6 @@ input[type='number']::-webkit-outer-spin-button {
 
 .address svg {
   width: 15.7%;
-}
-
-.why-work .slick-slide {
-  width: 342px !important;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 639px) {
@@ -187,8 +187,12 @@ input[type='number']::-webkit-outer-spin-button {
     background-image: none !important;
   }
 
-  .why-work .slick-slide {
-    width: 120px !important;
+  .why-work .slick-slider .slick-prev {
+    left: 40% !important;
+  }
+
+  .why-work .slick-slider .slick-next {
+    left: 50% !important;
   }
 }
 
