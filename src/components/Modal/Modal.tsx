@@ -1,8 +1,9 @@
-import { FC } from 'react';
-import Image from 'next/image';
+/* eslint-disable import/order */
 import { getClassNames } from '@codewinglet/utils';
-import Typography from '../Typography';
+import Image from 'next/image';
+import { FC } from 'react';
 import Button from '../Button';
+import Typography from '../Typography';
 import { ModalProps } from './types';
 
 const Modal: FC<ModalProps> = ({
@@ -29,7 +30,7 @@ const Modal: FC<ModalProps> = ({
     >
       <div className='bg-primary h-[6px]' />
 
-      <div className='grid grid-flow-row gap-[30px] pt-[20px] px-[36px] pb-[40px] bg-white'>
+      <div className='grid grid-flow-row gap-[30px] pt-5 px-[36px] pb-10 bg-white'>
         {showHeader && (
           <div className='flex justify-start items-center'>
             <Typography

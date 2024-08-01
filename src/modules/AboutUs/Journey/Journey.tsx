@@ -23,7 +23,7 @@ const Journey = () => (
               world-class software across diverse industries.
             </Typography>
 
-            <div className='lg:flex group cursor-pointer text-primary mt-[10px] items-center group gap-2.5 hidden'>
+            <div className='lg:flex group cursor-pointer text-primary mt-2.5 items-center group gap-2.5 hidden'>
               <Link
                 href='https://maps.app.goo.gl/6W7ns2r5VzPFGmkA8'
                 target='_blank'

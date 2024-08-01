@@ -1,6 +1,7 @@
-import { FC } from 'react';
+/* eslint-disable import/order */
 import { Arrow } from '@codewinglet/assets';
 import { getClassNames } from '@codewinglet/utils';
+import { FC } from 'react';
 import { _arrowPosition, verticalPosition } from '../constants';
 import { ArrowProps } from '../types';
 
@@ -19,13 +20,13 @@ const Arrows: FC<ArrowProps> = ({
     >
       <div className='text-white hover:text-secondary cursor-pointer'>
         <Arrow
-          className='rotate-180 w-[24px] h-[24px]'
+          className='rotate-180 w-6 h-6'
           onClick={() => sliderRef?.current?.slickPrev()}
         />
       </div>
       <div className='text-white hover:text-secondary cursor-pointer'>
         <Arrow
-          className='w-[24px] h-[24px]'
+          className='w-6 h-6'
           onClick={() => sliderRef?.current?.slickNext()}
         />
       </div>

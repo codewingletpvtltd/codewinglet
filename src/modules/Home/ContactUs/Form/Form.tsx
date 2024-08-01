@@ -1,8 +1,9 @@
-import { FC } from 'react';
+/* eslint-disable import/order */
 import { Arrow } from '@codewinglet/assets';
-import Textarea from '../../../../components/Textarea';
+import { FC } from 'react';
 import Button from '../../../../components/Button';
 import TextField from '../../../../components/TextField';
+import Textarea from '../../../../components/Textarea';
 import { FormProps } from '../types';
 
 const Form: FC<FormProps> = ({ formData, onChangeFormData, onSubmit }) => (
@@ -55,7 +56,7 @@ const Form: FC<FormProps> = ({ formData, onChangeFormData, onSubmit }) => (
         onChange={(e) => onChangeFormData({ message: e.target.value })}
       />
     </div>
-    <div className='flex items-center justify-end mt-[40px]'>
+    <div className='flex items-center justify-end mt-10'>
       <Button
         variant='default'
         type='submit'

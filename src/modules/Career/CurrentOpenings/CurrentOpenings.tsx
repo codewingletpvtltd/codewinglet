@@ -9,7 +9,7 @@ const CurrentOpenings = () => {
 
   return (
     <>
-      <div className='max-w-screen-xl mx-[20px] my-[50px] md:mx-[38px] xl:mx-auto mt-[150px]'>
+      <div className='max-w-screen-xl mx-5 my-[50px] md:mx-[38px] xl:mx-auto mt-[150px]'>
         <SectionHeader
           title={
             <>
@@ -18,7 +18,7 @@ const CurrentOpenings = () => {
           }
           headingClassName='text-center'
         />
-        <div className='flex flex-col gap-[20px] md:gap-[30px]'></div>
+        <div className='flex flex-col gap-5 md:gap-[30px]'></div>
       </div>
       <CareerApplyNow open={showModal} onClose={() => setShowModal(false)} />
     </>

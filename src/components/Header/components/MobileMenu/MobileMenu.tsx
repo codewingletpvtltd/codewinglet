@@ -1,13 +1,14 @@
+/* eslint-disable import/order */
 'use client';
-import { FC } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
-import Drawer from '@codewinglet/components/Drawer/Drawer';
 import Button from '@codewinglet/components/Button';
+import Drawer from '@codewinglet/components/Drawer/Drawer';
+import Image from 'next/image';
+import Link from 'next/link';
+import { FC } from 'react';
 import { MobileMenuProps } from '../../types';
-import useMobileMenu from './useMobileMenu';
 import MobileSubMenu from './MobileSubMenu';
 import { navMenu } from './constants';
+import useMobileMenu from './useMobileMenu';
 
 const MobileMenu: FC<MobileMenuProps> = ({
   onMenu,
@@ -18,7 +19,7 @@ const MobileMenu: FC<MobileMenuProps> = ({
 
   return (
     <>
-      <div className='flex flex-col  gap-[10px] z-40 '>
+      <div className='flex flex-col  gap-2.5 z-40 '>
         <div className='pointer-events-auto'>
           {navMenu.map((item, index) => (
             <div key={item.label} className='py-5'>

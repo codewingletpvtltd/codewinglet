@@ -33,7 +33,7 @@ const ContactUs = () => {
             </Reveal>
 
             <Reveal>
-              <div className='hidden relative lg:flex gap-[100px] mb-[60px] after:content after:absolute after:top-[12px] 2xl:after:left-[22%] xl:after:left-[24%] after:w-[1px] after:h-[57px] after:bg-headerBoxBorder'>
+              <div className='hidden relative lg:flex gap-[100px] mb-[60px] after:content after:absolute after:top-3 2xl:after:left-[22%] xl:after:left-[24%] after:w-[1px] after:h-[57px] after:bg-headerBoxBorder'>
                 <Image
                   src={'/assets/ContactUs/google-review.svg'}
                   width={97}

@@ -1,10 +1,11 @@
+/* eslint-disable import/order */
 'use client';
-import { FC } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
+import { Arrow } from '@codewinglet/assets';
 import { Button, Typography } from '@codewinglet/components';
 import Reveal from '@codewinglet/components/Reveal';
-import { Arrow } from '@codewinglet/assets';
+import Image from 'next/image';
+import Link from 'next/link';
+import { FC } from 'react';
 import { ContentProps } from '../types';
 
 const Content: FC<ContentProps> = ({ service }) => (
@@ -20,8 +21,8 @@ const Content: FC<ContentProps> = ({ service }) => (
         />
       </Reveal>
       <Reveal>
-        <div className='xl:flex items-center justify-between pt-5 pb-[28px] lg:block hidden'>
-          <Typography className='text-subtitle1 relative after:content after:absolute after:w-[40px] after:h-[2px] after:left-0 after:bg-primary after:bottom-[-8px]'>
+        <div className='xl:flex items-center justify-between pt-5 pb-7 lg:block hidden'>
+          <Typography className='text-subtitle1 relative after:content after:absolute after:w-10 after:h-[2px] after:left-0 after:bg-primary after:bottom-[-8px]'>
             {service.title}
           </Typography>
           {/* <div className='flex items-center gap-2'>

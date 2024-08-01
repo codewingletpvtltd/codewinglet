@@ -63,7 +63,7 @@ const ContactUs = () => (
               <div className='soft-card 2xl:p-10 xl:p-[35px] lg:p-7 md:p-5 sm:p-5 p-5 bg-white hover:bg-primary hover:text-white transition-all duration-300'>
                 <Typography
                   variant='h1'
-                  className='soft-head leading-[50px] relative after:content after:absolute lg:after:bottom-2.5 md:after:bottom-[12px] after:bottom-2.5 lg:after:left-[70px] md:after:left-[55px] sm:after:left-[70px] after:left-[40px] after:w-[30px] after:h-[2px] after:bg-primary hover:after:bg-white after:duration-[0.9s] after:transition-all after:ease-in'
+                  className='soft-head leading-[50px] relative after:content after:absolute lg:after:bottom-2.5 md:after:bottom-3 after:bottom-2.5 lg:after:left-[70px] md:after:left-[55px] sm:after:left-[70px] after:left-10 after:w-[30px] after:h-[2px] after:bg-primary hover:after:bg-white after:duration-[0.9s] after:transition-all after:ease-in'
                 >
                   {card.number}
                 </Typography>

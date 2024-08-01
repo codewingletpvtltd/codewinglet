@@ -1,18 +1,19 @@
+/* eslint-disable import/order */
 'use client';
+import { Arrow } from '@codewinglet/assets';
+import { Button, Typography } from '@codewinglet/components';
+import Reveal from '@codewinglet/components/Reveal';
+import { getClassNames } from '@codewinglet/utils';
+import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
-import Image from 'next/image';
-import { Button, Typography } from '@codewinglet/components';
-import { Arrow } from '@codewinglet/assets';
-import { getClassNames } from '@codewinglet/utils';
-import Reveal from '@codewinglet/components/Reveal';
 import {
-  companyTermsMenu,
-  serviceMenu,
-  industryMenu,
-  technologyMenu,
   companyMenu,
+  companyTermsMenu,
+  industryMenu,
+  serviceMenu,
+  technologyMenu,
 } from './constants';
 
 const footerTitle = [
@@ -47,7 +48,7 @@ const Footer = () => {
   const [expandedOption, setExpandedOption] = useState<number>(-1);
   return (
     <>
-      <footer className='bg-black text-white relative xl:py-[60px] md:py-[40px] md:pt-[60px] py-[30px]'>
+      <footer className='bg-black text-white relative xl:py-[60px] md:py-10 md:pt-[60px] py-[30px]'>
         <div className='container'>
           <Reveal>
             <div className='md:mb-[50px] mb-10 flex justify-between md:items-start sm:items-center items-start flex-col md:flex-col lg:flex-row lg:px-[15px] sm:px-10 px-5'>
@@ -72,7 +73,7 @@ const Footer = () => {
                 >
                   <Button
                     variant='outline'
-                    className='2xl:w-[230px] xl:w-[199px] md:w-[190px] sm:w-[164px] w-[173px] sm:h-[56px] h-[40px]'
+                    className='2xl:w-[230px] xl:w-[199px] md:w-[190px] sm:w-[164px] w-[173px] sm:h-[56px] h-10'
                   >
                     Schedule a call
                   </Button>
@@ -89,7 +90,7 @@ const Footer = () => {
                 >
                   <div className='my-1 sm:hidden' />
                   <Typography
-                    className='lg:mb-[20px] mb-[20px] flex items-center justify-between lg:text-paragraph1  md:text-subtitle1 text-subtitle2 '
+                    className='lg:mb-5 mb-5 flex items-center justify-between lg:text-paragraph1  md:text-subtitle1 text-subtitle2 '
                     onClick={() =>
                       setExpandedOption((prev) =>
                         prev === -1 || prev !== index ? index : -1
@@ -130,7 +131,7 @@ const Footer = () => {
                 </div>
               ))}
               <div className='px-[15px] w-full relative doubleXl:max-w-[20%] doubleXl:flex-[0_0_20%] xl:max-w-[23%] xl:flex-[0_0_23%] lg:max-w-[60%] lg:flex-[0_0_60%]  sm:max-w-[100%] sm:flex-[0_0_100%] max-w-[100%] flex-[0_0_100%] min-h-[1px] xl:mt-0 lg:mt-7 md:mt-7 m-0'>
-                <Typography className=' mb-[20px] sm:mt-0 mt-3 lg:text-paragraph1  md:text-subtitle1 text-subtitle2 '>
+                <Typography className=' mb-5 sm:mt-0 mt-3 lg:text-paragraph1  md:text-subtitle1 text-subtitle2 '>
                   Get in touch
                 </Typography>
                 <div className='lg:block md:grid md:grid-cols-2 block'>
@@ -204,7 +205,7 @@ const Footer = () => {
                         A901-905, Vivanta Icon, Opp. Shell Petrol Pump, Adajan,
                         Surat, Gujarat 395009.
                       </Typography>
-                      <div className='flex group cursor-pointer text-white mt-[10px] items-center group'>
+                      <div className='flex group cursor-pointer text-white mt-2.5 items-center group'>
                         <Link
                           href='https://maps.app.goo.gl/6W7ns2r5VzPFGmkA8'
                           target='_blank'

@@ -7,7 +7,7 @@ import Statistics from './components/Statistics';
 export default function AboutUs() {
   return (
     <section className='xl:py-20 lg:py-14 md:py-[60px] py-10 bg-[url("/about-boxline.webp")] bg-no-repeat bg-left-bottom h-auto md:h-[80.5rem] lg:h-auto'>
-      <div className='container w-full lg:px-[15px] sm:px-[30px] px-[20px] mx-auto'>
+      <div className='container w-full lg:px-[15px] sm:px-[30px] px-5 mx-auto'>
         <Reveal>
           <SectionHeader
             title={<>About us</>}
@@ -18,7 +18,7 @@ export default function AboutUs() {
         </Reveal>
 
         <div className='relative lg:flex block lg:mt-[50px] md:mt-10 mt-5'>
-          <div className='2xl:lg:w-[70%] xl:lg:w-[63%] w-full 2xl:pr-[50px] xl:pr-0 lg:pr-[20px] pr-0'>
+          <div className='2xl:lg:w-[70%] xl:lg:w-[63%] w-full 2xl:pr-[50px] xl:pr-0 lg:pr-5 pr-0'>
             <Reveal>
               <Typography className='xl:text-subtitle2Light lg:text-body2 md:text-subtitle2Light text-tagLight lg:md-5 md:pb-[22px] pb-[15px] text-white '>
                 Welcome to Codewinglet, your premier destination for

@@ -1,16 +1,17 @@
+/* eslint-disable import/order */
 'use client';
-import { FC } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
 import { Arrow } from '@codewinglet/assets';
 import { Button, Typography } from '@codewinglet/components';
 import Reveal from '@codewinglet/components/Reveal';
+import Image from 'next/image';
+import Link from 'next/link';
+import { FC } from 'react';
 import { ContentProps } from '../types';
 
 const Content: FC<ContentProps> = ({ service }) => (
   <div>
     <Reveal>
-      <Typography className='md:text-h6 text-paragraph1 relative after:content after:absolute after:w-[40px] after:h-[2px] after:left-0 after:bg-white after:bottom-[-8px] mb-[30px] text-white'>
+      <Typography className='md:text-h6 text-paragraph1 relative after:content after:absolute after:w-10 after:h-[2px] after:left-0 after:bg-white after:bottom-[-8px] mb-[30px] text-white'>
         {service.mainTitle}
       </Typography>
     </Reveal>

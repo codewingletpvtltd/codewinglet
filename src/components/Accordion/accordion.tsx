@@ -1,8 +1,9 @@
+/* eslint-disable import/order */
 'use client';
 
-import * as React from 'react';
-import * as AccordionPrimitive from '@radix-ui/react-accordion';
 import { cn } from '@codewinglet/utils';
+import * as AccordionPrimitive from '@radix-ui/react-accordion';
+import * as React from 'react';
 import { ExternalAccordionPrimitiveTrigger } from './types';
 
 const Accordion = AccordionPrimitive.Root;
@@ -28,7 +29,7 @@ const AccordionTrigger = React.forwardRef<
     <AccordionPrimitive.Trigger
       ref={ref}
       className={cn(
-        'relative flex flex-1 items-center justify-between py-[30px] [&[data-state=open]]:py-0 [&[data-state=open]]:pb-[20px] first:pt-0 font-medium transition-all cubic-bezier-0.59,-0.01,0.42,0.98 duration-500 leading-[30px] [&[data-state=open]>.icon-container>.icon-container]:rotate-90 [&[data-state=open]>.icon-container>.vertical]:rotate-90 [&[data-state=open]>.icon-container>.horizontal]:opacity-0 md:text-[22px] lg:text-[25px]',
+        'relative flex flex-1 items-center justify-between py-[30px] [&[data-state=open]]:py-0 [&[data-state=open]]:pb-5 first:pt-0 font-medium transition-all cubic-bezier-0.59,-0.01,0.42,0.98 duration-500 leading-[30px] [&[data-state=open]>.icon-container>.icon-container]:rotate-90 [&[data-state=open]>.icon-container>.vertical]:rotate-90 [&[data-state=open]>.icon-container>.horizontal]:opacity-0 md:text-[22px] lg:text-[25px]',
         className
       )}
       {...props}
@@ -38,7 +39,7 @@ const AccordionTrigger = React.forwardRef<
       {icon ? (
         icon
       ) : (
-        <div className='absolute right-[20px] icon-container h-[15px] w-[15px] md:h-[19px] md:w-[19px]'>
+        <div className='absolute right-5 icon-container h-[15px] w-[15px] md:h-[19px] md:w-[19px]'>
           <span className='horizontal absolute block rounded-full w-full h-[1px] bg-secondary translate-y-[-50%] top-[50%] transition-all cubic-bezier-0.59,-0.01,0.42,0.98 duration-500'></span>
           <span className='vertical absolute block rounded-full w-[1px] h-full bg-secondary translate-x-[-50%] left-[50%] transition-all cubic-bezier-0.59,-0.01,0.42,0.98 duration-500'></span>
         </div>
@@ -65,4 +66,4 @@ const AccordionContent = React.forwardRef<
 ));
 AccordionContent.displayName = AccordionPrimitive.Content.displayName;
 
-export { Accordion, AccordionItem, AccordionTrigger, AccordionContent };
+export { Accordion, AccordionContent, AccordionItem, AccordionTrigger };

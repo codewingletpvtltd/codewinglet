@@ -143,7 +143,7 @@ const OurPrecise = () => (
                   Address
                 </Typography>
                 <div>
-                  <Typography className='text-secondary text-paragraph2Light sm:mt-5 mt-[12px] mb-[15px] sm:w-[80%] w-full'>
+                  <Typography className='text-secondary text-paragraph2Light sm:mt-5 mt-3 mb-[15px] sm:w-[80%] w-full'>
                     A901-905, Vivanta Icon, Opp. Shell Petrol Pump, Adajan,
                     Surat, Gujarat 395009.
                   </Typography>
@@ -181,7 +181,7 @@ const OurPrecise = () => (
                 <div className='relative flex items-center flex-wrap after:sm:block after:hidden after:content after:absolute after:left-[36%] after:top-5 after:bg-headerBoxBorder after:w-[1px] after:h-[22px]'>
                   <Link
                     href='mailto:jobs@codewinglet.com'
-                    className=' text-secondary text-paragraph2Light sm:mt-5 mt-[12px] pr-[60px]'
+                    className=' text-secondary text-paragraph2Light sm:mt-5 mt-3 pr-[60px]'
                   >
                     jobs@codewinglet.com
                   </Link>
@@ -215,7 +215,7 @@ const OurPrecise = () => (
                 <div className='relative flex sm:flex-row flex-col sm:items-center items-start sm:gap-10 gap-0 sm:after:block after:hidden after:content after:absolute after:left-[33%] after:top-5 after:bg-headerBoxBorder after:w-[1px] after:h-[22px]'>
                   <Link
                     href='tel:+918160868310'
-                    className=' text-secondary hover:text-primary text-paragraph2Light sm:mt-5 mt-[12px]'
+                    className=' text-secondary hover:text-primary text-paragraph2Light sm:mt-5 mt-3'
                   >
                     +91 81608 68310 (Jobs)
                   </Link>

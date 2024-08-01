@@ -13,7 +13,7 @@ const GetInTouch = () => {
 
   return (
     <div className=' bg-white mt-[78px] md:pt-20 2xl:pb-[160px] xl:pb-[140px] pt-[30px] sm:pb-0 pb-[30px]'>
-      <div className='container w-full lg:px-[15px] sm:px-[30px] px-[20px] mx-auto'>
+      <div className='container w-full lg:px-[15px] sm:px-[30px] px-5 mx-auto'>
         <div className='lg:flex block 2xl:gap-[90px] xl:gap-[25px]'>
           <div className='lg:w-[52%] w-full'>
             <Reveal>
@@ -37,7 +37,7 @@ const GetInTouch = () => {
             </Reveal>
 
             <Reveal>
-              <div className='relative lg:flex hidden gap-[100px] my-[50px] after:content after:absolute after:top-[12px] after:left-[22%] after:w-[1px] after:h-[57px] after:bg-headerBoxBorder'>
+              <div className='relative lg:flex hidden gap-[100px] my-[50px] after:content after:absolute after:top-3 after:left-[22%] after:w-[1px] after:h-[57px] after:bg-headerBoxBorder'>
                 <Image
                   src={'/assets/ContactUs/google-review.svg'}
                   width={97}

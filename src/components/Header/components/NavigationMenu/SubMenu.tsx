@@ -1,9 +1,10 @@
-import { FC } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
+/* eslint-disable import/order */
+import { Arrow } from '@codewinglet/assets';
 import Button from '@codewinglet/components/Button';
 import Typography from '@codewinglet/components/Typography';
-import { Arrow } from '@codewinglet/assets';
+import Image from 'next/image';
+import Link from 'next/link';
+import { FC } from 'react';
 import { SubMenuContentProps } from '../../types';
 
 import ListItem from './ListItem';
@@ -13,7 +14,7 @@ export const ServicesContent: FC<SubMenuContentProps> = ({
   index,
 }) => (
   <>
-    <ul className='grid grid-rows-5 grid-flow-col 2xl:grid-cols-[31%_25%_25%] xl:grid-cols-[31%_25%_25%] 2xl:gap-9 xl:gap-[20px] xl:gap-x-[30px] after:content after:absolute 2xl:after:top-[13%] xl:after:top-[15%] after:left-[32%] after:bg-headerBoxBorder after:w-[1px] 2xl:after:h-[81%] xl:after:h-[78%] before:content before:absolute 2xl:before:top-[13%] xl:before:top-[15%] before:left-[58%] before:bg-headerBoxBorder before:w-[1px] 2xl:before:h-[81%] xl:before:h-[78%]'>
+    <ul className='grid grid-rows-5 grid-flow-col 2xl:grid-cols-[31%_25%_25%] xl:grid-cols-[31%_25%_25%] 2xl:gap-9 xl:gap-5 xl:gap-x-[30px] after:content after:absolute 2xl:after:top-[13%] xl:after:top-[15%] after:left-[32%] after:bg-headerBoxBorder after:w-[1px] 2xl:after:h-[81%] xl:after:h-[78%] before:content before:absolute 2xl:before:top-[13%] xl:before:top-[15%] before:left-[58%] before:bg-headerBoxBorder before:w-[1px] 2xl:before:h-[81%] xl:before:h-[78%]'>
       {childItems.map((menu, menuIdx) => (
         <ListItem
           key={`menu-header-${index}-${menuIdx}`}
@@ -24,7 +25,7 @@ export const ServicesContent: FC<SubMenuContentProps> = ({
         />
       ))}
     </ul>
-    <div className='bg-[#F4F4F4] flex items-center absolute right-[30px] bottom-[30px] w-[37%] p-[20px]'>
+    <div className='bg-[#F4F4F4] flex items-center absolute right-[30px] bottom-[30px] w-[37%] p-5'>
       <Typography className='text-paragraph2 text-primary w-[60%]'>
         Get Consultation from our Service Experts
       </Typography>
