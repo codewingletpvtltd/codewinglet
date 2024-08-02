@@ -27,7 +27,7 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
     <header
       id='header'
       className={getClassNames(
-        'fixed flex items-center top-0 z-50 w-full sm:py-[20px] md:py-[0px] lg:py-0 lg:px-20',
+        'fixed flex items-center top-0 z-50 w-full sm:py-5 md:py-[0px] lg:py-0 lg:px-20',
         isScroll
           ? 'bg-primary'
           : pathName === '/contact-us'
@@ -40,7 +40,7 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
           ? 'bg-primary'
           : pathName === '/terms-and-conditions'
           ? 'bg-primary'
-          : pathName === '/jobs'
+          : pathName === '/career'
           ? 'bg-primary'
           : 'bg-transparent'
       )}
@@ -83,7 +83,7 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
         >
           <div className='px-[30px] md:px-[35px]'>
             <div className='flex items-center max-w-[1410px] justify-between relative w-full md:ml-[-2px] mx-auto lg-auto md:h-[90px] h-auto mb-auto'>
-              <div className='flex justify-between items-center my-[20px]'>
+              <div className='flex justify-between items-center my-5'>
                 <Image
                   src={'assets/icons/LogoWhite.svg'}
                   width={20}
