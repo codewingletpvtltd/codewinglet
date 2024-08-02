@@ -2,15 +2,12 @@
 'use client';
 import { Arrow } from '@codewinglet/assets';
 import { BlogCard, Button, SectionHeader } from '@codewinglet/components';
-import RelatedFaq from '@codewinglet/components/RelatedFaq';
 import Reveal from '@codewinglet/components/Reveal';
 import Link from 'next/link';
 
 const CustomComponent = () => (
   <>
     <div className='mt-[86px]'>
-      <RelatedFaq />
-
       {/* Latest Blogs */}
       <div className='bg-white sm:py-20 py-[30px]'>
         <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>

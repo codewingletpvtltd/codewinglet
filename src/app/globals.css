@@ -34,6 +34,10 @@ iframe .gm-style-mtc {
   width: auto !important;
 }
 
+input[type='search']::-webkit-search-cancel-button {
+  display: none;
+}
+
 /* Our Work Process */
 
 .process-card h1 {

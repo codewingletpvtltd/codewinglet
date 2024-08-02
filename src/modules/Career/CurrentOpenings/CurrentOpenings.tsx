@@ -1,28 +1,137 @@
+/* eslint-disable import/order */
 'use client';
+import { Arrow } from '@codewinglet/assets';
+import { Button, Typography } from '@codewinglet/components';
+import Pagination from '@codewinglet/components/Pagination/Pagination';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useState } from 'react';
 import SectionHeader from '../../../components/SectionHeader';
-import CareerApplyNow from '../CareerApplyNow';
+import { openings } from './constants';
 
-import useCurrentOpenings from './useCurrentOpenings';
+const designation = [
+  {
+    title: 'All Job',
+  },
+  {
+    title: 'Designing',
+  },
+  {
+    title: 'Developing',
+  },
+  {
+    title: 'QA tester',
+  },
+];
 
 const CurrentOpenings = () => {
-  const { showModal, setShowModal } = useCurrentOpenings();
+  const [currentPage, setCurrentPage] = useState(1);
+  const totalPages = 10;
+
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+  };
 
   return (
     <>
-      <div className='max-w-screen-xl mx-5 my-[50px] md:mx-[38px] xl:mx-auto mt-[150px]'>
-        <SectionHeader
-          title={
-            <>
-              <strong className='font-[800]'>Current</strong> Openings
-            </>
-          }
-          headingClassName='text-center'
-        />
-        <div className='flex flex-col gap-5 md:gap-[30px]'></div>
+      <div className='bg-white sm:py-20 py-[30px]'>
+        <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
+          <SectionHeader
+            title={<>Current job openings</>}
+            description='Customers. Empower your business to deliver exactly what users crave'
+            descriptionClassName='text-secondary'
+          />
+
+          <div className='flex items-center justify-between mt-[55px]'>
+            <div className='flex gap-2.5'>
+              {designation.map((designation) => (
+                <div key={designation.title}>
+                  <Link
+                    href='/'
+                    className='bg-bg hover:text-white hover:bg-primary py-2.5 px-5'
+                  >
+                    {designation.title}
+                  </Link>
+                </div>
+              ))}
+            </div>
+
+            <div>
+              <form action='' className='flex items-center gap-3'>
+                <input
+                  type='search'
+                  placeholder='Search jobs'
+                  className='border border-headerBoxBorder py-[12px] px-5 text-paragraph2Light placeholder:text-secondary placeholder:text-paragraph2Light focus:outline-none focus:border-primary w-[477px]'
+                />
+
+                <Button
+                  variant='default'
+                  type='submit'
+                  className='w-[52px] h-[52px]'
+                >
+                  <Arrow />
+                </Button>
+              </form>
+            </div>
+          </div>
+
+          <div>
+            {openings.map((opening) => (
+              <div
+                key={opening.id}
+                className='flex justify-between border-b border-headerBoxBorder pt-[70px] pb-[50px]'
+              >
+                <div>
+                  <Typography className='text-subtitle2 mb-3.5'>
+                    {opening.title} <span>{opening.experience}</span>
+                  </Typography>
+                  <div className='flex gap-5 items-center'>
+                    <Typography className='flex items-center gap-1.5'>
+                      {' '}
+                      <Image
+                        src='/assets/career/world.svg'
+                        alt='world'
+                        width={16}
+                        height={16}
+                      />{' '}
+                      {opening.site}
+                    </Typography>
+                    <hr className='w-[1px] h-4 bg-headerBoxBorder' />
+                    <Typography className='flex items-center gap-1.5'>
+                      {' '}
+                      <Image
+                        src='/assets/career/type.svg'
+                        alt='type'
+                        width={16}
+                        height={16}
+                      />{' '}
+                      {opening.type}
+                    </Typography>
+                  </div>
+                </div>
+
+                <Typography className='w-[458px] text-paragraph2Light text-secondary'>
+                  {opening.desc}
+                </Typography>
+                <div className='flex cursor-pointer text-primary items-center group gap-2.5'>
+                  <Link href='/' target='_blank' className='text-tag underline'>
+                    {opening.button}
+                  </Link>
+                  <Arrow />
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className='mt-[30px]'>
+            <Pagination
+              currentPage={currentPage}
+              totalPages={totalPages}
+              onPageChange={handlePageChange}
+            />
+          </div>
+        </div>
       </div>
-      <CareerApplyNow open={showModal} onClose={() => setShowModal(false)} />
     </>
   );
 };
-
 export default CurrentOpenings;
