@@ -1,13 +1,7 @@
 /* eslint-disable import/order */
 'use client';
-import { Arrow } from '@codewinglet/assets';
-import { Button, Typography } from '@codewinglet/components';
-import Pagination from '@codewinglet/components/Pagination/Pagination';
-import Image from 'next/image';
-import Link from 'next/link';
 import { useState } from 'react';
 import SectionHeader from '../../../components/SectionHeader';
-import { openings } from './constants';
 
 const designation = [
   {
@@ -26,7 +20,7 @@ const designation = [
 
 const CurrentOpenings = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const totalPages = 10;
+  const totalPages = 5;
 
   const handlePageChange = (page: number) => {
     setCurrentPage(page);
@@ -34,21 +28,25 @@ const CurrentOpenings = () => {
 
   return (
     <>
-      <div className='bg-white sm:py-20 py-[30px]'>
+      <div
+        className='bg-white lg:py-20 md:py-[60px] py-10 scroll-mt-40'
+        id='jobs'
+      >
         <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
           <SectionHeader
             title={<>Current job openings</>}
             description='Customers. Empower your business to deliver exactly what users crave'
-            descriptionClassName='text-secondary'
+            descriptionClassName='text-secondary md:text-left text-center'
+            headingClassName='md:text-left text-center'
           />
 
-          <div className='flex items-center justify-between mt-[55px]'>
-            <div className='flex gap-2.5'>
+          {/* <div className='md:flex items-center justify-between md:mt-[55px] mt-5'>
+            <div className='md:flex gap-2.5 hidden'>
               {designation.map((designation) => (
                 <div key={designation.title}>
                   <Link
                     href='/'
-                    className='bg-bg hover:text-white hover:bg-primary py-2.5 px-5'
+                    className='bg-bg hover:text-white hover:bg-primary py-2.5 lg:px-5 px-6'
                   >
                     {designation.title}
                   </Link>
@@ -58,11 +56,20 @@ const CurrentOpenings = () => {
 
             <div>
               <form action='' className='flex items-center gap-3'>
-                <input
-                  type='search'
-                  placeholder='Search jobs'
-                  className='border border-headerBoxBorder py-[12px] px-5 text-paragraph2Light placeholder:text-secondary placeholder:text-paragraph2Light focus:outline-none focus:border-primary w-[477px]'
-                />
+                <div className='relative'>
+                  <Image
+                    src='/assets/career/search.svg'
+                    alt='search'
+                    width={24}
+                    height={24}
+                    className='absolute left-5 top-[15px]'
+                  />
+                  <input
+                    type='search'
+                    placeholder='Search jobs'
+                    className='border border-headerBoxBorder py-[12px] px-5 pl-14 text-paragraph2Light placeholder:text-secondary placeholder:text-paragraph2Light focus:outline-none focus:border-primary 2xl:w-[477px] md:w-[449px] w-full lg:block md:hidden block'
+                  />
+                </div>
 
                 <Button
                   variant='default'
@@ -79,14 +86,14 @@ const CurrentOpenings = () => {
             {openings.map((opening) => (
               <div
                 key={opening.id}
-                className='flex justify-between border-b border-headerBoxBorder pt-[70px] pb-[50px]'
+                className='flex justify-between border-b border-headerBoxBorder lg:pt-[70px] pt-[30px] lg:pb-[50px] pb-[30px] lg:flex-nowrap flex-wrap lg:items-center items-baseline'
               >
-                <div>
-                  <Typography className='text-subtitle2 mb-3.5'>
+                <div className='md:order-1'>
+                  <Typography className='md:text-subtitle2 text-paragraph2 lg:mb-3.5 mb-2'>
                     {opening.title} <span>{opening.experience}</span>
                   </Typography>
                   <div className='flex gap-5 items-center'>
-                    <Typography className='flex items-center gap-1.5'>
+                    <Typography className='flex items-center gap-1.5 text-tagLight'>
                       {' '}
                       <Image
                         src='/assets/career/world.svg'
@@ -97,7 +104,7 @@ const CurrentOpenings = () => {
                       {opening.site}
                     </Typography>
                     <hr className='w-[1px] h-4 bg-headerBoxBorder' />
-                    <Typography className='flex items-center gap-1.5'>
+                    <Typography className='flex items-center gap-1.5 text-tagLight'>
                       {' '}
                       <Image
                         src='/assets/career/type.svg'
@@ -110,10 +117,11 @@ const CurrentOpenings = () => {
                   </div>
                 </div>
 
-                <Typography className='w-[458px] text-paragraph2Light text-secondary'>
+                <Typography className='w-[458px] md:text-paragraph2Light text-tagExtraLight text-secondary lg:order-2 md:order-3 lg:mt-0 md:mt-5 mt-4'>
                   {opening.desc}
                 </Typography>
-                <div className='flex cursor-pointer text-primary items-center group gap-2.5'>
+
+                <div className='flex cursor-pointer text-primary items-center group gap-2.5 lg:order-3 md:order-2 md:mt-0 mt-[30px]'>
                   <Link href='/' target='_blank' className='text-tag underline'>
                     {opening.button}
                   </Link>
@@ -128,6 +136,19 @@ const CurrentOpenings = () => {
               totalPages={totalPages}
               onPageChange={handlePageChange}
             />
+          </div> */}
+
+          <div className='md:mt-[86px] mt-[78px]'>
+            <iframe
+              src='https://codewinglet.oorwin.com/careers/index.html'
+              width='100%'
+              height='auto'
+              style={{
+                border: 'none',
+                margin: 0,
+              }}
+              className='md:h-[2000px] h-[calc(100vh-90px)]'
+            ></iframe>
           </div>
         </div>
       </div>

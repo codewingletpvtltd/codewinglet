@@ -9,7 +9,7 @@ const CustomComponent = () => (
   <>
     <div className='mt-[86px]'>
       {/* Latest Blogs */}
-      <div className='bg-white sm:py-20 py-[30px]'>
+      <div className='bg-white lg:py-20 md:py-[60px] py-[30px]'>
         <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
           <Reveal>
             <SectionHeader
