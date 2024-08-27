@@ -42,15 +42,15 @@ const Faq = ({
           >
             <AccordionTrigger
               onClick={() => handleChangeIndex(i)}
-              className={`md:!text-subtitle2Light !text-tagLight relative ${
+              className={`lg:!text-subtitle2Light md:!text-paragraph1Light !text-tagLight relative ${
                 i === selectedIndex
-                  ? 'text-primary md:!text-subtitle2 !text-tag after:content after:absolute after:bg-primary after:w-[3px] after:h-[26px] after:left-0'
+                  ? 'text-primary lg:!text-subtitle2 md:!text-paragraph1 !text-tag after:content after:absolute after:bg-primary after:w-[3px] after:h-[26px] after:left-0'
                   : 'text-primary'
-              } [&[data-state=open]>svg]:rotate-[45deg] md:!p-[27px] !p-[15px] xl:!pr-[70px] md:!pr-[60px] !pr-[50px] bg-white text-left leading-normal`}
+              } [&[data-state=open]>svg]:rotate-[45deg] lg:!p-[27px] md:!p-5 !p-[15px] xl:!pr-[70px] md:!pr-[60px] !pr-[50px] bg-white text-left leading-normal`}
             >
               {faq.title}
             </AccordionTrigger>
-            <AccordionContent className='border-remove faq text-secondary md:!text-paragraph1ExtraLight !text-tagExtraLight bg-white px-[25px]'>
+            <AccordionContent className='border-remove faq text-secondary lg:!text-paragraph1ExtraLight md:!text-paragraph2Light !text-tagExtraLight bg-white px-[25px]'>
               {faq.description}
             </AccordionContent>
           </AccordionItem>

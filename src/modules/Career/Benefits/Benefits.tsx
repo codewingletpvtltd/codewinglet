@@ -41,10 +41,13 @@ const workData = [
 
 const Benefits = () => (
   <>
-    <div className='bg-white lg:py-20 md:py-[60px] py-10'>
-      <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto flex gap-[70px]'>
+    <div
+      className='bg-white lg:py-20 md:py-[60px] py-10 scroll-mt-40'
+      id='perks'
+    >
+      <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto lg:flex block gap-[70px]'>
         {/* Left */}
-        <div className='w-[630px]'>
+        <div className='lg:w-[630px]'>
           <Reveal>
             <SectionHeader
               title={<>Perks & benefits</>}
@@ -57,12 +60,12 @@ const Benefits = () => (
                   solution for businesses to engage.
                 </>
               }
-              descriptionClassName='text-secondary'
+              descriptionClassName='text-secondary lg:!text-subtitle2Light md:!text-paragraph1ExtraLight !text-tagExtraLight'
             />
           </Reveal>
 
           <Reveal>
-            <div className='hidden relative lg:flex gap-[100px] mt-10 after:content after:absolute after:top-3 2xl:after:left-36 xl:after:left-[24%] after:w-[1px] after:h-[57px] after:bg-headerBoxBorder'>
+            <div className='hidden relative lg:flex gap-[168px] mt-10 after:content after:absolute after:top-3 2xl:after:left-44 xl:after:left-[26%] after:w-[1px] after:h-[57px] after:bg-headerBoxBorder'>
               <Image
                 src={'/assets/ContactUs/google-review.svg'}
                 width={97}
@@ -79,20 +82,20 @@ const Benefits = () => (
           </Reveal>
         </div>
         {/* Right  */}
-        <div className='w-[710px]'>
-          <div className='grid grid-cols-2 gap-[30px]'>
+        <div className='lg:w-[710px] lg:mt-0 mt-10'>
+          <div className='grid grid-cols-2 md:gap-[30px] gap-[15px]'>
             {workData.map((workData, i) => (
-              <div className='bg-bg p-[30px]' key={i}>
+              <div className='bg-bg md:p-[30px] p-[13px]' key={i}>
                 <Image
                   src={workData.image}
                   alt='Menu Icon'
                   width={32}
                   height={32}
                 />
-                <Typography className='text-paragraph1 pt-10 pb-1.5'>
+                <Typography className='md:text-paragraph1 text-tag md:pt-10 pt-5 pb-1.5'>
                   {workData.title}
                 </Typography>
-                <Typography className='text-paragraph2Light text-placeholderText'>
+                <Typography className='md:text-paragraph2Light text-tagExtraLight text-placeholderText'>
                   {workData.description}
                 </Typography>
               </div>
