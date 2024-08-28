@@ -7,23 +7,23 @@ import { useEffect, useRef, useState } from 'react';
 const designation = [
   {
     title: 'Angular JS',
-    path: '#angular',
+    path: '',
   },
   {
     title: 'Overview',
     path: '#overview',
   },
   {
-    title: 'Includes',
-    path: '#includes',
+    title: 'Benefit',
+    path: '#benefit',
   },
   {
     title: 'Who used ?',
     path: '#whoUsed',
   },
   {
-    title: 'Benefit',
-    path: '#benefit',
+    title: 'Angular combination',
+    path: '#combination',
   },
   {
     title: 'Services',
@@ -32,6 +32,10 @@ const designation = [
   {
     title: 'Why us ?',
     path: '#whyUs',
+  },
+  {
+    title: 'Engagement model',
+    path: '#engagementModal',
   },
   {
     title: 'Insight',
@@ -126,9 +130,7 @@ const TechnologySubMenu = () => {
                 key={title}
                 className={cn(
                   'relative md:text-paragraph1Light text-paragraph2Light flex-shrink-0 py-2.5 px-5 cursor-pointer !font-light',
-                  activeIndex === index
-                    ? 'bg-bg border-b border-primary !font-normal'
-                    : ''
+                  activeIndex === index ? '!font-normal' : ''
                 )}
                 onClick={(event) =>
                   clickHandler(event, path.substring(1), index)

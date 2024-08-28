@@ -66,8 +66,8 @@ export const servicesData: ServiceCardProps[] = [
     ],
   },
   {
-    iconSrc: '/assets/Technologies/pages/projectBase.svg',
-    iconAlt: 'projectBase',
+    iconSrc: '/assets/Technologies/pages/Monitoring.svg',
+    iconAlt: 'Monitoring',
     title: 'Transparent Productivity Monitoring',
     points: [
       {
@@ -83,8 +83,8 @@ export const servicesData: ServiceCardProps[] = [
     ],
   },
   {
-    iconSrc: '/assets/Technologies/pages/projectBase.svg',
-    iconAlt: 'projectBase',
+    iconSrc: '/assets/Technologies/pages/Engagement.svg',
+    iconAlt: 'Engagement',
     title: 'Risk-Free Engagement',
     points: [
       {
@@ -100,8 +100,8 @@ export const servicesData: ServiceCardProps[] = [
     ],
   },
   {
-    iconSrc: '/assets/Technologies/pages/projectBase.svg',
-    iconAlt: 'projectBase',
+    iconSrc: '/assets/Technologies/pages/fullTime.svg',
+    iconAlt: 'fullTime',
     title: 'Flexible Workforce, No Full-Time Commitment',
     points: [
       {
@@ -118,8 +118,8 @@ export const servicesData: ServiceCardProps[] = [
   },
 
   {
-    iconSrc: '/assets/Technologies/pages/projectBase.svg',
-    iconAlt: 'projectBase',
+    iconSrc: '/assets/Technologies/pages/Salary.svg',
+    iconAlt: 'Salary',
     title: 'Cost Savings Beyond Salary',
     points: [
       {
@@ -135,8 +135,8 @@ export const servicesData: ServiceCardProps[] = [
     ],
   },
   {
-    iconSrc: '/assets/Technologies/pages/projectBase.svg',
-    iconAlt: 'projectBase',
+    iconSrc: '/assets/Technologies/pages/Process.svg',
+    iconAlt: 'Process',
     title: 'Faster Team Building Process',
     points: [
       {
@@ -152,19 +152,19 @@ export const servicesData: ServiceCardProps[] = [
     ],
   },
   {
-    iconSrc: '/assets/Technologies/pages/projectBase.svg',
-    iconAlt: 'projectBase',
-    title: 'Flexible Workforce, No Full-Time Commitment',
+    iconSrc: '/assets/Technologies/pages/Reduced.svg',
+    iconAlt: 'Reduced',
+    title: 'Reduced Risk',
     points: [
       {
-        heading: 'No Full-Time Hiring Required',
+        heading: 'Easier Termination',
         description:
-          'Avoid the costs & liabilities of full-time employment, including benefits, taxes, & long-term contracts.',
+          'End contracts effortlessly if performance doesn’t meet expectations, unlike with full-time employees.',
       },
       {
-        heading: 'On-Demand Expertise',
+        heading: 'Lower Legal Liability',
         description:
-          'Onboard experts swiftly, cutting recruitment time and reducing time-to-market.',
+          'Contractors handle their own taxes and insurance, reducing your legal responsibilities.',
       },
     ],
   },

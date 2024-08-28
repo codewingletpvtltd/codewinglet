@@ -11,7 +11,10 @@ import SectionHeader from '../../../components/SectionHeader/SectionHeader';
 const Insights = () => (
   <>
     {/* <WhyWork /> */}
-    <div className='bg-black lg:py-20 md:py-[60px] py-10'>
+    <div
+      className='bg-black lg:py-20 md:py-[60px] py-10 scroll-mt-40'
+      id='insight'
+    >
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
         <Reveal>
           <SectionHeader

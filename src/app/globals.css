@@ -22,6 +22,28 @@ html {
   scrollbar-width: none; /* Firefox */
 }
 
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #b6b6b6 transparent;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 5px !important;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  border: 2px solid transparent;
+}
+
 iframe {
   filter: invert(5%) grayscale(1);
 }
