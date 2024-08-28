@@ -108,7 +108,7 @@ const Combination = () => {
               {technologies.map((tech) => (
                 <div
                   key={tech.id}
-                  className='bg-white p-10 mr-[50px] !w-[435px]'
+                  className='bg-white p-10 mr-[50px] 2xl:!w-[435px] !w-[400px]'
                 >
                   <div className='flex justify-center items-center gap-5'>
                     {/* First Image - Order 1 */}
@@ -143,7 +143,7 @@ const Combination = () => {
             </Slider>
 
             <Button
-              className='sm:w-[224px] w-[203px] h-[52px] lg:m-auto 2xl:mt-24 xl:mt-10 flex m-auto'
+              className='sm:w-[224px] w-[203px] h-[52px] lg:m-auto xl:mt-24 mt-10 flex m-auto'
               variant='blackOutline'
             >
               <Link
