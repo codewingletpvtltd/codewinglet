@@ -64,7 +64,7 @@ const CodewingletServices: React.FC = () => (
         />
       </Reveal>
 
-      <div className='grid lg:grid-cols-3 grid-cols-2 lg:gap-[50px] gap-10 mt-[50px] relative'>
+      <div className='grid lg:grid-cols-3 md:grid-cols-2 lg:gap-[50px] md:gap-10 gap-5 mt-[50px] relative'>
         {servicesData.map((service, index) => (
           <ServiceCard
             key={index}

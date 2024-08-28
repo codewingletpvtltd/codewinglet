@@ -18,8 +18,8 @@ const Companies = () => (
                 technologies Accelerating your product
               </>
             }
-            headingClassName='text-white lg:!text-h2 !text-[35px] lg:!text-left text-center'
-            descriptionClassName='text-secondary lg:!text-left text-center'
+            headingClassName='text-white lg:!text-h2 md:!text-[35px] !text-subtitle2 lg:!text-left md:!text-center !text-left'
+            descriptionClassName='text-secondary lg:!text-left md:!text-center !text-left'
           />
         </Reveal>
         <div className='relative'>
@@ -31,28 +31,28 @@ const Companies = () => (
               alt='microsoft'
               width={195}
               height={42}
-              className='lg:py-8 py-[50px] 2xl:mx-[99px] lg:mx-[84px] m-auto lg:w-auto'
+              className='lg:py-8 md:py-[50px] md:my-0 my-[30px] 2xl:mx-[99px] lg:mx-[84px] m-auto lg:w-auto md:h-[42px] h-5'
             />
             <Image
               src='/assets/Technologies/pages/google.svg'
               alt='google'
               width={127}
               height={42}
-              className='lg:py-8 py-[50px] 2xl:mx-[99px] lg:mx-[84px] m-auto lg:w-auto'
+              className='lg:py-8 md:py-[50px] md:my-0 my-[30px] 2xl:mx-[99px] lg:mx-[84px] m-auto lg:w-auto md:h-[42px] h-5'
             />
             <Image
               src='/assets/Technologies/pages/ibm.svg'
               alt='ibm'
               width={98}
               height={42}
-              className='lg:py-8 py-[50px] 2xl:mx-[99px] lg:mx-[84px] m-auto lg:w-auto'
+              className='lg:py-8 md:py-[50px] md:my-0 my-[30px] 2xl:mx-[99px] lg:mx-[84px] m-auto lg:w-auto md:h-[42px] h-5'
             />
             <Image
               src='/assets/Technologies/pages/paypal.svg'
               alt='paypal'
               width={156}
               height={42}
-              className='lg:py-8 py-[50px] 2xl:mx-[99px] lg:mx-[84px] m-auto lg:w-auto'
+              className='lg:py-8 md:py-[50px] md:my-0 my-[30px] 2xl:mx-[99px] lg:mx-[84px] m-auto lg:w-auto md:h-[42px] h-5'
             />
           </div>
         </div>
