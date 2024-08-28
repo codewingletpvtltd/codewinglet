@@ -50,7 +50,7 @@ const HeroSection = () => (
           />
         </div>
       </div>
-      <div className='bg-primary w-fit py-10 px-9 border-t-[3px] border-white ml-[260px] relative z-[2]'>
+      <div className='bg-primary w-fit py-10 px-9 border-t-[3px] border-white 2xl:ml-[260px] ml-[95px] relative z-[2]'>
         <Image
           src='/assets/Technologies/pages/angular.svg'
           alt='angular'
