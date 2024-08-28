@@ -1,9 +1,8 @@
+/* eslint-disable import/order */
 'use client';
-import Image from 'next/image';
-import Link from 'next/link';
-import { Button, SectionHeader, Typography } from '@codewinglet/components';
-import { Arrow } from '@codewinglet/assets';
+import { SectionHeader, Typography } from '@codewinglet/components';
 import Reveal from '@codewinglet/components/Reveal';
+import Image from 'next/image';
 
 const industriesCard = [
   {
@@ -85,7 +84,7 @@ const ContactUs = () => (
         />
       </Reveal>
 
-      <div className='grid lg:grid-cols-4 grid-cols-2 md:mt-10 md:mb-0 sm:gap-[30px] gap-5 lg:my-[50px] my-5'>
+      <div className='grid lg:grid-cols-4 grid-cols-2 md:mt-10 md:mb-0 sm:gap-[30px] gap-5 lg:mt-[50px] my-5'>
         {industriesCard.map((card) => (
           <>
             <Reveal>
@@ -108,16 +107,6 @@ const ContactUs = () => (
           </>
         ))}
       </div>
-      <Link
-        href='/contact-us'
-        rel='noopener noreferrer'
-        className='text-primary group-hover:text-white mt-[30px] lg:block m-auto text-center md:hidden block group w-[333px]'
-      >
-        <Button className='w-[333px] gap-3' variant='blackOutline'>
-          Talk to our industry expert
-          <Arrow />
-        </Button>
-      </Link>
     </div>
   </section>
 );

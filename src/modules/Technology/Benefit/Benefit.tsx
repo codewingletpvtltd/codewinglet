@@ -13,9 +13,9 @@ const Benefit = () => {
   ];
   return (
     <>
-      <div className='bg-white lg:py-20 md:py-[60px] py-10'>
-        <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto flex gap-[86px]'>
-          <div className='mt-[50px] relative w-[655px]'>
+      <div className='bg-white md:py-20 py-10'>
+        <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto lg:flex gap-[86px]'>
+          <div className='lg:mt-14 relative lg:w-[655px]'>
             <SectionHeader
               title={<>The benefit of Angular JS in app development</>}
               description={
@@ -26,14 +26,14 @@ const Benefit = () => {
                 </>
               }
               headingClassName='text-primary'
-              descriptionClassName='text-secondary'
+              descriptionClassName='text-secondary !text-paragraph1ExtraLight'
             />
 
             <ul className='mt-[70px] flex flex-col gap-5'>
               {items.map((item, index) => (
                 <li
                   key={index}
-                  className='relative pl-11 p-5 text-primary bg-bg w-fit'
+                  className='relative pl-11 p-5 text-primary bg-bg lg:w-fit'
                 >
                   <Image
                     src={'/assets/OurService/check.svg'}
@@ -47,7 +47,7 @@ const Benefit = () => {
               ))}
             </ul>
           </div>
-          <div className='w-[669px]'>
+          <div className='lg:w-[669px] lg:mt-0 mt-10'>
             <Image
               src='/assets/Technologies/pages/benefit.jpg'
               alt='benefit'

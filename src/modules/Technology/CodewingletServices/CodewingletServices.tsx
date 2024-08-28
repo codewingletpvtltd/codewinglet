@@ -19,11 +19,11 @@ const ServicePoints: React.FC<{ points: ServicePoint[] }> = ({ points }) => (
             height={16}
             className='absolute left-0 top-1.5 sm:w-[14px] w-[15px]'
           />
-          <Typography className='text-paragraph2 text-primary pb-2'>
+          <Typography className='lg:text-paragraph2 text-tagBold text-primary pb-2'>
             {point.heading}
           </Typography>
         </div>
-        <Typography className='text-secondary text-tagLight'>
+        <Typography className='text-secondary lg:text-tagLight text-tagExtraLight'>
           {point.description}
         </Typography>
       </div>
@@ -38,10 +38,12 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   title,
   points,
 }) => (
-  <div className='bg-white p-5 w-[398px]'>
-    <div className='bg-bg flex gap-4 items-center px-5 py-[30px]'>
+  <div className='bg-white p-5'>
+    <div className='bg-bg flex gap-4 items-center lg:px-5 px-4 lg:py-[30px] py-5'>
       <Image src={iconSrc} alt={iconAlt} width={32} height={32} />
-      <Typography className='text-paragraph1Bold'>{title}</Typography>
+      <Typography className='lg:text-paragraph1Bold text-tagBold'>
+        {title}
+      </Typography>
     </div>
     <ServicePoints points={points} />
   </div>
@@ -62,7 +64,7 @@ const CodewingletServices: React.FC = () => (
         />
       </Reveal>
 
-      <div className='grid grid-cols-3 gap-x-[108px] gap-y-10 mt-[50px] relative'>
+      <div className='grid lg:grid-cols-3 grid-cols-2 lg:gap-[50px] gap-10 mt-[50px] relative'>
         {servicesData.map((service, index) => (
           <ServiceCard
             key={index}

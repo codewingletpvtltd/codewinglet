@@ -7,7 +7,7 @@ import SectionHeader from '../../../components/SectionHeader/SectionHeader';
 
 const Companies = () => (
   <>
-    <div className='bg-black lg:py-20 md:py-[60px] py-10'>
+    <div className='bg-black sm:py-20 py-10'>
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
         <Reveal>
           <SectionHeader
@@ -18,40 +18,43 @@ const Companies = () => (
                 technologies Accelerating your product
               </>
             }
-            headingClassName='text-white'
-            descriptionClassName='text-secondary'
+            headingClassName='text-white lg:!text-h2 !text-[35px] lg:!text-left text-center'
+            descriptionClassName='text-secondary lg:!text-left text-center'
           />
         </Reveal>
-
-        <div className='flex mt-[50px] relative'>
-          <Image
-            src='/assets/Technologies/pages/microsoft.svg'
-            alt='microsoft'
-            width={195}
-            height={42}
-            className='py-8 ml:mx-[100px] mx-[84px]'
-          />
-          <Image
-            src='/assets/Technologies/pages/google.svg'
-            alt='google'
-            width={127}
-            height={42}
-            className='py-8 ml:mx-[100px] mx-[84px]'
-          />
-          <Image
-            src='/assets/Technologies/pages/ibm.svg'
-            alt='ibm'
-            width={98}
-            height={42}
-            className='py-8 ml:mx-[100px] mx-[84px]'
-          />
-          <Image
-            src='/assets/Technologies/pages/paypal.svg'
-            alt='paypal'
-            width={156}
-            height={42}
-            className='py-8 ml:mx-[100px] mx-[84px]'
-          />
+        <div className='relative'>
+          <div className='absolute top-0 left-1/2 w-[1px] h-[122px] bg-primary lg:hidden'></div>
+          <div className='absolute bottom-5 left-1/2 w-[1px] h-[122px] bg-primary lg:hidden'></div>
+          <div className='grid lg:grid-cols-4 grid-cols-2 mt-[50px] relative lg:after:hidden after:content after:absolute after:bottom-1/2 after:left-0 after:w-full after:h-[1px] after:bg-primary'>
+            <Image
+              src='/assets/Technologies/pages/microsoft.svg'
+              alt='microsoft'
+              width={195}
+              height={42}
+              className='lg:py-8 py-[50px] 2xl:mx-[99px] lg:mx-[84px] m-auto lg:w-auto'
+            />
+            <Image
+              src='/assets/Technologies/pages/google.svg'
+              alt='google'
+              width={127}
+              height={42}
+              className='lg:py-8 py-[50px] 2xl:mx-[99px] lg:mx-[84px] m-auto lg:w-auto'
+            />
+            <Image
+              src='/assets/Technologies/pages/ibm.svg'
+              alt='ibm'
+              width={98}
+              height={42}
+              className='lg:py-8 py-[50px] 2xl:mx-[99px] lg:mx-[84px] m-auto lg:w-auto'
+            />
+            <Image
+              src='/assets/Technologies/pages/paypal.svg'
+              alt='paypal'
+              width={156}
+              height={42}
+              className='lg:py-8 py-[50px] 2xl:mx-[99px] lg:mx-[84px] m-auto lg:w-auto'
+            />
+          </div>
         </div>
       </div>
     </div>
