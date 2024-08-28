@@ -27,7 +27,7 @@ const Services = () => {
   };
   return (
     <>
-      <div className='bg-black lg:py-20 md:py-[60px] py-10'>
+      <div className='bg-black lg:py-20 md:py-[60px] py-10' id='services'>
         <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto relative'>
           <div className='lg:border-y border-t border-b-0 border-grayBorder lg:flex'>
             <div className='bg-primary md:w-[72px] md:h-[72px] w-10 h-10 rounded-full flex items-center flex-shrink-0 justify-center absolute md:-top-9 lg:left-0 md:left-10 -top-5 left-5'>

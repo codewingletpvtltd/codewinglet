@@ -87,7 +87,10 @@ const Combination = () => {
   };
   return (
     <>
-      <div className='bg-bg lg:py-20 md:py-[60px] py-[30px]' id='blog'>
+      <div
+        className='bg-bg lg:py-20 md:py-[60px] py-[30px] scroll-mt-40'
+        id='combination'
+      >
         <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
           <Reveal>
             <SectionHeader

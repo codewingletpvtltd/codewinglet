@@ -7,7 +7,7 @@ import SectionHeader from '../../../components/SectionHeader/SectionHeader';
 
 const Companies = () => (
   <>
-    <div className='bg-black sm:py-20 py-10'>
+    <div className='bg-black sm:py-20 py-10 scroll-mt-40' id='whoUsed'>
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
         <Reveal>
           <SectionHeader
@@ -31,28 +31,28 @@ const Companies = () => (
               alt='microsoft'
               width={195}
               height={42}
-              className='lg:py-8 md:py-[50px] md:my-0 my-[30px] 2xl:mx-[99px] lg:mx-[84px] m-auto lg:w-auto md:h-[42px] h-5'
+              className='lg:py-8 md:py-[50px] md:my-0 my-[30px] 2xl:mx-[99px] lg:mx-[84px] m-auto lg:w-auto '
             />
             <Image
               src='/assets/Technologies/pages/google.svg'
               alt='google'
               width={127}
               height={42}
-              className='lg:py-8 md:py-[50px] md:my-0 my-[30px] 2xl:mx-[99px] lg:mx-[84px] m-auto lg:w-auto md:h-[42px] h-5'
+              className='lg:py-8 md:py-[50px] md:my-0 my-[30px] 2xl:mx-[99px] lg:mx-[84px] m-auto lg:w-auto '
             />
             <Image
               src='/assets/Technologies/pages/ibm.svg'
               alt='ibm'
               width={98}
               height={42}
-              className='lg:py-8 md:py-[50px] md:my-0 my-[30px] 2xl:mx-[99px] lg:mx-[84px] m-auto lg:w-auto md:h-[42px] h-5'
+              className='lg:py-8 md:py-[50px] md:my-0 my-[30px] 2xl:mx-[99px] lg:mx-[84px] m-auto lg:w-auto '
             />
             <Image
               src='/assets/Technologies/pages/paypal.svg'
               alt='paypal'
               width={156}
               height={42}
-              className='lg:py-8 md:py-[50px] md:my-0 my-[30px] 2xl:mx-[99px] lg:mx-[84px] m-auto lg:w-auto md:h-[42px] h-5'
+              className='lg:py-8 md:py-[50px] md:my-0 my-[30px] 2xl:mx-[99px] lg:mx-[84px] m-auto lg:w-auto '
             />
           </div>
         </div>

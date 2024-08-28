@@ -13,7 +13,7 @@ const Benefit = () => {
   ];
   return (
     <>
-      <div className='bg-white md:py-20 py-10'>
+      <div className='bg-white md:py-20 py-10 scroll-mt-40' id='benefit'>
         <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto lg:flex gap-[86px]'>
           <div className='lg:mt-14 relative lg:w-[655px]'>
             <SectionHeader
@@ -33,14 +33,14 @@ const Benefit = () => {
               {items.map((item, index) => (
                 <li
                   key={index}
-                  className='relative pl-11 md:p-5 p-4 text-primary bg-bg lg:w-fit text-tag'
+                  className='relative !pl-12 md:p-5 p-4 text-primary bg-bg lg:w-fit md:text-subtitle2 text-tag'
                 >
                   <Image
                     src={'/assets/OurService/check.svg'}
                     alt='Arrow'
                     width={16}
                     height={16}
-                    className='absolute left-5 md:top-6 top-5 sm:w-[14px] w-[15px]'
+                    className='absolute left-5 md:top-7 top-5 sm:w-[16px] w-[15px]'
                   />
                   {item}
                 </li>
