@@ -11,7 +11,6 @@ import { useState } from 'react';
 import {
   companyMenu,
   companyTermsMenu,
-  industryMenu,
   serviceMenu,
   technologyMenu,
 } from './constants';
@@ -19,26 +18,24 @@ import {
 const footerTitle = [
   {
     title: 'Services',
-    responsiveClass:
-      'xl:max-w-[25%] xl:flex-[0_0_25%] lg:max-w-[40%] lg:flex-[0_0_40%] md:max-w-[50%] md:flex-[0_0_50%] sm:max-w-[49%] sm:flex-[49%] max-w-[100%] flex-[0_0_100%] min-h-[1px]',
+    responsiveClass: 'min-h-[1px] lg:w-[30%] md:w-1/2 w-full',
     menu: serviceMenu,
   },
-  {
-    title: 'Industry',
-    responsiveClass:
-      'xl:max-w-[20%] xl:flex-[0_0_20%] lg:max-w-[40%] lg:flex-[0_0_40%] md:max-w-[50%] md:flex-[0_0_50%] sm:max-w-[49%] sm:flex-[0_0_49%] max-w-[100%] flex-[0_0_100%] min-h-[1px] lg:mt-0 md:mt-0 m-0',
-    menu: industryMenu,
-  },
+  // {
+  //   title: 'Industry',
+  //   responsiveClass:
+  //     'xl:max-w-[20%] xl:flex-[0_0_20%] lg:max-w-[40%] lg:flex-[0_0_40%] md:max-w-[50%] md:flex-[0_0_50%] sm:max-w-[49%] sm:flex-[0_0_49%] max-w-[100%] flex-[0_0_100%] min-h-[1px] lg:mt-0 md:mt-0 m-0',
+  //   menu: industryMenu,
+  // },
   {
     title: 'Technology',
-    responsiveClass:
-      'doubleXl:max-w-[20%] doubleXl:flex-[0_0_20%] xl:max-w-[17%] xl:flex-[0_0_17%] px-[15px] w-full relative lg:max-w-[20%] lg:flex-[0_0_20%] md:max-w-[50%] md:flex-[0_0_50%] sm:max-w-[49%] sm:flex-[49%] max-w-[100%] flex-[0_0_100%] min-h-[1px] lg:mt-0 md:mt-7 m-0',
+    responsiveClass: 'min-h-[1px] lg:w-[22%] md:w-1/2 w-full',
     menu: technologyMenu,
   },
   {
     title: 'Company',
     responsiveClass:
-      'xl:max-w-[15%] xl:flex-[0_0_15%] lg:max-w-[40%] lg:flex-[0_0_40%] md:max-w-[50%] md:flex-[0_0_49%] sm:max-w-[49%] sm:flex-[0_0_100%] max-w-[100%] flex-[0_0_100%] min-h-[1px] xl:mt-0 lg:mt-7 md:mt-7 m-0',
+      'min-h-[1px] xl:mt-0 lg:mt-7 md:mt-7 m-0 lg:!w-[23%] md:w-1/2 w-full',
     menu: companyMenu,
   },
 ];
@@ -130,11 +127,11 @@ const Footer = () => {
                   </div>
                 </div>
               ))}
-              <div className='px-[15px] w-full relative doubleXl:max-w-[20%] doubleXl:flex-[0_0_20%] xl:max-w-[23%] xl:flex-[0_0_23%] lg:max-w-[60%] lg:flex-[0_0_60%]  sm:max-w-[100%] sm:flex-[0_0_100%] max-w-[100%] flex-[0_0_100%] min-h-[1px] xl:mt-0 lg:mt-7 md:mt-7 m-0'>
+              <div className='px-[15px] relative lg:w-[25%] md:w-1/2 w-full min-h-[1px] xl:mt-0 lg:mt-7 md:mt-7 m-0'>
                 <Typography className=' mb-5 sm:mt-0 mt-3 lg:text-paragraph1  md:text-subtitle1 text-subtitle2 '>
                   Get in touch
                 </Typography>
-                <div className='lg:block md:grid md:grid-cols-2 block'>
+                <div className='block'>
                   <Typography className='text-paragraph2Light leading-normal mb-5 min-h-0 text-placeholderText flex gap-3 items-start lg:order-1 md:order-2'>
                     <Image
                       src={'/assets/icons/CallIcon.svg'}
