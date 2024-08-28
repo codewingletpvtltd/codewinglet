@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Content from './components/Content';
 import ServiceData from './constants';
 
-const Technologies = () => {
+const TechnologyTab = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   const handleChangeIndex = (index: any) => {
@@ -58,4 +58,4 @@ const Technologies = () => {
   );
 };
 
-export default Technologies;
+export default TechnologyTab;

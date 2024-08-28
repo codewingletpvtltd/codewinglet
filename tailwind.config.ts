@@ -42,6 +42,7 @@ export default {
       transparent: 'transparent',
       darkBlack: '#191919',
       darkBorder: '#1d1d1d',
+      grayBorder: '#3b3b3b',
     },
     fontFamily: {
       primary: ['Poppins', 'sans-serif'],

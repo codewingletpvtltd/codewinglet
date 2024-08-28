@@ -133,7 +133,7 @@ const WhyWork = () => {
   ];
 
   return (
-    <div className='bg-bg xl:py-20 lg:py-14 md:py-[60px] py-10 why-work lg:!pb-24 overflow-hidden'>
+    <div className='bg-bg xl:py-20 lg:py-14 md:py-[60px] py-10 why-work lg:!pb-24 overflow-hidden about-why-work'>
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
         <Reveal>
           <SectionHeader

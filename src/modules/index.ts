@@ -4,4 +4,5 @@ export { default as ContactUsModule } from './ContactUs';
 export { default as CustomComponentModule } from './CustomComponent';
 export { default as HomeModule } from './Home';
 export { default as PrivacyPolicyModule } from './PrivacyPolicy';
+export { default as TechnologyModule } from './Technology';
 export { default as TermsConditionModule } from './TermsCondition';
