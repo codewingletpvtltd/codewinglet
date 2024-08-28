@@ -1,7 +1,7 @@
 'use client';
 import { SectionHeader } from '@codewinglet/components';
 import Reveal from '@codewinglet/components/Reveal';
-import Technologies from './Technologies';
+import TechnologyTab from './TechnologyTab';
 
 const Technology = () => (
   <section className='bg-black xl:py-20 lg:py-14 md:py-[60px] py-10'>
@@ -19,7 +19,7 @@ const Technology = () => (
           descriptionClassName='text-white'
         />
       </Reveal>
-      <Technologies />
+      <TechnologyTab />
     </section>
   </section>
 );

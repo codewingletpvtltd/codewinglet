@@ -32,7 +32,7 @@ const Faq = ({
         type='single'
         defaultValue='IT Consulting'
         collapsible
-        className='flex flex-col gap-6'
+        className='flex flex-col gap-6 w-full'
       >
         {faqData.map((faq, i) => (
           <AccordionItem
