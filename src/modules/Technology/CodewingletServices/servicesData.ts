@@ -1,3 +1,4 @@
+/* eslint-disable quotes */
 // servicesData.ts
 
 export interface ServicePoint {

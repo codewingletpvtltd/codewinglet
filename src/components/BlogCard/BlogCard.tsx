@@ -3,7 +3,7 @@ import { FC } from 'react';
 import Typography from '../Typography';
 import { BlogCardProps } from './types';
 
-const BlogCard: FC<BlogCardProps> = ({ image, desc, title, date }) => (
+const BlogCard: FC<BlogCardProps> = ({ image, desc, title }) => (
   <div className='relative w-full'>
     {image ? (
       <Image
