@@ -387,20 +387,20 @@ export const navMenu = [
     path: '',
     label: 'Services',
     children: services,
-    left: '2xl:left-[-447px] xl:left-[-382px]',
+    left: '2xl:left-[-506px] xl:left-[-440px]',
   },
-  {
-    path: '',
-    label: 'Industries',
-    children: industries,
-    left: '2xl:left-[-551px] xl:left-[-486px]',
-  },
+  // {
+  //   path: '',
+  //   label: 'Industries',
+  //   children: industries,
+  //   left: '2xl:left-[-551px] xl:left-[-486px]',
+  // },
   {
     path: '/technology',
     label: 'Technology',
     category: true,
     children: technology,
-    left: '2xl:left-[-666px] xl:left-[-601px]',
+    left: '2xl:left-[-609px] xl:left-[-543px]',
   },
   // {
   //   path: '/not-found',
