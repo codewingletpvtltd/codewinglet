@@ -29,8 +29,8 @@ const Services = () => {
     <>
       <div className='bg-black lg:py-20 md:py-[60px] py-10'>
         <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto relative'>
-          <div className='border-y border-grayBorder flex'>
-            <div className='bg-primary w-[72px] h-[72px] rounded-full flex flex-shrink-0 justify-center absolute -top-9 left-0'>
+          <div className='lg:border-y border-t border-b-0 border-grayBorder lg:flex'>
+            <div className='bg-primary w-[72px] h-[72px] rounded-full flex flex-shrink-0 justify-center absolute -top-9 lg:left-0 left-10'>
               <Image
                 src='/assets/Technologies/pages/command.svg'
                 alt='command'
@@ -39,7 +39,7 @@ const Services = () => {
               />
             </div>
             <Reveal>
-              <div className='w-[755px] pr-[252px] pt-[76px]'>
+              <div className='lg:w-[755px] lg:pr-[252px] pt-[76px]'>
                 <SectionHeader
                   title={<>Our Angular front-end services</>}
                   description={
@@ -49,7 +49,7 @@ const Services = () => {
                       Empower your business to deliver exactly what users crave.
                     </>
                   }
-                  headingClassName='text-white'
+                  headingClassName='text-white lg:!text-h2 !text-[36px]'
                   descriptionClassName='text-secondary pt-3'
                 />
                 <Reveal>
@@ -60,7 +60,7 @@ const Services = () => {
                   >
                     <Button
                       variant='outline'
-                      className='md:w-[206px] w-full gap-2.5 mt-[60px]'
+                      className='md:w-[206px] w-full gap-2.5 lg:mt-[60px] mt-10'
                     >
                       Hire Developer <Arrow />
                     </Button>
@@ -68,7 +68,7 @@ const Services = () => {
                 </Reveal>
               </div>
             </Reveal>
-            <div className='w-[655px] border-l border-grayBorder'>
+            <div className='lg:w-[655px] border-l border-grayBorder lg:mt-0 mt-[50px]'>
               <Accordion
                 type='single'
                 defaultValue='IT Consulting'
@@ -88,11 +88,11 @@ const Services = () => {
                         i === selectedIndex
                           ? 'text-primary lg:!text-subtitle2 md:!text-paragraph1 !text-tag after:content after:absolute after:bg-white after:w-[3px] after:h-[26px] after:left-0'
                           : 'text-primary'
-                      } [&[data-state=open]>svg]:rotate-[45deg] lg:!py-[30px] !px-[46px] xl:!pr-[70px] md:!pr-[60px] !pr-[50px] text-left leading-normal text-white font-normal`}
+                      } [&[data-state=open]>svg]:rotate-[45deg] !py-[30px] !px-[46px] xl:!pr-[70px] md:!pr-[60px] !pr-[50px] text-left leading-normal text-white font-normal`}
                     >
                       {faq.title}
                     </AccordionTrigger>
-                    <AccordionContent className='border-remove faq text-secondary lg:!text-paragraph1ExtraLight md:!text-paragraph2Light !text-tagExtraLight px-[25px]'>
+                    <AccordionContent className='border-remove faq text-secondary lg:!text-paragraph1ExtraLight md:!text-paragraph2Light !text-tagExtraLight px-[46px]'>
                       {faq.description}
                     </AccordionContent>
                   </AccordionItem>

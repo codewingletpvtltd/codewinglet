@@ -65,7 +65,7 @@ const Combination = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 3,
         },
       },
@@ -108,7 +108,7 @@ const Combination = () => {
               {technologies.map((tech) => (
                 <div
                   key={tech.id}
-                  className='bg-white p-10 mr-[50px] 2xl:!w-[435px] !w-[400px]'
+                  className='bg-white p-10 mr-[50px] 2xl:!w-[435px] lg:!w-[400px] !w-[324px]'
                 >
                   <div className='flex justify-center items-center gap-5'>
                     {/* First Image - Order 1 */}
@@ -117,7 +117,7 @@ const Combination = () => {
                       alt={tech.images[0].alt}
                       width={89}
                       height={89}
-                      className='order-1'
+                      className='order-1 lg:w-[89px] lg:h-[89px] w-[50px] h-[50px]'
                     />
                     {/* Span - Order 2 */}
                     <span className='text-secondary text-[30px] font-extralight order-2'>
@@ -129,10 +129,10 @@ const Combination = () => {
                       alt={tech.images[1].alt}
                       width={89}
                       height={89}
-                      className='order-3'
+                      className='order-3 lg:w-[89px] lg:h-[89px] w-[50px] h-[50px]'
                     />
                   </div>
-                  <Typography className='text-primary text-subtitle2 text-center pt-10 pb-3'>
+                  <Typography className='text-primary lg:text-subtitle2 text-paragraph1 text-center pt-10 pb-3'>
                     {tech.title}
                   </Typography>
                   <Typography className='text-secondary text-paragraph2Light text-center'>
@@ -143,7 +143,7 @@ const Combination = () => {
             </Slider>
 
             <Button
-              className='sm:w-[224px] w-[203px] h-[52px] lg:m-auto xl:mt-24 mt-10 flex m-auto'
+              className='sm:w-[224px] w-[203px] h-[52px] lg:m-auto xl:mt-24 mt-[104px] flex mx-auto bg-transparent'
               variant='blackOutline'
             >
               <Link

@@ -11,11 +11,11 @@ import { techName } from './utils';
 const HeroSection = () => (
   <>
     <div
-      className='bg-black md:pt-[328px] pt-[136px] overflow-hidden relative'
+      className='bg-black lg:pt-[328px] md:pt-60 pt-[136px] overflow-hidden relative'
       id='angular'
     >
-      <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto flex gap-[50px] pb-[60px]'>
-        <div className='mt-[50px] relative w-[612px]'>
+      <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto lg:flex block gap-[50px] lg:pb-[60px] pb-20'>
+        <div className='lg:mt-[65px] relative lg:w-[612px]'>
           <SectionHeader
             title={<>The best AngularJS development company</>}
             description={
@@ -30,7 +30,10 @@ const HeroSection = () => (
             headingClassName='text-white'
             descriptionClassName='text-white pt-6'
           />
-          <Button className='text-white underline mt-[60px]' variant='link'>
+          <Button
+            className='text-white underline lg:mt-[60px] mt-8 py-0'
+            variant='link'
+          >
             <Link
               href='/contact-us'
               rel='noopener noreferrer'
@@ -41,7 +44,7 @@ const HeroSection = () => (
             </Link>
           </Button>
         </div>
-        <div className='w-[748px]'>
+        <div className='lg:w-[748px] lg:mt-0 mt-10'>
           <Image
             src='/assets/Technologies/pages/hero.jpg'
             alt='hero'
@@ -50,20 +53,22 @@ const HeroSection = () => (
           />
         </div>
       </div>
-      <div className='bg-primary w-fit py-10 px-9 border-t-[3px] border-white 2xl:ml-[260px] ml-[95px] relative z-[2]'>
+      <div className='bg-primary w-fit lg:py-10 py-6 lg:px-9 px-[30px] border-t-[3px] border-white 2xl:ml-[260px] lg:ml-[95px] relative z-[2]'>
         <Image
           src='/assets/Technologies/pages/angular.svg'
           alt='angular'
           width={94}
           height={94}
-          className='mx-auto'
+          className='mx-auto lg:w-[94] lg:h-[94] w-[64px] h-[64px]'
         />
-        <Typography className='text-h6 text-white'>Angular JS</Typography>
+        <Typography className='lg:text-h6 text-tagLight text-white mt-4'>
+          Angular JS
+        </Typography>
       </div>
-      <div className='flex shrink-0 marquee absolute bottom-[50px] py-[30px] border-y border-primary'>
+      <div className='flex shrink-0 marquee absolute bottom-[50px] lg:py-[30px] py-3 border-y border-primary'>
         {techName.map((tech) => (
           <div key={tech.id} className='flex shrink-0 w-auto'>
-            <Typography className='text-white text-h2 technology-hero font-semibold'>
+            <Typography className='text-white lg:text-h2 text-subtitle1 technology-hero font-semibold'>
               {tech.title}
             </Typography>
             <Image
