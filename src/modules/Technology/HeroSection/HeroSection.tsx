@@ -11,7 +11,7 @@ import { techName } from './utils';
 const HeroSection = () => (
   <>
     <div
-      className='bg-black lg:pt-[328px] md:pt-60 pt-[136px] overflow-hidden relative'
+      className='bg-black lg:pt-[328px] md:pt-60 pt-[176px] overflow-hidden relative'
       id='angular'
     >
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto lg:flex block gap-[50px] lg:pb-[60px] pb-20'>
@@ -53,22 +53,22 @@ const HeroSection = () => (
           />
         </div>
       </div>
-      <div className='bg-primary w-fit lg:py-10 py-6 lg:px-9 px-[30px] border-t-[3px] border-white 2xl:ml-[260px] lg:ml-[95px] relative z-[2]'>
+      <div className='bg-primary w-fit lg:py-10 md:py-6 py-3 lg:px-9 md:px-[30px] px-3 border-t-[3px] border-white 2xl:ml-[260px] lg:ml-[95px] relative z-[2]'>
         <Image
           src='/assets/Technologies/pages/angular.svg'
           alt='angular'
           width={94}
           height={94}
-          className='mx-auto lg:w-[94] lg:h-[94] w-[64px] h-[64px]'
+          className='mx-auto lg:w-[94] lg:h-[94] md:w-[64px] w-10 md:h-[64px] h-10'
         />
-        <Typography className='lg:text-h6 text-tagLight text-white mt-4'>
+        <Typography className='lg:text-h6 md:text-tagLight text-tagExtraLight text-white mt-4'>
           Angular JS
         </Typography>
       </div>
-      <div className='flex shrink-0 marquee absolute bottom-[50px] lg:py-[30px] py-3 border-y border-primary'>
+      <div className='flex shrink-0 marquee absolute md:bottom-[50px] bottom-[35px] lg:py-[30px] md:py-3 py-1.5 border-y border-primary'>
         {techName.map((tech) => (
           <div key={tech.id} className='flex shrink-0 w-auto'>
-            <Typography className='text-white lg:text-h2 text-subtitle1 technology-hero font-semibold'>
+            <Typography className='text-white lg:text-h2 md:text-subtitle1 text-tagExtraLight technology-hero font-semibold'>
               {tech.title}
             </Typography>
             <Image
@@ -76,7 +76,7 @@ const HeroSection = () => (
               src={tech.image}
               width={34}
               height={34}
-              className='mx-[50px]'
+              className='md:mx-[50px] mx-3 md:w-[34px] w-2'
             />
           </div>
         ))}

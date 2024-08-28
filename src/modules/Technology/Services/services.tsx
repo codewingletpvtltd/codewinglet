@@ -30,16 +30,17 @@ const Services = () => {
       <div className='bg-black lg:py-20 md:py-[60px] py-10'>
         <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto relative'>
           <div className='lg:border-y border-t border-b-0 border-grayBorder lg:flex'>
-            <div className='bg-primary w-[72px] h-[72px] rounded-full flex flex-shrink-0 justify-center absolute -top-9 lg:left-0 left-10'>
+            <div className='bg-primary md:w-[72px] md:h-[72px] w-10 h-10 rounded-full flex items-center flex-shrink-0 justify-center absolute md:-top-9 lg:left-0 md:left-10 -top-5 left-5'>
               <Image
                 src='/assets/Technologies/pages/command.svg'
                 alt='command'
                 width={32}
                 height={32}
+                className='md:w-8 md:h-8 w-[18px] h-[18px]'
               />
             </div>
             <Reveal>
-              <div className='lg:w-[755px] lg:pr-[252px] pt-[76px]'>
+              <div className='lg:w-[755px] lg:pr-[252px] md:pt-[76px] pt-12'>
                 <SectionHeader
                   title={<>Our Angular front-end services</>}
                   description={
@@ -49,7 +50,7 @@ const Services = () => {
                       Empower your business to deliver exactly what users crave.
                     </>
                   }
-                  headingClassName='text-white lg:!text-h2 !text-[36px]'
+                  headingClassName='text-white lg:!text-h2 md:!text-[36px] !text-subtitle2'
                   descriptionClassName='text-secondary pt-3'
                 />
                 <Reveal>
@@ -60,7 +61,7 @@ const Services = () => {
                   >
                     <Button
                       variant='outline'
-                      className='md:w-[206px] w-full gap-2.5 lg:mt-[60px] mt-10'
+                      className='w-[206px] gap-2.5 lg:mt-[60px] mt-10'
                     >
                       Hire Developer <Arrow />
                     </Button>
@@ -88,7 +89,7 @@ const Services = () => {
                         i === selectedIndex
                           ? 'text-primary lg:!text-subtitle2 md:!text-paragraph1 !text-tag after:content after:absolute after:bg-white after:w-[3px] after:h-[26px] after:left-0'
                           : 'text-primary'
-                      } [&[data-state=open]>svg]:rotate-[45deg] !py-[30px] !px-[46px] xl:!pr-[70px] md:!pr-[60px] !pr-[50px] text-left leading-normal text-white font-normal`}
+                      } [&[data-state=open]>svg]:rotate-[45deg] md:!py-[30px] !py-5 md:!px-[46px] !px-[32px] xl:!pr-[70px] md:!pr-[60px] !pr-[50px] text-left leading-normal text-white font-normal`}
                     >
                       {faq.title}
                     </AccordionTrigger>
