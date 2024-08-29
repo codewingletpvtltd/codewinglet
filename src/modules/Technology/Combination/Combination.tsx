@@ -66,14 +66,14 @@ const Combination = () => {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
         },
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
         },
       },
       {
@@ -111,7 +111,7 @@ const Combination = () => {
               {technologies.map((tech) => (
                 <div
                   key={tech.id}
-                  className='bg-white p-10 mr-[50px] 2xl:!w-[435px] lg:!w-[400px] !w-[324px]'
+                  className='bg-white p-10 mr-[50px] 2xl:!w-[435px] lg:!w-[400px] md:!w-[374px] !w-[324px]'
                 >
                   <div className='flex justify-center items-center gap-5'>
                     {/* First Image - Order 1 */}

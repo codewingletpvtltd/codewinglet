@@ -31,28 +31,28 @@ const Companies = () => (
               alt='microsoft'
               width={195}
               height={42}
-              className='lg:py-8 md:py-[50px] md:my-0 my-[30px] 2xl:mx-[99px] lg:mx-[84px] m-auto lg:w-auto '
+              className='lg:py-8 md:py-[50px] py-[30px] md:px-0 px-[30px] 2xl:mx-[99px] lg:mx-[84px] m-auto lg:w-[195px]'
             />
             <Image
               src='/assets/Technologies/pages/google.svg'
               alt='google'
               width={127}
               height={42}
-              className='lg:py-8 md:py-[50px] md:my-0 my-[30px] 2xl:mx-[99px] lg:mx-[84px] m-auto lg:w-auto '
+              className='lg:py-8 md:py-[50px] py-[30px] md:px-0 px-[30px] 2xl:mx-[99px] lg:mx-[84px] m-auto lg:w-auto'
             />
             <Image
               src='/assets/Technologies/pages/ibm.svg'
               alt='ibm'
               width={98}
               height={42}
-              className='lg:py-8 md:py-[50px] md:my-0 my-[30px] 2xl:mx-[99px] lg:mx-[84px] m-auto lg:w-auto '
+              className='lg:py-8 md:py-[50px] py-[30px] md:px-0 px-[30px] 2xl:mx-[99px] lg:mx-[84px] m-auto lg:w-auto'
             />
             <Image
               src='/assets/Technologies/pages/paypal.svg'
               alt='paypal'
               width={156}
               height={42}
-              className='lg:py-8 md:py-[50px] md:my-0 my-[30px] 2xl:mx-[99px] lg:mx-[84px] m-auto lg:w-auto '
+              className='lg:py-8 md:py-[50px] py-[30px] md:px-0 px-[30px] 2xl:mx-[99px] lg:mx-[84px] m-auto lg:w-auto'
             />
           </div>
         </div>

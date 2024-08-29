@@ -1,14 +1,11 @@
 /* eslint-disable import/order */
 'use client';
 
+import { Typography } from '@codewinglet/components';
 import { cn } from '@codewinglet/utils';
 import { useEffect, useRef, useState } from 'react';
 
 const designation = [
-  {
-    title: 'Angular JS',
-    path: '',
-  },
   {
     title: 'Overview',
     path: '#overview',
@@ -26,8 +23,8 @@ const designation = [
     path: '#combination',
   },
   {
-    title: 'Services',
-    path: '#services',
+    title: 'Angular Services',
+    path: '#AngularServices',
   },
   {
     title: 'Why us ?',
@@ -40,6 +37,26 @@ const designation = [
   {
     title: 'Insight',
     path: '#insight',
+  },
+  {
+    title: 'Service',
+    path: '#service',
+  },
+  {
+    title: 'Technology',
+    path: '#technology',
+  },
+  {
+    title: 'Industry',
+    path: '#industry',
+  },
+  {
+    title: 'Work Process',
+    path: '#workProcess',
+  },
+  {
+    title: 'Testimonial',
+    path: '#testimonial',
   },
   {
     title: 'Blog',
@@ -122,9 +139,12 @@ const TechnologySubMenu = () => {
 
   return (
     <>
-      <div className='bg-white pt-2.5 md:pt-10 lg:mt-[86px] md:mt-[90px] mt-[78px] border-b border-headerBoxBorder fixed w-full z-10'>
-        <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
-          <div className='flex lg:overscroll-x-none overflow-x-auto'>
+      <div className='bg-white pt-2.5 md:pt-10 lg:mt-[86px] md:mt-[90px] mt-[78px] border-b border-headerBoxBorder fixed w-full z-10 submenus'>
+        <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto flex'>
+          <Typography className='py-2.5 px-5 md:text-paragraph1Light text-paragraph2Light bg-bg flex'>
+            Angular JS
+          </Typography>
+          <div className='flex overflow-x-auto'>
             {designation.map(({ title, path }, index) => (
               <button
                 key={title}

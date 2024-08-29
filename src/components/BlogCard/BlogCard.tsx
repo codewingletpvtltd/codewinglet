@@ -4,7 +4,7 @@ import Typography from '../Typography';
 import { BlogCardProps } from './types';
 
 const BlogCard: FC<BlogCardProps> = ({ image, desc, title }) => (
-  <div className='relative w-full'>
+  <div className='relative lg:w-full w-[312px] mx-5'>
     {image ? (
       <Image
         src={image}
