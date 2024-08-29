@@ -1,24 +1,25 @@
+/* eslint-disable import/order */
 'use client';
-import Link from 'next/link';
-import Image from 'next/image';
-import { Button, TypeAnimation, Typography } from '@codewinglet/components';
-import './herosection.css';
 import { Arrow } from '@codewinglet/assets';
+import { Button, TypeAnimation, Typography } from '@codewinglet/components';
+import Image from 'next/image';
+import Link from 'next/link';
+import './herosection.css';
 import { techList } from './utils';
 
 const sequence = [
-  'Waste Management',
-  'Sustainable Solution',
-  'Staffing Management',
-  'E-commerce',
-  'Healthcare',
-  'Logistics',
-  'EdTech',
-  'Fintech',
-  'Manufacturing & Retails',
-  'Real Estate',
-  'Travel & Hospitality',
-  'Media & Entertainment',
+  'IT Consulting',
+  'Web application development',
+  'Mobile application development',
+  'Custom software development',
+  'Internet of Things (IoT) ',
+  'Artificial Intelligence',
+  'DevOps',
+  'Cloud Engineering',
+  'UI/UX  Development',
+  'QA & Testing Service',
+  'Staff Augmentation',
+  'Support & Maintenance',
 ];
 
 const HeroSection = () => (

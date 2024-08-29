@@ -1,16 +1,17 @@
+/* eslint-disable import/order */
 'use client';
-import { useRouter, usePathname } from 'next/navigation';
-import React, { FC } from 'react';
-import Image from 'next/image';
+import { xl } from '@codewinglet/constants/mediaQueryConst';
 import { useScreenSize } from '@codewinglet/hooks';
 import { getClassNames } from '@codewinglet/utils';
-import { xl } from '@codewinglet/constants/mediaQueryConst';
-import MenuIcon from '../MenuIcon';
-import Drawer from '../Drawer/Drawer';
+import Image from 'next/image';
+import { usePathname, useRouter } from 'next/navigation';
+import React, { FC } from 'react';
 import Button from '../Button';
-import { NavMenu, MobileMenu } from './components';
-import useHeader from './useHeader';
+import Drawer from '../Drawer/Drawer';
+import MenuIcon from '../MenuIcon';
+import { MobileMenu, NavMenu } from './components';
 import { HeaderProps } from './types';
+import useHeader from './useHeader';
 
 //import { DrawerContent } from '../../../@codewinglet/ui/drawer';
 
@@ -34,6 +35,10 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
           : pathName === '/privacy-policy'
           ? 'bg-primary'
           : pathName === '/terms-and-conditions'
+          ? 'bg-primary'
+          : pathName === '/career'
+          ? 'bg-primary'
+          : pathName === '/technology'
           ? 'bg-primary'
           : 'bg-transparent'
       )}
