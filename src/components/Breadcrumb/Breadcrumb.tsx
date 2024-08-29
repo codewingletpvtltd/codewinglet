@@ -10,7 +10,7 @@ const Breadcrumb: FC<BreadcrumbProps> = ({ breadcrumbs }) => (
         <li key={`breadcrumb-${index}`}>
           <Typography
             variant='subtitle2'
-            className='text-lightBlack font-[500] uppercase lg:text-4'
+            className='font-medium uppercase lg:text-4'
           >
             {data}
           </Typography>

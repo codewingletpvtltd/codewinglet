@@ -141,7 +141,7 @@ const TechnologySubMenu = () => {
     <>
       <div className='bg-white pt-2.5 md:pt-10 lg:mt-[86px] md:mt-[90px] mt-[78px] border-b border-headerBoxBorder fixed w-full z-10 submenus'>
         <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto flex'>
-          <Typography className='py-2.5 px-5 md:text-paragraph1Light text-paragraph2Light bg-bg flex'>
+          <Typography className='py-2.5 px-5 md:text-paragraph1Light text-tag bg-bg flex flex-shrink-0 font-normal'>
             Angular JS
           </Typography>
           <div className='flex overflow-x-auto'>
@@ -149,7 +149,7 @@ const TechnologySubMenu = () => {
               <button
                 key={title}
                 className={cn(
-                  'relative md:text-paragraph1Light text-paragraph2Light flex-shrink-0 py-2.5 px-5 cursor-pointer !font-light',
+                  'relative md:text-paragraph1Light text-text-tag flex-shrink-0 py-2.5 px-5 cursor-pointer !font-light',
                   activeIndex === index ? '!font-normal' : ''
                 )}
                 onClick={(event) =>

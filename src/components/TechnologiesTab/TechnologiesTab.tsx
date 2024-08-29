@@ -51,7 +51,7 @@ const Accordion: React.FC<AccordCompProps> = ({
         <h2 className='text-[50px] font-300 mb-[30px] text-left leading-tight heading-3'>
           {caption}
         </h2>
-        <div className='font-300 text-[30px] text-paragraph-16'>
+        <div className='font-300 text-h4 text-paragraph-16'>
           <p>
             <span>{content}</span>
           </p>
