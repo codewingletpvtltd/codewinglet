@@ -20,7 +20,11 @@
       }
     ],
     "paths": {
-      "@codewinglet/*": ["./src/*"]
+      "@codewinglet/*": ["./src/*"],
+      "@codewinglet/utils": ["./src/utils/index.ts"],
+      "@codewinglet/components": ["./src/components/index.ts"],
+      "@codewinglet/assets": ["./src/assets/index.ts"],
+      "@codewinglet/constants": ["./src/constants/index.ts"]
     }
   },
   "include": [

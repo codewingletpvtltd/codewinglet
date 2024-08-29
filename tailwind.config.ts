@@ -44,6 +44,9 @@ export default {
     fontFamily: {
       primary: ['Poppins', 'sans-serif'],
     },
+    textDecorationThickness: {
+      '2': '2px', // custom thickness of 4px
+    },
     extend: {
       container: {
         center: true,
