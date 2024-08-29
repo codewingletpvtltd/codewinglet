@@ -123,7 +123,7 @@ const Combination = () => {
                       className='order-1 lg:w-[89px] lg:h-[89px] w-[50px] h-[50px]'
                     />
                     {/* Span - Order 2 */}
-                    <span className='text-secondary text-[30px] font-extralight order-2'>
+                    <span className='text-secondary text-h4 font-extralight order-2'>
                       +
                     </span>
                     {/* Second Image - Order 3 */}

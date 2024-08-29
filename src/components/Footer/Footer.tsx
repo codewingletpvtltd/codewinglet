@@ -1,6 +1,5 @@
 /* eslint-disable import/order */
 'use client';
-import { Arrow } from '@codewinglet/assets';
 import { Button, Typography } from '@codewinglet/components';
 import Reveal from '@codewinglet/components/Reveal';
 import { getClassNames } from '@codewinglet/utils';
@@ -14,6 +13,12 @@ import {
   serviceMenu,
   technologyMenu,
 } from './constants';
+
+type ContactDetail = {
+  href?: string;
+  text: string;
+  isLink?: boolean;
+};
 
 const footerTitle = [
   {
@@ -37,6 +42,71 @@ const footerTitle = [
     responsiveClass:
       'min-h-[1px] xl:mt-0 lg:mt-7 md:mt-7 m-0 lg:!w-[23%] md:w-1/2 w-full',
     menu: companyMenu,
+  },
+];
+
+const socialLinks = [
+  {
+    href: 'https://in.linkedin.com/company/codewinglet',
+    src: '/assets/icons/LinkedInLogo.svg',
+    width: 15,
+    height: 18,
+    alt: 'LinkedInLogo',
+  },
+  {
+    href: 'https://www.instagram.com/codewinglet/',
+    src: '/assets/icons/InstagramLogo.svg',
+    width: 15,
+    height: 18,
+    alt: 'InstagramLogo',
+  },
+  {
+    href: 'https://www.facebook.com/codewingletpteltd',
+    src: '/assets/icons/FacebookLogo.svg',
+    width: 12,
+    height: 18,
+    alt: 'FacebookLogo',
+  },
+  {
+    href: 'https://twitter.com/codewinglet',
+    src: '/assets/icons/TwitterLogo.svg',
+    width: 15,
+    height: 18,
+    alt: 'TwitterLogo',
+  },
+];
+
+const contacts = [
+  {
+    type: 'Contact us',
+    icon: '/assets/icons/CallIcon.svg',
+    details: [
+      { href: 'tel:+918160868310', text: '+91 81608 68310 (Jobs)' },
+      { href: 'tel:+918320111741', text: '+91 83201 11741 (Inquiry)' },
+    ],
+  },
+  {
+    type: 'Email us',
+    icon: '/assets/icons/EmailIcon.svg',
+    details: [
+      { href: 'mailto:jobs@codewinglet.com', text: 'jobs@codewinglet.com' },
+      { href: 'mailto:info@codewinglet.com', text: 'info@codewinglet.com' },
+      { href: 'mailto:sales@codewinglet.com', text: 'sales@codewinglet.com' },
+    ],
+  },
+  {
+    type: 'Address',
+    icon: '/assets/icons/LocationIcon.svg',
+    details: [
+      {
+        text: 'A901-905, Vivanta Icon, Opp. Shell Petrol Pump, Adajan, Surat, Gujarat 395009.',
+      },
+      {
+        href: 'https://maps.app.goo.gl/6W7ns2r5VzPFGmkA8',
+        text: 'Google map',
+        isLink: true,
+      },
+    ] as ContactDetail[],
   },
 ];
 
@@ -70,7 +140,7 @@ const Footer = () => {
                 >
                   <Button
                     variant='outline'
-                    className='2xl:w-[230px] xl:w-[199px] md:w-[190px] sm:w-[164px] w-[173px] sm:h-[56px] h-10'
+                    className='2xl:w-[230px] xl:w-[199px] md:w-[190px] sm:w-[164px] w-[173px] sm:h-14 h-10'
                   >
                     Schedule a call
                   </Button>
@@ -111,7 +181,7 @@ const Footer = () => {
                   </Typography>
                   <div
                     className={getClassNames(
-                      'flex flex-col gap-[6px] sm:max-h-full max-h-0 overflow-hidden transition-all ease-in-out duration-500 sm:pl-0 pl-4',
+                      'flex flex-col gap-1.5 sm:max-h-full max-h-0 overflow-hidden transition-all ease-in-out duration-500 sm:pl-0 pl-4',
                       index === expandedOption ? 'max-h-[566px]' : ''
                     )}
                   >
@@ -127,147 +197,64 @@ const Footer = () => {
                   </div>
                 </div>
               ))}
-              <div className='px-[15px] relative lg:w-[25%] md:w-1/2 w-full min-h-[1px] xl:mt-0 lg:mt-7 md:mt-7 m-0'>
+              <div className='px-[15px] relative lg:w-1/4 md:w-1/2 w-full min-h-[1px] xl:mt-0 lg:mt-7 md:mt-7 m-0'>
                 <Typography className=' mb-5 sm:mt-0 mt-3 lg:text-paragraph1  md:text-subtitle1 text-subtitle2 '>
                   Get in touch
                 </Typography>
                 <div className='block'>
-                  <Typography className='text-paragraph2Light leading-normal mb-5 min-h-0 text-placeholderText flex gap-3 items-start lg:order-1 md:order-2'>
-                    <Image
-                      src={'/assets/icons/CallIcon.svg'}
-                      alt='CallIcon'
-                      width={18}
-                      height={18}
-                      className='mt-1'
-                    />
-                    <div className='flex flex-col gap-[4px]'>
-                      <div className='text-white'>Contact us :</div>
-                      <Link
-                        href='tel:+918160868310'
-                        className='hover:text-white'
-                      >
-                        +91 81608 68310 (Jobs)
-                      </Link>
-                      <Link
-                        href='tel:+918320111741'
-                        className='hover:text-white'
-                      >
-                        +91 83201 11741 (Inquiry)
-                      </Link>
-                    </div>
-                  </Typography>
-
-                  <Typography className='text-paragraph2Light leading-normal lg:mb-3.5 mb-5 min-h-0 text-placeholderText flex gap-3 items-start lg:order-2 md:order-1'>
-                    <Image
-                      src={'/assets/icons/EmailIcon.svg'}
-                      alt='EmailIcon'
-                      width={18}
-                      height={18}
-                      className='mt-1'
-                    />
-                    <div className='flex flex-col gap-[4px]'>
-                      <div className='text-white'>Email us :</div>
-                      <Link
-                        href='mailto:jobs@codewinglet.com'
-                        className='hover:text-white'
-                      >
-                        jobs@codewinglet.com
-                      </Link>
-                      <Link
-                        href='mailto:info@codewinglet.com'
-                        className='hover:text-white'
-                      >
-                        info@codewinglet.com
-                      </Link>
-                      <Link
-                        href='mailto:sales@codewinglet.com'
-                        className='hover:text-white'
-                      >
-                        sales@codewinglet.com
-                      </Link>
-                    </div>
-                  </Typography>
-
-                  <Typography className='address text-paragraph2Light leading-normal mb-5 min-h-0 text-placeholderText flex gap-3 md:mt-0 sm:mt-[-35px] mt-0 items-start order-3'>
-                    <Image
-                      src={'/assets/icons/LocationIcon.svg'}
-                      alt='LocationIcon'
-                      width={18}
-                      height={18}
-                      className='mt-1 md:w-[37]'
-                    />
-                    <div className='flex flex-col'>
-                      <div className='text-white'>Address :</div>
-                      <Typography className='xl:pr-0 lg:pr-[230px] pr-0'>
-                        A901-905, Vivanta Icon, Opp. Shell Petrol Pump, Adajan,
-                        Surat, Gujarat 395009.
-                      </Typography>
-                      <div className='flex group cursor-pointer text-white mt-2.5 items-center group'>
-                        <Link
-                          href='https://maps.app.goo.gl/6W7ns2r5VzPFGmkA8'
-                          target='_blank'
-                          className='text-paragraph2Light underline'
-                        >
-                          Google map
-                        </Link>
-                        <Arrow className='group-hover:transition-all duration-700 group-hover:translate-x-1' />
+                  {contacts.map((contact, index) => (
+                    <Typography
+                      key={index}
+                      className='text-paragraph2Light leading-normal mb-5 min-h-0 text-placeholderText flex gap-3 items-start'
+                    >
+                      <Image
+                        src={contact.icon}
+                        alt={`${contact.type} Icon`}
+                        width={18}
+                        height={18}
+                        className='mt-1'
+                      />
+                      <div className='flex flex-col gap-1'>
+                        <div className='text-white'>{contact.type} :</div>
+                        {contact.details.map((detail, detailIndex) =>
+                          detail.href ? (
+                            <Link
+                              key={detailIndex}
+                              href={detail.href}
+                              className='hover:text-white'
+                              target={detail.isLink ? '_blank' : '_self'}
+                            >
+                              {detail.text}
+                            </Link>
+                          ) : (
+                            <Typography
+                              key={detailIndex}
+                              className='xl:pr-0 lg:pr-[230px] pr-0'
+                            >
+                              {detail.text}
+                            </Typography>
+                          )
+                        )}
                       </div>
-                    </div>
-                  </Typography>
+                    </Typography>
+                  ))}
                 </div>
                 <div className='flex gap-5 lg:mt-7 md:mt-7 mt-7 ml-7'>
-                  <Link
-                    className='flex items-center justify-center w-8 h-8 border border-solid border-white rounded-full bg-white'
-                    href='https://in.linkedin.com/company/codewinglet'
-                    target='_blank'
-                    aria-label='Linkedin'
-                  >
-                    <Image
-                      src={'/assets/icons/LinkedInLogo.svg'}
-                      width={15}
-                      height={18}
-                      alt='LinkedInLogo'
-                    />
-                  </Link>
-                  <Link
-                    className='flex items-center justify-center w-8 h-8 border border-solid border-white rounded-full bg-white'
-                    href='https://www.instagram.com/codewinglet/'
-                    target='_blank'
-                    aria-label='Instagram'
-                  >
-                    <Image
-                      src={'/assets/icons/InstagramLogo.svg'}
-                      width={15}
-                      height={18}
-                      alt='InstagramLogo'
-                    />
-                  </Link>
-                  <Link
-                    className='flex items-center justify-center w-8 h-8 border border-solid border-white rounded-full bg-white'
-                    href='https://www.facebook.com/codewingletpteltd'
-                    target='_blank'
-                    aria-label='Facebook'
-                  >
-                    <Image
-                      src={'/assets/icons/FacebookLogo.svg'}
-                      width={12}
-                      height={18}
-                      alt='FacebookLogo'
-                    />
-                  </Link>
-                  <Link
-                    className='flex items-center justify-center w-8 h-8 border border-solid border-white rounded-full bg-white'
-                    href='https://twitter.com/codewinglet'
-                    target='_blank'
-                    aria-label='Twitter'
-                  >
-                    <Image
-                      src={'/assets/icons/TwitterLogo.svg'}
-                      width={15}
-                      height={18}
-                      alt='TwitterLogo'
-                    />
-                  </Link>
+                  {socialLinks.map((link, index) => (
+                    <Link
+                      key={index}
+                      className='flex items-center justify-center w-8 h-8 border border-solid border-white rounded-full bg-white'
+                      href={link.href}
+                      target='_blank'
+                    >
+                      <Image
+                        src={link.src}
+                        width={link.width}
+                        height={link.height}
+                        alt={link.alt}
+                      />
+                    </Link>
+                  ))}
                 </div>
               </div>
             </div>
@@ -278,13 +265,13 @@ const Footer = () => {
       <Reveal>
         <div className='lg:gap-0 gap-4 relative text-placeholderText border-t border-secondary'>
           <div className='container flex flex-col sm:flex-row items-start sm:justify-between justify-start lg:px-3.5 sm:p-10 sm:py-3.5 p-5 md:gap-0 gap-1'>
-            <Typography className='sm:text-left text-left md:text-paragraph2Light sm:text-[14px] text-tagLight'>
+            <Typography className='text-left md:text-paragraph2Light text-tagLight'>
               © {new Date().getFullYear()} All rights reserved. Codewinglet
             </Typography>
             <ul className='flex md:gap-6 sm:gap-6 gap-12'>
               {companyTermsMenu.map((item) => (
                 <li key={item.id}>
-                  <Typography className='md:text-paragraph2Light sm:text-[14px] text-tagLight'>
+                  <Typography className='md:text-paragraph2Light text-tagLight'>
                     <Link className='hover:text-white' href={item.path}>
                       {item.label}
                     </Link>

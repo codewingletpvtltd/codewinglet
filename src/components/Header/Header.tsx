@@ -89,14 +89,14 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
                   width={20}
                   height={10}
                   alt='Codewinglet Private Limited Logo1'
-                  className='w-[191px] sm:h-auto h-[38px] md:w-[240px] xl:w-[252px] cursor-pointer invert'
+                  className='w-[191px] sm:h-auto h-[38px] md:w-60 xl:w-[252px] cursor-pointer invert'
                   onClick={() => router.push('/')}
                   loading='eager'
                 />
               </div>
               <div
                 onClick={onMenu}
-                className='h-[45px] w-[45px]  !my-[0px] z-[100] flex items-center justify-center absolute sm:right-[-15px] right-[-13px]'
+                className='h-[45px] w-[45px] !my-[0px] z-[100] flex items-center justify-center absolute sm:right-[-15px] right-[-13px]'
               >
                 <MenuIcon
                   isOpen={showMenu}

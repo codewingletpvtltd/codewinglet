@@ -1,5 +1,6 @@
-import { useEffect, useRef, useState } from 'react';
+/* eslint-disable import/order */
 import { Arrow } from '@codewinglet/assets';
+import { useEffect, useRef, useState } from 'react';
 interface Header {
   id: string;
   ref: React.RefObject<HTMLElement | null>;
@@ -86,7 +87,7 @@ const ScrollHighlightNavbar: React.FC<ScrollHighlightNavbarProps> = ({
   }, [navHeader]);
 
   return (
-    <div className='2xl:w-[25%] xl:w-[25%] w-full lg:p-0 p-5 bg-white lg:sticky fixed lg:z-0 z-10 right-auto lg:top-[230px] md:top-[90px] top-[78px] lg:left-auto left-0'>
+    <div className='xl:w-1/4 w-full lg:p-0 p-5 bg-white lg:sticky fixed lg:z-0 z-10 right-auto lg:top-[230px] md:top-[90px] top-[78px] lg:left-auto left-0'>
       <ul className='lg:grid flex overflow-auto [-ms-overflow-style:_none;] [scrollbar-width:_none;] gap-6'>
         {navHeader.map((policy, i) => (
           <li key={policy.id} className='flex-shrink-0'>

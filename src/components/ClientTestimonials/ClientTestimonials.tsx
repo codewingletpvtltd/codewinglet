@@ -17,8 +17,8 @@ const ClientTestimonials = () => (
           description={
             <>Here’s a glimpse into what Our Clients have to say about us.</>
           }
-          headingClassName='text-[22px] text-white'
-          descriptionClassName=' mt-[9px] text-white'
+          headingClassName='text-subtitle1Light text-white'
+          descriptionClassName='mt-[9px] text-white'
         />
       </Reveal>
       <div
@@ -68,7 +68,7 @@ const ClientTestimonials = () => (
           </Slider>
         </div>
         <Image
-          className='lg:w-[99px] md:w-[75px] absolute 2xl:right-[24rem] xl:right-[16rem] md:right-[10rem] sm:right-0 lg:bottom-[-1rem] md:bottom-2.5 z-[-1] md:block hidden'
+          className='lg:w-[99px] md:w-[75px] absolute 2xl:right-[24rem] xl:right-64 md:right-40 sm:right-0 lg:bottom-[-1rem] md:bottom-2.5 z-[-1] md:block hidden'
           src={'/assets/icons/ClosingQuote.svg'}
           alt='ClosingQuote'
           width={100}

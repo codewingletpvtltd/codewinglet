@@ -14,7 +14,7 @@ const HeroSection = () => (
       className='bg-black lg:pt-[328px] md:pt-60 pt-[176px] relative scroll-mt-40'
       id='overview'
     >
-      <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto lg:flex block gap-[50px] lg:pb-[60px] pb-20'>
+      <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto lg:flex block gap-[50px] md:pb-20 pb-10'>
         <div className='lg:mt-[65px] relative lg:w-[612px]'>
           <SectionHeader
             title={<>The best AngularJS development company</>}
@@ -53,14 +53,14 @@ const HeroSection = () => (
           />
         </div>
       </div>
-      <div className='container w-full py-[50px] lg:px-[15px] sm:px-10 px-5 overflow-hidden relative'>
+      <div className='container w-full lg:py-[50px] md:py-[46px] py-9 lg:px-[15px] sm:px-10 px-5 overflow-hidden relative'>
         <div className='bg-primary w-fit lg:py-10 md:py-6 py-3 lg:px-9 md:px-[30px] px-3 border-t-[3px] border-white absolute bottom-0 left-0 z-[2]'>
           <Image
             src='/assets/Technologies/pages/angular.svg'
             alt='angular'
             width={94}
             height={94}
-            className='mx-auto lg:w-[94] lg:h-[94] md:w-[64px] w-10 md:h-[64px] h-10'
+            className='mx-auto lg:w-[94] lg:h-[94] md:w-16 w-10 md:h-16 h-10'
           />
           <Typography className='lg:text-h6 md:text-tagLight text-tagExtraLight text-white mt-4'>
             Angular JS
