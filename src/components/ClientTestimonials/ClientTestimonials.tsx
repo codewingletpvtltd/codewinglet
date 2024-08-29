@@ -1,14 +1,15 @@
-import Image from 'next/image';
+/* eslint-disable import/order */
 import Reveal from '@codewinglet/components/Reveal';
+import Image from 'next/image';
 import SectionHeader from '../SectionHeader/SectionHeader';
-import Typography from '../Typography/Typography';
 import Slider from '../Slider/Slider';
-import { testimonials } from './constants';
-import { slickSetting } from './config';
+import Typography from '../Typography/Typography';
 import ClientDetails from './components/ClientDetails';
+import { slickSetting } from './config';
+import { testimonials } from './constants';
 
 const ClientTestimonials = () => (
-  <div className='lg:py-20 md:py-[60px] py-10'>
+  <div className='lg:py-20 md:py-[60px] py-10 scroll-mt-40' id='testimonial'>
     <div className='container w-full lg:px-[15px] sm:px-[30px] px-[15px] mx-auto'>
       <Reveal>
         <SectionHeader

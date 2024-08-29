@@ -44,7 +44,10 @@ const process = [
 ];
 
 const ContactUs = () => (
-  <section className='relative xl:py-20 md:py-[60px] py-10 bg-bg'>
+  <section
+    className='relative xl:py-20 md:py-[60px] py-10 bg-bg scroll-mt-40'
+    id='workProcess'
+  >
     <div className='container w-full lg:px-[15px] sm:px-[30px] px-[15px] mx-auto'>
       <Reveal>
         <SectionHeader

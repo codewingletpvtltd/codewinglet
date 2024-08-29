@@ -22,26 +22,24 @@ html {
   scrollbar-width: none; /* Firefox */
 }
 
-/* ===== Scrollbar CSS ===== */
-/* Firefox */
-* {
-  scrollbar-width: auto;
-  scrollbar-color: #b6b6b6 transparent;
+::-webkit-scrollbar {
+  width: 5px;
 }
 
-/* Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-  width: 5px !important;
+.submenus ::-webkit-scrollbar {
+  /* width: 1px !important; */
+  height: 4px !important;
 }
 
-*::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: #f5f5f5;
+/* Track */
+::-webkit-scrollbar-track {
   border-radius: 10px;
-  border: 2px solid transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #dedede;
+  border-radius: 10px;
 }
 
 iframe {
@@ -167,6 +165,12 @@ input[type='number']::-webkit-outer-spin-button {
   .address svg {
     width: 11.1%;
   }
+  #combination .slick-arrow.slick-prev {
+    left: 45% !important;
+  }
+  #combination .slick-arrow.slick-next {
+    right: 46% !important;
+  }
 }
 @media only screen and (min-width: 640px) and (max-width: 767px) {
   .container {
@@ -227,6 +231,13 @@ input[type='number']::-webkit-outer-spin-button {
   .why-work .slick-slider .slick-next {
     left: 50% !important;
   }
+
+  #combination .slick-arrow.slick-prev {
+    left: 39% !important;
+  }
+  #combination .slick-arrow.slick-next {
+    right: 39% !important;
+  }
 }
 
 /* styles.css for accordian open */
@@ -264,9 +275,4 @@ input[type='number']::-webkit-outer-spin-button {
 }
 .faq > div {
   padding-bottom: 25px;
-}
-
-/*  */
-
-.slick-next:before {
 }

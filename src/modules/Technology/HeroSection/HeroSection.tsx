@@ -54,7 +54,7 @@ const HeroSection = () => (
         </div>
       </div>
       <div className='container w-full py-[50px] lg:px-[15px] sm:px-10 px-5 overflow-hidden relative'>
-        <div className='bg-primary w-fit lg:py-10 md:py-6 py-3 lg:px-9 md:px-[30px] px-3 border-t-[3px] border-white absolute bottom-0 left-0'>
+        <div className='bg-primary w-fit lg:py-10 md:py-6 py-3 lg:px-9 md:px-[30px] px-3 border-t-[3px] border-white absolute bottom-0 left-0 z-[2]'>
           <Image
             src='/assets/Technologies/pages/angular.svg'
             alt='angular'
