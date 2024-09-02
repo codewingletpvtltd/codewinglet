@@ -12,7 +12,7 @@ const GetInTouch = () => {
   const { formData, onChangeFormData, onSubmit, isLoading } = useGetInTouch();
 
   return (
-    <div className=' bg-white mt-[78px] md:pt-20 2xl:pb-[160px] xl:pb-[140px] pt-[30px] sm:pb-0 pb-[30px]'>
+    <div className=' bg-white mt-[90px] md:py-20 2xl:pb-[160px] xl:pb-[140px] pt-[30px] sm:pb-0 pb-[30px]'>
       <div className='container w-full lg:px-[15px] sm:px-[30px] px-5 mx-auto'>
         <div className='lg:flex block 2xl:gap-[90px] xl:gap-[25px]'>
           <div className='lg:w-[52%] w-full'>
@@ -31,29 +31,29 @@ const GetInTouch = () => {
                     product outsourcing, or staff augmentation.
                   </>
                 }
-                headingClassName='2xl:pr-[130px] xl:pr-[100px] pr-0'
-                descriptionClassName='!text-subtitle2Light !mt-[31px] lg:block hidden'
+                headingClassName='2xl:pr-[100px] xl:pr-[100px] pr-0'
+                descriptionClassName='!text-subtitle2Light !mt-[31px] md:block hidden'
               />
             </Reveal>
 
             <Reveal>
-              <div className='relative lg:flex hidden gap-[100px] my-[50px] after:content after:absolute after:top-3 after:left-[22%] after:w-[1px] after:h-[57px] after:bg-headerBoxBorder'>
+              <div className='relative md:flex hidden gap-40 mt-[104px] mb-[60px] after:content after:absolute after:top-3 2xl:after:left-[28%] lg:after:left-[30%] after:left-[26%] after:w-[1px] after:h-[57px] after:bg-headerBoxBorder'>
                 <Image
-                  src={'/assets/ContactUs/google-review.svg'}
-                  width={97}
+                  src={'/assets/ContactUs/upWork.svg'}
+                  width={111}
                   height={83}
-                  alt='google'
+                  alt='upWork'
                 />
                 <Image
-                  src={'/assets/ContactUs/glassdoorreview.svg'}
-                  width={119}
+                  src={'/assets/ContactUs/google-review.svg'}
+                  width={171}
                   height={83}
-                  alt='glassdoor'
+                  alt='google'
                 />
               </div>
             </Reveal>
 
-            <div className='lg:block hidden'>
+            <div className='md:block hidden'>
               <Typography className='text-subtitle2 mb-[25px]'>
                 Follow us in media :
               </Typography>
@@ -124,11 +124,6 @@ const GetInTouch = () => {
               />
             </Reveal>
           </div>
-          <Typography className='lg:hidden sm:block hidden text-subtitle2Light pb-20 pt-10'>
-            Tell us about your project and explore how our experts can help you
-            achieve your goals through digital transformation, product
-            outsourcing, or staff augmentation.
-          </Typography>
         </div>
       </div>
     </div>

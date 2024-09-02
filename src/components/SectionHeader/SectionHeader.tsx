@@ -16,7 +16,7 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
   <div>
     <Typography
       className={getClassNames(
-        'mb-41 md:text-h2 sm:text-h3 text-subtitle2 text-primary !font-500',
+        'mb-41 md:text-[36px] sm:text-h3 text-subtitle2 text-primary !font-500',
         headingClassName
       )}
     >

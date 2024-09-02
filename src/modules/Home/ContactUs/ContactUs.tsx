@@ -12,7 +12,7 @@ const ContactUs = () => {
 
   return (
     <section className='lg:py-20 md:py-[60px] py-10 lg:bg-bg bg-white'>
-      <div className='container w-full lg:px-[15px] sm:px-[30px] px-[15px] mx-auto'>
+      <div className='container w-full lg:px-[15px] sm:px-[30px] px-5 mx-auto'>
         <div className='flex lg:flex-row flex-col 2xl:gap-[90px] xl:gap-[60px]'>
           <div className='lg:w-[52%] w-full md:m-0 mb-5 xl:pr-0 lg:pr-[30px] md:p-0 pr-0'>
             <Reveal>

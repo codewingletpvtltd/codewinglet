@@ -116,7 +116,7 @@ const Footer = () => {
   const [expandedOption, setExpandedOption] = useState<number>(-1);
   return (
     <>
-      <footer className='bg-black text-white relative xl:py-[60px] md:py-10 md:pt-[60px] py-[30px]'>
+      <footer className='bg-black text-white relative xl:py-[60px] md:py-10 md:pt-[60px] py-10'>
         <div className='container'>
           <Reveal>
             <div className='md:mb-20 mb-10 flex justify-between md:items-start sm:items-center items-start flex-col md:flex-col lg:flex-row lg:px-[15px] sm:px-10 px-5'>
@@ -131,7 +131,7 @@ const Footer = () => {
               />
               <hr className='lg:hidden block w-full border-[#575757] md:my-10 my-5' />
               <div className='flex lg:items-center relative lg:flex-row flex-col md:gap-0 gap-3.5'>
-                <Typography className='leading-8 lg:text-h6 md:text-h6 text-paragraph2Light 2xl:ml-[150px] xl:ml-[60px] ml-0 lg:border-l border-white lg:pl-2.5'>
+                <Typography className='md:leading-8 leading-6 lg:text-h6 md:text-h6 text-paragraph2Light 2xl:ml-[150px] xl:ml-[60px] ml-0 lg:border-l border-white lg:pl-2.5'>
                   Have a project in mind but need some guidance? Reach out to us
                 </Typography>
                 {/* <Link
@@ -145,7 +145,6 @@ const Footer = () => {
                   >
                     Schedule a meeting
                   </Button>
-
                 </Link> */}
                 <Link
                   className='md:w-auto w-full lg:mt-0 md:mt-10 mt-4'

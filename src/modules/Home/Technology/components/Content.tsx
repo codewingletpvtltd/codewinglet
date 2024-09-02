@@ -19,7 +19,7 @@ const Content: FC<ContentProps> = ({ service }) => (
     <div className='lg:flex gap-[77px]'>
       <div className='lg:w-[807px]'>
         <Reveal>
-          <Typography className='lg:text-paragraph2 md:text-paragraph2ExtraLight text-tagExtraLight text-secondary md:pb-5 pb-[25px]'>
+          <Typography className='md:text-paragraph2 text-tagExtraLight text-secondary md:pb-5 pb-[25px]'>
             {service.description}
           </Typography>
         </Reveal>
@@ -46,7 +46,7 @@ const Content: FC<ContentProps> = ({ service }) => (
         </div>
       </div>
 
-      <div className='block items-start justify-between md:w-[223px] w-full lg:mt-0 md:mt-10 mt-5'>
+      <div className='block items-start justify-between md:w-[223px] w-full lg:mt-0 md:mt-5 mt-5'>
         <Reveal>
           <Image
             src={service.img}

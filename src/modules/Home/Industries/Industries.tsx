@@ -73,7 +73,7 @@ const ContactUs = () => (
     className='bg-white xl:py-20 lg:py-14 md:py-[60px] py-10 scroll-mt-40'
     id='industry'
   >
-    <div className='container w-full lg:px-[15px] sm:px-[30px] px-[15px] mx-auto'>
+    <div className='container w-full lg:px-[15px] sm:px-[30px] px-5 mx-auto'>
       <Reveal>
         <SectionHeader
           title={<>Industries we work</>}

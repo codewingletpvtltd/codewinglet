@@ -8,7 +8,7 @@ const Technology = () => (
     className='bg-black xl:py-20 lg:py-14 md:py-[60px] py-10 scroll-mt-40'
     id='technology'
   >
-    <section className='container w-full lg:px-[15px] sm:px-[30px] px-[15px] mx-auto'>
+    <section className='container w-full lg:px-[15px] sm:px-[30px] px-5 mx-auto'>
       <Reveal>
         <SectionHeader
           title={<>Technologies we work with</>}
