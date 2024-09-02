@@ -15,7 +15,11 @@ import { useEffect, useState } from 'react';
 import SectionHeader from '../../../components/SectionHeader/SectionHeader';
 import { faqData } from './constants';
 
-const Services = () => {
+interface ServicesProps {
+  servicesData: any;
+}
+
+const Services = ({ servicesData }: ServicesProps) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   useEffect(() => {
@@ -45,44 +49,33 @@ const Services = () => {
             <Reveal>
               <div className='lg:w-[755px] lg:pr-[252px] md:pt-[76px] pt-12'>
                 <SectionHeader
-                  title={<>Our Angular front-end services</>}
-                  description={
-                    <>
-                      in today's fast-paced digital world, mobile apps are the
-                      go-to solution for businesses to engage with customers.
-                      Empower your business to deliver exactly what users crave.
-                    </>
-                  }
+                  title={servicesData?.title}
+                  description={servicesData?.description}
                   headingClassName='text-white lg:!text-h2 md:!text-[36px] !text-subtitle2'
                   descriptionClassName='text-secondary pt-3'
                 />
                 <Reveal>
                   <Link
                     className='md:w-auto w-full'
-                    href='/contact-us'
+                    href={servicesData?.hireDeveloper?.link}
                     aria-label='Instagram'
                   >
                     <Button
                       variant='outline'
                       className='w-[206px] gap-2.5 lg:mt-[60px] mt-10'
                     >
-                      Hire Developer <Arrow />
+                      {servicesData?.hireDeveloper?.title} <Arrow />
                     </Button>
                   </Link>
                 </Reveal>
               </div>
             </Reveal>
             <div className='lg:w-[655px] border-l border-grayBorder lg:mt-0 mt-[50px]'>
-              <Accordion
-                type='single'
-                defaultValue='IT Consulting'
-                collapsible
-                className='flex flex-col'
-              >
-                {faqData.map((faq, i) => (
+              <Accordion type='single' collapsible className='flex flex-col'>
+                {servicesData?.technicalPoints?.map((point: any, i: number) => (
                   <AccordionItem
-                    key={faq.title}
-                    value={faq.title}
+                    key={point.id}
+                    value={point.title}
                     defaultChecked={i == 0}
                     className='border-b border-[#3b3b3b] last:border-0'
                   >
@@ -94,10 +87,10 @@ const Services = () => {
                           : 'text-primary'
                       } [&[data-state=open]>svg]:rotate-[45deg] md:!py-[30px] !py-5 md:!px-[46px] !px-[32px] xl:!pr-[70px] md:!pr-[60px] !pr-[50px] text-left leading-normal text-white font-normal`}
                     >
-                      {faq.title}
+                      {point.title}
                     </AccordionTrigger>
                     <AccordionContent className='border-remove faq text-secondary lg:!text-paragraph1ExtraLight md:!text-paragraph2Light !text-tagExtraLight px-[46px]'>
-                      {faq.description}
+                      {point.description}
                     </AccordionContent>
                   </AccordionItem>
                 ))}

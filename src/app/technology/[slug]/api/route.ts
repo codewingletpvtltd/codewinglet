@@ -2,20 +2,57 @@ import QueryString from 'qs';
 
 async function handler(slug: any) {
   try {
-    const params = QueryString.stringify({
-      populate: [
-        'development_services.icon',
-        'FAQs',
-        'banner_image',
-        'who_used',
-      ],
-      filters: {
-        slug: slug,
+    const query = QueryString.stringify(
+      {
+        filters: {
+          title: {
+            $eq: slug,
+          },
+        },
+        populate: {
+          page: {
+            populate: {
+              technologyImage: {
+                populate: '*',
+              },
+              link: {
+                populate: '*',
+              },
+              technologyIcon: {
+                populate: '*',
+              },
+              benefitsPoints: {
+                populate: '*',
+              },
+              benefitsImages: {
+                populate: '*',
+              },
+              hireDeveloper: {
+                populate: '*',
+              },
+              technicalPoints: {
+                populate: '*',
+              },
+              listCard: {
+                populate: {
+                  images: {
+                    populate: '*',
+                  },
+                },
+              },
+            },
+          },
+        },
       },
-    });
-    const res = await fetch(
-      `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/api/technologies?${params}`
+      {
+        encodeValuesOnly: true, // prettify URL
+      }
     );
+
+    const res = await fetch(
+      `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/api/technology-reacts?${query}`
+    );
+
     if (!res.ok) {
       throw new Error('Failed to fetch data');
     }

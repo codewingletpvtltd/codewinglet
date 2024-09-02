@@ -13,15 +13,18 @@ import HeroSection from './HeroSection/HeroSection';
 import Insights from './Insights/Insights';
 import Services from './Services/services';
 import TechnologySubMenu from './TechnologySubMenu/TechnologySubMenu';
+import getTechnologySubModule from './utils/getTechnologySubModule';
 
-const TechnologyPage = () => (
+interface TechnologyPageProps {
+  technologyData: any;
+}
+
+const TechnologyPage = ({ technologyData }: TechnologyPageProps) => (
   <>
     <TechnologySubMenu />
-    <HeroSection />
-    <Benefit />
-    <Companies />
-    <Combination />
-    <Services />
+    {technologyData?.page.map((subModuleData: any) =>
+      getTechnologySubModule(subModuleData)
+    )}
     <CodewingletServices />
     <Insights />
     <OurService />

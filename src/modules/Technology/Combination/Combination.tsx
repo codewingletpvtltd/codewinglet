@@ -7,6 +7,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Slider from 'react-slick';
 import { technologies } from './utils';
+import { getStrapiMediaFullURL } from '@codewinglet/helper';
 
 function SampleNextArrow(props: any) {
   const { className, style, onClick } = props;
@@ -49,7 +50,11 @@ function SamplePrevArrow(props: any) {
   );
 }
 
-const Combination = () => {
+interface CombinationProps {
+  techComboData: any;
+}
+
+const Combination = ({ techComboData }: CombinationProps) => {
   const settings = {
     dots: false,
     infinite: true,
@@ -94,13 +99,8 @@ const Combination = () => {
         <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
           <Reveal>
             <SectionHeader
-              title={<>Most-preferred AngularJS combinations</>}
-              description={
-                <>
-                  Angular has earned the trust of some of the most influential
-                  companies in the tech world, including
-                </>
-              }
+              title={techComboData?.title}
+              description={techComboData?.description}
               headingClassName='text-primary'
               descriptionClassName='text-secondary'
             />
@@ -108,7 +108,7 @@ const Combination = () => {
 
           <div className='lg:mt-[50px] md:mt-10 mt-5'>
             <Slider {...settings}>
-              {technologies.map((tech) => (
+              {techComboData.listCard?.map((tech: any) => (
                 <div
                   key={tech.id}
                   className='bg-white p-10 mr-[50px] 2xl:!w-[435px] lg:!w-[400px] md:!w-[374px] !w-[324px]'
@@ -116,8 +116,10 @@ const Combination = () => {
                   <div className='flex justify-center items-center gap-5'>
                     {/* First Image - Order 1 */}
                     <Image
-                      src={tech.images[0].src}
-                      alt={tech.images[0].alt}
+                      src={getStrapiMediaFullURL(
+                        tech?.images[0]?.image.data.attributes.url
+                      )}
+                      alt={tech?.images[0]?.image.data.attributes.attributes}
                       width={89}
                       height={89}
                       className='order-1 lg:w-[89px] lg:h-[89px] w-[50px] h-[50px]'
@@ -128,8 +130,10 @@ const Combination = () => {
                     </span>
                     {/* Second Image - Order 3 */}
                     <Image
-                      src={tech.images[1].src}
-                      alt={tech.images[1].alt}
+                      src={getStrapiMediaFullURL(
+                        tech?.images[1]?.image.data.attributes.url
+                      )}
+                      alt={tech?.images[1]?.image.data.attributes.attributes}
                       width={89}
                       height={89}
                       className='order-3 lg:w-[89px] lg:h-[89px] w-[50px] h-[50px]'
@@ -150,11 +154,11 @@ const Combination = () => {
               variant='blackOutline'
             >
               <Link
-                href='/contact-us'
+                href={techComboData.link?.link}
                 rel='noopener noreferrer'
                 className='flex items-center justify-center gap-3'
               >
-                Let’s connect
+                {techComboData.link?.title}
                 <Arrow />
               </Link>
             </Button>
