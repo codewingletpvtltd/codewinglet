@@ -1,7 +1,8 @@
+/* eslint-disable import/order */
 'use client';
+import { Typography } from '@codewinglet/components';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Typography } from '@codewinglet/components';
 import SectionHeader from '../../../components/SectionHeader/SectionHeader';
 
 import Form from '../../Home/ContactUs/Form';
@@ -12,7 +13,7 @@ const GetInTouch = () => {
   const { formData, onChangeFormData, onSubmit, isLoading } = useGetInTouch();
 
   return (
-    <div className=' bg-white mt-[90px] md:pt-20 2xl:pb-[160px] xl:pb-[140px] pt-[30px] sm:pb-0 pb-[30px]'>
+    <div className=' bg-white md:mt-[142px] mt-[170px] md:pt-20 2xl:pb-[160px] xl:pb-[140px] pt-[30px] sm:pb-0 pb-[30px]'>
       <div className='container w-full lg:px-[15px] sm:px-[30px] px-[20px] mx-auto'>
         <div className='lg:flex block 2xl:gap-[90px] xl:gap-[25px]'>
           <div className='lg:w-[52%] w-full'>

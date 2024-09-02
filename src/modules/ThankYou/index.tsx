@@ -14,7 +14,7 @@ const raleway = Raleway({
 
 const ThankYou = () => (
   <>
-    <div className='bg-white mt-[86px] h-[calc(100vh_-_86px)] flex flex-col justify-center items-center'>
+    <div className='bg-white md:mt-[142px] mt-[170px] md:h-[calc(100vh_-_142px)] h-[calc(100vh_-_170px)] flex flex-col justify-center items-center'>
       <Typography
         className={getClassNames(
           'text-center lg:text-[130px] md:text-[80px] text-[44px] uppercase',
