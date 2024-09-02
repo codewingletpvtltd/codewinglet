@@ -13,10 +13,7 @@ const Technology = () => (
         <SectionHeader
           title={<>Technologies we work with</>}
           description={
-            <>
-              Accelerating your product with next-gen technologies gen
-              technologies
-            </>
+            <>Accelerating your product with next-gen technologies</>
           }
           headingClassName='text-white'
           descriptionClassName='text-white'

@@ -25,12 +25,12 @@ const Content: FC<ContentProps> = ({ service }) => (
           <Typography className='text-subtitle1 relative after:content after:absolute after:w-10 after:h-[2px] after:left-0 after:bg-primary after:bottom-[-8px]'>
             {service.title}
           </Typography>
-          {/* <div className='flex items-center gap-2'>
-        <Link href={service.path} className='underline text-paragraph2'>
-          View more
-        </Link>
-        <Arrow className='w-[18px] h-[18px] rotate-[315deg]' />
-      </div> */}
+          <div className='flex items-center gap-2'>
+            <Link href={service.path} className='underline text-paragraph2'>
+              View more
+            </Link>
+            <Arrow className='w-[18px] h-[18px] rotate-[315deg]' />
+          </div>
         </div>
       </Reveal>
 

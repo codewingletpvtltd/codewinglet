@@ -6,7 +6,6 @@ import Link from 'next/link';
 import { Arrow } from '@codewinglet/assets';
 import { Button } from '@codewinglet/components';
 import Counter from '@codewinglet/components/Counter';
-import WhyWork from '@codewinglet/components/WhyWork';
 import SectionHeader from '../../../components/SectionHeader/SectionHeader';
 
 const Insights = () => (
@@ -39,7 +38,6 @@ const Insights = () => (
         </div>
       </div>
     </div>
-    <WhyWork />
   </>
 );
 

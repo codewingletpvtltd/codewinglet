@@ -147,7 +147,7 @@ const CurrentOpenings = () => {
                 border: 'none',
                 margin: 0,
               }}
-              className='md:h-[2000px] h-[calc(100vh-90px)]'
+              className='h-[800px]'
             ></iframe>
           </div>
         </div>
