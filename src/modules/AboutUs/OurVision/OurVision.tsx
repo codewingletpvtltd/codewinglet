@@ -52,7 +52,7 @@ const OurVision = () => (
           </div>
         </div>
         <div className='flex lg:flex-row flex-col lg:gap-[134px] gap-3 items-center lg:my-[60px] my-[34px]'>
-          <div className='xl:w-[696px] w-full flex lg:justify-end lg:order-1 order-2'>
+          <div className='2xl:w-[696px] xl:w-[568px] w-full flex lg:justify-end lg:order-1 order-2'>
             <div className='lg:w-[472px] lg:text-right'>
               <Typography className='text-primary md:text-subtitle2 text-paragraph2 relative lg:mb-0 mb-2'>
                 <span className='bg-black w-[3px] h-5 absolute 2xl:-right-[79px] -right-[66px] top-1 lg:block hidden'></span>
@@ -77,7 +77,7 @@ const OurVision = () => (
             alt='vision'
             width={686}
             height={309}
-            className='lg:order-2 order-1 xl:w-[686px] w-full'
+            className='lg:order-2 order-1 2xl:w-[686px] xl:w-[568px] w-full'
           />
         </div>
         <div className='lg:flex gap-[134px] items-center lg:mb-[50px]'>

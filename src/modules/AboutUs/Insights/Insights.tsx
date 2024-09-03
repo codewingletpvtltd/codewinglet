@@ -6,7 +6,6 @@ import Link from 'next/link';
 import { Arrow } from '@codewinglet/assets';
 import { Button } from '@codewinglet/components';
 import Counter from '@codewinglet/components/Counter';
-import WhyWork from '@codewinglet/components/WhyWork';
 import SectionHeader from '../../../components/SectionHeader/SectionHeader';
 
 const Insights = () => (
@@ -17,14 +16,17 @@ const Insights = () => (
           <SectionHeader
             title={<>Powerful data insights</>}
             description={
-              <>Lorem ipsum dolor sit amet consectetur. Aliquet varius lacus</>
+              <>
+                We boost business revenue by an average of 90% in the first
+                year!
+              </>
             }
             headingClassName='text-white'
-            descriptionClassName='text-white'
+            descriptionClassName='text-secondary'
           />
         </Reveal>
 
-        <div className='lg:mt-[50px] md:mt-10 mt-5'>
+        <div className='lg:mt-[50px]'>
           <Counter />
           <Button className='sm:w-[231px] w-[203px] h-12 lg:m-auto 2xl:mt-[50px] xl:mt-10 flex m-auto '>
             <Link
@@ -39,7 +41,6 @@ const Insights = () => (
         </div>
       </div>
     </div>
-    <WhyWork />
   </>
 );
 

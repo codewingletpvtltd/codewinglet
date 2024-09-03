@@ -1,12 +1,11 @@
 /* eslint-disable import/order */
 'use client';
 import { Arrow } from '@codewinglet/assets';
-import { Button, Typography } from '@codewinglet/components';
+import { Button, SectionHeader, Typography } from '@codewinglet/components';
 import Reveal from '@codewinglet/components/Reveal';
 import Image from 'next/image';
 import Link from 'next/link';
-import SectionHeader from '../../../components/SectionHeader/SectionHeader';
-import { ServiceCardProps, ServicePoint, servicesData } from './servicesData'; // Import the data and interfaces
+import { ServiceCardProps, ServicePoint, servicesData } from './servicesData';
 
 // Subcomponent for Service Points
 const ServicePoints: React.FC<{ points: ServicePoint[] }> = ({ points }) => (
@@ -52,7 +51,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 );
 
 // Main component
-const CodewingletServices: React.FC = () => (
+const ITService: React.FC = () => (
   <div className='bg-bg lg:py-20 md:py-[60px] py-10 scroll-mt-40' id='whyUs'>
     <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
       <Reveal>
@@ -94,4 +93,4 @@ const CodewingletServices: React.FC = () => (
   </div>
 );
 
-export default CodewingletServices;
+export default ITService;

@@ -24,7 +24,7 @@ const MobileListItem: FC<ListItemProps> = ({
     {!hasMenu && (
       <li className='list-none'>
         <span
-          className={`flex flex-row mb-[30px] items-${
+          className={`flex flex-row mb-[45px] items-${
             description ? 'start' : 'center'
           } cursor-pointer`}
           aria-label='menu-item'

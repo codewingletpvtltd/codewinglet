@@ -6,9 +6,11 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
+  Button,
 } from '@codewinglet/components';
 import Reveal from '@codewinglet/components/Reveal';
 import { AnimatePresence, motion } from 'framer-motion';
+import Link from 'next/link';
 import { useState } from 'react';
 import Content from './components/Content';
 import ServiceData from './constants';
@@ -24,7 +26,7 @@ const Services = () => {
 
   return (
     <>
-      <div className='xl:flex mt-[50px] gap-20 lg:block hidden'>
+      <div className='xl:flex justify-between mt-[50px] gap-20 lg:block hidden'>
         <div className='2xl:w-[590px] xl:w-[471px]'>
           {ServiceData.map((service, i) => (
             <Reveal key={i}>
@@ -47,8 +49,8 @@ const Services = () => {
             </Reveal>
           ))}
         </div>
-        <div className='2xl:w-[739px] xl:w-[739px]'>
-          <div className='relative bg-white lg:p-10 p-5 transition-transform duration-500 ease-in [will-change:_top;] 2xl:w-[739px] 2xl:h-[819px] xl:h-[816px] xl:w-auto'>
+        <div className='xl:w-[644px]'>
+          <div className='relative bg-white lg:p-10 p-5 transition-transform duration-500 ease-in [will-change:_top;] 2xl:w-[644px] 2xl:h-[819px] xl:h-[816px] xl:w-auto'>
             <AnimatePresence mode='wait'>
               <motion.div
                 key={selectedIndex ? service.title : 'empty'}
@@ -71,7 +73,11 @@ const Services = () => {
             <AccordionItem key={service.title} value={service.title}>
               <AccordionTrigger
                 onClick={() => handleChangeIndex(i)}
-                className='[&[data-state=open]>svg]:rotate-[45deg] border-b border-headerBoxBorder !pb-0 group '
+                className={`[&[data-state=open]>svg]:rotate-[45deg] !pb-0 group ${
+                  i === selectedIndex
+                    ? 'border-b border-primary'
+                    : 'border-b border-headerBoxBorder'
+                }`}
                 icon={
                   <Arrow
                     className={`w-[21px] h-[21px] transition duration-500 group-hover:rotate-[45deg] ${
@@ -85,7 +91,7 @@ const Services = () => {
                     i === selectedIndex
                       ? 'text-primary md:!text-subtitle2 !text-paragraph2'
                       : 'text-secondary'
-                  }  py-[22px] cursor-pointer flex items-center justify-between`}
+                  }  md:py-[22px] py-5 cursor-pointer flex items-center justify-between`}
                 >
                   {service.title}
                 </div>
@@ -96,6 +102,19 @@ const Services = () => {
             </AccordionItem>
           ))}
         </Accordion>
+        <Link
+          href='/contact-us'
+          rel='noopener noreferrer'
+          className='text-primary group-hover:text-white text-center group mt-6 md:hidden block m-auto'
+        >
+          <Button
+            className='gap-2 bg-transparent w-[178px]'
+            variant='blackOutline'
+          >
+            Book a meeting
+            <Arrow />
+          </Button>
+        </Link>
       </div>
     </>
   );

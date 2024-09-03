@@ -13,17 +13,17 @@ export default function AboutUs() {
             title={<>About us</>}
             description={<>Future of your digital destiny</>}
             headingClassName='text-white'
-            descriptionClassName='text-white'
+            descriptionClassName='text-white lg:!text-subtitle2Light md:!text-subtitle2Light !text-tagExtraLight'
           />
         </Reveal>
 
-        <div className='relative lg:flex block lg:mt-[50px] md:mt-10 mt-5'>
-          <div className='2xl:lg:w-[70%] xl:lg:w-[63%] w-full 2xl:pr-[50px] xl:pr-0 lg:pr-5 pr-0'>
+        <div className='relative lg:flex block lg:mt-[50px] md:mt-10 mt-6'>
+          <div className='lg:pr-10 md:pr-5 pr-0'>
             <Reveal>
-              <Typography className='xl:text-subtitle2Light lg:text-body2 md:text-subtitle2Light text-tagLight lg:md-5 md:pb-[22px] pb-[15px] text-white '>
+              <Typography className='xl:text-subtitle2Light lg:text-body2 md:text-subtitle2Light text-tagLight lg:md-5 md:pb-[22px] pb-[15px] text-white'>
                 Welcome to Codewinglet, your premier destination for
                 cutting-edge software solutions. Specialising in strategic
-                planning, designing, and developing world-class software's
+                planning, designing, and development world-class software's
                 across diverse industries.
               </Typography>
             </Reveal>
@@ -37,7 +37,7 @@ export default function AboutUs() {
               </Typography>
             </Reveal>
 
-            <div className='lg:flex block justify-between 2xl:items-center xl:items-start 2xl:mt-[60px] xl:mt-[30px] md:mt-10 mt-0 lg:w-full md:w-6/12 w-full'>
+            <div className='lg:flex block justify-between 2xl:items-center xl:items-start 2xl:mt-[109px] xl:mt-[30px] md:mt-10 mt-0 lg:w-full md:w-6/12 w-full'>
               <Statistics />
 
               <Reveal>
@@ -52,7 +52,7 @@ export default function AboutUs() {
               </Reveal>
             </div>
           </div>
-          <div className='2xl:lg:w-[30%] xl:lg:w-[37%] lg:w-full !md:w-6/12 w-full 2xl:block xl:flex md:flex-col md:items-end lg:block flex flex-col last:mb-0 lg:relative md:absolute sm:relative md:bottom-0 md:right-0  md:top-[32%] lg:gap-0 md:gap-[25px] gap-5 md:mt-0 mt-5'>
+          <div className='2xl:block xl:flex md:flex-col md:items-end lg:block flex flex-col last:mb-0 lg:relative md:absolute sm:relative md:bottom-0 md:right-0  md:top-[32%] lg:gap-0 md:gap-[25px] gap-5 md:mt-0 mt-5'>
             <Reveal>
               <AboutUsCard
                 image={'/assets/AboutUs/integrity.webp'}

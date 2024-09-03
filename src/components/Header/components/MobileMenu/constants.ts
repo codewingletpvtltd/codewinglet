@@ -253,7 +253,7 @@ const technology: ChildItemType = [
   },
   {
     path: '',
-    label: 'DevOps/Cloud',
+    label: 'DevOps',
     menu: [
       {
         path: '/technology/aws',
