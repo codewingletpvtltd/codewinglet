@@ -123,11 +123,11 @@ const OurTeam = () => (
             </>
           }
           description='Gain Valuable Insights Directly from the Voices of Our Talented and Dedicated Members.'
-          descriptionClassName=''
+          descriptionClassName='text-secondary'
           headingClassName=''
         />
         <Button
-          className='w-[320px] md:mt-[50px] mt-16 border-primary border hover:border-primary hover:border lg:block hidden'
+          className='w-[320px] md:mt-[70px] mt-16 border-primary border hover:border-primary hover:border lg:block hidden !py-[13px]'
           variant='default'
         >
           <Link

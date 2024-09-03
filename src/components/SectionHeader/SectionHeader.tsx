@@ -25,7 +25,7 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
     {showDescription && (
       <Typography
         className={getClassNames(
-          'text-primary lg:text-subtitle2Light md:text-subtitle2Light text-tagLight mt-[9px] md:mt-1.5',
+          'text-primary lg:text-subtitle2Light md:text-subtitle2Light text-tagLight mt-1.5',
           descriptionTextWrap ? 'md:w-[70%] lg:w-[40%]' : '',
           descriptionClassName
         )}

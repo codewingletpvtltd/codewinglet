@@ -65,9 +65,9 @@ const Benefits = () => (
           </Reveal>
 
           <Reveal>
-            <div className='hidden relative lg:flex gap-[168px] mt-10 after:content after:absolute after:top-3 2xl:after:left-44 xl:after:left-[26%] after:w-[1px] after:h-[57px] after:bg-headerBoxBorder'>
+            <div className='hidden relative lg:flex gap-[168px] mt-10 after:content after:absolute after:top-3 2xl:after:left-44 xl:after:left-[33%] after:w-[1px] after:h-[57px] after:bg-headerBoxBorder'>
               <Image
-                src={'/assets/ContactUs/google-review.svg'}
+                src={'/assets/career/googleCareer.svg'}
                 width={97}
                 height={83}
                 alt='google'

@@ -60,7 +60,7 @@ const ContactUs = () => (
       </Reveal>
 
       <Reveal>
-        <div className='grid sm:gap-[30px] gap-2.5 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:mt-[50px] md:mt-10 mt-5 process-card'>
+        <div className='grid sm:gap-[30px] gap-5 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:mt-[50px] md:mt-10 mt-5 process-card'>
           {process.map((card) => (
             <>
               <div className='soft-card lg:py-[35px] lg:px-7 sm:p-5 p-5 bg-white hover:bg-primary hover:text-white transition-all duration-300'>
@@ -73,7 +73,7 @@ const ContactUs = () => (
                 <Typography className='sm:text-paragraph1 text-paragraph2 md:mb-3 md:mt-0 sm:mb-3 sm:mt-3 mb-1 mt-1 text-primary'>
                   {card.title}
                 </Typography>
-                <Typography className='m-0 lg:text-paragraph2Light text-tagLight text-primary'>
+                <Typography className='m-0 md:text-paragraph2Light text-tagLight text-primary'>
                   {card.description}
                 </Typography>
               </div>

@@ -12,18 +12,18 @@ const Journey = () => (
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
         <div className='lg:flex block'>
           <div className='lg:w-[598px] w-full'>
-            <Typography className='text-primary md:text-subtitle2 text-tag'>
+            <Typography className='text-primary md:text-subtitle2 text-tag 2xl:mb-1.5 sm:mb-3'>
               About us
             </Typography>
             <Typography className='lg:text-h2 md:text-h3 text-subtitle2 lg:leading-normal md:leading-[50px] leading-7'>
               Discover Our IT Service Providing Journey
             </Typography>
-            <Typography className='text-secondary text-subtitle2Light pt-3 pb-10 lg:block hidden'>
+            <Typography className='text-secondary text-subtitle2Light pt-3 2xl:pb-10 pb-3 lg:block hidden'>
               We specialize in strategic planning, designing, and developing
               world-class software across diverse industries.
             </Typography>
 
-            <div className='lg:flex group cursor-pointer text-primary mt-2.5 items-center group gap-2.5 hidden'>
+            <div className='lg:flex group cursor-pointer text-primary items-center group gap-2.5 hidden'>
               <Link
                 href='https://maps.app.goo.gl/6W7ns2r5VzPFGmkA8'
                 target='_blank'
@@ -65,7 +65,7 @@ const Journey = () => (
                 alt='journey_3'
                 width={443}
                 height={286}
-                className='2xl:w-[443px] w-[362px] md:ml-0 ml-[18px]'
+                className='2xl:w-[443px] w-[362px] lg:ml-0 md:ml-[52px] ml-[18px]'
               />
             </div>
             <Image

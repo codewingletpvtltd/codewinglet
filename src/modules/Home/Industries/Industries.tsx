@@ -101,7 +101,7 @@ const ContactUs = () => (
                     height={800}
                   />
                 </div>
-                <Typography className='text-primary md:mt-3 mt-2.5 lg:text-subtitle2 md:text-subtitle2 text-tagLight'>
+                <Typography className='text-primary mt-3 lg:text-subtitle2 md:text-subtitle2 text-tagLight'>
                   {card.title}
                   {/* <div className='block sm:hidden'>{card.mobileTitle}</div> */}
                 </Typography>
