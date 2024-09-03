@@ -28,7 +28,7 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
 
   return (
     <>
-      {pathName != '/event-form' && (
+      {pathName != '/event-form' && pathName != '/thank-you' && (
         <div className='bg-white font-light py-4 fixed top-0 z-[100] w-full px-4'>
           <div className='container w-full flex items-center justify-center md:flex-row flex-col'>
             <Typography className='text-center lg:text-paragraph2 text-tagExtraLight m-auto md:flex items-center gap-2.5'>
@@ -40,11 +40,7 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
                 <div className='font-bold hurryUp-text'>Hurry up !</div>
               </div>
             </Typography>
-            <Link
-              href='https://airtable.com/appJikY8nTcXhxexH/pagWJ2rXJ5H3hqV05/form'
-              className='md:m-0 mx-auto'
-              target='_blank'
-            >
+            <Link href='/event-form' className='md:m-0 mx-auto'>
               <Button
                 variant='link'
                 className='gap-2.5 underline lg:text-paragraph2 text-tag py-0'
@@ -59,7 +55,7 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
         id='header'
         className={getClassNames(
           'fixed flex items-center md:top-14 top-[92px] z-50 w-full sm:py-[20px] md:py-[0px] lg:py-0 lg:px-20',
-          pathName === '/event-form'
+          pathName === '/event-form' || pathName === '/thank-you'
             ? 'bg-primary !top-0'
             : isScroll
             ? 'bg-primary'
