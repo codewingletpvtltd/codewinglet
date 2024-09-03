@@ -1,7 +1,7 @@
 /* eslint-disable import/order */
 'use client';
 
-import { Typography } from '@codewinglet/components';
+import { Button, Typography } from '@codewinglet/components';
 import { getClassNames } from '@codewinglet/utils';
 import { Raleway } from 'next/font/google';
 import Image from 'next/image';
@@ -14,7 +14,7 @@ const raleway = Raleway({
 
 const ThankYou = () => (
   <>
-    <div className='bg-white md:mt-[142px] mt-[170px] md:h-[calc(100vh_-_142px)] h-[calc(100vh_-_170px)] flex flex-col justify-center items-center'>
+    <div className='bg-white md:mt-[92px] mt-[170px] md:h-[calc(100vh_-_92px)] h-[calc(100vh_-_170px)] flex flex-col justify-center items-center'>
       <Typography
         className={getClassNames(
           'text-center lg:text-[130px] md:text-[80px] text-[44px] uppercase',
@@ -62,6 +62,18 @@ const ThankYou = () => (
           Instagram
         </Link>
       </div>
+      <Button
+        className='lg:block bg-white m-auto text-center block group px-4'
+        variant='blackOutline'
+      >
+        <Link
+          href='/event-form'
+          rel='noopener noreferrer'
+          className='text-primary  group-hover:text-white text-center flex items-center justify-center gap-3'
+        >
+          New Candidate Registration
+        </Link>
+      </Button>
     </div>
   </>
 );
