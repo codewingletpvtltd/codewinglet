@@ -31,14 +31,19 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
       <div className='bg-white font-light py-4 fixed top-0 z-[100] w-full px-4'>
         <div className='container w-full flex items-center justify-center md:flex-row flex-col'>
           <Typography className='text-center lg:text-paragraph2 text-tagExtraLight m-auto md:flex items-center gap-2.5'>
-            🎉 Ready to Innovate? 🚀{' '}
-            <span className='font-normal'>Join Our Hackathon</span> and Showcase
-            Your Skills!{' '}
+            🎉 Join Codewinglet DevBattle 2024? 🚀{' '}
+            <span className='font-normal'>
+              Register here to compete and showcase your skills
+            </span>
             <div className='hurry-up-animation inline-block'>
               <div className='font-bold hurryUp-text'>Hurry up !</div>
             </div>
           </Typography>
-          <Link href='/contact-us' className='md:m-0 mx-auto'>
+          <Link
+            href='https://airtable.com/appJikY8nTcXhxexH/pagWJ2rXJ5H3hqV05/form'
+            className='md:m-0 mx-auto'
+            target='_blank'
+          >
             <Button
               variant='link'
               className='gap-2.5 underline lg:text-paragraph2 text-tag py-0'
