@@ -22,6 +22,10 @@ html {
   scrollbar-width: none; /* Firefox */
 }
 
+.react-tel-input .selected-flag:hover {
+  background-color: transparent !important;
+}
+
 /* ::-webkit-scrollbar {
   width: 5px;
 }
