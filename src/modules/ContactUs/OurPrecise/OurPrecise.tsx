@@ -79,7 +79,7 @@ const OurPrecise = () => (
                 <div className='flex flex-col'>
                   <Link
                     href='mailto:jobs@codewinglet.com'
-                    className=' text-secondary hover:text-primary text-paragraph2Light mt-5'
+                    className='text-secondary hover:text-primary text-paragraph2Light mt-5'
                   >
                     jobs@codewinglet.com
                   </Link>
