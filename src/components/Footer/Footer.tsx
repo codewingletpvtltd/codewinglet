@@ -208,7 +208,7 @@ const Footer = () => {
               <div className='flex gap-5 lg:mt-7 md:mt-7 mt-7 ml-7'>
                 <Link
                   className='flex items-center justify-center w-8 h-8 border border-solid border-white rounded-full bg-white'
-                  href='https://in.linkedin.com/company/codewinglet'
+                  href='https://www.linkedin.com/company/codewinglet/'
                   target='_blank'
                   aria-label='Linkedin'
                 >

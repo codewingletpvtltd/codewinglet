@@ -33,7 +33,7 @@ const ThankYou = () => (
       </Typography>
       <div className='flex gap-12 relative after:content after:absolute after:w-[1px] after:h-[26px] after:left-[46%] md:after:top-1.5 top-0 after:bg-headerBoxBorder'>
         <Link
-          href='https://in.linkedin.com/company/codewinglet'
+          href='https://www.linkedin.com/company/codewinglet/'
           target='_blank'
           className='underline md:underline-offset-[8px] flex justify-center items-center gap-4 lg:text-h6 md:text-subtitle2 text-paragraph2'
         >

@@ -68,7 +68,7 @@ const ContactUs = () => {
                   />
                 </Link>
                 <Link
-                  href='https://in.linkedin.com/company/codewinglet'
+                  href='https://www.linkedin.com/company/codewinglet/'
                   target='_blank'
                   aria-label='Linkedin'
                 >
