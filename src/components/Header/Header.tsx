@@ -21,8 +21,14 @@ import useHeader from './useHeader';
 const Header: FC<HeaderProps> = ({ isScroll }) => {
   const router = useRouter();
   const isLarge = useScreenSize(xl);
-  const { showMenu, onMenu, setSubMenuIndex, subMenuIndex, onNavigate } =
-    useHeader();
+  const {
+    showMenu,
+    onMenu,
+    setSubMenuIndex,
+    subMenuIndex,
+    onNavigate,
+    handleDownload,
+  } = useHeader();
 
   const pathName = usePathname();
 
@@ -30,8 +36,8 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
     <>
       {pathName != '/event-form' && pathName != '/thank-you' && (
         <div className='bg-white font-light py-4 fixed top-0 z-[100] w-full px-4'>
-          <div className='container w-full flex items-center justify-center md:flex-row flex-col'>
-            <Typography className='text-center lg:text-paragraph2 text-tagExtraLight m-auto md:flex items-center gap-2.5'>
+          <div className='container w-full flex items-center justify-between md:flex-row flex-col'>
+            <Typography className='text-center lg:text-tag text-tagExtraLight  md:flex items-center gap-2.5'>
               🎉 Join Codewinglet DevBattle 2024? 🚀{' '}
               <span className='font-normal'>
                 Register here to compete and showcase your skills
@@ -40,14 +46,39 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
                 <div className='font-bold hurryUp-text'>Hurry up !</div>
               </div>
             </Typography>
-            <Link href='/event-form' className='md:m-0 mx-auto'>
+            <div className='flex gap-10'>
+              <Link href='/event-form' className='md:m-0 mx-auto'>
+                <Button
+                  variant='link'
+                  className='gap-2.5 underline lg:text-paragraph2 text-tag py-0'
+                >
+                  REGISTER HERE <Arrow />{' '}
+                </Button>
+              </Link>
               <Button
                 variant='link'
-                className='gap-2.5 underline lg:text-paragraph2 text-tag py-0'
+                className='lg:text-paragraph2 uppercase p-0 flex items-center gap-2 underline'
+                onClick={handleDownload}
               >
-                REGISTER HERE <Arrow />{' '}
+                Download Event Details
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  width='24'
+                  height='24'
+                  viewBox='0 0 24 24'
+                  fill='none'
+                  stroke='currentColor'
+                  stroke-width='1.5'
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                >
+                  <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+                  <path d='M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2' />
+                  <path d='M7 11l5 5l5 -5' />
+                  <path d='M12 4l0 12' />
+                </svg>
               </Button>
-            </Link>
+            </div>
           </div>
         </div>
       )}
