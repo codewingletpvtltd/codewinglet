@@ -409,10 +409,6 @@ export const navMenu = [
   //   path: '/not-found',
   //   label: 'Portfolio',
   // },
-  // {
-  //   path: '/career',
-  //   label: 'Career',
-  // },
   {
     path: 'career',
     label: 'Career',
@@ -421,6 +417,7 @@ export const navMenu = [
   },
   {
     label: 'Blogs',
+    path: '/blogs',
   },
   {
     path: 'about-us',

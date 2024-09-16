@@ -260,7 +260,7 @@ export const companyMenu = [
   {
     id: 6,
     // path: '/privacy-policy',
-    path: '',
+    path: '/blogs',
     label: 'Blogs',
   },
 ];

@@ -1,5 +1,4 @@
 import { FormEvent } from 'react';
-
 export interface InfoProps {
   icon?: React.ReactNode;
   title: React.ReactNode;
