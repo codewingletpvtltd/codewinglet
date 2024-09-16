@@ -36,7 +36,7 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
     <>
       {pathName != '/event-form' && pathName != '/thank-you' && (
         <div className='bg-white font-light py-4 fixed top-0 z-[100] w-full px-4'>
-          <div className='container w-full flex items-center justify-between lg:flex-row flex-col'>
+          <div className='container w-full flex items-center justify-between xl:flex-row flex-col'>
             <Typography className='text-center lg:text-tag text-tagExtraLight  md:flex items-center gap-2.5'>
               🎉 Join Codewinglet DevBattle 2024? 🚀{' '}
               <span className='font-normal'>
@@ -85,7 +85,7 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
       <header
         id='header'
         className={getClassNames(
-          'fixed flex items-center lg:top-14 md:top-20 top-32 z-50 w-full sm:py-[20px] md:py-[0px] lg:py-0 lg:px-20',
+          'fixed flex items-center xl:top-14 md:top-20 top-32 z-50 w-full sm:py-[20px] md:py-[0px] lg:py-0 lg:px-20',
           pathName === '/event-form' || pathName === '/thank-you'
             ? 'bg-primary !top-0'
             : isScroll
