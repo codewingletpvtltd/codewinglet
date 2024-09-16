@@ -1,5 +1,7 @@
 import { StoryObj } from '@storybook/react';
+
 import { getClassNames } from '@codewinglet/utils';
+
 import Typography from '../Typography/Typography';
 import Slider from './Slider';
 

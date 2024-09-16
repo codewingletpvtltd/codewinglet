@@ -1,11 +1,13 @@
-import { FC } from 'react';
 import Image from 'next/image';
-import { getClassNames } from '@codewinglet/utils';
+import { FC } from 'react';
+
 import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from '@codewinglet/components/Accordion';
+import { getClassNames } from '@codewinglet/utils';
+
 import Typography from '../../../Typography';
 import { ListItemProps } from '../../types';
 import ListItem from '../NavigationMenu/ListItem';

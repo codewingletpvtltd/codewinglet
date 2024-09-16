@@ -1,5 +1,5 @@
-'use client';
 import { SectionHeader } from '@codewinglet/components';
+
 import Technologies from './Technologies';
 
 const Technology = () => (

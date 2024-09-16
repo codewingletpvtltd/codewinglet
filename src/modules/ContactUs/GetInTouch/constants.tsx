@@ -1,5 +1,6 @@
-import Link from 'next/link';
 import Image from 'next/image';
+import Link from 'next/link';
+
 import { Typography } from '@codewinglet/components';
 
 export const info = [

@@ -1,6 +1,8 @@
 import { FC } from 'react';
+
 import { Arrow } from '@codewinglet/assets';
 import { getClassNames } from '@codewinglet/utils';
+
 import { _arrowPosition, verticalPosition } from '../constants';
 import { ArrowProps } from '../types';
 

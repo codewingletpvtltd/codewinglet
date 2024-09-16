@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import { FC } from 'react';
+
 import { Typography } from '@codewinglet/components';
+
 import { CardProps } from '../../types';
 
 const Card: FC<CardProps> = ({ index, icon, title, desc }) => (

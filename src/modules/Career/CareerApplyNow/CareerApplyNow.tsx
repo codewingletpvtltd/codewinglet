@@ -1,6 +1,8 @@
 'use client';
 import { ChangeEvent, FC, useRef, useState } from 'react';
+
 import { FileUpload, Modal, TextField } from '@codewinglet/components';
+
 import { CareerApplyNowProps } from './types';
 
 const CareerApplyNow: FC<CareerApplyNowProps> = ({ open, onClose }) => {

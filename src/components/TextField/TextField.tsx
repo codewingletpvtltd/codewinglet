@@ -1,5 +1,7 @@
 import React, { useId } from 'react';
+
 import { getClassNames } from '@codewinglet/utils';
+
 import { TextFieldProps } from './types';
 
 const TextField: React.FC<TextFieldProps> = ({
@@ -11,6 +13,7 @@ const TextField: React.FC<TextFieldProps> = ({
   disabled,
   fullWidth,
   required,
+  description,
   ...rest
 }) => {
   const inputId = useId();
@@ -18,26 +21,22 @@ const TextField: React.FC<TextFieldProps> = ({
   return (
     <div className='flex flex-col'>
       {label && (
-        <label
-          htmlFor={rest.id || inputId}
-          className={getClassNames(
-            'text-primary sm:text-paragraph1 text-tag mb-[10px] mt-[30px]',
-            error ? 'text-primary' : '',
-            labelClassName
-          )}
-        >
-          {label}
-          {required && (
-            <span
-              className={getClassNames(
-                '',
-                error ? 'text-error' : 'text-primary'
-              )}
-            >
-              *
-            </span>
-          )}
-        </label>
+        <>
+          <label
+            htmlFor={rest.id || inputId}
+            className={getClassNames(
+              'text-primary sm:text-paragraph1 text-tag mb-[10px] mt-[30px]',
+              error ? 'text-primary' : '',
+              labelClassName
+            )}
+          >
+            {label}
+            {required && <span className='text-error'>*</span>}
+          </label>
+          <span className='text-tagLight -mt-3 text-secondary'>
+            {description}
+          </span>
+        </>
       )}
       <div className='inline-block'>
         <input

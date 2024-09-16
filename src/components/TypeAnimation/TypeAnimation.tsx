@@ -2,15 +2,16 @@
 import { HTMLAttributes, MutableRefObject, forwardRef, useEffect } from 'react';
 
 import { getClassNames } from '@codewinglet/utils';
+
 import Typography from '../Typography/Typography';
 import {
   ElementByTypographyVariant,
   TypographyVariant,
 } from '../Typography/types';
-import { TypeAnimationProps, TypingHTMLElement } from './types';
-import useForwardRef from './hooks/useForwardRef';
-import { typingMain } from './utils/typical';
 import './TypeAnimation.css';
+import useForwardRef from './hooks/useForwardRef';
+import { TypeAnimationProps, TypingHTMLElement } from './types';
+import { typingMain } from './utils/typical';
 
 const DEFAULT_SPEED = 100;
 const DEFAULT_WORD_DELAY = 500;

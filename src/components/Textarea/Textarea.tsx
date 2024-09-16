@@ -1,6 +1,7 @@
 import React, { useId } from 'react';
 
 import { getClassNames } from '@codewinglet/utils';
+
 import { TextareaProps } from './types';
 
 const Textarea: React.FC<TextareaProps> = ({
@@ -28,16 +29,7 @@ const Textarea: React.FC<TextareaProps> = ({
           )}
         >
           {label}
-          {required && (
-            <span
-              className={getClassNames(
-                '',
-                error ? 'text-error' : 'text-primary'
-              )}
-            >
-              *
-            </span>
-          )}
+          {required && <span className='text-error'>*</span>}
         </label>
       )}
       <div className='inline-block'>

@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import { FC } from 'react';
-import Typography from '../Typography';
+
 import Button from '../Button';
+import Typography from '../Typography';
 import { BlogCardProps } from './types';
 
 const BlogCard: FC<BlogCardProps> = ({ image, desc, title, date }) => (

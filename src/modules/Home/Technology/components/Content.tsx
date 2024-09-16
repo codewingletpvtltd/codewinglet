@@ -1,9 +1,11 @@
 'use client';
-import { FC } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { FC } from 'react';
+
 import { Arrow } from '@codewinglet/assets';
 import { Button, Typography } from '@codewinglet/components';
+
 import { ContentProps } from '../types';
 
 const Content: FC<ContentProps> = ({ service }) => (

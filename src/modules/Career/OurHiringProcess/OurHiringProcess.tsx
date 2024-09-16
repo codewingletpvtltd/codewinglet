@@ -1,6 +1,7 @@
 import { SectionHeader } from '@codewinglet/components';
-import { processSteps } from './constants';
+
 import { Card } from './components';
+import { processSteps } from './constants';
 
 const OurHiringProcess = () => (
   <div className='max-w-screen-xl xl:mx-auto mx-[20px] md:mx-[38px] my-[150px]'>

@@ -1,5 +1,6 @@
 import type { Meta } from '@storybook/react';
 import Image from 'next/image';
+
 import Frontend from '../../../public/assets/icons/Frontend.svg';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './tabs';
 
