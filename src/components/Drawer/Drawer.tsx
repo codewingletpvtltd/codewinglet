@@ -1,5 +1,7 @@
 import React from 'react';
+
 import { getClassNames } from '@codewinglet/utils';
+
 import { DrawerProps } from './types';
 
 const Drawer: React.FC<DrawerProps> = ({

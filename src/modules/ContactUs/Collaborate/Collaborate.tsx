@@ -1,8 +1,10 @@
 'use client';
-import Link from 'next/link';
 import Image from 'next/image';
+import Link from 'next/link';
+
 import { Arrow } from '@codewinglet/assets';
 import { Button, Typography } from '@codewinglet/components';
+
 import SectionHeader from '../../../components/SectionHeader/SectionHeader';
 
 const Collaborate = () => (

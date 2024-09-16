@@ -1,8 +1,10 @@
-import { Url } from 'url';
-import { FC } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { FC } from 'react';
+import { Url } from 'url';
+
 import { getClassNames } from '@codewinglet/utils';
+
 import Typography from '../../../Typography';
 import { ListItemProps } from '../../types';
 

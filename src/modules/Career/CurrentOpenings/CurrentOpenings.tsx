@@ -1,7 +1,6 @@
 'use client';
 import SectionHeader from '../../../components/SectionHeader';
 import CareerApplyNow from '../CareerApplyNow';
-
 import useCurrentOpenings from './useCurrentOpenings';
 
 const CurrentOpenings = () => {

@@ -1,11 +1,18 @@
 import { FC } from 'react';
+
 import { Arrow } from '@codewinglet/assets';
-import Textarea from '../../../../components/Textarea';
+
 import Button from '../../../../components/Button';
+import Textarea from '../../../../components/Textarea';
 import TextField from '../../../../components/TextField';
 import { FormProps } from '../types';
 
-const Form: FC<FormProps> = ({ formData, onChangeFormData, onSubmit }) => (
+const Form: FC<FormProps> = ({
+  formData,
+  onChangeFormData,
+  onSubmit,
+  isLoading,
+}) => (
   <form onSubmit={onSubmit} className='col-span-1'>
     <div className=''>
       <TextField
@@ -27,6 +34,7 @@ const Form: FC<FormProps> = ({ formData, onChangeFormData, onSubmit }) => (
         onChange={(e) => onChangeFormData({ email: e.target.value })}
         helperText={formData.errors.email}
         error={!!formData.errors.email}
+        description='Please provide your business email address'
       />
       <TextField
         fullWidth
@@ -62,7 +70,7 @@ const Form: FC<FormProps> = ({ formData, onChangeFormData, onSubmit }) => (
         className='md:w-[239px] w-full mr-[inherit] gap-2'
       >
         Submit
-        <Arrow />
+        {<Arrow />}
       </Button>
     </div>
   </form>

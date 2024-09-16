@@ -1,7 +1,8 @@
 'use client';
 import { useState } from 'react';
-import ServiceData from './constants';
+
 import Content from './components/Content';
+import ServiceData from './constants';
 
 const Technologies = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);

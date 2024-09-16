@@ -1,8 +1,10 @@
-import { FC } from 'react';
 import Image from 'next/image';
+import { FC } from 'react';
+
 import { getClassNames } from '@codewinglet/utils';
-import Typography from '../Typography';
+
 import Button from '../Button';
+import Typography from '../Typography';
 import { ModalProps } from './types';
 
 const Modal: FC<ModalProps> = ({

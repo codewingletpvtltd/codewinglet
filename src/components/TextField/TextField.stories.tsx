@@ -1,5 +1,6 @@
 import { StoryObj } from '@storybook/react';
 import { useState } from 'react';
+
 import TextField from './TextField';
 
 export default {
@@ -61,8 +62,8 @@ export const ControlledTextField = () => {
 
   return (
     <TextField
-      label="Controlled Text Field"
-      placeholder="Controlled Text Field"
+      label='Controlled Text Field'
+      placeholder='Controlled Text Field'
       value={value}
       onChange={(e) => setValue(e.target.value)}
     />

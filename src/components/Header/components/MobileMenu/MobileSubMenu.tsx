@@ -1,6 +1,8 @@
-import { FC } from 'react';
 import Image from 'next/image';
+import { FC } from 'react';
+
 import { Accordion } from '@codewinglet/components/Accordion';
+
 import { MobileSubMenuProps } from '../../types';
 import MobileListItem from './MobileListItem';
 const MobileSubMenu: FC<MobileSubMenuProps> = ({ parentMenu, onBack }) => (

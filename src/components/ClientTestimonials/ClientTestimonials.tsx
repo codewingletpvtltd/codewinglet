@@ -1,10 +1,11 @@
 import Image from 'next/image';
+
 import SectionHeader from '../SectionHeader/SectionHeader';
-import Typography from '../Typography/Typography';
 import Slider from '../Slider/Slider';
-import { testimonials } from './constants';
-import { slickSetting } from './config';
+import Typography from '../Typography/Typography';
 import ClientDetails from './components/ClientDetails';
+import { slickSetting } from './config';
+import { testimonials } from './constants';
 
 const ClientTestimonials = () => (
   <div className='lg:py-20 md:py-[60px] py-10'>

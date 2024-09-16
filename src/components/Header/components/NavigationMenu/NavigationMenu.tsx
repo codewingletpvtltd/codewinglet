@@ -1,20 +1,17 @@
 'use client';
 
 import React from 'react';
+
 import { getClassNames } from '@codewinglet/utils';
+
 import { navMenu } from '../../constants';
-import MenuList from './MenuList';
-import useNavigation from './useNavigation';
-import MenuItems from './MenuItems';
-import MenuTrigger from './MenuTrigger';
 import MenuContent from './MenuContent';
+import MenuItems from './MenuItems';
+import MenuList from './MenuList';
+import MenuTrigger from './MenuTrigger';
+import useNavigation from './useNavigation';
 // import ListItem from './ListItem';
-import {
-  ServicesContent,
-  IndustryContent,
-  TechnologyContent,
-  // CompanyContent,
-} from './SubMenu';
+import { IndustryContent, ServicesContent, TechnologyContent } from './SubMenu';
 
 const NavigationMenu = () => {
   const { onMouseEnter, onMouseLeave, gridRows, onNavigate, anchorEle } =

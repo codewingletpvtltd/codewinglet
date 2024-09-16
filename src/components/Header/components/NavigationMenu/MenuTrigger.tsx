@@ -1,8 +1,9 @@
-import { FC } from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
-import { MenuTriggerProps } from '../../types';
+import Link from 'next/link';
+import { FC } from 'react';
+
 import Typography from '../../../Typography';
+import { MenuTriggerProps } from '../../types';
 
 const MenuTrigger: FC<MenuTriggerProps> = ({
   label,

@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { Button, SectionHeader, Typography } from '@codewinglet/components';
+
 import { Arrow } from '@codewinglet/assets';
+import { Button, SectionHeader, Typography } from '@codewinglet/components';
 
 const INDUCARD = [
   {

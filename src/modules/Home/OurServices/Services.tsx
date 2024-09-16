@@ -1,6 +1,7 @@
 'use client';
-import { useState } from 'react';
 import Link from 'next/link';
+import { useState } from 'react';
+
 import { Arrow } from '@codewinglet/assets';
 import {
   Accordion,
@@ -9,8 +10,9 @@ import {
   AccordionTrigger,
   Button,
 } from '@codewinglet/components';
-import ServiceData from './constants';
+
 import Content from './components/Content';
+import ServiceData from './constants';
 
 const Services = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);

@@ -1,11 +1,12 @@
-import { FC } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { FC } from 'react';
+
+import { Arrow } from '@codewinglet/assets';
 import Button from '@codewinglet/components/Button';
 import Typography from '@codewinglet/components/Typography';
-import { Arrow } from '@codewinglet/assets';
-import { SubMenuContentProps } from '../../types';
 
+import { SubMenuContentProps } from '../../types';
 import ListItem from './ListItem';
 
 export const ServicesContent: FC<SubMenuContentProps> = ({

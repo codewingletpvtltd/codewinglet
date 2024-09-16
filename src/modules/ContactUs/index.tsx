@@ -1,6 +1,6 @@
+import Collaborate from './Collaborate/Collaborate';
 import GetInTouch from './GetInTouch';
 import OurPrecise from './OurPrecise/OurPrecise';
-import Collaborate from './Collaborate/Collaborate';
 
 const ContactUs = () => (
   <>

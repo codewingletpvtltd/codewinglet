@@ -1,4 +1,5 @@
 import { FC } from 'react';
+
 import { MenuListProps } from '../../types';
 
 const MenuList: FC<MenuListProps> = ({ children }) => (

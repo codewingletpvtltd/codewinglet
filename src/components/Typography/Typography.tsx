@@ -1,5 +1,7 @@
 import React, { forwardRef } from 'react';
+
 import { getClassNames } from '@codewinglet/utils';
+
 import { TypographyProps } from './types';
 
 const Typography: React.FC<TypographyProps> = forwardRef(

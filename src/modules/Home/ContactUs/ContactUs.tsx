@@ -1,9 +1,11 @@
 'use client';
-import Link from 'next/link';
 import Image from 'next/image';
+import Link from 'next/link';
+
 import { SectionHeader, Typography } from '@codewinglet/components';
-import useGetInTouch from './useGetInTouch';
+
 import Form from './Form';
+import useGetInTouch from './useGetInTouch';
 
 const ContactUs = () => {
   const { formData, onChangeFormData, onSubmit, isLoading } = useGetInTouch();
@@ -104,7 +106,7 @@ const ContactUs = () => {
                 formData={formData}
                 onChangeFormData={onChangeFormData}
                 onSubmit={onSubmit}
-                isDisabled={isLoading}
+                isLoading={isLoading}
               />
             </div>
           </div>
