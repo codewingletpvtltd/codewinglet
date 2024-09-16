@@ -51,6 +51,9 @@ export default {
     backgroundImage: {
       'dot-pattern': 'url("/assets/career/dotGrid.png")',
     },
+    boxShadow: {
+      custom: '0px 4px 10px 0px rgba(159, 159, 159, 0.1)',
+    },
     extend: {
       container: {
         center: true,

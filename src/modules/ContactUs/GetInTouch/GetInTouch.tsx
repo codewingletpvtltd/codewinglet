@@ -5,7 +5,9 @@ import Reveal from '@codewinglet/components/Reveal';
 import Image from 'next/image';
 import Link from 'next/link';
 import SectionHeader from '../../../components/SectionHeader/SectionHeader';
+
 import Form from '../../Home/ContactUs/Form';
+
 import useGetInTouch from '../../Home/ContactUs/useGetInTouch';
 
 const GetInTouch = () => {
@@ -83,17 +85,18 @@ const GetInTouch = () => {
                   />
                 </Link>
                 <Link
-                  href='https://www.facebook.com/codewingletpteltd'
+                  href='https://www.linkedin.com/company/codewinglet/'
                   target='_blank'
-                  aria-label='Facebook'
+                  aria-label='Linkedin'
                 >
                   <Image
-                    src={'/assets/icons/contactFb.svg'}
+                    src={'/assets/icons/contactLinkedin.svg'}
                     width={40}
                     height={40}
-                    alt='contactFb'
+                    alt='contactLinkedin'
                   />
                 </Link>
+
                 <Link
                   href='https://twitter.com/codewinglet'
                   target='_blank'
