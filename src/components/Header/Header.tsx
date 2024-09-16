@@ -36,7 +36,7 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
     <>
       {pathName != '/event-form' && pathName != '/thank-you' && (
         <div className='bg-white font-light py-4 fixed top-0 z-[100] w-full px-4'>
-          <div className='container w-full flex items-center justify-between md:flex-row flex-col'>
+          <div className='container w-full flex items-center justify-between lg:flex-row flex-col'>
             <Typography className='text-center lg:text-tag text-tagExtraLight  md:flex items-center gap-2.5'>
               🎉 Join Codewinglet DevBattle 2024? 🚀{' '}
               <span className='font-normal'>
@@ -46,7 +46,7 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
                 <div className='font-bold hurryUp-text'>Hurry up !</div>
               </div>
             </Typography>
-            <div className='flex gap-10'>
+            <div className='md:mt-0 mt-1 flex md:flex-row flex-col md:gap-10 gap-2'>
               <Link href='/event-form' className='md:m-0 mx-auto'>
                 <Button
                   variant='link'
@@ -57,14 +57,14 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
               </Link>
               <Button
                 variant='link'
-                className='lg:text-paragraph2 uppercase p-0 flex items-center gap-2 underline'
+                className='lg:text-paragraph2 text-tag uppercase p-0 flex items-center gap-2 underline'
                 onClick={handleDownload}
               >
                 Download Event Details
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
-                  width='24'
-                  height='24'
+                  width='20'
+                  height='20'
                   viewBox='0 0 24 24'
                   fill='none'
                   stroke='currentColor'
@@ -85,7 +85,7 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
       <header
         id='header'
         className={getClassNames(
-          'fixed flex items-center md:top-14 top-[92px] z-50 w-full sm:py-[20px] md:py-[0px] lg:py-0 lg:px-20',
+          'fixed flex items-center lg:top-14 md:top-20 top-32 z-50 w-full sm:py-[20px] md:py-[0px] lg:py-0 lg:px-20',
           pathName === '/event-form' || pathName === '/thank-you'
             ? 'bg-primary !top-0'
             : isScroll
