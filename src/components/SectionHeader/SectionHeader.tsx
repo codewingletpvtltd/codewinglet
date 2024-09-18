@@ -1,7 +1,7 @@
-/* eslint-disable import/order */
-'use client';
-import { getClassNames } from '@codewinglet/utils';
 import React from 'react';
+
+import { getClassNames } from '@codewinglet/utils';
+
 import Typography from '../Typography';
 import { SectionHeaderProps } from './types';
 

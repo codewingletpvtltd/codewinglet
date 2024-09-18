@@ -1,7 +1,8 @@
-/* eslint-disable import/order */
-import { getClassNames } from '@codewinglet/utils';
 import Image from 'next/image';
 import { FC } from 'react';
+
+import { getClassNames } from '@codewinglet/utils';
+
 import Button from '../Button';
 import Typography from '../Typography';
 import { ModalProps } from './types';

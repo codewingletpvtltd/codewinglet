@@ -1,9 +1,10 @@
 /* eslint-disable import/order */
 'use client';
 
-import { cn } from '@codewinglet/utils';
 import * as TabsPrimitive from '@radix-ui/react-tabs';
 import * as React from 'react';
+
+import { cn } from '@codewinglet/utils';
 
 const Tabs = React.forwardRef<
   React.ElementRef<typeof TabsPrimitive.Root>,

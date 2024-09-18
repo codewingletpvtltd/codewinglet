@@ -1,6 +1,7 @@
-/* eslint-disable import/order */
-import { getClassNames } from '@codewinglet/utils';
 import React, { useId } from 'react';
+
+import { getClassNames } from '@codewinglet/utils';
+
 import { TextFieldProps } from './types';
 
 const TextField: React.FC<TextFieldProps> = ({

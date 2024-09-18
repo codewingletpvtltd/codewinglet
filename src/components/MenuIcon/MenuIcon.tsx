@@ -1,6 +1,7 @@
-/* eslint-disable import/order */
-import { getClassNames } from '@codewinglet/utils';
 import { FC } from 'react';
+
+import { getClassNames } from '@codewinglet/utils';
+
 import { MenuIconProps } from './types';
 
 const MenuIcon: FC<MenuIconProps> = ({ isOpen, onClick, className = '' }) => (

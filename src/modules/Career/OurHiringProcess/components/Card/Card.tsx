@@ -1,6 +1,7 @@
-/* eslint-disable import/order */
-import { Typography } from '@codewinglet/components';
 import { FC } from 'react';
+
+import { Typography } from '@codewinglet/components';
+
 import { CardProps } from '../../types';
 
 const Card: FC<CardProps> = ({ index, title, desc }) => (

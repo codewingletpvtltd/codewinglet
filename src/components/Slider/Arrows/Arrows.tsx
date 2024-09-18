@@ -1,7 +1,8 @@
-/* eslint-disable import/order */
+import { FC } from 'react';
+
 import { Arrow } from '@codewinglet/assets';
 import { getClassNames } from '@codewinglet/utils';
-import { FC } from 'react';
+
 import { _arrowPosition, verticalPosition } from '../constants';
 import { ArrowProps } from '../types';
 

@@ -24,7 +24,7 @@ const CurrentOpenings = () => {
             descriptionClassName='text-secondary md:text-left text-center'
             headingClassName='md:text-left text-center'
           />
-
+          {/* TODO: New Design  */}
           {/* <div className='md:flex items-center justify-between md:mt-[55px] mt-5'>
             <div className='md:flex gap-2.5 hidden'>
               {designation.map((designation) => (
