@@ -34,7 +34,7 @@ export const ServicesContent: FC<SubMenuContentProps> = ({
         href='/contact-us'
         rel='noopener noreferrer'
         target='_blank'
-        className='flex items-center justify-center '
+        className='flex items-center justify-center'
       >
         <Button
           variant='default'

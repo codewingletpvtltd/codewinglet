@@ -10,7 +10,7 @@ const Opportunity = () => (
       <div className='2xl:w-[874px] md:w-[680px] 2xl:ml-64 lg:ml-20 md:ml-10 md:pl-[15px] pl-5 md:pr-0 pr-5 2xl:py-0 lg:py-[94px]'>
         <SectionHeader
           title={<>Join the Codewinglet Team</>}
-          description='At Code Winglet, experience a vibrant work culture that encourages innovation and fosters personal growth while contributing to cutting-edge software development in a supportive and engaging environment.'
+          description='At Codewinglet, experience a vibrant work culture that encourages innovation and fosters personal growth while contributing to cutting-edge software development in a supportive and engaging environment.'
           descriptionClassName='text-secondary'
           headingClassName='lg:!text-h1 md:!text-h2 !text-subtitle2'
         />

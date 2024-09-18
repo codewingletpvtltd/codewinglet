@@ -8,40 +8,40 @@ import SectionHeader from '../../../components/SectionHeader/SectionHeader';
 
 const workData = [
   {
-    image: '/assets/career/politics.svg',
+    image: '/assets/career/flexible.svg',
     title: 'Flexible work hours',
     description:
       'Employees can adjust their work schedules to fit their personal lives, ensuring a better work-life balance.',
   },
   {
-    image: '/assets/career/motivated.svg',
+    image: '/assets/career/LeaveEncashment.svg',
     title: 'Leave Encashment',
     description:
       'Employees can convert unused paid leave days into monetary compensation.',
   },
   {
-    image: '/assets/career/celebration.svg',
+    image: '/assets/career/Professional.svg',
     title: 'Professional Development',
     description:
       'Access to online courses and certification programs allows employees to grow their skills.',
   },
   {
-    image: '/assets/career/time.svg',
-    title: 'Employee engagement activities',
+    image: '/assets/career/working.svg',
+    title: '5 Day a week',
     description:
-      'Team-building events, workshops, and social gatherings to foster collaboration and enhance workplace culture.',
+      'We believe in maintaining a healthy work-life balance, giving you the time to relax and refresh.',
   },
   {
-    image: '/assets/career/time.svg',
+    image: '/assets/career/Friendly.svg',
     title: 'Friendly and stress-free environment',
     description:
       'A supportive workplace where collaboration and well-being are prioritized, helping employees stay relaxed and productive.',
   },
   {
-    image: '/assets/career/grow.svg',
-    title: '5 Day a week',
+    image: '/assets/career/Employee.svg',
+    title: 'Employee engagement activities',
     description:
-      'We believe in maintaining a healthy work-life balance, giving you the time to relax and refresh.',
+      'Team-building events, workshops, and social gatherings to foster collaboration and enhance workplace culture.',
   },
 ];
 
@@ -99,7 +99,7 @@ const Benefits = () => (
                   width={32}
                   height={32}
                 />
-                <Typography className='md:text-paragraph1 text-tag md:pt-10 pt-5 pb-1.5'>
+                <Typography className='md:text-paragraph1 text-tag md:pt-4 pt-4 pb-1.5'>
                   {workData.title}
                 </Typography>
                 <Typography className='md:text-paragraph2Light text-tagExtraLight text-placeholderText'>

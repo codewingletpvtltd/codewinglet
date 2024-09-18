@@ -27,14 +27,14 @@ const OurHiringProcess = () => (
     id='process'
   >
     <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto lg:flex block gap-[100px]'>
-      <div className='2xl:w-auto lg:w-full lg:mt-0 mt-10'>
+      <div className='2xl:w-auto lg:w-full lg:mt-0'>
         <SectionHeader
           title={<>Our Hiring Process</>}
           description='Step into Your Future with Confidence: A Simple, Transparent Hiring Journey.'
           descriptionClassName='text-secondary lg:w-6/12 lg:text-left text-center lg:px-0 md:px-20'
           headingClassName='text-white lg:text-left text-center'
         />
-        <div className='relative flex lg:gap-[30px] md:gap-4 mt-[50px] md:pt-[30px] md:border-t md:border-secondary md:flex-nowrap flex-wrap'>
+        <div className='relative flex xl:gap-[30px] lg:gap-4 mt-[50px] lg:pt-[30px] lg:border-t md:border-secondary lg:flex-nowrap flex-wrap'>
           {processSteps.map((step, index) => (
             <Card
               key={`hiring-process-step-${index}`}
@@ -44,19 +44,6 @@ const OurHiringProcess = () => (
             />
           ))}
         </div>
-        {/* <Button
-          className='md:w-[184px] w-40 md:py-[13px] py-2.5 md:mt-[50px] lg:ml-0 mt-10 border-white border hover:border-white hover:border block m-[0_auto]'
-          variant='secondary'
-        >
-          <Link
-            href='/contact-us'
-            rel='noopener noreferrer'
-            className='flex items-center justify-center gap-3'
-          >
-            Explore jobs
-            <Arrow />
-          </Link>
-        </Button> */}
       </div>
     </div>
   </div>
