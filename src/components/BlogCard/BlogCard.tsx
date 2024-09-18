@@ -1,56 +1,69 @@
+import classNames from 'classnames';
 import Image from 'next/image';
 import { FC } from 'react';
 
-import Button from '../Button';
 import Typography from '../Typography';
 import { BlogCardProps } from './types';
 
-const BlogCard: FC<BlogCardProps> = ({ image, desc, title, date }) => (
-  <div className='relative h-[400px] md:h-[390px] xl:h-[450px] w-full'>
-    {image ? (
-      <Image
-        src={image}
-        alt='Blog Image'
-        className='rounded-10 z-[-10] w-full'
-        width={500}
-        height={500}
-      />
-    ) : (
-      <div className='h-[400px] md:h-[390px] xl:h-[450px] w-full rounded-10 z-[-10]' />
-    )}
-    <div className='rounded-10 shadow-lg py-[18px] px-[16px] top-[-100px] relative bg-white z-10 mx-[17px] md:mx-[14px]'>
-      <Typography
-        variant='subtitle2'
-        className='font-500 text-primary leading-[18px] md:text-[16px] md:leading-[22px]'
-      >
-        {desc}
-      </Typography>
-      <div className='flex flex-row items-center mt-[6px] mb-[11px]'>
+const BlogCard: FC<BlogCardProps> = ({
+  image,
+  desc = 'No description available',
+  title,
+  className,
+  date = '',
+  imageSrc,
+  imageAlt = 'Icon',
+}) => {
+  const formattedDate = date
+    ? new Date(date).toLocaleDateString('en-US', {
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric',
+      })
+    : 'No date available';
+
+  return (
+    <div className={classNames('relative lg:w-full w-[312px] mx-5', className)}>
+      {image && (
         <Image
-          src={'/assets/icons/Calender.svg'}
-          alt='Calender'
-          height={50}
-          width={50}
+          src={image}
+          alt='Blog Image'
+          className='w-full'
+          width={500}
+          height={500}
         />
-        {date && (
-          <Typography
-            variant='subtitle2'
-            className='md:text-[16px] text-lightBlack ml-[8px]'
-          >
-            {date.toLocaleString('default', { month: 'long' })} {date.getDate()}
-            , {date.getFullYear()}
-          </Typography>
-        )}
+      )}
+      <div className='py-[15px]'>
+        <Typography className='text-secondary text-tag'>
+          {formattedDate}
+          <span className='text-headerBoxBorder px-3'>•</span>12 min read
+        </Typography>
+        <div className='flex justify-between items-start'>
+          <Typography className='text-subtitle2 mt-2.5'>{title}</Typography>
+          {imageSrc && (
+            <Image
+              src={imageSrc}
+              alt={imageAlt}
+              width={11}
+              height={11}
+              className='mt-4'
+            />
+          )}
+        </div>
+        <Typography className='text-paragraph2Light text-secondary leading-[18px] md:text-4 md:leading-[22px] mt-2'>
+          {desc}
+        </Typography>
+        <ul className='flex gap-2 pt-6'>
+          <li className='text-secondary text-tagLight bg-bg border border-headerBoxBorder rounded-full py-0.5 px-2.5 w-fit'>
+            Management
+          </li>
+          <li className='text-secondary text-tagLight bg-bg border border-headerBoxBorder rounded-full py-0.5 px-2.5 w-fit'>
+            Project
+          </li>
+        </ul>
       </div>
-      <Typography
-        variant='h5'
-        className='md:text-[22px] lg:text-[25px] mb-[11px]'
-      >
-        {title}
-      </Typography>
-      <Button>Read More</Button>
     </div>
-  </div>
-);
+  );
+};
 
 export default BlogCard;

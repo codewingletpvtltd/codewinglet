@@ -1,3 +1,4 @@
+/* eslint-disable import/order */
 'use client';
 import Link from 'next/link';
 import { useState } from 'react';
@@ -10,7 +11,8 @@ import {
   AccordionTrigger,
   Button,
 } from '@codewinglet/components';
-
+import Reveal from '@codewinglet/components/Reveal';
+import { AnimatePresence, motion } from 'framer-motion';
 import Content from './components/Content';
 import ServiceData from './constants';
 
@@ -25,83 +27,95 @@ const Services = () => {
 
   return (
     <>
-      {/* DESKTOP */}
-      <div className='xl:flex mt-[50px] gap-20 mb-[50px] lg:block hidden'>
-        <ul className='2xl:w-1/2 xl:w-[471px]'>
+      <div className='xl:flex justify-between mt-[50px] gap-20 lg:block hidden'>
+        <div className='2xl:w-[590px] xl:w-[471px]'>
           {ServiceData.map((service, i) => (
-            <li
-              key={service.title}
-              onClick={() => handleChangeIndex(i)}
-              className={`text-subtitle2Light ${
-                i === selectedIndex
-                  ? 'text-primary !text-subtitle2'
-                  : 'text-secondary'
-              } border-b border-headerBoxBorder last:border-b-0 py-[22px] cursor-pointer flex items-center justify-between`}
-            >
-              {service.title}
-              <Arrow
-                className={`w-[21px] h-[21px] rotate-[315deg] ${
-                  i === selectedIndex ? 'block' : 'hidden'
-                }`}
-              />
-            </li>
+            <Reveal key={i}>
+              <div
+                key={service.title}
+                onClick={() => handleChangeIndex(i)}
+                className={`text-paragraph1ExtraLight ${
+                  i === selectedIndex
+                    ? 'text-primary !text-paragraph1Light'
+                    : 'text-secondary'
+                } border-b border-headerBoxBorder py-5 cursor-pointer flex items-center justify-between hover:text-primary hover:text-paragraph1Light`}
+              >
+                {service.title}
+                <Arrow
+                  className={`w-[21px] h-[21px] rotate-[315deg] ${
+                    i === selectedIndex ? 'block' : 'hidden'
+                  }`}
+                />
+              </div>
+            </Reveal>
           ))}
-        </ul>
-        <div className='2xl:w-1/2 xl:w-[739px]'>
-          <Content service={service} />
+        </div>
+        <div className='xl:w-[644px]'>
+          <div className='relative bg-white lg:p-10 p-5 transition-transform duration-500 ease-in [will-change:_top;] 2xl:w-[644px] 2xl:h-[819px] xl:h-[816px] xl:w-auto'>
+            <AnimatePresence mode='wait'>
+              <motion.div
+                key={selectedIndex ? service.title : 'empty'}
+                initial={{ y: 10, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: -10, opacity: 0 }}
+                transition={{ duration: 0.2 }}
+              >
+                <Content service={service} />
+              </motion.div>
+            </AnimatePresence>
+          </div>
         </div>
       </div>
 
       {/* TABLET */}
       <div className='lg:hidden block md:mt-[50px] mt-0 gap-20 mb-0'>
         <Accordion type='single' defaultValue='IT Consulting' collapsible>
-          <ul className=''>
-            {ServiceData.map((service, i) => (
-              <AccordionItem key={service.title} value={service.title}>
-                <AccordionTrigger
-                  onClick={() => handleChangeIndex(i)}
-                  className='[&[data-state=open]>svg]:rotate-[45deg] border-b border-headerBoxBorder !pb-0 group '
-                  icon={
-                    <Arrow
-                      className={`w-[21px] h-[21px] transition duration-500 group-hover:rotate-[45deg] ${
-                        i === selectedIndex ? 'text-primary' : 'text-secondary'
-                      } `}
-                    />
-                  }
+          {ServiceData.map((service, i) => (
+            <AccordionItem key={service.title} value={service.title}>
+              <AccordionTrigger
+                onClick={() => handleChangeIndex(i)}
+                className={`[&[data-state=open]>svg]:rotate-[45deg] !pb-0 group ${
+                  i === selectedIndex
+                    ? 'border-b border-primary'
+                    : 'border-b border-headerBoxBorder'
+                }`}
+                icon={
+                  <Arrow
+                    className={`w-[21px] h-[21px] transition duration-500 group-hover:rotate-[45deg] ${
+                      i === selectedIndex ? 'text-primary' : 'text-secondary'
+                    } `}
+                  />
+                }
+              >
+                <div
+                  className={`md:text-subtitle2Light text-paragraph2Light ${
+                    i === selectedIndex
+                      ? 'text-primary md:!text-subtitle2 !text-paragraph2'
+                      : 'text-secondary'
+                  }  md:py-[22px] py-5 cursor-pointer flex items-center justify-between`}
                 >
-                  <li
-                    className={`md:text-subtitle2Light text-paragraph2Light ${
-                      i === selectedIndex
-                        ? 'text-primary md:!text-subtitle2 !text-paragraph2'
-                        : 'text-secondary'
-                    }  py-[22px] cursor-pointer flex items-center justify-between`}
-                  >
-                    {service.title}
-                  </li>
-                </AccordionTrigger>
-                <AccordionContent className='border-remove'>
-                  <Content service={service} />
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </ul>
+                  {service.title}
+                </div>
+              </AccordionTrigger>
+              <AccordionContent className='border-remove'>
+                <Content service={service} />
+              </AccordionContent>
+            </AccordionItem>
+          ))}
         </Accordion>
-      </div>
-
-      <div className='lg:hidden md:block hidden lg:mt-0 md:mt-10 mt-10'>
-        <Button
-          className='lg:w-[231px] md:w-[333px] lg:block m-auto text-center block group bg-bg'
-          variant='blackOutline'
+        <Link
+          href='/contact-us'
+          rel='noopener noreferrer'
+          className='text-primary group-hover:text-white text-center group mt-6 md:hidden block m-auto'
         >
-          <Link
-            href='/contact-us'
-            rel='noopener noreferrer'
-            className='text-primary group-hover:text-white text-center flex items-center justify-center gap-3'
+          <Button
+            className='gap-2 bg-transparent w-[178px]'
+            variant='blackOutline'
           >
             Book a meeting
             <Arrow />
-          </Link>
-        </Button>
+          </Button>
+        </Link>
       </div>
     </>
   );

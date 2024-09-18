@@ -14,7 +14,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 }) => (
   <div
     className={getClassNames(
-      'flex flex-col gap-4 p-[24px] rounded-10 bg-white shadow-lg',
+      'flex flex-col gap-4 p-6 rounded-10 bg-white shadow-lg',
       className
     )}
     {...rest}
@@ -31,7 +31,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 
     <Typography
       variant='body2'
-      className='text-left text-lightBlack line-clamp-3 xl:line-clamp-5 text-subtitle2 leading-[20px] md:text-body2 md:font-400 md:leading-[30px]'
+      className='text-left text-lightBlack line-clamp-3 xl:line-clamp-5 text-subtitle2 leading-5 md:text-body2 md:font-400 md:leading-[30px]'
     >
       {children}
     </Typography>

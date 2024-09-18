@@ -1,3 +1,4 @@
+/* eslint-disable import/order */
 'use client';
 
 import * as TabsPrimitive from '@radix-ui/react-tabs';
@@ -39,7 +40,7 @@ const TabsTrigger = React.forwardRef<
   <TabsPrimitive.Trigger
     ref={ref}
     className={cn(
-      'inline-flex items-center gap-[10px] xl:gap-[10px] 2xl:gap-[12px] justify-center whitespace-nowrap text-primary px-3 py-1.5 text-[14px] font-primary font-700 ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 relative after:content-[""] after:h-[2px] after:w-[100%] after:absolute data-[state=active]:after:bg-primary after:bottom-0 :text-primary md:justify-start md:pr-[37px] md:data-[state=active]:b-r-[2px] md:py-[10px] md:after:h-[100%] md:after:w-[4px] md:after:top-0 md:after:right-[-2.8px] border-lightBlack border-b-[1px] md:border-b-0 md:border-r-[1px] lg:text-[16px] xl:text-[18px] xl:py-[12.5px] xl:pr-[12px] 2xl:pr-[29px] [&>svg]:fill-black [&[data-state=active]>svg]:fill-primary data-[state=active]:text-primary',
+      'inline-flex items-center gap-2.5 xl:gap-2.5 2xl:gap-3 justify-center whitespace-nowrap text-primary px-3 py-1.5 text-tagLight font-primary font-700 ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 relative after:content-[""] after:h-[2px] after:w-full after:absolute data-[state=active]:after:bg-primary after:bottom-0 :text-primary md:justify-start md:pr-[37px] md:data-[state=active]:b-r-[2px] md:py-2.5 md:after:h-[100%] md:after:w-[4px] md:after:top-0 md:after:right-[-2.8px] border-lightBlack border-b-[1px] md:border-b-0 md:border-r-[1px] lg:text-4 xl:text-paragraph1 xl:py-[12.5px] xl:pr-3 2xl:pr-[29px] [&>svg]:fill-black [&[data-state=active]>svg]:fill-primary data-[state=active]:text-primary',
       className
     )}
     {...props}
@@ -54,7 +55,7 @@ const TabsContent = React.forwardRef<
   <TabsPrimitive.Content
     ref={ref}
     className={cn(
-      'mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring md:w-full md:ml-[20px] lg:ml-[40px] xl:ml-[37px] 2xl:ml-[55px]',
+      'mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring md:w-full md:ml-5 lg:ml-10 xl:ml-[37px] 2xl:ml-[55px]',
       className
     )}
     {...props}

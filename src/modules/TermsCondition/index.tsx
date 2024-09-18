@@ -1,3 +1,4 @@
+/* eslint-disable import/order */
 'use client';
 import Link from 'next/link';
 import { useRef } from 'react';
@@ -67,39 +68,45 @@ const TermsCondition = () => {
 
   return (
     <>
-      <div className=' bg-bg mt-[35px] md:pb-[35px] pb-[15px] md:pt-20 lg:[position:_unset;] absolute md:top-[90px] top-[130px] w-full z-10'>
-        <div className='container w-full lg:px-[15px] sm:px-[30px] px-[20px] mx-auto'>
+      <div className=' bg-bg lg:mt-[86px] md:mt-[66px] mt-[9px] py-[15px] md:py-[30px] lg:fixed lg:top-0 fixed md:top-[90px] top-[130px] w-full z-10'>
+        <div className='container w-full lg:px-[15px] sm:px-[30px] px-5 mx-auto'>
           <div>
             <SectionHeader
               title={<>Terms & condition</>}
-              headingClassName=''
+              headingClassName='lg:!text-h4 md:text-h5 text-subtitle1'
               descriptionClassName='hidden'
             />
           </div>
         </div>
       </div>
 
-      <div className=' bg-white pt-10 [scroll-behavior:_smooth;]'>
-        <div className='container w-full lg:px-[15px] sm:px-[30px] px-[20px] mx-auto lg:pt-0 md:pt-[280px] pt-[200px] relative pb-1'>
-          <div className='lg:flex block gap-[50px] items-start mb-10'>
+      <div className=' bg-white mt-[180px] [scroll-behavior:_smooth;]'>
+        <div className='container w-full lg:px-[15px] sm:px-[30px] px-5 mx-auto lg:pt-[50px] md:pt-[110px] pt-[60px] relative pb-1'>
+          <div className='lg:flex block gap-[100px] items-start mb-10'>
             <ScrollHighlightNavbar navHeader={TermsData} />
-            <div className='2xl:w-[65%] xl:w-[60%] w-full'>
+            <div className='2xl:w-[70%] xl:w-[67%] w-full'>
               {/* Acceptance of terms : */}
-              <div id='terms' ref={termsRef}>
+              <div id='terms' ref={termsRef} className='scroll-mt-56'>
                 <Typography className='text-subtitle2 border-b border-headerBoxBorder pb-[15px]'>
                   Acceptance of terms :
                 </Typography>
                 <Typography className='text-paragraph1ExtraLight text-secondary pt-5'>
                   You accept responsibility for adhering to and being governed
-                  by these Terms & Conditions by visiting and using our website,
-                  <span className='text-primary'>codewinglet.com.</span> Please
-                  do not use this website if you do not agree to these terms.
+                  by these Terms & Conditions by visiting and using our website,{' '}
+                  <Link
+                    href='https://www.codewinglet.com/'
+                    className='text-primary'
+                  >
+                    www.codewinglet.com.
+                  </Link>{' '}
+                  Please do not use this website if you do not agree to these
+                  terms.
                 </Typography>
               </div>
 
               {/* Use of the website : */}
               <div
-                className='lg:mt-[50px] mt-[30px]'
+                className='lg:mt-[50px] scroll-mt-56 mt-[30px]'
                 id='website'
                 ref={websiteRef}
               >
@@ -142,7 +149,7 @@ const TermsCondition = () => {
 
               {/* Intellectual Property : */}
               <div
-                className='lg:mt-[50px] mt-[30px]'
+                className='lg:mt-[50px] scroll-mt-56 mt-[30px]'
                 id='property'
                 ref={propertyRef}
               >
@@ -170,7 +177,7 @@ const TermsCondition = () => {
 
               {/* Privacy policy : */}
               <div
-                className='lg:mt-[50px] mt-[30px]'
+                className='lg:mt-[50px] scroll-mt-56 mt-[30px]'
                 id='policy'
                 ref={policyRef}
               >
@@ -189,7 +196,11 @@ const TermsCondition = () => {
               </div>
 
               {/* Links to third-party websites : */}
-              <div className='lg:mt-[50px] mt-[30px]' id='party' ref={partyRef}>
+              <div
+                className='lg:mt-[50px] scroll-mt-56 mt-[30px]'
+                id='party'
+                ref={partyRef}
+              >
                 <Typography className='text-subtitle2 border-b border-headerBoxBorder pb-[15px]'>
                   Links to third-party websites :
                 </Typography>
@@ -203,7 +214,7 @@ const TermsCondition = () => {
 
               {/* Disclaimer of warranties : */}
               <div
-                className='lg:mt-[50px] mt-[30px]'
+                className='lg:mt-[50px] scroll-mt-56 mt-[30px]'
                 id='disclaimer'
                 ref={disclaimerRef}
               >
@@ -224,7 +235,7 @@ const TermsCondition = () => {
 
               {/* Limitation of liability : */}
               <div
-                className='lg:mt-[50px] mt-[30px]'
+                className='lg:mt-[50px] scroll-mt-56 mt-[30px]'
                 id='limitation'
                 ref={limitationRef}
               >
@@ -241,7 +252,7 @@ const TermsCondition = () => {
 
               {/* Changes to terms and conditions : */}
               <div
-                className='lg:mt-[50px] mt-[30px]'
+                className='lg:mt-[50px] scroll-mt-56 mt-[30px]'
                 id='conditions'
                 ref={conditionsRef}
               >
@@ -256,23 +267,23 @@ const TermsCondition = () => {
 
               {/* Contact information : */}
               <div
-                className='lg:mt-[50px] mt-[30px] mb-[100px]'
+                className='lg:mt-[50px] scroll-mt-56 mt-[30px] mb-[100px]'
                 id='contact'
                 ref={contactRef}
               >
                 <Typography className='text-subtitle2 border-b border-headerBoxBorder pb-[15px]'>
-                  Your acceptance of this policy :
+                  Contact information :
                 </Typography>
                 <Typography className='text-paragraph1ExtraLight text-secondary mt-5'>
-                  Please email us at
+                  Please email us at{' '}
                   <Link
                     href='mailto:info@codewinglet.com'
-                    className='text-primary'
+                    className='text-primary font-semibold'
                   >
                     info@codewinglet.com
                   </Link>
-                  with any queries or worries you may have regarding these terms
-                  and conditions.
+                  &nbsp;with any queries or worries you may have regarding these
+                  terms and conditions.
                 </Typography>
               </div>
             </div>

@@ -1,36 +1,20 @@
-import Image from 'next/image';
 import { FC } from 'react';
 
 import { Typography } from '@codewinglet/components';
 
 import { CardProps } from '../../types';
 
-const Card: FC<CardProps> = ({ index, icon, title, desc }) => (
-  <div className='rounded-10 bg-white shadow-lg flex flex-col items-center justify-center px-[17px] py-[35px] gap-[8px]'>
-    <div className='relative'>
-      {icon && (
-        <Image
-          src={icon}
-          alt='card image'
-          className='absolute top-5'
-          width={28}
-          height={28}
-        />
-      )}
-      <Typography
-        variant='h2'
-        className='text-darkBlue text-[45px] font-700 lg:text-[50px] opacity-20 -z-10 text-center'
-      >
-        {index}
+const Card: FC<CardProps> = ({ index, title, desc }) => (
+  <div className='lg:border-t-0 border-t border-secondary text-white lg:before:absolute before:content before:bg-white before:w-9 before:h-[3px] before:-top-1 lg:w-auto sm:w-6/12 w-full'>
+    <div className='relative lg:before:relative before:absolute before:content before:bg-white before:w-9 before:h-[3px] before:-top-1'>
+      <Typography className='lg:text-h2 text-h4 text-white lg:pt-0 pt-[30px]'>
+        {index}.
       </Typography>
     </div>
-    <Typography variant='body2' className='font-800 lg:text-[20px] text-center'>
+    <Typography className='lg:text-subtitle2 text-paragraph1 pb-4 pt-5'>
       {title}
     </Typography>
-    <Typography
-      variant='subtitle2'
-      className='leading-[20px] md:text-[16px] md:leading-[25px] lg:text-[18px] lg:leading-[30px] text-center'
-    >
+    <Typography className='text-secondary text-paragraph2Light lg:pb-0 pb-10'>
       {desc}
     </Typography>
   </div>

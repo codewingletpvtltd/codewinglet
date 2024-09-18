@@ -5,13 +5,13 @@ import Typography from '../Typography/Typography';
 import { BreadcrumbProps } from './types';
 
 const Breadcrumb: FC<BreadcrumbProps> = ({ breadcrumbs }) => (
-  <ol className='flex flex-row items-center justify-center gap-[10px]'>
+  <ol className='flex flex-row items-center justify-center gap-2.5'>
     {breadcrumbs.map((data, index) => (
       <>
         <li key={`breadcrumb-${index}`}>
           <Typography
             variant='subtitle2'
-            className='text-lightBlack font-[500] uppercase lg:text-[16px]'
+            className='font-medium uppercase lg:text-4'
           >
             {data}
           </Typography>

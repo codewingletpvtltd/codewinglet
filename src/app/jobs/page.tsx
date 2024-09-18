@@ -4,9 +4,14 @@ export default function Jobs() {
       <iframe
         src='https://codewinglet.oorwin.com/careers/index.html'
         width='100%'
-        height='2000'
-        style={{ border: 'none', margin: 0, marginTop: '50px' }}
+        height='500'
+        style={{
+          border: 'none',
+          margin: 0,
+        }}
       ></iframe>
     </div>
   );
 }
+
+//

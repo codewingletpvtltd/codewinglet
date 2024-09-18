@@ -232,8 +232,7 @@ export const technologyMenu = [
 export const companyMenu = [
   {
     id: 1,
-    // path: '/terms-and-conditions',
-    path: '',
+    path: '/about-us',
     label: 'About us',
   },
   {
@@ -243,24 +242,11 @@ export const companyMenu = [
   },
   {
     id: 3,
-    path: '/jobs',
-    label: 'Jobs',
-  },
-  {
-    id: 4,
-    // path: '/privacy-policy',
-    path: '',
-    label: 'Works',
-  },
-  {
-    id: 5,
-    // path: '/privacy-policy',
-    path: '',
-    label: 'Case studies',
+    path: '/career',
+    label: 'Career',
   },
   {
     id: 6,
-    // path: '/privacy-policy',
     path: '',
     label: 'Blogs',
   },

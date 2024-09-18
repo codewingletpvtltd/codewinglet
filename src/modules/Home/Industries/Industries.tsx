@@ -1,14 +1,15 @@
+/* eslint-disable import/order */
+'use client';
+import { SectionHeader, Typography } from '@codewinglet/components';
+import Reveal from '@codewinglet/components/Reveal';
 import Image from 'next/image';
-import Link from 'next/link';
 
-import { Arrow } from '@codewinglet/assets';
-import { Button, SectionHeader, Typography } from '@codewinglet/components';
-
-const INDUCARD = [
+const industriesCard = [
   {
     image: '/assets/industries/wasteManagement.png',
     title: 'Waste Management',
     mobileTitle: 'Waste Management',
+    animation: '',
   },
   {
     image: '/assets/industries/sustainableSolution.png',
@@ -68,53 +69,47 @@ const INDUCARD = [
 ];
 
 const ContactUs = () => (
-  <section className='bg-white xl:py-20 lg:py-14 md:py-[60px] py-10'>
-    <div className='container w-full lg:px-[15px] sm:px-[30px] px-[15px] mx-auto'>
-      <SectionHeader
-        title={<>Industries we work</>}
-        description={
-          <>
-            Diverse industry experience to accelerate your business outcomes
-            industries
-          </>
-        }
-        headingClassName=''
-      />
+  <section
+    className='bg-white xl:py-20 lg:py-14 md:py-[60px] py-10 scroll-mt-40'
+    id='industry'
+  >
+    <div className='container w-full lg:px-[15px] sm:px-[30px] px-5 mx-auto'>
+      <Reveal>
+        <SectionHeader
+          title={<>Industries we work</>}
+          description={
+            <>
+              Diverse industry experience to accelerate your business outcomes
+              industries
+            </>
+          }
+          headingClassName=''
+        />
+      </Reveal>
 
-      <div className='grid lg:grid-cols-4 grid-cols-2 md:mt-10 md:mb-0 sm:gap-[30px] gap-5 lg:my-[50px] my-5'>
-        {INDUCARD.map((card) => (
+      <div className='grid lg:grid-cols-4 grid-cols-2 md:mt-10 md:mb-0 sm:gap-[30px] gap-5 lg:mt-[50px] my-5'>
+        {industriesCard.map((card) => (
           <>
-            <div>
-              <div className='w-full overflow-hidden cursor-pointer'>
-                <Image
-                  src={card.image}
-                  alt='Menu Icon'
-                  className='w-full object-cover object-center transition-transform duration-500 hover:scale-110'
-                  width={800}
-                  height={800}
-                />
+            <Reveal>
+              <div>
+                <div className='w-full overflow-hidden cursor-pointer'>
+                  <Image
+                    src={card.image}
+                    alt='Menu Icon'
+                    className='w-full object-cover object-center transition-transform duration-500 hover:scale-110'
+                    width={800}
+                    height={800}
+                  />
+                </div>
+                <Typography className='text-primary mt-3 lg:text-subtitle2 md:text-subtitle2 text-tagLight'>
+                  {card.title}
+                  {/* <div className='block sm:hidden'>{card.mobileTitle}</div> */}
+                </Typography>
               </div>
-              <Typography className='text-primary md:mt-3 mt-2.5 lg:text-subtitle2 md:text-subtitle2 text-tagLight'>
-                {card.title}
-                {/* <div className='block sm:hidden'>{card.mobileTitle}</div> */}
-              </Typography>
-            </div>
+            </Reveal>
           </>
         ))}
       </div>
-      <Button
-        className='w-[333px] mt-[30px] lg:block m-auto text-center md:hidden block group'
-        variant='blackOutline'
-      >
-        <Link
-          href='/contact-us'
-          rel='noopener noreferrer'
-          className='text-primary group-hover:text-white text-center flex items-center justify-center gap-3'
-        >
-          Talk to our industry expert
-          <Arrow />
-        </Link>
-      </Button>
     </div>
   </section>
 );

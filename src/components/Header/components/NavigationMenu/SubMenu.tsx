@@ -14,7 +14,7 @@ export const ServicesContent: FC<SubMenuContentProps> = ({
   index,
 }) => (
   <>
-    <ul className='grid grid-rows-5 grid-flow-col 2xl:grid-cols-[31%_25%_25%] xl:grid-cols-[31%_25%_25%] 2xl:gap-9 xl:gap-[20px] xl:gap-x-[30px] after:content after:absolute 2xl:after:top-[13%] xl:after:top-[15%] after:left-[32%] after:bg-headerBoxBorder after:w-[1px] 2xl:after:h-[81%] xl:after:h-[78%] before:content before:absolute 2xl:before:top-[13%] xl:before:top-[15%] before:left-[58%] before:bg-headerBoxBorder before:w-[1px] 2xl:before:h-[81%] xl:before:h-[78%]'>
+    <ul className='grid grid-rows-5 grid-flow-col 2xl:grid-cols-[31%_25%_25%] xl:grid-cols-[31%_25%_25%] 2xl:gap-9 xl:gap-5 xl:gap-x-[30px] after:content after:absolute 2xl:after:top-[13%] xl:after:top-[15%] after:left-[32%] after:bg-headerBoxBorder after:w-[1px] 2xl:after:h-[81%] xl:after:h-[78%] before:content before:absolute 2xl:before:top-[13%] xl:before:top-[15%] before:left-[58%] before:bg-headerBoxBorder before:w-[1px] 2xl:before:h-[81%] xl:before:h-[78%]'>
       {childItems.map((menu, menuIdx) => (
         <ListItem
           key={`menu-header-${index}-${menuIdx}`}
@@ -25,8 +25,8 @@ export const ServicesContent: FC<SubMenuContentProps> = ({
         />
       ))}
     </ul>
-    <div className='bg-[#F4F4F4] flex items-center absolute right-[30px] bottom-[30px] w-[37%] p-[20px]'>
-      <Typography className='text-paragraph2 text-primary w-[60%]'>
+    <div className='bg-[#F4F4F4] flex items-center absolute right-[30px] bottom-[30px] w-[37%] p-4 gap-2'>
+      <Typography className='text-paragraph1Light text-primary w-3/5'>
         Get Consultation from our Service Experts
       </Typography>
 
@@ -34,11 +34,11 @@ export const ServicesContent: FC<SubMenuContentProps> = ({
         href='/contact-us'
         rel='noopener noreferrer'
         target='_blank'
-        className='flex items-center justify-center '
+        className='flex items-center justify-center'
       >
         <Button
           variant='default'
-          className='bg-primary w-[210px] m-[initial] gap-3'
+          className='bg-primary w-[223px] m-[initial] gap-3 !text-paragraph1 text-white py-3'
         >
           Schedule a call
           <Arrow />
@@ -78,7 +78,7 @@ export const TechnologyContent: FC<SubMenuContentProps> = ({
       ))}
     </ul>
     <div className='bg-[#F4F4F4] flex items-center justify-between right-[30px] bottom-[30px] w-full p-2.5 mt-9 pl-6'>
-      <Typography className='text-paragraph2 text-primary w-[60%]'>
+      <Typography className='text-paragraph1 text-primary w-[60%]'>
         Get consultation from our Technical experts
       </Typography>
 
@@ -90,9 +90,10 @@ export const TechnologyContent: FC<SubMenuContentProps> = ({
       >
         <Button
           variant='default'
-          className='bg-primary w-[208px] m-[initial] gap-3'
+          className='bg-primary w-[223px] m-[initial] gap-3 !text-paragraph1 text-white py-3'
         >
-          Schedule a call <Arrow />
+          Schedule a call
+          <Arrow />
         </Button>
       </Link>
     </div>

@@ -22,6 +22,27 @@ html {
   scrollbar-width: none; /* Firefox */
 }
 
+.react-tel-input .selected-flag:hover {
+  background-color: transparent !important;
+}
+
+/* ::-webkit-scrollbar {
+  width: 5px;
+}
+
+.submenus ::-webkit-scrollbar {
+  height: 4px !important;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dedede;
+  border-radius: 10px;
+} */
+
 iframe {
   filter: invert(5%) grayscale(1);
 }
@@ -30,12 +51,20 @@ iframe .gm-style-mtc {
   display: none;
 }
 
+.about-why-work .slick-initialized .slick-slide {
+  width: auto !important;
+}
+
+input[type='search']::-webkit-search-cancel-button {
+  display: none;
+}
+
 /* Our Work Process */
 
 .process-card h1 {
   font-size: 50px;
   font-weight: 700;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
   position: relative;
   -webkit-text-stroke-width: 1.5px;
   -webkit-text-stroke-color: #141414;
@@ -54,6 +83,13 @@ input[type='number']::-webkit-outer-spin-button {
 
 .address svg {
   width: 15.7%;
+}
+
+.technology-hero {
+  position: relative;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: rgb(255 255 255 / 30%);
+  color: transparent;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 639px) {
@@ -97,18 +133,6 @@ input[type='number']::-webkit-outer-spin-button {
   .process-card h1 {
     font-size: 46px;
   }
-  .footerTitle {
-    padding-left: 85px !important;
-  }
-
-  .footerTitle::after {
-    left: 4rem !important;
-  }
-  .footerTitle {
-    padding-left: 80px !important;
-    padding-right: 0;
-    font-size: 20px !important;
-  }
   .address svg {
     width: 6.2%;
   }
@@ -123,12 +147,14 @@ input[type='number']::-webkit-outer-spin-button {
     line-height: 40px;
   }
 
-  .footerTitle {
-    padding-left: 0 !important;
-    padding-right: 45px;
-  }
   .address svg {
     width: 11.1%;
+  }
+  #combination .slick-arrow.slick-prev {
+    left: 45% !important;
+  }
+  #combination .slick-arrow.slick-next {
+    right: 46% !important;
   }
 }
 @media only screen and (min-width: 640px) and (max-width: 767px) {
@@ -139,11 +165,6 @@ input[type='number']::-webkit-outer-spin-button {
   .process-card h1 {
     font-size: 46px;
   }
-
-  .footerTitle {
-    padding-left: 0 !important;
-    padding-right: 0px;
-  }
 }
 @media only screen and (min-width: 480px) and (max-width: 639px) {
   .container {
@@ -151,9 +172,6 @@ input[type='number']::-webkit-outer-spin-button {
   }
   .about_box {
     width: 100%;
-  }
-  .footerTitle {
-    padding-left: 0 !important;
   }
   .process-card h1 {
     margin-bottom: 10px;
@@ -166,10 +184,6 @@ input[type='number']::-webkit-outer-spin-button {
   .container {
     max-width: 100%;
   }
-
-  .footerTitle {
-    padding-left: 0 !important;
-  }
   .process-card h1 {
     margin-bottom: 10px;
     font-size: 26px;
@@ -181,6 +195,21 @@ input[type='number']::-webkit-outer-spin-button {
   }
   .client_img {
     background-image: none !important;
+  }
+
+  .why-work .slick-slider .slick-prev {
+    left: 40% !important;
+  }
+
+  .why-work .slick-slider .slick-next {
+    left: 50% !important;
+  }
+
+  #combination .slick-arrow.slick-prev {
+    left: 39% !important;
+  }
+  #combination .slick-arrow.slick-next {
+    right: 39% !important;
   }
 }
 
@@ -259,4 +288,7 @@ input[type='number']::-webkit-outer-spin-button {
 .border-remove > div {
   border-left: none;
   margin-bottom: 0px;
+}
+.faq > div {
+  padding-bottom: 25px;
 }

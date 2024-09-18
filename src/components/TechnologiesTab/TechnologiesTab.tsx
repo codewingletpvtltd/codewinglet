@@ -19,7 +19,7 @@ const Accordion: React.FC<AccordCompProps> = ({
   expanded,
 }) => (
   <div
-    className={`!bg-white accord-item accord-trigger accord-default relative cursor-pointer py-[30px] pr-[30px] pl-[25px] flex text-[24px] h-[460px] bg-[#f0ffee] transition-all ease-in-out duration-700 delay-75 overflow-hidden w-[90px] border ${
+    className={`!bg-white accord-item accord-trigger accord-default relative cursor-pointer py-[30px] pr-[30px] pl-[25px] flex text-6 h-[460px] bg-[#f0ffee] transition-all ease-in-out duration-700 delay-75 overflow-hidden w-[90px] border ${
       expanded == count ? 'accord-expand' : ''
     }`}
     onClick={() => handleChange(count)}
@@ -28,14 +28,14 @@ const Accordion: React.FC<AccordCompProps> = ({
       <h3
         className={`${
           expanded == count ? '!text-white' : ''
-        } font-400 text-[20px] leading-[1] p-0 m-0 rotate-180 [transition: all 200ms ease-in-out 50ms] [writing-mode:vertical-rl]`}
+        } font-400 text-5 leading-[1] p-0 m-0 rotate-180 [transition: all 200ms ease-in-out 50ms] [writing-mode:vertical-rl]`}
       >
         {title}
       </h3>
       <span
         className={`${
-          expanded == count ? '!text-white text-[40px]' : ''
-        }  absolute text-[20px] text-primary count-tab`}
+          expanded == count ? '!text-white text-10' : ''
+        }  absolute text-5 text-primary count-tab`}
       >
         {count}
       </span>
@@ -51,7 +51,7 @@ const Accordion: React.FC<AccordCompProps> = ({
         <h2 className='text-[50px] font-300 mb-[30px] text-left leading-tight heading-3'>
           {caption}
         </h2>
-        <div className='font-300 text-[30px] text-paragraph-16'>
+        <div className='font-300 text-h4 text-paragraph-16'>
           <p>
             <span>{content}</span>
           </p>

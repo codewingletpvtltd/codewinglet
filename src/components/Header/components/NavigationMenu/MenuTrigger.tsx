@@ -12,11 +12,11 @@ const MenuTrigger: FC<MenuTriggerProps> = ({
   hasChild = false,
 }) =>
   hasChild ? (
-    <span className='flex flex-row items-center cursor-pointer'>
+    <Link href={href} className='flex flex-row items-center cursor-pointer'>
       <Typography className='relative text-paragraph2Light  after:transition-all after:duration-500 after:ease-in-out text-white  hover:after:content hover:after:absolute after:w-0 hover:after:w-[calc(100%)] hover:after:h-[2px] hover:after:bg-white after:bottom-[-11px] after:left-0'>
         {label}
       </Typography>
-    </span>
+    </Link>
   ) : (
     <Link href={href} className='flex flex-row items-center'>
       <Typography className='relative text-paragraph2Light  after:transition-all after:duration-500 after:ease-in-out text-white  hover:after:content hover:after:absolute after:w-0 hover:after:w-[calc(100%)] hover:after:h-[2px] hover:after:bg-white after:bottom-[-11px] after:left-0'>

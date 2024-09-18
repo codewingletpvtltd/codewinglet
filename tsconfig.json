@@ -32,7 +32,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/app/technology/[...slug]"
+    "src/app/technology/[...slug]",
+    "src/modules/AboutUs/WhyWork/Statics.jsx"
   ],
   "exclude": ["node_modules"]
 }

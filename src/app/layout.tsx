@@ -1,10 +1,9 @@
 import { Metadata } from 'next';
 import Head from 'next/head';
 import React from 'react';
-import './globals.css';
-import './scss/main.css';
 
 import { COLORS } from '@codewinglet/constants';
+import './globals.css';
 
 export const metadata: Metadata = {
   title: 'Top Software Development Company India - Code Winglet Pvt. Ltd.',
@@ -24,7 +23,6 @@ export default function RootLayout({
         <meta name='theme-color' content={COLORS.primary} />
         <link rel='icon' type='image/ico' sizes='32x32' href='/favicon.ico' />
       </Head>
-
       <body className='font-primary bg-black'>{children}</body>
     </html>
   );

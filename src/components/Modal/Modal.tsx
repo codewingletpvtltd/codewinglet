@@ -31,7 +31,7 @@ const Modal: FC<ModalProps> = ({
     >
       <div className='bg-primary h-[6px]' />
 
-      <div className='grid grid-flow-row gap-[30px] pt-[20px] px-[36px] pb-[40px] bg-white'>
+      <div className='grid grid-flow-row gap-[30px] pt-5 px-9 pb-10 bg-white'>
         {showHeader && (
           <div className='flex justify-start items-center'>
             <Typography

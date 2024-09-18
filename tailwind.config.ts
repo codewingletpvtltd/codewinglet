@@ -40,9 +40,19 @@ export default {
       headerBoxBorder: '#DADADA',
       placeholderText: '#979797',
       transparent: 'transparent',
+      darkBlack: '#191919',
+      darkBorder: '#1d1d1d',
+      grayBorder: '#3b3b3b',
     },
     fontFamily: {
       primary: ['Poppins', 'sans-serif'],
+      playFair: ['Playfair', 'Display'],
+    },
+    backgroundImage: {
+      'dot-pattern': 'url("/assets/career/dotGrid.png")',
+    },
+    boxShadow: {
+      custom: '0px 4px 10px 0px rgba(159, 159, 159, 0.1)',
     },
     textDecorationThickness: {
       '2': '2px', // custom thickness of 4px

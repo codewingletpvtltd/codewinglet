@@ -12,7 +12,7 @@ export const info = [
         alt='LocationPin'
         width={50}
         height={50}
-        className='h-[40px] w-[90px] md:w-[100px] 2xl:w-[60px]'
+        className='h-10 w-[90px] md:w-[100px] 2xl:w-[60px]'
       />
     ),
     title: 'Address',

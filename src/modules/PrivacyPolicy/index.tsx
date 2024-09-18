@@ -1,3 +1,4 @@
+/* eslint-disable import/order */
 'use client';
 import Link from 'next/link';
 import { useRef } from 'react';
@@ -67,25 +68,29 @@ const PrivacyPolicy = () => {
 
   return (
     <>
-      <div className=' bg-bg mt-[35px] md:pb-[35px] pb-[15px] md:pt-20 lg:[position:_unset;] absolute md:top-[90px] top-[130px] w-full z-10'>
-        <div className='container w-full lg:px-[15px] sm:px-[30px] px-[20px] mx-auto'>
+      <div className='bg-bg lg:mt-[86px] md:mt-[66px] mt-[9px] py-[15px] md:py-[30px] lg:fixed lg:top-0 fixed md:top-[90px] top-[130px] w-full z-10'>
+        <div className='container w-full lg:px-[15px] sm:px-[30px] px-5 mx-auto'>
           <div>
             <SectionHeader
               title={<>Privacy policy</>}
-              headingClassName=''
+              headingClassName='lg:!text-h4 md:text-h5 text-subtitle1'
               descriptionClassName='hidden'
             />
           </div>
         </div>
       </div>
 
-      <div className=' bg-white pt-10 [scroll-behavior:_smooth;]'>
-        <div className='container w-full lg:px-[15px] sm:px-[30px] px-[20px] mx-auto lg:pt-0 md:pt-[280px] pt-[200px] relative pb-1'>
-          <div className='lg:flex block gap-[50px] items-start mb-[50px]'>
+      <div className='bg-white mt-[180px] [scroll-behavior:_smooth;]'>
+        <div className='container w-full lg:px-[15px] sm:px-[30px] px-5 mx-auto lg:pt-[50px] md:pt-[110px] pt-[60px] relative pb-1'>
+          <div className='lg:flex block gap-[100px] items-start mb-[50px] pt-0'>
             <ScrollHighlightNavbar navHeader={PolicyData} />
-            <div className='2xl:w-[65%] xl:w-[60%] w-full'>
+            <div className='2xl:w-[70%] xl:w-[67%] w-full'>
               {/* Introduction : */}
-              <div id='introduction' ref={introductionRef}>
+              <div
+                id='introduction'
+                ref={introductionRef}
+                className='scroll-mt-56'
+              >
                 <Typography className='text-subtitle2 border-b border-headerBoxBorder pb-[15px]'>
                   Introduction :
                 </Typography>
@@ -101,12 +106,17 @@ const PrivacyPolicy = () => {
                   otherwise obtain from you.
                 </Typography>
                 <Typography className='text-paragraph1ExtraLight text-secondary pb-10'>
-                  Make sure you are aware that by accessing and using
-                  http://www.codewinglet.com , you agree to the terms and
-                  conditions outlined in this privacy statement. Additionally,
-                  we frequently update our rules, so it's advisable to check
-                  this page sometimes to stay up to date on the most recent
-                  terms and conditions.
+                  Make sure you are aware that by accessing and using{' '}
+                  <Link
+                    href='http://codewinglet.com'
+                    className='text-paragraph1 text-primary'
+                  >
+                    http://codewinglet.com
+                  </Link>
+                  , you agree to the terms and conditions outlined in this
+                  privacy statement. Additionally, we frequently update our
+                  rules, so it's advisable to check this page sometimes to stay
+                  up to date on the most recent terms and conditions.
                 </Typography>
 
                 <ul className='grid gap-[30px] ml-5'>
@@ -156,7 +166,7 @@ const PrivacyPolicy = () => {
               </div>
 
               {/* Types of data collected : */}
-              <div className='mt-[50px]' id='types' ref={typesRef}>
+              <div className='mt-[50px] scroll-mt-56' id='types' ref={typesRef}>
                 <Typography
                   className='text-subtitle2 border-b border-headerBoxBorder pb-[15px]'
                   id='types'
@@ -216,7 +226,11 @@ const PrivacyPolicy = () => {
               </div>
 
               {/* Use of cookies : */}
-              <div className='mt-[50px]' id='cookies' ref={cookiesRef}>
+              <div
+                className='mt-[50px] scroll-mt-56'
+                id='cookies'
+                ref={cookiesRef}
+              >
                 <Typography className='text-subtitle2 border-b border-headerBoxBorder pb-[15px]'>
                   Use of cookies :
                 </Typography>
@@ -265,7 +279,11 @@ const PrivacyPolicy = () => {
               </div>
 
               {/* Uses the collected data : */}
-              <div className='mt-[50px]' id='collected' ref={collectedRef}>
+              <div
+                className='mt-[50px] scroll-mt-56'
+                id='collected'
+                ref={collectedRef}
+              >
                 <Typography className='text-subtitle2 border-b border-headerBoxBorder pb-[15px]'>
                   Uses the collected data :
                 </Typography>
@@ -315,7 +333,11 @@ const PrivacyPolicy = () => {
               </div>
 
               {/* Personal info storage & security : */}
-              <div className='mt-[50px]' id='personal' ref={personalRef}>
+              <div
+                className='mt-[50px] scroll-mt-56'
+                id='personal'
+                ref={personalRef}
+              >
                 <Typography className='text-subtitle2 border-b border-headerBoxBorder pb-[15px]'>
                   Personal info storage & security :
                 </Typography>
@@ -336,7 +358,11 @@ const PrivacyPolicy = () => {
               </div>
 
               {/* Transfer of data : */}
-              <div className='mt-[50px]' id='transfer' ref={transferRef}>
+              <div
+                className='mt-[50px] scroll-mt-56'
+                id='transfer'
+                ref={transferRef}
+              >
                 <Typography className='text-subtitle2 border-b border-headerBoxBorder pb-[15px]'>
                   Transfer of data :
                 </Typography>
@@ -370,7 +396,11 @@ const PrivacyPolicy = () => {
               </div>
 
               {/* Disclosure of data : */}
-              <div className='mt-[50px]' id='disclosure' ref={disclosureRef}>
+              <div
+                className='mt-[50px] scroll-mt-56'
+                id='disclosure'
+                ref={disclosureRef}
+              >
                 <Typography className='text-subtitle2 border-b border-headerBoxBorder pb-[15px]'>
                   Disclosure of data :
                 </Typography>
@@ -485,7 +515,11 @@ const PrivacyPolicy = () => {
               </div>
 
               {/* Amendments to this policy : */}
-              <div className='mt-[50px]' id='amendments' ref={amendmentsRef}>
+              <div
+                className='mt-[50px] scroll-mt-56'
+                id='amendments'
+                ref={amendmentsRef}
+              >
                 <Typography className='text-subtitle2 border-b border-headerBoxBorder pb-[15px]'>
                   Amendments to this policy :
                 </Typography>
@@ -506,7 +540,7 @@ const PrivacyPolicy = () => {
 
               {/* Your acceptance of this policy : */}
               <div
-                className='mt-[50px] mb-[50px]'
+                className='mt-[50px] scroll-mt-56 mb-[50px]'
                 id='acceptance'
                 ref={acceptanceRef}
               >
@@ -515,14 +549,27 @@ const PrivacyPolicy = () => {
                 </Typography>
                 <Typography className='text-paragraph1ExtraLight text-secondary mt-5'>
                   You agree to this privacy statement by using this website. It
-                  is recommended that you refrain from using
-                  http://Codewinglet.com if you do not want to accept the terms
-                  stated in this policy or if you do not desire to accept them.
+                  is recommended that you refrain from using&nbsp;
+                  <Link
+                    href='http://codewinglet.com'
+                    className='text-paragraph1 text-primary'
+                  >
+                    http://codewinglet.com
+                  </Link>{' '}
+                  if you do not want to accept the terms stated in this policy
+                  or if you do not desire to accept them.
                 </Typography>
                 <Typography className='text-paragraph1ExtraLight text-secondary py-5'>
                   After we make changes to this privacy policy, your continuing
-                  use of our website, http://www.codewinglet.com, will be taken
-                  as your agreement to the updated terms and conditions.
+                  use of our website,{' '}
+                  <Link
+                    className='text-primary text-paragraph1'
+                    href='https://www.codewinglet.com'
+                  >
+                    https://www.codewinglet.com
+                  </Link>
+                  , will be taken as your agreement to the updated terms and
+                  conditions.
                 </Typography>
               </div>
             </div>
