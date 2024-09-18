@@ -6,4 +6,5 @@ export interface TextFieldProps extends InputHTMLAttributes<HTMLInputElement> {
   helperText?: string;
   fullWidth?: boolean;
   labelClassName?: string;
+  description?: string;
 }

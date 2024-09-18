@@ -1,3 +1,4 @@
+/* eslint-disable import/order */
 import { ClientTestimonials } from '@codewinglet/components';
 import ITService from '@codewinglet/components/ITService/ITService';
 import RelatedFaq from '@codewinglet/components/RelatedFaq';

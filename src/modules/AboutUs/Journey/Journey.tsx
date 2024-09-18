@@ -8,7 +8,7 @@ import Image from 'next/image';
 
 const Journey = () => (
   <>
-    <div className='relative bg-white lg:py-20 md:py-[60px] py-[30px] sm:pb-[inherit] pb-[70px] lg:mt-[86px] mt-[90px]'>
+    <div className='relative bg-white lg:py-20 md:py-[60px] py-[30px] sm:pb-[inherit] pb-[70px] lg:mt-[142px] md:mt-[176px] mt-[221px]'>
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
         <div className='lg:flex block'>
           <div className='lg:w-[598px] w-full'>
@@ -25,15 +25,15 @@ const Journey = () => (
 
             <div className='lg:flex group cursor-pointer text-primary items-center group gap-2.5 hidden'>
               <Link
-                href='https://maps.app.goo.gl/6W7ns2r5VzPFGmkA8'
-                target='_blank'
+                href='#exploreNow'
+                target='_parent'
                 className='text-paragraph2 underline'
               >
                 Explore now
               </Link>
               <Arrow className='group-hover:transition-all duration-700 group-hover:translate-x-1' />
             </div>
-            <div className='lg:flex md:hidden flex md:justify-normal justify-between md:gap-[60px] gap-[135px] 2xl:mt-[279px] lg:mt-56 md:relative absolute bottom-5'>
+            <div className='lg:flex md:hidden flex md:justify-normal justify-between md:gap-[60px] gap-20 2xl:mt-[279px] lg:mt-56 md:relative absolute bottom-5'>
               <Image
                 src='/assets/AboutUs/darkGoogle.png'
                 alt='darkGoogle'

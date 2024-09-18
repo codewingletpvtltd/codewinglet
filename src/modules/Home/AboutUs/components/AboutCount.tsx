@@ -1,5 +1,6 @@
-import { useEffect, useState } from 'react';
+/* eslint-disable import/order */
 import PropTypes from 'prop-types';
+import { useEffect, useState } from 'react';
 import AboutCounter from './AboutCounter';
 
 interface Props {

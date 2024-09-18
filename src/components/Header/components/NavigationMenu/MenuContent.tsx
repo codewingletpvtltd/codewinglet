@@ -1,8 +1,7 @@
 import { FC } from 'react';
-// import Image from 'next/image';
+
 import { getClassNames } from '@codewinglet/utils';
-// import Typography from '@codewinglet/components/Typography';
-// import { whyjoin } from '@codewinglet/assets';
+
 import { MenuContentProps } from '../../types';
 
 const MenuContent: FC<MenuContentProps> = ({

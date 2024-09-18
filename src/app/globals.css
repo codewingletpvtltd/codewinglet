@@ -224,6 +224,49 @@ input[type='number']::-webkit-outer-spin-button {
   animation: slideUp 400ms ease-out;
 }
 
+.hurryUp-text {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 127, 82, 1) 0%,
+    rgba(243, 64, 94, 1) 16%,
+    rgba(224, 45, 103, 1) 32%,
+    rgba(198, 62, 128, 1) 44%,
+    rgba(213, 87, 123, 1) 58%,
+    rgba(186, 94, 194, 1) 72%,
+    rgba(124, 81, 185, 1) 86%,
+    rgba(84, 53, 144, 1) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: zoom-in-zoom-out 2s ease-out infinite;
+}
+
+.hurry-up-animation {
+  background-size: 500% auto;
+  animation: textShine 5s ease-in-out infinite alternate;
+}
+
+@keyframes textShine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
 @keyframes slideDown {
   from {
     height: 0;

@@ -1,6 +1,7 @@
 'use client';
-import { FC } from 'react';
 import Image from 'next/image';
+import { FC } from 'react';
+
 import { Typography } from '@codewinglet/components';
 
 type AboutUsCardProps = {

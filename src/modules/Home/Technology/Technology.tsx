@@ -1,3 +1,4 @@
+/* eslint-disable import/order */
 'use client';
 import { SectionHeader } from '@codewinglet/components';
 import Reveal from '@codewinglet/components/Reveal';

@@ -5,13 +5,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const OurTeam = () => (
-  <div
-    className='bg-white lg:py-20 md:py-[60px] py-10 scroll-mt-40'
-    id='employee'
-  >
+  <div className='bg-bg lg:py-20 md:py-[60px] py-10 scroll-mt-56' id='employee'>
     <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto flex lg:flex-row flex-col lg:gap-[100px] gap-10 lg:items-center'>
       <div className='flex flex-col justify-between lg:order-1 order-2'>
-        <div className='bg-bg lg:px-[74px] md:px-[50px] px-5 lg:py-[85px] md:py-[70px] py-[30px] lg:mx-0 mx-5 2xl:w-[624px] lg:w-[592px] w-auto lg:h-[743px] relative flex flex-col justify-between'>
+        <div className='bg-white lg:px-[74px] md:px-[50px] px-5 lg:py-[85px] md:py-[70px] py-[30px] lg:mx-0 mx-5 2xl:w-[624px] lg:w-[592px] w-auto lg:h-[743px] relative flex flex-col justify-between'>
           {/* First */}
           <div className='flex md:items-center justify-between'>
             <div>
