@@ -10,17 +10,16 @@ import SectionHeader from '../../../components/SectionHeader/SectionHeader';
 
 const Insights = () => (
   <>
-    <div className='bg-black lg:py-20 md:py-[60px] py-10'>
+    <div
+      className='bg-black lg:py-20 md:py-[60px] py-10 scroll-mt-[142px]'
+      id='exploreNow'
+    >
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
         <Reveal>
           <SectionHeader
             title={<>Powerful data insights</>}
-            description={
-              <>
-                We boost business revenue by an average of 90% in the first
-                year!
-              </>
-            }
+            description='Driving Transformation with Software Solutions that Enhance
+                Agility, Scalability, and Growth'
             headingClassName='text-white'
             descriptionClassName='text-secondary'
           />

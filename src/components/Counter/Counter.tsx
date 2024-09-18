@@ -14,12 +14,12 @@ type ListItemProps = {
 
 const data = [
   {
-    number: 150,
-    label: 'Happy Clients across the globe',
+    number: 60,
+    label: 'Happy Clients',
     icon: '/assets/icons/people.svg',
   },
   {
-    number: 250,
+    number: 80,
     label: 'Successful Projects',
     icon: '/assets/icons/folder-favorite.svg',
   },

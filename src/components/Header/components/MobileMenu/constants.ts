@@ -398,7 +398,7 @@ export const navMenu = [
   //   left: '2xl:left-[-32.1rem] xl:left-[-26.9rem]',
   // },
   {
-    path: '/technology',
+    path: '',
     label: 'Technology',
     category: true,
     children: technology,
@@ -417,7 +417,7 @@ export const navMenu = [
   },
   {
     label: 'Blogs',
-    path: '/blogs',
+    path: '',
   },
   {
     path: 'about-us',

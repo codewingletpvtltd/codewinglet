@@ -17,7 +17,6 @@ export { default as Modal } from './Modal';
 export { default as SectionHeader } from './SectionHeader';
 export { default as ServiceCard } from './ServiceCard';
 export { default as Slider } from './Slider';
-export * from './Snackbar';
 export { default as TechnologiesTab } from './TechnologiesTab';
 export { default as TextField } from './TextField/TextField';
 export { default as Textarea } from './Textarea';

@@ -1,24 +1,32 @@
 'use client';
+
+import Airtable from 'airtable';
+import * as CompanyEmailValidator from 'company-email-validator';
 import { FormEvent, useState } from 'react';
-import axios from 'axios';
-import { useSnackbar } from '@codewinglet/components';
-import { STRAPI_API_URL } from '@codewinglet/constants/constants';
+import { toast } from 'react-toastify';
 
 const getIsValidEmail = (email: string) =>
-  /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/.test(email);
+  CompanyEmailValidator.isCompanyEmail(email);
+
+const initialData = {
+  name: '',
+  email: '',
+  phone: '',
+  service: '',
+  message: '',
+  errors: { email: '', phone: '', name: '', message: '' },
+  isSubmitted: false,
+};
+
+const AIRTABLE_BASE_ID = 'app9MMhABzNbnRCl2';
 
 const useGetInTouch = () => {
-  const { showSnackbar } = useSnackbar();
+  const base = new Airtable({
+    apiKey: process.env.AIRTABLE_SECRET_API_TOKEN,
+  }).base(AIRTABLE_BASE_ID);
+
   const [isLoading, setIsLoading] = useState(false);
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    service: '',
-    message: '',
-    errors: { email: '', phone: '', name: '', message: '' },
-    isSubmitted: false,
-  });
+  const [formData, setFormData] = useState(initialData);
 
   const onChangeFormData = (value: object) => {
     setFormData(Object.assign({ ...formData }, value));
@@ -77,6 +85,7 @@ const useGetInTouch = () => {
 
   const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setIsLoading(true);
     const isValid = validateFields(formData);
 
     if (!formData.isSubmitted) {
@@ -84,45 +93,31 @@ const useGetInTouch = () => {
     }
 
     if (isValid) {
-      setIsLoading(true);
-
-      await axios.post('/api/slack-alert', {
-        data: {
-          email: formData.email,
-          message: formData.message,
-          name: formData.name,
-          phone: formData.phone,
-        },
-      });
-
-      await axios
-        .post(STRAPI_API_URL + '/api/contacts', {
-          data: {
-            ...formData,
-            source_url: window.location.origin,
+      base('Contact US').create(
+        [
+          {
+            fields: {
+              Name: formData.name,
+              Email: formData.email,
+              'Contact Number': formData.phone,
+              Description: formData.message,
+            },
           },
-        })
-        .then(() => {
-          showSnackbar({
-            msg: 'Thank you for reaching out to us! will get back to you.',
-            type: 'success',
+        ],
+        function (err, records) {
+          if (err) {
+            setIsLoading(false);
+            toast.error(err.message);
+          }
+          records?.forEach(function () {
+            setIsLoading(false);
+            setFormData(initialData);
+            toast.success(
+              'Thank you for your inquiry. We will respond shortly.'
+            );
           });
-
-          setFormData({
-            name: '',
-            email: '',
-            phone: '',
-            service: '',
-            message: '',
-            errors: { email: '', phone: '', message: '', name: '' },
-            isSubmitted: true,
-          });
-          setIsLoading(false);
-        })
-        .catch((error) => {
-          showSnackbar({ msg: error.message, type: 'error' });
-          setIsLoading(false);
-        });
+        }
+      );
     }
   };
 

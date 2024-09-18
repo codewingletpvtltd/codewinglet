@@ -3,21 +3,6 @@
 import { useState } from 'react';
 import SectionHeader from '../../../components/SectionHeader';
 
-const designation = [
-  {
-    title: 'All Job',
-  },
-  {
-    title: 'Designing',
-  },
-  {
-    title: 'Developing',
-  },
-  {
-    title: 'QA tester',
-  },
-];
-
 const CurrentOpenings = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const totalPages = 5;
@@ -29,13 +14,13 @@ const CurrentOpenings = () => {
   return (
     <>
       <div
-        className='bg-white lg:py-20 md:py-[60px] py-10 scroll-mt-40'
+        className='bg-white lg:py-20 md:py-[60px] py-10 scroll-mt-56'
         id='jobs'
       >
         <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
           <SectionHeader
             title={<>Current job openings</>}
-            description='Customers. Empower your business to deliver exactly what users crave'
+            description='Discover Your Next Career Opportunity: Explore Our Latest Job Openings.'
             descriptionClassName='text-secondary md:text-left text-center'
             headingClassName='md:text-left text-center'
           />

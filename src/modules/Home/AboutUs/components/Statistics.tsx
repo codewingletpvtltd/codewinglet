@@ -1,3 +1,4 @@
+/* eslint-disable import/order */
 'use client';
 import { Typography } from '@codewinglet/components';
 import Reveal from '@codewinglet/components/Reveal';
@@ -10,11 +11,11 @@ type ListItemProps = {
 
 const data = [
   {
-    number: 150,
-    label: 'Happy Clients across the globe',
+    number: 60,
+    label: 'Happy Clients',
   },
   {
-    number: 250,
+    number: 80,
     label: 'Successful Projects',
   },
   {

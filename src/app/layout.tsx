@@ -1,8 +1,9 @@
-import React from 'react';
 import { Metadata } from 'next';
-import './globals.css';
 import Head from 'next/head';
+import React from 'react';
+
 import { COLORS } from '@codewinglet/constants';
+import './globals.css';
 
 export const metadata: Metadata = {
   title: 'Top Software Development Company India - Code Winglet Pvt. Ltd.',

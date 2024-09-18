@@ -119,7 +119,7 @@ const ContactUs = () => {
                   formData={formData}
                   onChangeFormData={onChangeFormData}
                   onSubmit={onSubmit}
-                  isDisabled={isLoading}
+                  isLoading={isLoading}
                 />
               </Reveal>
             </div>

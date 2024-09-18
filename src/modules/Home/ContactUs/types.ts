@@ -21,5 +21,5 @@ export interface FormProps {
   };
   onChangeFormData: (e: object) => void;
   onSubmit: (e: FormEvent<HTMLFormElement>) => void;
-  isDisabled: boolean;
+  isLoading: boolean;
 }

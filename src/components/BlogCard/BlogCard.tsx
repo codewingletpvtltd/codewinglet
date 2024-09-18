@@ -1,6 +1,7 @@
 import classNames from 'classnames';
 import Image from 'next/image';
 import { FC } from 'react';
+
 import Typography from '../Typography';
 import { BlogCardProps } from './types';
 

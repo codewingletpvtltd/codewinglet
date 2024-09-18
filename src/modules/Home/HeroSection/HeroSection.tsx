@@ -24,7 +24,7 @@ const sequence = [
 ];
 
 const HeroSection = () => (
-  <div className='relative bg-transparent mb-0 h-[calc(100vh-78px)] mt-[78px] flex flex-col justify-between hero'>
+  <div className='relative bg-transparent mb-0 md:h-[calc(100vh-156px)] h-[calc(100vh-170px)] mt-[206px] flex flex-col justify-between hero'>
     <div className='box'>
       <span style={{ animationDelay: '1s' }}></span>
       <span style={{ animationDelay: '2s' }}></span>
@@ -62,7 +62,7 @@ const HeroSection = () => (
 
         <Button
           variant='outline'
-          className='xl:w-[250px] md:w-[229px] w-[203px] block m-auto md:py-[15px] py-2.5'
+          className='xl:w-[250px] md:w-[229px] w-[203px] block m-auto'
         >
           <Link
             href='/contact-us'

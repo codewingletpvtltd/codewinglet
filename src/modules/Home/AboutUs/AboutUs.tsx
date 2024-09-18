@@ -1,6 +1,7 @@
 'use client';
 import { SectionHeader, Typography } from '@codewinglet/components';
 import Reveal from '@codewinglet/components/Reveal';
+
 import AboutUsCard from './components/AboutUsCard';
 import Statistics from './components/Statistics';
 

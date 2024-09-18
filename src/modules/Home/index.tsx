@@ -1,6 +1,6 @@
-/* eslint-disable import/order */
-import { ClientTestimonials } from '@codewinglet/components';
 import dynamic from 'next/dynamic';
+
+import { ClientTestimonials } from '@codewinglet/components';
 const HeroSection = dynamic(() => import('./HeroSection'));
 const OurServices = dynamic(() => import('./OurServices'));
 const AboutUs = dynamic(() => import('./AboutUs'));

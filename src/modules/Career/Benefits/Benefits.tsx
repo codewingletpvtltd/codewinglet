@@ -8,41 +8,47 @@ import SectionHeader from '../../../components/SectionHeader/SectionHeader';
 
 const workData = [
   {
-    image: '/assets/career/time.svg',
-    title: 'Paid time off',
-    description: 'Experience our vibrant, welcoming working culture.',
+    image: '/assets/career/flexible.svg',
+    title: 'Flexible work hours',
+    description:
+      'Employees can adjust their work schedules to fit their personal lives, ensuring a better work-life balance.',
   },
   {
-    image: '/assets/career/politics.svg',
-    title: 'No politics',
-    description: 'Experience our vibrant, welcoming working culture.',
+    image: '/assets/career/LeaveEncashment.svg',
+    title: 'Leave Encashment',
+    description:
+      'Employees can convert unused paid leave days into monetary compensation.',
   },
   {
-    image: '/assets/career/motivated.svg',
-    title: 'Motivated team',
-    description: 'Experience our vibrant, welcoming working culture.',
+    image: '/assets/career/Professional.svg',
+    title: 'Professional Development',
+    description:
+      'Access to online courses and certification programs allows employees to grow their skills.',
   },
   {
-    image: '/assets/career/celebration.svg',
-    title: 'Weekly celebration',
-    description: 'Experience our vibrant, welcoming working culture.',
+    image: '/assets/career/working.svg',
+    title: '5 Day a week',
+    description:
+      'We believe in maintaining a healthy work-life balance, giving you the time to relax and refresh.',
   },
   {
-    image: '/assets/career/time.svg',
-    title: 'Collaboration',
-    description: 'Experience our vibrant, welcoming working culture.',
+    image: '/assets/career/Friendly.svg',
+    title: 'Friendly and stress-free environment',
+    description:
+      'A supportive workplace where collaboration and well-being are prioritized, helping employees stay relaxed and productive.',
   },
   {
-    image: '/assets/career/grow.svg',
-    title: 'Grow 1% everyday',
-    description: 'Experience our vibrant, welcoming working culture.',
+    image: '/assets/career/Employee.svg',
+    title: 'Employee engagement activities',
+    description:
+      'Team-building events, workshops, and social gatherings to foster collaboration and enhance workplace culture.',
   },
 ];
 
 const Benefits = () => (
   <>
     <div
-      className='bg-white lg:py-20 md:py-[60px] py-10 scroll-mt-40'
+      className='bg-white lg:py-20 md:py-[60px] py-10 scroll-mt-56'
       id='perks'
     >
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto lg:flex block gap-[70px]'>
@@ -53,11 +59,12 @@ const Benefits = () => (
               title={<>Perks & benefits</>}
               description={
                 <>
-                  in today's fast-paced digital world, mobile apps are the go-to
-                  solution for businesses to engage with customers. Empower your
-                  business to deliver exactly what users crave. <br /> <br /> in
-                  today's fast-paced digital world, mobile apps are the go-to
-                  solution for businesses to engage.
+                  At Codewinglet, we believe that happy, healthy, and motivated
+                  employees are the foundation of our success. That’s why we
+                  offer a comprehensive range of perks and benefits designed to
+                  support your personal and professional growth. From
+                  competitive salaries to work-life balance initiatives, we
+                  ensure you have everything you need to thrive.
                 </>
               }
               descriptionClassName='text-secondary lg:!text-subtitle2Light md:!text-paragraph1ExtraLight !text-tagExtraLight'
@@ -92,7 +99,7 @@ const Benefits = () => (
                   width={32}
                   height={32}
                 />
-                <Typography className='md:text-paragraph1 text-tag md:pt-10 pt-5 pb-1.5'>
+                <Typography className='md:text-paragraph1 text-tag md:pt-4 pt-4 pb-1.5'>
                   {workData.title}
                 </Typography>
                 <Typography className='md:text-paragraph2Light text-tagExtraLight text-placeholderText'>

@@ -22,16 +22,8 @@ const designation = [
     path: '#jobs',
   },
   {
-    title: 'Life @codewinglet',
-    path: '#life',
-  },
-  {
     title: 'Insights from employee',
     path: '#employee',
-  },
-  {
-    title: 'FAQ',
-    path: '#faq',
   },
 ];
 
@@ -106,7 +98,7 @@ const CareerMenu = () => {
 
   return (
     <>
-      <div className='bg-white pt-2.5 md:pt-10 lg:mt-[86px] md:mt-[90px] mt-[78px] border-b border-headerBoxBorder fixed w-full z-10'>
+      <div className='bg-white pt-2.5 md:pt-10 lg:mt-[142px] md:mt-[176px] mt-[221px] border-b border-headerBoxBorder fixed w-full z-10'>
         <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
           <div className='flex lg:overscroll-x-none overflow-x-auto'>
             {designation.map(({ title, path }, index) => (
