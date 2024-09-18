@@ -107,7 +107,7 @@ const OurTeam = () => (
             rel='noopener noreferrer'
             className='flex items-center justify-center gap-3'
           >
-            Explore Opportunities
+            See all opportunities
             <Arrow />
           </Link>
         </Button>
@@ -132,7 +132,7 @@ const OurTeam = () => (
             rel='noopener noreferrer'
             className='flex items-center justify-center gap-3'
           >
-            Explore Opportunities
+            See all opportunities
             <Arrow />
           </Link>
         </Button>
