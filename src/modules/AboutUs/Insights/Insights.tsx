@@ -18,12 +18,8 @@ const Insights = () => (
         <Reveal>
           <SectionHeader
             title={<>Powerful data insights</>}
-            description={
-              <>
-                We boost business revenue by an average of 90% in the first
-                year!
-              </>
-            }
+            description='Driving Transformation with Software Solutions that Enhance
+                Agility, Scalability, and Growth'
             headingClassName='text-white'
             descriptionClassName='text-secondary'
           />
