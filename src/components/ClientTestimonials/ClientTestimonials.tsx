@@ -1,6 +1,7 @@
 /* eslint-disable import/order */
 import Reveal from '@codewinglet/components/Reveal';
 import Image from 'next/image';
+
 import SectionHeader from '../SectionHeader/SectionHeader';
 import Slider from '../Slider/Slider';
 import Typography from '../Typography/Typography';
@@ -10,7 +11,7 @@ import { testimonials } from './constants';
 
 const ClientTestimonials = () => (
   <div className='lg:py-20 md:py-[60px] py-10 scroll-mt-40' id='testimonial'>
-    <div className='container w-full lg:px-[15px] sm:px-[30px] px-[15px] mx-auto'>
+    <div className='container w-full lg:px-[15px] sm:px-[30px] px-5 mx-auto'>
       <Reveal>
         <SectionHeader
           title={<>Testimonials</>}
@@ -53,9 +54,9 @@ const ClientTestimonials = () => (
               <div key={index}>
                 <div
                   key={`testimonials-${data.id}-${index}`}
-                  className='z-10 bg-primary lg:py-[42px] lg:px-[57px] md:p-[30px] sm:py-[22px] sm:px-[37px] p-6 lg:!w-[754px] md:!w-[455px] !w-[98%] sm:h-auto h-auto xl:mt-[170px] lg:mt-[350px] md:mt-[180px] sm:mt-[370px] mt-0 lg:mx-0 md:mx-0 !block mx-auto'
+                  className='z-10 bg-primary lg:p-10 md:p-[30px] sm:py-[22px] sm:px-[37px] p-6 lg:!w-[754px] md:!w-[455px] !w-[98%] sm:h-auto h-auto xl:mt-[170px] lg:mt-[350px] md:mt-[180px] sm:mt-[370px] mt-0 lg:mx-0 md:mx-0 !block mx-auto'
                 >
-                  <Typography className='lg:text-subtitle1Light md:text-[17px] text-tagLight text-white'>
+                  <Typography className='lg:text-subtitle2Light md:text-[17px] text-tagLight text-white'>
                     {data.comment}
                   </Typography>
                   <ClientDetails

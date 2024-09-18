@@ -24,7 +24,7 @@ const MobileListItem: FC<ListItemProps> = ({
     {!hasMenu && (
       <li className='list-none'>
         <span
-          className={`flex flex-row mb-[30px] items-${
+          className={`flex flex-row mb-[45px] items-${
             description ? 'start' : 'center'
           } cursor-pointer`}
           aria-label='menu-item'
@@ -42,7 +42,7 @@ const MobileListItem: FC<ListItemProps> = ({
           <div>
             <Typography
               className={getClassNames(
-                ' capitalize md:ml-[15px] ml-3 text-[18px] md:text-subtitle2  text-paragraph2 text-primary',
+                'capitalize md:ml-[15px] ml-3 md:text-subtitle2 text-paragraph2 text-primary',
                 labelClassName
               )}
             >

@@ -1,7 +1,7 @@
-/* eslint-disable import/order */
-import { Typography } from '@codewinglet/components';
 import Image from 'next/image';
 import Link from 'next/link';
+
+import { Typography } from '@codewinglet/components';
 
 export const info = [
   {

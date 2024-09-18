@@ -1,3 +1,4 @@
+/* eslint-disable import/order */
 /* eslint-disable quotes */
 // eslint-disable-next-line import/order
 import { Arrow } from '@codewinglet/assets';

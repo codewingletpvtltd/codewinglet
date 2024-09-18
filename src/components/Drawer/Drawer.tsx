@@ -1,5 +1,7 @@
 import React from 'react';
+
 import { getClassNames } from '@codewinglet/utils';
+
 import { DrawerProps } from './types';
 
 const Drawer: React.FC<DrawerProps> = ({
@@ -24,7 +26,7 @@ const Drawer: React.FC<DrawerProps> = ({
     </div>
     {showMenu && !disableBackdrop && (
       <div
-        className='left-0 z-0 w-full h-full fixed top-0 bg-[#000000e6]'
+        className='left-0 z-0 w-full h-full fixed top-0 bg-[#000000cc]'
         onClick={onMenu}
       ></div>
     )}

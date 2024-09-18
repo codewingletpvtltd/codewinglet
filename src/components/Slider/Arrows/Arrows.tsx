@@ -1,7 +1,8 @@
-/* eslint-disable import/order */
+import { FC } from 'react';
+
 import { Arrow } from '@codewinglet/assets';
 import { getClassNames } from '@codewinglet/utils';
-import { FC } from 'react';
+
 import { _arrowPosition, verticalPosition } from '../constants';
 import { ArrowProps } from '../types';
 
@@ -12,7 +13,7 @@ const Arrows: FC<ArrowProps> = ({
   <>
     <div
       className={getClassNames(
-        'flex flex-row items-center gap-[18px] md:absolute bottom-[8rem] left-auto justify-center right-0 xl:bottom-[4rem] -z-0 md:mt-0 mt-4',
+        'flex flex-row items-center gap-[18px] md:absolute bottom-[8rem] left-auto justify-center right-0 xl:bottom-4 -z-10 md:mt-0 mt-4',
         arrowPosition.vertical
           ? verticalPosition[arrowPosition.vertical]
           : 'justify-end md:flex hidden'

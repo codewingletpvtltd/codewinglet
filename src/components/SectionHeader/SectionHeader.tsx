@@ -1,6 +1,7 @@
-'use client';
 import React from 'react';
+
 import { getClassNames } from '@codewinglet/utils';
+
 import Typography from '../Typography';
 import { SectionHeaderProps } from './types';
 
@@ -15,7 +16,7 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
   <div>
     <Typography
       className={getClassNames(
-        'mb-41 md:text-h2 sm:text-h3 text-subtitle2 text-primary !font-500',
+        'mb-41 md:text-[36px] sm:text-h3 text-subtitle2 text-primary !font-500',
         headingClassName
       )}
     >
@@ -24,7 +25,7 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
     {showDescription && (
       <Typography
         className={getClassNames(
-          'text-primary lg:text-subtitle2Light md:text-subtitle2Light text-tagLight mt-[9px] md:mt-[4px]',
+          'text-primary lg:text-subtitle2Light md:text-subtitle2Light text-tagLight mt-1.5',
           descriptionTextWrap ? 'md:w-[70%] lg:w-[40%]' : '',
           descriptionClassName
         )}

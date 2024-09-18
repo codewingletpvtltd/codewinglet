@@ -1,12 +1,13 @@
 'use client';
 import { FC, useRef, useState } from 'react';
 import SlickSlider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
+
 import 'slick-carousel/slick/slick-theme.css';
-import { SliderProps } from './types';
+import 'slick-carousel/slick/slick.css';
+import { Arrows } from './Arrows';
 import { defaultSettings } from './config';
 import { _arrowPosition } from './constants';
-import { Arrows } from './Arrows';
+import { SliderProps } from './types';
 
 const Slider: FC<SliderProps> = ({
   children,

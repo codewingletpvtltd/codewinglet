@@ -253,7 +253,7 @@ const technology: ChildItemType = [
   },
   {
     path: '',
-    label: 'DevOps/Cloud',
+    label: 'DevOps',
     menu: [
       {
         path: '/technology/aws',
@@ -398,7 +398,7 @@ export const navMenu = [
   //   left: '2xl:left-[-32.1rem] xl:left-[-26.9rem]',
   // },
   {
-    path: '/technology',
+    path: '',
     label: 'Technology',
     category: true,
     children: technology,
@@ -409,10 +409,6 @@ export const navMenu = [
   //   path: '/not-found',
   //   label: 'Portfolio',
   // },
-  // {
-  //   path: '/career',
-  //   label: 'Career',
-  // },
   {
     path: 'career',
     label: 'Career',
@@ -421,6 +417,7 @@ export const navMenu = [
   },
   {
     label: 'Blogs',
+    path: '',
   },
   {
     path: 'about-us',

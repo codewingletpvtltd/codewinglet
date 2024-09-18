@@ -1,4 +1,5 @@
 import { FC } from 'react';
+
 import Typography from '../Typography';
 import { FileUploadProps } from './types';
 

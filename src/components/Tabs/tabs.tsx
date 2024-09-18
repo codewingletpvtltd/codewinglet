@@ -1,9 +1,10 @@
 /* eslint-disable import/order */
 'use client';
 
-import { cn } from '@codewinglet/utils';
 import * as TabsPrimitive from '@radix-ui/react-tabs';
 import * as React from 'react';
+
+import { cn } from '@codewinglet/utils';
 
 const Tabs = React.forwardRef<
   React.ElementRef<typeof TabsPrimitive.Root>,
@@ -39,7 +40,7 @@ const TabsTrigger = React.forwardRef<
   <TabsPrimitive.Trigger
     ref={ref}
     className={cn(
-      'inline-flex items-center gap-2.5 xl:gap-2.5 2xl:gap-3 justify-center whitespace-nowrap text-primary px-3 py-1.5 text-[14px] font-primary font-700 ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 relative after:content-[""] after:h-[2px] after:w-full after:absolute data-[state=active]:after:bg-primary after:bottom-0 :text-primary md:justify-start md:pr-[37px] md:data-[state=active]:b-r-[2px] md:py-2.5 md:after:h-[100%] md:after:w-[4px] md:after:top-0 md:after:right-[-2.8px] border-lightBlack border-b-[1px] md:border-b-0 md:border-r-[1px] lg:text-4 xl:text-paragraph1 xl:py-[12.5px] xl:pr-3 2xl:pr-[29px] [&>svg]:fill-black [&[data-state=active]>svg]:fill-primary data-[state=active]:text-primary',
+      'inline-flex items-center gap-2.5 xl:gap-2.5 2xl:gap-3 justify-center whitespace-nowrap text-primary px-3 py-1.5 text-tagLight font-primary font-700 ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 relative after:content-[""] after:h-[2px] after:w-full after:absolute data-[state=active]:after:bg-primary after:bottom-0 :text-primary md:justify-start md:pr-[37px] md:data-[state=active]:b-r-[2px] md:py-2.5 md:after:h-[100%] md:after:w-[4px] md:after:top-0 md:after:right-[-2.8px] border-lightBlack border-b-[1px] md:border-b-0 md:border-r-[1px] lg:text-4 xl:text-paragraph1 xl:py-[12.5px] xl:pr-3 2xl:pr-[29px] [&>svg]:fill-black [&[data-state=active]>svg]:fill-primary data-[state=active]:text-primary',
       className
     )}
     {...props}

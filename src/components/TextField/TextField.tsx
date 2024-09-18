@@ -1,6 +1,7 @@
-/* eslint-disable import/order */
-import { getClassNames } from '@codewinglet/utils';
 import React, { useId } from 'react';
+
+import { getClassNames } from '@codewinglet/utils';
+
 import { TextFieldProps } from './types';
 
 const TextField: React.FC<TextFieldProps> = ({
@@ -12,6 +13,7 @@ const TextField: React.FC<TextFieldProps> = ({
   disabled,
   fullWidth,
   required,
+  description,
   ...rest
 }) => {
   const inputId = useId();
@@ -28,16 +30,7 @@ const TextField: React.FC<TextFieldProps> = ({
           )}
         >
           {label}
-          {required && (
-            <span
-              className={getClassNames(
-                '',
-                error ? 'text-error' : 'text-primary'
-              )}
-            >
-              *
-            </span>
-          )}
+          {required && <span className='text-error'>*</span>}
         </label>
       )}
       <div className='inline-block'>

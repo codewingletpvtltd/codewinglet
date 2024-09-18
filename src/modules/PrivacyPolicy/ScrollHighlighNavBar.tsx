@@ -1,6 +1,6 @@
-/* eslint-disable import/order */
-import { Arrow } from '@codewinglet/assets';
 import { useEffect, useRef, useState } from 'react';
+
+import { Arrow } from '@codewinglet/assets';
 interface Header {
   id: string;
   ref: React.RefObject<HTMLElement | null>;

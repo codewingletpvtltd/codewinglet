@@ -85,7 +85,7 @@ const Services = ({ servicesData }: ServicesProps) => {
                         i === selectedIndex
                           ? 'text-primary lg:!text-subtitle2 md:!text-paragraph1 !text-tag after:content after:absolute after:bg-white after:w-[3px] after:h-[26px] after:left-0'
                           : 'text-primary'
-                      } [&[data-state=open]>svg]:rotate-[45deg] md:!py-[30px] !py-5 md:!px-[46px] !px-[32px] xl:!pr-[70px] md:!pr-[60px] !pr-[50px] text-left leading-normal text-white font-normal`}
+                      } [&[data-state=open]>svg]:rotate-[45deg] md:!py-[30px] !py-5 md:!px-[46px] !px-8 xl:!pr-[70px] md:!pr-[60px] !pr-[50px] text-left leading-normal text-white font-normal`}
                     >
                       {point.title}
                     </AccordionTrigger>

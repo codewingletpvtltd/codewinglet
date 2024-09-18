@@ -1,9 +1,10 @@
-/* eslint-disable import/order */
-import { getClassNames } from '@codewinglet/utils';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FC } from 'react';
 import { Url } from 'url';
+
+import { getClassNames } from '@codewinglet/utils';
+
 import Typography from '../../../Typography';
 import { ListItemProps } from '../../types';
 
@@ -36,7 +37,7 @@ export const ListItem: FC<ListItemProps> = ({
             <div>
               <Typography
                 className={getClassNames(
-                  'capitalize ml-4  text-primary text-paragraph2 ',
+                  'capitalize ml-4 text-primary text-paragraph2 ',
                   labelClassName
                 )}
               >
@@ -45,7 +46,7 @@ export const ListItem: FC<ListItemProps> = ({
               {description && (
                 <Typography
                   className={getClassNames(
-                    'font-bold capitalize ml-4 text-[18px] font-400 text-primary 2xl:text-subtitle1 xl:text-[14px]',
+                    'font-bold capitalize ml-4 text-paragraph1 font-400 text-primary 2xl:text-subtitle1 xl:text-tagLight',
                     labelClassName
                   )}
                 >
@@ -107,9 +108,8 @@ export const ListItem: FC<ListItemProps> = ({
             )}
             <div>
               <Typography
-                variant='subtitle1'
                 className={getClassNames(
-                  'text-paragraph2 capitalize text-primary mb-5',
+                  'text-paragraph2 capitalize text-primary mb-4',
                   labelClassName
                 )}
               >
@@ -118,7 +118,7 @@ export const ListItem: FC<ListItemProps> = ({
               {description && (
                 <Typography
                   className={getClassNames(
-                    'font-bold capitalize ml-4 text-[14px] font-300 text-dropdownText w-[92%]',
+                    'font-bold capitalize ml-4 text-tagLight font-300 text-dropdownText w-[92%]',
                     labelClassName
                   )}
                 >
@@ -141,7 +141,7 @@ export const ListItem: FC<ListItemProps> = ({
             <div>
               <Typography
                 className={getClassNames(
-                  'text-tag text-primary whitespace-nowrap ml-5  mb-5 group-last:mb-0',
+                  'text-tag text-primary whitespace-nowrap ml-5 mb-[17px] group-last:mb-0',
                   labelClassName
                 )}
               >

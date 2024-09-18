@@ -246,20 +246,7 @@ export const companyMenu = [
     label: 'Career',
   },
   {
-    id: 4,
-    // path: '/privacy-policy',
-    path: '',
-    label: 'Works',
-  },
-  {
-    id: 5,
-    // path: '/privacy-policy',
-    path: '',
-    label: 'Case studies',
-  },
-  {
     id: 6,
-    // path: '/privacy-policy',
     path: '',
     label: 'Blogs',
   },

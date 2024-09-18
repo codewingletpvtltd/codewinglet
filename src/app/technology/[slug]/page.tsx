@@ -1,5 +1,6 @@
 // import { notFound } from 'next/navigation';
 import { TechnologyModule } from '@codewinglet/modules';
+
 import { GET } from './api/route';
 
 // // TODO_1.1: Commented code because of first release.

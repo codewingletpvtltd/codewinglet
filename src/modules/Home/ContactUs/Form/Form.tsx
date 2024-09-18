@@ -1,12 +1,18 @@
-/* eslint-disable import/order */
-import { Arrow } from '@codewinglet/assets';
 import { FC } from 'react';
+
+import { Arrow } from '@codewinglet/assets';
+
 import Button from '../../../../components/Button';
-import TextField from '../../../../components/TextField';
 import Textarea from '../../../../components/Textarea';
+import TextField from '../../../../components/TextField';
 import { FormProps } from '../types';
 
-const Form: FC<FormProps> = ({ formData, onChangeFormData, onSubmit }) => (
+const Form: FC<FormProps> = ({
+  formData,
+  onChangeFormData,
+  onSubmit,
+  isLoading,
+}) => (
   <form onSubmit={onSubmit} className='col-span-1'>
     <div className=''>
       <TextField
@@ -28,6 +34,7 @@ const Form: FC<FormProps> = ({ formData, onChangeFormData, onSubmit }) => (
         onChange={(e) => onChangeFormData({ email: e.target.value })}
         helperText={formData.errors.email}
         error={!!formData.errors.email}
+        description='Please provide your business email address'
       />
       <TextField
         fullWidth
@@ -56,14 +63,14 @@ const Form: FC<FormProps> = ({ formData, onChangeFormData, onSubmit }) => (
         onChange={(e) => onChangeFormData({ message: e.target.value })}
       />
     </div>
-    <div className='flex items-center justify-end mt-10'>
+    <div className='flex items-center justify-end mt-[40px]'>
       <Button
         variant='default'
         type='submit'
         className='md:w-[239px] w-full mr-[inherit] gap-2'
       >
         Submit
-        <Arrow />
+        {<Arrow />}
       </Button>
     </div>
   </form>

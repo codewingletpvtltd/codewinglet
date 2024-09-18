@@ -73,7 +73,7 @@ const ContactUs = () => (
     className='bg-white xl:py-20 lg:py-14 md:py-[60px] py-10 scroll-mt-40'
     id='industry'
   >
-    <div className='container w-full lg:px-[15px] sm:px-[30px] px-[15px] mx-auto'>
+    <div className='container w-full lg:px-[15px] sm:px-[30px] px-5 mx-auto'>
       <Reveal>
         <SectionHeader
           title={<>Industries we work</>}
@@ -101,7 +101,7 @@ const ContactUs = () => (
                     height={800}
                   />
                 </div>
-                <Typography className='text-primary md:mt-3 mt-2.5 lg:text-subtitle2 md:text-subtitle2 text-tagLight'>
+                <Typography className='text-primary mt-3 lg:text-subtitle2 md:text-subtitle2 text-tagLight'>
                   {card.title}
                   {/* <div className='block sm:hidden'>{card.mobileTitle}</div> */}
                 </Typography>

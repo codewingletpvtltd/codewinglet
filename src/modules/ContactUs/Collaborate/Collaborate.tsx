@@ -1,10 +1,11 @@
-/* eslint-disable import/order */
 'use client';
+import Image from 'next/image';
+import Link from 'next/link';
+
 import { Arrow } from '@codewinglet/assets';
 import { Button, Typography } from '@codewinglet/components';
 import Reveal from '@codewinglet/components/Reveal';
-import Image from 'next/image';
-import Link from 'next/link';
+
 import SectionHeader from '../../../components/SectionHeader/SectionHeader';
 
 const Collaborate = () => (

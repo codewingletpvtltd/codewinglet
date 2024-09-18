@@ -1,4 +1,5 @@
 import { StoryObj } from '@storybook/react';
+
 import Typography from './Typography';
 
 export default {
