@@ -11,7 +11,7 @@ const OurVision = () => (
       <div className='container w-full 2xl:min-w-[1516px] lg:px-[15px] sm:px-10 px-5 mx-auto'>
         <Reveal>
           <SectionHeader
-            title={<>Our vison & mission</>}
+            title={<>Our vision & mission</>}
             description={
               <>
                 We empower clients with reliable, high-quality tech solutions

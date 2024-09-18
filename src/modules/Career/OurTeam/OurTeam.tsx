@@ -12,18 +12,19 @@ const OurTeam = () => (
           {/* First */}
           <div className='flex md:items-center justify-between'>
             <div>
-              <Typography className='md:text-subtitle2Light text-tagLight font-playFair'>
-                The service was amazing. I never <br /> had to wait that long
-                for my food.
+              <Typography className='md:text-subtitle3Light text-tagLight font-playFair'>
+                Codewinglet offers great flexibility and respect for work-life
+                balance, boosting my productivity and job satisfaction—an ideal
+                place for a positive, balanced work environment.
               </Typography>
               <Typography className='md:text-paragraph2 text-tag md:pt-4 pt-3 font-semibold'>
-                John Carter
+                Milan R.
                 <span className='text-secondary md:text-tagLight text-tagExtraLight md:pl-2.5 md:inline block'>
-                  Software developer
+                  Sr. Product Designer
                 </span>
               </Typography>
             </div>
-            <div>
+            {/* <div>
               <Image
                 src='/assets/career/team.png'
                 alt='team'
@@ -31,7 +32,7 @@ const OurTeam = () => (
                 height={80}
                 className='md:w-20 w-[45px] md:h-20 h-[45px]'
               />
-            </div>
+            </div> */}
           </div>
           {/* second */}
           <div className='flex md:items-center justify-between bg-white border border-headerBoxBorder md:p-10 p-5 lg:absolute top-[262px] left-[104px] 2xl:w-[574px] lg:w-[542px] w-full lg:my-0 md:my-[50px] my-[30px]'>
@@ -43,15 +44,15 @@ const OurTeam = () => (
                 height={24}
                 className='md:block hidden'
               />
-              <Typography className='md:text-subtitle2Light text-tagLight font-playFair md:mt-2 md:w-80 w-[200px]'>
-                The service was amazing. I never{' '}
-                <br className='md:block hidden' /> had to wait that long for my
-                food.
+              <Typography className='md:text-subtitle3Light text-tagLight font-playFair md:mt-2'>
+                At Codewinglet, I've gained valuable skills through regular
+                training, mentorship, and a dynamic culture—ideal for career
+                growth in tech.
               </Typography>
               <Typography className='md:text-paragraph2 text-tag md:pt-4 pt-3 font-semibold md:flex'>
-                John Carter
+                Ayushi R.
                 <span className='text-secondary md:text-tagLight text-tagExtraLight md:pl-2.5 mr-auto block'>
-                  Software developer
+                  Software Developer
                 </span>
                 <Image
                   src='/assets/career/quote.svg'
@@ -62,7 +63,7 @@ const OurTeam = () => (
                 />
               </Typography>
             </div>
-            <div>
+            {/* <div>
               <Image
                 src='/assets/career/team.png'
                 alt='team'
@@ -70,23 +71,24 @@ const OurTeam = () => (
                 height={80}
                 className='md:w-20 w-[45px] md:h-20 h-[45px]'
               />
-            </div>
+            </div> */}
           </div>
           {/* Third */}
           <div className='flex md:items-center justify-between'>
             <div>
-              <Typography className='md:text-subtitle2Light text-tagLight font-playFair'>
-                The service was amazing. I never <br /> had to wait that long
-                for my food.
+              <Typography className='md:text-subtitle3Light text-tagLight font-playFair'>
+                At Codewinglet, I work on cutting-edge projects with a
+                supportive, collaborative team. It's a place where innovation
+                thrives, and everyone is empowered to contribute.
               </Typography>
               <Typography className='md:text-paragraph2 text-tag md:pt-4 pt-3 font-semibold'>
-                John Carter
+                Dharmik B.
                 <span className='text-secondary md:text-tagLight text-tagExtraLight md:pl-2.5 md:inline block'>
-                  Software developer
+                  Web Designer
                 </span>
               </Typography>
             </div>
-            <div>
+            {/* <div>
               <Image
                 src='/assets/career/team.png'
                 alt='team'
@@ -94,7 +96,7 @@ const OurTeam = () => (
                 height={80}
                 className='md:w-20 w-[45px] md:h-20 h-[45px]'
               />
-            </div>
+            </div> */}
           </div>
         </div>
 

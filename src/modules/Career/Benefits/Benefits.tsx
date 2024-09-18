@@ -8,34 +8,40 @@ import SectionHeader from '../../../components/SectionHeader/SectionHeader';
 
 const workData = [
   {
-    image: '/assets/career/time.svg',
-    title: 'Paid time off',
-    description: 'Experience our vibrant, welcoming working culture.',
-  },
-  {
     image: '/assets/career/politics.svg',
-    title: 'No politics',
-    description: 'Experience our vibrant, welcoming working culture.',
+    title: 'Flexible work hours',
+    description:
+      'Employees can adjust their work schedules to fit their personal lives, ensuring a better work-life balance.',
   },
   {
     image: '/assets/career/motivated.svg',
-    title: 'Motivated team',
-    description: 'Experience our vibrant, welcoming working culture.',
+    title: 'Leave Encashment',
+    description:
+      'Employees can convert unused paid leave days into monetary compensation.',
   },
   {
     image: '/assets/career/celebration.svg',
-    title: 'Weekly celebration',
-    description: 'Experience our vibrant, welcoming working culture.',
+    title: 'Professional Development',
+    description:
+      'Access to online courses and certification programs allows employees to grow their skills.',
   },
   {
     image: '/assets/career/time.svg',
-    title: 'Collaboration',
-    description: 'Experience our vibrant, welcoming working culture.',
+    title: 'Employee engagement activities',
+    description:
+      'Team-building events, workshops, and social gatherings to foster collaboration and enhance workplace culture.',
+  },
+  {
+    image: '/assets/career/time.svg',
+    title: 'Friendly and stress-free environment',
+    description:
+      'A supportive workplace where collaboration and well-being are prioritized, helping employees stay relaxed and productive.',
   },
   {
     image: '/assets/career/grow.svg',
-    title: 'Grow 1% everyday',
-    description: 'Experience our vibrant, welcoming working culture.',
+    title: '5 Day a week',
+    description:
+      'We believe in maintaining a healthy work-life balance, giving you the time to relax and refresh.',
   },
 ];
 
@@ -53,11 +59,12 @@ const Benefits = () => (
               title={<>Perks & benefits</>}
               description={
                 <>
-                  in today's fast-paced digital world, mobile apps are the go-to
-                  solution for businesses to engage with customers. Empower your
-                  business to deliver exactly what users crave. <br /> <br /> in
-                  today's fast-paced digital world, mobile apps are the go-to
-                  solution for businesses to engage.
+                  At Codewinglet, we believe that happy, healthy, and motivated
+                  employees are the foundation of our success. That’s why we
+                  offer a comprehensive range of perks and benefits designed to
+                  support your personal and professional growth. From
+                  competitive salaries to work-life balance initiatives, we
+                  ensure you have everything you need to thrive.
                 </>
               }
               descriptionClassName='text-secondary lg:!text-subtitle2Light md:!text-paragraph1ExtraLight !text-tagExtraLight'

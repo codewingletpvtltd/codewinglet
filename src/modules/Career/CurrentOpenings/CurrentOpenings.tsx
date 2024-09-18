@@ -20,7 +20,7 @@ const CurrentOpenings = () => {
         <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
           <SectionHeader
             title={<>Current job openings</>}
-            description='Customers. Empower your business to deliver exactly what users crave'
+            description='Discover Your Next Career Opportunity: Explore Our Latest Job Openings.'
             descriptionClassName='text-secondary md:text-left text-center'
             headingClassName='md:text-left text-center'
           />

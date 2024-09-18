@@ -1,5 +1,4 @@
 /* eslint-disable import/order */
-import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
 import AboutCounter from './AboutCounter';
 
@@ -28,10 +27,6 @@ const AboutCount: React.FC<Props> = ({ number }: Props) => {
       {scrolled && <AboutCounter endValue={number} />}
     </div>
   );
-};
-
-AboutCount.propTypes = {
-  number: PropTypes.any,
 };
 
 export default AboutCount;
