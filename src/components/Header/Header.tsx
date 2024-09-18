@@ -34,7 +34,7 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
     <>
       {pathName != '/event-form' && pathName != '/thank-you' && (
         <div className='bg-white font-light py-4 fixed top-0 z-[100] w-full px-4'>
-          <div className='container w-full flex items-center justify-between md:flex-row flex-col'>
+          <div className='container w-full flex items-center justify-between md:flex-row flex-col lg:px-[15px] sm:px-[30px] px-4'>
             <Typography className='text-center lg:text-tag text-tagExtraLight  xl:flex items-center gap-2.5'>
               🎉 Join Codewinglet DevBattle 2024? 🚀{' '}
               <span className='font-normal'>
@@ -48,14 +48,14 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
               <Link href='/event-form' className='md:m-0 mx-auto'>
                 <Button
                   variant='link'
-                  className='gap-2.5 underline lg:text-paragraph2 text-tag !py-0'
+                  className='gap-2.5 underline lg:text-paragraph2 text-tag !py-0 !h-auto'
                 >
                   REGISTER HERE <Arrow />{' '}
                 </Button>
               </Link>
               <Button
                 variant='link'
-                className='lg:text-paragraph2 text-tag uppercase p-0 flex items-center gap-2 underline !py-0'
+                className='lg:text-paragraph2 text-tag uppercase p-0 flex items-center gap-2 underline !py-0 !h-auto'
                 onClick={handleDownload}
               >
                 Download Event Details
@@ -120,7 +120,7 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
           {isLarge && (
             <Button
               onClick={onNavigate('contact-us')}
-              className='w-[143px] lg:h-10 border-white text-white'
+              className='w-[178px] lg:h-11 border-white text-white'
             >
               Contact Us
             </Button>

@@ -62,7 +62,7 @@ const HeroSection = () => (
 
         <Button
           variant='outline'
-          className='xl:w-[250px] md:w-[229px] w-[203px] block m-auto md:py-[15px] py-2.5'
+          className='xl:w-[250px] md:w-[229px] w-[203px] block m-auto'
         >
           <Link
             href='/contact-us'
