@@ -44,26 +44,26 @@ const BlogDescription = () => {
   ];
 
   return (
-    <div className='bg-white py-20 pt-40'>
+    <div className='bg-white lg:py-20 py-[60px] lg:pt-40 md:pt-[25rem] pt-0 pb-2'>
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
-        <div className='flex justify-between'>
+        <div className='flex lg:flex-row flex-col justify-between gap-[28px]'>
           {/* left */}
-          <div className='w-[304px]'>
+          <div className='xl:w-[250px] w-[296px] lg:block hidden'>
             <ScrollHighlightNavbar navHeader={PolicyData} />
           </div>
           {/* center */}
-          <div className='w-[615px]'>
-            <Typography className='text-primary text-subtitle2 mb-[28px]'>
+          <div className='lg:w-[730px] w-full'>
+            <Typography className='text-primary md:text-subtitle2 text-tag md:mb-[28px] mb-2.5'>
               Introduction
             </Typography>
-            <Typography className='text-paragraph1ExtraLight text-secondary pb-4'>
+            <Typography className='md:text-paragraph2Light text-tagExtraLight text-secondary pb-4'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
               ullamcorper mattis lorem non. Ultrices praesent amet ipsum justo
               massa. Eu dolor aliquet risus gravida nunc at feugiat consequat
               purus. Non massa enim vitae duis mattis. Vel in ultricies vel
               fringilla.
             </Typography>
-            <Typography className='text-paragraph1ExtraLight text-secondary mb-[28px]'>
+            <Typography className='md:text-paragraph2Light text-tagExtraLight text-secondary mb-[28px]'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
               ullamcorper mattis lorem non. Ultrices praesent amet ipsum justo
               massa. Eu dolor aliquet risus gravida nunc at feugiat consequat
@@ -73,12 +73,13 @@ const BlogDescription = () => {
             <Image
               src='/assets/blog/blog_des.png'
               alt='blog_des'
-              width={615}
+              width={730}
               height={536}
+              className='lg:w-[730px] w-full'
             />
             <Link
               href='/assets/blog/blog_des.png'
-              className='text-paragraph2Light text-secondary mb-[30px] mt-4 flex items-center gap-2'
+              className='md:text-paragraph2Light text-tagExtraLight text-secondary mb-[30px] mt-4 flex items-center gap-2'
             >
               <Image
                 src='/assets/icons/LinkIcon.svg'
@@ -88,7 +89,7 @@ const BlogDescription = () => {
               />
               Image source reference link
             </Link>
-            <Typography className='text-paragraph1ExtraLight text-secondary'>
+            <Typography className='md:text-paragraph2Light text-tagExtraLight text-secondary'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
               ullamcorper mattis lorem non. Ultrices praesent amet ipsum justo
               massa. Eu dolor aliquet risus gravida nunc at feugiat consequat
@@ -96,28 +97,28 @@ const BlogDescription = () => {
               fringilla.
             </Typography>
 
-            <Typography className='mt-[43px] text-center text-subtitle2'>
+            <Typography className='md:mt-[43px] mt-[30px] text-center md:text-subtitle2 text-tagExtraLight'>
               “In a world older and more complete than ours they move finished
               and complete, gifted with extensions of the senses we have lost or
               never attained, living by voices we shall never hear.”
             </Typography>
 
-            <div className='flex flex-col justify-center items-center mb-[43px] mt-8'>
+            <div className='flex flex-col justify-center items-center md:mb-[43px] mb-[30px] mt-8'>
               <Image
                 src='/assets/blog/user.png'
                 alt='user'
                 width={50}
                 height={50}
               />
-              <Typography className='text-primary text-paragraph2 mt-3'>
+              <Typography className='text-primary md:text-paragraph2 text-tag mt-3'>
                 Olivia Rhye
               </Typography>
-              <Typography className='text-secondary text-paragraph2'>
+              <Typography className='text-secondary md:text-paragraph2 text-tag'>
                 Product Designer
               </Typography>
             </div>
 
-            <Typography className='text-paragraph1ExtraLight text-secondary'>
+            <Typography className='md:text-paragraph2Light text-tagExtraLight text-secondary'>
               Dolor enim eu tortor urna sed duis nulla. Aliquam vestibulum,
               nulla odio nisl vitae. In aliquet pellentesque aenean hac
               vestibulum turpis mi bibendum diam. Tempor integer aliquam in
@@ -131,10 +132,10 @@ const BlogDescription = () => {
               id. Dolor lacus, eget nunc lectus in tellus, pharetra, porttitor.
             </Typography>
 
-            <Typography className='text-primary text-subtitle2 mb-[18px] mt-[30px]'>
+            <Typography className='text-primary md:text-subtitle2 text-tag mb-[18px] mt-[30px]'>
               Software and tools
             </Typography>
-            <Typography className='text-paragraph1ExtraLight text-secondary mb-[34px]'>
+            <Typography className='md:text-paragraph2Light text-tagExtraLight text-secondary mb-[34px]'>
               Mi tincidunt elit, id quisque ligula ac diam, amet. Vel etiam
               suspendisse morbi eleifend faucibus eget vestibulum felis. Dictum
               quis montes, sit sit. Tellus aliquam enim urna, etiam. Mauris
@@ -144,10 +145,10 @@ const BlogDescription = () => {
               velit, sed auctor. Porttitor fames arcu quis fusce augue
             </Typography>
 
-            <Typography className='text-primary text-subtitle2 mb-[18px]'>
+            <Typography className='text-primary md:text-subtitle2 text-tag mb-[18px]'>
               Other resources
             </Typography>
-            <Typography className='text-paragraph1ExtraLight text-secondary mb-[30px]'>
+            <Typography className='md:text-paragraph2Light text-tagExtraLight text-secondary mb-[30px]'>
               Sagittis et eu at elementum, quis in. Proin praesent volutpat
               egestas sociis sit lorem nunc nunc sit. Eget diam curabitur mi ac.
               Auctor rutrum lacus malesuada massa ornare et. Vulputate
@@ -169,22 +170,24 @@ const BlogDescription = () => {
             <Image
               src='/assets/blog/blog_des_two.png'
               alt='blog_des'
-              width={615}
+              width={730}
               height={480}
+              className='lg:w-[730px] w-full'
             />
             <Link
               href='/assets/blog/blog_des.png'
-              className='text-paragraph2Light text-secondary mb-[30px] mt-4 flex items-center gap-2'
+              className='md:text-paragraph2Light text-tagExtraLight text-secondary mb-[30px] mt-4 flex items-center gap-2'
             >
               <Image
                 src='/assets/icons/LinkIcon.svg'
                 alt='LinkIcon'
                 width={24}
                 height={24}
+                className='md:w-6 w-5 lg:h-6 h-5'
               />
               Image source reference link
             </Link>
-            <Typography className='text-paragraph1ExtraLight text-secondary'>
+            <Typography className='md:text-paragraph2Light text-tagExtraLight text-secondary'>
               Lectus leo massa amet posuere. Malesuada mattis non convallis
               quisque. Libero sit et imperdiet bibendum quisque dictum
               vestibulum in non. Pretium ultricies tempor non est diam. Enim ut
@@ -197,23 +200,23 @@ const BlogDescription = () => {
               faucibus molestie pellentesque. Arcu ultricies sed mauris
               vestibulum.
             </Typography>
-            <div className='bg-bg p-[30px] mt-[30px]'>
-              <Typography className='text-primary text-subtitle2 mb-[22px]'>
+            <div className='bg-bg md:p-[30px] p-5 mt-[30px]'>
+              <Typography className='text-primary md:text-subtitle2 text-tag md:mb-[22px] mb-3'>
                 Software and tools
               </Typography>
-              <Typography className='text-paragraph1ExtraLight text-secondary'>
+              <Typography className='md:text-paragraph2Light text-tagExtraLight text-secondary'>
                 Morbi sed imperdiet in ipsum, adipiscing elit dui lectus. Tellus
                 id scelerisque est ultricies ultricies. Duis est sit sed leo
                 nisl, blandit elit sagittis. Quisque tristique consequat quam
                 sed. Nisl at scelerisque amet nulla purus
               </Typography>
-              <Typography className='text-paragraph1ExtraLight text-secondary py-5'>
+              <Typography className='md:text-paragraph2Light text-tagExtraLight text-secondary md:py-5 py-3'>
                 Nunc sed faucibus bibendum feugiat sed interdum. Ipsum egestas
                 condimentum mi massa. In tincidunt pharetra consectetur sed duis
                 facilisis metus. Etiam egestas in nec sed et. Quis lobortis at
                 sit dictum eget nibh tortor commodo cursus.
               </Typography>
-              <Typography className='text-paragraph1ExtraLight text-secondary'>
+              <Typography className='md:text-paragraph2Light text-tagExtraLight text-secondary'>
                 Odio felis sagittis, morbi feugiat tortor vitae feugiat fusce
                 aliquet. Nam elementum urna nisi aliquet erat dolor enim. Ornare
                 id morbi eget ipsum. Aliquam senectus neque ut id eget
@@ -223,7 +226,7 @@ const BlogDescription = () => {
             </div>
           </div>
           {/* Right */}
-          <div className='w-[299px]'>
+          <div className='lg:w-[250px] w-full'>
             <MostViewBlog />
           </div>
         </div>
