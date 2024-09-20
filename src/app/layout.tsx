@@ -8,7 +8,7 @@ import './globals.css';
 export const metadata: Metadata = {
   title: 'Top Software Development Company India - Code Winglet Pvt. Ltd.',
   description:
-    'Transform your business with innovative software solutions tailored to your needs. Discover how Code Winglet Pvt. Ltd. can help you streamline processes, increase efficiency, and drive growth.',
+    'Transform your business with innovative software solutions tailored to your needs. Discover how Codewinglet Pvt. Ltd. can help you streamline processes, increase efficiency, and drive growth.',
 };
 
 export default function RootLayout({
