@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const Opportunity = () => (
-  <div className='bg-white lg:pt-[228px] md:pt-[264px] pt-[277px]' id='career'>
+  <div className='bg-white lg:pt-[174px] md:pt-[178px] pt-[136px]' id='career'>
     <div className='bg-dot-pattern mx-auto lg:flex block gap-[100px] 2xl:items-center items-end justify-between md:pt-5 pt-10'>
       <div className='2xl:w-[874px] md:w-[680px] 2xl:ml-64 lg:ml-20 md:ml-10 md:pl-[15px] pl-5 md:pr-0 pr-5 2xl:py-0 lg:py-[94px]'>
         <SectionHeader
