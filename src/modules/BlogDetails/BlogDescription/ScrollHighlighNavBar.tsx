@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 
 import { Arrow } from '@codewinglet/assets';
+import { Typography } from '@codewinglet/components';
 interface Header {
   id: string;
   ref: React.RefObject<HTMLElement | null>;
@@ -90,8 +91,11 @@ const ScrollHighlightNavbar: React.FC<ScrollHighlightNavbarProps> = ({
 
   return (
     <div
-      className={`xl:w-1/4 w-full lg:p-0 p-5 bg-white lg:sticky fixed lg:z-0 z-10 right-auto lg:top-[230px] md:top-[90px] top-[78px] lg:left-auto left-0 ${containerClassName}`}
+      className={`w-full lg:p-0 p-5 bg-white lg:sticky lg:z-0 z-10 right-auto lg:top-[230px] md:top-[90px] top-[78px] lg:left-auto left-0 ${containerClassName}`}
     >
+      <Typography className='text-primary text-subtitle2 pb-[18px] mb-[29px] border-b-2 border-primary'>
+        Table of Contents
+      </Typography>
       <ul className='lg:grid flex overflow-auto [-ms-overflow-style:_none;] [scrollbar-width:_none;] gap-6'>
         {navHeader.map((policy, i) => (
           <li key={policy.id} className='flex-shrink-0'>

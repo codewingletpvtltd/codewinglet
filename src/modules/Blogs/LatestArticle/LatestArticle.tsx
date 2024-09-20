@@ -46,7 +46,7 @@ const LatestArticle = () => {
   ];
 
   return (
-    <div className='bg-white pt-10 lg:mt-[166px] md:mt-40 mt-[148px]'>
+    <div className='bg-white pt-10 lg:mt-[222px] md:mt-40 mt-[148px]'>
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto flex 2xl:gap-[55px] gap-[30px]'>
         <div className='w-[342px] lg:block hidden'>
           <Typography className='text-paragraph2 mb-5 border-b border-headerBoxBorder pb-[15px]'>
