@@ -23,7 +23,12 @@ const BlogCard: FC<BlogCardProps> = ({
     : 'No date available';
 
   return (
-    <div className={classNames('relative lg:w-full w-[312px] mx-5', className)}>
+    <div
+      className={classNames(
+        'relative lg:w-full w-[312px] md:mx-5 mx-2',
+        className
+      )}
+    >
       {image && (
         <Image
           src={image}

@@ -32,59 +32,63 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
 
   return (
     <>
-      {pathName != '/event-form' && pathName != '/thank-you' && (
-        <div className='bg-white font-light py-4 fixed top-0 z-[100] w-full px-4'>
-          <div className='container w-full flex items-center justify-between md:flex-row flex-col lg:px-[15px] sm:px-[30px] px-4'>
-            <Typography className='text-center lg:text-tag text-tagExtraLight  xl:flex items-center gap-2.5'>
-              🎉 Join Codewinglet DevBattle 2024? 🚀{' '}
-              <span className='font-normal'>
-                Register here to compete and showcase your skills
-              </span>
-              <div className='hurry-up-animation inline-block ml-2'>
-                <div className='font-bold hurryUp-text'>Hurry up !</div>
-              </div>
-            </Typography>
-            <div className='md:mt-0 mt-1 flex md:flex-row flex-col md:gap-10 gap-2'>
-              <Link href='/event-form' className='md:m-0 mx-auto'>
+      {pathName != '/event-form' &&
+        pathName != '/thank-you' &&
+        pathName !== '/blog-details' && (
+          <div className='bg-white font-light py-4 fixed top-0 z-[100] w-full px-4'>
+            <div className='container w-full flex items-center justify-between md:flex-row flex-col lg:px-[15px] sm:px-[30px] px-4'>
+              <Typography className='text-center lg:text-tag text-tagExtraLight  xl:flex items-center gap-2.5'>
+                🎉 Join Codewinglet DevBattle 2024? 🚀{' '}
+                <span className='font-normal'>
+                  Register here to compete and showcase your skills
+                </span>
+                <div className='hurry-up-animation inline-block ml-2'>
+                  <div className='font-bold hurryUp-text'>Hurry up !</div>
+                </div>
+              </Typography>
+              <div className='md:mt-0 mt-1 flex md:flex-row flex-col md:gap-10 gap-2'>
+                <Link href='/event-form' className='md:m-0 mx-auto'>
+                  <Button
+                    variant='link'
+                    className='gap-2.5 underline lg:text-paragraph2 text-tag !py-0 !h-auto'
+                  >
+                    REGISTER HERE <Arrow />{' '}
+                  </Button>
+                </Link>
                 <Button
                   variant='link'
-                  className='gap-2.5 underline lg:text-paragraph2 text-tag !py-0 !h-auto'
+                  className='lg:text-paragraph2 text-tag uppercase p-0 flex items-center gap-2 underline !py-0 !h-auto'
+                  onClick={handleDownload}
                 >
-                  REGISTER HERE <Arrow />{' '}
+                  Download Event Details
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    width='20'
+                    height='20'
+                    viewBox='0 0 24 24'
+                    fill='none'
+                    stroke='currentColor'
+                    stroke-width='1.5'
+                    stroke-linecap='round'
+                    stroke-linejoin='round'
+                  >
+                    <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+                    <path d='M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2' />
+                    <path d='M7 11l5 5l5 -5' />
+                    <path d='M12 4l0 12' />
+                  </svg>
                 </Button>
-              </Link>
-              <Button
-                variant='link'
-                className='lg:text-paragraph2 text-tag uppercase p-0 flex items-center gap-2 underline !py-0 !h-auto'
-                onClick={handleDownload}
-              >
-                Download Event Details
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  width='20'
-                  height='20'
-                  viewBox='0 0 24 24'
-                  fill='none'
-                  stroke='currentColor'
-                  stroke-width='1.5'
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
-                >
-                  <path stroke='none' d='M0 0h24v24H0z' fill='none' />
-                  <path d='M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2' />
-                  <path d='M7 11l5 5l5 -5' />
-                  <path d='M12 4l0 12' />
-                </svg>
-              </Button>
+              </div>
             </div>
           </div>
-        </div>
-      )}
+        )}
       <header
         id='header'
         className={getClassNames(
-          'fixed flex items-center xl:top-14 md:top-[86px] top-[143px] z-50 w-full sm:py-5 md:py-0 lg:py-0 lg:px-20',
-          pathName === '/event-form' || pathName === '/thank-you'
+          'fixed flex items-center xl:top-14 lg:top-[86px] top-14 z-50 w-full sm:py-5 md:py-0 lg:py-0 lg:px-20',
+          pathName === '/event-form' ||
+            pathName === '/thank-you' ||
+            pathName === '/blog-details'
             ? 'bg-primary !top-0'
             : isScroll
             ? 'bg-primary'

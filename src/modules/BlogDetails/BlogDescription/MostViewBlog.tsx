@@ -11,7 +11,7 @@ const MostViewBlog = () => (
     </Typography>
     <ol
       type='1'
-      className='list-decimal pt-5 pl-5 text-secondary text-paragraph2Light flex flex-col gap-[26px]'
+      className='list-decimal pt-5 pl-5 text-secondary lg:text-paragraph2Light text-paragraph1ExtraLight text-paragraph2Light flex flex-col md:gap-[26px] gap-5'
     >
       <li>How to Measure Project Success: Expert Panel</li>
       <li>
@@ -25,8 +25,13 @@ const MostViewBlog = () => (
     </ol>
 
     <div
-      className='bg-primary text-white p-5 mt-5'
-      style={{ backgroundImage: 'url(/assets/blog/viewBg.png)' }}
+      className='bg-primary text-white lg:p-5 md:p-11 lg:mt-5 mt-[30px] lg:text-left text-center md:px-28 p-5'
+      style={{
+        backgroundImage: 'url(/assets/blog/viewBg.png)',
+        backgroundRepeat: 'no-repeat',
+        backgroundPositionX: 'right',
+        backgroundSize: 'cover',
+      }}
     >
       <Typography className='text-subtitle2 pb-[15px]'>
         Facilitating the delivery of digital outcomes to expedite growth.
