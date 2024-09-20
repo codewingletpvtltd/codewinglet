@@ -46,7 +46,7 @@ export default {
     },
     fontFamily: {
       primary: ['Poppins', 'sans-serif'],
-      playFair: ['Playfair', 'Display'],
+      playFair: ['Playfair Display', 'serif'],
     },
     backgroundImage: {
       'dot-pattern': 'url("/assets/career/dotGrid.png")',
