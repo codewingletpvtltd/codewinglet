@@ -1,17 +1,14 @@
 /* eslint-disable import/order */
 'use client';
-import { Arrow } from '@codewinglet/assets';
 import { xl } from '@codewinglet/constants/mediaQueryConst';
 import { useScreenSize } from '@codewinglet/hooks';
 import { getClassNames } from '@codewinglet/utils';
 import Image from 'next/image';
-import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import React, { FC } from 'react';
 import Button from '../Button';
 import Drawer from '../Drawer/Drawer';
 import MenuIcon from '../MenuIcon';
-import Typography from '../Typography';
 import { MobileMenu, NavMenu } from './components';
 import { HeaderProps } from './types';
 import useHeader from './useHeader';
@@ -32,7 +29,7 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
 
   return (
     <>
-      {pathName != '/event-form' && pathName != '/thank-you' && (
+      {/* {pathName != '/event-form' && pathName != '/thank-you' && (
         <div className='bg-white font-light py-4 fixed top-0 z-[100] w-full px-4'>
           <div className='container w-full flex items-center justify-between md:flex-row flex-col lg:px-[15px] sm:px-[30px] px-4'>
             <Typography className='text-center lg:text-tag text-tagExtraLight  xl:flex items-center gap-2.5'>
@@ -79,11 +76,11 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
             </div>
           </div>
         </div>
-      )}
+      )} */}
       <header
         id='header'
         className={getClassNames(
-          'fixed flex items-center xl:top-14 md:top-[86px] top-[143px] z-50 w-full sm:py-5 md:py-0 lg:py-0 lg:px-20',
+          'fixed flex items-center top-0 z-50 w-full sm:py-5 md:py-0 lg:py-0 lg:px-20',
           pathName === '/event-form' || pathName === '/thank-you'
             ? 'bg-primary !top-0'
             : isScroll
