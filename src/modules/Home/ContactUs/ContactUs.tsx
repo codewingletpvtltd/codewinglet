@@ -2,52 +2,13 @@
 'use client';
 import { SectionHeader, Typography } from '@codewinglet/components';
 import Reveal from '@codewinglet/components/Reveal';
+import SocialMedia from '@codewinglet/components/SocialMedia/SocialMedia';
 import Image from 'next/image';
-import Link from 'next/link';
 import Form from './Form';
 import useGetInTouch from './useGetInTouch';
 
 const ContactUs = () => {
   const { formData, onChangeFormData, onSubmit, isLoading } = useGetInTouch();
-
-  const socialLinks = [
-    {
-      href: 'https://in.linkedin.com/company/codewinglet',
-      ariaLabel: 'Linkedin',
-      src: '/assets/icons/contactLinkedin.svg',
-      alt: 'contactLinkedin',
-    },
-    {
-      href: 'https://www.instagram.com/codewinglet/',
-      ariaLabel: 'Instagram',
-      src: '/assets/icons/contactInsta.svg',
-      alt: 'contactInsta',
-    },
-    {
-      href: 'https://www.linkedin.com/company/codewinglet/',
-      ariaLabel: 'Linkedin',
-      src: '/assets/icons/contactLinkedin.svg',
-      alt: 'contactLinkedin',
-    },
-    {
-      href: 'https://twitter.com/codewinglet',
-      ariaLabel: 'Twitter',
-      src: '/assets/icons/contactX.svg',
-      alt: 'contactX',
-    },
-    {
-      href: 'https://dribbble.com/codewingletprivatelimited',
-      ariaLabel: 'Dribble',
-      src: '/assets/icons/contactDribble.svg',
-      alt: 'contactDribble',
-    },
-    {
-      href: 'https://www.behance.net/codewinglet',
-      ariaLabel: 'Behance',
-      src: '/assets/icons/contactBehance.svg',
-      alt: 'contactBehance',
-    },
-  ];
 
   return (
     <section className='lg:py-20 md:py-[60px] py-10 lg:bg-bg bg-white'>
@@ -94,21 +55,12 @@ const ContactUs = () => {
                   Follow us in media :
                 </Typography>
                 <div className='flex gap-5'>
-                  {socialLinks.map((link, index) => (
-                    <Link
-                      key={index}
-                      href={link.href}
-                      target='_blank'
-                      aria-label={link.ariaLabel}
-                    >
-                      <Image
-                        src={link.src}
-                        width={40}
-                        height={40}
-                        alt={link.alt}
-                      />
-                    </Link>
-                  ))}
+                  <SocialMedia
+                    bgColor='black'
+                    iconColor='white'
+                    width='40'
+                    height='40'
+                  />
                 </div>
               </div>
             </Reveal>
