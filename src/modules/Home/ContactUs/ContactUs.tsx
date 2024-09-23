@@ -10,6 +10,45 @@ import useGetInTouch from './useGetInTouch';
 const ContactUs = () => {
   const { formData, onChangeFormData, onSubmit, isLoading } = useGetInTouch();
 
+  const socialLinks = [
+    {
+      href: 'https://in.linkedin.com/company/codewinglet',
+      ariaLabel: 'Linkedin',
+      src: '/assets/icons/contactLinkedin.svg',
+      alt: 'contactLinkedin',
+    },
+    {
+      href: 'https://www.instagram.com/codewinglet/',
+      ariaLabel: 'Instagram',
+      src: '/assets/icons/contactInsta.svg',
+      alt: 'contactInsta',
+    },
+    {
+      href: 'https://www.linkedin.com/company/codewinglet/',
+      ariaLabel: 'Linkedin',
+      src: '/assets/icons/contactLinkedin.svg',
+      alt: 'contactLinkedin',
+    },
+    {
+      href: 'https://twitter.com/codewinglet',
+      ariaLabel: 'Twitter',
+      src: '/assets/icons/contactX.svg',
+      alt: 'contactX',
+    },
+    {
+      href: 'https://dribbble.com/codewingletprivatelimited',
+      ariaLabel: 'Dribble',
+      src: '/assets/icons/contactDribble.svg',
+      alt: 'contactDribble',
+    },
+    {
+      href: 'https://www.behance.net/codewinglet',
+      ariaLabel: 'Behance',
+      src: '/assets/icons/contactBehance.svg',
+      alt: 'contactBehance',
+    },
+  ];
+
   return (
     <section className='lg:py-20 md:py-[60px] py-10 lg:bg-bg bg-white'>
       <div className='container w-full lg:px-[15px] sm:px-[30px] px-5 mx-auto'>
@@ -54,55 +93,22 @@ const ContactUs = () => {
                 <Typography className='text-subtitle2 font-400 mb-[25px]'>
                   Follow us in media :
                 </Typography>
-                <div className='flex gap-[30px]'>
-                  <Link
-                    href='https://in.linkedin.com/company/codewinglet'
-                    target='_blank'
-                    aria-label='Linkedin'
-                  >
-                    <Image
-                      src={'/assets/icons/contactLinkedin.svg'}
-                      width={40}
-                      height={40}
-                      alt='contactLinkedin'
-                    />
-                  </Link>
-                  <Link
-                    href='https://www.instagram.com/codewinglet/'
-                    target='_blank'
-                    aria-label='Instagram'
-                  >
-                    <Image
-                      src={'/assets/icons/contactInsta.svg'}
-                      width={40}
-                      height={40}
-                      alt='contactInsta'
-                    />
-                  </Link>
-                  <Link
-                    href='https://www.facebook.com/codewingletpteltd'
-                    target='_blank'
-                    aria-label='Facebook'
-                  >
-                    <Image
-                      src={'/assets/icons/contactFb.svg'}
-                      width={40}
-                      height={40}
-                      alt='contactFb'
-                    />
-                  </Link>
-                  <Link
-                    href='https://twitter.com/codewinglet'
-                    target='_blank'
-                    aria-label='Twitter'
-                  >
-                    <Image
-                      src={'/assets/icons/contactX.svg'}
-                      width={40}
-                      height={40}
-                      alt='contactX'
-                    />
-                  </Link>
+                <div className='flex gap-5'>
+                  {socialLinks.map((link, index) => (
+                    <Link
+                      key={index}
+                      href={link.href}
+                      target='_blank'
+                      aria-label={link.ariaLabel}
+                    >
+                      <Image
+                        src={link.src}
+                        width={40}
+                        height={40}
+                        alt={link.alt}
+                      />
+                    </Link>
+                  ))}
                 </div>
               </div>
             </Reveal>

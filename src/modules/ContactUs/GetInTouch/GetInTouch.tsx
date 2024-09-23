@@ -11,6 +11,45 @@ import SectionHeader from '../../../components/SectionHeader/SectionHeader';
 const GetInTouch = () => {
   const { formData, onChangeFormData, onSubmit, isLoading } = useGetInTouch();
 
+  const socialLinks = [
+    {
+      href: 'https://in.linkedin.com/company/codewinglet',
+      ariaLabel: 'Linkedin',
+      src: '/assets/icons/contactLinkedin.svg',
+      alt: 'contactLinkedin',
+    },
+    {
+      href: 'https://www.instagram.com/codewinglet/',
+      ariaLabel: 'Instagram',
+      src: '/assets/icons/contactInsta.svg',
+      alt: 'contactInsta',
+    },
+    {
+      href: 'https://www.linkedin.com/company/codewinglet/',
+      ariaLabel: 'Linkedin',
+      src: '/assets/icons/contactLinkedin.svg',
+      alt: 'contactLinkedin',
+    },
+    {
+      href: 'https://twitter.com/codewinglet',
+      ariaLabel: 'Twitter',
+      src: '/assets/icons/contactX.svg',
+      alt: 'contactX',
+    },
+    {
+      href: 'https://dribbble.com/codewingletprivatelimited',
+      ariaLabel: 'Dribble',
+      src: '/assets/icons/contactDribble.svg',
+      alt: 'contactDribble',
+    },
+    {
+      href: 'https://www.behance.net/codewinglet',
+      ariaLabel: 'Behance',
+      src: '/assets/icons/contactBehance.svg',
+      alt: 'contactBehance',
+    },
+  ];
+
   return (
     <div className='bg-white md:mt-[86px] mt-[78px] md:pt-20 2xl:pb-[160px] xl:pb-[140px] pt-[30px] sm:pb-0 pb-[30px]'>
       <div className='container w-full lg:px-[15px] sm:px-[30px] px-4 mx-auto'>
@@ -57,56 +96,22 @@ const GetInTouch = () => {
               <Typography className='text-subtitle2 mb-[25px]'>
                 Follow us in media :
               </Typography>
-              <div className='flex gap-[30px]'>
-                <Link
-                  href='https://in.linkedin.com/company/codewinglet'
-                  target='_blank'
-                  aria-label='Linkedin'
-                >
-                  <Image
-                    src={'/assets/icons/contactLinkedin.svg'}
-                    width={40}
-                    height={40}
-                    alt='contactLinkedin'
-                  />
-                </Link>
-                <Link
-                  href='https://www.instagram.com/codewinglet/'
-                  target='_blank'
-                  aria-label='Instagram'
-                >
-                  <Image
-                    src={'/assets/icons/contactInsta.svg'}
-                    width={40}
-                    height={40}
-                    alt='contactInsta'
-                  />
-                </Link>
-                <Link
-                  href='https://www.linkedin.com/company/codewinglet/'
-                  target='_blank'
-                  aria-label='Linkedin'
-                >
-                  <Image
-                    src={'/assets/icons/contactLinkedin.svg'}
-                    width={40}
-                    height={40}
-                    alt='contactLinkedin'
-                  />
-                </Link>
-
-                <Link
-                  href='https://twitter.com/codewinglet'
-                  target='_blank'
-                  aria-label='Twitter'
-                >
-                  <Image
-                    src={'/assets/icons/contactX.svg'}
-                    width={40}
-                    height={40}
-                    alt='contactX'
-                  />
-                </Link>
+              <div className='flex gap-5'>
+                {socialLinks.map((link, index) => (
+                  <Link
+                    key={index}
+                    href={link.href}
+                    target='_blank'
+                    aria-label={link.ariaLabel}
+                  >
+                    <Image
+                      src={link.src}
+                      width={40}
+                      height={40}
+                      alt={link.alt}
+                    />
+                  </Link>
+                ))}
               </div>
             </div>
           </div>

@@ -75,6 +75,20 @@ const socialLinks = [
     height: 18,
     alt: 'TwitterLogo',
   },
+  {
+    href: 'https://dribbble.com/codewingletprivatelimited',
+    src: '/assets/icons/DribbleLogo.svg',
+    width: 18,
+    height: 18,
+    alt: 'DribbleLogo',
+  },
+  {
+    href: 'https://www.behance.net/codewinglet',
+    src: '/assets/icons/behanceLogo.svg',
+    width: 18,
+    height: 12,
+    alt: 'BehanceLogo',
+  },
 ];
 
 const contacts = [
