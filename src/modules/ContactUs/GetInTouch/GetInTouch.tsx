@@ -12,7 +12,7 @@ const GetInTouch = () => {
   const { formData, onChangeFormData, onSubmit, isLoading } = useGetInTouch();
 
   return (
-    <div className='bg-white md:mt-[142px] mt-[206px] md:pt-20 2xl:pb-[160px] xl:pb-[140px] pt-[30px] sm:pb-0 pb-[30px]'>
+    <div className='bg-white md:mt-[86px] mt-[78px] md:pt-20 2xl:pb-[160px] xl:pb-[140px] pt-[30px] sm:pb-0 pb-[30px]'>
       <div className='container w-full lg:px-[15px] sm:px-[30px] px-4 mx-auto'>
         <div className='lg:flex block 2xl:gap-[90px] xl:gap-[25px]'>
           <div className='lg:w-[52%] w-full'>

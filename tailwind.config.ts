@@ -43,10 +43,11 @@ export default {
       darkBlack: '#191919',
       darkBorder: '#1d1d1d',
       grayBorder: '#3b3b3b',
+      lightGray: '#808080',
     },
     fontFamily: {
       primary: ['Poppins', 'sans-serif'],
-      playFair: ['Playfair', 'Display'],
+      playFair: ['Playfair Display', 'serif'],
     },
     backgroundImage: {
       'dot-pattern': 'url("/assets/career/dotGrid.png")',

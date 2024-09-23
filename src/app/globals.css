@@ -26,22 +26,10 @@ html {
   background-color: transparent !important;
 }
 
-/* ::-webkit-scrollbar {
-  width: 5px;
+.m_blog .slick-prev,
+.m_blog .slick-next {
+  display: none !important;
 }
-
-.submenus ::-webkit-scrollbar {
-  height: 4px !important;
-}
-
-::-webkit-scrollbar-track {
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #dedede;
-  border-radius: 10px;
-} */
 
 iframe {
   filter: invert(5%) grayscale(1);

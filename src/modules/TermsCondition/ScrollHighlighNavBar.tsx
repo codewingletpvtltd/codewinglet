@@ -86,16 +86,16 @@ const ScrollHighlightNavbar: React.FC<ScrollHighlightNavbarProps> = ({
           <li key={policy.id} className='flex-shrink-0'>
             <a href={`#${policy.id}`}>
               <div
-                className={` bg-white p-0 ${
+                className={`bg-white p-0 ${
                   i === activeIndex
                     ? 'text-primary lg:text-paragraph1Bold md:text-paragraph2 text-tag'
                     : 'text-secondary lg:text-paragraph1ExtraLight md:text-paragraph2Light text-tagLight'
-                } cursor-pointer flex items-center justify-between `}
+                } cursor-pointer flex items-center justify-between`}
               >
                 {policy.title}
                 <div className='hidden'>
                   <Arrow
-                    className={` ${i === activeIndex ? 'block' : 'hidden'}`}
+                    className={`${i === activeIndex ? 'block' : 'hidden'}`}
                   />
                 </div>
               </div>
