@@ -45,7 +45,7 @@ const Articles = () => {
   return (
     <>
       <div
-        className='bg-white lg:py-20 md:py-[60px] py-[30px] scroll-mt-40'
+        className='bg-white lg:py-20 md:py-[60px] py-[30px] scroll-mt-40 m_blog'
         id='blog'
       >
         <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
@@ -98,7 +98,7 @@ const Articles = () => {
             </div>
 
             <Button
-              className='sm:w-[248px] w-[203px] h-[52px] lg:m-auto 2xl:mt-12 mt-10 flex mx-auto'
+              className='sm:w-[248px] w-[203px] h-[52px] lg:m-auto 2xl:mt-12 mt-10 mx-auto lg:flex hidden'
               variant='blackOutline'
             >
               <Link

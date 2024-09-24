@@ -13,35 +13,14 @@ html {
 @tailwind components;
 @tailwind utilities;
 
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-
-.no-scrollbar {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-
 .react-tel-input .selected-flag:hover {
   background-color: transparent !important;
 }
 
-/* ::-webkit-scrollbar {
-  width: 5px;
+.m_blog .slick-prev,
+.m_blog .slick-next {
+  display: none !important;
 }
-
-.submenus ::-webkit-scrollbar {
-  height: 4px !important;
-}
-
-::-webkit-scrollbar-track {
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #dedede;
-  border-radius: 10px;
-} */
 
 iframe {
   filter: invert(5%) grayscale(1);
@@ -291,4 +270,26 @@ input[type='number']::-webkit-outer-spin-button {
 }
 .faq > div {
   padding-bottom: 25px;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: 5px;
+  scrollbar-color: #141414 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #8f54a0;
+  border-radius: 10px;
+  border: 1px solid #ffffff;
 }

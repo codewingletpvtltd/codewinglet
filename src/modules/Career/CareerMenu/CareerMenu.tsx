@@ -1,30 +1,16 @@
-/* eslint-disable import/order */
 'use client';
 
-import { cn } from '@codewinglet/utils';
 import { useEffect, useRef, useState } from 'react';
 
-const designation = [
-  {
-    title: 'Career',
-    path: '#career',
-  },
-  {
-    title: 'Perks & Benefits',
-    path: '#perks',
-  },
-  {
-    title: 'Hiring process',
-    path: '#process',
-  },
-  {
-    title: 'Open jobs',
-    path: '#jobs',
-  },
-  {
-    title: 'Insights from employee',
-    path: '#employee',
-  },
+import { cn } from '@codewinglet/utils';
+
+// Static menu data
+const MENU_ITEMS = [
+  { title: 'Career', path: '#career' },
+  { title: 'Perks & Benefits', path: '#perks' },
+  { title: 'Hiring process', path: '#process' },
+  { title: 'Open jobs', path: '#jobs' },
+  { title: 'Insights from employee', path: '#employee' },
 ];
 
 const CareerMenu = () => {
@@ -32,19 +18,22 @@ const CareerMenu = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(0);
   const observerRef = useRef<IntersectionObserver | null>(null);
 
+  // Handle body scrolling when the menu is open
   useEffect(() => {
-    const app = document.querySelector('.App')?.classList;
+    const appClassList = document.querySelector('.App')?.classList;
     if (isMenuOpen) {
-      app?.add('stop-scrolling', 'bg-white');
+      appClassList?.add('stop-scrolling', 'bg-white');
     } else {
-      app?.remove('stop-scrolling', 'bg-white');
+      appClassList?.remove('stop-scrolling', 'bg-white');
     }
   }, [isMenuOpen]);
 
+  // Setup IntersectionObserver for section visibility tracking
   useEffect(() => {
-    const sections = designation.map((item) =>
-      document.getElementById(item.path.substring(1))
+    const sections = MENU_ITEMS.map(({ path }) =>
+      document.getElementById(path.substring(1))
     );
+
     const observerOptions = {
       root: null,
       rootMargin: '0px',
@@ -54,8 +43,8 @@ const CareerMenu = () => {
     const observerCallback = (entries: IntersectionObserverEntry[]) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          const index = designation.findIndex(
-            (item) => item.path.substring(1) === entry.target.id
+          const index = MENU_ITEMS.findIndex(
+            ({ path }) => path.substring(1) === entry.target.id
           );
           setActiveIndex(index);
         }
@@ -66,76 +55,76 @@ const CareerMenu = () => {
       observerCallback,
       observerOptions
     );
-    sections.forEach((section) => {
-      if (section) observerRef.current?.observe(section);
-    });
+
+    sections.forEach(
+      (section) => section && observerRef.current?.observe(section)
+    );
 
     return () => {
-      sections.forEach((section) => {
-        if (section) observerRef.current?.unobserve(section);
-      });
+      sections.forEach(
+        (section) => section && observerRef.current?.unobserve(section)
+      );
     };
   }, []);
 
-  const clickHandler = (
+  // Handle menu item click and keyboard events
+  const handleMenuClick = (
     event:
-      | React.MouseEvent<HTMLButtonElement | HTMLAnchorElement, MouseEvent>
-      | React.KeyboardEvent<HTMLSpanElement>,
+      | React.MouseEvent<HTMLDivElement>
+      | React.KeyboardEvent<HTMLDivElement>,
     id: string,
     index: number
-  ): void => {
+  ) => {
     event.preventDefault();
-    const element = document.getElementById(id);
-
-    if (element) {
+    const targetSection = document.getElementById(id);
+    if (targetSection) {
       setIsMenuOpen(false);
       setActiveIndex(index);
-      setTimeout(() => {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }, 200);
+      setTimeout(
+        () => targetSection.scrollIntoView({ behavior: 'smooth' }),
+        200
+      );
     }
   };
 
   return (
-    <>
-      <div className='bg-white pt-2.5 md:pt-10 lg:mt-[86px] md:mt-[90px] mt-[78px] border-b border-headerBoxBorder fixed w-full z-10'>
-        <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
-          <div className='flex lg:overscroll-x-none overflow-x-auto'>
-            {designation.map(({ title, path }, index) => (
-              <button
-                key={title}
-                className={cn(
-                  'relative md:text-paragraph1Light text-paragraph2Light flex-shrink-0 py-2.5 px-5 cursor-pointer !font-light',
-                  activeIndex === index
-                    ? 'bg-bg border-b border-primary !font-normal'
-                    : ''
-                )}
-                onClick={(event) =>
-                  clickHandler(event, path.substring(1), index)
+    <div className='bg-white pt-2.5 md:pt-10 lg:mt-[86px] md:mt-[90px] mt-[78px] border-b border-headerBoxBorder fixed w-full z-10'>
+      <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
+        <div className='flex lg:overscroll-x-none overflow-x-auto'>
+          {MENU_ITEMS.map(({ title, path }, index) => (
+            <div
+              key={title}
+              role='button'
+              tabIndex={0} // Keyboard accessibility
+              className={cn(
+                'relative md:text-paragraph1Light text-paragraph2Light flex-shrink-0 py-2.5 px-5 cursor-pointer !font-light',
+                activeIndex === index
+                  ? 'bg-bg border-b border-primary !font-normal'
+                  : ''
+              )}
+              onClick={(event) =>
+                handleMenuClick(event, path.substring(1), index)
+              }
+              onKeyDown={(event) => {
+                if (event.key === 'Enter' || event.key === ' ') {
+                  handleMenuClick(event, path.substring(1), index);
                 }
+              }}
+            >
+              <span
+                className={cn(
+                  'flex justify-between w-full',
+                  isMenuOpen && 'items-center'
+                )}
               >
-                <span
-                  role='button'
-                  tabIndex={0}
-                  className={cn(
-                    'flex justify-between w-full',
-                    isMenuOpen && 'items-center'
-                  )}
-                  onClick={(event) => event.preventDefault()}
-                  onKeyDown={(event) => {
-                    if (event.key === 'Enter' || event.key === ' ') {
-                      clickHandler(event, path.substring(1), index);
-                    }
-                  }}
-                >
-                  {title}
-                </span>
-              </button>
-            ))}
-          </div>
+                {title}
+              </span>
+            </div>
+          ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
+
 export default CareerMenu;

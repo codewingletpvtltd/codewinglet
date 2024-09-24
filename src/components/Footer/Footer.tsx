@@ -8,6 +8,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
+import SocialMedia from '../SocialMedia/SocialMedia';
 import {
   companyMenu,
   companyTermsMenu,
@@ -43,37 +44,6 @@ const footerTitle = [
     responsiveClass:
       'min-h-[1px] xl:mt-0 lg:mt-7 md:mt-7 m-0 lg:!w-[23%] md:w-1/2 w-full',
     menu: companyMenu,
-  },
-];
-
-const socialLinks = [
-  {
-    href: 'https://in.linkedin.com/company/codewinglet',
-    src: '/assets/icons/LinkedInLogo.svg',
-    width: 15,
-    height: 18,
-    alt: 'LinkedInLogo',
-  },
-  {
-    href: 'https://www.instagram.com/codewinglet/',
-    src: '/assets/icons/InstagramLogo.svg',
-    width: 15,
-    height: 18,
-    alt: 'InstagramLogo',
-  },
-  {
-    href: 'https://www.facebook.com/codewingletpteltd',
-    src: '/assets/icons/FacebookLogo.svg',
-    width: 12,
-    height: 18,
-    alt: 'FacebookLogo',
-  },
-  {
-    href: 'https://twitter.com/codewinglet',
-    src: '/assets/icons/TwitterLogo.svg',
-    width: 15,
-    height: 18,
-    alt: 'TwitterLogo',
   },
 ];
 
@@ -200,7 +170,7 @@ const Footer = () => {
                   >
                     {menuItem.menu.map((item) => (
                       <div key={item.id}>
-                        <Typography className='text-paragraph2Light leading-normal mb-3.5 min-h-0 text-secondary hover:text-white'>
+                        <Typography className='text-paragraph2Light leading-normal mb-3.5 min-h-0 text-lightGray hover:text-white'>
                           <Link className='' href={item?.path}>
                             {item.label}
                           </Link>
@@ -218,7 +188,7 @@ const Footer = () => {
                   {contacts.map((contact, index) => (
                     <Typography
                       key={index}
-                      className='text-paragraph2Light leading-normal mb-5 min-h-0 text-secondary flex gap-3 items-start'
+                      className='text-paragraph2Light leading-normal mb-5 min-h-0 text-lightGray flex gap-3 items-start'
                     >
                       <Image
                         src={contact.icon}
@@ -253,21 +223,12 @@ const Footer = () => {
                   ))}
                 </div>
                 <div className='flex gap-5 lg:mt-7 md:mt-5 mt-5 ml-7'>
-                  {socialLinks.map((link, index) => (
-                    <Link
-                      key={index}
-                      className='flex items-center justify-center w-8 h-8 border border-solid border-white rounded-full bg-white'
-                      href={link.href}
-                      target='_blank'
-                    >
-                      <Image
-                        src={link.src}
-                        width={link.width}
-                        height={link.height}
-                        alt={link.alt}
-                      />
-                    </Link>
-                  ))}
+                  <SocialMedia
+                    bgColor='white'
+                    iconColor='black'
+                    width='32'
+                    height='32'
+                  />
                 </div>
               </div>
             </div>
@@ -276,7 +237,7 @@ const Footer = () => {
       </footer>
 
       <Reveal>
-        <div className='lg:gap-0 gap-4 relative text-secondary border-t border-[#3b3b3b]'>
+        <div className='lg:gap-0 gap-4 relative text-lightGray border-t border-[#3b3b3b]'>
           <div className='container flex flex-col sm:flex-row items-start sm:justify-between justify-start lg:px-3.5 sm:p-10 sm:py-3.5 p-5 md:gap-0 gap-1'>
             <Typography className='text-left lg:text-paragraph2Light text-tagLight'>
               All rights reserved © {new Date().getFullYear()} - Codewinglet{' '}

@@ -91,21 +91,21 @@ const ScrollHighlightNavbar: React.FC<ScrollHighlightNavbarProps> = ({
 
   return (
     <div
-      className={`w-full lg:p-0 p-5 bg-white lg:sticky lg:z-0 z-10 right-auto lg:top-[230px] md:top-[90px] top-[78px] lg:left-auto left-0 ${containerClassName}`}
+      className={`w-full lg:p-0 p-5 bg-white lg:sticky lg:z-0 z-10 right-auto lg:top-[190px] md:top-[90px] top-[78px] lg:left-auto left-0 ${containerClassName}`}
     >
       <Typography className='text-primary text-subtitle2 pb-[18px] mb-[29px] border-b-2 border-primary'>
         Table of Contents
       </Typography>
-      <ul className='lg:grid flex overflow-auto [-ms-overflow-style:_none;] [scrollbar-width:_none;] gap-6'>
+      <ul className='grid overflow-auto [-ms-overflow-style:_none;] [scrollbar-width:_none;] gap-5'>
         {navHeader.map((policy, i) => (
           <li key={policy.id} className='flex-shrink-0'>
             <a
               href={`#${policy.id}`}
               className={`bg-white p-0 ${
                 i === activeIndex
-                  ? 'text-primary lg:text-paragraph1Bold md:text-paragraph2 text-tag'
-                  : 'text-secondary lg:text-paragraph1ExtraLight md:text-paragraph2Light text-tagLight'
-              } cursor-pointer flex items-center justify-between `}
+                  ? 'text-primary lg:text-paragraph2 md:text-paragraph2 text-tag'
+                  : 'text-secondary lg:text-paragraph2Light md:text-paragraph2Light text-tagLight'
+              } cursor-pointer flex items-center justify-between`}
               onClick={() => setActiveIndex(i)}
             >
               {policy.title}
