@@ -22,7 +22,7 @@ const OurVision = () => (
         </Reveal>
         <div>
           <span></span>
-          <div className='bg-headerBoxBorder w-[1px] 2xl:h-[1141px] h-[960px] absolute top-56 left-1/2 lg:block hidden'></div>
+          <div className='bg-headerBoxBorder w-[1px] 2xl:h-[690px] h-[590px] absolute top-56 left-1/2 lg:block hidden'></div>
         </div>
         <div className='flex lg:flex-row flex-col lg:gap-[134px] gap-3 items-center lg:my-[60px] my-[34px]'>
           <div className='2xl:w-[696px] xl:w-[568px] w-full flex lg:justify-end lg:order-1 order-2'>
