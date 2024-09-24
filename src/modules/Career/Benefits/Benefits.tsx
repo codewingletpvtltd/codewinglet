@@ -4,6 +4,7 @@ import Reveal from '@codewinglet/components/Reveal';
 
 import { Typography } from '@codewinglet/components';
 import Image from 'next/image';
+import Link from 'next/link';
 import SectionHeader from '../../../components/SectionHeader/SectionHeader';
 
 const workData = [
@@ -72,19 +73,18 @@ const Benefits = () => (
           </Reveal>
 
           <Reveal>
-            <div className='hidden relative lg:flex gap-[168px] mt-10 after:content after:absolute after:top-3 2xl:after:left-44 xl:after:left-[33%] after:w-[1px] after:h-[57px] after:bg-headerBoxBorder'>
-              <Image
-                src={'/assets/career/googleCareer.svg'}
-                width={97}
-                height={83}
-                alt='google'
-              />
-              <Image
-                src={'/assets/ContactUs/glassdoorreview.svg'}
-                width={119}
-                height={83}
-                alt='glassdoor'
-              />
+            <div className='hidden relative lg:block mt-10'>
+              <Link
+                href='https://www.google.com/search?q=google+my+business+codewinglet&sca_esv=140e142c45642a77&sca_upv=1&rlz=1C1GCEU_enIN954IN956&sxsrf=ADLYWIK8twRkm95COwC8J2bYLgvfRijrIw%3A1727152551706&ei=p0HyZqDjKpqJ4-EPvd3QkQc&oq=google+my+business+codewinglet&gs_lp=Egxnd3Mtd2l6LXNlcnAiHmdvb2dsZSBteSBidXNpbmVzcyBjb2Rld2luZ2xldCoCCAAyBRAhGKABMgUQIRigAUioa1CKMlivV3ACeAGQAQCYAfgBoAG0I6oBBjAuMjMuM7gBA8gBAPgBAZgCGKACyx3CAgoQABiwAxjWBBhHwgIHECEYoAEYCsICBBAhGBXCAgUQABiABMICCxAAGIAEGJECGIoFwgIIEAAYgAQYsQPCAgYQABgWGB7CAggQABgWGB4YD8ICBxAAGIAEGA3CAggQABgIGA0YHsICChAAGAgYDRgeGA-YAwCIBgGQBgiSBwYyLjIxLjGgB-uGAQ&sclient=gws-wiz-serp#lrd=0xad9b0b986e322e33:0x223c56e331adc03,1,,,,'
+                target='_blank'
+              >
+                <Image
+                  src={'/assets/ContactUs/google-review.svg'}
+                  width={171}
+                  height={83}
+                  alt='google'
+                />
+              </Link>
             </div>
           </Reveal>
         </div>
