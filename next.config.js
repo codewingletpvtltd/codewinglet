@@ -3,11 +3,12 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        hostname: 'localhost',
+        protocol: 'http',
+        hostname: '127.0.0.1',
       },
-      {
-        hostname: 'strapi.codewinglet.com',
-      },
+      // {
+      //   hostname: 'strapi.codewinglet.com',
+      // },
     ],
   },
   env: {

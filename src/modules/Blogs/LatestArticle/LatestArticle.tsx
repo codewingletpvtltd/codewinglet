@@ -1,7 +1,6 @@
 /* eslint-disable import/order */
 'use client';
-import { BlogCard, Typography } from '@codewinglet/components';
-import Checkbox from '@codewinglet/components/CheckBox/CheckBox';
+import { Typography } from '@codewinglet/components';
 import Pagination from '@codewinglet/components/Pagination/Pagination';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
@@ -28,7 +27,6 @@ const LatestArticle = () => {
 
   const handleCheckboxChange = (checked: any) => {
     setIsChecked(checked);
-    console.log('Checkbox checked:', checked);
   };
 
   const checkboxData = [
@@ -67,7 +65,7 @@ const LatestArticle = () => {
               className='w-full placeholder:text-secondary border border-headerBoxBorder py-[13px] pl-[58px] text-paragraph2Light focus:outline-0'
             />
           </div>
-          <div className='mt-[15px] border-r border-headerBoxBorder overflow-y-auto'>
+          {/* <div className='mt-[15px] border-r border-headerBoxBorder overflow-y-auto'>
             {checkboxData.map((item, i) => (
               <div
                 className='flex items-center gap-2 p-3.5 hover:bg-bg cursor-pointer'
@@ -81,7 +79,7 @@ const LatestArticle = () => {
                 />
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
         <div className='w-[1013px]'>
           <Typography className='text-h6 mb-[37px]'>Latest article</Typography>
@@ -132,7 +130,7 @@ const LatestArticle = () => {
               Resources and insights
             </Typography>
             <div className='grid md:grid-cols-2 grid-cols-1 lg:gap-[45px] gap-5 gap-y-[45px]'>
-              <BlogCard
+              {/* <BlogCard
                 image='/assets/blog/blog_Img1.jpg'
                 date={clientDate || 'Loading...'}
                 title='Bill Walsh leadership lessons Bill Walsh leadership lessons'
@@ -167,7 +165,7 @@ const LatestArticle = () => {
                 imageSrc='/assets/icons/crossArrow.svg'
                 imageAlt='crossArrow'
                 className='!mx-0 !w-full'
-              />
+              /> */}
             </div>
           </div>
           <div className='md:mb-20 mb-10'>

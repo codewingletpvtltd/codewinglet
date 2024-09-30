@@ -39,7 +39,7 @@ dependencies:
     specifier: 10.4.14
     version: 10.4.14(postcss@8.4.23)
   axios:
-    specifier: ^1.5.1
+    specifier: ^1.7.7
     version: 1.7.7
   babel-plugin-module-resolver:
     specifier: ^5.0.0

@@ -3,10 +3,10 @@ import Link from 'next/link';
 
 import { Breadcrumb, Typography } from '@codewinglet/components';
 
-const BlogDetailsLink = () => {
+const BlogDetailsLink = ({ blogData }: any) => {
   const breadcrumbData = [
-    { value: 'All Blog' },
-    { value: 'How collaboration makes us better designers' },
+    { value: 'All Blog', href: '/blogs' },
+    { value: `${blogData.title}` },
   ];
 
   const socialLinks = [
@@ -64,9 +64,15 @@ const BlogDetailsLink = () => {
         </div>
         <div className='lg:block hidden'>
           <Breadcrumb
-            breadcrumbs={breadcrumbData.map((item) => (
-              <Typography key={item.value}>{item.value}</Typography>
-            ))}
+            breadcrumbs={breadcrumbData.map((item) =>
+              item.href ? (
+                <Link href={item.href} key={item.value}>
+                  <Typography>{item.value}</Typography>
+                </Link>
+              ) : (
+                <Typography key={item.value}>{item.value}</Typography>
+              )
+            )}
           />
         </div>
         <div className='flex items-center gap-[18px]'>

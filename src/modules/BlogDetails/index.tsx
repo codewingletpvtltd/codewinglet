@@ -3,11 +3,11 @@ import BlogDescription from './BlogDescription/BlogDescription';
 import BlogDetailsLink from './BlogDetailsLink/BlogDetailsLink';
 import BlogHeroSection from './BlogHeroSection/BlogHeroSection';
 
-const BlogDetails = () => (
+const BlogDetails = ({ blogData }: any) => (
   <>
-    <BlogDetailsLink />
-    <BlogHeroSection />
-    <BlogDescription />
+    <BlogDetailsLink blogData={blogData} />
+    <BlogHeroSection blogData={blogData} />
+    <BlogDescription contentData={blogData.content} />
     <Articles />
   </>
 );

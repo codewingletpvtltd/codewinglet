@@ -1,7 +1,7 @@
 /* eslint-disable import/order */
 'use client';
 import { Arrow } from '@codewinglet/assets';
-import { BlogCard, Button, SectionHeader } from '@codewinglet/components';
+import { Button, SectionHeader } from '@codewinglet/components';
 import Reveal from '@codewinglet/components/Reveal';
 import Link from 'next/link';
 import Slider from 'react-slick';
@@ -60,7 +60,7 @@ const Articles = () => {
 
           <div className='lg:mt-[50px] md:mt-10 mt-5'>
             <div className='lg:grid lg:grid-cols-3 md:grid-cols-2 md:gap-[50px] gap-5 hidden'>
-              <BlogCard
+              {/* <BlogCard
                 image='/assets/blog/blog_Img1.jpg'
                 title='Bill Walsh leadership lessons Bill Walsh leadership lessons'
                 desc='Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?'
@@ -74,12 +74,12 @@ const Articles = () => {
                 image='/assets/blog/blog_Img3.jpg'
                 title='What is Wireframing? Bill Walsh leadership lessons'
                 desc='Introduction to Wireframing and its Principles. Learn from the best in the industry.'
-              />
+              /> */}
             </div>
 
             <div className='lg:hidden'>
               <Slider {...settings}>
-                <BlogCard
+                {/* <BlogCard
                   image='/assets/blog/blog_Img1.jpg'
                   title='Bill Walsh leadership lessons Bill Walsh leadership lessons'
                   desc='Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?'
@@ -93,7 +93,7 @@ const Articles = () => {
                   image='/assets/blog/blog_Img3.jpg'
                   title='What is Wireframing? Bill Walsh leadership lessons'
                   desc='Introduction to Wireframing and its Principles. Learn from the best in the industry.'
-                />
+                /> */}
               </Slider>
             </div>
 
@@ -102,7 +102,7 @@ const Articles = () => {
               variant='blackOutline'
             >
               <Link
-                href='/contact-us'
+                href='/blogs'
                 rel='noopener noreferrer'
                 className='flex items-center justify-center gap-3'
               >
