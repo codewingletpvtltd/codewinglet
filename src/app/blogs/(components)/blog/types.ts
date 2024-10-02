@@ -5,7 +5,7 @@ export type Blog = {
   summary: string;
   content: string[];
   slug: string;
-  category: string[];
+  tags?: any;
   createdAt: string;
   updatedAt: string;
   publishedAt: string;

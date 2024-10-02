@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import { Typography } from '@codewinglet/components';
-import { formatDate } from '@codewinglet/utils';
+import { formatDate, formatTag } from '@codewinglet/utils';
 
 import { Blog } from './types';
 
@@ -41,16 +41,20 @@ const BlogItem: React.FC<BlogItemProps> = ({ blog }) => (
         <Typography className='text-paragraph2Light text-secondary leading-[18px] md:leading-[22px] mt-4'>
           {blog.summary}
         </Typography>
-        <ul className='flex gap-2 pt-[50px]'>
-          {blog.category?.map((data, index) => (
-            <li
-              key={index}
-              className='text-secondary text-tagLight bg-bg border border-headerBoxBorder rounded-full py-0.5 px-2.5 w-fit'
-            >
-              {data}
-            </li>
-          ))}
-        </ul>
+        {blog.tags && (
+          <ul className='flex gap-2 pt-[50px]'>
+            {Object.entries(blog.tags)
+              .filter(([key, value]) => value === true)
+              .map(([key], index) => (
+                <li
+                  key={index}
+                  className='text-secondary capitalize text-tagLight bg-bg border border-headerBoxBorder rounded-full py-0.5 px-2.5 w-fit'
+                >
+                  {formatTag(key)}
+                </li>
+              ))}
+          </ul>
+        )}
       </div>
     </div>
   </>

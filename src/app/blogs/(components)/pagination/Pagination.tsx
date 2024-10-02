@@ -1,17 +1,23 @@
 'use client';
 
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 
 type PaginationProps = {
   totalPages: number;
   currentPage: number;
+  searchQuery?: string;
 };
 
-const Pagination = ({ totalPages, currentPage }: PaginationProps) => {
+const Pagination = ({
+  totalPages,
+  currentPage,
+  searchQuery,
+}: PaginationProps) => {
   const router = useRouter();
+  const searchParams = useSearchParams();
 
   const getPageNumbers = (): (number | string)[] => {
-    const totalNumbers = 7;
+    const totalNumbers = 5;
     const sideNumbers = 2;
 
     if (totalPages <= totalNumbers) {
@@ -41,19 +47,23 @@ const Pagination = ({ totalPages, currentPage }: PaginationProps) => {
   const handlePageClick = (page: number | string) => {
     if (page === '...') return;
 
-    router.push(`/blogs/?page=${page}`);
+    // router.push(`/blogs/?page=${page}`);
+    const searchParam = searchQuery
+      ? `&search=${encodeURIComponent(searchQuery)}`
+      : '';
+    router.push(`/blogs/?page=${page}${searchParam}`);
   };
 
   return (
-    <div className='flex items-center space-x-2 mt-8'>
+    <div className='flex items-center justify-center my-8'>
       {getPageNumbers().map((page, index) => (
         <button
           key={index}
           onClick={() => handlePageClick(page)}
-          className={`px-3 py-2 rounded ${
+          className={`px-3 py-2 rounded-lg font-medium w-10 h-10 ${
             page === currentPage
-              ? 'bg-gray-200 text-black font-bold'
-              : 'text-gray-500 hover:bg-gray-100'
+              ? 'bg-bg text-black'
+              : 'text-secondary hover:bg-gray-100'
           }`}
           disabled={page === currentPage}
         >

@@ -6,7 +6,7 @@ import BlogItem from '../(components)/blog/BlogItem';
 import BlogList from '../(components)/blog/BlogList';
 import Pagination from '../(components)/pagination/Pagination';
 
-const fetchAllBlogs = async (page: number = 1, pageSize: number) => {
+const fetchLatestBlog = async () => {
   try {
     const reqOptions = {
       headers: {
@@ -15,7 +15,43 @@ const fetchAllBlogs = async (page: number = 1, pageSize: number) => {
     };
 
     const blogRequest = await fetch(
-      `http://127.0.0.1:1337/api/blogs?sort=createdAt:desc&populate=*&pagination[page]=${page}&pagination[pageSize]=${pageSize}`,
+      `http://127.0.0.1:1337/api/blogs?sort=createdAt:desc&populate=*&pagination[page]=${1}&pagination[pageSize]=${1}`,
+      reqOptions
+    );
+
+    if (!blogRequest.ok) {
+      throw new Error(`HTTP error! Status: ${blogRequest.status}`);
+    }
+
+    const response = await blogRequest.json();
+    return {
+      latestBlog: response.data,
+    };
+  } catch (error) {
+    console.error('Fetch failed for latest blog: ', error);
+    notFound();
+  }
+};
+
+const fetchAllBlogs = async (
+  latestBlogId: string,
+  page: number = 1,
+  pageSize: number,
+  searchQuery: string = ''
+) => {
+  try {
+    const reqOptions = {
+      headers: {
+        Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`,
+      },
+    };
+
+    const searchFilter = searchQuery
+      ? `&filters[title][$containsi]=${encodeURIComponent(searchQuery)}`
+      : '';
+
+    const blogRequest = await fetch(
+      `http://127.0.0.1:1337/api/blogs?populate=*&pagination[page]=${page}&pagination[pageSize]=${pageSize}&filters[documentId][$ne]=${latestBlogId}${searchFilter}`,
       reqOptions
     );
 
@@ -34,41 +70,53 @@ const fetchAllBlogs = async (page: number = 1, pageSize: number) => {
   }
 };
 
-const Blogs = async ({ searchParams }: { searchParams: { page?: string } }) => {
+const Blogs = async ({
+  searchParams,
+}: {
+  searchParams: { page?: string; search?: string };
+}) => {
   const currentPage = parseInt(searchParams.page || '1');
-  const pageSize = currentPage === 1 ? 5 : 6;
-  const { blogs, pagination } = await fetchAllBlogs(currentPage, pageSize);
+  const searchQuery = searchParams.search || '';
+  const pageSize = 2;
+  const { latestBlog } = await fetchLatestBlog();
+  const { blogs, pagination } = await fetchAllBlogs(
+    latestBlog[0].documentId,
+    currentPage,
+    pageSize,
+    searchQuery
+  );
 
-  console.log('pagination', pagination, blogs.length);
+  console.log('latestblog', latestBlog[0].tags);
 
   return (
     <div className='text-black pl-14'>
-      {blogs.length > 0 ? (
+      {blogs.length > 0 || latestBlog ? (
         <>
-          {currentPage === 1 ? (
+          {currentPage === 1 && !searchQuery ? (
             <>
               <Typography className='text-h6 mb-[37px]'>
                 Latest article
               </Typography>
-              <BlogItem blog={blogs[0]} />
-              <div className='border-b border-headerBoxBorder lg:pb-[45px] pb-10 mb-5'>
+              <BlogItem blog={latestBlog[0]} />
+              <div className='border-b border-headerBoxBorder lg:pb-[45px] pb-10'>
                 <Typography className='text-h6 mb-[37px] mt-[60px]'>
                   Resources and insights
                 </Typography>
-                <BlogList blogs={blogs.slice(1)} />
+                <BlogList blogs={blogs} />
               </div>
             </>
           ) : (
-            <>
+            <div className='border-b border-headerBoxBorder lg:pb-[45px] pb-10'>
               <Typography className='text-h6 mb-[37px]'>
                 Resources and insights
               </Typography>
               <BlogList blogs={blogs} />
-            </>
+            </div>
           )}
           <Pagination
             totalPages={pagination.pageCount}
             currentPage={currentPage}
+            searchQuery={searchParams.search}
           />
         </>
       ) : (

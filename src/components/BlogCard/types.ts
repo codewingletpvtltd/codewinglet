@@ -5,7 +5,7 @@ export interface BlogCardProps {
   date?: string;
   readTime?: number;
   href: string;
-  category?: string[];
+  tags?: any;
   className?: string;
   imageSrc?: string;
   imageAlt?: string;

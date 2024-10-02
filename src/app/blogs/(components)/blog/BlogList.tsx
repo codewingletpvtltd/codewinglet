@@ -15,7 +15,7 @@ const BlogList: React.FC<BlogListProps> = ({ blogs }) => (
         title={blog.title}
         desc={blog.summary}
         readTime={blog.read}
-        category={blog.category}
+        tags={blog?.tags}
         href={`/blogs/${blog.slug}`}
         className='!mx-0 !w-full custom-other-layout'
         imageSrc='/assets/icons/crossArrow.svg'

@@ -1,3 +1,5 @@
+import { notFound } from 'next/navigation';
+
 import { BlogDetailsModule } from '@codewinglet/modules';
 
 const fetchBlogDetails = async (slug: string) => {
@@ -21,7 +23,7 @@ const fetchBlogDetails = async (slug: string) => {
     return response.data;
   } catch (error) {
     console.error('Fetch failed: ', error);
-    return null;
+    notFound();
   }
 };
 
@@ -53,6 +55,7 @@ const updateViewCount = async (blogId: string, currentViews: number = 0) => {
     }
   } catch (error) {
     console.error('View count update failed: ', error);
+    notFound();
   }
 };
 

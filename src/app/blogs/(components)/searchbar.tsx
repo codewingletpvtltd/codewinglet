@@ -1,7 +1,12 @@
-/* eslint-disable import/order */
-import { Button, Typography } from '@codewinglet/components';
-import Dropdown from '@codewinglet/components/DropDown/DropDown';
+'use client';
+
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
+import { useRouter, useSearchParams } from 'next/navigation';
+
+import { Button, Typography } from '@codewinglet/components';
+import CloseIcon from '@codewinglet/assets/icons/CloseIcon';
+import Dropdown from '@codewinglet/components/DropDown/DropDown';
 
 const BlogSearch = () => {
   const checkboxData = [
@@ -17,6 +22,31 @@ const BlogSearch = () => {
     { label: 'Artificial Intelligence', value: 'artificial-intelligence' },
     { label: 'User interface design', value: 'user-interface-design' },
   ];
+
+  const [inputValue, setInputValue] = useState('');
+  const router = useRouter();
+  const searchParams = useSearchParams();
+
+  useEffect(() => {
+    const searchQuery = searchParams.get('search');
+    if (searchQuery) {
+      setInputValue(searchQuery);
+    }
+  }, [searchParams]);
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const query = e.target.value;
+    setInputValue(query);
+  };
+
+  const handleSearch = () => {
+    router.push(`blogs/?search=${encodeURIComponent(inputValue)}`);
+  };
+
+  const clearSearch = () => {
+    setInputValue('');
+    router.push('blogs');
+  };
 
   return (
     <div className='bg-white lg:mt-[86px] md:mt-[90px] mt-[78px] fixed top-0 w-full z-10 shadow-custom'>
@@ -34,13 +64,22 @@ const BlogSearch = () => {
             <input
               type='text'
               placeholder='Search your blog here'
-              className='md:w-[383px] w-5 placeholder:text-secondary lg:border lg:border-headerBoxBorder lg:py-[13px] py-2.5 lg:pl-[58px] pl-[38px] text-paragraph2Light focus:outline-0'
+              className='md:w-[383px] w-5 placeholder:text-secondary lg:border lg:border-headerBoxBorder pr-9 lg:py-[13px] py-2.5 lg:pl-[58px] pl-[38px] text-paragraph2Light focus:outline-0'
+              value={inputValue}
+              onChange={handleInputChange}
             />
+            {inputValue && (
+              <CloseIcon
+                className='absolute right-2.5 top-[18px] cursor-pointer z-10'
+                onClick={clearSearch}
+              />
+            )}
           </div>
           <Button
             type='submit'
             variant='default'
             className='px-5 !py-[13px] ml-5 lg:block hidden'
+            onClick={handleSearch}
           >
             Search
           </Button>
