@@ -8,7 +8,7 @@ import { Button, Typography } from '@codewinglet/components';
 import CloseIcon from '@codewinglet/assets/icons/CloseIcon';
 import Dropdown from '@codewinglet/components/DropDown/DropDown';
 
-const BlogSearch = () => {
+export const BlogSearch = () => {
   const checkboxData = [
     { label: 'All Blogs', value: 'all' },
     { label: 'Web Design', value: 'web-design' },
@@ -91,5 +91,3 @@ const BlogSearch = () => {
     </div>
   );
 };
-
-export default BlogSearch;

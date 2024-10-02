@@ -23,3 +23,8 @@ export { default as Textarea } from './Textarea';
 export { default as TextField } from './TextField/TextField';
 export { default as TypeAnimation } from './TypeAnimation';
 export { default as Typography } from './Typography/Typography';
+
+export * from './Blog';
+export * from './SearchBar';
+export * from './Sidebar';
+export * from './Pagination';

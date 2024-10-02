@@ -1,5 +1,4 @@
-import BlogSearch from '../(components)/searchbar';
-import BlogCategory from '../(components)/sidebar/sidebar';
+import { BlogCategory, BlogSearch } from '@codewinglet/components';
 
 export default function layout({ children }: { children: React.ReactNode }) {
   return (

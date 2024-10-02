@@ -1,7 +1,7 @@
 /* eslint-disable import/order */
 'use client';
-import { Typography } from '@codewinglet/components';
-import Pagination from '@codewinglet/components/Pagination/Pagination';
+import { Pagination, Typography } from '@codewinglet/components';
+
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
@@ -169,11 +169,12 @@ const LatestArticle = () => {
             </div>
           </div>
           <div className='md:mb-20 mb-10'>
-            <Pagination
+            {/* REMINDER : */}
+            {/* <Pagination
               currentPage={currentPage}
               totalPages={totalPages}
               onPageChange={handlePageChange}
-            />
+            /> */}
           </div>
         </div>
       </div>

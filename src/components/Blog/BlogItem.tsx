@@ -10,7 +10,7 @@ interface BlogItemProps {
   blog: Blog;
 }
 
-const BlogItem: React.FC<BlogItemProps> = ({ blog }) => (
+export const BlogItem: React.FC<BlogItemProps> = ({ blog }) => (
   <>
     <div className='flex md:flex-row flex-col 2xl:gap-[45px] gap-5'>
       <Image
@@ -59,5 +59,3 @@ const BlogItem: React.FC<BlogItemProps> = ({ blog }) => (
     </div>
   </>
 );
-
-export default BlogItem;

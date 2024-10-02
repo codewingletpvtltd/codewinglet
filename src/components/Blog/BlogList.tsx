@@ -5,7 +5,7 @@ import { Blog } from './types';
 interface BlogListProps {
   blogs: Blog[];
 }
-const BlogList: React.FC<BlogListProps> = ({ blogs }) => (
+export const BlogList: React.FC<BlogListProps> = ({ blogs }) => (
   <div className='grid md:grid-cols-2 grid-cols-1 lg:gap-[45px] gap-5 gap-y-[45px]'>
     {blogs.map((blog) => (
       <BlogCard
@@ -23,5 +23,3 @@ const BlogList: React.FC<BlogListProps> = ({ blogs }) => (
     ))}
   </div>
 );
-
-export default BlogList;

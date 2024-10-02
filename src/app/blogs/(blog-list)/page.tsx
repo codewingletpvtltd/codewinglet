@@ -1,10 +1,15 @@
 import { notFound } from 'next/navigation';
 
-import { Typography } from '@codewinglet/components';
+import {
+  BlogItem,
+  BlogList,
+  Pagination,
+  Typography,
+} from '@codewinglet/components';
 
-import BlogItem from '../(components)/blog/BlogItem';
-import BlogList from '../(components)/blog/BlogList';
-import Pagination from '../(components)/pagination/Pagination';
+// import BlogItem from '../(components)/blog/BlogItem';
+// import BlogList from '../(components)/blog/BlogList';
+// import Pagination from '../(components)/pagination/Pagination';
 
 const fetchLatestBlog = async () => {
   try {
@@ -49,9 +54,10 @@ const fetchAllBlogs = async (
     const searchFilter = searchQuery
       ? `&filters[title][$containsi]=${encodeURIComponent(searchQuery)}`
       : '';
+    const tagsFilter = '&filters[tags][career][$eq]=true';
 
     const blogRequest = await fetch(
-      `http://127.0.0.1:1337/api/blogs?populate=*&pagination[page]=${page}&pagination[pageSize]=${pageSize}&filters[documentId][$ne]=${latestBlogId}${searchFilter}`,
+      `http://127.0.0.1:1337/api/blogs?populate=*&pagination[page]=${page}&pagination[pageSize]=${pageSize}&filters[documentId][$ne]=${latestBlogId}${searchFilter}${tagsFilter}`,
       reqOptions
     );
 
@@ -60,6 +66,7 @@ const fetchAllBlogs = async (
     }
 
     const response = await blogRequest.json();
+    console.log('🚀 ~ response:', response?.data?.at(0)?.tags);
     return {
       blogs: response.data,
       pagination: response.meta.pagination,
@@ -73,10 +80,11 @@ const fetchAllBlogs = async (
 const Blogs = async ({
   searchParams,
 }: {
-  searchParams: { page?: string; search?: string };
+  searchParams: { page?: string; search?: string; category?: string };
 }) => {
   const currentPage = parseInt(searchParams.page || '1');
   const searchQuery = searchParams.search || '';
+  const categoryQuery = searchParams.category || '';
   const pageSize = 2;
   const { latestBlog } = await fetchLatestBlog();
   const { blogs, pagination } = await fetchAllBlogs(
@@ -85,8 +93,6 @@ const Blogs = async ({
     pageSize,
     searchQuery
   );
-
-  console.log('latestblog', latestBlog[0].tags);
 
   return (
     <div className='text-black pl-14'>
