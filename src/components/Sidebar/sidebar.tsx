@@ -41,10 +41,16 @@ export const BlogCategory = () => {
 
     const uniqueCategories = Array.from(new Set(newSelectedCategories));
     const newSearchParams = new URLSearchParams(window.location.search);
-    newSearchParams.set('category', uniqueCategories.join(','));
+
+    if (uniqueCategories.length > 0) {
+      newSearchParams.set('category', uniqueCategories.join(','));
+    } else {
+      newSearchParams.delete('category');
+    }
+
     const queryString = newSearchParams.toString().replace(/%2C/g, '+');
 
-    router.push(`${pathname}?${queryString}`);
+    router.push(`${pathname}?${queryString}`, { scroll: false });
   };
 
   return (

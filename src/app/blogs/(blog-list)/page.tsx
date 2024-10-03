@@ -1,88 +1,10 @@
-import { notFound } from 'next/navigation';
-
 import {
   BlogItem,
   BlogList,
   Pagination,
   Typography,
 } from '@codewinglet/components';
-
-const fetchLatestBlog = async () => {
-  try {
-    const reqOptions = {
-      headers: {
-        Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`,
-      },
-    };
-
-    const blogRequest = await fetch(
-      `http://127.0.0.1:1337/api/blogs?sort=createdAt:desc&populate=*&pagination[page]=${1}&pagination[pageSize]=${1}`,
-      reqOptions
-    );
-
-    if (!blogRequest.ok) {
-      throw new Error(`HTTP error! Status: ${blogRequest.status}`);
-    }
-
-    const response = await blogRequest.json();
-    return {
-      latestBlog: response.data,
-    };
-  } catch (error) {
-    console.error('Fetch failed for latest blog: ', error);
-    notFound();
-  }
-};
-
-const fetchAllBlogs = async (
-  latestBlogId: string,
-  page: number = 1,
-  pageSize: number,
-  searchQuery: string = '',
-  categoryQuery: string = ''
-) => {
-  try {
-    const reqOptions = {
-      headers: {
-        Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`,
-      },
-    };
-
-    const searchFilter = searchQuery
-      ? `&filters[title][$containsi]=${encodeURIComponent(searchQuery)}`
-      : '';
-
-    let tagsFilter = '';
-
-    const categories = categoryQuery.length > 0 ? categoryQuery.split(' ') : [];
-    console.log('🚀 ~ categoryQuery:', categoryQuery);
-    console.log('🚀 ~ categories:', categories);
-
-    for (let i = 0; i < categories.length; i++) {
-      tagsFilter += `&filters[$or][${i}][tags][${categories[i]}][$eq]=true`;
-      // tagsFilter += `&filters[tags][${categories[i]}][$eq]=true`;
-    }
-
-    const blogRequest = await fetch(
-      `http://127.0.0.1:1337/api/blogs?populate=*&pagination[page]=${page}&pagination[pageSize]=${pageSize}&filters[documentId][$ne]=${latestBlogId}${searchFilter}${tagsFilter}`,
-      reqOptions
-    );
-
-    if (!blogRequest.ok) {
-      throw new Error(`HTTP error! Status: ${blogRequest.status}`);
-    }
-
-    const response = await blogRequest.json();
-    console.log('🚀 ~ response:', response?.data?.at(0)?.tags);
-    return {
-      blogs: response.data,
-      pagination: response.meta.pagination,
-    };
-  } catch (error) {
-    console.error('Fetch failed: ', error);
-    notFound();
-  }
-};
+import { fetchAllBlogs, fetchLatestBlog } from '@codewinglet/services';
 
 const Blogs = async ({
   searchParams,
@@ -106,7 +28,7 @@ const Blogs = async ({
     <div className='text-black pl-14'>
       {blogs.length > 0 || latestBlog ? (
         <>
-          {currentPage === 1 && !searchQuery ? (
+          {currentPage === 1 && !searchQuery && !categoryQuery ? (
             <>
               <Typography className='text-h6 mb-[37px]'>
                 Latest article
@@ -119,22 +41,26 @@ const Blogs = async ({
                 <BlogList blogs={blogs} />
               </div>
             </>
-          ) : (
+          ) : blogs.length > 0 ? (
             <div className='border-b border-headerBoxBorder lg:pb-[45px] pb-10'>
               <Typography className='text-h6 mb-[37px]'>
                 Resources and insights
               </Typography>
               <BlogList blogs={blogs} />
             </div>
+          ) : (
+            <p className='text-black'>No blogs available.</p>
           )}
-          <Pagination
-            totalPages={pagination.pageCount}
-            currentPage={currentPage}
-            searchQuery={searchParams.search}
-          />
+          {pagination.page && (
+            <Pagination
+              totalPages={pagination.pageCount}
+              currentPage={currentPage}
+              searchQuery={searchParams.search}
+            />
+          )}
         </>
       ) : (
-        <p>No blogs available.</p>
+        <p className='text-black'>No blogs available.</p>
       )}
     </div>
   );

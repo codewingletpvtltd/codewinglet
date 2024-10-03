@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import { Typography } from '@codewinglet/components';
-import { formatDate, formatTag } from '@codewinglet/utils';
+import { formatDate, formatTag, getClassNames } from '@codewinglet/utils';
 
 import { Blog } from './types';
 
@@ -26,7 +26,7 @@ export const BlogItem: React.FC<BlogItemProps> = ({ blog }) => (
         </Typography>
         <Link href={`/blogs/${blog.slug}`}>
           <div className='flex justify-between items-start'>
-            <Typography className='text-subtitle2 mt-2.5'>
+            <Typography className='text-subtitle2 mt-2.5 overflow-hidden text-ellipsis line-clamp-2'>
               {blog.title}
             </Typography>
             <Image
@@ -38,7 +38,11 @@ export const BlogItem: React.FC<BlogItemProps> = ({ blog }) => (
             />
           </div>
         </Link>
-        <Typography className='text-paragraph2Light text-secondary leading-[18px] md:leading-[22px] mt-4'>
+        <Typography
+          className={getClassNames(
+            'text-paragraph2Light text-secondary leading-[18px] md:leading-[22px] mt-4'
+          )}
+        >
           {blog.summary}
         </Typography>
         {blog.tags && (

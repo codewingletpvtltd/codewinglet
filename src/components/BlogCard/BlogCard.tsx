@@ -28,7 +28,7 @@ const BlogCard: FC<BlogCardProps> = ({
         alt='Blog Image'
         width={450}
         height={250}
-        className='h-[250px] object-cover'
+        className='h-[250px] object-cover w-full'
       />
     )}
     <div className='py-[15px]'>

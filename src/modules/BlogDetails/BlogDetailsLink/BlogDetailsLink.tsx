@@ -3,48 +3,12 @@ import Link from 'next/link';
 
 import { Breadcrumb, Typography } from '@codewinglet/components';
 
+import { socialLinks } from './socialLinks';
+
 const BlogDetailsLink = ({ blogData }: any) => {
   const breadcrumbData = [
     { value: 'All Blog', href: '/blogs' },
     { value: `${blogData.title}` },
-  ];
-
-  const socialLinks = [
-    {
-      href: 'https://in.linkedin.com/company/codewinglet',
-      src: '/assets/icons/LinkedInLogo.svg',
-      width: 18,
-      height: 18,
-      alt: 'LinkedInLogo',
-    },
-    {
-      href: 'https://www.instagram.com/codewinglet/',
-      src: '/assets/icons/InstagramLogo.svg',
-      width: 20,
-      height: 20,
-      alt: 'InstagramLogo',
-    },
-    {
-      href: 'https://www.facebook.com/codewingletpteltd',
-      src: '/assets/icons/FacebookLogo.svg',
-      width: 12,
-      height: 20,
-      alt: 'FacebookLogo',
-    },
-    {
-      href: 'https://twitter.com/codewinglet',
-      src: '/assets/icons/TwitterLogo.svg',
-      width: 19,
-      height: 20,
-      alt: 'TwitterLogo',
-    },
-    {
-      href: '/',
-      src: '/assets/icons/CopyLogo.svg',
-      width: 24,
-      height: 24,
-      alt: 'CopyLogo',
-    },
   ];
 
   return (
