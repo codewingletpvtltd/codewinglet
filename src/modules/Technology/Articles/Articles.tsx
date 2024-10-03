@@ -37,42 +37,6 @@ const fetchRelatedBlog = async (tags: string[]) => {
 };
 
 export default async function Articles({ blogData }: any) {
-  const settings = {
-    dots: false,
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: false,
-    speed: 1500,
-    autoplaySpeed: 2800,
-    cssEase: 'linear',
-    // nextArrow: <SampleNextArrow />,
-    // prevArrow: <SamplePrevArrow />,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
-
   const tags = Object.keys(blogData.tags).filter(
     (key) => key !== 'id' && blogData.tags[key]
   );
@@ -117,8 +81,8 @@ export default async function Articles({ blogData }: any) {
             </div>
 
             <div className='lg:hidden'>
-              <Slider {...settings}>
-                {/* <BlogCard
+              {/*<Slider {...settings}>*/}
+              {/* <BlogCard
                   image='/assets/blog/blog_Img1.jpg'
                   title='Bill Walsh leadership lessons Bill Walsh leadership lessons'
                   desc='Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl winning Dynasty?'
@@ -133,7 +97,7 @@ export default async function Articles({ blogData }: any) {
                   title='What is Wireframing? Bill Walsh leadership lessons'
                   desc='Introduction to Wireframing and its Principles. Learn from the best in the industry.'
                 /> */}
-              </Slider>
+              {/*</Slider>*/}
             </div>
 
             <Button

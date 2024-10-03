@@ -1,11 +1,10 @@
 'use client';
 
-import classNames from 'classnames';
 import Image from 'next/image';
 import { FC } from 'react';
 import Link from 'next/link';
 
-import { formatDate, formatTag } from '@codewinglet/utils';
+import { cn, formatDate, formatTag } from '@codewinglet/utils';
 
 import Typography from '../Typography';
 import { BlogCardProps } from './types';
@@ -22,12 +21,7 @@ const BlogCard: FC<BlogCardProps> = ({
   imageSrc,
   imageAlt = 'Icon',
 }) => (
-  <div
-    className={classNames(
-      'relative lg:w-full w-[312px] md:mx-5 mx-2',
-      className
-    )}
-  >
+  <div className={cn('relative lg:w-full w-[312px] md:mx-5 mx-2', className)}>
     {image && (
       <Image
         src={image}

@@ -10,9 +10,9 @@ const BlogDetails = ({ blogData }: any) => (
     <BlogDetailsLink blogData={blogData} />
     <BlogHeroSection blogData={blogData} />
     <BlogDescription contentData={blogData.content} />
-    <Suspense>
-      <Articles blogData={blogData} />
-    </Suspense>
+    {/*<Suspense>*/}
+    {/*  <Articles blogData={blogData} />*/}
+    {/*</Suspense>*/}
   </>
 );
 
