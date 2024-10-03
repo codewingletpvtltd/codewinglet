@@ -12,7 +12,6 @@ export const BlogCategory = () => {
   const category = searchParams.get('category');
 
   const checkboxData = [
-    { label: 'All Blogs', value: 'all' },
     { label: 'Web Design', value: 'web_design' },
     { label: 'Product', value: 'product' },
     { label: 'Software Engineering', value: 'software-engineering' },

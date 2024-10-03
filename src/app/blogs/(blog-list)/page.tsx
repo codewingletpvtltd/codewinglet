@@ -7,10 +7,6 @@ import {
   Typography,
 } from '@codewinglet/components';
 
-// import BlogItem from '../(components)/blog/BlogItem';
-// import BlogList from '../(components)/blog/BlogList';
-// import Pagination from '../(components)/pagination/Pagination';
-
 const fetchLatestBlog = async () => {
   try {
     const reqOptions = {
@@ -42,7 +38,8 @@ const fetchAllBlogs = async (
   latestBlogId: string,
   page: number = 1,
   pageSize: number,
-  searchQuery: string = ''
+  searchQuery: string = '',
+  categoryQuery: string = ''
 ) => {
   try {
     const reqOptions = {
@@ -54,7 +51,17 @@ const fetchAllBlogs = async (
     const searchFilter = searchQuery
       ? `&filters[title][$containsi]=${encodeURIComponent(searchQuery)}`
       : '';
-    const tagsFilter = '&filters[tags][career][$eq]=true';
+
+    let tagsFilter = '';
+
+    const categories = categoryQuery.length > 0 ? categoryQuery.split(' ') : [];
+    console.log('🚀 ~ categoryQuery:', categoryQuery);
+    console.log('🚀 ~ categories:', categories);
+
+    for (let i = 0; i < categories.length; i++) {
+      tagsFilter += `&filters[$or][${i}][tags][${categories[i]}][$eq]=true`;
+      // tagsFilter += `&filters[tags][${categories[i]}][$eq]=true`;
+    }
 
     const blogRequest = await fetch(
       `http://127.0.0.1:1337/api/blogs?populate=*&pagination[page]=${page}&pagination[pageSize]=${pageSize}&filters[documentId][$ne]=${latestBlogId}${searchFilter}${tagsFilter}`,
@@ -91,7 +98,8 @@ const Blogs = async ({
     latestBlog[0].documentId,
     currentPage,
     pageSize,
-    searchQuery
+    searchQuery,
+    categoryQuery
   );
 
   return (

@@ -2,6 +2,8 @@
 
 import { useRouter, useSearchParams } from 'next/navigation';
 
+import { useUrlParamState } from '@codewinglet/hooks';
+
 type PaginationProps = {
   totalPages: number;
   currentPage: number;
@@ -13,9 +15,7 @@ export const Pagination = ({
   currentPage,
   searchQuery,
 }: PaginationProps) => {
-  const router = useRouter();
-  const searchParams = useSearchParams();
-
+  const { getParamValue, setParamValue } = useUrlParamState('page');
   const getPageNumbers = (): (number | string)[] => {
     const totalNumbers = 5;
     const sideNumbers = 2;
@@ -51,7 +51,8 @@ export const Pagination = ({
     const searchParam = searchQuery
       ? `&search=${encodeURIComponent(searchQuery)}`
       : '';
-    router.push(`/blogs/?page=${page}${searchParam}`);
+    setParamValue(page as string);
+    // router.push(`/blogs/?page=${page}${searchParam}`);
   };
 
   return (

@@ -1,12 +1,42 @@
 /* eslint-disable import/order */
-'use client';
+
 import { Arrow } from '@codewinglet/assets';
 import { Button, SectionHeader } from '@codewinglet/components';
 import Reveal from '@codewinglet/components/Reveal';
 import Link from 'next/link';
 import Slider from 'react-slick';
 
-const Articles = () => {
+const fetchRelatedBlog = async (tags: string[]) => {
+  try {
+    const reqOptions = {
+      headers: {
+        Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`,
+      },
+    };
+
+    let allTags = '';
+
+    for (let i = 0; i < tags.length; i++) {
+      allTags += `&filters[$or][${i}][tags][${tags[i]}][$eq]=true`;
+    }
+
+    const blogRequest = await fetch(
+      `http://127.0.0.1:1337/api/blogs?${allTags}&populate=*`,
+      reqOptions
+    );
+
+    if (!blogRequest.ok) {
+      throw new Error(`HTTP error! Status: ${blogRequest.status}`);
+    }
+
+    const response = await blogRequest.json();
+    return response.data;
+  } catch (error) {
+    console.error('Fetch failed: ', error);
+  }
+};
+
+export default async function Articles({ blogData }: any) {
   const settings = {
     dots: false,
     infinite: true,
@@ -42,6 +72,15 @@ const Articles = () => {
       },
     ],
   };
+
+  const tags = Object.keys(blogData.tags).filter(
+    (key) => key !== 'id' && blogData.tags[key]
+  );
+
+  const data = await fetchRelatedBlog(tags);
+
+  console.log(data);
+
   return (
     <>
       <div
@@ -115,6 +154,4 @@ const Articles = () => {
       </div>
     </>
   );
-};
-
-export default Articles;
+}
