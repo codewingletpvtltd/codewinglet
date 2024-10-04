@@ -1,8 +1,8 @@
-import LinkedinLogo from '../../../../public/assets/icons/linkedin.svg';
-import InstagramLogo from '../../../../public/assets/icons/instagram.svg';
-import FaceBookLogo from '../../../../public/assets/icons/LinkIcon.svg';
-import TwitterLogo from '../../../../public/assets/icons/Email.svg';
-import CopyIcon from '../../../../public/assets/icons/CopyLogo.svg';
+import CopyIcon from '../../../../public/assets/icons/CopyIcon.svg';
+import FaceBookLogo from '../../../../public/assets/icons/Facebook.svg';
+import InstagramLogo from '../../../../public/assets/icons/Instagram.svg';
+import LinkedinLogo from '../../../../public/assets/icons/Linkedin.svg';
+import TwitterLogo from '../../../../public/assets/icons/Twitter.svg';
 
 export const socialLinks = [
   {
