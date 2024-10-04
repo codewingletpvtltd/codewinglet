@@ -54,7 +54,7 @@ export const Pagination = ({
   };
 
   return (
-    <div className='flex items-center justify-center my-8'>
+    <div className='flex items-center justify-center my-[22px]'>
       {getPageNumbers().map((page, index) => (
         <button
           key={index}

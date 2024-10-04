@@ -1,4 +1,5 @@
 /* eslint-disable import/order */
+import { Arrow } from '@codewinglet/assets';
 import { Button, Typography } from '@codewinglet/components';
 import Dropdown from '@codewinglet/components/DropDown/DropDown';
 import Image from 'next/image';
@@ -43,6 +44,7 @@ const AllBlog = () => {
             className='px-5 !py-[13px] ml-5 lg:block hidden'
           >
             Search
+            <Arrow />
           </Button>
         </div>
         <div className='lg:hidden md:block hidden'>

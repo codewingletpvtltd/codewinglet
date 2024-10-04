@@ -29,14 +29,12 @@ const Blogs = async ({ searchParams }: BlogsProps) => {
   );
 
   return (
-    <div className='text-black pl-14'>
+    <div className='text-black lg:pl-14'>
       {blogs.length > 0 || latestBlog ? (
         <>
           {currentPage === 1 && !searchQuery && !categoryQuery ? (
             <>
-              <Typography className='text-h6 mb-[37px]'>
-                Latest article
-              </Typography>
+              <Typography className='text-h6 mb-9'>Latest article</Typography>
               <BlogItem blog={latestBlog[0]} />
               <div className='border-b border-headerBoxBorder lg:pb-[45px] pb-10'>
                 <Typography className='text-h6 mb-[37px] mt-[60px]'>

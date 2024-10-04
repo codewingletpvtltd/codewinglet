@@ -19,7 +19,7 @@ export const SidebarCheckBox = ({
   onChange,
 }: SidebarCheckBoxProps) => (
   <div
-    className='flex items-center gap-2 p-3.5 hover:bg-bg cursor-pointer'
+    className='flex items-center gap-5 p-3.5 hover:bg-bg cursor-pointer'
     key={index}
   >
     <Checkbox

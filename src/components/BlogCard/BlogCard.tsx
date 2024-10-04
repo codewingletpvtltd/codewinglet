@@ -1,8 +1,8 @@
 'use client';
 
 import Image from 'next/image';
-import { FC } from 'react';
 import Link from 'next/link';
+import { FC } from 'react';
 
 import { cn, formatDate, formatTag } from '@codewinglet/utils';
 
@@ -21,10 +21,10 @@ const BlogCard: FC<BlogCardProps> = ({
   imageSrc,
   imageAlt = 'Icon',
 }) => (
-  <div className={cn('relative lg:w-full w-[312px] md:mx-5 mx-2', className)}>
+  <div className={cn('relative lg:w-full w-[312px]', className)}>
     {image && (
       <Image
-        src={image}
+        src='/assets/blog/blog_des_two.png'
         alt='Blog Image'
         width={450}
         height={250}
@@ -39,7 +39,9 @@ const BlogCard: FC<BlogCardProps> = ({
       </Typography>
       <Link href={href}>
         <div className='flex justify-between items-start'>
-          <Typography className='text-subtitle2 mt-2.5'>{title}</Typography>
+          <Typography className='text-subtitle2 mt-2.5 overflow-hidden text-ellipsis line-clamp-2'>
+            {title}
+          </Typography>
           {imageSrc && (
             <Image
               src={imageSrc}
@@ -51,11 +53,11 @@ const BlogCard: FC<BlogCardProps> = ({
           )}
         </div>
       </Link>
-      <Typography className='text-paragraph2Light text-secondary leading-[18px] md:text-4 md:leading-[22px] mt-2'>
+      <Typography className='text-paragraph2Light text-secondary leading-[18px] md:leading-[22px] mt-4 overflow-hidden text-ellipsis line-clamp-3'>
         {desc}
       </Typography>
       {tags && (
-        <ul className='flex gap-2 pt-6'>
+        <ul className='flex gap-2 pt-[17px]'>
           {Object.entries(tags)
             .filter(([key, value]) => value === true)
             .map(([key], index) => (

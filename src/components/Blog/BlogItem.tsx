@@ -40,7 +40,7 @@ export const BlogItem: React.FC<BlogItemProps> = ({ blog }) => (
         </Link>
         <Typography
           className={getClassNames(
-            'text-paragraph2Light text-secondary leading-[18px] md:leading-[22px] mt-4'
+            'text-paragraph2Light text-secondary leading-[18px] md:leading-[22px] mt-4 overflow-hidden text-ellipsis lg:line-clamp-6 line-clamp-4'
           )}
         >
           {blog.summary}

@@ -35,7 +35,7 @@ const BlogDescription: React.FC<{ contentData: BlogPost[] }> = ({
   }));
 
   return (
-    <div className='bg-white lg:py-20 py-[60px] lg:pt-40 md:pt-[25rem] pt-0 pb-2'>
+    <div className='bg-white lg:py-20 py-[60px] lg:pt-40 md:pt-64 pt-0 pb-2'>
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
         <div className='flex lg:flex-row flex-col justify-between gap-[28px]'>
           {/* left */}
@@ -50,7 +50,7 @@ const BlogDescription: React.FC<{ contentData: BlogPost[] }> = ({
                 key={`section-${item.title}`}
                 className='scroll-mt-[155px]'
               >
-                <Typography className='text-primary md:text-subtitle2 text-tag md:mb-7 mb-2.5'>
+                <Typography className='text-primary md:text-subtitle2 text-tag md:mb-[18px] mb-2.5'>
                   {item?.title}
                 </Typography>
                 <div>
@@ -68,7 +68,7 @@ const BlogDescription: React.FC<{ contentData: BlogPost[] }> = ({
                         return (
                           <p
                             key={index}
-                            className='text-secondary md:text-paragraph1ExtraLight pb-7'
+                            className='text-secondary md:text-paragraph1ExtraLight pb-8'
                           >
                             {item.children.map((child) => {
                               let childText: React.ReactNode = child.text;
@@ -111,7 +111,7 @@ const BlogDescription: React.FC<{ contentData: BlogPost[] }> = ({
                             key={index}
                             src={item.image.url}
                             alt={item.image.alternativeText || 'Image'}
-                            className='image-class' // Add styling class
+                            className='image-class w-full mb-4' // Add styling class
                             width={item.image.width}
                             height={item.image.height}
                           />
@@ -123,8 +123,8 @@ const BlogDescription: React.FC<{ contentData: BlogPost[] }> = ({
                             key={index}
                             className={
                               item?.format === 'ordered'
-                                ? 'list-decimal'
-                                : 'list-disc'
+                                ? 'list-decimal ml-5'
+                                : 'list-disc ml-5'
                             }
                           >
                             {item.children.map((item, itemIndex) => (

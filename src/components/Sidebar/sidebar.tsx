@@ -1,6 +1,6 @@
 'use client';
-import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import Image from 'next/image';
+import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
 import { SidebarCheckBox, Typography } from '@codewinglet/components';
@@ -54,36 +54,34 @@ export const BlogCategory = () => {
   };
 
   return (
-    <div className='w-[342px]'>
-      <div className='w-[342px] lg:block hidden'>
-        <Typography className='text-paragraph2 mb-5 border-b border-headerBoxBorder pb-[15px]'>
-          Blog Categories
-        </Typography>
-        <div className='relative'>
-          <Image
-            src='/assets/icons/Search.svg'
-            alt='Search'
-            width={24}
-            height={24}
-            className='absolute left-[14px] top-1/2 transform -translate-y-1/2'
+    <div className='w-[342px] lg:block hidden'>
+      <Typography className='text-paragraph2 mb-5 border-b border-headerBoxBorder pb-[15px]'>
+        Blog Categories
+      </Typography>
+      <div className='relative'>
+        <Image
+          src='/assets/icons/Search.svg'
+          alt='Search'
+          width={24}
+          height={24}
+          className='absolute left-[14px] top-1/2 transform -translate-y-1/2'
+        />
+        <input
+          type='text'
+          placeholder='Search your blog here'
+          className='w-full placeholder:text-secondary border border-headerBoxBorder py-[13px] pl-[58px] text-paragraph2Light focus:outline-0'
+        />
+      </div>
+      <div className='mt-[15px] border-r border-headerBoxBorder overflow-y-auto'>
+        {checkboxData.map((item, index) => (
+          <SidebarCheckBox
+            key={item.value}
+            item={item}
+            index={index}
+            checked={selectedCategories.includes(item.value)}
+            onChange={handleCheckboxChange}
           />
-          <input
-            type='text'
-            placeholder='Search your blog here'
-            className='w-full placeholder:text-secondary border border-headerBoxBorder py-[13px] pl-[58px] text-paragraph2Light focus:outline-0'
-          />
-        </div>
-        <div className='mt-[15px] border-r border-headerBoxBorder overflow-y-auto'>
-          {checkboxData.map((item, index) => (
-            <SidebarCheckBox
-              key={item.value}
-              item={item}
-              index={index}
-              checked={selectedCategories.includes(item.value)}
-              onChange={handleCheckboxChange}
-            />
-          ))}
-        </div>
+        ))}
       </div>
     </div>
   );

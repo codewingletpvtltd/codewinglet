@@ -9,8 +9,8 @@ const BlogHeroSection = ({ blogData }: any) => (
     <div className='md:bg-bg bg-white lg:mt-[156px] mt-[132px] lg:py-20 md:py-[60px] py-5 w-full'>
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto flex justify-between items-center'>
         <div className='lg:flex block gap-6 relative'>
-          <div className='2xl:w-[693px] lg:w-[680px] w-full h-[440px] flex justify-center flex-col'>
-            <Typography className='text-secondary lg:text-subtitle2 md:text-paragraph2Light text-tagLight md:mt-[30px] mt-4 md:mb-0 mb-4'>
+          <div className='2xl:w-[693px] lg:w-[680px] w-full md:h-[440px] h-auto flex lg:justify-center flex-col md:mb-0 mb-4'>
+            <Typography className='text-secondary lg:text-subtitle2 md:text-paragraph2Light text-tagLight lg:mt-[30px] md:mt-0 mb-4'>
               Published on {formatDate(blogData.createdAt)}
               <span className='text-headerBoxBorder px-3'>•</span>
               {blogData.read} min read
@@ -19,8 +19,8 @@ const BlogHeroSection = ({ blogData }: any) => (
               <SectionHeader
                 title={blogData.title}
                 description={blogData.summary}
-                headingClassName='text-primary text-h2 max-w-[620px]'
-                descriptionClassName='text-secondary max-w-[620px] md:mt-[26px] mt-2.5 lg:!text-subtitle2Light md:!text-paragraph1ExtraLight text-tagExtraLight'
+                headingClassName='text-primary text-h2 max-w-[620px] overflow-hidden text-ellipsis line-clamp-2'
+                descriptionClassName='text-secondary max-w-[620px] md:mt-[26px] mt-2.5 lg:!text-subtitle2Light md:!text-paragraph1ExtraLight text-tagExtraLight overflow-hidden text-ellipsis line-clamp-6'
               />
             </Reveal>
           </div>

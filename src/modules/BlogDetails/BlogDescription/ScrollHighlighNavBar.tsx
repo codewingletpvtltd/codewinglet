@@ -47,7 +47,7 @@ const ScrollHighlightNavbar: React.FC<ScrollHighlightNavbarProps> = ({
     <div
       className={`w-full lg:p-0 p-5 bg-white lg:sticky lg:z-0 z-10 right-auto lg:top-[190px] md:top-[90px] top-[78px] lg:left-auto left-0 ${containerClassName}`}
     >
-      <Typography className='text-primary text-subtitle2 pb-[18px] mb-[29px] border-b-2 border-primary'>
+      <Typography className='text-primary text-subtitle2 pb-4 mb-[29px] border-b-2 border-primary'>
         Table of Contents
       </Typography>
       <ul className='grid overflow-auto [-ms-overflow-style:_none;] [scrollbar-width:_none;] gap-5'>

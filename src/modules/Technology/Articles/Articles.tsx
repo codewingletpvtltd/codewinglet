@@ -32,7 +32,7 @@ export default async function Articles({ blogData }: any) {
             />
           </Reveal>
           <div className='lg:mt-[50px] md:mt-10 mt-5'>
-            <div className='lg:grid lg:grid-cols-3 md:grid-cols-2 md:gap-[50px] gap-5 hidden'>
+            <div className='grid lg:grid-cols-3 md:grid-cols-2 md:gap-[50px] gap-5'>
               {data?.slice(0, 3).map((blog: any) => (
                 <BlogCard
                   key={blog.id}

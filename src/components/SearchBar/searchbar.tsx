@@ -1,11 +1,12 @@
 'use client';
 
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
+import { useEffect, useState } from 'react';
 
-import { Button, Typography } from '@codewinglet/components';
+import { Arrow } from '@codewinglet/assets';
 import CloseIcon from '@codewinglet/assets/icons/CloseIcon';
+import { Button, Typography } from '@codewinglet/components';
 import Dropdown from '@codewinglet/components/DropDown/DropDown';
 
 export const BlogSearch = () => {
@@ -78,10 +79,11 @@ export const BlogSearch = () => {
           <Button
             type='submit'
             variant='default'
-            className='px-5 !py-[13px] ml-5 lg:block hidden'
+            className='px-5 !py-[13px] ml-5 lg:flex hidden gap-5'
             onClick={handleSearch}
           >
             Search
+            <Arrow />
           </Button>
         </div>
         <div className='lg:hidden md:block hidden'>
