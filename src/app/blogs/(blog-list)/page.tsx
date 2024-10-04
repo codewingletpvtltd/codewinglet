@@ -6,11 +6,15 @@ import {
 } from '@codewinglet/components';
 import { fetchAllBlogs, fetchLatestBlog } from '@codewinglet/services';
 
-const Blogs = async ({
-  searchParams,
-}: {
-  searchParams: { page?: string; search?: string; category?: string };
-}) => {
+type BlogsProps = {
+  searchParams: {
+    page?: string;
+    search?: string;
+    category?: string;
+  };
+};
+
+const Blogs = async ({ searchParams }: BlogsProps) => {
   const currentPage = parseInt(searchParams.page || '1');
   const searchQuery = searchParams.search || '';
   const categoryQuery = searchParams.category || '';

@@ -59,7 +59,6 @@ export const BlogCategory = () => {
         <Typography className='text-paragraph2 mb-5 border-b border-headerBoxBorder pb-[15px]'>
           Blog Categories
         </Typography>
-
         <div className='relative'>
           <Image
             src='/assets/icons/Search.svg'

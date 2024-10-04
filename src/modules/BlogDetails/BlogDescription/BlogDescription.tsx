@@ -10,6 +10,10 @@ interface BlogContentItem {
     text: string;
     type: string; // e.g., "text"
     url?: string; // Only present for link types
+    bold?: boolean;
+    italic?: boolean;
+    underline?: boolean;
+    strikethrough?: boolean;
     children?: any;
   }>;
   format?: string; // for list
@@ -67,6 +71,22 @@ const BlogDescription: React.FC<{ contentData: BlogPost[] }> = ({
                             className='text-secondary md:text-paragraph1ExtraLight pb-7'
                           >
                             {item.children.map((child) => {
+                              let childText: React.ReactNode = child.text;
+
+                              // Apply text styles dynamically
+                              if (child.bold) {
+                                childText = <strong>{childText}</strong>;
+                              }
+                              if (child.italic) {
+                                childText = <em>{childText}</em>;
+                              }
+                              if (child.underline) {
+                                childText = <u>{childText}</u>;
+                              }
+                              if (child.strikethrough) {
+                                childText = <s>{childText}</s>;
+                              }
+
                               if (child.type === 'link') {
                                 return (
                                   <a
@@ -80,7 +100,7 @@ const BlogDescription: React.FC<{ contentData: BlogPost[] }> = ({
                                   </a>
                                 );
                               }
-                              return child.text; // Return plain text for other child types
+                              return childText; // Return plain text for other child types
                             })}
                           </p>
                         );

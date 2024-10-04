@@ -1,7 +1,5 @@
 'use client';
 
-import { useRouter, useSearchParams } from 'next/navigation';
-
 import { useUrlParamState } from '@codewinglet/hooks';
 
 type PaginationProps = {
