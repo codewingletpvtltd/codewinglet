@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 
 import { CopyButton } from '@codewinglet/components';
 
-export const BlogCopyButton = () => {
+const BlogCopyButton = () => {
   const [currentUrl, setCurrentUrl] = useState('');
 
   useEffect(() => {
@@ -21,3 +21,4 @@ export const BlogCopyButton = () => {
     </div>
   );
 };
+export default BlogCopyButton;

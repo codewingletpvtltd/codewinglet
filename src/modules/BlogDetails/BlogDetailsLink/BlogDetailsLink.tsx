@@ -1,9 +1,8 @@
-import Image from 'next/image';
 import Link from 'next/link';
 
 import { BackButton, Breadcrumb, Typography } from '@codewinglet/components';
 
-import { socialLinks } from './socialLinks';
+import BlogCopyButton from '../BlogCopyButton/BlogCopyButton';
 
 const BlogDetailsLink = ({ blogData }: any) => {
   const breadcrumbData = [
@@ -31,7 +30,7 @@ const BlogDetailsLink = ({ blogData }: any) => {
           />
         </div>
         <div className='flex items-center gap-[18px]'>
-          <Typography className='md:flex gap-[5px] hidden'>
+          {/* <Typography className='md:flex gap-[5px] hidden'>
             <Image
               src='/assets/icons/share.svg'
               alt='share'
@@ -40,9 +39,9 @@ const BlogDetailsLink = ({ blogData }: any) => {
               className='lg:!block md:!hidden !block'
             />
             Share on
-          </Typography>
+          </Typography> */}
           <div className='md:flex gap-[15px] hidden'>
-            {socialLinks.map((link, index) => (
+            {/* {socialLinks.map((link, index) => (
               <Link
                 key={index}
                 className='flex items-center justify-center lg:w-10 w-[30px] lg:h-10 h-[30px] rounded-full bg-bg'
@@ -56,7 +55,8 @@ const BlogDetailsLink = ({ blogData }: any) => {
                   alt={link.alt}
                 />
               </Link>
-            ))}
+            ))} */}
+            <BlogCopyButton />
           </div>
         </div>
       </div>
