@@ -1,3 +1,5 @@
+'use server';
+
 export const fetchLatestBlog = async () => {
   try {
     const reqOptions = {

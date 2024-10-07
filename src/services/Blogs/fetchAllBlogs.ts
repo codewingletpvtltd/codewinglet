@@ -1,3 +1,5 @@
+'use server';
+
 export const fetchAllBlogs = async (
   latestBlogId: string,
   page: number = 1,

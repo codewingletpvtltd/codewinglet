@@ -1,3 +1,5 @@
+'use server';
+
 export const fetchMostViewedBlogs = async () => {
   try {
     const reqOptions = {

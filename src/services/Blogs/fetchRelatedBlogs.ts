@@ -1,3 +1,5 @@
+'use server';
+
 export const fetchRelatedBlogs = async (blogId: string, tags: string[]) => {
   try {
     const reqOptions = {

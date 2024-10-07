@@ -13,13 +13,15 @@ interface BlogItemProps {
 export const BlogItem: React.FC<BlogItemProps> = ({ blog }) => (
   <>
     <div className='flex md:flex-row flex-col 2xl:gap-[45px] gap-5'>
-      <Image
-        src={`http://127.0.0.1:1337${blog.image.url}`}
-        alt='article'
-        width={484}
-        height={315}
-        className='lg:w-[484px] w-[334px] 2xl:h-[315px] lg:h-[295px] h-[218px] object-cover'
-      />
+      {blog.image && (
+        <Image
+          src={`http://127.0.0.1:1337${blog.image.url}`}
+          alt='article'
+          width={484}
+          height={315}
+          className='lg:w-[484px] w-[334px] 2xl:h-[315px] lg:h-[295px] h-[218px] object-cover'
+        />
+      )}
       <div className='2xl:py-[15px]'>
         <Typography className='text-secondary text-tag'>
           {formatDate(blog.createdAt)} • {blog.read} min read

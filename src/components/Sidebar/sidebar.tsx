@@ -1,5 +1,4 @@
 'use client';
-import Image from 'next/image';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
@@ -48,6 +47,8 @@ export const BlogCategory = () => {
       newSearchParams.delete('category');
     }
 
+    newSearchParams.set('page', '1');
+
     const queryString = newSearchParams.toString().replace(/%2C/g, '+');
 
     router.push(`${pathname}?${queryString}`, { scroll: false });
@@ -55,23 +56,9 @@ export const BlogCategory = () => {
 
   return (
     <div className='w-[342px] lg:block hidden'>
-      <Typography className='text-paragraph2 mb-5 border-b border-headerBoxBorder pb-[15px]'>
+      <Typography className='text-paragraph2 border-b border-headerBoxBorder pb-[15px]'>
         Blog Categories
       </Typography>
-      <div className='relative'>
-        <Image
-          src='/assets/icons/Search.svg'
-          alt='Search'
-          width={24}
-          height={24}
-          className='absolute left-[14px] top-1/2 transform -translate-y-1/2'
-        />
-        <input
-          type='text'
-          placeholder='Search your blog here'
-          className='w-full placeholder:text-secondary border border-headerBoxBorder py-[13px] pl-[58px] text-paragraph2Light focus:outline-0'
-        />
-      </div>
       <div className='mt-[15px] border-r border-headerBoxBorder overflow-y-auto'>
         {checkboxData.map((item, index) => (
           <SidebarCheckBox

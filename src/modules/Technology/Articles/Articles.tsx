@@ -25,7 +25,7 @@ export default async function Articles({ blogData }: any) {
         <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
           <Reveal>
             <SectionHeader
-              title={<>Latest Articles</>}
+              title={<>Related Articles</>}
               description={
                 <>Cutting-Edge Technologies We Work With for Optimal Results</>
               }
@@ -39,7 +39,7 @@ export default async function Articles({ blogData }: any) {
                   href={`/blogs/${blog.slug}`}
                   date={blog.createdAt}
                   readTime={blog.read}
-                  image={blog.image.url}
+                  image={blog?.image?.url || ''}
                   title={blog.title}
                   desc={blog.summary}
                   tags={blog.tags}

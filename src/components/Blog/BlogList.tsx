@@ -10,7 +10,7 @@ export const BlogList: React.FC<BlogListProps> = ({ blogs }) => (
     {blogs.map((blog) => (
       <BlogCard
         key={blog.id}
-        image={`http://127.0.0.1:1337${blog.image.url}`}
+        image={blog?.image?.url || ''}
         date={blog.createdAt}
         title={blog.title}
         desc={blog.summary}

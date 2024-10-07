@@ -25,13 +25,15 @@ const BlogHeroSection = ({ blogData }: any) => (
             </Reveal>
           </div>
 
-          <Image
-            src={`http://127.0.0.1:1337${blogData.image.url}`}
-            alt='blogHero'
-            width={693}
-            height={618}
-            className='object-cover md:absolute lg:right-[15px] lg:top-0 top-80 lg:left-full 2xl:w-[693px] lg:w-[576px] w-full 2xl:h-[618px] lg:h-[564px] md:h-[402px] h-[196px]'
-          />
+          {blogData.image && (
+            <Image
+              src={`http://127.0.0.1:1337${blogData.image.url}`}
+              alt='blogHero'
+              width={693}
+              height={618}
+              className='object-cover md:absolute lg:right-[15px] lg:top-0 top-80 lg:left-full 2xl:w-[693px] lg:w-[576px] w-full 2xl:h-[618px] lg:h-[564px] md:h-[402px] h-[196px]'
+            />
+          )}
         </div>
       </div>
     </div>
