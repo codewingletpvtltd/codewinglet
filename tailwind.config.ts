@@ -33,6 +33,7 @@ export default {
       secondary: '#606060',
       success: '#26AD5C',
       error: '#FF4343',
+      info: '#376DCF',
       warning: '#FFBF1A',
       black: '#000000',
       white: '#FFFFFF',

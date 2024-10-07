@@ -59,7 +59,10 @@ const BlogDescription: React.FC<{ contentData: BlogPost[] }> = ({
                     switch (item.type) {
                       case 'heading':
                         return (
-                          <h2 key={index} className='heading-class'>
+                          <h2
+                            key={index}
+                            className='heading-class text-primary md:text-subtitle2 text-tag md:mb-[18px] mb-2.5'
+                          >
                             {item.children.map((child) => child.text).join('')}
                           </h2>
                         );
@@ -92,7 +95,7 @@ const BlogDescription: React.FC<{ contentData: BlogPost[] }> = ({
                                   <a
                                     key={child.url}
                                     href={child.url}
-                                    className='link-class bg-success'
+                                    className='link-class text-info underline'
                                   >
                                     {child.children
                                       .map((linkChild: any) => linkChild.text)
@@ -123,8 +126,8 @@ const BlogDescription: React.FC<{ contentData: BlogPost[] }> = ({
                             key={index}
                             className={
                               item?.format === 'ordered'
-                                ? 'list-decimal ml-5'
-                                : 'list-disc ml-5'
+                                ? 'list-decimal ml-5 text-secondary md:text-paragraph1ExtraLight'
+                                : 'list-disc ml-5 text-secondary md:text-paragraph1ExtraLight'
                             }
                           >
                             {item.children.map((item, itemIndex) => (

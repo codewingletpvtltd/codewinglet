@@ -26,7 +26,7 @@ const Checkbox: React.FC<CheckboxProps> = ({
     <>
       <input
         type='checkbox'
-        className='h-4 w-4 rounded accent-primary cursor-pointer'
+        className='h-4 w-4 rounded accent-primary cursor-pointer flex-shrink-0'
         checked={isChecked}
         onChange={handleChange}
       />

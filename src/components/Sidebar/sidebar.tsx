@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
@@ -24,6 +25,11 @@ export const BlogCategory = () => {
   ];
 
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
 
   useEffect(() => {
     if (category) {
@@ -55,21 +61,48 @@ export const BlogCategory = () => {
   };
 
   return (
-    <div className='w-[342px] lg:block hidden'>
-      <Typography className='text-paragraph2 border-b border-headerBoxBorder pb-[15px]'>
-        Blog Categories
-      </Typography>
-      <div className='mt-[15px] border-r border-headerBoxBorder overflow-y-auto'>
-        {checkboxData.map((item, index) => (
-          <SidebarCheckBox
-            key={item.value}
-            item={item}
-            index={index}
-            checked={selectedCategories.includes(item.value)}
-            onChange={handleCheckboxChange}
-          />
-        ))}
+    <>
+      <div className='w-[342px] lg:block hidden'>
+        <Typography className='text-paragraph2 border-b border-headerBoxBorder pb-[15px]'>
+          Blog Categories
+        </Typography>
+        <div className='mt-[15px] border-r border-headerBoxBorder overflow-y-auto'>
+          {checkboxData.map((item, index) => (
+            <SidebarCheckBox
+              key={item.value}
+              item={item}
+              index={index}
+              checked={selectedCategories.includes(item.value)}
+              onChange={handleCheckboxChange}
+            />
+          ))}
+        </div>
       </div>
-    </div>
+
+      <div className='lg:hidden block'>
+        <div onClick={toggleDropdown}>
+          <Image
+            src='/assets/icons/Filter.svg'
+            alt='Filter'
+            width={22}
+            height={22}
+          />
+        </div>
+
+        {isOpen && (
+          <div className='absolute right-[30px] w-[270px] mt-2 origin-top-right shadow-lg bg-white ring-1 ring-black ring-opacity-5'>
+            {checkboxData.map((item, index) => (
+              <SidebarCheckBox
+                key={item.value}
+                item={item}
+                index={index}
+                checked={selectedCategories.includes(item.value)}
+                onChange={handleCheckboxChange}
+              />
+            ))}
+          </div>
+        )}
+      </div>
+    </>
   );
 };
