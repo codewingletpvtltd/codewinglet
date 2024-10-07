@@ -7,6 +7,7 @@ import { Suspense, useEffect, useState } from 'react';
 import { Arrow } from '@codewinglet/assets';
 import CloseIcon from '@codewinglet/assets/icons/CloseIcon';
 import { BlogCategory, Button, Typography } from '@codewinglet/components';
+import { useUrlParamState } from '@codewinglet/hooks';
 
 export const BlogSearch = () => {
   const checkboxData = [
@@ -26,6 +27,8 @@ export const BlogSearch = () => {
   const [inputValue, setInputValue] = useState('');
   const router = useRouter();
   const searchParams = useSearchParams();
+  const { setParamValue: setSearchParamValue } = useUrlParamState('search');
+  const { setParamValue: setCategoryParamValue } = useUrlParamState('category');
 
   useEffect(() => {
     const searchQuery = searchParams.get('search');
@@ -40,12 +43,15 @@ export const BlogSearch = () => {
   };
 
   const handleSearch = () => {
-    router.push(`blogs/?search=${encodeURIComponent(inputValue)}`);
+    setSearchParamValue(encodeURIComponent(inputValue));
+    setCategoryParamValue('');
   };
-
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') handleSearch();
+  };
   const clearSearch = () => {
     setInputValue('');
-    router.push('blogs');
+    setSearchParamValue('');
   };
 
   return (
@@ -62,11 +68,12 @@ export const BlogSearch = () => {
               className='absolute lg:left-[14px] left-0 top-1/2 transform -translate-y-1/2'
             />
             <input
-              type='text'
+              type='search'
               placeholder='Search your blog here'
               className='md:w-[383px] w-5 placeholder:text-secondary lg:border lg:border-headerBoxBorder pr-9 lg:py-[13px] py-2.5 lg:pl-[58px] pl-[38px] text-paragraph2Light focus:outline-0'
               value={inputValue}
               onChange={handleInputChange}
+              onKeyDown={handleKeyDown}
             />
             {inputValue && (
               <CloseIcon

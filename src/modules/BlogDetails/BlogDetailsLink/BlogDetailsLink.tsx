@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { Breadcrumb, Typography } from '@codewinglet/components';
+import { BackButton, Breadcrumb, Typography } from '@codewinglet/components';
 
 import { socialLinks } from './socialLinks';
 
@@ -15,16 +15,7 @@ const BlogDetailsLink = ({ blogData }: any) => {
     <div className='bg-white lg:mt-[86px] md:mt-[90px] mt-[78px] fixed top-0 w-full z-10'>
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto flex justify-between items-center py-[15px]'>
         <div className='lg:hidden block'>
-          <Typography className='flex gap-[13px]'>
-            <Image
-              src='/assets/icons/RightArrow.svg'
-              alt='share'
-              width={16}
-              height={16}
-              className='rotate-180'
-            />
-            Back
-          </Typography>
+          <BackButton />
         </div>
         <div className='lg:block hidden'>
           <Breadcrumb

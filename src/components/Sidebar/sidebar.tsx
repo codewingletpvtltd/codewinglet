@@ -34,6 +34,8 @@ export const BlogCategory = () => {
   useEffect(() => {
     if (category) {
       setSelectedCategories(category.split(' '));
+    } else {
+      setSelectedCategories([]);
     }
   }, [category]);
 
@@ -90,7 +92,7 @@ export const BlogCategory = () => {
         </div>
 
         {isOpen && (
-          <div className='absolute right-[30px] w-[270px] mt-2 origin-top-right shadow-lg bg-white ring-1 ring-black ring-opacity-5'>
+          <div className='absolute sm:right-[30px] right-5 top-[58px] w-[270px] mt-2 origin-top-right shadow-lg bg-white ring-1 ring-black ring-opacity-5'>
             {checkboxData.map((item, index) => (
               <SidebarCheckBox
                 key={item.value}

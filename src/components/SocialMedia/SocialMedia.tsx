@@ -27,6 +27,7 @@ const SocialMedia = ({
         )}
         href={link.href}
         target='_blank'
+        aria-label={link.label}
       >
         {link.icon(iconColor)}
       </Link>
