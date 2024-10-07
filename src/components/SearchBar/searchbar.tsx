@@ -70,14 +70,14 @@ export const BlogSearch = () => {
             <input
               type='search'
               placeholder='Search your blog here'
-              className='md:w-[383px] w-5 placeholder:text-secondary lg:border lg:border-headerBoxBorder pr-9 lg:py-[13px] py-2.5 lg:pl-[58px] pl-[38px] text-paragraph2Light focus:outline-0'
+              className='md:w-[383px] w-[290px] placeholder:text-secondary lg:border lg:border-headerBoxBorder pr-9 lg:py-[13px] py-2.5 lg:pl-[58px] pl-[38px] text-paragraph2Light focus:outline-0'
               value={inputValue}
               onChange={handleInputChange}
               onKeyDown={handleKeyDown}
             />
             {inputValue && (
               <CloseIcon
-                className='absolute right-2.5 top-[18px] cursor-pointer z-10'
+                className='absolute right-2.5 sm:top-[18px] top-3 cursor-pointer z-10'
                 onClick={clearSearch}
               />
             )}
