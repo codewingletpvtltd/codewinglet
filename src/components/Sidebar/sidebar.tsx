@@ -3,13 +3,14 @@ import Image from 'next/image';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
-import { SidebarCheckBox, Typography } from '@codewinglet/components';
+import { Badge, SidebarCheckBox, Typography } from '@codewinglet/components';
 
 export const BlogCategory = () => {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const category = searchParams.get('category');
+  const [totalCategories, setTotalCategories] = useState(0);
 
   const checkboxData = [
     { label: 'Web Design', value: 'web_design' },
@@ -33,9 +34,12 @@ export const BlogCategory = () => {
 
   useEffect(() => {
     if (category) {
-      setSelectedCategories(category.split(' '));
+      const categories = category.split(' ');
+      setSelectedCategories(categories);
+      setTotalCategories(categories.length);
     } else {
       setSelectedCategories([]);
+      setTotalCategories(0);
     }
   }, [category]);
 
@@ -83,12 +87,14 @@ export const BlogCategory = () => {
 
       <div className='lg:hidden block'>
         <div onClick={toggleDropdown}>
-          <Image
-            src='/assets/icons/Filter.svg'
-            alt='Filter'
-            width={22}
-            height={22}
-          />
+          <Badge content={totalCategories}>
+            <Image
+              src='/assets/icons/Filter.svg'
+              alt='Filter'
+              width={22}
+              height={22}
+            />
+          </Badge>
         </div>
 
         {isOpen && (
