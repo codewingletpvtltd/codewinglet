@@ -57,7 +57,7 @@ const BlogCard: FC<BlogCardProps> = ({
         {desc}
       </Typography>
       {tags && (
-        <ul className='flex gap-2 pt-[17px]'>
+        <ul className='flex gap-2 pt-[17px] flex-wrap'>
           {Object.entries(tags)
             .filter(([key, value]) => value === true)
             .map(([key], index) => (

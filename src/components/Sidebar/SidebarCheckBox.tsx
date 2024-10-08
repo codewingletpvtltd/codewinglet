@@ -21,6 +21,7 @@ export const SidebarCheckBox = ({
   <div
     className='flex items-center gap-5 p-3.5 hover:bg-bg cursor-pointer'
     key={index}
+    onClick={() => onChange(item.value)}
   >
     <Checkbox
       key={item.value}

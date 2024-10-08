@@ -24,7 +24,7 @@ export const fetchAllBlogs = async (
 
     if (categories) {
       for (let i = 0; i < categories.length; i++) {
-        tagsFilter += `&filters[$or][${i}][tags][${categories[i]}][$eq]=true`;
+        tagsFilter += `&filters[tags][$or][${i}][${categories[i]}][$eq]=true`;
       }
     }
 
