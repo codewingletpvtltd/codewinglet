@@ -27,7 +27,7 @@ const BlogHeroSection = ({ blogData }: any) => (
 
           {blogData.image && (
             <Image
-              src={`http://127.0.0.1:1337${blogData.image.url}`}
+              src={blogData.image.url}
               alt='blogHero'
               width={693}
               height={618}

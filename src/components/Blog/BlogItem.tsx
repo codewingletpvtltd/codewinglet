@@ -15,7 +15,7 @@ export const BlogItem: React.FC<BlogItemProps> = ({ blog }) => (
     <div className='flex md:flex-row flex-col 2xl:gap-[45px] gap-5'>
       {blog.image && (
         <Image
-          src={`http://127.0.0.1:1337${blog.image.url}`}
+          src={blog.image.url}
           alt='article'
           width={484}
           height={315}

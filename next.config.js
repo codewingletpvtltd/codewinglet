@@ -6,6 +6,10 @@ const nextConfig = {
         protocol: 'http',
         hostname: '127.0.0.1',
       },
+      {
+        protocol: 'https',
+        hostname: 'strapi-cw-assets.s3.us-east-1.amazonaws.com',
+      },
       // {
       //   hostname: 'strapi.codewinglet.com',
       // },

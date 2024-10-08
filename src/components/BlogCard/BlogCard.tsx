@@ -24,7 +24,7 @@ const BlogCard: FC<BlogCardProps> = ({
   <div className={cn('relative lg:w-full w-[312px]', className)}>
     {image && (
       <Image
-        src={`http://127.0.0.1:1337${image}` || '/assets/blog/blog_des_two.png'}
+        src={image || '/assets/blog/blog_des_two.png'}
         alt='Blog Image'
         width={450}
         height={250}
