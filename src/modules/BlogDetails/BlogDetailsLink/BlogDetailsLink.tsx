@@ -24,7 +24,12 @@ const BlogDetailsLink = ({ blogData }: any) => {
                   <Typography>{item.value}</Typography>
                 </Link>
               ) : (
-                <Typography key={item.value}>{item.value}</Typography>
+                <Typography
+                  key={item.value}
+                  className='overflow-hidden text-ellipsis line-clamp-1 w-[40%]'
+                >
+                  {item.value}
+                </Typography>
               )
             )}
           />
