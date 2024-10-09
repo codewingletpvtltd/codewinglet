@@ -1,6 +1,7 @@
 import {
   BlogItem,
   BlogList,
+  NoBlogFound,
   Pagination,
   Typography,
 } from '@codewinglet/components';
@@ -21,7 +22,7 @@ const Blogs = async ({ searchParams }: BlogsProps) => {
   const pageSize = 2;
   const { latestBlog } = await fetchLatestBlog();
   const { blogs, pagination } = await fetchAllBlogs(
-    latestBlog[0].documentId,
+    latestBlog[0]?.documentId,
     currentPage,
     pageSize,
     searchQuery,
@@ -51,7 +52,7 @@ const Blogs = async ({ searchParams }: BlogsProps) => {
               <BlogList blogs={blogs} />
             </div>
           ) : (
-            <p className='text-black'>No blogs available.</p>
+            <NoBlogFound />
           )}
           {pagination.page && (
             <Pagination
@@ -62,7 +63,7 @@ const Blogs = async ({ searchParams }: BlogsProps) => {
           )}
         </>
       ) : (
-        <p className='text-black'>No blogs available.</p>
+        <NoBlogFound />
       )}
     </div>
   );

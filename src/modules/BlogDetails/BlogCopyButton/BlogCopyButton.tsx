@@ -1,9 +1,10 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Tippy from '@tippyjs/react';
 
+import 'tippy.js/dist/tippy.css';
 import { CopyButton } from '@codewinglet/components';
-
 const BlogCopyButton = () => {
   const [currentUrl, setCurrentUrl] = useState('');
 
@@ -14,10 +15,14 @@ const BlogCopyButton = () => {
   }, []);
   return (
     <div>
-      <CopyButton
-        copyText={currentUrl}
-        successMessage='Blog URL copied to clipboard!'
-      />
+      <Tippy content='Copy to clipboard'>
+        <span>
+          <CopyButton
+            copyText={currentUrl}
+            successMessage='Blog URL copied to clipboard!'
+          />
+        </span>
+      </Tippy>
     </div>
   );
 };

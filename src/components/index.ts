@@ -26,6 +26,8 @@ export { default as Typography } from './Typography/Typography';
 export { default as BackButton } from './BackButton';
 export { default as CopyButton } from './CopyButton/CopyButton';
 export { default as Badge } from './Badge';
+export { default as NoBlogFound } from './NoBlogFound';
+export { default as Loader } from './Loader';
 
 export * from './Blog';
 export * from './SearchBar';

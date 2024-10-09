@@ -1,8 +1,10 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 import { BackButton, Breadcrumb, Typography } from '@codewinglet/components';
 
 import BlogCopyButton from '../BlogCopyButton/BlogCopyButton';
+import BlogShare from '../BlogShare/BlogShare';
 
 const BlogDetailsLink = ({ blogData }: any) => {
   const breadcrumbData = [
@@ -26,7 +28,7 @@ const BlogDetailsLink = ({ blogData }: any) => {
               ) : (
                 <Typography
                   key={item.value}
-                  className='overflow-hidden text-ellipsis line-clamp-1 w-[40%]'
+                  className='overflow-hidden text-ellipsis line-clamp-1 w-[70%]'
                 >
                   {item.value}
                 </Typography>
@@ -34,8 +36,8 @@ const BlogDetailsLink = ({ blogData }: any) => {
             )}
           />
         </div>
-        <div className='flex items-center gap-[18px]'>
-          {/* <Typography className='md:flex gap-[5px] hidden'>
+        <div className='flex items-center justify-end gap-[18px] w-full'>
+          <Typography className='md:flex gap-[5px] hidden'>
             <Image
               src='/assets/icons/share.svg'
               alt='share'
@@ -44,23 +46,9 @@ const BlogDetailsLink = ({ blogData }: any) => {
               className='lg:!block md:!hidden !block'
             />
             Share on
-          </Typography> */}
+          </Typography>
           <div className='md:flex gap-[15px] hidden'>
-            {/* {socialLinks.map((link, index) => (
-              <Link
-                key={index}
-                className='flex items-center justify-center lg:w-10 w-[30px] lg:h-10 h-[30px] rounded-full bg-bg'
-                href={link.href}
-                target='_blank'
-              >
-                <Image
-                  src={link.src}
-                  width={link.width}
-                  height={link.height}
-                  alt={link.alt}
-                />
-              </Link>
-            ))} */}
+            <BlogShare />
             <BlogCopyButton />
           </div>
         </div>

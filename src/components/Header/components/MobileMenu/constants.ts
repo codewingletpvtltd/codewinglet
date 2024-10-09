@@ -417,7 +417,7 @@ export const navMenu = [
   },
   {
     label: 'Blogs',
-    path: '',
+    path: 'blogs',
   },
   {
     path: 'about-us',

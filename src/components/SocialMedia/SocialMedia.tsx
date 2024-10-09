@@ -22,7 +22,7 @@ const SocialMedia = ({
       <Link
         key={index}
         className={cn(
-          `flex items-center justify-center w-8 h-8 rounded-full 
+          `flex items-center justify-center w-8 h-8 rounded-full flex-shrink-0
           !bg-${bgColor} !border-${bgColor} !w-[${width}px] !h-[${height}px]`
         )}
         href={link.href}
