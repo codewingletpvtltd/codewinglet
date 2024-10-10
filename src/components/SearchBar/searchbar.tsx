@@ -70,7 +70,7 @@ export const BlogSearch = () => {
             <input
               type='search'
               placeholder='Search your blog here'
-              className='md:w-[383px] w-[290px] placeholder:text-secondary lg:border lg:border-headerBoxBorder pr-9 lg:py-[13px] py-2.5 lg:pl-[58px] pl-[38px] text-paragraph2Light focus:outline-0'
+              className='md:w-[383px] sm:w-[290px] w-[250px] placeholder:text-secondary lg:border lg:border-headerBoxBorder sm:pr-9 pr-6 lg:py-[13px] py-2.5 lg:pl-[58px] pl-[38px] text-paragraph2Light focus:outline-0'
               value={inputValue}
               onChange={handleInputChange}
               onKeyDown={handleKeyDown}

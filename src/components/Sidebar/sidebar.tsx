@@ -93,6 +93,7 @@ export const BlogCategory = () => {
               alt='Filter'
               width={22}
               height={22}
+              className='flex-shrink-0'
             />
           </Badge>
         </div>
