@@ -9,11 +9,7 @@ const BlogDetails = async ({ params }: any) => {
     const blogId = blog[0].documentId;
     updateViewCount(blogId, blog[0].views);
 
-    return (
-      <>
-        <BlogDetailsModule blogData={blog[0]} />
-      </>
-    );
+    return <BlogDetailsModule blogData={blog[0]} />;
   } else {
     notFound();
   }
