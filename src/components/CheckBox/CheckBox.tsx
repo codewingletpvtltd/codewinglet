@@ -1,4 +1,4 @@
-import { ChangeEvent, useState } from 'react';
+import { ChangeEvent, useEffect, useState } from 'react';
 
 interface CheckboxProps {
   label: string;
@@ -6,8 +6,16 @@ interface CheckboxProps {
   onChange: (isChecked: boolean) => void;
 }
 
-const Checkbox: React.FC<CheckboxProps> = ({ label, checked, onChange }) => {
-  const [isChecked, setIsChecked] = useState(checked || false);
+const Checkbox: React.FC<CheckboxProps> = ({
+  label,
+  checked = false,
+  onChange,
+}) => {
+  const [isChecked, setIsChecked] = useState(checked);
+
+  useEffect(() => {
+    setIsChecked(checked);
+  }, [checked]);
 
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
     setIsChecked(event.target.checked);
@@ -18,11 +26,13 @@ const Checkbox: React.FC<CheckboxProps> = ({ label, checked, onChange }) => {
     <>
       <input
         type='checkbox'
-        className='h-4 w-4 rounded accent-primary cursor-pointer'
+        className='h-4 w-4 rounded accent-primary flex-shrink-0'
         checked={isChecked}
         onChange={handleChange}
       />
-      <label className='text-secondary text-paragraph2Light'>{label}</label>
+      <label className='text-secondary text-paragraph2Light cursor-pointer'>
+        {label}
+      </label>
     </>
   );
 };

@@ -30,7 +30,7 @@ const TechnologyPage = () => (
     <Industries />
     <OurWorkProcess />
     <ClientTestimonials />
-    <Blog />
+    {/*<Blog />*/}
     <RelatedFaq />
   </>
 );

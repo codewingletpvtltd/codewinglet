@@ -1,10 +1,10 @@
-import { useEffect, useRef, useState } from 'react';
+'use client';
+import { useEffect, useState } from 'react';
 
 import { Arrow } from '@codewinglet/assets';
 import { Typography } from '@codewinglet/components';
 interface Header {
   id: string;
-  ref: React.RefObject<HTMLElement | null>;
   title: string;
 }
 
@@ -13,91 +13,45 @@ interface ScrollHighlightNavbarProps {
   containerClassName?: string;
 }
 
-const nearestIndex = (
-  currentPosition: number,
-  sectionPositionArray: Header[],
-  startIndex: number,
-  endIndex: number
-): number => {
-  if (startIndex === endIndex) return startIndex;
-  else if (startIndex === endIndex - 1) {
-    if (
-      Math.abs(
-        sectionPositionArray[startIndex].ref.current!.offsetTop -
-          currentPosition
-      ) <
-      Math.abs(
-        sectionPositionArray[endIndex].ref.current!.offsetTop - currentPosition
-      )
-    )
-      return startIndex;
-    else return endIndex;
-  } else {
-    let nextNearest = Math.floor((startIndex + endIndex) / 2);
-    let a = Math.abs(
-      sectionPositionArray[nextNearest].ref.current!.offsetTop - currentPosition
-    );
-    let b = Math.abs(
-      sectionPositionArray[nextNearest + 1].ref.current!.offsetTop -
-        currentPosition
-    );
-    if (a < b) {
-      return nearestIndex(
-        currentPosition,
-        sectionPositionArray,
-        startIndex,
-        nextNearest
-      );
-    } else {
-      return nearestIndex(
-        currentPosition,
-        sectionPositionArray,
-        nextNearest,
-        endIndex
-      );
-    }
-  }
-};
-
 const ScrollHighlightNavbar: React.FC<ScrollHighlightNavbarProps> = ({
   navHeader,
   containerClassName = '',
 }) => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const timeOutRef = useRef<any>(0);
+
   useEffect(() => {
     const handleScroll = () => {
-      clearTimeout(timeOutRef.current);
-      let index = nearestIndex(
-        window.scrollY,
-        navHeader,
-        0,
-        navHeader.length - 1
+      const sections = navHeader.map((header) =>
+        document.getElementById(header.id)
       );
-      timeOutRef.current = setTimeout(() => setActiveIndex(index), 50);
+      let currentIndex = 0;
 
-      const targetElement = document.getElementById(`your-id-${index}`);
+      sections.forEach((section, index) => {
+        if (section) {
+          const sectionTop = section.getBoundingClientRect().top;
+          const offset = 155; // Adjust this value as necessary
+          if (sectionTop <= offset && sectionTop > -section.offsetHeight) {
+            currentIndex = index;
+          }
+        }
+      });
 
-      if (targetElement) {
-        // Scroll to the element, aligning to the top
-        targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
+      setActiveIndex(currentIndex);
     };
-    document.addEventListener('scroll', handleScroll);
-    return () => {
-      document.removeEventListener('scroll', handleScroll);
-    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, [navHeader]);
 
   return (
     <div
       className={`w-full lg:p-0 p-5 bg-white lg:sticky lg:z-0 z-10 right-auto lg:top-[190px] md:top-[90px] top-[78px] lg:left-auto left-0 ${containerClassName}`}
     >
-      <Typography className='text-primary text-subtitle2 pb-[18px] mb-[29px] border-b-2 border-primary'>
+      <Typography className='text-primary text-subtitle2 pb-4 mb-[29px] border-b-2 border-primary'>
         Table of Contents
       </Typography>
       <ul className='grid overflow-auto [-ms-overflow-style:_none;] [scrollbar-width:_none;] gap-5'>
-        {navHeader.map((policy, i) => (
+        {navHeader?.map((policy, i) => (
           <li key={policy.id} className='flex-shrink-0'>
             <a
               href={`#${policy.id}`}

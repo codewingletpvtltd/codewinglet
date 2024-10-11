@@ -1,5 +1,6 @@
 /* eslint-disable import/order */
 'use client';
+import Logo from '../../../public/assets/icons/LogoBlack.svg';
 import { xl } from '@codewinglet/constants/mediaQueryConst';
 import { useScreenSize } from '@codewinglet/hooks';
 import { getClassNames } from '@codewinglet/utils';
@@ -87,6 +88,10 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
             ? 'bg-primary'
             : pathName === '/contact-us'
             ? 'bg-primary'
+            : pathName === '/about-us'
+            ? 'bg-primary'
+            : pathName === '/blogs'
+            ? 'bg-primary'
             : pathName === '/privacy-policy'
             ? 'bg-primary'
             : pathName === '/terms-and-conditions'
@@ -103,13 +108,13 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
         <div className='flex items-center max-w-[1410px] lg:h-[86px] md:h-[90px] sm:h-[78px] h-[78px] justify-between relative w-full px-[30px] lg:px-[15px] md:px-[30px] sm:px-[30px] mx-auto'>
           <div>
             <Image
-              src={'assets/icons/LogoBlack.svg'}
+              src={Logo}
               width={20}
               height={20}
               alt='Codewinglet Private Limited Logo1'
               className='w-[191px] md:w-[240px] xl:w-[252px] cursor-pointer invert'
               onClick={() => router.push('/')}
-              loading='eager'
+              priority
             />
           </div>
 
@@ -146,7 +151,7 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
                     alt='Codewinglet Private Limited Logo1'
                     className='w-[191px] sm:h-auto h-[38px] md:w-60 xl:w-[252px] cursor-pointer invert'
                     onClick={() => router.push('/')}
-                    loading='eager'
+                    loading='lazy'
                   />
                 </div>
                 <div
