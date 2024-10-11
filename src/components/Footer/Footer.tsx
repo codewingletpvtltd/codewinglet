@@ -222,7 +222,7 @@ const Footer = () => {
                     </Typography>
                   ))}
                 </div>
-                <div className='flex gap-5 lg:mt-7 md:mt-5 mt-5 ml-7'>
+                <div className='flex sm:gap-5 gap-3 lg:mt-7 md:mt-5 mt-5 ml-7'>
                   <SocialMedia
                     bgColor='white'
                     iconColor='black'

@@ -9,7 +9,7 @@ const Breadcrumb: FC<BreadcrumbProps> = ({ breadcrumbs }) => (
       <>
         <li
           key={`breadcrumb-${index}`}
-          className='first:text-primary text-secondary'
+          className='first:text-primary text-secondary first:flex-shrink-0'
         >
           <Typography className='text-paragraph2Light font-normal'>
             {breadcrumb}
