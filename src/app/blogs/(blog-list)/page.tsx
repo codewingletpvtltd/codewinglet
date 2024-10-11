@@ -29,31 +29,26 @@ const Blogs = async ({ searchParams }: BlogsProps) => {
     searchQuery,
     categoryQuery
   );
-
+  const showLatest = currentPage === 1 && !searchQuery && !categoryQuery;
   return (
     <div className='text-black lg:pl-14 lg:w-[1013px]'>
       {blogs.length > 0 || latestBlog.length > 0 ? (
         <>
-          {currentPage === 1 && !searchQuery && !categoryQuery ? (
+          {showLatest && (
             <>
               <Typography className='text-h6 mb-9'>Latest article</Typography>
               <BlogItem blog={latestBlog[0]} />
-              <div className='border-b border-headerBoxBorder lg:pb-[45px] pb-10'>
-                <Typography className='text-h6 mb-[37px] mt-[60px]'>
-                  Resources and insights
-                </Typography>
-                <BlogList blogs={blogs} />
-              </div>
             </>
-          ) : blogs.length > 0 ? (
+          )}
+          {blogs.length > 0 && (
             <div className='border-b border-headerBoxBorder lg:pb-[45px] pb-10'>
-              <Typography className='text-h6 mb-[37px]'>
+              <Typography
+                className={`text-h6 mb-[37px] ${showLatest ? 'mt-[60px]' : ''}`}
+              >
                 Resources and insights
               </Typography>
               <BlogList blogs={blogs} />
             </div>
-          ) : (
-            <NoBlogFound />
           )}
           {pagination.page && (
             <Pagination
