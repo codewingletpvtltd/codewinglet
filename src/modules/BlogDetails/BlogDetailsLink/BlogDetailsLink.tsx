@@ -5,6 +5,7 @@ import { BackButton, Breadcrumb, Typography } from '@codewinglet/components';
 
 import BlogCopyButton from '../BlogCopyButton/BlogCopyButton';
 import BlogShare from '../BlogShare/BlogShare';
+import BlogShareMobile from '../BlogShare/BlogShareMobile';
 
 const BlogDetailsLink = ({ blogData }: any) => {
   const breadcrumbData = [
@@ -36,7 +37,9 @@ const BlogDetailsLink = ({ blogData }: any) => {
             )}
           />
         </div>
+
         <div className='flex items-center justify-end gap-[18px] w-full'>
+          <BlogShareMobile title={blogData.title} />
           <Typography className='md:flex gap-[5px] hidden'>
             <Image
               src='/assets/icons/share.svg'

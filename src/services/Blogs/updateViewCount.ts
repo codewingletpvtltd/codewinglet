@@ -22,7 +22,7 @@ export const updateViewCount = async (
     };
 
     const updateRequest = await fetch(
-      `http://127.0.0.1:1337/api/blogs/${blogId}`,
+      `${process.env.NEXT_PUBLIC_BASE_URL}/api/blogs/${blogId}`,
       reqOptions
     );
 

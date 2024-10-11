@@ -9,7 +9,9 @@ export const fetchLatestBlog = async () => {
     };
 
     const blogRequest = await fetch(
-      `http://127.0.0.1:1337/api/blogs?sort=createdAt:desc&populate=*&pagination[page]=${1}&pagination[pageSize]=${1}`,
+      `${
+        process.env.NEXT_PUBLIC_BASE_URL
+      }/api/blogs?sort=createdAt:desc&populate=*&pagination[page]=${1}&pagination[pageSize]=${1}`,
       reqOptions
     );
 

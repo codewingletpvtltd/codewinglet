@@ -9,7 +9,7 @@ export const fetchMostViewedBlogs = async () => {
     };
 
     const blogRequest = await fetch(
-      'http://127.0.0.1:1337/api/blogs?sort=views:desc&pagination[limit]=5',
+      `${process.env.NEXT_PUBLIC_BASE_URL}/api/blogs?sort=views:desc&pagination[limit]=5`,
       reqOptions
     );
 

@@ -11,7 +11,7 @@ export const fetchBlogDetails = async (slug: string) => {
     };
 
     const blogRequest = await fetch(
-      `http://127.0.0.1:1337/api/blogs?filters[slug][$eq]=${slug}&populate=*`,
+      `${process.env.NEXT_PUBLIC_BASE_URL}/api/blogs?filters[slug][$eq]=${slug}&populate=*`,
       reqOptions
     );
 

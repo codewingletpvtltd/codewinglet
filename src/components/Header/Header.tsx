@@ -114,7 +114,7 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
               alt='Codewinglet Private Limited Logo1'
               className='w-[191px] md:w-[240px] xl:w-[252px] cursor-pointer invert'
               onClick={() => router.push('/')}
-              loading='eager'
+              priority
             />
           </div>
 
@@ -151,7 +151,7 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
                     alt='Codewinglet Private Limited Logo1'
                     className='w-[191px] sm:h-auto h-[38px] md:w-60 xl:w-[252px] cursor-pointer invert'
                     onClick={() => router.push('/')}
-                    loading='eager'
+                    loading='lazy'
                   />
                 </div>
                 <div

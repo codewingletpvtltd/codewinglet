@@ -17,7 +17,7 @@ export const fetchRelatedBlogs = async (blogId: string, tags: string[]) => {
     const excludeBlogId = `&filters[documentId][$ne]=${blogId}`;
 
     const blogRequest = await fetch(
-      `http://127.0.0.1:1337/api/blogs?${allTags}${excludeBlogId}&populate=*`,
+      `${process.env.NEXT_PUBLIC_BASE_URL}/api/blogs?${allTags}${excludeBlogId}&populate=*`,
       reqOptions
     );
 
