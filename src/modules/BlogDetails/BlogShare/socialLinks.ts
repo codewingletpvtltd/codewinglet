@@ -1,5 +1,5 @@
 import FaceBookLogo from '/public/assets/icons/Facebook.svg';
-import LinkedinLogo from '/public/assets/icons/Linkedin.svg';
+import LinkedinLogo from '/public/assets/icons/linkedin.svg';
 import TwitterLogo from '/public/assets/icons/Twitter.svg';
 
 export const socialLinks = [
