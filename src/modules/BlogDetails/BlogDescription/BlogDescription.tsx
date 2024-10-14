@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 import { CodeBlock, Typography } from '@codewinglet/components';
 import { groupedCode } from '@codewinglet/utils';
@@ -77,9 +78,9 @@ const BlogDescription: React.FC<{ contentData: BlogPost[] }> = ({
                                 );
                               }
 
-                              if (child.type === 'link') {
+                              if (child.type === 'link' && child.url) {
                                 return (
-                                  <a
+                                  <Link
                                     key={child.url}
                                     href={child.url}
                                     className='link-class text-info underline'
@@ -87,7 +88,7 @@ const BlogDescription: React.FC<{ contentData: BlogPost[] }> = ({
                                     {child.children
                                       .map((linkChild: any) => linkChild.text)
                                       .join('')}
-                                  </a>
+                                  </Link>
                                 );
                               }
                               return childText; // Return plain text for other child types

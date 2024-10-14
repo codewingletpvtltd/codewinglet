@@ -1,6 +1,7 @@
 'use client';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import { socialLinks } from './socialLinks';
 
@@ -20,7 +21,7 @@ const BlogShare = () => {
   return (
     <>
       {socialLinks.map((link, index) => (
-        <a
+        <Link
           key={index}
           className='flex items-center justify-center lg:w-10 w-[30px] lg:h-10 h-[30px] rounded-full bg-bg'
           href={link.href.call(null, pageUrl, pageTitle)}
@@ -33,7 +34,7 @@ const BlogShare = () => {
             height={link.height}
             alt={link.alt}
           />
-        </a>
+        </Link>
       ))}
     </>
   );

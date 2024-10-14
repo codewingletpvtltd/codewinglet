@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import Link from 'next/link';
 
 import { Arrow } from '@codewinglet/assets';
 interface Header {
@@ -84,7 +85,7 @@ const ScrollHighlightNavbar: React.FC<ScrollHighlightNavbarProps> = ({
       <ul className='lg:grid flex overflow-auto [-ms-overflow-style:_none;] [scrollbar-width:_none;] gap-6'>
         {navHeader.map((policy, i) => (
           <li key={policy.id} className='flex-shrink-0'>
-            <a href={`#${policy.id}`}>
+            <Link href={`#${policy.id}`}>
               <div
                 className={`bg-white p-0 ${
                   i === activeIndex
@@ -99,7 +100,7 @@ const ScrollHighlightNavbar: React.FC<ScrollHighlightNavbarProps> = ({
                   />
                 </div>
               </div>
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
