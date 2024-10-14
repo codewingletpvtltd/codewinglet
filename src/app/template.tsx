@@ -1,12 +1,12 @@
-/* eslint-disable import/order */
 'use client';
-import { Footer, Header } from '@codewinglet/components';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { Bounce, ToastContainer } from 'react-toastify';
+
+import { Footer, Header } from '@codewinglet/components';
 import 'react-toastify/dist/ReactToastify.css';
 
-const contextClass: any = {
+const contextClass: Record<string, string> = {
   success: 'bg-success',
   error: 'bg-error',
   default: 'bg-white',

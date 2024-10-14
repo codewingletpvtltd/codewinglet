@@ -1,8 +1,7 @@
 'use client';
-import { SectionHeader } from '@codewinglet/components';
+import { SectionHeader, Typography } from '@codewinglet/components';
 import Reveal from '@codewinglet/components/Reveal';
 
-import Typography from '../../../components/Typography';
 import './scss/process.css';
 
 const process = [

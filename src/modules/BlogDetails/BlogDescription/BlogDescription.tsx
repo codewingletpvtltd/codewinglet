@@ -14,7 +14,7 @@ const BlogDescription: React.FC<{ contentData: BlogPost[] }> = ({
     title: item.title,
     id: `section-${item.title}`,
   }));
-  const groupedData = groupedCode(contentData);
+  groupedCode(contentData);
   return (
     <div className='bg-white lg:py-20 py-[60px] lg:pt-40 md:pt-64 pt-0 pb-2'>
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>

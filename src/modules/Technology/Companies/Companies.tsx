@@ -1,9 +1,8 @@
-/* eslint-disable import/order */
 'use client';
-import Reveal from '@codewinglet/components/Reveal';
-
 import Image from 'next/image';
-import SectionHeader from '../../../components/SectionHeader/SectionHeader';
+
+import Reveal from '@codewinglet/components/Reveal';
+import { SectionHeader } from '@codewinglet/components';
 
 const Companies = () => (
   <>

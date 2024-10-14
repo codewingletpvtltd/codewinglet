@@ -1,8 +1,8 @@
-/* eslint-disable import/order */
 'use client';
 
 import Image from 'next/image';
-import SectionHeader from '../../../components/SectionHeader/SectionHeader';
+
+import { SectionHeader } from '@codewinglet/components';
 
 const Benefit = () => {
   const items = [

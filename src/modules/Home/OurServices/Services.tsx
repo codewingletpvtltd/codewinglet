@@ -1,7 +1,7 @@
-/* eslint-disable import/order */
 'use client';
 import Link from 'next/link';
 import { useState } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
 
 import { Arrow } from '@codewinglet/assets';
 import {
@@ -12,7 +12,7 @@ import {
   Button,
 } from '@codewinglet/components';
 import Reveal from '@codewinglet/components/Reveal';
-import { AnimatePresence, motion } from 'framer-motion';
+
 import Content from './components/Content';
 import ServiceData from './constants';
 

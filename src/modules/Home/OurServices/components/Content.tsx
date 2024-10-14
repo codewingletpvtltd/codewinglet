@@ -1,11 +1,12 @@
-/* eslint-disable import/order */
 'use client';
-import { Arrow } from '@codewinglet/assets';
-import { Button, Typography } from '@codewinglet/components';
-import Reveal from '@codewinglet/components/Reveal';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FC } from 'react';
+
+import { Arrow } from '@codewinglet/assets';
+import { Button, Typography } from '@codewinglet/components';
+import Reveal from '@codewinglet/components/Reveal';
+
 import { ContentProps } from '../types';
 
 const Content: FC<ContentProps> = ({ service }) => (

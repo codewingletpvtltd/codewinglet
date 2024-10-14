@@ -1,14 +1,14 @@
-/* eslint-disable import/order */
 'use client';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useState } from 'react';
+
 import Content from './components/Content';
 import ServiceData from './constants';
 
 const TechnologyTab = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
-  const handleChangeIndex = (index: any) => {
+  const handleChangeIndex = (index: number) => {
     setSelectedIndex(index);
   };
 

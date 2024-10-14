@@ -1,8 +1,8 @@
-/* eslint-disable import/order */
-import { Arrow } from '@codewinglet/assets';
-import { Button, SectionHeader, Typography } from '@codewinglet/components';
 import Image from 'next/image';
 import Link from 'next/link';
+
+import { Arrow } from '@codewinglet/assets';
+import { Button, SectionHeader, Typography } from '@codewinglet/components';
 
 const OurTeam = () => (
   <div className='bg-bg lg:py-20 md:py-[60px] py-10 scroll-mt-56' id='employee'>

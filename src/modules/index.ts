@@ -7,4 +7,3 @@ export { default as HomeModule } from './Home';
 export { default as PrivacyPolicyModule } from './PrivacyPolicy';
 export { default as TechnologyModule } from './Technology';
 export { default as TermsConditionModule } from './TermsCondition';
-export { default as ThankYouModule } from './ThankYou';

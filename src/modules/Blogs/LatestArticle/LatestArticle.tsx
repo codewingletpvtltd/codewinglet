@@ -1,9 +1,9 @@
-/* eslint-disable import/order */
 'use client';
-import { Pagination, Typography } from '@codewinglet/components';
 
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
+
+import { Typography } from '@codewinglet/components';
 
 const LatestArticle = () => {
   const [clientDate, setClientDate] = useState<string | null>(null);

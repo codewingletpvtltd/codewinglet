@@ -1,8 +1,8 @@
-/* eslint-disable import/order */
 'use client';
+import Image from 'next/image';
+
 import { SectionHeader, Typography } from '@codewinglet/components';
 import Reveal from '@codewinglet/components/Reveal';
-import Image from 'next/image';
 
 const industriesCard = [
   {

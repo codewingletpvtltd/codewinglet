@@ -1,10 +1,9 @@
-/* eslint-disable import/order */
 'use client';
 import Link from 'next/link';
+import Image from 'next/image';
 
 import { Arrow } from '@codewinglet/assets';
 import { Typography } from '@codewinglet/components';
-import Image from 'next/image';
 
 const Journey = () => (
   <>

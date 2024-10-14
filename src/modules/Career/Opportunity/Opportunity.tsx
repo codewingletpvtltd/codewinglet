@@ -1,8 +1,8 @@
-/* eslint-disable import/order */
-import { Arrow } from '@codewinglet/assets';
-import { SectionHeader } from '@codewinglet/components';
 import Image from 'next/image';
 import Link from 'next/link';
+
+import { Arrow } from '@codewinglet/assets';
+import { SectionHeader } from '@codewinglet/components';
 
 const Opportunity = () => (
   <div className='bg-white lg:pt-[174px] md:pt-[178px] pt-[136px]' id='career'>

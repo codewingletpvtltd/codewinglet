@@ -1,4 +1,3 @@
-/* eslint-disable quotes */
 export const technologies = [
   {
     id: 1,
@@ -16,7 +15,7 @@ export const technologies = [
     ],
     title: 'Angular JS + Node',
     description:
-      "Microsoft uses Angular in Azure Portal for cloud management service. Angular's scalability suits Microsoft's needs.",
+      'Microsoft uses Angular in Azure Portal for cloud management service. Angular\'s scalability suits Microsoft\'s needs.',
   },
   {
     id: 2,
@@ -26,7 +25,7 @@ export const technologies = [
     ],
     title: 'Angular JS + Java',
     description:
-      "Microsoft uses Angular in Azure Portal for cloud management service. Angular's scalability suits Microsoft's needs.",
+      'Microsoft uses Angular in Azure Portal for cloud management service. Angular\'s scalability suits Microsoft\'s needs.',
   },
   {
     id: 3,
@@ -36,6 +35,6 @@ export const technologies = [
     ],
     title: 'Angular JS + PHP',
     description:
-      "Microsoft uses Angular in Azure Portal for cloud management service. Angular's scalability suits Microsoft's needs.",
+      'Microsoft uses Angular in Azure Portal for cloud management service. Angular\'s scalability suits Microsoft\'s needs.',
   },
 ];

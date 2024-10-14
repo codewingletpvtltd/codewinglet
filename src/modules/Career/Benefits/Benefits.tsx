@@ -1,11 +1,9 @@
-/* eslint-disable import/order */
 'use client';
-import Reveal from '@codewinglet/components/Reveal';
-
-import { Typography } from '@codewinglet/components';
 import Image from 'next/image';
 import Link from 'next/link';
-import SectionHeader from '../../../components/SectionHeader/SectionHeader';
+
+import Reveal from '@codewinglet/components/Reveal';
+import { SectionHeader, Typography } from '@codewinglet/components';
 
 const workData = [
   {

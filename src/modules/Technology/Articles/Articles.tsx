@@ -1,10 +1,9 @@
-/* eslint-disable import/order */
+import Link from 'next/link';
 
 import { Arrow } from '@codewinglet/assets';
 import { BlogCard, Button, SectionHeader } from '@codewinglet/components';
 import Reveal from '@codewinglet/components/Reveal';
 import { fetchRelatedBlogs } from '@codewinglet/services';
-import Link from 'next/link';
 
 export default async function Articles({ blogData }: any) {
   let data = null;

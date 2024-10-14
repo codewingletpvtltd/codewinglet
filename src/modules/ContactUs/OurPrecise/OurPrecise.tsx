@@ -1,11 +1,9 @@
-/* eslint-disable import/order */
 'use client';
-import { Typography } from '@codewinglet/components';
-import Reveal from '@codewinglet/components/Reveal';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import SectionHeader from '../../../components/SectionHeader/SectionHeader';
+import { SectionHeader, Typography } from '@codewinglet/components';
+import Reveal from '@codewinglet/components/Reveal';
 
 const OurPrecise = () => (
   <>

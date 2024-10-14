@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 
-import NoBlogFoundImage from '../../../public/assets/blog/no_blog_icon.svg';
 import Typography from '../Typography';
 const NoBlogFound = ({
   text = 'No Blog Posted Yet!',
@@ -10,8 +9,10 @@ const NoBlogFound = ({
   <div className='h-screen w-full bg-white text-black flex justify-center m-8'>
     <div className='w-full flex flex-col items-center'>
       <Image
-        src={NoBlogFoundImage}
+        src={'/assets/blog/no_blog_icon.svg'}
         alt='No Blog Found Image'
+        width={260}
+        height={260}
         className='w-[260px] h-[260px]'
       />
       <Typography className='text-h6 leading-8 mt-3 text-primary'>

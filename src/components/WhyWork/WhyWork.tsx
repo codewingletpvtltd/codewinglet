@@ -1,10 +1,9 @@
-/* eslint-disable import/order */
-/* eslint-disable quotes */
-// eslint-disable-next-line import/order
-import { Arrow } from '@codewinglet/assets';
 import Image from 'next/image';
 import Link from 'next/link';
 import Slider from 'react-slick';
+
+import { Arrow } from '@codewinglet/assets';
+
 import Button from '../Button';
 import Reveal from '../Reveal';
 import SectionHeader from '../SectionHeader';
@@ -101,7 +100,7 @@ const WhyWork = () => {
       imgAlt: 'Committed',
       title: 'Committed',
       description:
-        "We're committed to innovative IT solutions that meet clients expectations.",
+        'We\'re committed to innovative IT solutions that meet clients expectations.',
     },
     {
       imgSrc: '/assets/comman/timely-support.png',
@@ -115,7 +114,7 @@ const WhyWork = () => {
       imgAlt: 'Professional',
       title: 'Professional',
       description:
-        "We're experts in IT, crafting professional solutions just for you with skill and care.",
+        'We\'re experts in IT, crafting professional solutions just for you with skill and care.',
     },
     {
       imgSrc: '/assets/comman/user-centered.png',

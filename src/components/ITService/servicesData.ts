@@ -1,6 +1,3 @@
-/* eslint-disable quotes */
-// servicesData.ts
-
 export interface ServicePoint {
   heading: string;
   description: string;
@@ -44,7 +41,7 @@ export const servicesData: ServiceCardProps[] = [
       {
         heading: 'Highly Qualified Professionals',
         description:
-          "Leverage India's vast pool of IT experts skilled in the latest technologies and methodologies.",
+          'Leverage India’s vast pool of IT experts skilled in the latest technologies and methodologies.',
       },
     ],
   },
@@ -90,7 +87,7 @@ export const servicesData: ServiceCardProps[] = [
       {
         heading: '2-Week Trial Period',
         description:
-          "Evaluate our team's capabilities with no long-term commitment, minimizing risk and ensuring a perfect fit.",
+          'Evaluate our team’s capabilities with no long-term commitment, minimizing risk and ensuring a perfect fit.',
       },
       {
         heading: 'Cost-Effective Evaluation',
