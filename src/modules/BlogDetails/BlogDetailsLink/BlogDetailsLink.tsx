@@ -19,7 +19,7 @@ const BlogDetailsLink = ({ blogData }: any) => {
         <div className='lg:hidden block'>
           <BackButton />
         </div>
-        <div className='lg:block hidden'>
+        <div className='lg:block hidden w-[70%]'>
           <Breadcrumb
             breadcrumbs={breadcrumbData.map((item) =>
               item.href ? (
@@ -29,7 +29,7 @@ const BlogDetailsLink = ({ blogData }: any) => {
               ) : (
                 <Typography
                   key={item.value}
-                  className='overflow-hidden text-ellipsis line-clamp-1 w-[70%]'
+                  className='overflow-hidden text-ellipsis line-clamp-1'
                 >
                   {item.value}
                 </Typography>

@@ -24,13 +24,15 @@ const BlogCard: FC<BlogCardProps> = ({
   <Link href={href} className='group'>
     <div className={cn('relative lg:w-full w-[312px]', className)}>
       {image && (
-        <Image
-          src={image || '/assets/blog/blog_des_two.png'}
-          alt='Blog Image'
-          width={450}
-          height={250}
-          className='h-[250px] object-cover w-full'
-        />
+        <div className='overflow-hidden w-full'>
+          <Image
+            src={image || '/assets/blog/blog_des_two.png'}
+            alt='Blog Image'
+            width={450}
+            height={250}
+            className='h-[250px] w-full transition-transform duration-500 object-center object-cover hover:scale-105'
+          />
+        </div>
       )}
       <div className='py-[15px]'>
         <Typography className='text-secondary text-tag'>
