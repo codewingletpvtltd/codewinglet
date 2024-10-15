@@ -15,15 +15,17 @@ export const BlogItem: React.FC<BlogItemProps> = ({ blog }) => (
     <Link href={`/blogs/${blog.slug}`} className='group'>
       <div className='flex md:flex-row flex-col 2xl:gap-[45px] gap-5'>
         {blog.image && (
-          <Image
-            src={blog.image.url}
-            alt='article'
-            width={484}
-            height={315}
-            className='lg:w-[484px] w-[334px] 2xl:h-[315px] lg:h-[295px] h-[218px] object-cover'
-          />
+          <div className='overflow-hidden 2xl:w-[484px] lg:w-[418px] w-[334px]'>
+            <Image
+              src={blog.image.url}
+              alt='article'
+              width={484}
+              height={315}
+              className='w-full transition-transform duration-500 object-center object-cover 2xl:h-[315px] lg:h-[295px] h-[218px] hover:scale-105'
+            />
+          </div>
         )}
-        <div className='2xl:py-[15px]'>
+        <div className='2xl:py-[15px] 2xl:w-[428px] lg:w-[418px] w-[335px]'>
           <Typography className='text-secondary text-tag'>
             {formatDate(blog.createdAt)} • {blog.read} min read
           </Typography>
