@@ -17,12 +17,15 @@ const config: StorybookConfig = {
     config.resolve.alias = {
       ...config.resolve.alias,
       '@codewinglet/*': path.resolve(__dirname, '../src/'),
+      '@codewinglet/utils': path.resolve(__dirname, '../src/utils'),
+      '@codewinglet/assets': path.resolve(__dirname, '../src/assets/index.ts'),
+      '@codewinglet/constants': path.resolve(__dirname, '../src/constants'),
     };
     return config;
   },
   docs: {
     autodocs: 'tag',
   },
-  staticDirs: ['../src/assets'],
+  staticDirs: ['../src/assets', '../public'],
 };
 export default config;
