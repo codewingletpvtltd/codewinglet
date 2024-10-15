@@ -1,6 +1,6 @@
 'use client';
 
-import Checkbox from '@codewinglet/components/CheckBox/CheckBox';
+import Checkbox from '@codewinglet/components/ui/CheckBox/CheckBox';
 
 interface SidebarCheckBoxProps {
   item: {

@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { FC } from 'react';
 
-import { Accordion } from '@codewinglet/components/Accordion';
+import { Accordion } from '@codewinglet/components/ui/Accordion';
 
 import { MobileSubMenuProps } from '../../types';
 import MobileListItem from './MobileListItem';

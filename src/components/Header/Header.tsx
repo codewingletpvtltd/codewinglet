@@ -7,9 +7,9 @@ import { xl } from '@codewinglet/constants/mediaQueryConst';
 import { useScreenSize } from '@codewinglet/hooks';
 import { getClassNames } from '@codewinglet/utils';
 
-import Button from '../Button';
-import Drawer from '../Drawer/Drawer';
-import MenuIcon from '../MenuIcon';
+import Button from '../ui/Button';
+import Drawer from '../ui/Drawer/Drawer';
+import MenuIcon from '../ui/MenuIcon';
 import { MobileMenu, NavMenu } from './components';
 import { HeaderProps } from './types';
 import useHeader from './useHeader';

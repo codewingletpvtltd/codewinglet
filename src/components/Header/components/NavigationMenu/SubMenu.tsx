@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { FC } from 'react';
 
 import { Arrow } from '@codewinglet/assets';
-import Button from '@codewinglet/components/Button';
+import Button from '@codewinglet/components/ui/Button';
 import Typography from '@codewinglet/components/Typography';
 
 import { SubMenuContentProps } from '../../types';

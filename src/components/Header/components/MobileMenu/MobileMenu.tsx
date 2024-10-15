@@ -3,8 +3,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { FC } from 'react';
 
-import Button from '@codewinglet/components/Button';
-import Drawer from '@codewinglet/components/Drawer/Drawer';
+import Button from '@codewinglet/components/ui/Button';
+import Drawer from '@codewinglet/components/ui/Drawer/Drawer';
 
 import { MobileMenuProps } from '../../types';
 import MobileSubMenu from './MobileSubMenu';

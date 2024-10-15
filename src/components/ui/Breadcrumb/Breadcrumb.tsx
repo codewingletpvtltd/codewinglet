@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-import Typography from '../Typography/Typography';
+import Typography from '../../Typography/Typography';
 import { BreadcrumbProps } from './types';
 
 const Breadcrumb: FC<BreadcrumbProps> = ({ breadcrumbs }) => (

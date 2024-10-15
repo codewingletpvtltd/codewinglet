@@ -1,7 +1,7 @@
 import {
   ElementByTypographyVariant,
   TypographyVariant,
-} from '../Typography/types';
+} from '../../Typography/types';
 
 export type TypingHTMLElement = ElementByTypographyVariant[TypographyVariant];
 

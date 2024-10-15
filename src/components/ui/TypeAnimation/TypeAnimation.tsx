@@ -3,11 +3,11 @@ import { HTMLAttributes, MutableRefObject, forwardRef, useEffect } from 'react';
 
 import { getClassNames } from '@codewinglet/utils';
 
-import Typography from '../Typography/Typography';
+import Typography from '../../Typography/Typography';
 import {
   ElementByTypographyVariant,
   TypographyVariant,
-} from '../Typography/types';
+} from '../../Typography/types';
 import './TypeAnimation.css';
 import useForwardRef from './hooks/useForwardRef';
 import { TypeAnimationProps, TypingHTMLElement } from './types';

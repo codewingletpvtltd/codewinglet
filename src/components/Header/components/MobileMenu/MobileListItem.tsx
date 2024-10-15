@@ -5,7 +5,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from '@codewinglet/components/Accordion';
+} from '@codewinglet/components/ui/Accordion';
 import { getClassNames } from '@codewinglet/utils';
 import Typography from '@codewinglet/components/Typography';
 

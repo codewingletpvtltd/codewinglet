@@ -6,7 +6,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from '../Accordion';
+} from '../ui/Accordion';
 
 const Faq = ({
   faqData,

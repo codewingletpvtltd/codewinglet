@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import { Arrow } from '@codewinglet/assets';
 
-import Button from '../Button';
+import Button from '../ui/Button';
 import Typography from '../Typography';
 
 const workData = [

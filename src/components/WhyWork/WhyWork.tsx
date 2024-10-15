@@ -4,9 +4,9 @@ import Slider from 'react-slick';
 
 import { Arrow } from '@codewinglet/assets';
 
-import Button from '../Button';
+import Button from '../ui/Button';
 import Reveal from '../Reveal';
-import SectionHeader from '../SectionHeader';
+import SectionHeader from '../ui/SectionHeader';
 import Typography from '../Typography';
 import Statics from './Statics';
 

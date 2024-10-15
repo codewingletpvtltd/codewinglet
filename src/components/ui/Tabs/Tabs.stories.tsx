@@ -4,9 +4,8 @@ import Image from 'next/image';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './tabs';
 
 const meta = {
-  title: 'Components/Tabs',
   component: Tabs,
-  tags: ['autodocs'],
+  tags: ['Tabs', 'autodocs'],
   argTypes: {
     children: {},
   },

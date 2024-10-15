@@ -2,8 +2,8 @@ import Image from 'next/image';
 
 import Reveal from '@codewinglet/components/Reveal';
 
-import SectionHeader from '../SectionHeader/SectionHeader';
-import Slider from '../Slider/Slider';
+import SectionHeader from '../ui/SectionHeader/SectionHeader';
+import Slider from '../ui/Slider/Slider';
 import Typography from '../Typography/Typography';
 import ClientDetails from './components/ClientDetails';
 import { slickSetting } from './config';

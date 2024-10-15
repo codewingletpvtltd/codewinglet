@@ -2,7 +2,7 @@
 import Faq from '@codewinglet/components/Faq';
 import { faqData } from '@codewinglet/components/Faq/constants';
 
-import SectionHeader from '../SectionHeader';
+import SectionHeader from '../ui/SectionHeader';
 
 const RelatedFaq = () => (
   <div className='bg-bg lg:py-20 md:py-[60px] py-10 scroll-mt-40' id='faq'>

@@ -2,7 +2,7 @@ import React from 'react';
 
 import { getClassNames } from '@codewinglet/utils';
 
-import Typography from '../Typography';
+import Typography from '../../Typography';
 import { SectionHeaderProps } from './types';
 
 const SectionHeader: React.FC<SectionHeaderProps> = ({
