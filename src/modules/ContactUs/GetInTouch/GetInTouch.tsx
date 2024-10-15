@@ -1,13 +1,12 @@
-/* eslint-disable import/order */
 'use client';
-import { Typography } from '@codewinglet/components';
+import Image from 'next/image';
+import Link from 'next/link';
+
+import { SectionHeader, Typography } from '@codewinglet/components';
 import Reveal from '@codewinglet/components/Reveal';
 import SocialMedia from '@codewinglet/components/SocialMedia/SocialMedia';
 import Form from '@codewinglet/modules/Home/ContactUs/Form';
 import useGetInTouch from '@codewinglet/modules/Home/ContactUs/useGetInTouch';
-import Image from 'next/image';
-import Link from 'next/link';
-import SectionHeader from '../../../components/SectionHeader/SectionHeader';
 
 const GetInTouch = () => {
   const { formData, onChangeFormData, onSubmit, isLoading } = useGetInTouch();

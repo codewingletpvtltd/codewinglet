@@ -1,11 +1,11 @@
-/* eslint-disable import/order */
 'use client';
 
-import { Arrow } from '@codewinglet/assets';
-import { Button, Typography } from '@codewinglet/components';
 import Image from 'next/image';
 import Link from 'next/link';
-import SectionHeader from '../../../components/SectionHeader/SectionHeader';
+
+import { Arrow } from '@codewinglet/assets';
+import { Button, SectionHeader, Typography } from '@codewinglet/components';
+
 import { techName } from './utils';
 
 const HeroSection = () => (

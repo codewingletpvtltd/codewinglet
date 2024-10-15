@@ -1,31 +1,30 @@
-/* eslint-disable import/order */
 'use client';
-import { useState } from 'react';
-import SectionHeader from '../../../components/SectionHeader';
 
-const CurrentOpenings = () => {
-  const [currentPage, setCurrentPage] = useState(1);
-  const totalPages = 5;
+import { SectionHeader } from '@codewinglet/components';
 
-  const handlePageChange = (page: number) => {
-    setCurrentPage(page);
-  };
+const CurrentOpenings = () => (
+  // TODO : comment due to not used because of new design
+  // const [currentPage, setCurrentPage] = useState(1);
+  // const totalPages = 5;
 
-  return (
-    <>
-      <div
-        className='bg-white lg:py-20 md:py-[60px] py-10 scroll-mt-56'
-        id='jobs'
-      >
-        <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
-          <SectionHeader
-            title={<>Current job openings</>}
-            description='Discover Your Next Career Opportunity: Explore Our Latest Job Openings.'
-            descriptionClassName='text-secondary md:text-left text-center'
-            headingClassName='md:text-left text-center'
-          />
-          {/* TODO: New Design  */}
-          {/* <div className='md:flex items-center justify-between md:mt-[55px] mt-5'>
+  // const handlePageChange = (page: number) => {
+  //   setCurrentPage(page);
+  // };
+
+  <>
+    <div
+      className='bg-white lg:py-20 md:py-[60px] py-10 scroll-mt-56'
+      id='jobs'
+    >
+      <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
+        <SectionHeader
+          title={<>Current job openings</>}
+          description='Discover Your Next Career Opportunity: Explore Our Latest Job Openings.'
+          descriptionClassName='text-secondary md:text-left text-center'
+          headingClassName='md:text-left text-center'
+        />
+        {/* TODO: New Design  */}
+        {/* <div className='md:flex items-center justify-between md:mt-[55px] mt-5'>
             <div className='md:flex gap-2.5 hidden'>
               {designation.map((designation) => (
                 <div key={designation.title}>
@@ -123,21 +122,20 @@ const CurrentOpenings = () => {
             />
           </div> */}
 
-          <div className='md:mt-[86px] mt-[78px]'>
-            <iframe
-              src='https://codewinglet.oorwin.com/careers/index.html'
-              width='100%'
-              height='auto'
-              style={{
-                border: 'none',
-                margin: 0,
-              }}
-              className='h-[800px]'
-            ></iframe>
-          </div>
+        <div className='md:mt-[86px] mt-[78px]'>
+          <iframe
+            src='https://codewinglet.oorwin.com/careers/index.html'
+            width='100%'
+            height='auto'
+            style={{
+              border: 'none',
+              margin: 0,
+            }}
+            className='h-[800px]'
+          ></iframe>
         </div>
       </div>
-    </>
-  );
-};
+    </div>
+  </>
+);
 export default CurrentOpenings;

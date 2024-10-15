@@ -1,7 +1,7 @@
-/* eslint-disable import/order */
 'use client';
 import Faq from '@codewinglet/components/Faq';
 import { faqData } from '@codewinglet/components/Faq/constants';
+
 import SectionHeader from '../SectionHeader';
 
 const RelatedFaq = () => (

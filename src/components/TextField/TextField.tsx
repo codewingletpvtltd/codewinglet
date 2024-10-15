@@ -13,7 +13,7 @@ const TextField: React.FC<TextFieldProps> = ({
   disabled,
   fullWidth,
   required,
-  description,
+
   ...rest
 }) => {
   const inputId = useId();

@@ -1,12 +1,11 @@
-/* eslint-disable import/order */
 import { ClientTestimonials } from '@codewinglet/components';
 import ITService from '@codewinglet/components/ITService/ITService';
 import RelatedFaq from '@codewinglet/components/RelatedFaq';
+
 import Industries from '../Home/Industries';
 import OurService from '../Home/OurServices';
 import OurWorkProcess from '../Home/OurWorkProcess';
 import Technology from '../Home/Technology/Technology';
-import Blog from './Articles/Articles';
 import Benefit from './Benefit/Benefit';
 import Combination from './Combination/Combination';
 import Companies from './Companies/Companies';

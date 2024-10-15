@@ -1,8 +1,9 @@
-/* eslint-disable import/order */
 'use client';
-import AboutCount from '@codewinglet/modules/Home/AboutUs/components/AboutCount';
 import Image from 'next/image';
 import React from 'react';
+
+import AboutCount from '@codewinglet/modules/Home/AboutUs/components/AboutCount';
+
 import Reveal from '../Reveal';
 import Typography from '../Typography';
 

@@ -1,5 +1,8 @@
-/* eslint-disable import/order */
 'use client';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
+
 import { Arrow } from '@codewinglet/assets';
 import {
   Accordion,
@@ -7,12 +10,10 @@ import {
   AccordionItem,
   AccordionTrigger,
   Button,
+  SectionHeader,
 } from '@codewinglet/components';
 import Reveal from '@codewinglet/components/Reveal';
-import Image from 'next/image';
-import Link from 'next/link';
-import { useEffect, useState } from 'react';
-import SectionHeader from '../../../components/SectionHeader/SectionHeader';
+
 import { faqData } from './constants';
 
 const Services = () => {
@@ -22,7 +23,7 @@ const Services = () => {
     setSelectedIndex(0);
   }, []);
 
-  const handleChangeIndex = (index: any) => {
+  const handleChangeIndex = (index: number) => {
     setSelectedIndex(index);
   };
   return (

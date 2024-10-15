@@ -1,10 +1,11 @@
-/* eslint-disable import/order */
 'use client';
+import Image from 'next/image';
+import Link from 'next/link';
+
 import { SectionHeader, Typography } from '@codewinglet/components';
 import Reveal from '@codewinglet/components/Reveal';
 import SocialMedia from '@codewinglet/components/SocialMedia/SocialMedia';
-import Image from 'next/image';
-import Link from 'next/link';
+
 import Form from './Form';
 import useGetInTouch from './useGetInTouch';
 

@@ -1,18 +1,11 @@
 import { FC } from 'react';
 
 import { Arrow } from '@codewinglet/assets';
+import { Button, TextField, Textarea } from '@codewinglet/components';
 
-import Button from '../../../../components/Button';
-import Textarea from '../../../../components/Textarea';
-import TextField from '../../../../components/TextField';
 import { FormProps } from '../types';
 
-const Form: FC<FormProps> = ({
-  formData,
-  onChangeFormData,
-  onSubmit,
-  isLoading,
-}) => (
+const Form: FC<FormProps> = ({ formData, onChangeFormData, onSubmit }) => (
   <form onSubmit={onSubmit} className='col-span-1'>
     <div className=''>
       <TextField

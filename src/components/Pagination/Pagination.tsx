@@ -13,7 +13,7 @@ export const Pagination = ({
   currentPage,
   searchQuery,
 }: PaginationProps) => {
-  const { getParamValue, setParamValue } = useUrlParamState('page');
+  const { setParamValue } = useUrlParamState('page');
   const getPageNumbers = (): (number | string)[] => {
     const totalNumbers = 5;
     const sideNumbers = 2;
@@ -45,12 +45,7 @@ export const Pagination = ({
   const handlePageClick = (page: number | string) => {
     if (page === '...') return;
 
-    // router.push(`/blogs/?page=${page}`);
-    const searchParam = searchQuery
-      ? `&search=${encodeURIComponent(searchQuery)}`
-      : '';
     setParamValue(page as string);
-    // router.push(`/blogs/?page=${page}${searchParam}`);
   };
 
   return (

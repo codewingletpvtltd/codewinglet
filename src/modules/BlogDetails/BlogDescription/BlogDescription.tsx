@@ -1,8 +1,9 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 import { CodeBlock, Typography } from '@codewinglet/components';
-import { groupedCode } from '@codewinglet/utils';
 import { BlogPost } from '@codewinglet/types';
+import { groupedCode } from '@codewinglet/utils';
 
 import MostViewBlog from './MostViewBlog';
 import ScrollHighlightNavbar from './ScrollHighlighNavBar';
@@ -14,9 +15,9 @@ const BlogDescription: React.FC<{ contentData: BlogPost[] }> = ({
     title: item.title,
     id: `section-${item.title}`,
   }));
-  const groupedData = groupedCode(contentData);
+  groupedCode(contentData);
   return (
-    <div className='bg-white lg:py-20 py-[60px] lg:pt-40 md:pt-64 pt-0 pb-2'>
+    <div className='bg-white lg:py-20 py-[60px] lg:pt-40 md:pt-96 pt-0 pb-2'>
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
         <div className='flex lg:flex-row flex-col justify-between gap-[28px]'>
           {/* left */}
@@ -77,9 +78,9 @@ const BlogDescription: React.FC<{ contentData: BlogPost[] }> = ({
                                 );
                               }
 
-                              if (child.type === 'link') {
+                              if (child.type === 'link' && child.url) {
                                 return (
-                                  <a
+                                  <Link
                                     key={child.url}
                                     href={child.url}
                                     className='link-class text-info underline'
@@ -87,7 +88,7 @@ const BlogDescription: React.FC<{ contentData: BlogPost[] }> = ({
                                     {child.children
                                       .map((linkChild: any) => linkChild.text)
                                       .join('')}
-                                  </a>
+                                  </Link>
                                 );
                               }
                               return childText; // Return plain text for other child types

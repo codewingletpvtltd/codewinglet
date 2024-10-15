@@ -1,9 +1,9 @@
-/* eslint-disable import/order */
 'use client';
+
+import { useEffect, useRef, useState } from 'react';
 
 import { Typography } from '@codewinglet/components';
 import { cn } from '@codewinglet/utils';
-import { useEffect, useRef, useState } from 'react';
 
 const designation = [
   {

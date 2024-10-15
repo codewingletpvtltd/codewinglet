@@ -1,9 +1,9 @@
-/* eslint-disable import/order */
 'use client';
-import { Arrow } from '@codewinglet/assets';
-import { Button, Typography } from '@codewinglet/components';
 import Image from 'next/image';
 import Link from 'next/link';
+
+import { Arrow } from '@codewinglet/assets';
+import { Button, Typography } from '@codewinglet/components';
 
 const OurPromise = () => (
   <>

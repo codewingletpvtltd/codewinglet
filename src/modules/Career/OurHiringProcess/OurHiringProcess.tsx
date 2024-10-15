@@ -1,5 +1,5 @@
-/* eslint-disable import/order */
 import { SectionHeader } from '@codewinglet/components';
+
 import { Card } from './components';
 
 const processSteps = [

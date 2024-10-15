@@ -4,8 +4,8 @@ import { FC } from 'react';
 import { Url } from 'url';
 
 import { getClassNames } from '@codewinglet/utils';
+import Typography from '@codewinglet/components/Typography';
 
-import Typography from '../../../Typography';
 import { ListItemProps } from '../../types';
 
 export const ListItem: FC<ListItemProps> = ({

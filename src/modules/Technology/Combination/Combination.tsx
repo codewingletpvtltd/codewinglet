@@ -1,11 +1,12 @@
-/* eslint-disable import/order */
 'use client';
-import { Arrow } from '@codewinglet/assets';
-import { Button, SectionHeader, Typography } from '@codewinglet/components';
-import Reveal from '@codewinglet/components/Reveal';
 import Image from 'next/image';
 import Link from 'next/link';
 import Slider from 'react-slick';
+
+import { Arrow } from '@codewinglet/assets';
+import { Button, SectionHeader, Typography } from '@codewinglet/components';
+import Reveal from '@codewinglet/components/Reveal';
+
 import { technologies } from './utils';
 
 function SampleNextArrow(props: any) {

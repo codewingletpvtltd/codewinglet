@@ -13,7 +13,7 @@ interface CodeBlockProps {
 
 const CodeBlock = ({ code, language = 'javascript' }: CodeBlockProps) => {
   const [copied, setCopied] = useState(false);
-  const handleCopyClick = (text: any, successMessage: string) => {
+  const handleCopyClick = (text: string) => {
     navigator.clipboard
       .writeText(text)
       .then(() => {
@@ -38,7 +38,7 @@ const CodeBlock = ({ code, language = 'javascript' }: CodeBlockProps) => {
       <Tippy content='Copy to clipboard'>
         <button
           className='absolute top-2 right-2 bg-secondary hover:bg-blue-600 text-white px-2 py-1 rounded'
-          onClick={() => handleCopyClick(code, 'Code copied to clipboard')}
+          onClick={() => handleCopyClick(code)}
         >
           {copied ? 'Copied!' : 'Copy'}
         </button>

@@ -3,10 +3,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import { Arrow } from '@codewinglet/assets';
-import { Button, Typography } from '@codewinglet/components';
+import { Button, SectionHeader, Typography } from '@codewinglet/components';
 import Reveal from '@codewinglet/components/Reveal';
-
-import SectionHeader from '../../../components/SectionHeader/SectionHeader';
 
 const Collaborate = () => (
   <div

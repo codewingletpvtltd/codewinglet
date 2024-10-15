@@ -1,9 +1,9 @@
-/* eslint-disable import/order */
 import { useEffect, useState } from 'react';
+
 import AboutCounter from './AboutCounter';
 
 interface Props {
-  number: any;
+  number: number;
 }
 
 const AboutCount: React.FC<Props> = ({ number }: Props) => {

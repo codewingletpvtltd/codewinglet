@@ -1,4 +1,3 @@
-/* eslint-disable import/order */
 'use client';
 import Link from 'next/link';
 import { useRef } from 'react';
