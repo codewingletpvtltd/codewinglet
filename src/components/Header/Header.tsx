@@ -1,12 +1,12 @@
-/* eslint-disable import/order */
 'use client';
-import Logo from '../../../public/assets/icons/LogoBlack.svg';
-import { xl } from '@codewinglet/constants/mediaQueryConst';
-import { useScreenSize } from '@codewinglet/hooks';
-import { getClassNames } from '@codewinglet/utils';
 import Image from 'next/image';
 import { usePathname, useRouter } from 'next/navigation';
 import React, { FC } from 'react';
+
+import { xl } from '@codewinglet/constants/mediaQueryConst';
+import { useScreenSize } from '@codewinglet/hooks';
+import { getClassNames } from '@codewinglet/utils';
+
 import Button from '../Button';
 import Drawer from '../Drawer/Drawer';
 import MenuIcon from '../MenuIcon';
@@ -17,14 +17,8 @@ import useHeader from './useHeader';
 const Header: FC<HeaderProps> = ({ isScroll }) => {
   const router = useRouter();
   const isLarge = useScreenSize(xl);
-  const {
-    showMenu,
-    onMenu,
-    setSubMenuIndex,
-    subMenuIndex,
-    onNavigate,
-    handleDownload,
-  } = useHeader();
+  const { showMenu, onMenu, setSubMenuIndex, subMenuIndex, onNavigate } =
+    useHeader();
 
   const pathName = usePathname();
 
@@ -108,7 +102,7 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
         <div className='flex items-center max-w-[1410px] lg:h-[86px] md:h-[90px] sm:h-[78px] h-[78px] justify-between relative w-full px-[30px] lg:px-[15px] md:px-[30px] sm:px-[30px] mx-auto'>
           <div>
             <Image
-              src={Logo}
+              src={'/assets/icons/LogoBlack.svg'}
               width={20}
               height={20}
               alt='Codewinglet Private Limited Logo1'

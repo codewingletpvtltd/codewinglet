@@ -1,3 +1,9 @@
 export { default as LeftArrow } from './LeftArrow';
 export { default as RightArrow } from './RightArrow';
 export { default as Arrow } from './Arrow';
+export { default as BehanceIcon } from './BehanceIcon';
+export { default as DribbleIcon } from './DribbleIcon';
+export { default as FacebookIcon } from './FacebookIcon';
+export { default as InstagramIcon } from './InstagramIcon';
+export { default as LinkedinIcon } from './LinkedinIcon';
+export { default as TwitterIcon } from './TwitterIcon';

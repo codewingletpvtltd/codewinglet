@@ -1,6 +1,6 @@
-/* eslint-disable import/order */
-import Reveal from '@codewinglet/components/Reveal';
 import Image from 'next/image';
+
+import Reveal from '@codewinglet/components/Reveal';
 
 import SectionHeader from '../SectionHeader/SectionHeader';
 import Slider from '../Slider/Slider';

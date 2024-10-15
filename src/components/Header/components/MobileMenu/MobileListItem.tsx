@@ -1,13 +1,14 @@
-/* eslint-disable import/order */
+import Image from 'next/image';
+import { FC } from 'react';
+
 import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from '@codewinglet/components/Accordion';
 import { getClassNames } from '@codewinglet/utils';
-import Image from 'next/image';
-import { FC } from 'react';
-import Typography from '../../../Typography';
+import Typography from '@codewinglet/components/Typography';
+
 import { ListItemProps } from '../../types';
 import ListItem from '../NavigationMenu/ListItem';
 

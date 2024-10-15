@@ -1,23 +1,11 @@
-'use client';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
 
 import { Arrow } from '@codewinglet/assets';
 import { Button, Typography } from '@codewinglet/components';
 import { fetchMostViewedBlogs } from '@codewinglet/services';
 
-const MostViewBlog = () => {
-  const [blogs, setBlogs] = useState([]);
-
-  useEffect(() => {
-    const fetchBlogs = async () => {
-      const fetchedBlogs = await fetchMostViewedBlogs();
-      setBlogs(fetchedBlogs);
-    };
-
-    fetchBlogs();
-  }, []);
-
+const MostViewBlog = async () => {
+  const blogs = await fetchMostViewedBlogs();
   return (
     <div className='lg:sticky right-0 top-[230px]'>
       <Typography className='text-primary text-subtitle2 pb-[18px] border-b-2 border-primary'>

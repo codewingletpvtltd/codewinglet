@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-
+import Link from 'next/link';
 type Option = {
   label: string;
 };
@@ -49,14 +49,14 @@ const Dropdown = ({ options = [], buttonText = 'Options' }: DropdownProps) => {
         <div className='absolute right-0 w-[270px] mt-2 origin-top-right shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-200'>
           <div className=''>
             {options.map((option, index) => (
-              <a
+              <Link
                 key={index}
                 href='#'
                 className='block px-4 py-2 text-sm text-secondary hover:bg-bg'
                 onClick={() => handleOptionClick(option.label)}
               >
                 {option.label}
-              </a>
+              </Link>
             ))}
           </div>
         </div>

@@ -1,12 +1,10 @@
-/* eslint-disable import/order */
 'use client';
-import Reveal from '@codewinglet/components/Reveal';
 import Link from 'next/link';
 
+import Reveal from '@codewinglet/components/Reveal';
 import { Arrow } from '@codewinglet/assets';
-import { Button } from '@codewinglet/components';
+import { Button, SectionHeader } from '@codewinglet/components';
 import Counter from '@codewinglet/components/Counter';
-import SectionHeader from '../../../components/SectionHeader/SectionHeader';
 
 const Insights = () => (
   <>

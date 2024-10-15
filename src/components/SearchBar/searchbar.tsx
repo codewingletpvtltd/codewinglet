@@ -25,7 +25,7 @@ export const BlogSearch = () => {
   ];
 
   const [inputValue, setInputValue] = useState('');
-  const router = useRouter();
+
   const searchParams = useSearchParams();
   const { setParamValue: setSearchParamValue } = useUrlParamState('search');
   const { setParamValue: setCategoryParamValue } = useUrlParamState('category');

@@ -1,7 +1,8 @@
-/* eslint-disable import/order */
-import { Arrow } from '@codewinglet/assets';
 import Image from 'next/image';
 import Link from 'next/link';
+
+import { Arrow } from '@codewinglet/assets';
+
 import Button from '../Button';
 import Typography from '../Typography';
 

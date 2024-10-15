@@ -1,9 +1,11 @@
-import BehanceIcon from '../Icon/BehanceIcon';
-import DribbleIcon from '../Icon/DribbleIcon';
-import FacebookIcon from '../Icon/FacebookIcon';
-import InstagramLogo from '../Icon/InstagramIcon';
-import LinkedinIcon from '../Icon/LinkedinIcon';
-import TwitterIcon from '../Icon/TwitterIcon';
+import {
+  BehanceIcon,
+  DribbleIcon,
+  FacebookIcon,
+  LinkedinIcon,
+  TwitterIcon,
+} from '@codewinglet/assets';
+import InstagramLogo from '@codewinglet/assets/icons/InstagramIcon';
 
 export const socialLinks = [
   {
