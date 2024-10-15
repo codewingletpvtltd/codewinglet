@@ -47,7 +47,7 @@ export default {
       lightGray: '#808080',
     },
     fontFamily: {
-      primary: ['Poppins', 'sans-serif'],
+      primary: ['var(--font-poppins)', 'sans-serif'],
       playFair: ['Playfair Display', 'serif'],
     },
     backgroundImage: {
