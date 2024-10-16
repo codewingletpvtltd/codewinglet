@@ -29,6 +29,7 @@ const Blogs = async ({ searchParams }: BlogsProps) => {
     searchQuery,
     categoryQuery
   );
+
   const showLatest = currentPage === 1 && !searchQuery && !categoryQuery;
   return (
     <div className='text-black lg:pl-14 lg:w-[1013px]'>
