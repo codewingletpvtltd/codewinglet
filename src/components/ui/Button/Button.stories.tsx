@@ -1,8 +1,7 @@
 // components/Button.stories.tsx
-import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 
-import Button, { ButtonProps } from './Button';
+import Button from './Button';
 
 const meta: Meta<typeof Button> = {
   // title: 'Components/Button',
@@ -16,7 +15,6 @@ const meta: Meta<typeof Button> = {
       control: { type: 'select' },
       options: [
         'default',
-        'destructive',
         'outline',
         'blackOutline',
         'secondary',
@@ -78,15 +76,6 @@ export const WithEndIcon: Story = {
   args: {
     children: 'End Icon',
     endIcon: <span>🔍</span>, // Example icon
-  },
-};
-
-// Small destructive button
-export const SmallDestructive: Story = {
-  args: {
-    size: 'sm',
-    variant: 'destructive',
-    children: 'Small Destructive',
   },
 };
 

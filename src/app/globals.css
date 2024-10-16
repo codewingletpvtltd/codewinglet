@@ -317,3 +317,28 @@ input[type='number']::-webkit-outer-spin-button {
   border-radius: 10px;
   border: 1px solid #ffffff;
 }
+
+.intermediate[type='checkbox'] {
+  -webkit-appearance: initial;
+  appearance: initial;
+  border: 1px solid rgba(0, 0, 0, 0.55);
+  border-radius: 0.19rem;
+  position: relative;
+}
+
+.intermediate[type="checkbox"]:checked {
+  background-color: black;
+  /* accent-color: #141414; */
+}
+
+.intermediate[type="checkbox"]:checked:after {
+  content: "\002D";
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
