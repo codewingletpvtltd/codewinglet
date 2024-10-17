@@ -19,7 +19,7 @@ const BlogDetailsLink = ({ blogData }: any) => {
         <div className='lg:hidden block'>
           <BackButton />
         </div>
-        <div className='lg:block hidden w-[70%]'>
+        <div className='lg:block hidden'>
           <Breadcrumb
             breadcrumbs={breadcrumbData.map((item) =>
               item.href ? (
@@ -27,18 +27,13 @@ const BlogDetailsLink = ({ blogData }: any) => {
                   <Typography>{item.value}</Typography>
                 </Link>
               ) : (
-                <Typography
-                  key={item.value}
-                  className='overflow-hidden text-ellipsis line-clamp-1'
-                >
-                  {item.value}
-                </Typography>
+                <Typography key={item.value}>{item.value}</Typography>
               )
             )}
           />
         </div>
 
-        <div className='flex items-center justify-end gap-[18px] w-full'>
+        <div className='flex items-center justify-end gap-[18px] w-auto'>
           <BlogShareMobile title={blogData.title} />
           <Typography className='md:flex gap-[5px] hidden'>
             <Image
