@@ -20,11 +20,13 @@ const meta: Meta<typeof Button> = {
         'secondary',
         'ghost',
         'link',
+        'primary',
+        'sec',
       ],
     },
     size: {
       control: { type: 'select' },
-      options: ['default', 'sm', 'icon'],
+      options: ['default', 'sm', 'icon', 'small', 'medium', 'large'],
     },
     loading: {
       control: { type: 'boolean' },
@@ -40,6 +42,10 @@ const meta: Meta<typeof Button> = {
     children: {
       control: { type: 'text' },
       description: 'Button text or other children',
+    },
+    disabled: {
+      control: { type: 'boolean' },
+      defaultValue: false,
     },
   },
 };

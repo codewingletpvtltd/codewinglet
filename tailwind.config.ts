@@ -1,5 +1,4 @@
 import type { Config } from 'tailwindcss';
-
 // TODO : font should be set as per figma view, but need to find proper solution
 export default {
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
@@ -27,7 +26,18 @@ export default {
       tag: ['14px', { fontWeight: 500 }],
       tagLight: ['14px', { fontWeight: 300 }],
       tagExtraLight: ['12px', { fontWeight: 400 }],
-      smRegular: ['14px', {}],
+
+      smRegular: ['14px', { lineHeight: '20px', fontWeight: 400 }],
+      smMedium: ['14px', { lineHeight: '20px', fontWeight: 500 }],
+      smSemiBold: ['14px', { lineHeight: '20px', fontWeight: 600 }],
+
+      baseRegular: ['16px', { lineHeight: '24px', fontWeight: 400 }],
+      baseMedium: ['16px', { lineHeight: '24px', fontWeight: 500 }],
+      baseSemiBold: ['16px', { lineHeight: '24px', fontWeight: 600 }],
+
+      lgRegular: ['18px', { lineHeight: '28px', fontWeight: 400 }],
+      lgMedium: ['18px', { lineHeight: '28px', fontWeight: 500 }],
+      lgSemiBold: ['18px', { lineHeight: '28px', fontWeight: 600 }],
     },
 
     fontFamily: {
@@ -64,6 +74,8 @@ export default {
         darkBorder: '#1d1d1d',
         grayBorder: '#3b3b3b',
         lightGray: '#808080',
+        mediumBlue: '#3B8AE7',
+        gainsboro: '#dadada',
       },
     },
   },
