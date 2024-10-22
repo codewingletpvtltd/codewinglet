@@ -27,18 +27,13 @@ const BlogDetailsLink = ({ blogData }: any) => {
                   <Typography>{item.value}</Typography>
                 </Link>
               ) : (
-                <Typography
-                  key={item.value}
-                  className='overflow-hidden text-ellipsis line-clamp-1 w-[70%]'
-                >
-                  {item.value}
-                </Typography>
+                <Typography key={item.value}>{item.value}</Typography>
               )
             )}
           />
         </div>
 
-        <div className='flex items-center justify-end gap-[18px] w-full'>
+        <div className='flex items-center justify-end gap-[18px] w-auto'>
           <BlogShareMobile title={blogData.title} />
           <Typography className='md:flex gap-[5px] hidden'>
             <Image
