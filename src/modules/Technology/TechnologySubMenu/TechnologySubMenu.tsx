@@ -14,58 +14,6 @@ const designation = [
     title: 'Benefit',
     path: '#benefit',
   },
-  {
-    title: 'Who used ?',
-    path: '#whoUsed',
-  },
-  {
-    title: 'Angular combination',
-    path: '#combination',
-  },
-  {
-    title: 'Angular Services',
-    path: '#AngularServices',
-  },
-  {
-    title: 'Why us ?',
-    path: '#whyUs',
-  },
-  {
-    title: 'Engagement model',
-    path: '#engagementModal',
-  },
-  {
-    title: 'Insight',
-    path: '#insight',
-  },
-  {
-    title: 'Service',
-    path: '#service',
-  },
-  {
-    title: 'Technology',
-    path: '#technology',
-  },
-  {
-    title: 'Industry',
-    path: '#industry',
-  },
-  {
-    title: 'Work Process',
-    path: '#workProcess',
-  },
-  {
-    title: 'Testimonial',
-    path: '#testimonial',
-  },
-  {
-    title: 'Blog',
-    path: '#blog',
-  },
-  {
-    title: 'FAQ',
-    path: '#faq',
-  },
 ];
 
 const TechnologySubMenu = () => {
@@ -139,7 +87,7 @@ const TechnologySubMenu = () => {
 
   return (
     <>
-      <div className='bg-white pt-2.5 md:pt-10 lg:mt-[86px] md:mt-[90px] mt-[78px] border-b border-headerBoxBorder fixed w-full z-10 submenus'>
+      <div className='bg-white pt-2.5 md:pt-[30px] lg:mt-[86px] md:mt-[90px] mt-[78px] border-b border-headerBoxBorder fixed w-full z-10 submenus'>
         <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto flex'>
           <Typography className='py-2.5 px-5 md:text-paragraph1Light text-tag bg-bg flex flex-shrink-0 font-normal'>
             Angular JS

@@ -9,7 +9,7 @@ import { Button, SectionHeader } from '@codewinglet/components';
 const HeroSection = () => (
   <>
     <div
-      className='bg-black lg:pt-[328px] md:pt-60 pt-[176px] relative scroll-mt-40'
+      className='bg-black lg:pt-[244px] md:pt-60 pt-[176px] relative scroll-mt-40'
       id='overview'
     >
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto lg:flex block gap-[50px] md:pb-20 pb-10'>
