@@ -4,9 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import { Arrow } from '@codewinglet/assets';
-import { Button, SectionHeader, Typography } from '@codewinglet/components';
-
-import { techName } from './utils';
+import { Button, SectionHeader } from '@codewinglet/components';
 
 const HeroSection = () => (
   <>
@@ -51,36 +49,6 @@ const HeroSection = () => (
             width={748}
             height={541}
           />
-        </div>
-      </div>
-      <div className='container w-full lg:py-[50px] md:py-[46px] py-9 lg:px-[15px] sm:px-10 px-5 overflow-hidden relative'>
-        <div className='bg-primary w-fit lg:py-10 md:py-6 py-3 lg:px-9 md:px-[30px] px-3 border-t-[3px] border-white absolute bottom-0 left-0 z-[2]'>
-          <Image
-            src='/assets/Technologies/pages/angular.svg'
-            alt='angular'
-            width={94}
-            height={94}
-            className='mx-auto lg:w-[94] lg:h-[94] md:w-16 w-10 md:h-16 h-10'
-          />
-          <Typography className='lg:text-h6 md:text-tagLight text-tagExtraLight text-white mt-4'>
-            Angular JS
-          </Typography>
-        </div>
-        <div className='flex shrink-0 marquee lg:py-[30px] md:py-3 py-1.5 border-y border-primary'>
-          {techName.map((tech) => (
-            <div key={tech.id} className='flex shrink-0 w-auto'>
-              <Typography className='text-white lg:text-h2 md:text-subtitle1 text-tagExtraLight technology-hero font-semibold'>
-                {tech.title}
-              </Typography>
-              <Image
-                alt={tech.alt}
-                src={tech.image}
-                width={34}
-                height={34}
-                className='md:mx-[50px] mx-3 md:w-[34px] w-2'
-              />
-            </div>
-          ))}
         </div>
       </div>
     </div>

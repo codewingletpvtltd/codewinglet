@@ -4,7 +4,7 @@ import { Arrow } from '@codewinglet/assets';
 import { BlogCard, Button, SectionHeader } from '@codewinglet/components';
 import { fetchRelatedBlogs } from '@codewinglet/services';
 
-export default async function Articles({ blogData }: any) {
+export default async function LatestArticles({ blogData }: any) {
   let data = null;
 
   if (blogData.tags && Object.keys(blogData.tags).length > 0) {

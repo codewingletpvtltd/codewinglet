@@ -1,52 +1,27 @@
 'use client';
 import Image from 'next/image';
-import Link from 'next/link';
 
-import { Arrow } from '@codewinglet/assets';
-import { Button, SectionHeader, Typography } from '@codewinglet/components';
+import { SectionHeader, Typography } from '@codewinglet/components';
 
-import { ServiceCardProps, ServicePoint, servicesData } from './servicesData';
-
-// Subcomponent for Service Points
-const ServicePoints: React.FC<{ points: ServicePoint[] }> = ({ points }) => (
-  <>
-    {points.map((point, pointIndex) => (
-      <div className='pt-5 px-2.5' key={pointIndex}>
-        <div className='relative pl-6'>
-          <Image
-            src={'/assets/OurService/check.svg'}
-            alt='Arrow'
-            width={16}
-            height={16}
-            className='absolute left-0 top-1.5 sm:w-[14px] w-[15px]'
-          />
-          <Typography className='lg:text-paragraph2 text-tagBold text-primary pb-2'>
-            {point.heading}
-          </Typography>
-        </div>
-        <Typography className='text-secondary lg:text-tagLight text-tagExtraLight'>
-          {point.description}
-        </Typography>
-      </div>
-    ))}
-  </>
-);
+import { BenefitCardProps, benefitData } from './benefitData';
 
 // Subcomponent for Service Card
-const ServiceCard: React.FC<ServiceCardProps> = ({
+const BenefitCard: React.FC<BenefitCardProps> = ({
   iconSrc,
   iconAlt,
   title,
-  points,
+  description,
 }) => (
-  <div className='bg-white p-5'>
-    <div className='bg-bg flex gap-4 items-center lg:px-5 px-4 lg:py-[30px] py-5'>
-      <Image src={iconSrc} alt={iconAlt} width={32} height={32} />
-      <Typography className='lg:text-paragraph1Bold text-tagBold'>
-        {title}
-      </Typography>
+  <div className='bg-bg p-[30px]'>
+    <div className='bg-white w-[50px] h-[50px] flex items-center justify-center mb-[26px]'>
+      <Image src={iconSrc} alt={iconAlt} width={28} height={28} />
     </div>
-    <ServicePoints points={points} />
+    <Typography className='lg:text-subtitle2 text-tagBold pb-2'>
+      {title}
+    </Typography>
+    <Typography className='lg:text-paragraph2Light text-tagBold'>
+      {description}
+    </Typography>
   </div>
 );
 
@@ -54,6 +29,19 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 const ITService: React.FC = () => (
   <div className='bg-bg lg:py-20 md:py-[60px] py-10 scroll-mt-40' id='whyUs'>
     <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
+      <SectionHeader
+        title={<>A Simple Guide to Angular Development</>}
+        description={
+          <>
+            Choose AngularJS for its robust MVC architecture, two-way data
+            binding, and comprehensive community support. Here’s why it’s
+            preferred for dynamic web application development:
+          </>
+        }
+        headingClassName='text-primary'
+        descriptionClassName='text-primary'
+      />
+
       <SectionHeader
         title={<>Why Choose Codewinglet's IT Services?</>}
         description={
@@ -63,30 +51,24 @@ const ITService: React.FC = () => (
         descriptionClassName='text-primary'
       />
 
-      <div className='grid lg:grid-cols-3 md:grid-cols-2 lg:gap-[50px] md:gap-10 gap-5 mt-[50px] relative'>
-        {servicesData.map((service, index) => (
-          <ServiceCard
-            key={index}
-            iconSrc={service.iconSrc}
-            iconAlt={service.iconAlt}
-            title={service.title}
-            points={service.points}
-          />
-        ))}
+      <div className='bg-white mt-[50px]'>
+        <Typography className='text-h6 p-[30px] border-b border-headerBoxBorder'>
+          Benefit of using Angular Development
+        </Typography>
       </div>
-      <Button
-        className='sm:w-[224px] w-[203px] h-[52px] md:mt-[50px] mt-10 flex mx-auto'
-        variant='default'
-      >
-        <Link
-          href='/contact-us'
-          rel='noopener noreferrer'
-          className='flex items-center justify-center gap-3'
-        >
-          Let’s connect
-          <Arrow />
-        </Link>
-      </Button>
+      <div className='bg-white p-[30px]'>
+        <div className='grid lg:grid-cols-3 md:grid-cols-2 lg:gap-[30px] md:gap-10 gap-5 relative'>
+          {benefitData.map((service, index) => (
+            <BenefitCard
+              key={index}
+              iconSrc={service.iconSrc}
+              iconAlt={service.iconAlt}
+              title={service.title}
+              description={service.description}
+            />
+          ))}
+        </div>
+      </div>
     </div>
   </div>
 );
