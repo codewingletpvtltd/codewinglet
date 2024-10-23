@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { useRouter, useSearchParams } from 'next/navigation';
+import { useSearchParams } from 'next/navigation';
 import { Suspense, useEffect, useState } from 'react';
 
 import { Arrow } from '@codewinglet/assets';
@@ -10,22 +10,8 @@ import { BlogCategory, Button, Typography } from '@codewinglet/components';
 import { useUrlParamState } from '@codewinglet/hooks';
 
 export const BlogSearch = () => {
-  const checkboxData = [
-    { label: 'All Blogs', value: 'all' },
-    { label: 'Web Design', value: 'web-design' },
-    { label: 'Product', value: 'product' },
-    { label: 'Software Engineering', value: 'software-engineering' },
-    { label: 'Customer Success', value: 'customer-success' },
-    { label: 'React', value: 'react' },
-    { label: 'Angular', value: 'angular' },
-    { label: 'DevOps', value: 'devops' },
-    { label: 'Cloud', value: 'cloud' },
-    { label: 'Artificial Intelligence', value: 'artificial-intelligence' },
-    { label: 'User interface design', value: 'user-interface-design' },
-  ];
-
   const [inputValue, setInputValue] = useState('');
-  const router = useRouter();
+
   const searchParams = useSearchParams();
   const { setParamValue: setSearchParamValue } = useUrlParamState('search');
   const { setParamValue: setCategoryParamValue } = useUrlParamState('category');
@@ -33,7 +19,7 @@ export const BlogSearch = () => {
   useEffect(() => {
     const searchQuery = searchParams.get('search');
     if (searchQuery) {
-      setInputValue(searchQuery);
+      setInputValue(decodeURIComponent(searchQuery));
     }
   }, [searchParams]);
 
@@ -43,7 +29,8 @@ export const BlogSearch = () => {
   };
 
   const handleSearch = () => {
-    setSearchParamValue(encodeURIComponent(inputValue));
+    const encodedValue = encodeURI(inputValue).replace(/%20/g, ' ');
+    setSearchParamValue(encodedValue);
     setCategoryParamValue('');
   };
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
