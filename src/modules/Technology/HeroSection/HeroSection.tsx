@@ -13,31 +13,40 @@ const HeroSection = () => (
       id='overview'
     >
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto lg:flex block gap-[50px] md:pb-20 pb-10'>
-        <div className='lg:mt-[65px] relative lg:w-[612px]'>
+        <div className='lg:mt-[65px] relative lg:w-[680px]'>
           <SectionHeader
-            title={<>The best AngularJS development company</>}
+            title={<>Build the Future with Advanced AngularJS Development</>}
             description={
               <>
-                Are you ready to elevate your online presence and captivate your
-                audience with high-performance websites and applications?
-                <br /> <br />
-                Look no further than our Angular Frontend Framework development
-                services.
+                We offer AngularJS development services across diy6verse
+                industries, including eCommerce, healthcare, and education.
               </>
             }
-            headingClassName='text-white'
-            descriptionClassName='text-white pt-6'
+            headingClassName='text-white !text-[56px]'
+            descriptionClassName='text-white pt-6 !text-paragraph1ExtraLight'
           />
           <Button
-            className='text-white underline lg:mt-[60px] mt-8 py-0'
-            variant='link'
+            className='w-[298px] lg:mt-[60px] mt-8 py-0 mr-6'
+            variant='secondary'
           >
             <Link
               href='/contact-us'
               rel='noopener noreferrer'
               className='flex items-center justify-center gap-3'
             >
-              Explore blogs
+              Hire Angular Development
+            </Link>
+          </Button>
+          <Button
+            className='w-[298px] lg:mt-[60px] mt-8 py-0'
+            variant='outline'
+          >
+            <Link
+              href='/contact-us'
+              rel='noopener noreferrer'
+              className='flex items-center justify-center gap-3'
+            >
+              Schedule Free Consultation
               <Arrow />
             </Link>
           </Button>

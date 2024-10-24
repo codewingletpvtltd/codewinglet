@@ -92,24 +92,26 @@ const Combination = () => {
         id='combination'
       >
         <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
-          <SectionHeader
-            title={<>Most-preferred AngularJS combinations</>}
-            description={
-              <>
-                Angular has earned the trust of some of the most influential
-                companies in the tech world, including
-              </>
-            }
-            headingClassName='text-primary'
-            descriptionClassName='text-secondary'
-          />
+          <Reveal>
+            <SectionHeader
+              title={<>Most-preferred AngularJS combinations</>}
+              description={
+                <>
+                  Angular has earned the trust of some of the most influential
+                  companies in the tech world, including
+                </>
+              }
+              headingClassName='text-primary'
+              descriptionClassName='text-primary'
+            />
+          </Reveal>
 
           <div className='lg:mt-[50px] md:mt-10 mt-5'>
             <Slider {...settings}>
               {technologies.map((tech) => (
                 <div
                   key={tech.id}
-                  className='bg-white p-10 mr-[50px] 2xl:!w-[435px] lg:!w-[400px] md:!w-[374px] !w-[324px]'
+                  className='bg-white p-10 mr-[50px] 2xl:!w-[435px] lg:!w-[400px] md:!w-[374px] !w-[324px] group'
                 >
                   <div className='flex justify-center items-center gap-5'>
                     {/* First Image - Order 1 */}
@@ -121,7 +123,7 @@ const Combination = () => {
                       className='order-1 lg:w-[89px] lg:h-[89px] w-[50px] h-[50px]'
                     />
                     {/* Span - Order 2 */}
-                    <span className='text-secondary text-h4 font-extralight order-2'>
+                    <span className='text-secondary text-h4 font-extralight order-2 group-hover:rotate-180 transform'>
                       +
                     </span>
                     {/* Second Image - Order 3 */}

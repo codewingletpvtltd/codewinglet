@@ -19,8 +19,7 @@ const Services: React.FC = () => (
               {servicesData.map((service, index) => (
                 <ServiceCard
                   key={index}
-                  iconSrc={service.iconSrc}
-                  iconAlt={service.iconAlt}
+                  icon={service.icon}
                   title={service.title}
                   description={service.description}
                 />

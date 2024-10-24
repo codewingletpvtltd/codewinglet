@@ -12,14 +12,20 @@ const BenefitCard: React.FC<BenefitCardProps> = ({
   title,
   description,
 }) => (
-  <div className='bg-bg p-[30px]'>
+  <div className='bg-bg hover:bg-white p-[30px] group cursor-pointer'>
     <div className='bg-white w-[50px] h-[50px] flex items-center justify-center mb-[26px]'>
-      <Image src={iconSrc} alt={iconAlt} width={28} height={28} />
+      <Image
+        src={iconSrc}
+        alt={iconAlt}
+        width={28}
+        height={28}
+        className='group-hover:[transform:_rotateY(180deg)] transform duration-300'
+      />
     </div>
-    <Typography className='lg:text-subtitle2 text-tagBold pb-2'>
+    <Typography className='lg:text-subtitle2 text-tagBold pb-2 text-primary'>
       {title}
     </Typography>
-    <Typography className='lg:text-paragraph2Light text-tagBold'>
+    <Typography className='lg:text-paragraph2Light text-tagBold text-primary'>
       {description}
     </Typography>
   </div>
@@ -52,7 +58,7 @@ const ITService: React.FC = () => (
       />
 
       <div className='bg-white mt-[50px]'>
-        <Typography className='text-h6 p-[30px] border-b border-headerBoxBorder'>
+        <Typography className='text-primary text-h6 p-[30px] border-b border-headerBoxBorder'>
           Benefit of using Angular Development
         </Typography>
       </div>
