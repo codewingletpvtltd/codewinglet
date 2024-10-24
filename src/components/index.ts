@@ -29,6 +29,7 @@ export { default as Badge } from './Badge';
 export { default as NoBlogFound } from './NoBlogFound';
 export { default as Loader } from './Loader';
 export { default as CodeBlock } from './CodeBlock';
+export { default as PhoneInputField } from './PhoneInputField';
 
 export * from './Blog';
 export * from './SearchBar';

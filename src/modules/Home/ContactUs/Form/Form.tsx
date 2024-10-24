@@ -1,7 +1,12 @@
 import { FC } from 'react';
 
 import { Arrow } from '@codewinglet/assets';
-import { Button, TextField, Textarea } from '@codewinglet/components';
+import {
+  Button,
+  PhoneInputField,
+  TextField,
+  Textarea,
+} from '@codewinglet/components';
 
 import { FormProps } from '../types';
 
@@ -29,7 +34,7 @@ const Form: FC<FormProps> = ({ formData, onChangeFormData, onSubmit }) => (
         error={!!formData.errors.email}
         description='Please provide your business email address'
       />
-      <TextField
+      {/* <TextField
         fullWidth
         label='Phone number'
         placeholder='Enter your number'
@@ -42,6 +47,11 @@ const Form: FC<FormProps> = ({ formData, onChangeFormData, onSubmit }) => (
         maxLength={17}
         helperText={formData.errors.phone}
         error={!!formData.errors.phone}
+      /> */}
+      {/* TODO: phone-number */}
+      <PhoneInputField
+        formData={formData}
+        onChangeFormData={onChangeFormData}
       />
       <Textarea
         fullWidth
