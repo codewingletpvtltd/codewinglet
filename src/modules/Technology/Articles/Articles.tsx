@@ -19,7 +19,9 @@ export default async function Articles({ blogData }: any) {
   return (
     <>
       <div
-        className='bg-white lg:py-20 md:py-[60px] py-[30px] scroll-mt-40 m_blog'
+        className={`bg-white lg:py-20 md:py-[60px] py-[30px] scroll-mt-40 m_blog ${
+          data?.length > 0 ? '' : '!pt-0'
+        }`}
         id='blog'
       >
         {showRelatedBlog && (
