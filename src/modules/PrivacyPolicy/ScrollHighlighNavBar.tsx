@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
+import { useEffect, useRef, useState } from 'react';
 
 import { Arrow } from '@codewinglet/assets';
 interface Header {
@@ -100,7 +100,7 @@ const ScrollHighlightNavbar: React.FC<ScrollHighlightNavbarProps> = ({
               href={`#${policy.id}`}
               className={`bg-white p-0 ${
                 i === activeIndex
-                  ? 'text-primary lg:text-paragraph1Bold md:text-paragraph2 text-tag'
+                  ? 'text-primary lg:text-paragraph1ExtraLight md:text-paragraph2 text-tag'
                   : 'text-secondary lg:text-paragraph1ExtraLight md:text-paragraph2Light text-tagLight'
               } cursor-pointer flex items-center justify-between `}
               onClick={() => setActiveIndex(i)}

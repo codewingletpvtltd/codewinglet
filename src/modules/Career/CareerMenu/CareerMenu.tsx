@@ -88,7 +88,7 @@ const CareerMenu = () => {
   };
 
   return (
-    <div className='bg-white pt-2.5 md:pt-10 lg:mt-[86px] md:mt-[90px] mt-[78px] border-b border-headerBoxBorder fixed w-full z-10'>
+    <div className='bg-white lg:mt-[86px] md:mt-[90px] mt-[78px] border-b border-headerBoxBorder fixed w-full z-10'>
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
         <div className='flex lg:overscroll-x-none overflow-x-auto'>
           {MENU_ITEMS.map(({ title, path }, index) => (
@@ -97,9 +97,9 @@ const CareerMenu = () => {
               role='button'
               tabIndex={0} // Keyboard accessibility
               className={cn(
-                'relative md:text-paragraph1Light text-paragraph2Light flex-shrink-0 py-2.5 px-5 cursor-pointer !font-light',
+                'relative md:text-paragraph2Light text-paragraph2Light flex-shrink-0 py-2.5 px-5 cursor-pointer !font-light',
                 activeIndex === index
-                  ? 'bg-bg border-b border-primary !font-normal'
+                  ? 'bg-bg border-b border-primary !font-light'
                   : ''
               )}
               onClick={(event) =>
