@@ -1,7 +1,6 @@
 'use client';
 import Link from 'next/link';
 
-import Reveal from '@codewinglet/components/Reveal';
 import { Arrow } from '@codewinglet/assets';
 import { Button, SectionHeader } from '@codewinglet/components';
 import Counter from '@codewinglet/components/Counter';
@@ -13,15 +12,13 @@ const Insights = () => (
       id='exploreNow'
     >
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
-        <Reveal>
-          <SectionHeader
-            title={<>Powerful data insights</>}
-            description='Driving Transformation with Software Solutions that Enhance
+        <SectionHeader
+          title={<>Powerful data insights</>}
+          description='Driving Transformation with Software Solutions that Enhance
                 Agility, Scalability, and Growth'
-            headingClassName='text-white'
-            descriptionClassName='text-secondary'
-          />
-        </Reveal>
+          headingClassName='text-white'
+          descriptionClassName='text-secondary'
+        />
 
         <div className='lg:mt-[50px]'>
           <Counter />

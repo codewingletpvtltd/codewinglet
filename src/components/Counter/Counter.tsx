@@ -4,7 +4,6 @@ import React from 'react';
 
 import AboutCount from '@codewinglet/modules/Home/AboutUs/components/AboutCount';
 
-import Reveal from '../Reveal';
 import Typography from '../Typography';
 
 type ListItemProps = {
@@ -44,36 +43,34 @@ const ListItem = ({ data }: { data: ListItemProps[] }) => (
           className='lg:border-e border-e-darkBorder border-b border-b-darkBorder lg:[&:nth-child(even)]:border-e-0 border-e-0 lg:[&:nth-of-type(3)]:border-b-0 [&:nth-of-type(4)]:border-b-0'
           key={index}
         >
-          <Reveal key={index}>
-            <div
-              key={index}
-              className='relative flex justify-between items-center lg:p-[50px] py-10'
-            >
-              <div>
-                <Typography className='xl:text-h1 md:text-h2 text-h6 text-white flex items-center lg:mb-1.5 mb-1'>
-                  {typeof number === 'number' ? (
-                    <>
-                      <AboutCount number={number} />+
-                    </>
-                  ) : (
-                    <Typography>{number}</Typography>
-                  )}
-                </Typography>
-                <Typography className='text-white lg:text-subtitle2Light md:text-paragraph1ExtraLight text-tagLight'>
-                  {label}
-                </Typography>
-              </div>
-              <div className='bg-darkBlack flex lg:p-[27px] md:p-5 p-2.5'>
-                <Image
-                  src={icon}
-                  alt='icon'
-                  width='46'
-                  height='46'
-                  className='lg:w-[46px] lg:h-[46px] md:w-10 md:h-10 w-[30px] h-[30px]'
-                />
-              </div>
+          <div
+            key={index}
+            className='relative flex justify-between items-center lg:p-[50px] py-10'
+          >
+            <div>
+              <Typography className='xl:text-h1 md:text-h2 text-h6 text-white flex items-center lg:mb-1.5 mb-1'>
+                {typeof number === 'number' ? (
+                  <>
+                    <AboutCount number={number} />+
+                  </>
+                ) : (
+                  <Typography>{number}</Typography>
+                )}
+              </Typography>
+              <Typography className='text-white lg:text-subtitle2Light md:text-paragraph1ExtraLight text-tagLight'>
+                {label}
+              </Typography>
             </div>
-          </Reveal>
+            <div className='bg-darkBlack flex lg:p-[27px] md:p-5 p-2.5'>
+              <Image
+                src={icon}
+                alt='icon'
+                width='46'
+                height='46'
+                className='lg:w-[46px] lg:h-[46px] md:w-10 md:h-10 w-[30px] h-[30px]'
+              />
+            </div>
+          </div>
         </div>
       ))}
 
@@ -82,10 +79,6 @@ const ListItem = ({ data }: { data: ListItemProps[] }) => (
   </>
 );
 
-const Counter = () => (
-  <Reveal>
-    <ListItem data={data} />
-  </Reveal>
-);
+const Counter = () => <ListItem data={data} />;
 
 export default Counter;

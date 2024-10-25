@@ -12,7 +12,6 @@ import {
   Button,
   SectionHeader,
 } from '@codewinglet/components';
-import Reveal from '@codewinglet/components/Reveal';
 
 import { faqData } from './constants';
 
@@ -43,36 +42,32 @@ const Services = () => {
                 className='md:w-8 md:h-8 w-[18px] h-[18px]'
               />
             </div>
-            <Reveal>
-              <div className='lg:w-[755px] lg:pr-[252px] md:pt-[76px] pt-12'>
-                <SectionHeader
-                  title={<>Our Angular front-end services</>}
-                  description={
-                    <>
-                      in today's fast-paced digital world, mobile apps are the
-                      go-to solution for businesses to engage with customers.
-                      Empower your business to deliver exactly what users crave.
-                    </>
-                  }
-                  headingClassName='text-white lg:!text-h2 md:!text-[36px] !text-subtitle2'
-                  descriptionClassName='text-secondary pt-3'
-                />
-                <Reveal>
-                  <Link
-                    className='md:w-auto w-full'
-                    href='/contact-us'
-                    aria-label='Instagram'
-                  >
-                    <Button
-                      variant='outline'
-                      className='w-[206px] gap-2.5 lg:mt-[60px] mt-10'
-                    >
-                      Hire Developer <Arrow />
-                    </Button>
-                  </Link>
-                </Reveal>
-              </div>
-            </Reveal>
+            <div className='lg:w-[755px] lg:pr-[252px] md:pt-[76px] pt-12'>
+              <SectionHeader
+                title={<>Our Angular front-end services</>}
+                description={
+                  <>
+                    in today's fast-paced digital world, mobile apps are the
+                    go-to solution for businesses to engage with customers.
+                    Empower your business to deliver exactly what users crave.
+                  </>
+                }
+                headingClassName='text-white lg:!text-h2 md:!text-[36px] !text-subtitle2'
+                descriptionClassName='text-secondary pt-3'
+              />
+              <Link
+                className='md:w-auto w-full'
+                href='/contact-us'
+                aria-label='Instagram'
+              >
+                <Button
+                  variant='outline'
+                  className='w-[206px] gap-2.5 lg:mt-[60px] mt-10'
+                >
+                  Hire Developer <Arrow />
+                </Button>
+              </Link>
+            </div>
             <div className='lg:w-[655px] border-l border-grayBorder lg:mt-0 mt-[50px]'>
               <Accordion
                 type='single'

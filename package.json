@@ -32,8 +32,6 @@
     "company-email-validator": "^1.1.0",
     "eslint": "8.40.0",
     "eslint-config-next": "14.2.14",
-    "framer-motion": "^11.3.6",
-    "gsap-trial": "^3.12.5",
     "moment": "^2.29.4",
     "next": "14.2.14",
     "postcss": "8.4.23",

@@ -115,7 +115,7 @@ const LatestArticle = () => {
                 the Winning Strategies that Shaped a Dynasty and Transformed
                 Leadership Philosophy Forever.
               </Typography>
-              <ul className='flex gap-2 pt-[50px]'>
+              <ul className='flex gap-2 lg:pt-[50px] pt-4'>
                 <li className='text-secondary text-tagLight bg-bg border border-headerBoxBorder rounded-full py-0.5 px-2.5 w-fit'>
                   Management
                 </li>
