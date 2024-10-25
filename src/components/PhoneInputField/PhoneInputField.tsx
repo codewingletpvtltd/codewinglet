@@ -1,5 +1,5 @@
 'use client';
-import { useState, useEffect } from 'react';
+import { useState, useLayoutEffect } from 'react';
 import PhoneInput from 'react-phone-input-2';
 
 import 'react-phone-input-2/lib/style.css';
@@ -8,9 +8,9 @@ const PhoneInputField: React.FC<PhoneInputFieldProps> = ({
   onChangeFormData,
   formData,
 }) => {
-  const [country, setCountry] = useState('in');
+  const [country, setCountry] = useState('us');
   const [phoneVal, setPhoneVal] = useState(formData.phone);
-  useEffect(() => {
+  useLayoutEffect(() => {
     const fetchUserCountry = async () => {
       const storedCountry = localStorage.getItem('user_country');
       if (storedCountry) {
@@ -36,7 +36,7 @@ const PhoneInputField: React.FC<PhoneInputFieldProps> = ({
         Phone number
       </label>
       <PhoneInput
-        country={country || 'in'}
+        country={country}
         value={phoneVal}
         onChange={(_value, _country, _e, fmtVal) => {
           setPhoneVal(fmtVal == '+' ? '' : fmtVal);
@@ -55,7 +55,7 @@ const PhoneInputField: React.FC<PhoneInputFieldProps> = ({
         }}
         enableAreaCodes={false}
         placeholder='Enter Your Number'
-        inputClass='!w-full !bg-transparent !text-paragraph1ExtraLight !rounded-none !border-x-0 !border-t-0 !border-b !border-primary'
+        inputClass='!w-full !bg-transparent !text-paragraph1ExtraLight !rounded-none !border-x-0 !border-t-0 !border-b !border-primary font-primary'
         buttonClass='!border-x-0 !border-t-0 !border-b !border-primary !rounded-none !bg-transparent'
         dropdownClass='!shadow-[1px_2px_10px_rgba(0,0,0,0.08)]'
       />
