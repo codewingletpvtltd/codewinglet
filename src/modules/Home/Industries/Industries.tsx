@@ -2,7 +2,6 @@
 import Image from 'next/image';
 
 import { SectionHeader, Typography } from '@codewinglet/components';
-import Reveal from '@codewinglet/components/Reveal';
 
 const industriesCard = [
   {
@@ -74,39 +73,34 @@ const ContactUs = () => (
     id='industry'
   >
     <div className='container w-full lg:px-[15px] sm:px-[30px] px-5 mx-auto'>
-      <Reveal>
-        <SectionHeader
-          title={<>Industries we work</>}
-          description={
-            <>
-              Diverse industry experience to accelerate your business outcomes
-              industries
-            </>
-          }
-          headingClassName=''
-        />
-      </Reveal>
+      <SectionHeader
+        title={<>Industries we work</>}
+        description={
+          <>
+            Diverse industry experience to accelerate your business outcomes
+            industries
+          </>
+        }
+        headingClassName=''
+      />
 
       <div className='grid lg:grid-cols-4 grid-cols-2 md:mt-10 md:mb-0 sm:gap-[30px] gap-5 lg:mt-[50px] my-5'>
         {industriesCard.map((card) => (
           <>
-            <Reveal>
-              <div>
-                <div className='w-full overflow-hidden cursor-pointer'>
-                  <Image
-                    src={card.image}
-                    alt='Menu Icon'
-                    className='w-full object-cover object-center transition-transform duration-500 hover:scale-110'
-                    width={800}
-                    height={800}
-                  />
-                </div>
-                <Typography className='text-primary mt-3 lg:text-subtitle2 md:text-subtitle2 text-tagLight'>
-                  {card.title}
-                  {/* <div className='block sm:hidden'>{card.mobileTitle}</div> */}
-                </Typography>
+            <div>
+              <div className='w-full overflow-hidden cursor-pointer'>
+                <Image
+                  src={card.image}
+                  alt='Menu Icon'
+                  className='w-full object-cover object-center transition-transform duration-500 hover:scale-110'
+                  width={800}
+                  height={800}
+                />
               </div>
-            </Reveal>
+              <Typography className='text-primary mt-3 lg:text-subtitle2 md:text-subtitle2 text-tagLight'>
+                {card.title}
+              </Typography>
+            </div>
           </>
         ))}
       </div>

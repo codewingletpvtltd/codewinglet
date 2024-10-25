@@ -2,7 +2,6 @@ import Link from 'next/link';
 
 import { Arrow } from '@codewinglet/assets';
 import { BlogCard, Button, SectionHeader } from '@codewinglet/components';
-import Reveal from '@codewinglet/components/Reveal';
 import { fetchRelatedBlogs } from '@codewinglet/services';
 
 export default async function Articles({ blogData }: any) {
@@ -25,16 +24,12 @@ export default async function Articles({ blogData }: any) {
       >
         {showRelatedBlog && (
           <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
-            <Reveal>
-              <SectionHeader
-                title={<>Related Articles</>}
-                description={
-                  <>
-                    Cutting-Edge Technologies We Work With for Optimal Results
-                  </>
-                }
-              />
-            </Reveal>
+            <SectionHeader
+              title={<>Related Articles</>}
+              description={
+                <>Cutting-Edge Technologies We Work With for Optimal Results</>
+              }
+            />
             <div className='lg:mt-[50px] md:mt-10 mt-5'>
               <div className='grid lg:grid-cols-3 md:grid-cols-2 md:gap-[50px] gap-5'>
                 {data?.slice(0, 3).map((blog: any) => (

@@ -3,23 +3,20 @@
 import Image from 'next/image';
 
 import { SectionHeader, Typography } from '@codewinglet/components';
-import Reveal from '@codewinglet/components/Reveal';
 
 const OurVision = () => (
   <>
     <div className='bg-white lg:py-20 md:py-[60px] py-10 relative'>
       <div className='container w-full 2xl:min-w-[1516px] lg:px-[15px] sm:px-10 px-5 mx-auto'>
-        <Reveal>
-          <SectionHeader
-            title={<>Our vision & mission</>}
-            description={
-              <>
-                We empower clients with reliable, high-quality tech solutions
-                through innovation!
-              </>
-            }
-          />
-        </Reveal>
+        <SectionHeader
+          title={<>Our vision & mission</>}
+          description={
+            <>
+              We empower clients with reliable, high-quality tech solutions
+              through innovation!
+            </>
+          }
+        />
         <div>
           <span></span>
           <div className='bg-headerBoxBorder w-[1px] 2xl:h-[690px] h-[590px] absolute top-56 left-1/2 lg:block hidden'></div>

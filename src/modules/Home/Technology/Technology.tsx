@@ -1,6 +1,4 @@
-'use client';
 import { SectionHeader } from '@codewinglet/components';
-import Reveal from '@codewinglet/components/Reveal';
 
 import TechnologyTab from './TechnologyTab';
 
@@ -10,16 +8,12 @@ const Technology = () => (
     id='technology'
   >
     <section className='container w-full lg:px-[15px] sm:px-[30px] px-5 mx-auto'>
-      <Reveal>
-        <SectionHeader
-          title={<>Technologies we work with</>}
-          description={
-            <>Accelerating your product with next-gen technologies</>
-          }
-          headingClassName='text-white'
-          descriptionClassName='text-white'
-        />
-      </Reveal>
+      <SectionHeader
+        title={<>Technologies we work with</>}
+        description={<>Accelerating your product with next-gen technologies</>}
+        headingClassName='text-white'
+        descriptionClassName='text-white'
+      />
       <TechnologyTab />
     </section>
   </section>

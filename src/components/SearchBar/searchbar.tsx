@@ -33,9 +33,7 @@ export const BlogSearch = () => {
     setSearchParamValue(encodedValue);
     setCategoryParamValue('');
   };
-  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === 'Enter') handleSearch();
-  };
+
   const clearSearch = () => {
     setInputValue('');
     setSearchParamValue('');
@@ -60,7 +58,7 @@ export const BlogSearch = () => {
               className='md:w-[383px] sm:w-[290px] w-[250px] placeholder:text-secondary lg:border lg:border-headerBoxBorder sm:pr-9 pr-6 lg:py-[13px] py-2.5 lg:pl-[58px] pl-[38px] text-paragraph2Light focus:outline-0'
               value={inputValue}
               onChange={handleInputChange}
-              onKeyDown={handleKeyDown}
+              // onKeyDown={handleSearch}
             />
             {inputValue && (
               <CloseIcon

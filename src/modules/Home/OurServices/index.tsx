@@ -1,6 +1,4 @@
-'use client';
 import { SectionHeader } from '@codewinglet/components';
-import Reveal from '@codewinglet/components/Reveal';
 
 import Services from './Services';
 
@@ -10,19 +8,17 @@ const OurService = () => (
     id='service'
   >
     <section className='container w-full lg:px-[15px] sm:px-[30px] px-5 mx-auto'>
-      <Reveal>
-        <SectionHeader
-          title={<>Our services</>}
-          description={
-            <>
-              Optimized customized software solutions to empower your niche and
-              strategic business growth
-            </>
-          }
-          headingClassName=''
-          descriptionClassName=''
-        />
-      </Reveal>
+      <SectionHeader
+        title={<>Our services</>}
+        description={
+          <>
+            Optimized customized software solutions to empower your niche and
+            strategic business growth
+          </>
+        }
+        headingClassName=''
+        descriptionClassName=''
+      />
       <Services />
     </section>
   </section>
