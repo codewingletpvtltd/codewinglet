@@ -33,10 +33,9 @@ const InfiniteServiceList = () => {
     }, 2500); // Total interval for switching items
 
     return () => clearInterval(interval); // Clean up on unmount
-  }, [sequence]);
+  }, []);
 
   return (
-    // <div className='bg-white inline-block px-2 text-h1 w-auto mx-auto'>
     <span
       className={`inline-block text-h1 text-[#4cffeb] transition-opacity duration-500 transform ${
         isVisible ? 'opacity-100' : 'opacity-0'
@@ -44,7 +43,6 @@ const InfiniteServiceList = () => {
     >
       {sequence[currentIndex]}
     </span>
-    // </div>
   );
 };
 
