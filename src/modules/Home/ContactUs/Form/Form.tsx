@@ -49,10 +49,17 @@ const Form: FC<FormProps> = ({ formData, onChangeFormData, onSubmit }) => (
         error={!!formData.errors.phone}
       /> */}
       {/* TODO: phone-number */}
-      <PhoneInputField
-        formData={formData}
-        onChangeFormData={onChangeFormData}
-      />
+
+      <div className='mb-[30px]'>
+        <label className='text-primary sm:text-paragraph1 text-tag mb-2.5 block'>
+          Phone number
+        </label>
+        <PhoneInputField
+          formData={formData}
+          onChangeFormData={onChangeFormData}
+        />
+      </div>
+
       <Textarea
         fullWidth
         label='Project details'

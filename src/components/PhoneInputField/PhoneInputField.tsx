@@ -1,8 +1,8 @@
 'use client';
 import PhoneInput from 'react-phone-input-2';
 
-import { PhoneInputFieldProps } from './types';
 import 'react-phone-input-2/lib/style.css';
+import { PhoneInputFieldProps } from './types';
 const PhoneInputField: React.FC<PhoneInputFieldProps> = ({
   onChangeFormData,
   formData,
@@ -15,6 +15,9 @@ const PhoneInputField: React.FC<PhoneInputFieldProps> = ({
     }}
     enableAreaCodes={false}
     countryCodeEditable={false}
+    placeholder='Enter Your Number'
+    inputClass='!w-full !bg-transparent !text-paragraph1ExtraLight !rounded-none !border-x-0 !border-t-0 !border-b !border-primary'
+    buttonClass='!border-x-0 !border-t-0 !border-b !border-primary !rounded-none !bg-none'
   />
 );
 
