@@ -1,7 +1,6 @@
 import Image from 'next/image';
 
 import { SectionHeader, Typography } from '@codewinglet/components';
-import Reveal from '@codewinglet/components/Reveal';
 import { formatDate } from '@codewinglet/utils';
 
 const BlogHeroSection = ({ blogData }: any) => (
@@ -15,14 +14,12 @@ const BlogHeroSection = ({ blogData }: any) => (
               <span className='text-headerBoxBorder px-3'>•</span>
               {blogData.read} min read
             </Typography>
-            <Reveal>
-              <SectionHeader
-                title={blogData.title}
-                description={blogData.summary}
-                headingClassName='text-primary text-h2 lg:max-w-[620px]'
-                descriptionClassName='text-secondary lg:max-w-[620px] md:mt-[26px] mt-2.5 lg:!text-subtitle2Light md:!text-paragraph1ExtraLight text-tagExtraLight'
-              />
-            </Reveal>
+            <SectionHeader
+              title={blogData.title}
+              description={blogData.summary}
+              headingClassName='text-primary text-h2 lg:max-w-[620px]'
+              descriptionClassName='text-secondary lg:max-w-[620px] md:mt-[26px] mt-2.5 lg:!text-subtitle2Light md:!text-paragraph1ExtraLight text-tagExtraLight'
+            />
           </div>
 
           {blogData.image && (

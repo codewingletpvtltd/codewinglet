@@ -28,8 +28,13 @@ export const fetchAllBlogs = async (
       }
     }
 
+    const latestBlogFilter =
+      searchFilter || tagsFilter
+        ? ''
+        : `&filters[documentId][$ne]=${latestBlogId}`;
+
     const blogRequest = await fetch(
-      `${process.env.NEXT_PUBLIC_BASE_URL}/api/blogs?populate=*&pagination[page]=${page}&pagination[pageSize]=${pageSize}&filters[documentId][$ne]=${latestBlogId}${searchFilter}${tagsFilter}`,
+      `${process.env.NEXT_PUBLIC_BASE_URL}/api/blogs?populate=*&pagination[page]=${page}&pagination[pageSize]=${pageSize}${searchFilter}${tagsFilter}${latestBlogFilter}`,
       reqOptions
     );
 

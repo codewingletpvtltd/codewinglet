@@ -8,11 +8,7 @@ type PaginationProps = {
   searchQuery?: string;
 };
 
-export const Pagination = ({
-  totalPages,
-  currentPage,
-  searchQuery,
-}: PaginationProps) => {
+export const Pagination = ({ totalPages, currentPage }: PaginationProps) => {
   const { setParamValue } = useUrlParamState('page');
   const getPageNumbers = (): (number | string)[] => {
     const totalNumbers = 5;

@@ -6,7 +6,6 @@ import { useState } from 'react';
 
 import { Arrow } from '@codewinglet/assets';
 import { Button, Typography } from '@codewinglet/components';
-import Reveal from '@codewinglet/components/Reveal';
 import { getClassNames } from '@codewinglet/utils';
 
 import SocialMedia from '../SocialMedia/SocialMedia';
@@ -89,23 +88,22 @@ const Footer = () => {
     <>
       <footer className='bg-black text-white relative xl:py-[60px] md:py-10 md:pt-[60px] py-10'>
         <div className='container'>
-          <Reveal>
-            <div className='md:mb-20 mb-10 flex justify-between md:items-start sm:items-center items-start flex-col md:flex-col lg:flex-row lg:px-[15px] sm:px-10 px-5'>
-              <Image
-                src={'/assets/icons/LogoWhite.svg'}
-                width={100}
-                height={100}
-                alt='Codewinglet White Logo'
-                className='w-[253px] sm:[w-191px] xl:w-[252px] cursor-pointer'
-                onClick={() => router.push('/')}
-                loading='eager'
-              />
-              <hr className='lg:hidden block w-full border-[#575757] md:my-10 my-5' />
-              <div className='flex lg:items-center relative lg:flex-row flex-col md:gap-0 gap-3.5'>
-                <Typography className='md:leading-8 leading-6 lg:text-h6 md:text-h6 text-paragraph2Light 2xl:ml-[150px] xl:ml-[60px] ml-0 lg:border-l border-white lg:pl-2.5'>
-                  Have a project in mind but need some guidance? Reach out to us
-                </Typography>
-                {/* <Link
+          <div className='md:mb-20 mb-10 flex justify-between md:items-start sm:items-center items-start flex-col md:flex-col lg:flex-row lg:px-[15px] sm:px-10 px-5'>
+            <Image
+              src={'/assets/icons/LogoWhite.svg'}
+              width={100}
+              height={100}
+              alt='Codewinglet White Logo'
+              className='w-[253px] sm:[w-191px] xl:w-[252px] cursor-pointer'
+              onClick={() => router.push('/')}
+              loading='eager'
+            />
+            <hr className='lg:hidden block w-full border-[#575757] md:my-10 my-5' />
+            <div className='flex lg:items-center relative lg:flex-row flex-col md:gap-0 gap-3.5'>
+              <Typography className='md:leading-8 leading-6 lg:text-h6 md:text-h6 text-paragraph2Light 2xl:ml-[150px] xl:ml-[60px] ml-0 lg:border-l border-white lg:pl-2.5'>
+                Have a project in mind but need some guidance? Reach out to us
+              </Typography>
+              {/* <Link
                   className='sm:w-auto w-full'
                   href='/contact-us'
                   aria-label='Instagram'
@@ -117,150 +115,142 @@ const Footer = () => {
                     Schedule a meeting
                   </Button>
                 </Link> */}
-                <Link
-                  className='md:w-auto w-full lg:mt-0 md:mt-10 mt-4'
-                  href='/contact-us'
-                  aria-label='Instagram'
+              <Link
+                className='md:w-auto w-full lg:mt-0 md:mt-10 mt-4'
+                href='/contact-us'
+                aria-label='Instagram'
+              >
+                <Button
+                  variant='outline'
+                  className='md:w-[271px] w-[230px] sm:h-14 h-12 gap-2.5'
                 >
-                  <Button
-                    variant='outline'
-                    className='md:w-[271px] w-[230px] sm:h-14 h-12 gap-2.5'
-                  >
-                    Schedule a meeting <Arrow />
-                  </Button>
-                </Link>
-              </div>
+                  Schedule a meeting <Arrow />
+                </Button>
+              </Link>
             </div>
-          </Reveal>
-          <Reveal>
-            <div className='md:gap-0 gap-[5px] flex lg:px-[15px] sm:px-[25px] px-5 relative mx-0 flex-wrap '>
-              {footerTitle.map((menuItem, index) => (
-                <div
-                  className={`lg:px-0 px-0 sm:px-[15px] w-full relative ${menuItem.responsiveClass}`}
-                  key={menuItem.title}
+          </div>
+          <div className='md:gap-0 gap-[5px] flex lg:px-[15px] sm:px-[25px] px-5 relative mx-0 flex-wrap '>
+            {footerTitle.map((menuItem, index) => (
+              <div
+                className={`lg:px-0 px-0 sm:px-[15px] w-full relative ${menuItem.responsiveClass}`}
+                key={menuItem.title}
+              >
+                <div className='my-1 sm:hidden' />
+                <Typography
+                  className='lg:mb-5 mb-5 flex items-center justify-between lg:text-paragraph1  md:text-subtitle1 text-subtitle2 '
+                  onClick={() =>
+                    setExpandedOption((prev) =>
+                      prev === -1 || prev !== index ? index : -1
+                    )
+                  }
                 >
-                  <div className='my-1 sm:hidden' />
-                  <Typography
-                    className='lg:mb-5 mb-5 flex items-center justify-between lg:text-paragraph1  md:text-subtitle1 text-subtitle2 '
-                    onClick={() =>
-                      setExpandedOption((prev) =>
-                        prev === -1 || prev !== index ? index : -1
-                      )
-                    }
-                  >
-                    {menuItem.title}
-                    <Button
-                      className={getClassNames(
-                        'w-auto h-6 sm:hidden transition-all ease-in-out duration-500 border-none m-[initial] !bg-black !hover:bg-black !px-0',
-                        index === expandedOption ? '-rotate-180' : ''
-                      )}
-                    >
-                      <Image
-                        src={'/assets/icons/DownArrows.svg'}
-                        width={18}
-                        height={18}
-                        alt='DownArrows'
-                      />
-                    </Button>
-                  </Typography>
-                  <div
+                  {menuItem.title}
+                  <Button
                     className={getClassNames(
-                      'flex flex-col gap-1.5 sm:max-h-full max-h-0 overflow-hidden transition-all ease-in-out duration-500 sm:pl-0 pl-4',
-                      index === expandedOption ? 'max-h-[566px]' : ''
+                      'w-auto h-6 sm:hidden transition-all ease-in-out duration-500 border-none m-[initial] !bg-black !hover:bg-black !px-0',
+                      index === expandedOption ? '-rotate-180' : ''
                     )}
                   >
-                    {menuItem.menu.map((item) => (
-                      <div key={item.id}>
-                        <Typography className='text-paragraph2Light leading-normal mb-3.5 min-h-0 text-lightGray hover:text-white'>
-                          <Link className='' href={item?.path}>
-                            {item.label}
-                          </Link>
-                        </Typography>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              ))}
-              <div className='px-0 relative lg:w-1/4 md:w-1/2 w-full min-h-[1px] xl:mt-0 lg:mt-7 md:mt-7 m-0'>
-                <Typography className=' mb-5 sm:mt-0 mt-3 lg:text-paragraph1  md:text-subtitle1 text-subtitle2 '>
-                  Get in touch
+                    <Image
+                      src={'/assets/icons/DownArrows.svg'}
+                      width={18}
+                      height={18}
+                      alt='DownArrows'
+                    />
+                  </Button>
                 </Typography>
-                <div className='block'>
-                  {contacts.map((contact, index) => (
-                    <Typography
-                      key={index}
-                      className='text-paragraph2Light leading-normal mb-5 min-h-0 text-lightGray flex gap-3 items-start'
-                    >
-                      <Image
-                        src={contact.icon}
-                        alt={`${contact.type} Icon`}
-                        width={18}
-                        height={18}
-                        className='mt-1'
-                      />
-                      <div className='flex flex-col gap-1'>
-                        <div className='text-white'>{contact.type} :</div>
-                        {contact.details.map((detail, detailIndex) =>
-                          detail.href ? (
-                            <Link
-                              key={detailIndex}
-                              href={detail.href}
-                              className='hover:text-white'
-                              target={detail.isLink ? '_blank' : '_self'}
-                            >
-                              {detail.text}
-                            </Link>
-                          ) : (
-                            <Typography
-                              key={detailIndex}
-                              className='xl:pr-0 lg:pr-[230px] pr-0'
-                            >
-                              {detail.text}
-                            </Typography>
-                          )
-                        )}
-                      </div>
-                    </Typography>
+                <div
+                  className={getClassNames(
+                    'flex flex-col gap-1.5 sm:max-h-full max-h-0 overflow-hidden transition-all ease-in-out duration-500 sm:pl-0 pl-4',
+                    index === expandedOption ? 'max-h-[566px]' : ''
+                  )}
+                >
+                  {menuItem.menu.map((item) => (
+                    <div key={item.id}>
+                      <Typography className='text-paragraph2Light leading-normal mb-3.5 min-h-0 text-lightGray hover:text-white'>
+                        <Link className='' href={item?.path}>
+                          {item.label}
+                        </Link>
+                      </Typography>
+                    </div>
                   ))}
                 </div>
-                <div className='flex sm:gap-5 gap-3 lg:mt-7 md:mt-5 mt-5 ml-7'>
-                  <SocialMedia
-                    bgColor='white'
-                    iconColor='black'
-                    width='32'
-                    height='32'
-                  />
-                </div>
+              </div>
+            ))}
+            <div className='px-0 relative lg:w-1/4 md:w-1/2 w-full min-h-[1px] xl:mt-0 lg:mt-7 md:mt-7 m-0'>
+              <Typography className=' mb-5 sm:mt-0 mt-3 lg:text-paragraph1  md:text-subtitle1 text-subtitle2 '>
+                Get in touch
+              </Typography>
+              <div className='block'>
+                {contacts.map((contact, index) => (
+                  <Typography
+                    key={index}
+                    className='text-paragraph2Light leading-normal mb-5 min-h-0 text-lightGray flex gap-3 items-start'
+                  >
+                    <Image
+                      src={contact.icon}
+                      alt={`${contact.type} Icon`}
+                      width={18}
+                      height={18}
+                      className='mt-1'
+                    />
+                    <div className='flex flex-col gap-1'>
+                      <div className='text-white'>{contact.type} :</div>
+                      {contact.details.map((detail, detailIndex) =>
+                        detail.href ? (
+                          <Link
+                            key={detailIndex}
+                            href={detail.href}
+                            className='hover:text-white'
+                            target={detail.isLink ? '_blank' : '_self'}
+                          >
+                            {detail.text}
+                          </Link>
+                        ) : (
+                          <Typography
+                            key={detailIndex}
+                            className='xl:pr-0 lg:pr-[230px] pr-0'
+                          >
+                            {detail.text}
+                          </Typography>
+                        )
+                      )}
+                    </div>
+                  </Typography>
+                ))}
+              </div>
+              <div className='flex sm:gap-5 gap-3 lg:mt-7 md:mt-5 mt-5 ml-7'>
+                <SocialMedia
+                  bgColor='white'
+                  iconColor='black'
+                  width='32'
+                  height='32'
+                />
               </div>
             </div>
-          </Reveal>
+          </div>
         </div>
       </footer>
 
-      <Reveal>
-        <div className='lg:gap-0 gap-4 relative text-lightGray border-t border-[#3b3b3b]'>
-          <div className='container flex flex-col sm:flex-row items-start sm:justify-between justify-start lg:px-3.5 sm:p-10 sm:py-3.5 p-5 md:gap-0 gap-1'>
-            <Typography className='text-left lg:text-paragraph2Light text-tagLight'>
-              All rights reserved © {new Date().getFullYear()} - Codewinglet{' '}
-              <span className='lg:inline-block hidden'>Private Limited</span>
-            </Typography>
-            <ul className='flex'>
-              {companyTermsMenu.map((item) => (
-                <li
-                  key={item.id}
-                  className='first:border-r first:pr-6 last:pl-6'
-                >
-                  <Typography className='lg:text-paragraph2Light text-tagLight'>
-                    <Link className='hover:text-white' href={item.path}>
-                      {item.label}
-                    </Link>
-                  </Typography>
-                </li>
-              ))}
-            </ul>
-          </div>
+      <div className='lg:gap-0 gap-4 relative text-lightGray border-t border-[#3b3b3b]'>
+        <div className='container flex flex-col sm:flex-row items-center sm:justify-between justify-start lg:px-3.5 sm:p-10 sm:py-3.5 p-5 md:gap-0 gap-1'>
+          <Typography className='lg:text-paragraph2Light text-tagLight'>
+            All rights reserved © {new Date().getFullYear()} - Codewinglet{' '}
+            <span className='lg:inline-block hidden'>Private Limited</span>
+          </Typography>
+          <ul className='flex'>
+            {companyTermsMenu.map((item) => (
+              <li key={item.id} className='first:border-r first:pr-6 last:pl-6'>
+                <Typography className='lg:text-paragraph2Light text-tagLight'>
+                  <Link className='hover:text-white' href={item.path}>
+                    {item.label}
+                  </Link>
+                </Typography>
+              </li>
+            ))}
+          </ul>
         </div>
-      </Reveal>
+      </div>
     </>
   );
 };

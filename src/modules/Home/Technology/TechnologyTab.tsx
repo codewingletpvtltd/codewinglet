@@ -1,5 +1,4 @@
 'use client';
-import { AnimatePresence, motion } from 'framer-motion';
 import { useState } from 'react';
 
 import Content from './components/Content';
@@ -31,27 +30,14 @@ const TechnologyTab = () => {
             >
               {service.title}
               {i === selectedIndex ? (
-                <motion.div
-                  className='content absolute lg:w-[1px] w-full bg-white lg:h-9 h-[1px] lg:top-0 bottom-0 lg:left-0 left-auto'
-                  layoutId='underline'
-                />
+                <div className='content absolute lg:w-[1px] w-full bg-white lg:h-9 h-[1px] lg:top-0 bottom-0 lg:left-0 left-auto' />
               ) : null}
             </div>
           ))}
         </div>
         <div className='2xl:w-[82%] lg:w-[80%] w-full'>
           <div className='bg-primary md:p-[30px] p-5 transition-transform duration-500 ease-in [will-change:_top;] text-white lg:h-[425px] lg:mt-0 mt-5'>
-            <AnimatePresence mode='wait'>
-              <motion.div
-                key={selectedIndex ? service.title : 'empty'}
-                initial={{ y: 10, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                exit={{ y: -10, opacity: 0 }}
-                transition={{ duration: 0.2 }}
-              >
-                <Content service={service} />
-              </motion.div>
-            </AnimatePresence>
+            <Content service={service} />
           </div>
         </div>
       </div>

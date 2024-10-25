@@ -2,7 +2,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import { Typography } from '@codewinglet/components';
-import { formatDate, formatTag, getClassNames } from '@codewinglet/utils';
+import {
+  calculateReadTime,
+  formatDate,
+  formatTag,
+  getClassNames,
+} from '@codewinglet/utils';
 
 import { Blog } from './types';
 
@@ -27,7 +32,7 @@ export const BlogItem: React.FC<BlogItemProps> = ({ blog }) => (
         )}
         <div className='2xl:py-[15px] 2xl:w-[428px] lg:w-[418px] w-[335px]'>
           <Typography className='text-secondary text-tag'>
-            {formatDate(blog.createdAt)} • {blog.read} min read
+            {formatDate(blog.createdAt)} • {calculateReadTime(blog.content)}
           </Typography>
 
           <div className='flex justify-between items-start'>
@@ -45,13 +50,13 @@ export const BlogItem: React.FC<BlogItemProps> = ({ blog }) => (
 
           <Typography
             className={getClassNames(
-              'text-paragraph2Light text-secondary leading-[18px] md:leading-[22px] mt-4 overflow-hidden text-ellipsis lg:line-clamp-6 line-clamp-4'
+              'text-paragraph2Light text-secondary leading-[18px] md:leading-[22px] mt-4 overflow-hidden text-ellipsis lg:line-clamp-5 line-clamp-3'
             )}
           >
             {blog.summary}
           </Typography>
           {blog.tags && (
-            <ul className='flex gap-2 pt-[50px]'>
+            <ul className='flex gap-2 lg:pt-[50px] pt-4'>
               {Object.entries(blog.tags)
                 .filter(([key, value]) => value === true)
                 .map(([key], index) => (

@@ -7,9 +7,6 @@ import { Typography } from '@codewinglet/components';
 
 const LatestArticle = () => {
   const [clientDate, setClientDate] = useState<string | null>(null);
-  const [isChecked, setIsChecked] = useState(false);
-  const [currentPage, setCurrentPage] = useState(1);
-  const totalPages = 5;
 
   useEffect(() => {
     // Only run this on the client side, so the date is consistent
@@ -20,28 +17,6 @@ const LatestArticle = () => {
     });
     setClientDate(date); // Set the formatted date on the client
   }, []);
-
-  const handlePageChange = (page: number) => {
-    setCurrentPage(page);
-  };
-
-  const handleCheckboxChange = (checked: any) => {
-    setIsChecked(checked);
-  };
-
-  const checkboxData = [
-    { label: 'All Blogs', value: 'all' },
-    { label: 'Web Design', value: 'web-design' },
-    { label: 'Product', value: 'product' },
-    { label: 'Software Engineering', value: 'software-engineering' },
-    { label: 'Customer Success', value: 'customer-success' },
-    { label: 'React', value: 'react' },
-    { label: 'Angular', value: 'angular' },
-    { label: 'DevOps', value: 'devops' },
-    { label: 'Cloud', value: 'cloud' },
-    { label: 'Artificial Intelligence', value: 'artificial-intelligence' },
-    { label: 'User interface design', value: 'user-interface-design' },
-  ];
 
   return (
     <div className='bg-white pt-10 lg:mt-[166px] md:mt-40 mt-[148px]'>
@@ -65,21 +40,6 @@ const LatestArticle = () => {
               className='w-full placeholder:text-secondary border border-headerBoxBorder py-[13px] pl-[58px] text-paragraph2Light focus:outline-0'
             />
           </div>
-          {/* <div className='mt-[15px] border-r border-headerBoxBorder overflow-y-auto'>
-            {checkboxData.map((item, i) => (
-              <div
-                className='flex items-center gap-2 p-3.5 hover:bg-bg cursor-pointer'
-                key={i}
-              >
-                <Checkbox
-                  key={item.value}
-                  label={item.label}
-                  checked={isChecked}
-                  onChange={handleCheckboxChange}
-                />
-              </div>
-            ))}
-          </div> */}
         </div>
         <div className='w-[1013px]'>
           <Typography className='text-h6 mb-[37px]'>Latest article</Typography>
@@ -115,7 +75,7 @@ const LatestArticle = () => {
                 the Winning Strategies that Shaped a Dynasty and Transformed
                 Leadership Philosophy Forever.
               </Typography>
-              <ul className='flex gap-2 pt-[50px]'>
+              <ul className='flex gap-2 lg:pt-[50px] pt-4'>
                 <li className='text-secondary text-tagLight bg-bg border border-headerBoxBorder rounded-full py-0.5 px-2.5 w-fit'>
                   Management
                 </li>
