@@ -5,7 +5,6 @@ import Slider from 'react-slick';
 import { Arrow } from '@codewinglet/assets';
 
 import Button from '../Button';
-import Reveal from '../Reveal';
 import SectionHeader from '../SectionHeader';
 import Typography from '../Typography';
 import Statics from './Statics';
@@ -100,7 +99,7 @@ const WhyWork = () => {
       imgAlt: 'Committed',
       title: 'Committed',
       description:
-        'We\'re committed to innovative IT solutions that meet clients expectations.',
+        'We are committed to innovative IT solutions that meet clients expectations.',
     },
     {
       imgSrc: '/assets/comman/timely-support.png',
@@ -114,7 +113,7 @@ const WhyWork = () => {
       imgAlt: 'Professional',
       title: 'Professional',
       description:
-        'We\'re experts in IT, crafting professional solutions just for you with skill and care.',
+        'We are experts in IT, crafting professional solutions just for you with skill and care.',
     },
     {
       imgSrc: '/assets/comman/user-centered.png',
@@ -135,17 +134,15 @@ const WhyWork = () => {
   return (
     <div className='bg-bg xl:py-20 lg:py-14 md:py-[60px] py-10 why-work lg:!pb-24 overflow-hidden about-why-work'>
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
-        <Reveal>
-          <SectionHeader
-            title={<>Why work with us ?</>}
-            description={
-              <>
-                Working with us offers unmatched knowledge and results-driven
-                solutions
-              </>
-            }
-          />
-        </Reveal>
+        <SectionHeader
+          title={<>Why work with us ?</>}
+          description={
+            <>
+              Working with us offers unmatched knowledge and results-driven
+              solutions
+            </>
+          }
+        />
       </div>
 
       <div className='lg:mt-[50px] md:mt-10 mt-5 2xl:ml-[247.5px] lg:ml-[95px] ml-0 pl-[15px] lg:pt-0 pt-[25px] lg:flex border-t border-t-headerBoxBorder md:hidden'>

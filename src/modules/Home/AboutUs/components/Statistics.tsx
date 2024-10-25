@@ -1,6 +1,5 @@
 'use client';
 import { Typography } from '@codewinglet/components';
-import Reveal from '@codewinglet/components/Reveal';
 
 import AboutCount from './AboutCount';
 
@@ -51,11 +50,9 @@ const ListItem = ({ data }: { data: ListItemProps[] }) => (
 
 const Statistics = () => (
   <>
-    <Reveal>
-      <div className='lg:mt-0 lg:mb-0 mt-5 mb-20 lg:block grid grid-cols-2 lg:gap-0 md:gap-5 gap-4'>
-        <ListItem data={data} />
-      </div>
-    </Reveal>
+    <div className='lg:mt-0 lg:mb-0 mt-5 mb-20 lg:block grid grid-cols-2 lg:gap-0 md:gap-5 gap-4'>
+      <ListItem data={data} />
+    </div>
   </>
 );
 

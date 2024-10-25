@@ -1,26 +1,23 @@
 'use client';
 import Image from 'next/image';
 
-import Reveal from '@codewinglet/components/Reveal';
 import { SectionHeader } from '@codewinglet/components';
 
 const Companies = () => (
   <>
     <div className='bg-black sm:py-20 py-10 scroll-mt-40' id='whoUsed'>
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
-        <Reveal>
-          <SectionHeader
-            title={<>Companies that used this technology</>}
-            description={
-              <>
-                Accelerating your product with next-gen technologies gen
-                technologies Accelerating your product
-              </>
-            }
-            headingClassName='text-white lg:!text-h2 md:!text-[35px] !text-subtitle2 lg:!text-left md:!text-center !text-left'
-            descriptionClassName='text-secondary lg:!text-left md:!text-center !text-left'
-          />
-        </Reveal>
+        <SectionHeader
+          title={<>Companies that used this technology</>}
+          description={
+            <>
+              Accelerating your product with next-gen technologies gen
+              technologies Accelerating your product
+            </>
+          }
+          headingClassName='text-white lg:!text-h2 md:!text-[35px] !text-subtitle2 lg:!text-left md:!text-center !text-left'
+          descriptionClassName='text-secondary lg:!text-left md:!text-center !text-left'
+        />
         <div className='relative'>
           <div className='absolute top-0 left-1/2 w-[1px] h-[122px] bg-primary lg:hidden'></div>
           <div className='absolute bottom-5 left-1/2 w-[1px] h-[122px] bg-primary lg:hidden'></div>

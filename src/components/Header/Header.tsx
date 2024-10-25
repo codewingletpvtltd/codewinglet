@@ -113,14 +113,13 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
           </div>
 
           <NavMenu />
-          {isLarge && (
-            <Button
-              onClick={onNavigate('contact-us')}
-              className='w-[178px] lg:h-11 border-white text-white'
-            >
-              Contact Us
-            </Button>
-          )}
+
+          <Button
+            onClick={onNavigate('contact-us')}
+            className='w-[178px] lg:h-11 border-white text-white hidden xl:block'
+          >
+            Contact Us
+          </Button>
 
           <MenuIcon
             isOpen={showMenu}

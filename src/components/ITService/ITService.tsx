@@ -4,7 +4,6 @@ import Link from 'next/link';
 
 import { Arrow } from '@codewinglet/assets';
 import { Button, SectionHeader, Typography } from '@codewinglet/components';
-import Reveal from '@codewinglet/components/Reveal';
 
 import { ServiceCardProps, ServicePoint, servicesData } from './servicesData';
 
@@ -55,16 +54,14 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 const ITService: React.FC = () => (
   <div className='bg-bg lg:py-20 md:py-[60px] py-10 scroll-mt-40' id='whyUs'>
     <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
-      <Reveal>
-        <SectionHeader
-          title={<>Why Choose Codewinglet's IT Services?</>}
-          description={
-            <>Optimized customized software solutions to empower your niche.</>
-          }
-          headingClassName='text-primary'
-          descriptionClassName='text-primary'
-        />
-      </Reveal>
+      <SectionHeader
+        title={<>Why Choose Codewinglet's IT Services?</>}
+        description={
+          <>Optimized customized software solutions to empower your niche.</>
+        }
+        headingClassName='text-primary'
+        descriptionClassName='text-primary'
+      />
 
       <div className='grid lg:grid-cols-3 md:grid-cols-2 lg:gap-[50px] md:gap-10 gap-5 mt-[50px] relative'>
         {servicesData.map((service, index) => (

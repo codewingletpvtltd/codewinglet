@@ -2,7 +2,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import Reveal from '@codewinglet/components/Reveal';
 import { SectionHeader, Typography } from '@codewinglet/components';
 
 const workData = [
@@ -53,38 +52,34 @@ const Benefits = () => (
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto lg:flex block gap-[70px]'>
         {/* Left */}
         <div className='lg:w-[630px]'>
-          <Reveal>
-            <SectionHeader
-              title={<>Perks & benefits</>}
-              description={
-                <>
-                  At Codewinglet, we believe that happy, healthy, and motivated
-                  employees are the foundation of our success. That’s why we
-                  offer a comprehensive range of perks and benefits designed to
-                  support your personal and professional growth. From
-                  competitive salaries to work-life balance initiatives, we
-                  ensure you have everything you need to thrive.
-                </>
-              }
-              descriptionClassName='text-secondary lg:!text-subtitle2Light md:!text-paragraph1ExtraLight !text-tagExtraLight'
-            />
-          </Reveal>
+          <SectionHeader
+            title={<>Perks & benefits</>}
+            description={
+              <>
+                At Codewinglet, we believe that happy, healthy, and motivated
+                employees are the foundation of our success. That’s why we offer
+                a comprehensive range of perks and benefits designed to support
+                your personal and professional growth. From competitive salaries
+                to work-life balance initiatives, we ensure you have everything
+                you need to thrive.
+              </>
+            }
+            descriptionClassName='text-secondary lg:!text-subtitle2Light md:!text-paragraph1ExtraLight !text-tagExtraLight'
+          />
 
-          <Reveal>
-            <div className='hidden relative lg:block mt-10'>
-              <Link
-                href='https://www.google.com/search?q=google+my+business+codewinglet&sca_esv=140e142c45642a77&sca_upv=1&rlz=1C1GCEU_enIN954IN956&sxsrf=ADLYWIK8twRkm95COwC8J2bYLgvfRijrIw%3A1727152551706&ei=p0HyZqDjKpqJ4-EPvd3QkQc&oq=google+my+business+codewinglet&gs_lp=Egxnd3Mtd2l6LXNlcnAiHmdvb2dsZSBteSBidXNpbmVzcyBjb2Rld2luZ2xldCoCCAAyBRAhGKABMgUQIRigAUioa1CKMlivV3ACeAGQAQCYAfgBoAG0I6oBBjAuMjMuM7gBA8gBAPgBAZgCGKACyx3CAgoQABiwAxjWBBhHwgIHECEYoAEYCsICBBAhGBXCAgUQABiABMICCxAAGIAEGJECGIoFwgIIEAAYgAQYsQPCAgYQABgWGB7CAggQABgWGB4YD8ICBxAAGIAEGA3CAggQABgIGA0YHsICChAAGAgYDRgeGA-YAwCIBgGQBgiSBwYyLjIxLjGgB-uGAQ&sclient=gws-wiz-serp#lrd=0xad9b0b986e322e33:0x223c56e331adc03,1,,,,'
-                target='_blank'
-              >
-                <Image
-                  src={'/assets/ContactUs/google-review.svg'}
-                  width={171}
-                  height={83}
-                  alt='google'
-                />
-              </Link>
-            </div>
-          </Reveal>
+          <div className='hidden relative lg:block mt-10'>
+            <Link
+              href='https://www.google.com/search?q=google+my+business+codewinglet&sca_esv=140e142c45642a77&sca_upv=1&rlz=1C1GCEU_enIN954IN956&sxsrf=ADLYWIK8twRkm95COwC8J2bYLgvfRijrIw%3A1727152551706&ei=p0HyZqDjKpqJ4-EPvd3QkQc&oq=google+my+business+codewinglet&gs_lp=Egxnd3Mtd2l6LXNlcnAiHmdvb2dsZSBteSBidXNpbmVzcyBjb2Rld2luZ2xldCoCCAAyBRAhGKABMgUQIRigAUioa1CKMlivV3ACeAGQAQCYAfgBoAG0I6oBBjAuMjMuM7gBA8gBAPgBAZgCGKACyx3CAgoQABiwAxjWBBhHwgIHECEYoAEYCsICBBAhGBXCAgUQABiABMICCxAAGIAEGJECGIoFwgIIEAAYgAQYsQPCAgYQABgWGB7CAggQABgWGB4YD8ICBxAAGIAEGA3CAggQABgIGA0YHsICChAAGAgYDRgeGA-YAwCIBgGQBgiSBwYyLjIxLjGgB-uGAQ&sclient=gws-wiz-serp#lrd=0xad9b0b986e322e33:0x223c56e331adc03,1,,,,'
+              target='_blank'
+            >
+              <Image
+                src={'/assets/ContactUs/google-review.svg'}
+                width={171}
+                height={83}
+                alt='google'
+              />
+            </Link>
+          </div>
         </div>
         {/* Right  */}
         <div className='lg:w-[710px] lg:mt-0 mt-10'>
