@@ -7,7 +7,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   title,
   description,
 }) => (
-  <div className='bg-primary p-[30px] mb-10 last:mb-0 flex gap-5 group'>
+  <div className='bg-primary p-[30px] mb-10 last:mb-0 flex gap-5 group cursor-pointer'>
     <div className='bg-white/10 w-[70px] group-hover:bg-white h-[70px] flex items-center justify-center mb-[26px] flex-shrink-0'>
       <div className='text-white group-hover:text-black'>{icon}</div>
     </div>

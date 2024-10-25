@@ -12,8 +12,8 @@ const BenefitCard: React.FC<BenefitCardProps> = ({
   title,
   description,
 }) => (
-  <div className='bg-bg hover:bg-white p-[30px] group cursor-pointer'>
-    <div className='bg-white w-[50px] h-[50px] flex items-center justify-center mb-[26px]'>
+  <div className='bg-bg hover:bg-white p-[30px] group cursor-pointer transform duration-300'>
+    <div className='bg-white group-hover:bg-bg w-[50px] h-[50px] flex items-center justify-center mb-[26px] transform duration-300'>
       <Image
         src={iconSrc}
         alt={iconAlt}

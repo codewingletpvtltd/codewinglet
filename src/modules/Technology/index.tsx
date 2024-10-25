@@ -8,7 +8,7 @@ import Combination from './Combination/Combination';
 import Companies from './Companies/Companies';
 import FlexibleModels from './FlexibleModels/FlexibleModels';
 import HeroSection from './HeroSection/HeroSection';
-import Services from './Services/Services';
+import Services from './Services/services';
 import TechnologySubMenu from './TechnologySubMenu/TechnologySubMenu';
 
 const TechnologyPage = () => (

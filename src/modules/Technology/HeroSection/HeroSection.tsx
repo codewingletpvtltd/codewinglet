@@ -6,14 +6,16 @@ import Link from 'next/link';
 import { Arrow } from '@codewinglet/assets';
 import { Button, SectionHeader } from '@codewinglet/components';
 
+import Counter from './components/Counter';
+
 const HeroSection = () => (
   <>
     <div
-      className='bg-black lg:pt-[244px] md:pt-60 pt-[176px] relative scroll-mt-40'
+      className='bg-black lg:pt-[218px] md:pt-60 pt-[176px] relative scroll-mt-40'
       id='overview'
     >
-      <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto lg:flex block gap-[50px] md:pb-20 pb-10'>
-        <div className='lg:mt-[65px] relative lg:w-[680px]'>
+      <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto lg:flex block gap-[50px]'>
+        <div className='relative lg:w-[680px]'>
           <SectionHeader
             title={<>Build the Future with Advanced AngularJS Development</>}
             description={
@@ -50,13 +52,17 @@ const HeroSection = () => (
               <Arrow />
             </Link>
           </Button>
+
+          <div>
+            <Counter />
+          </div>
         </div>
-        <div className='lg:w-[748px] lg:mt-0 mt-10'>
+        <div className='mx-auto mt-auto'>
           <Image
-            src='/assets/Technologies/pages/hero.jpg'
+            src='/assets/Technologies/pages/hero.png'
             alt='hero'
-            width={748}
-            height={541}
+            width={490}
+            height={690}
           />
         </div>
       </div>
