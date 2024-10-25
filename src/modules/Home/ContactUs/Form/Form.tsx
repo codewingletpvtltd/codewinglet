@@ -34,26 +34,8 @@ const Form: FC<FormProps> = ({ formData, onChangeFormData, onSubmit }) => (
         error={!!formData.errors.email}
         description='Please provide your business email address'
       />
-      {/* <TextField
-        fullWidth
-        label='Phone number'
-        placeholder='Enter your number'
-        value={formData.phone}
-        onChange={(e) => {
-          onChangeFormData({ phone: e.target.value });
-        }}
-        type='tel'
-        minLength={10}
-        maxLength={17}
-        helperText={formData.errors.phone}
-        error={!!formData.errors.phone}
-      /> */}
-      {/* TODO: phone-number */}
 
       <div className='mb-[30px]'>
-        <label className='text-primary sm:text-paragraph1 text-tag mb-2.5 block'>
-          Phone number
-        </label>
         <PhoneInputField
           formData={formData}
           onChangeFormData={onChangeFormData}
