@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import { Arrow } from '@codewinglet/assets';
-import { Button, SectionHeader } from '@codewinglet/components';
+import { Button, SectionHeader, Typography } from '@codewinglet/components';
 
 import Counter from './components/Counter';
 
@@ -57,13 +57,42 @@ const HeroSection = () => (
             <Counter />
           </div>
         </div>
-        <div className='mx-auto mt-auto'>
-          <Image
-            src='/assets/Technologies/pages/hero.png'
-            alt='hero'
-            width={490}
-            height={690}
-          />
+        <div className='mx-auto mt-auto relative'>
+          <div className='bg-bg border-[5px] border-[#313131] w-[226px] text-center absolute -right-20 top-36 py-4'>
+            <Typography className='text-primary text-[30px] leading-7'>
+              150+
+            </Typography>
+            <Typography className='text-primary text-paragraph1Light'>
+              Successful projects
+            </Typography>
+          </div>
+
+          <div className='relative z-[1px]'>
+            <Image
+              src='/assets/Technologies/pages/hero.png'
+              alt='hero'
+              width={490}
+              height={690}
+              className=''
+            />
+            <Image
+              src='/assets/Technologies/pages/angular_logo.svg'
+              alt='angular_logo'
+              width={72}
+              height={72}
+              className='absolute z-[2] top-[50%] left-[53%]'
+            />
+            <Image
+              src='/assets/Technologies/pages/laptopBg.svg'
+              alt='laptopBg'
+              width={278}
+              height={164}
+              className='absolute z-[1] top-[46%] left-[32%]'
+            />
+            <Typography className='absolute z-20 top-[64%] left-[43%] text-white text-h5 uppercase'>
+              Angular JS.
+            </Typography>
+          </div>
         </div>
       </div>
     </div>

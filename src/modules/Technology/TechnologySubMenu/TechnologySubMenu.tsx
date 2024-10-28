@@ -11,8 +11,12 @@ const designation = [
     path: '#overview',
   },
   {
-    title: 'Benefit',
+    title: 'Companies',
     path: '#benefit',
+  },
+  {
+    title: 'Guide',
+    path: '#guide',
   },
 ];
 
