@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { Arrow } from '@codewinglet/assets';
 import ModelIcon from '@codewinglet/assets/icons/ModelIcon';
 import { Button, SectionHeader, Typography } from '@codewinglet/components';
-import Reveal from '@codewinglet/components/Reveal';
 
 import { ModelCardProps, ModelPoint, modelData } from './modelData';
 
@@ -59,19 +58,17 @@ const ModelCard: React.FC<ModelCardProps> = ({
 const FlexibleModels: React.FC = () => (
   <div className='bg-black lg:py-20 md:py-[60px] py-10 scroll-mt-40' id='whyUs'>
     <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
-      <Reveal>
-        <SectionHeader
-          title={<>Flexible Engagement Models</>}
-          description={
-            <>
-              Follow these simple steps to connect with our expert developers
-              and bring your vision to life.
-            </>
-          }
-          headingClassName='text-white text-center'
-          descriptionClassName='text-white text-center'
-        />
-      </Reveal>
+      <SectionHeader
+        title={<>Flexible Engagement Models</>}
+        description={
+          <>
+            Follow these simple steps to connect with our expert developers and
+            bring your vision to life.
+          </>
+        }
+        headingClassName='text-white text-center'
+        descriptionClassName='text-white text-center'
+      />
 
       <div className='grid lg:grid-cols-3 md:grid-cols-2 lg:gap-[50px] md:gap-10 gap-5 mt-[50px] relative'>
         {modelData.map((service, index) => (

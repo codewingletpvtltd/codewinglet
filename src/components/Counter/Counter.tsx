@@ -74,9 +74,7 @@ const ListItems: React.FC<{ items: ListItemProps[] }> = ({ items }) => (
         className='lg:border-e border-e-darkBorder border-b border-b-darkBorder lg:[&:nth-child(even)]:border-e-0 border-e-0 lg:[&:nth-of-type(3)]:border-b-0 [&:nth-of-type(4)]:border-b-0'
         key={index}
       >
-        <Reveal>
-          <ListItem {...item} />
-        </Reveal>
+        <ListItem {...item} />
       </div>
     ))}
 
@@ -85,10 +83,6 @@ const ListItems: React.FC<{ items: ListItemProps[] }> = ({ items }) => (
 );
 
 // Counter component that ties everything together
-const Counter: React.FC = () => (
-  <Reveal>
-    <ListItems items={data} />
-  </Reveal>
-);
+const Counter: React.FC = () => <ListItems items={data} />;
 
 export default Counter;

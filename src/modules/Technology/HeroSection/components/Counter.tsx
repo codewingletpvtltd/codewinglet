@@ -1,6 +1,5 @@
 'use client';
 import { Typography } from '@codewinglet/components';
-import Reveal from '@codewinglet/components/Reveal';
 import AboutCount from '@codewinglet/modules/Home/AboutUs/components/AboutCount';
 
 type ListItemProps = {
@@ -49,11 +48,9 @@ const ListItem = ({ data }: { data: ListItemProps[] }) => (
 
 const Counter = () => (
   <>
-    <Reveal>
-      <div className='lg:mt-28 mt-5 flex gap-16 pb-20'>
-        <ListItem data={data} />
-      </div>
-    </Reveal>
+    <div className='lg:mt-28 mt-5 flex gap-16 pb-20'>
+      <ListItem data={data} />
+    </div>
   </>
 );
 

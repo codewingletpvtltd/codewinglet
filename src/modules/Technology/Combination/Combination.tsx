@@ -92,19 +92,17 @@ const Combination = () => {
         id='combination'
       >
         <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
-          <Reveal>
-            <SectionHeader
-              title={<>Most-preferred AngularJS combinations</>}
-              description={
-                <>
-                  Angular has earned the trust of some of the most influential
-                  companies in the tech world, including
-                </>
-              }
-              headingClassName='text-primary'
-              descriptionClassName='text-primary'
-            />
-          </Reveal>
+          <SectionHeader
+            title={<>Most-preferred AngularJS combinations</>}
+            description={
+              <>
+                Angular has earned the trust of some of the most influential
+                companies in the tech world, including
+              </>
+            }
+            headingClassName='text-primary'
+            descriptionClassName='text-primary'
+          />
 
           <div className='lg:mt-[50px] md:mt-10 mt-5'>
             <Slider {...settings}>

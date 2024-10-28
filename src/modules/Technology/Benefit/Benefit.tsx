@@ -2,7 +2,6 @@
 import Image from 'next/image';
 
 import { SectionHeader, Typography } from '@codewinglet/components';
-import Reveal from '@codewinglet/components/Reveal';
 
 import { BenefitCardProps, benefitData } from './benefitData';
 
@@ -36,20 +35,18 @@ const BenefitCard: React.FC<BenefitCardProps> = ({
 const Benefit: React.FC = () => (
   <div className='bg-bg lg:py-20 md:py-[60px] py-10 scroll-mt-40' id='whyUs'>
     <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
-      <Reveal>
-        <SectionHeader
-          title={<>A Simple Guide to Angular Development</>}
-          description={
-            <>
-              Choose AngularJS for its robust MVC architecture, two-way data
-              binding, and comprehensive community support. Here’s why it’s
-              preferred for dynamic web application development:
-            </>
-          }
-          headingClassName='text-primary'
-          descriptionClassName='text-primary'
-        />
-      </Reveal>
+      <SectionHeader
+        title={<>A Simple Guide to Angular Development</>}
+        description={
+          <>
+            Choose AngularJS for its robust MVC architecture, two-way data
+            binding, and comprehensive community support. Here’s why it’s
+            preferred for dynamic web application development:
+          </>
+        }
+        headingClassName='text-primary'
+        descriptionClassName='text-primary'
+      />
 
       <div className='bg-white mt-[50px]'>
         <Typography className='text-primary text-h6 p-[30px] border-b border-headerBoxBorder'>
