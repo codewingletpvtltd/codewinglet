@@ -25,25 +25,13 @@ const WhyChoose = () => (
   <>
     <div className='bg-white lg:py-20 md:py-[60px] py-10'>
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto lg:flex block gap-[50px]'>
-        <div className='w-[675px] relative'>
+        <div className='w-[675px]'>
           <Image
             src='/assets/Technologies/pages/whyChoose.png'
             alt='whyChoose'
             width={675}
             height={748}
           />
-          <div className='bg-black w-[252px] h-[199px] absolute bottom-0 border-[16px] border-white border-l-0 border-b-0'>
-            <Image
-              src='/assets/Technologies/pages/codewingletLogo.svg'
-              alt='codewingletLogo'
-              width={67}
-              height={69}
-              className='m-auto codewinglet_logo pt-8'
-            />
-            <Typography className='text-h4 text-white font-light text-center'>
-              <span className='font-medium'>code</span> winglet
-            </Typography>
-          </div>
         </div>
         <div className='relative lg:w-[715px]'>
           <SectionHeader
@@ -57,7 +45,7 @@ const WhyChoose = () => (
               </>
             }
             headingClassName='text-primary !text-h2 w-[582px] pt-[50px]'
-            descriptionClassName='text-secondary pt-6 !text-subtitle2Light'
+            descriptionClassName='text-secondary pt-1 !text-subtitle2Light border-l-[5px] border-primary pl-[15px]'
           />
 
           <div className='mt-[30px]'>

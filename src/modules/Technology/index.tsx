@@ -8,7 +8,9 @@ import Combination from './Combination/Combination';
 import Companies from './Companies/Companies';
 import FlexibleModels from './FlexibleModels/FlexibleModels';
 import HeroSection from './HeroSection/HeroSection';
+import PreviousWork from './PreviousWork/PreviousWork';
 import Services from './Services/services';
+import Specialist from './Specialist/Specialist';
 import TechnologySubMenu from './TechnologySubMenu/TechnologySubMenu';
 import WhyChoose from './WhyChoose/WhyChoose';
 
@@ -19,8 +21,10 @@ const TechnologyPage = () => (
     <Companies />
     <Benefit />
     <Services />
-    <WhyChoose />
     <Combination />
+    <WhyChoose />
+    <Specialist />
+    <PreviousWork />
     <FlexibleModels />
     <OurService />
     <Technology />
