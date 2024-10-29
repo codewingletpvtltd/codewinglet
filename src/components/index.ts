@@ -33,4 +33,4 @@ export { default as CodeBlock } from './ui/CodeBlock';
 export * from './Blog';
 export * from './SearchBar';
 export * from './Sidebar';
-export * from './ui/Pagination';
+export * from './Pagination';

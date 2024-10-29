@@ -54,7 +54,7 @@ const BlogDescription: React.FC<{ contentData: BlogPost[] }> = ({
                         return (
                           <span
                             key={index}
-                            className='text-secondary md:text-paragraph1ExtraLight pb-8'
+                            className='text-secondary md:text-paragraph1ExtraLight mb-8 block'
                           >
                             {item.children.map((child) => {
                               let childText: React.ReactNode = child.text;

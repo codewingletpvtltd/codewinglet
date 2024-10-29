@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 
-interface AccordCompProps {
+export interface AccordCompProps {
   title: string;
   count: string;
   caption: string;

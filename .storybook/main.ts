@@ -23,6 +23,7 @@ const config: StorybookConfig = {
       '@codewinglet/utils': path.resolve(__dirname, '../src/utils'),
       '@codewinglet/assets': path.resolve(__dirname, '../src/assets/index.ts'),
       '@codewinglet/constants': path.resolve(__dirname, '../src/constants'),
+      '@codewinglet/hooks': path.resolve(__dirname, '../src/hooks'),
     };
     return config;
   },

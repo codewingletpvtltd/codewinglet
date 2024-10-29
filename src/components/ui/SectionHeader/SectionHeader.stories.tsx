@@ -13,10 +13,3 @@ export const Basic: StoryObj<typeof SectionHeader> = {
     description: 'This is a description',
   },
 };
-
-export const HighlightedWords: StoryObj<typeof SectionHeader> = {
-  args: {
-    title: 'This is a title',
-    description: 'This is a description',
-  },
-};
