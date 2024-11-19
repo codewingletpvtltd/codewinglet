@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import { Arrow } from '@codewinglet/assets';
+import CheckIcon from '@codewinglet/assets/icons/CheckIcon';
 import { Button, SectionHeader, Typography } from '@codewinglet/components';
 
 const services = [
@@ -25,7 +26,7 @@ const WhyChoose = () => (
   <>
     <div className='bg-white lg:py-20 md:py-[60px] py-10'>
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto lg:flex block gap-[50px]'>
-        <div className='w-[675px]'>
+        <div className='w-[645px]'>
           <Image
             src='/assets/Technologies/pages/whyChoose.png'
             alt='whyChoose'
@@ -39,9 +40,7 @@ const WhyChoose = () => (
             description={
               <>
                 Access comprehensive reports on productivity, enabling
-                data-driven optimizations. Evaluate our team's capabilities with
-                no long-term commitment, minimizing risk and ensuring a perfect
-                fit.
+                data-driven optimizations. Evaluate our team.
               </>
             }
             headingClassName='text-primary !text-h2 w-[582px] pt-[50px]'
@@ -51,14 +50,13 @@ const WhyChoose = () => (
           <div className='mt-[30px]'>
             <ul className='grid grid-cols-2 gap-5'>
               {services.map((service, index) => (
-                <li key={index} className='relative pl-8 text-[17px] uppercase'>
-                  <Image
-                    alt='Arrow'
-                    width='15'
-                    height='15'
-                    className='absolute left-0 top-1.5'
-                    src='/assets/OurService/check.svg'
-                  />
+                <li
+                  key={index} 
+                  className='relative pl-10 text-[17px] uppercase'
+                >
+                  <div className='text-success absolute left-0 top-0'>
+                    <CheckIcon />
+                  </div>
                   <Typography>{service}</Typography>
                 </li>
               ))}

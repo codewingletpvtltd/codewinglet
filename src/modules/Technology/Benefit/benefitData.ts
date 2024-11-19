@@ -11,7 +11,7 @@ export const benefitData: BenefitCardProps[] = [
     iconAlt: 'data',
     title: 'Two-Way Data Binding',
     description:
-      'Ensures seamless synchronization between the model & UI for easier data manage.',
+      'Ensures seamless alignment between the model & UI for easier data management.',
   },
   {
     iconSrc: '/assets/Technologies/pages/support.svg',
@@ -44,7 +44,7 @@ export const benefitData: BenefitCardProps[] = [
   {
     iconSrc: '/assets/Technologies/pages/term.svg',
     iconAlt: 'term',
-    title: 'Long-Term Support from Google',
+    title: 'Google’s Extended Support',
     description:
       'Ensures regular updates and improvements to keep the framework secure.',
   },

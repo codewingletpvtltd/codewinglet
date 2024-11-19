@@ -109,7 +109,7 @@ const Combination = () => {
               {technologies.map((tech) => (
                 <div
                   key={tech.id}
-                  className='bg-white p-10 mr-[50px] 2xl:!w-[435px] lg:!w-[400px] md:!w-[374px] !w-[324px] group'
+                  className='bg-white p-10 mr-[50px] 2xl:!w-[435px] lg:!w-[400px] md:!w-[374px] !w-[324px] group hover:border border-headerBoxBorder cursor-pointer'
                 >
                   <div className='flex justify-center items-center gap-5'>
                     {/* First Image - Order 1 */}
