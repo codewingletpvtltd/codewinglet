@@ -3,6 +3,7 @@ export interface ModelPoint {
 }
 
 export interface ModelCardProps {
+  icon: string;
   title: string;
   description: string;
   points: ModelPoint[];
@@ -10,68 +11,51 @@ export interface ModelCardProps {
 
 export const modelData: ModelCardProps[] = [
   {
-    title: 'Fixed Price model',
+    icon: '/assets/Technologies/pages/hourly.svg',
+    title: 'Hourly-Based Model',
     description:
-      'It provides clear deliverables while minimizing financial risks. This model offers a structured approach with a set cost, ensuring predictability in expenses.',
+      'Ideal for short-term or urgent projects with flexible needs. Pay only for hours worked, with transparent progress.',
     points: [
       {
-        heading: 'Transparent Financial Management',
+        heading: 'Flexible and cost-effective',
       },
       {
-        heading: 'Defined Deliverables for Success',
+        heading: 'Pay-as-you-go model',
       },
       {
-        heading: 'Timely Delivery',
+        heading: 'Full transparency with time tracking',
       },
       {
-        heading: 'Financial Security Against Unforeseen Costs',
+        heading: 'Adjust team size as needed',
       },
       {
-        heading: 'Performance-Based Payment Structure',
+        heading: 'Monthly billing cycle',
+      },
+      {
+        heading: 'Perfect for small-scale projects or ongoing support',
       },
     ],
   },
   {
-    title: 'Dedicated team',
+    icon: '/assets/Technologies/pages/monthly.svg',
+    title: 'Monthly-Based Model',
     description:
-      'If your company requires focused attention on a project, consider our dedicated teams. This model operates on a pay-as-you-go monthly rolling contract.',
+      'Perfect for long-term projects needing continuous development and support, with full-time dedicated resources.',
     points: [
       {
-        heading: 'No hidden costs',
+        heading: 'Dedicated developer/team at a fixed monthly rate',
       },
       {
-        heading: '160 hours of part-time & full-time work',
+        heading: '100% focus on your project',
       },
       {
-        heading: 'Monthly billing',
+        heading: 'Consistent progress and reporting',
       },
       {
-        heading: 'Pay only for measurable work',
+        heading: 'Unlimited project adjustments',
       },
       {
-        heading: 'Adjust team size based on project needs',
-      },
-    ],
-  },
-  {
-    title: 'Hourly Rate Model',
-    description:
-      'If your company has undefined projects and requires ongoing work, consider our hourly model. This pay-as-you-go contract charges you by the hour.',
-    points: [
-      {
-        heading: 'Quick Start',
-      },
-      {
-        heading: 'Variety of Expertise',
-      },
-      {
-        heading: 'Transparent Progress Tracking',
-      },
-      {
-        heading: 'Cost Efficiency for Short-Term Needs',
-      },
-      {
-        heading: 'Easier Adjustments',
+        heading: 'Ideal for large-scale or continuous development',
       },
     ],
   },
