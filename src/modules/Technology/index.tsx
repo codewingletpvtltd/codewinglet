@@ -1,35 +1,35 @@
 import { ClientTestimonials } from '@codewinglet/components';
-import ITService from '@codewinglet/components/ITService/ITService';
 import RelatedFaq from '@codewinglet/components/RelatedFaq';
 
-import Industries from '../Home/Industries';
 import OurService from '../Home/OurServices';
-import OurWorkProcess from '../Home/OurWorkProcess';
 import Technology from '../Home/Technology/Technology';
 import Benefit from './Benefit/Benefit';
 import Combination from './Combination/Combination';
 import Companies from './Companies/Companies';
+import FlexibleModels from './FlexibleModels/FlexibleModels';
 import HeroSection from './HeroSection/HeroSection';
-import Insights from './Insights/Insights';
+import PreviousWork from './PreviousWork/PreviousWork';
 import Services from './Services/services';
+import Specialist from './Specialist/Specialist';
 import TechnologySubMenu from './TechnologySubMenu/TechnologySubMenu';
+import WhyChoose from './WhyChoose/WhyChoose';
 
 const TechnologyPage = () => (
   <>
     <TechnologySubMenu />
     <HeroSection />
-    <Benefit />
     <Companies />
-    <Combination />
+    <Benefit />
     <Services />
-    <ITService />
-    <Insights />
+    <Combination />
+    <WhyChoose />
+    <Specialist />
+    <PreviousWork />
+    <FlexibleModels />
     <OurService />
     <Technology />
-    <Industries />
-    <OurWorkProcess />
+    {/* <LatestArticles /> */}
     <ClientTestimonials />
-    {/*<Blog />*/}
     <RelatedFaq />
   </>
 );

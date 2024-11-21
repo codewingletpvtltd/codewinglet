@@ -1,8 +1,6 @@
 import Image from 'next/image';
 import { toast } from 'react-toastify';
 
-import CopyIcon from '/assets/icons/CopyIcon.svg';
-
 interface CopyButtonProps {
   copyText: string;
   successMessage: string;

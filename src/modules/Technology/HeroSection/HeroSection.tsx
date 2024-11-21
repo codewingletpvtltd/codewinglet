@@ -6,81 +6,93 @@ import Link from 'next/link';
 import { Arrow } from '@codewinglet/assets';
 import { Button, SectionHeader, Typography } from '@codewinglet/components';
 
-import { techName } from './utils';
+import Counter from './components/Counter';
 
 const HeroSection = () => (
   <>
     <div
-      className='bg-black lg:pt-[328px] md:pt-60 pt-[176px] relative scroll-mt-40'
+      className='bg-black lg:pt-[218px] md:pt-60 pt-[176px] relative scroll-mt-40'
       id='overview'
     >
-      <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto lg:flex block gap-[50px] md:pb-20 pb-10'>
-        <div className='lg:mt-[65px] relative lg:w-[612px]'>
+      <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto lg:flex block gap-[50px]'>
+        <div className='relative lg:w-[680px]'>
           <SectionHeader
-            title={<>The best AngularJS development company</>}
+            title={<>Build the Future with Advanced AngularJS Development</>}
             description={
               <>
-                Are you ready to elevate your online presence and captivate your
-                audience with high-performance websites and applications?
-                <br /> <br />
-                Look no further than our Angular Frontend Framework development
-                services.
+                We offer AngularJS development services across diy6verse
+                industries, including eCommerce, healthcare, and education.
               </>
             }
-            headingClassName='text-white'
-            descriptionClassName='text-white pt-6'
+            headingClassName='text-white !text-[56px]'
+            descriptionClassName='text-white pt-6 !text-paragraph1ExtraLight'
           />
           <Button
-            className='text-white underline lg:mt-[60px] mt-8 py-0'
-            variant='link'
+            className='w-[298px] lg:mt-[60px] mt-8 py-0 mr-6'
+            variant='secondary'
           >
             <Link
               href='/contact-us'
               rel='noopener noreferrer'
               className='flex items-center justify-center gap-3'
             >
-              Explore blogs
+              Hire Angular Development
+            </Link>
+          </Button>
+          <Button
+            className='w-[298px] lg:mt-[60px] mt-8 py-0'
+            variant='outline'
+          >
+            <Link
+              href='/contact-us'
+              rel='noopener noreferrer'
+              className='flex items-center justify-center gap-3'
+            >
+              Schedule Free Consultation
               <Arrow />
             </Link>
           </Button>
+
+          <div>
+            <Counter />
+          </div>
         </div>
-        <div className='lg:w-[748px] lg:mt-0 mt-10'>
-          <Image
-            src='/assets/Technologies/pages/hero.jpg'
-            alt='hero'
-            width={748}
-            height={541}
-          />
-        </div>
-      </div>
-      <div className='container w-full lg:py-[50px] md:py-[46px] py-9 lg:px-[15px] sm:px-10 px-5 overflow-hidden relative'>
-        <div className='bg-primary w-fit lg:py-10 md:py-6 py-3 lg:px-9 md:px-[30px] px-3 border-t-[3px] border-white absolute bottom-0 left-0 z-[2]'>
-          <Image
-            src='/assets/Technologies/pages/angular.svg'
-            alt='angular'
-            width={94}
-            height={94}
-            className='mx-auto lg:w-[94] lg:h-[94] md:w-16 w-10 md:h-16 h-10'
-          />
-          <Typography className='lg:text-h6 md:text-tagLight text-tagExtraLight text-white mt-4'>
-            Angular JS
-          </Typography>
-        </div>
-        <div className='flex shrink-0 marquee lg:py-[30px] md:py-3 py-1.5 border-y border-primary'>
-          {techName.map((tech) => (
-            <div key={tech.id} className='flex shrink-0 w-auto'>
-              <Typography className='text-white lg:text-h2 md:text-subtitle1 text-tagExtraLight technology-hero font-semibold'>
-                {tech.title}
-              </Typography>
-              <Image
-                alt={tech.alt}
-                src={tech.image}
-                width={34}
-                height={34}
-                className='md:mx-[50px] mx-3 md:w-[34px] w-2'
-              />
-            </div>
-          ))}
+        <div className='mx-auto mt-auto relative'>
+          <div className='bg-bg border-[5px] border-[#313131] w-[226px] text-center absolute -right-20 top-36 py-4'>
+            <Typography className='text-primary text-[30px] leading-7'>
+              150+
+            </Typography>
+            <Typography className='text-primary text-paragraph1Light'>
+              Successful projects
+            </Typography>
+          </div>
+
+          <div className='relative z-[1px]'>
+            <Image
+              src='/assets/Technologies/pages/hero.png'
+              alt='hero'
+              width={490}
+              height={690}
+              className=''
+            />
+            <Image
+              src='/assets/Technologies/pages/angular_logo.svg'
+              alt='angular_logo'
+              width={72}
+              height={72}
+              className='absolute z-[2] top-[50%] left-[53%]'
+            />
+            <Image
+              src='/assets/Technologies/pages/laptopBg.svg'
+              alt='laptopBg'
+              width={278}
+              height={164}
+              className='absolute z-[1] top-[46%] left-[32%]'
+            />
+            <Typography className='absolute z-20 top-[64%] left-[43%] text-white text-h5 uppercase'>
+              Angular JS.
+            </Typography>
+          </div>
         </div>
       </div>
     </div>

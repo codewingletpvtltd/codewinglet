@@ -101,7 +101,7 @@ const Combination = () => {
               </>
             }
             headingClassName='text-primary'
-            descriptionClassName='text-secondary'
+            descriptionClassName='text-primary'
           />
 
           <div className='lg:mt-[50px] md:mt-10 mt-5'>
@@ -109,7 +109,7 @@ const Combination = () => {
               {technologies.map((tech) => (
                 <div
                   key={tech.id}
-                  className='bg-white p-10 mr-[50px] 2xl:!w-[435px] lg:!w-[400px] md:!w-[374px] !w-[324px]'
+                  className='bg-white p-10 mr-[50px] 2xl:!w-[435px] lg:!w-[400px] md:!w-[374px] !w-[324px] group hover:border border-headerBoxBorder cursor-pointer'
                 >
                   <div className='flex justify-center items-center gap-5'>
                     {/* First Image - Order 1 */}
@@ -121,7 +121,7 @@ const Combination = () => {
                       className='order-1 lg:w-[89px] lg:h-[89px] w-[50px] h-[50px]'
                     />
                     {/* Span - Order 2 */}
-                    <span className='text-secondary text-h4 font-extralight order-2'>
+                    <span className='text-secondary text-h4 font-extralight order-2 group-hover:rotate-180 transform'>
                       +
                     </span>
                     {/* Second Image - Order 3 */}
