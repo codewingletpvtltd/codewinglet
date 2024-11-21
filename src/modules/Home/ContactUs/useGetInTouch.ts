@@ -44,7 +44,7 @@ const useGetInTouch = () => {
       let error = { ...errors };
 
       if (!isPhoneValid) {
-        Object.assign(error, { phone: 'Please enter valid phone address.' });
+        Object.assign(error, { phone: 'Please enter valid phone number.' });
       } else {
         Object.assign(error, { phone: '' });
       }

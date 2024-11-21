@@ -5,7 +5,7 @@ import { Arrow } from '@codewinglet/assets';
 import { Button, SectionHeader, Typography } from '@codewinglet/components';
 
 const OurTeam = () => (
-  <div className='bg-bg lg:py-20 md:py-[60px] py-10 scroll-mt-56' id='employee'>
+  <div className='bg-bg lg:py-20 md:py-[60px] py-10 scroll-mt-32' id='employee'>
     <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto flex lg:flex-row flex-col lg:gap-[100px] gap-10 lg:items-center'>
       <div className='flex flex-col justify-between lg:order-1 order-2'>
         <div className='bg-white md:p-[60px] px-5 py-[30px] lg:mx-0 2xl:w-[624px] lg:w-[592px] w-auto lg:h-[675px] relative flex flex-col justify-between'>
