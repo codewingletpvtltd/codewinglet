@@ -20,7 +20,7 @@ const Companies = () => (
           descriptionClassName='text-primary text-center'
         />
         <div className='relative overflow-hidden'>
-          <div className='mt-[50px] relative marquee flex flex-shrink-0 gap-24'>
+          <div className='mt-[50px] relative marquee flex flex-shrink-0 2xl:gap-24 gap-0'>
             <Image
               src='/assets/Technologies/pages/microsoft.svg'
               alt='microsoft'

@@ -34,12 +34,12 @@ const ModelCard: React.FC<ModelCardProps> = ({
   description,
   points,
 }) => (
-  <div className='bg-white p-[15px] h-fit hover:-translate-y-4 transition-all ease-linear duration-300 cursor-pointer group w-[447px]'>
+  <div className='bg-white p-[15px] hover:-translate-y-4 transition-all ease-linear duration-300 cursor-pointer group 2xl:w-[447px] w-[400px] h-auto'>
     <div className='bg-black flex gap-[26px] items-center p-[25px] transition-all duration-300'>
       <div className='bg-white w-[68px] h-[68px] flex items-center justify-center rounded-full text-primary transition-all duration-300'>
         <img src={icon} alt={icon} />
       </div>
-      <Typography className='lg:text-h6 text-tagBold text-white'>
+      <Typography className='2xl:text-h6 lg:text-subtitle2 text-tagBold text-white'>
         {title}
       </Typography>
     </div>
@@ -55,7 +55,7 @@ const ModelCard: React.FC<ModelCardProps> = ({
 // Main component
 const FlexibleModels: React.FC = () => (
   <div className='bg-black lg:py-20 md:py-[60px] py-10 scroll-mt-40' id='whyUs'>
-    <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto flex gap-[65px]'>
+    <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto flex 2xl:gap-[65px] gap-10'>
       <div className='bg-primary text-white p-5 w-[400px]'>
         <Image
           src='/assets/Technologies/pages/flexible_model.png'
@@ -112,7 +112,7 @@ const FlexibleModels: React.FC = () => (
           descriptionClassName='text-white'
         />
 
-        <div className='lg:gap-[50px] md:gap-10 gap-5 mt-[50px] relative flex'>
+        <div className='2xl:gap-[50px] md:gap-10 gap-5 mt-[50px] relative flex'>
           {modelData.map((service, index) => (
             <ModelCard
               key={index}

@@ -26,12 +26,13 @@ const WhyChoose = () => (
   <>
     <div className='bg-white lg:py-20 md:py-[60px] py-10'>
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto lg:flex block gap-[50px]'>
-        <div className='w-[645px]'>
+        <div className='2xl:w-[645px] w-[544px]'>
           <Image
             src='/assets/Technologies/pages/whyChoose.png'
             alt='whyChoose'
             width={675}
             height={748}
+            className='2xl:w-[675px] w-[544px]'
           />
         </div>
         <div className='relative lg:w-[715px]'>
@@ -51,7 +52,7 @@ const WhyChoose = () => (
             <ul className='grid grid-cols-2 gap-5'>
               {services.map((service, index) => (
                 <li
-                  key={index} 
+                  key={index}
                   className='relative pl-10 text-[17px] uppercase'
                 >
                   <div className='text-success absolute left-0 top-0'>
@@ -65,7 +66,7 @@ const WhyChoose = () => (
 
           <Button
             className='w-[224px] lg:mt-[50px] mt-8 py-0'
-            variant='default'
+            variant='blackOutline'
           >
             <Link
               href='/contact-us'

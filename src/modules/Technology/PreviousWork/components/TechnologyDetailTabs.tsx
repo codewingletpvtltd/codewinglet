@@ -79,7 +79,7 @@ const TechnologyDetailSection: React.FC = () => {
       />
 
       <div className='flex justify-end relative'>
-        <div className='bg-black flex w-[975px] h-[624px]'>
+        <div className='bg-black flex 2xl:w-[975px] w-[846px] h-[624px]'>
           {activeTabContent ? (
             <TechnologyDetailContent content={activeTabContent} />
           ) : (

@@ -6,7 +6,7 @@ import { Button, SectionHeader } from '@codewinglet/components';
 function ServiceTitle() {
   return (
     <div>
-      <div className='lg:w-[634px] sticky lg:top-[230px]'>
+      <div className='2xl:w-[634px] w-[550px] sticky lg:top-[230px]'>
         <SectionHeader
           title={<>Service we offered in Angular development</>}
           description={
