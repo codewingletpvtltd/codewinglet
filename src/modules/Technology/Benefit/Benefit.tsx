@@ -12,7 +12,7 @@ const BenefitCard: React.FC<BenefitCardProps> = ({
   title,
   description,
 }) => (
-  <div className='bg-bg hover:bg-white p-[30px] group cursor-pointer transform duration-300'>
+  <div className='bg-bg hover:bg-white lg:p-[30px] p-[25px] group cursor-pointer transform duration-300'>
     <div className='bg-white group-hover:bg-bg w-[50px] h-[50px] flex items-center justify-center mb-[26px] transform duration-300'>
       <Image
         src={iconSrc}
@@ -25,7 +25,7 @@ const BenefitCard: React.FC<BenefitCardProps> = ({
     <Typography className='lg:text-subtitle2 text-tagBold pb-2 text-primary'>
       {title}
     </Typography>
-    <Typography className='lg:text-paragraph2Light text-tagBold text-primary'>
+    <Typography className='lg:text-paragraph2Light text-tagBold text-primary font-light'>
       {description}
     </Typography>
   </div>
@@ -45,16 +45,16 @@ const Benefit: React.FC = () => (
           </>
         }
         headingClassName='text-primary'
-        descriptionClassName='text-primary'
+        descriptionClassName='text-primary lg:!text-subtitle2Light !text-paragraph1ExtraLight'
       />
 
       <div className='bg-white mt-[50px]'>
-        <Typography className='text-primary text-h6 p-[30px] border-b border-headerBoxBorder'>
+        <Typography className='text-primary lg:text-h6 text-subtitle2 lg:p-[30px] p-[25px] border-b border-headerBoxBorder'>
           Benefit of using Angular Development
         </Typography>
       </div>
-      <div className='bg-white p-[30px]'>
-        <div className='grid lg:grid-cols-3 md:grid-cols-2 lg:gap-[30px] md:gap-10 gap-5 relative'>
+      <div className='bg-white lg:p-[30px] p-[25px]'>
+        <div className='grid lg:grid-cols-3 md:grid-cols-2 lg:gap-[30px] md:gap-[25px] gap-5 relative'>
           {benefitData.map((service, index) => (
             <BenefitCard
               key={index}

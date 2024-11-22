@@ -26,7 +26,7 @@ const WhyChoose = () => (
   <>
     <div className='bg-white lg:py-20 md:py-[60px] py-10'>
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto lg:flex block gap-[50px]'>
-        <div className='2xl:w-[645px] w-[544px]'>
+        <div className='2xl:w-[645px] w-[544px] lg:m-0 m-auto'>
           <Image
             src='/assets/Technologies/pages/whyChoose.png'
             alt='whyChoose'
@@ -44,7 +44,7 @@ const WhyChoose = () => (
                 data-driven optimizations. Evaluate our team.
               </>
             }
-            headingClassName='text-primary !text-h2 w-[582px] pt-[50px]'
+            headingClassName='text-primary lg:!text-h2 !text-[36px] w-[582px] pt-[50px]'
             descriptionClassName='text-secondary pt-1 !text-subtitle2Light border-l-[5px] border-primary pl-[15px]'
           />
 

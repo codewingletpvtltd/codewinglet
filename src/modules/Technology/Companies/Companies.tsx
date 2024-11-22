@@ -6,7 +6,10 @@ import { SectionHeader } from '@codewinglet/components';
 
 const Companies = () => (
   <>
-    <div className='bg-white sm:py-20 py-10 scroll-mt-40' id='whoUsed'>
+    <div
+      className='bg-white lg:py-20 md:py-[60px] py-10 scroll-mt-40'
+      id='whoUsed'
+    >
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
         <SectionHeader
           title={<>Top Companies Using Angular</>}
@@ -17,10 +20,10 @@ const Companies = () => (
             </>
           }
           headingClassName='text-primary lg:!text-h2 md:!text-[35px] !text-subtitle2 text-center'
-          descriptionClassName='text-primary text-center'
+          descriptionClassName='text-primary text-center lg:!text-subtitle2Light !text-paragraph1ExtraLight'
         />
         <div className='relative overflow-hidden'>
-          <div className='mt-[50px] relative marquee flex flex-shrink-0 2xl:gap-24 gap-0'>
+          <div className='mt-[50px] relative marquee flex flex-shrink-0 2xl:gap-24 lg:gap-0 gap-24'>
             <Image
               src='/assets/Technologies/pages/microsoft.svg'
               alt='microsoft'
