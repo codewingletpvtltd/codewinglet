@@ -11,14 +11,14 @@ import { ModelCardProps, ModelPoint, modelData } from './modelData';
 
 const ModelPoints: React.FC<{ points: ModelPoint[] }> = ({ points }) => (
   <>
-    <div className='flex flex-col gap-5 pt-[15px]'>
+    <div className='flex flex-col md:gap-5 gap-3 pt-[15px]'>
       {points.map((point, pointIndex) => (
         <div key={pointIndex}>
-          <div className='relative pl-11'>
-            <div className='text-success absolute left-0 -top-0.5'>
-              <CheckIcon />
+          <div className='relative md:pl-11 pl-8'>
+            <div className='text-success absolute left-0 md:-top-0.5 top-[1px]'>
+              <CheckIcon className='w-5 h-5' />
             </div>
-            <Typography className='lg:text-paragraph2 text-paragraph1Light text-primary'>
+            <Typography className='lg:text-paragraph2 md:text-paragraph1Light text-tagLight text-primary'>
               {point.heading}
             </Typography>
           </div>
@@ -35,16 +35,22 @@ const ModelCard: React.FC<ModelCardProps> = ({
   points,
 }) => (
   <div className='bg-white p-[15px] hover:-translate-y-4 transition-all ease-linear duration-300 cursor-pointer group 2xl:w-[447px] lg:w-[400px] h-auto'>
-    <div className='bg-black flex gap-[26px] items-center p-[25px] transition-all duration-300'>
-      <div className='bg-white w-[68px] h-[68px] flex items-center justify-center rounded-full text-primary transition-all duration-300'>
-        <img src={icon} alt={icon} />
+    <div className='bg-black flex gap-[26px] items-center md:p-[25px] p-3 transition-all duration-300'>
+      <div className='bg-white md:w-[68px] md:h-[68px] w-10 h-10 flex items-center justify-center rounded-full text-primary transition-all duration-300'>
+        <Image
+          src={icon}
+          alt={icon}
+          className='md:w-[30px] w-4 md:h-[30px] h-4'
+          width={30}
+          height={30}
+        />
       </div>
-      <Typography className='2xl:text-h6 lg:text-subtitle2 text-subtitle2 text-white'>
+      <Typography className='2xl:text-h6 lg:text-subtitle2 md:text-subtitle2 text-paragraph2 text-white'>
         {title}
       </Typography>
     </div>
-    <div className='px-2.5 pb-[15px]'>
-      <Typography className='lg:text-paragraph2Light text-paragraph2Light text-secondary py-[15px] border-headerBoxBorder border-dashed border-b'>
+    <div className='md:px-2.5 md:pb-[15px]'>
+      <Typography className='lg:text-paragraph2Light md:text-paragraph2Light text-tagExtraLight text-secondary py-[15px] border-headerBoxBorder border-dashed border-b'>
         {description}
       </Typography>
       <ModelPoints points={points} />
@@ -69,22 +75,22 @@ const FlexibleModels: React.FC = () => (
             </>
           }
           headingClassName='text-white lg:hidden block'
-          descriptionClassName='text-white lg:!text-subtitle2Light !text-paragraph1ExtraLight lg:hidden block mb-10'
+          descriptionClassName='text-white lg:!text-subtitle2Light md:!text-paragraph1ExtraLight !text-tagLight lg:hidden block md:mb-10 mb-5'
         />
-        <div className='bg-primary text-white p-5 lg:w-[400px] lg:block flex gap-[30px]'>
+        <div className='bg-primary text-white p-5 lg:w-[400px] lg:block md:flex block gap-[30px]'>
           <Image
             src='/assets/Technologies/pages/flexible_model.png'
             alt='flexible_model'
             width={360}
             height={267}
-            className='lg:w-[360px] w-[272px] object-cover'
+            className='lg:w-[360px] md:w-[272px] object-cover'
           />
 
           <div>
-            <Typography className='text-h6 font-light lg:mt-[30px] mt-2.5'>
+            <Typography className='md:text-h6 text-paragraph2 font-light lg:mt-[30px] mt-2.5 md:text-left text-center'>
               Hire Expert Developers
             </Typography>
-            <Typography className='text-[23px] font-light'>
+            <Typography className='md:text-[23px] text-paragraph2 font-light md:text-left text-center'>
               With <span className='font-semibold'>15-Day Risk-Free Trial</span>
             </Typography>
             <Image
@@ -92,20 +98,20 @@ const FlexibleModels: React.FC = () => (
               alt='developerCurve'
               width={264}
               height={19}
-              className='ml-[58px]'
+              className='md:ml-[58px] sm:ml-4 md:w-[264px] w-[181px] m-auto'
             />
-            <Typography className='text-paragraph2Light lg:pt-[38px] pt-5 flex gap-2.5 items-baseline'>
+            <Typography className='md:text-paragraph2Light text-tagExtraLight lg:pt-[38px] pt-5 flex gap-2.5 items-baseline'>
               <Arrow className='flex-shrink-0' />
               We’re offering a risk-free 15-day trial to help you assess our
               expertise and workflow.
             </Typography>
-            <Typography className='text-paragraph2Light pt-[15px] flex gap-2.5 items-baseline'>
+            <Typography className='md:text-paragraph2Light text-tagExtraLight pt-[15px] flex gap-2.5 items-baseline'>
               <Arrow className='flex-shrink-0' />
               Experience our capabilities without any financial commitment.
             </Typography>
 
             <Button
-              className='w-[331px] lg:mt-[60px] mt-8 py-0 text-primary hover:text-white hover:border-white border'
+              className='md:w-[331px] w-full lg:mt-[60px] mt-8 py-0 text-primary hover:text-white hover:border-white border'
               variant='secondary'
             >
               <Link
@@ -113,7 +119,7 @@ const FlexibleModels: React.FC = () => (
                 rel='noopener noreferrer'
                 className='flex items-center justify-center gap-3'
               >
-                Hire Angular Development
+                Hire our Experts <Arrow />
               </Link>
             </Button>
           </div>

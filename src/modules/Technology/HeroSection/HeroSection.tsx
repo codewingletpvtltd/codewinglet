@@ -21,14 +21,14 @@ const HeroSection = () => (
             description={
               <>
                 We offer AngularJS development services across diy6verse
-                industries, including eCommerce, healthcare, and education.1
+                industries, including eCommerce, healthcare, and education.
               </>
             }
-            headingClassName='text-white lg:!text-[56px] !text-h2'
-            descriptionClassName='text-white lg:pt-6 pt-3.5 !text-paragraph1ExtraLight'
+            headingClassName='text-white lg:!text-[56px] md:!text-h2 md:text-left text-center'
+            descriptionClassName='text-white lg:pt-6 md:pt-3.5 md:!text-paragraph1ExtraLight md:text-left text-center'
           />
           <Button
-            className='w-[298px] lg:mt-[60px] mt-8 py-0 mr-6'
+            className='md:w-[298px] w-full lg:mt-[60px] mt-8 py-0 md:mr-6'
             variant='secondary'
           >
             <Link
@@ -40,7 +40,7 @@ const HeroSection = () => (
             </Link>
           </Button>
           <Button
-            className='w-[298px] lg:mt-[60px] mt-8 py-0'
+            className='md:w-[298px] w-full lg:mt-[60px] md:mt-8 mt-[15px] py-0'
             variant='outline'
           >
             <Link
@@ -58,12 +58,12 @@ const HeroSection = () => (
           </div>
         </div>
         <div className='mx-auto mt-auto relative'>
-          <div className='bg-bg border-[5px] border-[#313131] w-[226px] text-center absolute lg:-right-20 right-4 top-36 py-4'>
-            <Typography className='text-primary text-[30px] leading-7'>
+          <div className='bg-bg border-[5px] border-[#313131] md:w-[226px] w-[117px] text-center absolute lg:-right-20 md:right-4 -right-2 md:top-36 top-[86px] md:py-4'>
+            <Typography className='text-primary md:text-[30px] text-paragraph2 leading-7'>
               150+
             </Typography>
-            <Typography className='text-primary text-paragraph1Light'>
-              Successful projects
+            <Typography className='text-primary md:text-paragraph1Light text-tagExtraLight'>
+              Happy Clients
             </Typography>
           </div>
 
@@ -73,23 +73,23 @@ const HeroSection = () => (
               alt='hero'
               width={490}
               height={690}
-              className='m-auto'
+              className='m-auto md:w-[490px] w-[293px]'
             />
             <Image
               src='/assets/Technologies/pages/angular_logo.svg'
               alt='angular_logo'
               width={72}
               height={72}
-              className='absolute z-[2] top-[50%] lg:left-[53%] left-[52.5%]'
+              className='absolute z-[2] top-[50%] lg:left-[53%] left-[52.5%] md:w-[72px] w-12'
             />
             <Image
               src='/assets/Technologies/pages/laptopBg.svg'
               alt='laptopBg'
               width={278}
               height={164}
-              className='absolute z-[1] top-[46%] lg:left-[32%] left-[37%]'
+              className='absolute z-[1] top-[46%] lg:left-[32%] md:left-[37%] left-[34%] md:w-[278px] w-[168px]'
             />
-            <Typography className='absolute z-20 top-[64%] lg:left-[43%] left-[46%] text-white text-h5 uppercase'>
+            <Typography className='absolute z-20 top-[64%] lg:left-[43%] left-[46%] text-white md:text-h5 text-[13px] uppercase'>
               Angular JS.
             </Typography>
           </div>

@@ -26,7 +26,7 @@ const WhyChoose = () => (
   <>
     <div className='bg-white lg:py-20 md:py-[60px] py-10'>
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto lg:flex block gap-[50px]'>
-        <div className='2xl:w-[645px] w-[544px] lg:m-0 m-auto'>
+        <div className='2xl:w-[645px] md:w-[544px] lg:m-0 m-auto'>
           <Image
             src='/assets/Technologies/pages/whyChoose.png'
             alt='whyChoose'
@@ -37,23 +37,23 @@ const WhyChoose = () => (
         </div>
         <div className='relative lg:w-[715px]'>
           <SectionHeader
-            title={<>Why Choose Codewinglet's  IT Services?</>}
+            title={<>Why Choose Codewinglet's IT Services?</>}
             description={
               <>
                 Access comprehensive reports on productivity, enabling
                 data-driven optimizations. Evaluate our team.
               </>
             }
-            headingClassName='text-primary lg:!text-h2 !text-[36px] w-[582px] pt-[50px]'
-            descriptionClassName='text-secondary pt-1 !text-subtitle2Light border-l-[5px] border-primary pl-[15px]'
+            headingClassName='text-primary lg:!text-h2 md:!text-[36px] md:w-[582px] md:pt-[50px] pt-10'
+            descriptionClassName='text-secondary pt-1 md:!text-subtitle2Light border-l-[5px] border-primary pl-[15px]'
           />
 
           <div className='mt-[30px]'>
-            <ul className='grid grid-cols-2 gap-5'>
+            <ul className='grid md:grid-cols-2 grid-cols-1 gap-5'>
               {services.map((service, index) => (
                 <li
                   key={index}
-                  className='relative pl-10 text-[17px] uppercase'
+                  className='relative pl-10 md:text-[17px] text-paragraph2 uppercase'
                 >
                   <div className='text-success absolute left-0 top-0'>
                     <CheckIcon />

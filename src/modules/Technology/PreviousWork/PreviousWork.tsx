@@ -20,9 +20,7 @@ const PreviousWork = () => (
           descriptionClassName='text-primary pt-1.5 !text-subtitle2Light text-center mb-[50px]'
         />
 
-        <div className='relative'>
-          <TechnologyDetailTabs />
-        </div>
+        <TechnologyDetailTabs />
       </div>
     </div>
   </>

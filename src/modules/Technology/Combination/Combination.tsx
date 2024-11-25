@@ -101,7 +101,7 @@ const Combination = () => {
               </>
             }
             headingClassName='text-primary'
-            descriptionClassName='text-primary lg:!text-subtitle2Light !text-paragraph1ExtraLight'
+            descriptionClassName='text-primary lg:!text-subtitle2Light md:!text-paragraph1ExtraLight'
           />
 
           <div className='lg:mt-[50px] md:mt-10 mt-5'>

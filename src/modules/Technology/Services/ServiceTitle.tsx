@@ -17,7 +17,7 @@ function ServiceTitle() {
             </>
           }
           headingClassName='text-white lg:!text-h2 md:!text-[36px] !text-subtitle2'
-          descriptionClassName='text-white pt-3 !mt-0 lg:!text-subtitle2Light !text-paragraph1ExtraLight'
+          descriptionClassName='text-white pt-3 !mt-0 lg:!text-subtitle2Light md:!text-paragraph1ExtraLight'
         />
 
         <Link
@@ -27,7 +27,7 @@ function ServiceTitle() {
         >
           <Button
             variant='outline'
-            className='w-[306px] gap-2.5 lg:mt-[50px] mt-10'
+            className='md:w-[306px] w-full gap-2.5 lg:mt-[50px] mt-10'
           >
             Book a free consulatation <Arrow />
           </Button>
