@@ -40,7 +40,7 @@ const ListItem = ({ data }: { data: ListItemProps[] }) => (
             <Typography>{number}</Typography>
           )}
         </Typography>
-        <Typography className=' text-white lg:text-paragraph1 md:text-paragraph1ExtraLight text-paragraph2Light'>
+        <Typography className='text-white lg:text-paragraph1 md:text-paragraph1ExtraLight text-paragraph2Light'>
           {label}
         </Typography>
       </div>

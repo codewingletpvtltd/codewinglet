@@ -12,20 +12,23 @@ const BenefitCard: React.FC<BenefitCardProps> = ({
   title,
   description,
 }) => (
-  <div className='bg-bg hover:bg-white p-[30px] group cursor-pointer transform duration-300'>
-    <div className='bg-white group-hover:bg-bg w-[50px] h-[50px] flex items-center justify-center mb-[26px] transform duration-300'>
-      <Image
-        src={iconSrc}
-        alt={iconAlt}
-        width={28}
-        height={28}
-        className='group-hover:[transform:_rotateY(180deg)] transform duration-300'
-      />
+  <div className='bg-bg hover:bg-white lg:p-[30px] md:p-[25px] p-[15px] group cursor-pointer transform duration-300'>
+    <div className='md:block flex items-center gap-3'>
+      <div className='bg-white group-hover:bg-bg md:w-[50px] w-10 md:h-[50px] h-10 flex items-center justify-center md:mb-[26px] mb-2 transform duration-300'>
+        <Image
+          src={iconSrc}
+          alt={iconAlt}
+          width={28}
+          height={28}
+          className='group-hover:[transform:_rotateY(180deg)] transform duration-300 md:w-[28px] w-5 md:h-[28px] h-5'
+        />
+      </div>
+
+      <Typography className='lg:text-subtitle2 text-tagBold pb-2 text-primary'>
+        {title}
+      </Typography>
     </div>
-    <Typography className='lg:text-subtitle2 text-tagBold pb-2 text-primary'>
-      {title}
-    </Typography>
-    <Typography className='lg:text-paragraph2Light text-tagBold text-primary'>
+    <Typography className='lg:text-paragraph2Light text-tagBold text-primary font-light'>
       {description}
     </Typography>
   </div>
@@ -45,16 +48,16 @@ const Benefit: React.FC = () => (
           </>
         }
         headingClassName='text-primary'
-        descriptionClassName='text-primary'
+        descriptionClassName='text-primary lg:!text-subtitle2Light md:!text-paragraph1ExtraLight'
       />
 
-      <div className='bg-white mt-[50px]'>
-        <Typography className='text-primary text-h6 p-[30px] border-b border-headerBoxBorder'>
+      <div className='bg-white md:mt-[50px] mt-5'>
+        <Typography className='text-primary lg:text-h6 md:text-subtitle2 text-paragraph2 lg:p-[30px] md:p-[25px] p-[15px] border-b border-headerBoxBorder'>
           Benefit of using Angular Development
         </Typography>
       </div>
-      <div className='bg-white p-[30px]'>
-        <div className='grid lg:grid-cols-3 md:grid-cols-2 lg:gap-[30px] md:gap-10 gap-5 relative'>
+      <div className='bg-white lg:p-[30px] md:p-[25px] p-[15px]'>
+        <div className='grid lg:grid-cols-3 md:grid-cols-2 lg:gap-[30px] md:gap-[25px] gap-[15px] relative'>
           {benefitData.map((service, index) => (
             <BenefitCard
               key={index}

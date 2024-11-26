@@ -11,7 +11,7 @@ import Counter from './components/Counter';
 const HeroSection = () => (
   <>
     <div
-      className='bg-black lg:pt-[218px] md:pt-60 pt-[176px] relative scroll-mt-40'
+      className='bg-black xl:pt-[218px] lg:pt-60 md:pt-48 pt-[176px] relative scroll-mt-40'
       id='overview'
     >
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto lg:flex block gap-[50px]'>
@@ -20,15 +20,15 @@ const HeroSection = () => (
             title={<>Build the Future with Advanced AngularJS Development</>}
             description={
               <>
-                We offer AngularJS development services across diy6verse
+                We offer AngularJS development services across diverse
                 industries, including eCommerce, healthcare, and education.
               </>
             }
-            headingClassName='text-white !text-[56px]'
-            descriptionClassName='text-white pt-6 !text-paragraph1ExtraLight'
+            headingClassName='text-white lg:!text-[56px] md:!text-h2 md:text-left text-center'
+            descriptionClassName='text-white lg:pt-6 md:pt-3.5 md:!text-paragraph1ExtraLight md:text-left text-center'
           />
           <Button
-            className='w-[298px] lg:mt-[60px] mt-8 py-0 mr-6'
+            className='md:w-[298px] w-full lg:mt-[60px] mt-8 py-0 md:mr-6'
             variant='secondary'
           >
             <Link
@@ -40,7 +40,7 @@ const HeroSection = () => (
             </Link>
           </Button>
           <Button
-            className='w-[298px] lg:mt-[60px] mt-8 py-0'
+            className='md:w-[298px] w-full lg:mt-[60px] md:mt-8 mt-[15px] py-0'
             variant='outline'
           >
             <Link
@@ -53,17 +53,17 @@ const HeroSection = () => (
             </Link>
           </Button>
 
-          <div>
+          <div className='lg:block hidden'>
             <Counter />
           </div>
         </div>
-        <div className='mx-auto mt-auto relative'>
-          <div className='bg-bg border-[5px] border-[#313131] w-[226px] text-center absolute -right-20 top-36 py-4'>
-            <Typography className='text-primary text-[30px] leading-7'>
+        <div className='mx-auto mt-auto relative lg:pt-0 md:pt-20 pt-10'>
+          <div className='bg-bg border-[5px] border-[#313131] md:w-[226px] w-[117px] text-center absolute lg:-right-20 md:right-4 -right-2 lg:top-36 md:top-56 top-[120px] md:py-4'>
+            <Typography className='text-primary md:text-[30px] text-paragraph2 leading-7'>
               150+
             </Typography>
-            <Typography className='text-primary text-paragraph1Light'>
-              Successful projects
+            <Typography className='text-primary md:text-paragraph1Light text-tagExtraLight'>
+              Happy Clients
             </Typography>
           </div>
 
@@ -73,25 +73,28 @@ const HeroSection = () => (
               alt='hero'
               width={490}
               height={690}
-              className=''
+              className='m-auto md:w-[490px] w-[293px]'
             />
             <Image
               src='/assets/Technologies/pages/angular_logo.svg'
               alt='angular_logo'
               width={72}
               height={72}
-              className='absolute z-[2] top-[50%] left-[53%]'
+              className='absolute z-[2] top-[50%] lg:left-[53%] left-[52.5%] md:w-[72px] w-12'
             />
             <Image
               src='/assets/Technologies/pages/laptopBg.svg'
               alt='laptopBg'
               width={278}
               height={164}
-              className='absolute z-[1] top-[46%] left-[32%]'
+              className='absolute z-[1] top-[46%] lg:left-[32%] md:left-[37%] left-[34%] md:w-[278px] w-[168px]'
             />
-            <Typography className='absolute z-20 top-[64%] left-[43%] text-white text-h5 uppercase'>
+            <Typography className='absolute z-20 top-[64%] lg:left-[43%] left-[46%] text-white md:text-h5 text-[13px] uppercase'>
               Angular JS.
             </Typography>
+          </div>
+          <div className='lg:hidden block pt-10'>
+            <Counter />
           </div>
         </div>
       </div>

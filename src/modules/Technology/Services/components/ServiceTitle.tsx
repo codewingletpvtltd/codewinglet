@@ -6,7 +6,7 @@ import { Button, SectionHeader } from '@codewinglet/components';
 function ServiceTitle() {
   return (
     <div>
-      <div className='lg:w-[634px] sticky lg:top-[230px]'>
+      <div className='2xl:w-[634px] lg:w-[550px] lg:sticky lg:top-[230px]'>
         <SectionHeader
           title={<>Service we offered in Angular development</>}
           description={
@@ -17,7 +17,7 @@ function ServiceTitle() {
             </>
           }
           headingClassName='text-white lg:!text-h2 md:!text-[36px] !text-subtitle2'
-          descriptionClassName='text-white pt-3'
+          descriptionClassName='text-white pt-3 !mt-0 lg:!text-subtitle2Light md:!text-paragraph1ExtraLight'
         />
 
         <Link
@@ -27,7 +27,7 @@ function ServiceTitle() {
         >
           <Button
             variant='outline'
-            className='w-[306px] gap-2.5 lg:mt-[50px] mt-10'
+            className='md:w-[306px] w-full gap-2.5 lg:mt-[50px] mt-10'
           >
             Book a free consulatation <Arrow />
           </Button>
