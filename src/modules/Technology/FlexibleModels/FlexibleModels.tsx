@@ -66,17 +66,19 @@ const FlexibleModels: React.FC = () => (
       id='whyUs'
     >
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto lg:flex 2xl:gap-[65px] gap-10'>
-        <SectionHeader
-          title={<>Flexible Engagement Models</>}
-          description={
-            <>
-              Select a model that fits your project requirements, budget,
-              timeline.
-            </>
-          }
-          headingClassName='text-white lg:hidden block'
-          descriptionClassName='text-white lg:!text-subtitle2Light md:!text-paragraph1ExtraLight !text-tagLight lg:hidden block md:mb-10 mb-5'
-        />
+        <div className='lg:hidden block'>
+          <SectionHeader
+            title={<>Flexible Engagement Models</>}
+            description={
+              <>
+                Select a model that fits your project requirements, budget,
+                timeline.
+              </>
+            }
+            headingClassName='text-white'
+            descriptionClassName='text-white lg:!text-subtitle2Light md:!text-paragraph1ExtraLight !text-tagLight md:mb-10 mb-5'
+          />
+        </div>
         <div className='bg-primary text-white p-5 lg:w-[400px] lg:block md:flex block gap-[30px]'>
           <Image
             src='/assets/Technologies/pages/flexible_model.png'

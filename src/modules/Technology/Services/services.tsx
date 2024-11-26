@@ -1,8 +1,8 @@
 'use client';
 
+import ServiceTitle from './components/ServiceTitle';
+import ServiceCard from './components/ServiceCard';
 import { servicesData } from './constants';
-import ServiceCard from './ServiceCard';
-import ServiceTitle from './ServiceTitle';
 
 const Services: React.FC = () => (
   <>

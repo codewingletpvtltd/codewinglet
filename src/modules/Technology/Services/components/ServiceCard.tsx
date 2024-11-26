@@ -1,6 +1,6 @@
 import { Typography } from '@codewinglet/components';
 
-import { ServiceCardProps } from './constants';
+import { ServiceCardProps } from '../constants';
 
 const ServiceCard: React.FC<ServiceCardProps> = ({
   icon,
