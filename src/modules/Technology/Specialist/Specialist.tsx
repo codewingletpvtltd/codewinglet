@@ -7,7 +7,7 @@ import { Button, SectionHeader } from '@codewinglet/components';
 
 const Specialist = () => (
   <>
-    <div className='bg-white lg:pb-20'>
+    <div className='bg-white lg:pb-20 hidden'>
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto lg:flex block gap-[50px] bg-primary'>
         <div className='text-center md:pt-[62px] pt-10 md:pb-20 pb-10 lg:w-9/12 mx-auto'>
           <SectionHeader

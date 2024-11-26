@@ -38,7 +38,7 @@ const ListItem = ({ data }: { data: ListItemProps[] }) => (
             <Typography>{number}</Typography>
           )}
         </Typography>
-        <Typography className='text-white lg:text-paragraph1 md:text-paragraph1ExtraLight text-tagExtraLight'>
+        <Typography className='text-white lg:text-paragraph1 md:text-paragraph1ExtraLight text-tagExtraLight font-light'>
           {label}
         </Typography>
       </div>
@@ -48,7 +48,7 @@ const ListItem = ({ data }: { data: ListItemProps[] }) => (
 
 const Counter = () => (
   <>
-    <div className='lg:mt-28 mt-5 flex md:gap-16 gap-12 pb-20'>
+    <div className='lg:mt-28 mt-5 flex md:gap-16 gap-12 md:pb-20 pb-10'>
       <ListItem data={data} />
     </div>
   </>

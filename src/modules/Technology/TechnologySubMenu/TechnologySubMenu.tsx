@@ -93,7 +93,7 @@ const TechnologySubMenu = () => {
     <>
       <div className='bg-white lg:mt-[86px] md:mt-[90px] mt-[78px] border-b border-headerBoxBorder fixed w-full z-10 submenus'>
         <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto flex'>
-          <Typography className='py-3 px-5 md:text-paragraph1Light text-tag bg-bg flex flex-shrink-0 font-normal'>
+          <Typography className='py-3 px-5 md:text-paragraph1Light text-tag bg-bg md:flex flex-shrink-0 font-normal hidden'>
             Angular JS
           </Typography>
           <div className='flex overflow-x-auto'>

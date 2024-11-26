@@ -12,7 +12,7 @@ const Companies = () => {
       width: 195,
       height: 42,
       className:
-        'lg:py-8 md:py-[50px] py-[11px] md:px-0 px-[30px] 2xl:mx-[40px] lg:mx-[84px] m-auto lg:w-[195px]',
+        'lg:py-8 md:py-0 py-[11px] md:px-0 px-[30px] 2xl:mx-[40px] lg:mx-[84px] m-auto lg:w-[195px]',
     },
     {
       src: '/assets/Technologies/pages/ibm.svg',
@@ -20,7 +20,7 @@ const Companies = () => {
       width: 98,
       height: 42,
       className:
-        'lg:py-8 md:py-[50px] py-[11px] md:px-0 px-[30px] 2xl:mx-auto lg:mx-[84px] m-auto lg:w-auto',
+        'lg:py-8 md:py-0 py-[11px] md:px-0 px-[30px] 2xl:mx-auto lg:mx-[84px] m-auto lg:w-auto',
     },
     {
       src: '/assets/Technologies/pages/google.svg',
@@ -28,7 +28,7 @@ const Companies = () => {
       width: 124,
       height: 42,
       className:
-        'lg:py-8 md:py-[50px] py-[11px] md:px-0 px-[30px] 2xl:mx-auto lg:mx-[84px] m-auto lg:w-auto',
+        'lg:py-8 md:py-0 py-[11px] md:px-0 px-[30px] 2xl:mx-auto lg:mx-[84px] m-auto lg:w-auto',
     },
     {
       src: '/assets/Technologies/pages/forbes.svg',
@@ -36,7 +36,7 @@ const Companies = () => {
       width: 148,
       height: 42,
       className:
-        'lg:py-8 md:py-[50px] py-[11px] md:px-0 px-[30px] 2xl:mx-auto lg:mx-[84px] m-auto lg:w-auto',
+        'lg:py-8 md:py-0 py-[11px] md:px-0 px-[30px] 2xl:mx-auto lg:mx-[84px] m-auto lg:w-auto',
     },
     {
       src: '/assets/Technologies/pages/paypal.svg',
@@ -44,7 +44,7 @@ const Companies = () => {
       width: 156,
       height: 42,
       className:
-        'lg:py-8 md:py-[50px] py-[11px] md:px-0 px-[30px] 2xl:mx-auto lg:mx-[84px] m-auto lg:w-auto',
+        'lg:py-8 md:py-0 py-[11px] md:px-0 px-[30px] 2xl:mx-auto lg:mx-[84px] m-auto lg:w-auto',
     },
   ];
 

@@ -16,8 +16,8 @@ const PreviousWork = () => (
               build robust, high-performing applications in our past projects.
             </>
           }
-          headingClassName='text-primary !text-h2 text-center'
-          descriptionClassName='text-primary pt-1.5 !text-subtitle2Light text-center mb-[50px]'
+          headingClassName='text-primary md:!text-h2 text-center'
+          descriptionClassName='text-primary pt-1.5 md:!text-subtitle2Light text-center md:mb-[50px] mb-5'
         />
 
         <TechnologyDetailTabs />

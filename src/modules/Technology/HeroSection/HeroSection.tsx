@@ -20,7 +20,7 @@ const HeroSection = () => (
             title={<>Build the Future with Advanced AngularJS Development</>}
             description={
               <>
-                We offer AngularJS development services across diy6verse
+                We offer AngularJS development services across diverse
                 industries, including eCommerce, healthcare, and education.
               </>
             }
@@ -53,12 +53,12 @@ const HeroSection = () => (
             </Link>
           </Button>
 
-          <div>
+          <div className='lg:block hidden'>
             <Counter />
           </div>
         </div>
-        <div className='mx-auto mt-auto relative'>
-          <div className='bg-bg border-[5px] border-[#313131] md:w-[226px] w-[117px] text-center absolute lg:-right-20 md:right-4 -right-2 md:top-36 top-[86px] md:py-4'>
+        <div className='mx-auto mt-auto relative lg:pt-0 md:pt-20 pt-10'>
+          <div className='bg-bg border-[5px] border-[#313131] md:w-[226px] w-[117px] text-center absolute lg:-right-20 md:right-4 -right-2 lg:top-36 md:top-56 top-[120px] md:py-4'>
             <Typography className='text-primary md:text-[30px] text-paragraph2 leading-7'>
               150+
             </Typography>
@@ -92,6 +92,9 @@ const HeroSection = () => (
             <Typography className='absolute z-20 top-[64%] lg:left-[43%] left-[46%] text-white md:text-h5 text-[13px] uppercase'>
               Angular JS.
             </Typography>
+          </div>
+          <div className='lg:hidden block pt-10'>
+            <Counter />
           </div>
         </div>
       </div>

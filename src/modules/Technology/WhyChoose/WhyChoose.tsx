@@ -35,7 +35,7 @@ const WhyChoose = () => (
             className='2xl:w-[675px] w-[544px]'
           />
         </div>
-        <div className='relative lg:w-[715px]'>
+        <div className='relative lg:w-[715px] flex flex-col'>
           <SectionHeader
             title={<>Why Choose Codewinglet's IT Services?</>}
             description={
@@ -44,11 +44,11 @@ const WhyChoose = () => (
                 data-driven optimizations. Evaluate our team.
               </>
             }
-            headingClassName='text-primary lg:!text-h2 md:!text-[36px] md:w-[582px] md:pt-[50px] pt-10'
+            headingClassName='text-primary lg:!text-h2 md:!text-[36px] md:w-[582px] lg:pt-[50px] pt-10'
             descriptionClassName='text-secondary pt-1 md:!text-subtitle2Light border-l-[5px] border-primary pl-[15px]'
           />
 
-          <div className='mt-[30px]'>
+          <div className='mt-[30px] lg:order-2 order-3'>
             <ul className='grid md:grid-cols-2 grid-cols-1 gap-5'>
               {services.map((service, index) => (
                 <li
@@ -65,7 +65,7 @@ const WhyChoose = () => (
           </div>
 
           <Button
-            className='w-[224px] lg:mt-[50px] mt-8 py-0'
+            className='w-[224px] lg:mt-[50px] mt-8 py-0 lg:order-3 order-2'
             variant='blackOutline'
           >
             <Link
