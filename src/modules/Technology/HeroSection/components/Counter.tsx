@@ -7,21 +7,6 @@ type ListItemProps = {
   label: string | React.ReactNode;
 };
 
-const data = [
-  {
-    number: 7,
-    label: 'Years experience',
-  },
-  {
-    number: 80,
-    label: 'Successful Projects',
-  },
-  {
-    number: '100%',
-    label: 'Client satisfaction',
-  },
-];
-
 const ListItem = ({ data }: { data: ListItemProps[] }) => (
   <>
     {data.map(({ number, label }, index) => (
@@ -46,7 +31,7 @@ const ListItem = ({ data }: { data: ListItemProps[] }) => (
   </>
 );
 
-const Counter = () => (
+const Counter = ({ data }: { data: ListItemProps[] }) => (
   <>
     <div className='lg:mt-28 mt-5 flex md:gap-16 gap-12 md:pb-20 pb-10'>
       <ListItem data={data} />

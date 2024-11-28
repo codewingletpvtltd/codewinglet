@@ -9,7 +9,7 @@ import {
 } from '@codewinglet/assets/index';
 
 export interface ServiceCardProps {
-  icon: React.ReactElement | React.ReactNode;
+  icon: any;
   iconAlt?: string;
   title: string;
   description: string;

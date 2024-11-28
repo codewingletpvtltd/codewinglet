@@ -164,7 +164,7 @@ const technology: ChildItemType = [
         label: 'Vue.js',
       },
       {
-        path: '/technology/angular',
+        path: '/technology/angularjs',
         label: 'Angular',
       },
     ],

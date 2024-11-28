@@ -5,6 +5,10 @@ export interface BenefitCardProps {
   description: string;
 }
 
+export interface BenefitProps {
+  details: any;
+}
+
 export const benefitData: BenefitCardProps[] = [
   {
     iconSrc: '/assets/Technologies/pages/data.svg',

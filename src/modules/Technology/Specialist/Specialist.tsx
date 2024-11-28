@@ -5,20 +5,18 @@ import Link from 'next/link';
 import { Arrow } from '@codewinglet/assets';
 import { Button, SectionHeader } from '@codewinglet/components';
 
-const Specialist = () => (
+interface SpecialistProps {
+  details: any;
+}
+
+const Specialist = ({ details }: SpecialistProps) => (
   <>
-    <div className='bg-white lg:pb-20 hidden'>
+    <div className='bg-white lg:pb-20'>
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto lg:flex block gap-[50px] bg-primary'>
         <div className='text-center md:pt-[62px] pt-10 md:pb-20 pb-10 lg:w-9/12 mx-auto'>
           <SectionHeader
-            title={<>Engage Our AngularJS Development Specialists</>}
-            description={
-              <>
-                Bring your app vision to life with our AngularJS development
-                experts. Schedule a free discovery session today to explore
-                tailored solutions for your business!
-              </>
-            }
+            title={<>{details.title.text}</>}
+            description={<>{details.description.text}</>}
             headingClassName='text-white lg:!text-h2 md:!text-[36px]'
             descriptionClassName='text-white pt-1.5 lg:!text-subtitle2Light md:!text-paragraph1ExtraLight'
           />
@@ -31,7 +29,7 @@ const Specialist = () => (
               rel='noopener noreferrer'
               className='flex items-center justify-center gap-3'
             >
-              Hire Our Skilled Developer
+              {details?.primaryLink?.title}
             </Link>
           </Button>
           <Button
@@ -43,7 +41,7 @@ const Specialist = () => (
               rel='noopener noreferrer'
               className='flex items-center justify-center gap-3'
             >
-              Book a Free Session
+              {details?.secondaryLink?.title}
               <Arrow />
             </Link>
           </Button>

@@ -2,20 +2,21 @@ import Link from 'next/link';
 
 import { Arrow } from '@codewinglet/assets';
 import { Button, SectionHeader } from '@codewinglet/components';
-
-function ServiceTitle() {
+interface ServiceTitleProps {
+  title: string;
+  description: string;
+  link: {
+    linkText: string;
+    url: string;
+  };
+}
+function ServiceTitle({ title, description, link }: ServiceTitleProps) {
   return (
     <div>
       <div className='2xl:w-[634px] lg:w-[550px] lg:sticky lg:top-[230px]'>
         <SectionHeader
-          title={<>Service we offered in Angular development</>}
-          description={
-            <>
-              In today's fast-paced digital world, mobile apps are the go-to
-              solution for businesses to engage with customers. Empower your
-              business to deliver exactly what users crave.
-            </>
-          }
+          title={<>{title}</>}
+          description={<>{description}</>}
           headingClassName='text-white lg:!text-h2 md:!text-[36px] !text-subtitle2'
           descriptionClassName='text-white pt-3 !mt-0 lg:!text-subtitle2Light md:!text-paragraph1ExtraLight'
         />
@@ -29,7 +30,8 @@ function ServiceTitle() {
             variant='outline'
             className='md:w-[306px] w-full gap-2.5 lg:mt-[50px] mt-10'
           >
-            Book a free consulatation <Arrow />
+            {link.linkText}
+            <Arrow />
           </Button>
         </Link>
       </div>

@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 import { SectionHeader, Typography } from '@codewinglet/components';
 
-import { BenefitCardProps, benefitData } from './benefitData';
+import { BenefitProps, BenefitCardProps } from './benefitData';
 
 // Subcomponent for Service Card
 const BenefitCard: React.FC<BenefitCardProps> = ({
@@ -35,36 +35,30 @@ const BenefitCard: React.FC<BenefitCardProps> = ({
 );
 
 // Main component
-const Benefit: React.FC = () => (
+const Benefit: React.FC<BenefitProps> = ({ details }) => (
   <div className='bg-bg lg:py-20 md:py-[60px] py-10 scroll-mt-40' id='whyUs'>
     <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
       <SectionHeader
-        title={<>A Simple Guide to Angular Development</>}
-        description={
-          <>
-            Choose AngularJS for its robust MVC architecture, two-way data
-            binding, and comprehensive community support. Here’s why it’s
-            preferred for dynamic web application development:
-          </>
-        }
+        title={<>{details?.heading}</>}
+        description={<>{details?.description}</>}
         headingClassName='text-primary'
         descriptionClassName='text-primary lg:!text-subtitle2Light md:!text-paragraph1ExtraLight'
       />
 
       <div className='bg-white md:mt-[50px] mt-5'>
         <Typography className='text-primary lg:text-h6 md:text-subtitle2 text-paragraph2 lg:p-[30px] md:p-[25px] p-[15px] border-b border-headerBoxBorder'>
-          Benefit of using Angular Development
+          {details?.subHeading.text}
         </Typography>
       </div>
       <div className='bg-white lg:p-[30px] md:p-[25px] p-[15px]'>
         <div className='grid lg:grid-cols-3 md:grid-cols-2 lg:gap-[30px] md:gap-[25px] gap-[15px] relative'>
-          {benefitData.map((service, index) => (
+          {details?.benefitPoints.map((benefitPoint: any, index: number) => (
             <BenefitCard
               key={index}
-              iconSrc={service.iconSrc}
-              iconAlt={service.iconAlt}
-              title={service.title}
-              description={service.description}
+              iconSrc={benefitPoint.images?.at(0)?.image.url}
+              iconAlt={benefitPoint.images?.at(0)?.title}
+              title={benefitPoint.title}
+              description={benefitPoint.description}
             />
           ))}
         </div>

@@ -12,8 +12,16 @@
 //   return null;
 // }
 
-import { TechnologyModule } from '@codewinglet/modules';
+'use server';
 
-export default function Technology() {
-  return <TechnologyModule />;
+import { TechnologyModule } from '@codewinglet/modules';
+import { fetchTechnology } from '@codewinglet/services/Technology/fetchTechnology';
+
+interface TechnologyProps {
+  params: { slug: string };
+}
+
+export default async function Technology({ params }: TechnologyProps) {
+  const technologyData = await fetchTechnology(params?.slug);
+  return <TechnologyModule technologyData={technologyData?.at(0)} />;
 }

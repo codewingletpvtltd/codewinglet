@@ -20,7 +20,11 @@ const designation = [
   },
 ];
 
-const TechnologySubMenu = () => {
+interface TechnologySubMenuProps {
+  title: string;
+}
+
+const TechnologySubMenu = ({ title }: TechnologySubMenuProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeIndex, setActiveIndex] = useState<number | null>(0);
   const observerRef = useRef<IntersectionObserver | null>(null);
@@ -94,7 +98,7 @@ const TechnologySubMenu = () => {
       <div className='bg-white lg:mt-[86px] md:mt-[90px] mt-[78px] border-b border-headerBoxBorder fixed w-full z-10 submenus'>
         <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto flex'>
           <Typography className='py-3 px-5 md:text-paragraph1Light text-tag bg-bg md:flex flex-shrink-0 font-normal hidden'>
-            Angular JS
+            {title}
           </Typography>
           <div className='flex overflow-x-auto'>
             {designation.map(({ title, path }, index) => (

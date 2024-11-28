@@ -14,17 +14,38 @@ import Specialist from './Specialist/Specialist';
 import TechnologySubMenu from './TechnologySubMenu/TechnologySubMenu';
 import WhyChoose from './WhyChoose/WhyChoose';
 
-const TechnologyPage = () => (
+interface TechnologyPageProps {
+  technologyData: any;
+}
+
+const TechnologyPage = ({ technologyData }: TechnologyPageProps) => (
   <>
-    <TechnologySubMenu />
-    <HeroSection />
-    <Companies />
-    <Benefit />
-    <Services />
-    <Combination />
-    <WhyChoose />
-    <Specialist />
-    <PreviousWork />
+    <TechnologySubMenu title={technologyData?.title?.text} />
+    {technologyData?.technologyDetails?.map((componentDetails: any) => {
+      switch (componentDetails?.__component) {
+        case 'technology.technology-brief-intro':
+          return <HeroSection details={componentDetails} />;
+        case 'technology.technology-using-companies':
+          return <Companies details={componentDetails} />;
+        case 'technology.benefits-section':
+          return <Benefit details={componentDetails} />;
+        case 'technology.technology-services':
+          return <Services details={componentDetails} />;
+        case 'technology.technology-combinations':
+          return <Combination details={componentDetails} />;
+
+        case 'technology.cta-banner':
+          return (
+            <>
+              <WhyChoose />
+              <Specialist details={componentDetails} />
+            </>
+          );
+        case 'technology.technology-previous-work':
+          return <PreviousWork details={componentDetails} />;
+      }
+    })}
+
     <FlexibleModels />
     <OurService />
     <Technology />
