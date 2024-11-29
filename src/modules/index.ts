@@ -2,6 +2,7 @@ export { default as AboutUsModule } from './AboutUs';
 export { default as BlogDetailsModule } from './BlogDetails';
 export { default as BlogsModule } from './Blogs';
 export { default as CareerModule } from './Career';
+export { default as CaseStudyModule } from './CaseStudy';
 export { default as ContactUsModule } from './ContactUs';
 export { default as HomeModule } from './Home';
 export { default as PrivacyPolicyModule } from './PrivacyPolicy';

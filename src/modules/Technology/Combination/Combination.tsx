@@ -1,10 +1,9 @@
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
-import Slider from 'react-slick';
 
 import { Arrow } from '@codewinglet/assets';
-import { Button, SectionHeader, Typography } from '@codewinglet/components';
+import { Button, SectionHeader, Slider, Typography } from '@codewinglet/components';
 
 import { technologies } from './utils';
 
@@ -106,7 +105,7 @@ const Combination = () => {
 
           <div className='lg:mt-[50px] md:mt-10 mt-5'>
             <Slider {...settings}>
-              {technologies.map((tech) => (
+              {technologies?.map((tech) => (
                 <div
                   key={tech.id}
                   className='bg-white p-10 mr-[50px] 2xl:!w-[435px] lg:!w-[400px] !w-[324px] group hover:border border-headerBoxBorder cursor-pointer'

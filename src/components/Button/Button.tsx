@@ -38,6 +38,14 @@ export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof buttonVariants> {
   asChild?: boolean;
+  variant?:
+    | 'default'
+    | 'destructive'
+    | 'outline'
+    | 'blackOutline'
+    | 'secondary'
+    | 'ghost'
+    | 'link';
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(

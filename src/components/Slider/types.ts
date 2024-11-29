@@ -6,7 +6,7 @@ export type ArrowPosition = {
   vertical?: 'left' | 'center' | 'right';
 };
 export interface SliderProps {
-  children: React.ReactNode;
+  children: any;
   settings?: Settings;
   arrowPosition?: ArrowPosition;
   className?: string;

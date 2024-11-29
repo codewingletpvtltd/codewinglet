@@ -1,0 +1,39 @@
+/*  */
+
+.logoSlider {
+  overflow: hidden;
+  padding: 30px 0 0 0;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logoSlider:hover .logosSlide {
+  animation-play-state: paused;
+}
+
+.logosSlide {
+  display: inline-block;
+  animation: 15s slide infinite linear;
+}
+
+.logosSlide .slide {
+  display: inline-block;
+}
+
+.logosSlide img {
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+
+.logosSlide img:last-child {
+  margin-bottom: 0px;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
