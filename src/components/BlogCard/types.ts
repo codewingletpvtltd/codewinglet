@@ -3,7 +3,7 @@ export interface BlogCardProps {
   desc?: string;
   title: string;
   date?: string;
-  readTime?: number;
+  readTime?: string;
   href: string;
   tags?: any;
   className?: string;

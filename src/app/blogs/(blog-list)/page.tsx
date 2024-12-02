@@ -1,5 +1,4 @@
 import {
-  BlogItem,
   BlogList,
   NoBlogFound,
   Pagination,
@@ -32,20 +31,18 @@ const Blogs = async ({ searchParams }: BlogsProps) => {
 
   const showLatest = currentPage === 1 && !searchQuery && !categoryQuery;
   return (
-    <div className='text-black lg:pl-14 lg:w-[1013px]'>
+    <div className='text-black'>
       {blogs.length > 0 || latestBlog.length > 0 ? (
         <>
-          {showLatest && (
+          {/* {showLatest && (
             <>
               <Typography className='text-h6 mb-9'>Latest article</Typography>
               <BlogItem blog={latestBlog[0]} />
             </>
-          )}
+          )} */}
           {blogs.length > 0 && (
             <div className='border-b border-headerBoxBorder lg:pb-[45px] pb-10'>
-              <Typography
-                className={`text-h6 mb-[37px] ${showLatest ? 'mt-[60px]' : ''}`}
-              >
+              <Typography className='text-h6 mb-[37px]'>
                 Resources and insights
               </Typography>
               <BlogList blogs={blogs} />
