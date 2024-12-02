@@ -5,7 +5,6 @@ import { CodeBlock, Typography } from '@codewinglet/components';
 import { BlogPost } from '@codewinglet/types';
 import { groupedCode } from '@codewinglet/utils';
 
-import MostViewBlog from './MostViewBlog';
 import ScrollHighlightNavbar from './ScrollHighlighNavBar';
 
 const BlogDescription: React.FC<{ contentData: BlogPost[] }> = ({
@@ -17,7 +16,7 @@ const BlogDescription: React.FC<{ contentData: BlogPost[] }> = ({
   }));
   groupedCode(contentData);
   return (
-    <div className='bg-white lg:py-20 py-[60px] lg:pt-40 md:pt-96 pt-0 pb-2'>
+    <div className='bg-white lg:py-20 py-[60px] pt-0 pb-2'>
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
         <div className='flex lg:flex-row flex-col justify-between gap-[28px]'>
           {/* left */}
@@ -25,7 +24,7 @@ const BlogDescription: React.FC<{ contentData: BlogPost[] }> = ({
             <ScrollHighlightNavbar navHeader={PolicyData} />
           </div>
           {/* center */}
-          <div className='lg:w-[730px] w-full'>
+          <div className='w-full'>
             {contentData?.map((item) => (
               <div
                 id={`section-${item.title}`}
@@ -153,9 +152,9 @@ const BlogDescription: React.FC<{ contentData: BlogPost[] }> = ({
             ))}
           </div>
           {/* Right */}
-          <div className='lg:w-[250px] w-full'>
+          {/* <div className='lg:w-[250px] w-full'>
             <MostViewBlog />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

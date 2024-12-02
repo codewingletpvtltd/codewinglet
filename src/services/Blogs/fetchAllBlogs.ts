@@ -34,7 +34,7 @@ export const fetchAllBlogs = async (
         : `&filters[documentId][$ne]=${latestBlogId}`;
 
     const blogRequest = await fetch(
-      `${process.env.NEXT_PUBLIC_BASE_URL}/api/blogs?populate=*&pagination[page]=${page}&pagination[pageSize]=${pageSize}${searchFilter}${tagsFilter}${latestBlogFilter}`,
+      `${process.env.NEXT_PUBLIC_BASE_URL}/api/blogs?populate=*&pagination[page]=${page}&pagination[pageSize]=${pageSize}${searchFilter}${tagsFilter}`,
       reqOptions
     );
 
