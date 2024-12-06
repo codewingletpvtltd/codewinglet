@@ -16,7 +16,7 @@ const MockupsSlider: React.FC = () => {
   }, []);
 
   return (
-    <div className='logoSlider bg-white !py-20'>
+    <div className='logoSlider bg-white lg:pb-20 md:pb-[60px] pb-10'>
       <div className='logosSlide' ref={sliderRef}>
         <div className='slide'>
           <Image
@@ -38,6 +38,14 @@ const MockupsSlider: React.FC = () => {
             alt='Mockups_1'
             width={541}
             height={385}
+          />
+        </div>
+        <div className='slide'>
+          <Image
+            src='/assets/CaseStudy/Mockups_1.png'
+            alt='Mockups_1'
+            width={839}
+            height={800}
           />
         </div>
       </div>

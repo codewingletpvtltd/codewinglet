@@ -1,6 +1,8 @@
 import { ClientTestimonials } from '@codewinglet/components';
 
+import LatestArticles from '../Technology/LatestArticles/LatestArticles';
 import AboutProject from './AboutProject/AboutProject';
+import CaseStudies from './CaseStudies/CaseStudies';
 import CaseStudyMenu from './CaseStudyMenu/CaseStudyMenu';
 import CloudBased from './CloudBased/CloudBased';
 import Innovation from './Innovation/Innovation';
@@ -9,6 +11,7 @@ import MockupsSlider from './MockupsSlider/MockupsSlider';
 import Problem from './Problem/Problem';
 import Project from './Project/Project';
 import Proposed from './Proposed/Proposed';
+import ResultsBenefits from './ResultsBenefits/ResultsBenefits';
 import TechnologyUse from './TechnologyUse/TechnologyUse';
 
 const CaseStudy = () => (
@@ -20,10 +23,13 @@ const CaseStudy = () => (
     <Problem />
     <Proposed />
     <TechnologyUse />
+    <ResultsBenefits /> 
     <Mockups />
     <Project />
     <ClientTestimonials />
+    <CaseStudies />
     <Innovation />
+    <LatestArticles />
   </>
 );
 
