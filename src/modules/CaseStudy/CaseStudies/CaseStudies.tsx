@@ -34,7 +34,10 @@ const caseStudyData = [
 
 const CaseStudies = () => (
   <>
-    <div className='bg-bg lg:py-20 md:py-[60px] py-10' id='overview'>
+    <div
+      className='lg:bg-bg bg-white lg:py-20 md:py-[60px] py-10'
+      id='overview'
+    >
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
         <SectionHeader
           title={<>Explore More Case Studies</>}
@@ -48,9 +51,12 @@ const CaseStudies = () => (
           descriptionClassName='text-primary md:!text-paragraph1ExtraLight text-center'
         />
 
-        <div className='flex gap-[30px] mt-12'>
+        <div className='grid lg:grid-cols-4 grid-cols-2 gap-[30px] mt-12'>
           {caseStudyData.map((item, index) => (
-            <div key={index} className='text-primary p-3 w-[330px] bg-white'>
+            <div
+              key={index}
+              className='text-primary p-3 2xl:w-[330px] lg:w-[298px] lg:bg-white'
+            >
               <Image
                 src={item.img}
                 alt='icon'
@@ -80,7 +86,7 @@ const CaseStudies = () => (
         </div>
 
         <Button
-          className='sm:w-[276px] w-[203px] h-[52px] lg:m-auto 2xl:mt-12 mt-10 mx-auto lg:flex hidden !bg-transparent hover:!bg-primary'
+          className='sm:w-[276px] w-[203px] h-[52px] 2xl:mt-12 mt-10 mx-auto block !bg-transparent hover:!bg-primary'
           variant='blackOutline'
         >
           <Link

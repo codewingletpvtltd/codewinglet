@@ -42,13 +42,13 @@ const Project = () => (
               over 100 million fans weekly across
             </>
           }
-          headingClassName='text-primary md:!text-h2 text-center'
+          headingClassName='text-primary lg:!text-h2 text-center'
           descriptionClassName='text-primary md:!text-paragraph1ExtraLight text-center'
         />
 
-        <div className='grid grid-cols-2 gap-y-10 gap-x-[30px] mt-[50px]'>
+        <div className='grid grid-cols-2 lg:gap-[30px] gap-5 mt-[50px]'>
           {contentBlocks.map((block, index) => (
-            <div className='bg-white p-[30px]' key={index}>
+            <div className='bg-white lg:p-[30px] p-5' key={index}>
               <div className='flex gap-[30px] flex-col'>
                 <div>
                   <Image
@@ -59,7 +59,7 @@ const Project = () => (
                   />
                 </div>
                 <div>
-                  <Typography className='text-primary text-subtitle2'>
+                  <Typography className='text-primary lg:text-subtitle2 text-paragraph1Light'>
                     {block.title}
                   </Typography>
                   <Typography className='text-secondary text-paragraph2Light'>

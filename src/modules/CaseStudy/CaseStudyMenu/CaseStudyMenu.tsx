@@ -92,8 +92,8 @@ const CaseStudyMenu = () => {
   };
 
   return (
-    <div className='sticky w-full z-10 top-0'>
-      <div className='bg-white border-b border-headerBoxBorder pt-10'>
+    <div className='lg:sticky fixed w-full z-10 top-0 lg:mt-0 mt-[90px]'>
+      <div className='bg-white border-b border-headerBoxBorder lg:pt-10'>
         <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
           <div className='flex gap-[90px] lg:overscroll-x-none overflow-x-auto'>
             {MENU_ITEMS.map(({ title, path }, index) => (

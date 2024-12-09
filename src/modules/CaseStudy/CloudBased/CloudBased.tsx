@@ -4,6 +4,8 @@ import Image from 'next/image';
 
 import { SectionHeader, Typography } from '@codewinglet/components';
 
+import CaseStudyMenu from '../CaseStudyMenu/CaseStudyMenu';
+
 const caseStudyData = [
   {
     icon: '/assets/CaseStudy/Industry.svg',
@@ -39,10 +41,10 @@ const caseStudyData = [
 
 const CloudBased = () => (
   <>
-    <div
-      className='bg-black xl:pt-[166px] lg:pt-60 md:pt-48 pt-[166px] lg:pb-20 md:pb-[60px] pb-10 relative scroll-mt-40'
-      id='overview'
-    >
+    <div className='lg:hidden block'>
+      <CaseStudyMenu />
+    </div>
+    <div className='bg-black xl:pt-[166px] lg:pt-60 md:pt-[185px] pt-[166px] lg:pb-20 md:pb-[60px] pb-10'>
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
         <div className='lg:flex block gap-[97px]'>
           <div>
@@ -59,35 +61,36 @@ const CloudBased = () => (
                 </>
               }
               headingClassName='text-white lg:!text-[56px] md:!text-h2 md:text-left text-center'
-              descriptionClassName='text-white mt-2.5 md:!text-paragraph1ExtraLight md:text-left text-center'
+              descriptionClassName='text-white mt-2.5 lg:!text-paragraph1ExtraLight md:text-left text-center'
             />
           </div>
           <div>
-            <div className='relative'>
+            <div className='relative lg:block hidden'>
               <Image
                 src='/assets/CaseStudy/codewinglet_text.png'
                 alt='codewinglet_text'
-                width={120}
-                height={120}
+                width={140}
+                height={140}
                 className='animate-infiniteRotate'
               />
-              <div className='bg-white w-14 h-14 flex justify-center items-center rounded-full absolute left-[12px] top-[11px]'>
+              <div className='bg-white 2xl:w-14 w-11 2xl:h-14 h-11 flex justify-center items-center rounded-full absolute left-[19px] top-[19px]'>
                 <Image
                   src='/assets/CaseStudy/logo.png'
                   alt='logo'
                   width={38}
                   height={38}
+                  className='2xl:w-[38px] 2xl:h-[38px] w-9 h-9'
                 />
               </div>
             </div>
           </div>
         </div>
 
-        <div className='flex gap-5 mt-36'>
+        <div className='grid lg:grid-cols-6 grid-cols-2 lg:gap-5 gap-[30px] 2xl:mt-36 lg:mt-[70px] mt-10'>
           {caseStudyData.map((item, index) => (
             <div
               key={index}
-              className='border border-white/10 text-white p-5 w-[218px]'
+              className='border border-white/10 text-white p-5 lg:w-[218px]'
             >
               <Image
                 src={item.icon}

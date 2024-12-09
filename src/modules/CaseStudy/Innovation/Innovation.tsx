@@ -18,7 +18,7 @@ const Innovation = () => (
             loop
             muted
             playsInline
-            className='w-[1410px] h-[376px]'
+            className='w-[1410px] h-[376px]'33
           >
             <source src='/assets/CaseStudy/videoBg.mp4' type='video/mp4' />
             Sorry, your browser does not support this video
@@ -28,7 +28,7 @@ const Innovation = () => (
         {/* Blend effect */}
         {/* <div className='w-full h-full block blend-mode bg-primary absolute top-0 left-0'></div> */}
 
-        <div className='text-center md:pt-[62px] pt-10 md:pb-20 pb-10 lg:w-9/12 mx-auto relative z-10'>
+        <div className='text-center md:pt-[62px] pt-10 md:pb-20 pb-10 2xl:w-9/12 lg:w-[85%] w-[95%] mx-auto relative z-10'>
           <SectionHeader
             title={<>Unlock Innovation – Hire the Best, Build the Best!</>}
             description={

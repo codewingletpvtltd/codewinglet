@@ -51,19 +51,19 @@ const Problem = () => (
               over 100 million fans weekly across diverse media platforms.
             </>
           }
-          headingClassName='text-primary md:!text-h2 text-center'
+          headingClassName='text-primary lg:!text-h2 text-center'
           descriptionClassName='text-primary md:!text-paragraph1ExtraLight text-center'
         />
 
         <div className='bg-white p-10 mt-[50px]'>
-          <div className='grid grid-cols-2 gap-y-10 gap-x-[50px]'>
+          <div className='grid lg:grid-cols-2 gap-y-10 lg:gap-x-[50px]'>
             {contentBlocks.map((block, index) => (
               <div key={index} className='flex gap-5'>
                 <div className='w-[50px] h-[50px] bg-bg flex-shrink-0 flex items-center justify-center'>
                   <Arrow />
                 </div>
                 <div>
-                  <Typography className='text-primary text-subtitle2'>
+                  <Typography className='text-primary lg:text-subtitle2 text-paragraph1'>
                     {block.title}
                   </Typography>
                   <Typography className='text-secondary text-paragraph2Light'>

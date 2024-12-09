@@ -16,7 +16,7 @@ const TechnologyTab = () => {
   return (
     <>
       {/* DESKTOP */}
-      <div className='flex flex-col gap-[30px] mt-5 pl-[50px] w-full'>
+      <div className='flex flex-col gap-[30px] lg:mt-5 mt-10 2xl:pl-[50px] lg:pl-10 w-full'>
         <div className='w-full border-b border-headerBoxBorder flex gap-[29px] md:overscroll-none overflow-y-auto [-ms-overflow-style:_none;] [scrollbar-width:_none;]'>
           {ServiceData.map((service, i) => (
             <div
@@ -35,10 +35,8 @@ const TechnologyTab = () => {
             </div>
           ))}
         </div>
-        <div className=''>
-          <div className='bg-white md:p-[30px] p-5 text-white lg:mt-0 mt-5'>
-            <Content service={service} />
-          </div>
+        <div className='bg-white md:p-[30px] p-5 text-white lg:mt-0'>
+          <Content service={service} />
         </div>
       </div>
     </>

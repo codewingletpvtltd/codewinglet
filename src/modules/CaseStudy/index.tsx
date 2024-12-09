@@ -3,7 +3,6 @@ import { ClientTestimonials } from '@codewinglet/components';
 import LatestArticles from '../Technology/LatestArticles/LatestArticles';
 import AboutProject from './AboutProject/AboutProject';
 import CaseStudies from './CaseStudies/CaseStudies';
-import CaseStudyMenu from './CaseStudyMenu/CaseStudyMenu';
 import CloudBased from './CloudBased/CloudBased';
 import Innovation from './Innovation/Innovation';
 import Mockups from './Mockups/Mockups';
@@ -17,13 +16,13 @@ import TechnologyUse from './TechnologyUse/TechnologyUse';
 const CaseStudy = () => (
   <>
     <CloudBased />
-    <CaseStudyMenu />
+    {/* <CaseStudyMenu /> */}
     <AboutProject />
     <MockupsSlider />
     <Problem />
     <Proposed />
     <TechnologyUse />
-    <ResultsBenefits /> 
+    <ResultsBenefits />
     <Mockups />
     <Project />
     <ClientTestimonials />

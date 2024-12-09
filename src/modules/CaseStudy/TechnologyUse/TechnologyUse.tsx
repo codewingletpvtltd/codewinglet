@@ -8,7 +8,7 @@ const TechnologyUse = () => (
     id='technology'
   >
     <section className='container w-full lg:px-[15px] sm:px-[30px] px-5 mx-auto lg:flex block'>
-      <div className='w-[376px] border-r border-headerBoxBorder pr-[50px] flex-shrink-0'>
+      <div className='lg:w-[376px] lg:border-r border-headerBoxBorder 2xl:pr-[50px] lg:pr-10 flex-shrink-0'>
         <SectionHeader
           title={<>Technology we used</>}
           description={
@@ -18,7 +18,7 @@ const TechnologyUse = () => (
             </>
           }
           headingClassName='text-primary'
-          descriptionClassName='text-primary'
+          descriptionClassName='text-primary md:!text-paragraph1ExtraLight'
         />
       </div>
       <TechnologyTab />

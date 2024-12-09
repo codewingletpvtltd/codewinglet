@@ -51,19 +51,19 @@ const Proposed = () => (
               over 100 million fans weekly across diverse media platforms.
             </>
           }
-          headingClassName='text-white md:!text-h2 text-center'
+          headingClassName='text-white lg:!text-h2 text-center'
           descriptionClassName='text-white md:!text-paragraph1ExtraLight text-center'
         />
 
-        <div className='bg-primary p-[50px] mt-[50px]'>
-          <div className='grid grid-cols-2 gap-y-10 gap-x-20'>
+        <div className='bg-primary lg:p-[50px] p-10 mt-[50px]'>
+          <div className='grid lg:grid-cols-2 gap-y-10 gap-x-20'>
             {contentBlocks.map((block, index) => (
-              <div key={index} className='flex gap-5'>
+              <div key={index} className='flex lg:gap-5 gap-[15px]'>
                 <div className='text-success'>
                   <CheckIcon />
                 </div>
                 <div>
-                  <Typography className='text-white text-subtitle2'>
+                  <Typography className='text-white lg:text-subtitle2 text-paragraph1Light'>
                     {block.title}
                   </Typography>
                   <Typography className='text-secondary text-paragraph2Light'>
