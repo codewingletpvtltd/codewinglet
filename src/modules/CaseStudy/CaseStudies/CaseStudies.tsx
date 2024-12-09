@@ -51,42 +51,47 @@ const CaseStudies = () => (
           descriptionClassName='text-primary md:!text-paragraph1ExtraLight text-center'
         />
 
-        <div className='grid lg:grid-cols-4 grid-cols-2 gap-[30px] mt-12'>
+        <div className='grid lg:grid-cols-4 md:grid-cols-2 gap-[30px] mt-12'>
           {caseStudyData.map((item, index) => (
             <div
               key={index}
-              className='text-primary p-3 2xl:w-[330px] lg:w-[298px] lg:bg-white'
+              className='text-primary p-3 2xl:w-[330px] lg:w-[298px] lg:bg-white flex md:flex-col md:gap-0 gap-4'
             >
               <Image
                 src={item.img}
                 alt='icon'
                 width={306}
                 height={216}
-                className=''
+                className='md:w-[306px] w-[134px] md:h-[216px] h-[145px]'
               />
-              <span className='text-secondary text-paragraph2 mt-4 block'>
-                {item.label}
-              </span>
-              <Typography className='text-[19px] mt-1.5'>
-                {item.description}
-              </Typography>
+              <div>
+                <span className='text-secondary md:text-paragraph2 text-tagExtraLight md:mt-4 block'>
+                  {item.label}
+                </span>
+                <Typography className='md:text-[19px] text-tag mt-1.5'>
+                  {item.description}
+                </Typography>
 
-              <Button className='p-0 !h-auto mt-6 underline' variant='link'>
-                <Link
-                  href='/blogs'
-                  rel='noopener noreferrer'
-                  className='flex items-center justify-center gap-3'
+                <Button
+                  className='p-0 !h-auto md:mt-6 mt-[15px] underline'
+                  variant='link'
                 >
-                  Explore blogs
-                  <Arrow />
-                </Link>
-              </Button>
+                  <Link
+                    href='/blogs'
+                    rel='noopener noreferrer'
+                    className='flex items-center justify-center gap-3 md:text-paragraph2 text-tag'
+                  >
+                    Know more
+                    <Arrow />
+                  </Link>
+                </Button>
+              </div>
             </div>
           ))}
         </div>
 
         <Button
-          className='sm:w-[276px] w-[203px] h-[52px] 2xl:mt-12 mt-10 mx-auto block !bg-transparent hover:!bg-primary'
+          className='sm:w-[276px] md:w-[248px] w-60 h-[52px] 2xl:mt-12 mt-10 mx-auto block !bg-transparent hover:!bg-primary'
           variant='blackOutline'
         >
           <Link

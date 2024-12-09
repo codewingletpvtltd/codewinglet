@@ -46,23 +46,24 @@ const Project = () => (
           descriptionClassName='text-primary md:!text-paragraph1ExtraLight text-center'
         />
 
-        <div className='grid grid-cols-2 lg:gap-[30px] gap-5 mt-[50px]'>
+        <div className='grid md:grid-cols-2 lg:gap-[30px] gap-5 md:mt-[50px] mt-5'>
           {contentBlocks.map((block, index) => (
             <div className='bg-white lg:p-[30px] p-5' key={index}>
-              <div className='flex gap-[30px] flex-col'>
+              <div className='flex md:gap-[30px] gap-[18px] flex-col'>
                 <div>
                   <Image
                     src='/assets/CaseStudy/shining_star.svg'
                     alt='shining_star'
                     width={34}
                     height={34}
+                    className='md:w-[34px] w-[25px] md:h-[34px] h-[25px]'
                   />
                 </div>
                 <div>
-                  <Typography className='text-primary lg:text-subtitle2 text-paragraph1Light'>
+                  <Typography className='text-primary lg:text-subtitle2 md:text-paragraph1Light text-tag'>
                     {block.title}
                   </Typography>
-                  <Typography className='text-secondary text-paragraph2Light'>
+                  <Typography className='text-secondary md:text-paragraph2Light text-tagExtraLight'>
                     {block.description}
                   </Typography>
                 </div>

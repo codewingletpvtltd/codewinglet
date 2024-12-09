@@ -55,18 +55,18 @@ const Problem = () => (
           descriptionClassName='text-primary md:!text-paragraph1ExtraLight text-center'
         />
 
-        <div className='bg-white p-10 mt-[50px]'>
-          <div className='grid lg:grid-cols-2 gap-y-10 lg:gap-x-[50px]'>
+        <div className='bg-white md:p-10 p-5 md:mt-[50px] mt-5'>
+          <div className='grid lg:grid-cols-2 md:gap-y-10 gap-y-5 lg:gap-x-[50px]'>
             {contentBlocks.map((block, index) => (
               <div key={index} className='flex gap-5'>
-                <div className='w-[50px] h-[50px] bg-bg flex-shrink-0 flex items-center justify-center'>
+                <div className='md:w-[50px] w-8 md:h-[50px] h-8 bg-bg flex-shrink-0 flex items-center justify-center'>
                   <Arrow />
                 </div>
                 <div>
-                  <Typography className='text-primary lg:text-subtitle2 text-paragraph1'>
+                  <Typography className='text-primary lg:text-subtitle2 md:text-paragraph1 text-tag'>
                     {block.title}
                   </Typography>
-                  <Typography className='text-secondary text-paragraph2Light'>
+                  <Typography className='text-secondary md:text-paragraph2Light text-tagExtraLight'>
                     {block.description}
                   </Typography>
                 </div>

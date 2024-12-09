@@ -68,7 +68,9 @@ const CloudBased = () => (
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto relative z-10'>
         <div className='lg:flex block gap-[97px]'>
           <div>
-            <span className='text-paragraph2Light text-white'>Case study</span>
+            <span className='text-paragraph2Light text-white md:text-left text-center block'>
+              Case study
+            </span>
             <SectionHeader
               title={
                 <>Cloud-Based Document Management Software for a Legal Firm</>
@@ -106,17 +108,19 @@ const CloudBased = () => (
           </div>
         </div>
 
-        <div className='grid lg:grid-cols-6 grid-cols-2 lg:gap-5 gap-[30px] 2xl:mt-36 lg:mt-[70px] mt-10'>
+        <div className='grid lg:grid-cols-6 grid-cols-2 lg:gap-5 md:gap-[30px] gap-[15px] 2xl:mt-36 lg:mt-[70px] mt-10'>
           {caseStudyData.map((item, index) => (
             <div
               key={index}
-              className='border border-white/10 text-white p-5 lg:w-[218px] bg-primary/10'
+              className='border border-white/10 text-white md:p-5 p-3 lg:w-[218px] bg-primary/10'
             >
               <Image src={item.icon} alt='icon' width={24} height={24} />
-              <span className='text-secondary text-tagLight mt-5 block'>
+              <span className='text-secondary md:text-tagLight text-tagExtraLight mt-5 block'>
                 {item.label}
               </span>
-              <Typography className='text-paragraph2'>{item.value}</Typography>
+              <Typography className='md:text-paragraph2 text-tagExtraLight'>
+                {item.value}
+              </Typography>
             </div>
           ))}
         </div>
