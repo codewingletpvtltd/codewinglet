@@ -44,8 +44,28 @@ const CloudBased = () => (
     <div className='lg:hidden block'>
       <CaseStudyMenu />
     </div>
-    <div className='bg-black xl:pt-[166px] lg:pt-60 md:pt-[185px] pt-[166px] lg:pb-20 md:pb-[60px] pb-10'>
-      <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
+    <div className='xl:pt-[166px] lg:pt-60 md:pt-[185px] pt-[166px] lg:pb-20 md:pb-[60px] pb-10 relative'>
+      {/* VIDEO */}
+      <div className='absolute left-0 top-0 w-full h-full'>
+        <video
+          aria-hidden='true'
+          poster='/media/video/poster/background-black-flag.jpg'
+          autoPlay
+          loop
+          muted
+          playsInline
+          className='w-full h-full object-cover'
+        >
+          <source src='/assets/CaseStudy/videoBg.mp4' type='video/mp4' />
+          Sorry, your browser does not support this video
+        </video>
+      </div>
+
+      {/* Blend effect */}
+      <div className='w-full h-full block mix-blend-soft-light backdrop-blur-[17px] z-[1] bg-primary absolute top-0 left-0'></div>
+      <div className='w-full h-full block mix-blend-color bg-primary absolute top-0 left-0'></div>
+
+      <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto relative z-10'>
         <div className='lg:flex block gap-[97px]'>
           <div>
             <span className='text-paragraph2Light text-white'>Case study</span>
@@ -73,7 +93,7 @@ const CloudBased = () => (
                 height={140}
                 className='animate-infiniteRotate'
               />
-              <div className='bg-white 2xl:w-14 w-11 2xl:h-14 h-11 flex justify-center items-center rounded-full absolute left-[19px] top-[19px]'>
+              <div className='bg-white 2xl:w-14 w-11 2xl:h-14 h-11 flex justify-center items-center rounded-full absolute left-[18px] top-[18px]'>
                 <Image
                   src='/assets/CaseStudy/logo.png'
                   alt='logo'
@@ -90,15 +110,9 @@ const CloudBased = () => (
           {caseStudyData.map((item, index) => (
             <div
               key={index}
-              className='border border-white/10 text-white p-5 lg:w-[218px]'
+              className='border border-white/10 text-white p-5 lg:w-[218px] bg-primary/10'
             >
-              <Image
-                src={item.icon}
-                alt='icon'
-                width={24}
-                height={24}
-                className=''
-              />
+              <Image src={item.icon} alt='icon' width={24} height={24} />
               <span className='text-secondary text-tagLight mt-5 block'>
                 {item.label}
               </span>

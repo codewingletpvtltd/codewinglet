@@ -8,9 +8,9 @@ import { Button, SectionHeader } from '@codewinglet/components';
 const Innovation = () => (
   <>
     <div className='bg-white lg:py-20'>
-      <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto lg:flex block gap-[50px] bg-primary relative'>
+      <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto lg:flex block gap-[50px] relative'>
         {/* VIDEO */}
-        {/* <div className='absolute left-0 top-0 h-[376px] w-[1410px]'>
+        <div className='absolute left-0 top-0 w-full h-full'>
           <video
             aria-hidden='true'
             poster='/media/video/poster/background-black-flag.jpg'
@@ -18,15 +18,16 @@ const Innovation = () => (
             loop
             muted
             playsInline
-            className='w-[1410px] h-[376px]'33
+            className='w-full h-full object-cover'
           >
             <source src='/assets/CaseStudy/videoBg.mp4' type='video/mp4' />
             Sorry, your browser does not support this video
           </video>
-        </div> */}
+        </div>
 
         {/* Blend effect */}
-        {/* <div className='w-full h-full block blend-mode bg-primary absolute top-0 left-0'></div> */}
+        <div className='w-full h-full block mix-blend-soft-light backdrop-blur-[17px] z-[1] bg-primary absolute top-0 left-0'></div>
+        <div className='w-full h-full block mix-blend-color bg-primary absolute top-0 left-0'></div>
 
         <div className='text-center md:pt-[62px] pt-10 md:pb-20 pb-10 2xl:w-9/12 lg:w-[85%] w-[95%] mx-auto relative z-10'>
           <SectionHeader
