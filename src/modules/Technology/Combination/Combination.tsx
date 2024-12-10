@@ -1,10 +1,14 @@
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
-import Slider from 'react-slick';
 
 import { Arrow } from '@codewinglet/assets';
-import { Button, SectionHeader, Typography } from '@codewinglet/components';
+import {
+  Button,
+  SectionHeader,
+  Slider,
+  Typography,
+} from '@codewinglet/components';
 
 import { technologies } from './utils';
 
