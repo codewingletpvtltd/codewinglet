@@ -11,60 +11,12 @@ const designation = [
     path: '#overview',
   },
   {
-    title: 'Benefit',
+    title: 'Companies',
     path: '#benefit',
   },
   {
-    title: 'Who used ?',
-    path: '#whoUsed',
-  },
-  {
-    title: 'Angular combination',
-    path: '#combination',
-  },
-  {
-    title: 'Angular Services',
-    path: '#AngularServices',
-  },
-  {
-    title: 'Why us ?',
-    path: '#whyUs',
-  },
-  {
-    title: 'Engagement model',
-    path: '#engagementModal',
-  },
-  {
-    title: 'Insight',
-    path: '#insight',
-  },
-  {
-    title: 'Service',
-    path: '#service',
-  },
-  {
-    title: 'Technology',
-    path: '#technology',
-  },
-  {
-    title: 'Industry',
-    path: '#industry',
-  },
-  {
-    title: 'Work Process',
-    path: '#workProcess',
-  },
-  {
-    title: 'Testimonial',
-    path: '#testimonial',
-  },
-  {
-    title: 'Blog',
-    path: '#blog',
-  },
-  {
-    title: 'FAQ',
-    path: '#faq',
+    title: 'Guide',
+    path: '#guide',
   },
 ];
 
@@ -139,9 +91,9 @@ const TechnologySubMenu = () => {
 
   return (
     <>
-      <div className='bg-white pt-2.5 md:pt-10 lg:mt-[86px] md:mt-[90px] mt-[78px] border-b border-headerBoxBorder fixed w-full z-10 submenus'>
+      <div className='bg-white lg:mt-[86px] md:mt-[90px] mt-[78px] border-b border-headerBoxBorder fixed w-full z-10 submenus'>
         <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto flex'>
-          <Typography className='py-2.5 px-5 md:text-paragraph1Light text-tag bg-bg flex flex-shrink-0 font-normal'>
+          <Typography className='py-3 px-5 md:text-paragraph1Light text-tag bg-bg md:flex flex-shrink-0 font-normal hidden'>
             Angular JS
           </Typography>
           <div className='flex overflow-x-auto'>
@@ -149,8 +101,8 @@ const TechnologySubMenu = () => {
               <button
                 key={title}
                 className={cn(
-                  'relative md:text-paragraph1Light text-text-tag flex-shrink-0 py-2.5 px-5 cursor-pointer !font-light',
-                  activeIndex === index ? '!font-normal' : ''
+                  'relative md:text-paragraph2Light text-text-tag flex-shrink-0 py-2.5 px-5 cursor-pointer !font-light text-secondary',
+                  activeIndex === index ? '!font-normal text-primary' : ''
                 )}
                 onClick={(event) =>
                   clickHandler(event, path.substring(1), index)

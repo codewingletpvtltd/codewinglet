@@ -1,6 +1,6 @@
 import { Suspense } from 'react';
 
-import Articles from '../Technology/Articles/Articles';
+import Articles from '../Technology/LatestArticles/LatestArticles';
 import BlogDescription from './BlogDescription/BlogDescription';
 import BlogDetailsLink from './BlogDetailsLink/BlogDetailsLink';
 import BlogHeroSection from './BlogHeroSection/BlogHeroSection';

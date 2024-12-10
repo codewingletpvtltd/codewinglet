@@ -68,11 +68,9 @@ export const BlogCategory = () => {
 
   return (
     <>
-      <div className='w-[342px] lg:block hidden'>
-        <Typography className='text-paragraph2 border-b border-headerBoxBorder pb-[15px]'>
-          Blog Categories
-        </Typography>
-        <div className='mt-[15px] border-r border-headerBoxBorder overflow-y-auto'>
+      <div className='lg:block hidden'>
+        <Typography className='text-h6 pb-[15px]'>Blog Categories</Typography>
+        <div className='overflow-y-auto flex flex-wrap gap-2.5'>
           {checkboxData.map((item, index) => (
             <SidebarCheckBox
               key={item.value}
@@ -99,7 +97,7 @@ export const BlogCategory = () => {
         </div>
 
         {isOpen && (
-          <div className='absolute sm:right-[30px] right-5 top-[58px] w-[270px] mt-2 origin-top-right shadow-lg bg-white ring-1 ring-black ring-opacity-5'>
+          <div className='absolute sm:right-[30px] right-5 top-[58px] w-[270px] mt-2 origin-top-right shadow-lg bg-white ring-1 ring-black ring-opacity-5 p-2.5 flex flex-col gap-2.5'>
             {checkboxData.map((item, index) => (
               <SidebarCheckBox
                 key={item.value}

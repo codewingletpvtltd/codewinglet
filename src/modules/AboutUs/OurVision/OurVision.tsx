@@ -18,7 +18,6 @@ const OurVision = () => (
           }
         />
         <div>
-          <span></span>
           <div className='bg-headerBoxBorder w-[1px] 2xl:h-[690px] h-[590px] absolute top-56 left-1/2 lg:block hidden'></div>
         </div>
         <div className='flex lg:flex-row flex-col lg:gap-[134px] gap-3 items-center lg:my-[60px] my-[34px]'>
@@ -27,8 +26,8 @@ const OurVision = () => (
               <Typography className='text-primary md:text-subtitle2 text-paragraph2 relative lg:mb-0 mb-2'>
                 <span className='bg-black w-[3px] h-5 absolute 2xl:-right-[79px] -right-[66px] top-1 lg:block hidden'></span>
                 <Image
-                  src='/assets/AboutUs/vArrow.svg'
-                  alt='vArrow'
+                  src='/assets/AboutUs/Arrow.svg'
+                  alt='Arrow'
                   width={27}
                   height={8}
                   className='absolute 2xl:-right-[78px] -right-[66px] top-2.5 rotate-180 lg:block hidden'
@@ -64,8 +63,8 @@ const OurVision = () => (
             <Typography className='text-primary md:text-subtitle2 text-paragraph2 relative lg:mb-0 mb-2'>
               <span className='bg-black w-[3px] h-5 absolute 2xl:-left-[78px] -left-[68px] top-1 lg:block hidden'></span>
               <Image
-                src='/assets/AboutUs/vArrow.svg'
-                alt='vArrow'
+                src='/assets/AboutUs/Arrow.svg'
+                alt='Arrow'
                 width={27}
                 height={8}
                 className='absolute 2xl:-left-[78px] -left-[68px] top-2.5 lg:block hidden'

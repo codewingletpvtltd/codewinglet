@@ -28,7 +28,7 @@ const BlogCard: FC<BlogCardProps> = ({
             alt='Blog Image'
             width={450}
             height={250}
-            className='h-[250px] w-full transition-transform duration-500 object-center object-cover group-hover:scale-105'
+            className='md:h-[250px] w-full transition-transform duration-500 object-center object-cover group-hover:scale-105'
           />
         </div>
       )}

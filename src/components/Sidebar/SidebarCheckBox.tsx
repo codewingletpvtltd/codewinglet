@@ -1,7 +1,5 @@
 'use client';
 
-import Checkbox from '@codewinglet/components/CheckBox/CheckBox';
-
 interface SidebarCheckBoxProps {
   item: {
     label: string;
@@ -19,15 +17,12 @@ export const SidebarCheckBox = ({
   onChange,
 }: SidebarCheckBoxProps) => (
   <div
-    className='flex items-center gap-5 p-3.5 hover:bg-bg cursor-pointer'
-    key={index}
+    key={item.value}
     onClick={() => onChange(item.value)}
+    className={`border border-headerBoxBorder rounded-full py-2 px-3.5 cursor-pointer lg:text-paragraph2 text-tag ${
+      checked ? 'bg-bg border border-secondary' : ''
+    }`}
   >
-    <Checkbox
-      key={item.value}
-      label={item.label}
-      checked={checked}
-      onChange={() => onChange(item.value)}
-    />
+    {item.label}
   </div>
 );
