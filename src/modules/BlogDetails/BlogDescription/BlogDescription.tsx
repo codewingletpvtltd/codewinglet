@@ -31,7 +31,7 @@ const BlogDescription: React.FC<{ contentData: BlogPost[] }> = ({
                 key={`section-${item.title}`}
                 className='scroll-mt-[155px]'
               >
-                <Typography className='text-primary md:text-subtitle2 text-tag md:mb-[18px] mb-2.5'>
+                <Typography className='text-primary mt-[30px] md:text-subtitle2 text-tag md:mb-[18px] mb-2.5'>
                   {item?.title}
                 </Typography>
                 <div>
@@ -53,7 +53,7 @@ const BlogDescription: React.FC<{ contentData: BlogPost[] }> = ({
                         return (
                           <span
                             key={index}
-                            className='text-secondary md:text-paragraph1ExtraLight pb-8'
+                            className='text-primary md:text-paragraph1ExtraLight pb-8'
                           >
                             {item.children.map((child) => {
                               let childText: React.ReactNode = child.text;
@@ -113,15 +113,22 @@ const BlogDescription: React.FC<{ contentData: BlogPost[] }> = ({
                             key={index}
                             className={
                               item?.format === 'ordered'
-                                ? 'list-decimal ml-5 text-secondary md:text-paragraph1ExtraLight'
-                                : 'list-disc ml-5 text-secondary md:text-paragraph1ExtraLight'
+                                ? 'list-decimal ml-5 text-primary md:text-paragraph1ExtraLight'
+                                : 'list-disc ml-5 text-primary md:text-paragraph1ExtraLight'
                             }
                           >
                             {item.children.map((item, itemIndex) => (
                               <li key={itemIndex}>
                                 {item.children.map(
                                   (child: any, childIndex: any) => (
-                                    <span key={childIndex}>{child.text}</span>
+                                    <span
+                                      key={childIndex}
+                                      className={`${
+                                        Boolean(child.bold) ? 'font-medium' : ''
+                                      }`}
+                                    >
+                                      {child.text}
+                                    </span>
                                   )
                                 )}
                               </li>

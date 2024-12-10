@@ -183,7 +183,7 @@ const Footer = () => {
               </Typography>
               <div className='block'>
                 {contacts.map((contact, index) => (
-                  <Typography
+                  <div
                     key={index}
                     className='text-paragraph2Light leading-normal mb-5 min-h-0 text-lightGray flex gap-3 items-start'
                   >
@@ -216,7 +216,7 @@ const Footer = () => {
                         )
                       )}
                     </div>
-                  </Typography>
+                  </div>
                 ))}
               </div>
               <div className='flex sm:gap-5 gap-3 lg:mt-7 md:mt-5 mt-5 ml-7'>

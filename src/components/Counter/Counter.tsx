@@ -48,7 +48,7 @@ const ListItem = ({ data }: { data: ListItemProps[] }) => (
             className='relative flex justify-between items-center lg:p-[50px] py-10'
           >
             <div>
-              <Typography className='xl:text-h1 md:text-h2 text-h6 text-white flex items-center lg:mb-1.5 mb-1'>
+              <div className='xl:text-h1 md:text-h2 text-h6 text-white flex items-center lg:mb-1.5 mb-1'>
                 {typeof number === 'number' ? (
                   <>
                     <AboutCount number={number} />+
@@ -56,7 +56,7 @@ const ListItem = ({ data }: { data: ListItemProps[] }) => (
                 ) : (
                   <Typography>{number}</Typography>
                 )}
-              </Typography>
+              </div>
               <Typography className='text-white lg:text-subtitle2Light md:text-paragraph1ExtraLight text-tagLight'>
                 {label}
               </Typography>
