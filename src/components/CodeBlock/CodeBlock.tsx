@@ -1,9 +1,9 @@
 'use client';
+import Tippy from '@tippyjs/react';
 import { useState } from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { materialDark } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 import { toast } from 'react-toastify';
-import Tippy from '@tippyjs/react';
 
 import 'tippy.js/dist/tippy.css';
 interface CodeBlockProps {
@@ -21,7 +21,6 @@ const CodeBlock = ({ code, language = 'javascript' }: CodeBlockProps) => {
         setTimeout(() => setCopied(false), 2000);
       })
       .catch((err) => {
-        console.error('Failed to copy URL: ', err);
         toast.error(err.message);
       });
   };
