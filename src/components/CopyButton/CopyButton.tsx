@@ -1,8 +1,6 @@
 import Image from 'next/image';
 import { toast } from 'react-toastify';
 
-import CopyIcon from '/assets/icons/CopyIcon.svg';
-
 interface CopyButtonProps {
   copyText: string;
   successMessage: string;
@@ -15,7 +13,6 @@ const handleCopyClick = (text: string, successMessage: string) => {
       toast.success(successMessage);
     })
     .catch((err) => {
-      console.error('Failed to copy URL: ', err);
       toast.error(err.message);
     });
 };
