@@ -1,5 +1,5 @@
 import {
-  BlogItem,
+  BlogCategory,
   BlogList,
   NoBlogFound,
   Pagination,
@@ -35,17 +35,18 @@ const Blogs = async ({ searchParams }: BlogsProps) => {
     <div className='text-black lg:pl-14 lg:w-[1013px]'>
       {blogs.length > 0 || latestBlog.length > 0 ? (
         <>
-          {showLatest && (
+          {/* {showLatest && (
             <>
               <Typography className='text-h6 mb-9'>Latest article</Typography>
               <BlogItem blog={latestBlog[0]} />
             </>
-          )}
+          )} */}
+          <div className='lg:block hidden'>
+            <BlogCategory />
+          </div>
           {blogs.length > 0 && (
-            <div className='border-b border-headerBoxBorder lg:pb-[45px] pb-10'>
-              <Typography
-                className={`text-h6 mb-[37px] ${showLatest ? 'mt-[60px]' : ''}`}
-              >
+            <div className='border-b border-headerBoxBorder lg:pb-[45px] pb-10 lg:mt-[50px]'>
+              <Typography className='text-h6 mb-[37px]'>
                 Resources and insights
               </Typography>
               <BlogList blogs={blogs} />

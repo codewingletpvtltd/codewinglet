@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Arrow } from '@codewinglet/assets';
 import { Button, SectionHeader, Slider, Typography } from '@codewinglet/components';
 
+
 import { technologies } from './utils';
 
 function SampleNextArrow(props: any) {

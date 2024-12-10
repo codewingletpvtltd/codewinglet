@@ -6,7 +6,7 @@ interface BlogListProps {
   blogs: Blog[];
 }
 export const BlogList: React.FC<BlogListProps> = ({ blogs }) => (
-  <div className='grid md:grid-cols-2 grid-cols-1 lg:gap-[45px] gap-5 gap-y-[45px]'>
+  <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-[45px] gap-5 md:gap-y-[45px]'>
     {blogs.map((blog) => (
       <BlogCard
         key={blog.id}
