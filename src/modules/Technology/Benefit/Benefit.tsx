@@ -1,64 +1,76 @@
 'use client';
-
 import Image from 'next/image';
 
-import { SectionHeader } from '@codewinglet/components';
+import { SectionHeader, Typography } from '@codewinglet/components';
 
-const Benefit = () => {
-  const items = [
-    'A Cross-platform Development',
-    'A High-quality Application',
-    'Enhances Speed as well as Performance',
-    'Technical Benefits',
-  ];
-  return (
-    <>
-      <div className='bg-white md:py-20 py-10 scroll-mt-40' id='benefit'>
-        <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto lg:flex gap-[86px]'>
-          <div className='lg:mt-14 relative lg:w-[655px]'>
-            <SectionHeader
-              title={<>The benefit of Angular JS in app development</>}
-              description={
-                <>
-                  Launching effective web-based goods is a multifaceted and
-                  challenging journey. Understanding market trends and consumer
-                  needs, discovering product opportunities.
-                </>
-              }
-              headingClassName='text-primary'
-              descriptionClassName='text-secondary !text-paragraph1ExtraLight'
-            />
+import { BenefitCardProps, benefitData } from './benefitData';
 
-            <ul className='md:mt-[70px] mt-10 flex flex-col gap-5'>
-              {items.map((item, index) => (
-                <li
-                  key={index}
-                  className='relative !pl-12 md:p-5 p-4 text-primary bg-bg lg:w-fit md:text-subtitle2 text-tag'
-                >
-                  <Image
-                    src={'/assets/OurService/check.svg'}
-                    alt='Arrow'
-                    width={16}
-                    height={16}
-                    className='absolute left-5 md:top-7 top-5 sm:w-[16px] w-[15px]'
-                  />
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className='lg:w-[669px] lg:mt-0 mt-10'>
-            <Image
-              src='/assets/Technologies/pages/benefit.jpg'
-              alt='benefit'
-              width={669}
-              height={737}
+// Subcomponent for Service Card
+const BenefitCard: React.FC<BenefitCardProps> = ({
+  iconSrc,
+  iconAlt,
+  title,
+  description,
+}) => (
+  <div className='bg-bg hover:bg-white lg:p-[30px] md:p-[25px] p-[15px] group cursor-pointer transform duration-300'>
+    <div className='md:block flex items-center gap-3'>
+      <div className='bg-white group-hover:bg-bg md:w-[50px] w-10 md:h-[50px] h-10 flex items-center justify-center md:mb-[26px] mb-2 transform duration-300'>
+        <Image
+          src={iconSrc}
+          alt={iconAlt}
+          width={28}
+          height={28}
+          className='group-hover:[transform:_rotateY(180deg)] transform duration-300 md:w-[28px] w-5 md:h-[28px] h-5'
+        />
+      </div>
+
+      <Typography className='lg:text-subtitle2 text-tagBold pb-2 text-primary'>
+        {title}
+      </Typography>
+    </div>
+    <Typography className='lg:text-paragraph2Light text-tagBold text-primary font-light'>
+      {description}
+    </Typography>
+  </div>
+);
+
+// Main component
+const Benefit: React.FC = () => (
+  <div className='bg-bg lg:py-20 md:py-[60px] py-10 scroll-mt-40' id='whyUs'>
+    <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
+      <SectionHeader
+        title={<>A Simple Guide to Angular Development</>}
+        description={
+          <>
+            Choose AngularJS for its robust MVC architecture, two-way data
+            binding, and comprehensive community support. Here’s why it’s
+            preferred for dynamic web application development:
+          </>
+        }
+        headingClassName='text-primary'
+        descriptionClassName='text-primary lg:!text-subtitle2Light md:!text-paragraph1ExtraLight'
+      />
+
+      <div className='bg-white md:mt-[50px] mt-5'>
+        <Typography className='text-primary lg:text-h6 md:text-subtitle2 text-paragraph2 lg:p-[30px] md:p-[25px] p-[15px] border-b border-headerBoxBorder'>
+          Benefit of using Angular Development
+        </Typography>
+      </div>
+      <div className='bg-white lg:p-[30px] md:p-[25px] p-[15px]'>
+        <div className='grid lg:grid-cols-3 md:grid-cols-2 lg:gap-[30px] md:gap-[25px] gap-[15px] relative'>
+          {benefitData.map((service, index) => (
+            <BenefitCard
+              key={index}
+              iconSrc={service.iconSrc}
+              iconAlt={service.iconAlt}
+              title={service.title}
+              description={service.description}
             />
-          </div>
+          ))}
         </div>
       </div>
-    </>
-  );
-};
+    </div>
+  </div>
+);
 
 export default Benefit;

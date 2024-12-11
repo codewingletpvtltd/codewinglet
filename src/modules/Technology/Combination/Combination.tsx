@@ -1,10 +1,14 @@
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
-import Slider from 'react-slick';
 
 import { Arrow } from '@codewinglet/assets';
-import { Button, SectionHeader, Typography } from '@codewinglet/components';
+import {
+  Button,
+  SectionHeader,
+  Slider,
+  Typography,
+} from '@codewinglet/components';
 
 import { technologies } from './utils';
 
@@ -88,7 +92,7 @@ const Combination = () => {
   return (
     <>
       <div
-        className='bg-bg lg:py-20 md:py-[60px] py-[30px] scroll-mt-40'
+        className='bg-bg lg:py-20 md:py-[60px] lg:!pb-20 !pb-24 py-[30px] scroll-mt-40'
         id='combination'
       >
         <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
@@ -101,7 +105,7 @@ const Combination = () => {
               </>
             }
             headingClassName='text-primary'
-            descriptionClassName='text-secondary'
+            descriptionClassName='text-primary lg:!text-subtitle2Light md:!text-paragraph1ExtraLight'
           />
 
           <div className='lg:mt-[50px] md:mt-10 mt-5'>
@@ -109,7 +113,7 @@ const Combination = () => {
               {technologies.map((tech) => (
                 <div
                   key={tech.id}
-                  className='bg-white p-10 mr-[50px] 2xl:!w-[435px] lg:!w-[400px] md:!w-[374px] !w-[324px]'
+                  className='bg-white p-10 mr-[50px] 2xl:!w-[435px] lg:!w-[400px] !w-[324px] group hover:border border-headerBoxBorder cursor-pointer'
                 >
                   <div className='flex justify-center items-center gap-5'>
                     {/* First Image - Order 1 */}
@@ -121,7 +125,7 @@ const Combination = () => {
                       className='order-1 lg:w-[89px] lg:h-[89px] w-[50px] h-[50px]'
                     />
                     {/* Span - Order 2 */}
-                    <span className='text-secondary text-h4 font-extralight order-2'>
+                    <span className='text-secondary text-h4 font-extralight order-2 group-hover:rotate-180 transform'>
                       +
                     </span>
                     {/* Second Image - Order 3 */}
@@ -144,7 +148,7 @@ const Combination = () => {
             </Slider>
 
             <Button
-              className='sm:w-[224px] w-[203px] h-[52px] lg:m-auto xl:mt-24 mt-[104px] flex mx-auto bg-transparent'
+              className='sm:w-[224px] w-[203px] h-[52px] lg:m-auto xl:mt-24 mt-[104px] lg:flex mx-auto bg-transparent hidden'
               variant='blackOutline'
             >
               <Link

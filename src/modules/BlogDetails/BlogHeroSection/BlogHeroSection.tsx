@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 import { SectionHeader, Typography } from '@codewinglet/components';
-import { formatDate } from '@codewinglet/utils';
+import { calculateReadTime, formatDate } from '@codewinglet/utils';
 
 const BlogHeroSection = ({ blogData }: any) => (
   <>
@@ -9,16 +9,16 @@ const BlogHeroSection = ({ blogData }: any) => (
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto lg:flex justify-between items-center'>
         <div className='lg:flex block gap-6 relative'>
           <div className='2xl:w-[693px] lg:w-[680px] w-full md:h-[440px] h-auto flex lg:justify-center flex-col md:mb-0 mb-4'>
-            <Typography className='text-secondary lg:text-subtitle2 md:text-paragraph2Light text-tagLight lg:mt-[30px] md:mt-0 mb-4'>
+            <Typography className='text-primary md:text-paragraph2Light text-tagLight lg:mt-[30px] md:mt-0 mb-4'>
               Published on {formatDate(blogData.createdAt)}
               <span className='text-headerBoxBorder px-3'>•</span>
-              {blogData.read} min read
+              {calculateReadTime(blogData.content)}
             </Typography>
             <SectionHeader
               title={blogData.title}
               description={blogData.summary}
               headingClassName='text-primary text-h2 lg:max-w-[620px]'
-              descriptionClassName='text-secondary lg:max-w-[620px] md:mt-[26px] mt-2.5 lg:!text-subtitle2Light md:!text-paragraph1ExtraLight text-tagExtraLight'
+              descriptionClassName='lg:max-w-[620px] md:mt-[26px] mt-2.5  md:!text-paragraph1ExtraLight text-tagExtraLight'
             />
           </div>
 
