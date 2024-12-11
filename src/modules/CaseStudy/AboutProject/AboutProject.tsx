@@ -24,10 +24,11 @@ const AboutProject = () => {
 
   return (
     <>
-      <div className='hidden lg:block'>
-        <CaseStudyMenu />
-      </div>
-      <div className='bg-white lg:py-20 md:py-[60px] py-10'>
+      <CaseStudyMenu />
+      <div
+        className='bg-white lg:py-20 md:py-[60px] py-10 scroll-mt-32'
+        id='aboutProject'
+      >
         <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto lg:flex block gap-[50px]'>
           <div className='bg-projectBg p-5 md:w-[425px] flex-shrink-0 bg-cover lg:m-0 m-auto'>
             <Typography className='md:text-paragraph1 text-tagLight flex gap-3 bg-white py-5 items-center justify-center'>

@@ -6,15 +6,14 @@ import { cn } from '@codewinglet/utils';
 
 // Static menu data
 const MENU_ITEMS = [
-  { title: 'About project', path: '#career' },
-  { title: 'UX/UI', path: '#perks' },
-  { title: 'Problems', path: '#process' },
-  { title: 'Solution', path: '#jobs' },
-  { title: 'Technologyies', path: '#employee' },
-  { title: 'Results', path: '#employee' },
-  { title: 'Project learning', path: '#employee' },
-  { title: 'Testimonial', path: '#employee' },
-  { title: 'FAQ', path: '#employee' },
+  { title: 'About project', path: '#aboutProject' },
+  { title: 'UX/UI', path: '#uiux' },
+  { title: 'Problems', path: '#problems' },
+  { title: 'Solution', path: '#solution' },
+  { title: 'Technologyies', path: '#technologyies' },
+  { title: 'Results', path: '#results' },
+  { title: 'Project learning', path: '#projectLearning' },
+  { title: 'Testimonial', path: '#testimonial' },
 ];
 
 const CaseStudyMenu = () => {
@@ -92,20 +91,20 @@ const CaseStudyMenu = () => {
   };
 
   return (
-    <div className='lg:sticky fixed w-full z-20 top-0 md:mt-[90px] mt-[78px]'>
-      <div className='bg-white border-b border-headerBoxBorder lg:pt-10'>
+    <div className='lg:sticky fixed w-full z-20 lg:top-[86px] top-0 lg:mt-0 md:mt-[90px] mt-[78px] lg:block'>
+      <div className='bg-white border-b border-headerBoxBorder'>
         <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
           <div className='flex md:gap-[90px] gap-8 lg:overscroll-x-none overflow-x-auto'>
             {MENU_ITEMS.map(({ title, path }, index) => (
               <div
                 key={title}
                 role='button'
-                tabIndex={0} // Keyboard accessibility
+                // tabIndex={0}
                 className={cn(
-                  'relative md:text-tagBold flex-shrink-0 py-3 cursor-pointer !font-light',
+                  'relative md:text-tagBold flex-shrink-0 py-3 cursor-pointer',
                   activeIndex === index
-                    ? 'font-semibold'
-                    : 'font-light text-secondary'
+                    ? '!font-normal text-primary'
+                    : '!font-light text-secondary'
                 )}
                 onClick={(event) =>
                   handleMenuClick(event, path.substring(1), index)

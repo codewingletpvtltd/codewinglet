@@ -65,9 +65,14 @@ export default {
           transform: 'rotate(360deg)',
         },
       },
+      mockupSlider: {
+        '0%': { transform: 'translateX(0)' },
+        '100%': { transform: 'translateX(-50%)' },
+      },
     },
     animation: {
       infiniteRotate: 'infiniteRotate 6s linear infinite',
+      mockupSlider: 'mockupSlider 20s linear infinite',
     },
     textDecorationThickness: {
       '2': '2px', // custom thickness of 4px

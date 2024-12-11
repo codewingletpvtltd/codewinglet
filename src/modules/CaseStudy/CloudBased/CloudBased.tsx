@@ -41,7 +41,7 @@ const caseStudyData = [
 
 const CloudBased = () => (
   <>
-    <div className='lg:hidden block'>
+    <div className='lg:!hidden !block'>
       <CaseStudyMenu />
     </div>
     <div className='xl:pt-[166px] lg:pt-60 md:pt-[185px] pt-[166px] lg:pb-20 md:pb-[60px] pb-10 relative'>
