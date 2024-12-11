@@ -32,7 +32,7 @@ const Blogs = async ({ searchParams }: BlogsProps) => {
 
   const showLatest = currentPage === 1 && !searchQuery && !categoryQuery;
   return (
-    <div className='text-black lg:pl-14 lg:w-[1013px]'>
+    <div className='text-black'>
       {blogs.length > 0 || latestBlog.length > 0 ? (
         <>
           {/* {showLatest && (

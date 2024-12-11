@@ -2,7 +2,6 @@
 import Link from 'next/link';
 
 export default function ErrorPage({ error }: { error: Error }) {
-  console.error(error);
   return (
     <div className='h-screen flex flex-col items-center justify-center min-h-screen bg-white text-center'>
       <div className='flex items-center space-x-2'></div>

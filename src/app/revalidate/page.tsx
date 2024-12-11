@@ -11,7 +11,12 @@ const LoginForm = async (formData: FormData) => {
   const path = formData.get('path') as string;
   const pathType = formData.get('pathType') as 'page' | 'layout';
 
-  if (username === 'Admin' && password === 'Admin@123' && path && pathType) {
+  if (
+    username === 'cw-admin' &&
+    password === 'cw-admin@codewinglet' &&
+    path &&
+    pathType
+  ) {
     revalidatePath(path, pathType);
   }
 

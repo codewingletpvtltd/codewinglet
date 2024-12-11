@@ -1,4 +1,5 @@
 import { BlogCard } from '@codewinglet/components';
+import { calculateReadTime } from '@codewinglet/utils';
 
 import { Blog } from './types';
 
@@ -14,7 +15,7 @@ export const BlogList: React.FC<BlogListProps> = ({ blogs }) => (
         date={blog.createdAt}
         title={blog.title}
         desc={blog.summary}
-        readTime={blog.read}
+        readTime={calculateReadTime(blog.content)}
         tags={blog?.tags}
         href={`/blogs/${blog.slug}`}
         className='!mx-0 !w-full custom-other-layout'
