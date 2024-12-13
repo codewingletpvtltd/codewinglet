@@ -232,7 +232,7 @@ const Footer = () => {
         </div>
       </footer>
 
-      <div className='lg:gap-0 gap-4 relative text-lightGray border-t border-[#3b3b3b]'>
+      <div className='relative text-lightGray border-t border-[#3b3b3b]'>
         <div className='container flex flex-col sm:flex-row items-center sm:justify-between justify-start lg:px-3.5 sm:p-10 sm:py-3.5 p-5 md:gap-0 gap-1'>
           <Typography className='lg:text-paragraph2Light text-tagLight'>
             All rights reserved © {new Date().getFullYear()} - Codewinglet{' '}

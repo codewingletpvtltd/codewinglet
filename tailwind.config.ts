@@ -1,5 +1,4 @@
 import type { Config } from 'tailwindcss';
-
 // TODO : font should be set as per figma view, but need to find proper solution
 export default {
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
@@ -52,9 +51,28 @@ export default {
     },
     backgroundImage: {
       'dot-pattern': 'url("/assets/career/dotGrid.png")',
+      projectBg: 'url("/assets/CaseStudy/AboutProjectBg.png")',
     },
     boxShadow: {
       custom: '0px 4px 10px 0px rgba(159, 159, 159, 0.1)',
+    },
+    keyframes: {
+      infiniteRotate: {
+        '0%': {
+          transform: 'rotate(0deg)',
+        },
+        '100%': {
+          transform: 'rotate(360deg)',
+        },
+      },
+      mockupSlider: {
+        '0%': { transform: 'translateX(0)' },
+        '100%': { transform: 'translateX(-50%)' },
+      },
+    },
+    animation: {
+      infiniteRotate: 'infiniteRotate 6s linear infinite',
+      mockupSlider: 'mockupSlider 20s linear infinite',
     },
     textDecorationThickness: {
       '2': '2px', // custom thickness of 4px

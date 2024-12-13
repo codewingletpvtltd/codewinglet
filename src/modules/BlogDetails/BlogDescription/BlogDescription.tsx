@@ -6,7 +6,7 @@ import { BlogPost } from '@codewinglet/types';
 import { groupedCode } from '@codewinglet/utils';
 
 import ScrollHighlightNavbar from './ScrollHighlighNavBar';
-
+  
 const BlogDescription: React.FC<{ contentData: BlogPost[] }> = ({
   contentData,
 }) => {
