@@ -1,6 +1,7 @@
 'use client';
-import { useState } from 'react';
 import Link from 'next/link';
+import { useState } from 'react';
+
 type Option = {
   label: string;
 };
@@ -8,9 +9,20 @@ type Option = {
 interface DropdownProps {
   options: Option[];
   buttonText?: string;
+  containerClassName?: string; // Class for the outer container
+  buttonClassName?: string; // Class for the dropdown button
+  menuClassName?: string; // Class for the dropdown menu
+  optionClassName?: string; // Class for individual options
 }
 
-const Dropdown = ({ options = [], buttonText = 'Options' }: DropdownProps) => {
+const Dropdown = ({
+  options = [],
+  buttonText = 'Options',
+  containerClassName = '',
+  buttonClassName = '',
+  menuClassName = '',
+  optionClassName = '',
+}: DropdownProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selected, setSelected] = useState(buttonText);
 
@@ -20,14 +32,14 @@ const Dropdown = ({ options = [], buttonText = 'Options' }: DropdownProps) => {
 
   const handleOptionClick = (optionLabel: any) => {
     setSelected(optionLabel);
-    setIsOpen(false); // Close the dropdown after selecting an option
+    setIsOpen(false);
   };
 
   return (
-    <div className='relative'>
+    <div className={`relative ${containerClassName}`}>
       <button
         type='button'
-        className='flex justify-between items-center w-[270px] h-12 px-4 py-2 font-medium bg-white border border-headerBoxBorder focus:outline-none focus:ring-0 focus:ring-offset-2 focus:ring-indigo-500'
+        className={`flex justify-between items-center w-[270px] h-12 px-4 py-2 font-medium bg-white border border-headerBoxBorder focus:outline-none focus:ring-0 focus:ring-offset-2 focus:ring-indigo-500 ${buttonClassName}`}
         onClick={toggleDropdown}
       >
         {selected}
@@ -46,13 +58,15 @@ const Dropdown = ({ options = [], buttonText = 'Options' }: DropdownProps) => {
       </button>
 
       {isOpen && (
-        <div className='absolute right-0 w-[270px] mt-2 origin-top-right shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-200'>
-          <div className=''>
+        <div
+          className={`absolute right-0 w-[270px] mt-2 origin-top-right shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-200 ${menuClassName}`}
+        >
+          <div>
             {options.map((option, index) => (
               <Link
                 key={index}
                 href='#'
-                className='block px-4 py-2 text-sm text-secondary hover:bg-bg'
+                className={`block px-4 py-2 text-sm text-secondary hover:bg-bg ${optionClassName}`}
                 onClick={() => handleOptionClick(option.label)}
               >
                 {option.label}
