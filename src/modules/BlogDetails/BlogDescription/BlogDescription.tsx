@@ -5,7 +5,6 @@ import { CodeBlock, Typography } from '@codewinglet/components';
 import { BlogPost } from '@codewinglet/types';
 import { groupedCode } from '@codewinglet/utils';
 
-import MostViewBlog from './MostViewBlog';
 import ScrollHighlightNavbar from './ScrollHighlighNavBar';
   
 const BlogDescription: React.FC<{ contentData: BlogPost[] }> = ({
@@ -17,7 +16,7 @@ const BlogDescription: React.FC<{ contentData: BlogPost[] }> = ({
   }));
   groupedCode(contentData);
   return (
-    <div className='bg-white lg:py-20 py-[60px] lg:pt-40 md:pt-96 pt-0 pb- 2'>
+    <div className='bg-white lg:py-20 py-[60px] pt-0 pb-2'>
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
         <div className='flex lg:flex-row flex-col justify-between gap-[28px]'>
           {/* left */}
@@ -25,14 +24,14 @@ const BlogDescription: React.FC<{ contentData: BlogPost[] }> = ({
             <ScrollHighlightNavbar navHeader={PolicyData} />
           </div>
           {/* center */}
-          <div className='lg:w-[730px] w-full'>
+          <div className='w-full'>
             {contentData?.map((item) => (
               <div
                 id={`section-${item.title}`}
                 key={`section-${item.title}`}
                 className='scroll-mt-[155px]'
               >
-                <Typography className='text-primary md:text-subtitle2 text-tag md:mb-[18px] mb-2.5'>
+                <Typography className='text-primary mt-[30px] md:text-subtitle2 text-tag md:mb-[18px] mb-2.5'>
                   {item?.title}
                 </Typography>
                 <div>
@@ -54,7 +53,7 @@ const BlogDescription: React.FC<{ contentData: BlogPost[] }> = ({
                         return (
                           <span
                             key={index}
-                            className='text-secondary md:text-paragraph1ExtraLight pb-8'
+                            className='text-primary md:text-paragraph1ExtraLight pb-8'
                           >
                             {item.children.map((child) => {
                               let childText: React.ReactNode = child.text;
@@ -114,15 +113,22 @@ const BlogDescription: React.FC<{ contentData: BlogPost[] }> = ({
                             key={index}
                             className={
                               item?.format === 'ordered'
-                                ? 'list-decimal ml-5 text-secondary md:text-paragraph1ExtraLight'
-                                : 'list-disc ml-5 text-secondary md:text-paragraph1ExtraLight'
+                                ? 'list-decimal ml-5 text-primary md:text-paragraph1ExtraLight'
+                                : 'list-disc ml-5 text-primary md:text-paragraph1ExtraLight'
                             }
                           >
                             {item.children.map((item, itemIndex) => (
                               <li key={itemIndex}>
                                 {item.children.map(
                                   (child: any, childIndex: any) => (
-                                    <span key={childIndex}>{child.text}</span>
+                                    <span
+                                      key={childIndex}
+                                      className={`${
+                                        Boolean(child.bold) ? 'font-medium' : ''
+                                      }`}
+                                    >
+                                      {child.text}
+                                    </span>
                                   )
                                 )}
                               </li>
@@ -153,9 +159,9 @@ const BlogDescription: React.FC<{ contentData: BlogPost[] }> = ({
             ))}
           </div>
           {/* Right */}
-          <div className='lg:w-[250px] w-full'>
+          {/* <div className='lg:w-[250px] w-full'>
             <MostViewBlog />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

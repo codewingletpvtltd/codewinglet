@@ -8,7 +8,7 @@ const MostViewBlog = async () => {
   const blogs = await fetchMostViewedBlogs();
   return (
     <div className='lg:sticky right-0 top-[230px]'>
-      <Typography className='text-primary text-subtitle2 pb-[18px] border-b-2 border-primary'>
+      <Typography className='text-primary text-subtitle2 pb-[18px] border-b-2border-primary'>
         Most Viewed Blogs
       </Typography>
       <ol

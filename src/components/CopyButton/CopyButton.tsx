@@ -13,7 +13,6 @@ const handleCopyClick = (text: string, successMessage: string) => {
       toast.success(successMessage);
     })
     .catch((err) => {
-      console.error('Failed to copy URL: ', err);
       toast.error(err.message);
     });
 };

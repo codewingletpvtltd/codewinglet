@@ -24,10 +24,10 @@ const BlogDetailsLink = ({ blogData }: any) => {
             breadcrumbs={breadcrumbData.map((item) =>
               item.href ? (
                 <Link href={item.href} key={item.value}>
-                  <Typography>{item.value}</Typography>
+                  {item.value}
                 </Link>
               ) : (
-                <Typography key={item.value}>{item.value}</Typography>
+                <>{item.value}</>
               )
             )}
           />
