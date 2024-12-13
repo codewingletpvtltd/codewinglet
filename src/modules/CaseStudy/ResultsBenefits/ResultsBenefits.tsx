@@ -2,9 +2,14 @@
 
 import { SectionHeader } from '@codewinglet/components';
 
+import ResultsContent from '.';
+
 const ResultsBenefits = () => (
   <>
-    <div className='bg-white lg:py-20 md:py-[60px] py-10'>
+    <div
+      className='bg-white lg:py-20 md:py-[60px] py-10 scroll-mt-32'
+      id='results'
+    >
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
         <SectionHeader
           title={<>Results & Benefits</>}
@@ -17,6 +22,8 @@ const ResultsBenefits = () => (
           headingClassName='text-primary md:!text-h2 text-center'
           descriptionClassName='text-primary md:!text-paragraph1ExtraLight text-center'
         />
+
+        <ResultsContent />
       </div>
     </div>
   </>

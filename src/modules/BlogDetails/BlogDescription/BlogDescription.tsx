@@ -7,7 +7,7 @@ import { groupedCode } from '@codewinglet/utils';
 
 import MostViewBlog from './MostViewBlog';
 import ScrollHighlightNavbar from './ScrollHighlighNavBar';
-
+  
 const BlogDescription: React.FC<{ contentData: BlogPost[] }> = ({
   contentData,
 }) => {
@@ -17,7 +17,7 @@ const BlogDescription: React.FC<{ contentData: BlogPost[] }> = ({
   }));
   groupedCode(contentData);
   return (
-    <div className='bg-white lg:py-20 py-[60px] lg:pt-40 md:pt-96 pt-0 pb-2'>
+    <div className='bg-white lg:py-20 py-[60px] lg:pt-40 md:pt-96 pt-0 pb- 2'>
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
         <div className='flex lg:flex-row flex-col justify-between gap-[28px]'>
           {/* left */}
