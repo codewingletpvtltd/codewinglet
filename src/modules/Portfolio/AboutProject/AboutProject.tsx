@@ -1,5 +1,4 @@
 'use client';
-
 import Image from 'next/image';
 
 import CheckIcon from '@codewinglet/assets/icons/CheckIcon';

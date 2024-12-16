@@ -7,7 +7,7 @@ import { Arrow } from '@codewinglet/assets';
 import { Button, SectionHeader, Typography } from '@codewinglet/components';
 
 const BusinessGoal = () => {
-  const highlights = [
+  const businessHighlights = [
     {
       title: 'Enhance HR Efficiency',
       description:
@@ -70,22 +70,23 @@ const BusinessGoal = () => {
 
           {/* Right Section */}
           <div className='grid lg:grid-cols-2 gap-[30px] lg:mt-0 mt-10'>
-            {highlights.map((highlight, index) => (
+            {businessHighlights.map((highlight, index) => (
               <div
                 key={index}
-                className='bg-white p-[30px] flex lg:flex-col flex-row lg:gap-0 gap-8 items-start'
+                className='bg-white md:p-[30px] p-5 flex lg:flex-col flex-row lg:gap-0 md:gap-8 gap-3.5 items-start'
               >
                 <Image
                   src={highlight.icon}
                   alt={highlight.title}
                   width={38}
                   height={38}
+                  className='md:w-[38px] md:h-[38px] w-6 h-6'
                 />
                 <div>
-                  <Typography className='text-primary lg:text-subtitle2 text-paragraph1 lg:pt-10'>
+                  <Typography className='text-primary lg:text-subtitle2 md:text-paragraph1 text-tag lg:pt-10'>
                     {highlight.title}
                   </Typography>
-                  <Typography className='text-secondary text-paragraph2Light lg:pt-2.5 pt-1.5'>
+                  <Typography className='text-secondary md:text-paragraph2Light text-tagExtraLight lg:pt-2.5 pt-1.5'>
                     {highlight.description}
                   </Typography>
                 </div>

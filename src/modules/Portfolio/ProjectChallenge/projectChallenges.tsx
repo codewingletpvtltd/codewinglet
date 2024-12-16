@@ -55,10 +55,10 @@ const ProjectChallenge = () => (
             alt='projectChallenges'
             width={655}
             height={646}
-            className='2xl:w-[655px] w-[567px] flex-shrink-0 mx-auto'
+            className='2xl:w-[655px] md:w-[567px] flex-shrink-0 mx-auto'
           />
 
-          <div className='flex flex-col gap-[34px] lg:py-10 lg:mt-0 mt-[30px]'>
+          <div className='flex flex-col md:gap-[34px] gap-5 lg:py-10 lg:mt-0 mt-[30px]'>
             {contentBlocks.map((block, index) => (
               <div key={index} className='flex gap-[15px] items-baseline'>
                 <div className=''>

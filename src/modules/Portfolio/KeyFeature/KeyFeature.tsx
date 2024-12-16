@@ -3,7 +3,7 @@
 import CheckIcon from '@codewinglet/assets/icons/CheckIcon';
 import { SectionHeader, Typography } from '@codewinglet/components';
 
-const contentBlocks = [
+const features = [
   {
     title: 'User-Centric Design',
     description:
@@ -53,12 +53,15 @@ const KeyFeature = () => (
     {/* Content Blocks */}
     <section className='bg-white relative lg:h-[590px] h-[820px]'>
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto absolute -top-[100px] left-0 right-0'>
-        <div className='bg-white lg:p-10 p-[30px] border border-headerBoxBorder'>
+        <div className='bg-white lg:p-10 md:p-[30px] p-[15px] border border-headerBoxBorder'>
           <div className='grid lg:grid-cols-2 lg:gap-10 gap-5'>
-            {contentBlocks.map(({ title, description }, index) => (
-              <div key={index} className='flex gap-2.5 bg-bg lg:p-[30px] p-5'>
+            {features.map(({ title, description }, index) => (
+              <div
+                key={index}
+                className='flex gap-2.5 bg-bg lg:p-[30px] md:p-5 p-3'
+              >
                 <div className='text-success'>
-                  <CheckIcon />
+                  <CheckIcon className='md:w-[30px] w-6 md:h-[30px] h-6' />
                 </div>
                 <div>
                   <Typography className='text-primary lg:text-subtitle2 md:text-paragraph1 text-tag'>
