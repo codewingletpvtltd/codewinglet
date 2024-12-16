@@ -51,7 +51,7 @@ const KeyFeature = () => (
     </section>
 
     {/* Content Blocks */}
-    <section className='bg-white relative lg:h-[590px] h-[820px]'>
+    <section className='bg-white relative lg:h-[590px] md:h-[820px] h-[780px]'>
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto absolute -top-[100px] left-0 right-0'>
         <div className='bg-white lg:p-10 md:p-[30px] p-[15px] border border-headerBoxBorder'>
           <div className='grid lg:grid-cols-2 lg:gap-10 gap-5'>
