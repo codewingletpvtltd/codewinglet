@@ -52,6 +52,7 @@ export default {
     backgroundImage: {
       'dot-pattern': 'url("/assets/career/dotGrid.png")',
       projectBg: 'url("/assets/CaseStudy/AboutProjectBg.png")',
+      keyFeatureBg: 'url("/assets/Portfolio/KeyFeatureBg.png")',
     },
     boxShadow: {
       custom: '0px 4px 10px 0px rgba(159, 159, 159, 0.1)',

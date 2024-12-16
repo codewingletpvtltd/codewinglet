@@ -1,0 +1,83 @@
+'use client';
+
+import Image from 'next/image';
+
+import { Arrow } from '@codewinglet/assets';
+import { SectionHeader, Typography } from '@codewinglet/components';
+
+const contentBlocks = [
+  {
+    title: 'Understanding Client Needs',
+    description:
+      'With our full-stack knowledge & battle-tested agile strategy, we help clients. With our full-stack knowledge & battle-tested agile strategy, we help clients.',
+  },
+  {
+    title: 'Design Thinking Methodology',
+    description:
+      'With our full-stack knowledge & battle-tested agile strategy, we help clients. With our full-stack knowledge & battle-tested agile strategy, we help clients.',
+  },
+  {
+    title: 'Agile Development Process',
+    description:
+      'With our full-stack knowledge & battle-tested agile strategy, we help clients. With our full-stack knowledge & battle-tested agile strategy, we help clients.',
+  },
+  {
+    title: 'Collaboration and Transparency',
+    description:
+      'With our full-stack knowledge & battle-tested agile strategy, we help clients. With our full-stack knowledge & battle-tested agile strategy, we help clients.',
+  },
+  {
+    title: 'Collaboration and Transparency',
+    description:
+      'With our full-stack knowledge & battle-tested agile strategy, we help clients. With our full-stack knowledge & battle-tested agile strategy, we help clients.',
+  },
+];
+
+const ProjectChallenge = () => (
+  <>
+    <div className='bg-white lg:py-20 md:py-[60px] py-10 relative scroll-mt-32'>
+      <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
+        <SectionHeader
+          title={<>Project challenges</>}
+          description={
+            <>
+              With extensive holdings in linear TV, digital apps, and internet
+              platforms, it offers comprehensive sports coverage..
+            </>
+          }
+          headingClassName='text-primary lg:!text-h2 text-center'
+          descriptionClassName='text-secondary md:!text-paragraph1ExtraLight text-center'
+        />
+
+        <div className='md:mt-[50px] mt-5 flex gap-10'>
+          <Image
+            src='/assets/Portfolio/projectChallenges.png'
+            alt='projectChallenges'
+            width={655}
+            height={646}
+          />
+
+          <div className='flex flex-col gap-[34px] py-10'>
+            {contentBlocks.map((block, index) => (
+              <div key={index} className='flex gap-[15px] items-baseline'>
+                <div className=''>
+                  <Arrow />
+                </div>
+                <div>
+                  <Typography className='text-primary lg:text-subtitle2 md:text-paragraph1 text-tag'>
+                    {block.title}
+                  </Typography>
+                  <Typography className='text-secondary md:text-paragraph2Light text-tagExtraLight pt-2'>
+                    {block.description}
+                  </Typography>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </>
+);
+
+export default ProjectChallenge;

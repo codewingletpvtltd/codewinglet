@@ -5,6 +5,7 @@ export { default as CareerModule } from './Career';
 export { default as CaseStudyModule } from './CaseStudy';
 export { default as ContactUsModule } from './ContactUs';
 export { default as HomeModule } from './Home';
+export { default as PortfolioModule } from './Portfolio';
 export { default as PrivacyPolicyModule } from './PrivacyPolicy';
 export { default as TechnologyModule } from './Technology';
 export { default as TermsConditionModule } from './TermsCondition';
