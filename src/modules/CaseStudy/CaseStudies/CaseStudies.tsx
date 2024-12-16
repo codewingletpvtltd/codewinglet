@@ -91,7 +91,7 @@ const CaseStudies = () => (
         </div>
 
         <Button
-          className='sm:w-[276px] md:w-[248px] w-60 h-[52px] 2xl:mt-12 mt-10 mx-auto block !bg-transparent hover:!bg-primary'
+          className='lg:w-[276px] md:w-[248px] w-60 h-[52px] 2xl:mt-12 mt-10 mx-auto block !bg-transparent hover:!bg-primary'
           variant='blackOutline'
         >
           <Link
