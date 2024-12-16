@@ -246,8 +246,18 @@ export const companyMenu = [
     label: 'Career',
   },
   {
+    id: 4,
+    path: '/our-work',
+    label: 'Works',
+  },
+  {
+    id: 5,
+    path: '/case-study',
+    label: 'Case studies',
+  },
+  {
     id: 6,
-    path: '',
+    path: '/blogs',
     label: 'Blogs',
   },
 ];
