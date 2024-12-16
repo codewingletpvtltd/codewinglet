@@ -47,11 +47,11 @@ const CaseStudies = () => (
               over 100 million fans weekly across
             </>
           }
-          headingClassName='text-primary md:!text-h2 text-center'
+          headingClassName='text-primary lg:!text-h2 text-center'
           descriptionClassName='text-primary md:!text-paragraph1ExtraLight text-center'
         />
 
-        <div className='grid lg:grid-cols-4 md:grid-cols-2 gap-[30px] mt-12'>
+        <div className='grid lg:grid-cols-4 md:grid-cols-2 gap-[30px] lg::mt-12 mt-10'>
           {caseStudyData.map((item, index) => (
             <div
               key={index}

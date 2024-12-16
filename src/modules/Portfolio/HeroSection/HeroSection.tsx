@@ -31,9 +31,9 @@ const HeroSection = () => {
   ];
 
   return (
-    <div className='lg:mt-[86px] mt-[90px] lg:py-20 md:py-[60px] py-10 relative'>
-      <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto relative z-10 flex gap-[76px]'>
-        <div className='w-[762px]'>
+    <div className='lg:mt-[86px] mt-[90px] lg:py-20 md:py-[60px] py-10 lg:pt-0 !pt-[100px] relative'>
+      <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto relative z-10 lg:flex 2xl:gap-[76px] gap-14'>
+        <div className='2xl:w-[762px] lg:w-[719px]'>
           <span className='lg:text-subtitle2Light md:text-paragraph2Light text-tagLight text-secondary block'>
             Portfolio
           </span>
@@ -46,12 +46,12 @@ const HeroSection = () => {
                 for seamless access to articles.
               </>
             }
-            headingClassName='text-white lg:!text-[55px] md:!text-h2 leading-normal'
+            headingClassName='text-white 2xl:!text-[55px] lg:!text-[53px] md:!text-h2 leading-normal'
             descriptionClassName='text-white mt-1.5 lg:!text-paragraph1ExtraLight'
           />
 
           <Button
-            className='md:w-[242px] w-[151px] lg:mt-[50px] md:mt-8 mt-10 py-0 md:!text-paragraph2 !text-tag text-white'
+            className='md:w-[242px] w-[151px] 2xl:mt-[50px] lg:mt-10 mt-[30px] py-0 md:!text-paragraph2 !text-tag text-white'
             variant='outline'
           >
             <Link
@@ -64,7 +64,7 @@ const HeroSection = () => {
             </Link>
           </Button>
 
-          <div className='mt-[100px]'>
+          <div className='2xl:mt-[100px] lg:mt-[72px] mt-[50px]'>
             {industryInfo.map((info, index) => (
               <div
                 className='flex justify-between py-4 border-b border-dashed border-[#3B3B3B] last:border-b-0'
@@ -87,12 +87,13 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <div>
+        <div className='lg:mt-0 mt-[34px]'>
           <Image
             src='/assets/Portfolio/mainPortfolio.png'
             alt='mainPortfolio'
             width={573}
             height={686}
+            className='2xl:w-[573px] lg:w-[505px] w-full 2xl:h-[686px] lg:h-[643px] h-[350px] object-cover'
           />
         </div>
       </div>

@@ -16,7 +16,7 @@ const TechnologyTab = () => {
   return (
     <>
       {/* DESKTOP */}
-      <div className='flex flex-col md:gap-[30px] gap-[15px] lg:mt-5 md:mt-10 mt-[30px] 2xl:pl-[50px] lg:pl-10 w-full'>
+      <div className='flex flex-col md:gap-[30px] gap-[15px] lg:mt-5 md:mt-10 mt-[30px] 2xl:pl-[50px] lg:pl-10 2xl:w-full lg:w-[836px] w-full'>
         <div className='w-full border-b border-headerBoxBorder flex gap-[29px] md:overscroll-none overflow-y-auto [-ms-overflow-style:_none;] [scrollbar-width:_none;]'>
           {ServiceData.map((service, i) => (
             <div

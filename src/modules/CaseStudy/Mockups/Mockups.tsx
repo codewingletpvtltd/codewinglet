@@ -3,7 +3,7 @@
 import Image from 'next/image';
 
 const Mockups = () => (
-  <div className='bg-white pb-20'>
+  <div className='bg-white lg:py-20 md:py-[60px] py-10'>
     <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto md:flex lg:gap-[30px] gap-5'>
       <div className='overflow-hidden cursor-pointer'>
         <Image

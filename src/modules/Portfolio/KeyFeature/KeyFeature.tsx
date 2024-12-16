@@ -45,18 +45,18 @@ const KeyFeature = () => (
           title='Key Feature'
           description='With our full-stack knowledge and battle-tested agile strategy, we help clients flourish at every level of the web product development lifecycle.'
           headingClassName='text-white lg:!text-h2 text-center'
-          descriptionClassName='text-white md:!text-paragraph1ExtraLight text-center px-64'
+          descriptionClassName='text-white md:!text-paragraph1ExtraLight text-center lg:px-64'
         />
       </div>
     </section>
 
     {/* Content Blocks */}
-    <section className='bg-white relative h-[590px]'>
+    <section className='bg-white relative lg:h-[590px] h-[820px]'>
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto absolute -top-[100px] left-0 right-0'>
-        <div className='bg-white md:p-10 p-5 border border-headerBoxBorder'>
-          <div className='grid lg:grid-cols-2 gap-10'>
+        <div className='bg-white lg:p-10 p-[30px] border border-headerBoxBorder'>
+          <div className='grid lg:grid-cols-2 lg:gap-10 gap-5'>
             {contentBlocks.map(({ title, description }, index) => (
-              <div key={index} className='flex gap-2.5 bg-bg p-[30px]'>
+              <div key={index} className='flex gap-2.5 bg-bg lg:p-[30px] p-5'>
                 <div className='text-success'>
                   <CheckIcon />
                 </div>
