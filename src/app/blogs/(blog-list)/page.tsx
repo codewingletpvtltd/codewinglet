@@ -1,3 +1,5 @@
+import { Suspense } from 'react';
+
 import {
   BlogCategory,
   BlogList,
@@ -6,6 +8,7 @@ import {
   Typography,
 } from '@codewinglet/components';
 import { fetchAllBlogs, fetchLatestBlog } from '@codewinglet/services';
+
 
 type BlogsProps = {
   searchParams: {
@@ -42,7 +45,9 @@ const Blogs = async ({ searchParams }: BlogsProps) => {
             </>
           )} */}
           <div className='lg:block hidden'>
+          <Suspense fallback={<div>Loading...</div>}>
             <BlogCategory />
+            </Suspense>
           </div>
           {blogs.length > 0 ? (
             <div className='border-b border-headerBoxBorder lg:pb-[45px] pb-10 lg:mt-[50px]'>
