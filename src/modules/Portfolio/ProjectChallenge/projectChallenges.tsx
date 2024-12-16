@@ -49,15 +49,16 @@ const ProjectChallenge = () => (
           descriptionClassName='text-secondary md:!text-paragraph1ExtraLight text-center'
         />
 
-        <div className='md:mt-[50px] mt-5 flex gap-10'>
+        <div className='lg:mt-[50px] mt-[35px] lg:flex gap-10'>
           <Image
             src='/assets/Portfolio/projectChallenges.png'
             alt='projectChallenges'
             width={655}
             height={646}
+            className='2xl:w-[655px] md:w-[567px] flex-shrink-0 mx-auto'
           />
 
-          <div className='flex flex-col gap-[34px] py-10'>
+          <div className='flex flex-col md:gap-[34px] gap-5 lg:py-10 lg:mt-0 mt-[30px]'>
             {contentBlocks.map((block, index) => (
               <div key={index} className='flex gap-[15px] items-baseline'>
                 <div className=''>

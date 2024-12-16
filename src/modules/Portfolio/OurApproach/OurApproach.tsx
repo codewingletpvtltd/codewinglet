@@ -3,31 +3,15 @@
 import CheckIcon from '@codewinglet/assets/icons/CheckIcon';
 import { SectionHeader, Typography } from '@codewinglet/components';
 
-const contentBlocks = [
-  {
-    title: 'Reduced Document Retrieval Time',
-  },
-  {
-    title: 'Streamlined Workflow and Data Segregation',
-  },
-  {
-    title: 'Remote Document Processing',
-  },
-  {
-    title: 'Cloud-Native Development',
-  },
-  {
-    title: 'Centralized Document Management',
-  },
-  {
-    title: 'Secure Document Storage',
-  },
-  {
-    title: 'Centralized Document Management',
-  },
-  {
-    title: 'Secure Document Storage',
-  },
+const featureList = [
+  { title: 'Reduced Document Retrieval Time' },
+  { title: 'Streamlined Workflow and Data Segregation' },
+  { title: 'Remote Document Processing' },
+  { title: 'Cloud-Native Development' },
+  { title: 'Centralized Document Management' },
+  { title: 'Secure Document Storage' },
+  { title: 'Centralized Document Management' },
+  { title: 'Secure Document Storage' },
 ];
 
 const OurApproach = () => (
@@ -49,16 +33,16 @@ const OurApproach = () => (
           descriptionClassName='text-white md:!text-paragraph1ExtraLight text-center'
         />
 
-        <div className='bg-primary md:p-[50px] p-5 md:mt-[50px] mt-5'>
-          <div className='grid lg:grid-cols-2 md:gap-[50px] gap-y-5 gap-x-20'>
-            {contentBlocks.map((block, index) => (
-              <div key={index} className='flex lg:gap-5 gap-[15px]'>
+        <div className='bg-primary lg:p-[50px] md:p-9 p-5 lg:mt-[50px] mt-10'>
+          <div className='grid lg:grid-cols-2 2xl:gap-[50px] lg:gap-10 md:gap-[34px] gap-6'>
+            {featureList.map((feature, index) => (
+              <div key={index} className='flex lg:gap-5 md:gap-[15px] gap-2'>
                 <div className='text-success'>
-                  <CheckIcon />
+                  <CheckIcon className='md:w-[30px] w-6 md:h-[30px] h-6' />
                 </div>
                 <div>
-                  <Typography className='text-white lg:text-h6 md:text-paragraph1 !font-light text-tag'>
-                    {block.title}
+                  <Typography className='text-white 2xl:text-h6 lg:text-subtitle1 md:text-h6 !font-light text-tag'>
+                    {feature.title}
                   </Typography>
                 </div>
               </div>

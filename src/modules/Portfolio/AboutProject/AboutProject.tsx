@@ -1,5 +1,4 @@
 'use client';
-
 import Image from 'next/image';
 
 import CheckIcon from '@codewinglet/assets/icons/CheckIcon';
@@ -29,8 +28,8 @@ const AboutProject = () => {
         className='bg-white lg:py-20 md:py-[60px] py-10 scroll-mt-32'
         id='aboutProject'
       >
-        <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto lg:flex block gap-[50px]'>
-          <div className='lg:mt-0 md:mt-10 mt-5'>
+        <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto flex lg:flex-row flex-col lg:gap-[50px]'>
+          <div className='lg:mt-0 md:mt-10 mt-5 lg:order-1 order-2'>
             <SectionHeader
               title={<>About Project</>}
               description={
@@ -66,7 +65,7 @@ const AboutProject = () => {
               </ul>
             </div>
           </div>
-          <div className='bg-projectBg p-5 md:w-[425px] flex-shrink-0 bg-cover lg:m-0 m-auto'>
+          <div className='bg-projectBg p-5 md:w-[425px] flex-shrink-0 bg-cover lg:m-0 m-auto lg:order-2 order-1'>
             <Typography className='md:text-paragraph1 text-tagLight flex gap-3 bg-white py-5 items-center justify-center'>
               <Image
                 src='/assets/CaseStudy/shining_star.svg'

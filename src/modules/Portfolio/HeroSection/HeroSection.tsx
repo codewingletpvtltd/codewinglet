@@ -7,33 +7,33 @@ import { Arrow } from '@codewinglet/assets';
 import { Button, SectionHeader, Typography } from '@codewinglet/components';
 
 const HeroSection = () => {
-  const industryInfo = [
+  const industryDetails = [
     {
       icon: '/assets/Portfolio/industry.svg',
-      label: 'INDUSTRY',
+      label: 'Industry',
       value: 'Legal Compliance Services',
     },
     {
       icon: '/assets/Portfolio/location.svg',
-      label: 'COUNTRY',
+      label: 'Country',
       value: 'California, USA',
     },
     {
       icon: '/assets/Portfolio/calendar.svg',
-      label: 'PROJECT DURATION',
+      label: 'Project Duration',
       value: '6 Months',
     },
     {
       icon: '/assets/Portfolio/dollar.svg',
-      label: 'ENGAGEMENT MODEL',
+      label: 'Engagement Model',
       value: 'Hourly based model',
     },
   ];
 
   return (
-    <div className='lg:mt-[86px] mt-[90px] lg:py-20 md:py-[60px] py-10 relative'>
-      <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto relative z-10 flex gap-[76px]'>
-        <div className='w-[762px]'>
+    <div className='lg:mt-[86px] md:mt-[90px] mt-[78px] lg:py-20 md:py-[60px] py-10 lg:pt-0 md:!pt-[100px] !pt-[88px] relative'>
+      <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto relative z-10 lg:flex 2xl:gap-[76px] gap-14'>
+        <div className='2xl:w-[762px] lg:w-[719px]'>
           <span className='lg:text-subtitle2Light md:text-paragraph2Light text-tagLight text-secondary block'>
             Portfolio
           </span>
@@ -46,12 +46,12 @@ const HeroSection = () => {
                 for seamless access to articles.
               </>
             }
-            headingClassName='text-white lg:!text-[55px] md:!text-h2 leading-normal'
+            headingClassName='text-white 2xl:!text-[55px] lg:!text-[53px] md:!text-h2 leading-normal'
             descriptionClassName='text-white mt-1.5 lg:!text-paragraph1ExtraLight'
           />
 
           <Button
-            className='md:w-[242px] w-[151px] lg:mt-[50px] md:mt-8 mt-10 py-0 md:!text-paragraph2 !text-tag text-white'
+            className='md:w-[242px] w-[197px] 2xl:mt-[50px] lg:mt-10 md:mt-[30px] mt-5 py-0 md:!text-paragraph2 !text-tag text-white'
             variant='outline'
           >
             <Link
@@ -64,22 +64,23 @@ const HeroSection = () => {
             </Link>
           </Button>
 
-          <div className='mt-[100px]'>
-            {industryInfo.map((info, index) => (
+          <div className='2xl:mt-[100px] lg:mt-[72px] mt-[50px]'>
+            {industryDetails.map((info, index) => (
               <div
                 className='flex justify-between py-4 border-b border-dashed border-[#3B3B3B] last:border-b-0'
                 key={index}
               >
-                <span className='text-secondary text-tag flex items-center gap-2'>
+                <span className='text-secondary md:text-tag text-tagExtraLight flex items-center gap-2 uppercase'>
                   <Image
                     src={info.icon}
                     alt={info.label.toLowerCase()}
                     width={24}
                     height={24}
+                    className='md:w-6 md:h-6 w-4 h-4'
                   />
                   {info.label}
                 </span>
-                <Typography className='text-white text-subtitle2Light'>
+                <Typography className='text-white md:text-subtitle2Light text-tagLight'>
                   {info.value}
                 </Typography>
               </div>
@@ -87,12 +88,13 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <div>
+        <div className='lg:mt-0 md:mt-[34px] mt-3.5'>
           <Image
             src='/assets/Portfolio/mainPortfolio.png'
             alt='mainPortfolio'
             width={573}
             height={686}
+            className='2xl:w-[573px] lg:w-[505px] w-full 2xl:h-[686px] lg:h-[643px] h-[350px] object-cover'
           />
         </div>
       </div>
