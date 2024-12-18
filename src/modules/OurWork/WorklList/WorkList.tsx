@@ -50,7 +50,7 @@ const WorkList = () => {
                     variant='link'
                   >
                     <Link
-                      href='/blogs'
+                      href={`/our-work/${item.id}/${item.project}`}
                       rel='noopener noreferrer'
                       className='flex items-center justify-center gap-3 md:text-paragraph2 text-tag'
                     >

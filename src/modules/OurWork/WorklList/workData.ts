@@ -4,12 +4,16 @@ export const ourWorkData = [
     img: '/assets/CaseStudy/exploreMore.png',
     label: 'Sustainable solution',
     description: 'Bill Walsh leadership lessons Bill Walsh leadership lessons',
+    id: '10',
+    project: 'RH',
   },
   {
     tag: 'Case study',
     img: '/assets/CaseStudy/exploreMore.png',
     label: 'Healthcare',
     description: 'What is Wireframing? Bill Walsh leadership lessons',
+    id: '55',
+    project: 'Azavista',
   },
   {
     tag: 'Portfolio',

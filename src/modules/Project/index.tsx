@@ -12,7 +12,7 @@ import KeyFeature from './KeyFeature/KeyFeature';
 import OurApproach from './OurApproach/OurApproach';
 import ProjectChallenge from './ProjectChallenge/projectChallenges';
 
-const Portfolio = () => (
+const Project = () => (
   <>
     <HeroSection />
     <AboutProject />
@@ -29,4 +29,4 @@ const Portfolio = () => (
   </>
 );
 
-export default Portfolio;
+export default Project;
