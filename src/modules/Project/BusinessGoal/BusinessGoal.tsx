@@ -12,25 +12,25 @@ const BusinessGoal = () => {
       title: 'Enhance HR Efficiency',
       description:
         'We thoroughly test across platforms to address your needs, employing regression and integration testing.',
-      icon: '/assets/Portfolio/Efficiency.svg',
+      icon: '/assets/Project/Efficiency.svg',
     },
     {
       title: 'Enhance HR Efficiency',
       description:
         'We thoroughly test across platforms to address your needs, employing regression and integration testing.',
-      icon: '/assets/Portfolio/Efficiency.svg',
+      icon: '/assets/Project/Efficiency.svg',
     },
     {
       title: 'Enhance HR Efficiency',
       description:
         'We thoroughly test across platforms to address your needs, employing regression and integration testing.',
-      icon: '/assets/Portfolio/Efficiency.svg',
+      icon: '/assets/Project/Efficiency.svg',
     },
     {
       title: 'Enhance HR Efficiency',
       description:
         'We thoroughly test across platforms to address your needs, employing regression and integration testing.',
-      icon: '/assets/Portfolio/Efficiency.svg',
+      icon: '/assets/Project/Efficiency.svg',
     },
   ];
 

@@ -9,22 +9,22 @@ import { Button, SectionHeader, Typography } from '@codewinglet/components';
 const HeroSection = () => {
   const industryDetails = [
     {
-      icon: '/assets/Portfolio/industry.svg',
+      icon: '/assets/Project/industry.svg',
       label: 'Industry',
       value: 'Legal Compliance Services',
     },
     {
-      icon: '/assets/Portfolio/location.svg',
+      icon: '/assets/Project/location.svg',
       label: 'Country',
       value: 'California, USA',
     },
     {
-      icon: '/assets/Portfolio/calendar.svg',
+      icon: '/assets/Project/calendar.svg',
       label: 'Project Duration',
       value: '6 Months',
     },
     {
-      icon: '/assets/Portfolio/dollar.svg',
+      icon: '/assets/Project/dollar.svg',
       label: 'Engagement Model',
       value: 'Hourly based model',
     },
@@ -90,7 +90,7 @@ const HeroSection = () => {
 
         <div className='lg:mt-0 md:mt-[34px] mt-3.5'>
           <Image
-            src='/assets/Portfolio/mainPortfolio.png'
+            src='/assets/Project/mainPortfolio.png'
             alt='mainPortfolio'
             width={573}
             height={686}
