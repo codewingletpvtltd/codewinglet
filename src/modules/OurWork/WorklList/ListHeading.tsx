@@ -35,6 +35,7 @@ const ListHeading = () => (
                 options={checkboxData}
                 buttonText='All'
                 buttonClassName='!bg-bg text-secondary text-tagLight lg:w-[270px] md:w-[216px] w-[98px]'
+                menuClassName='bg-white z-10'
               />
             </div>
             <div>
@@ -45,6 +46,7 @@ const ListHeading = () => (
                 options={checkboxData}
                 buttonText='All'
                 buttonClassName='!bg-bg text-secondary text-tagLight lg:w-[270px] md:w-[216px] w-[98px]'
+                menuClassName='bg-white z-10'
               />
             </div>
             <div>
@@ -55,6 +57,7 @@ const ListHeading = () => (
                 options={checkboxData}
                 buttonText='All'
                 buttonClassName='!bg-bg text-secondary text-tagLight lg:w-[270px] md:w-[216px] w-[98px]'
+                menuClassName='bg-white z-10'
               />
             </div>
           </div>

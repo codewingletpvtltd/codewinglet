@@ -75,9 +75,9 @@ const AboutProject = () => {
               />
               PROJECT HIGHLIGHTS
             </Typography>
-            <ul className='pt-[30px]'>
+            <div className='pt-[30px]'>
               {projectHighlights.map((highlight, index) => (
-                <li
+                <div
                   key={index}
                   className='relative md:pl-10 pl-8 md:text-paragraph1ExtraLight text-paragraph2 md:pb-[30px] pb-5'
                 >
@@ -87,9 +87,9 @@ const AboutProject = () => {
                   <Typography className='text-white md:text-paragraph2Light text-tagLight'>
                     {highlight}
                   </Typography>
-                </li>
+                </div>
               ))}
-            </ul>
+            </div>
           </div>
         </div>
       </div>

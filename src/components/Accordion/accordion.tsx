@@ -13,11 +13,7 @@ const AccordionItem = React.forwardRef<
   React.ElementRef<typeof AccordionPrimitive.Item>,
   React.ComponentPropsWithoutRef<typeof AccordionPrimitive.Item>
 >(({ className, ...props }, ref) => (
-  <AccordionPrimitive.Item
-    ref={ref}
-    className={cn('border-b1', className)}
-    {...props}
-  />
+  <AccordionPrimitive.Item ref={ref} className={cn(className)} {...props} />
 ));
 AccordionItem.displayName = 'AccordionItem';
 
@@ -40,9 +36,19 @@ const AccordionTrigger = React.forwardRef<
       {icon ? (
         icon
       ) : (
-        <div className='absolute right-5 icon-container h-[15px] w-[15px] md:h-[19px] md:w-[19px]'>
-          <span className='horizontal absolute block rounded-full w-full h-[1px] bg-secondary -translate-y-1/22 top-1/2 transition-all cubic-bezier-0.59,-0.01,0.42,0.98 duration-500'></span>
-          <span className='vertical absolute block rounded-full w-[1px] h-full bg-secondary -translate-x-1/2 left-1/2 transition-all cubic-bezier-0.59,-0.01,0.42,0.98 duration-500'></span>
+        <div className='absolute right-5 flex items-center justify-center icon-container h-[15px] w-[15px] md:h-[19px] md:w-[19px]'>
+          <span
+            className={cn(
+              'absolute block w-full h-[1px] bg-secondary transition-transform duration-500',
+              '[data-state=open]:rotate-45'
+            )}
+          ></span>
+          <span
+            className={cn(
+              'absolute block h-full w-[1px] bg-secondary transition-transform duration-500',
+              '[data-state=open]:-rotate-90'
+            )}
+          ></span>
         </div>
       )}
     </AccordionPrimitive.Trigger>

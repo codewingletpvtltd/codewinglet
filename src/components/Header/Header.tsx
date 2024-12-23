@@ -94,6 +94,8 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
             ? 'bg-primary'
             : pathName === '/technology'
             ? 'bg-primary'
+            : pathName === '/service'
+            ? 'bg-primary'
             : pathName === '/event-form'
             ? 'bg-primary !top-0'
             : 'bg-transparent'
