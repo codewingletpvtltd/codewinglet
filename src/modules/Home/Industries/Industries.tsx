@@ -67,7 +67,7 @@ const industriesCard = [
   },
 ];
 
-const ContactUs = () => (
+const Industries = () => (
   <section
     className='bg-white xl:py-20 lg:py-14 md:py-[60px] py-10 scroll-mt-40'
     id='industry'
@@ -108,4 +108,4 @@ const ContactUs = () => (
   </section>
 );
 
-export default ContactUs;
+export default Industries;

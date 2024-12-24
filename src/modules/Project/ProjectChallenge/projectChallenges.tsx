@@ -51,7 +51,7 @@ const ProjectChallenge = () => (
 
         <div className='lg:mt-[50px] mt-[35px] lg:flex gap-10'>
           <Image
-            src='/assets/Portfolio/projectChallenges.png'
+            src='/assets/Project/projectChallenges.png'
             alt='projectChallenges'
             width={655}
             height={646}
