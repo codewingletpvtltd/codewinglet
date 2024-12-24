@@ -45,7 +45,7 @@ const ServiceProvide = ({
             key={service.title}
             value={service.title}
             defaultChecked={i == 0}
-            className='border-b border-[#3B3B3B] last:border-b-0 py-10'
+            className='border-b border-[#3B3B3B] last:border-b-0 md:py-10 py-[25px]'
           >
             <AccordionTrigger
               icon={
@@ -82,35 +82,36 @@ const ProvideDevelopment = () => (
             business to deliver exactly what users crave.
           </>
         }
-        headingClassName='text-white md:!text-h2 leading-normal text-center'
-        descriptionClassName='text-secondary mt-1.5 lg:!text-subtitle2Light mb-[50px] text-center'
+        headingClassName='text-white lg:!text-h2 leading-normal text-center'
+        descriptionClassName='text-secondary mt-1.5 md:!text-subtitle2Light lg:mb-[50px] mb-10 text-center'
       />
 
-      <div className='flex items-start gap-[65px]'>
-        <div className='w-[715px]'>
+      <div className='flex items-start lg:gap-[65px] lg:flex-row flex-col'>
+        <div className='lg:w-[715px] w-full lg:order-1 order-2'>
           <ServiceProvide serviceProvide={serviceProvide} />
         </div>
 
-        <div className='relative'>
+        <div className='relative lg:order-2 order-1 m-auto overflow-hidden'>
           <Image
             src='/assets/Service/provideBg.png'
             alt='provideBg'
             width={630}
             height={524}
+            className='md:w-[630px] w-[315px] md:h-[524px] h-[262px]'
           />
           <Image
             src='/assets/Service/projectUi.png'
             alt='projectUi'
             width={340}
             height={536}
-            className='absolute bottom-0 left-10 z-[1]'
+            className='absolute md:-bottom-10 -bottom-5 md:left-10 left-5 z-[1] md:w-[340px] w-[175px] md:h-[536px] h-[276px]'
           />
           <Image
             src='/assets/Service/projectUiTwo.png'
             alt='projectUiTwo'
             width={294}
             height={511}
-            className='absolute top-0 right-10'
+            className='absolute md:-top-10 -top-5 md:right-10 right-5 md:w-[294px] w-[151px] md:h-[511px] h-[263px]'
           />
         </div>
       </div>

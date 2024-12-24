@@ -10,7 +10,7 @@ const DreamProject = () => (
   <>
     <div className='bg-black'>
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto flex'>
-        <div className='w-[852px] lg:py-20 md:py-[60px] py-10'>
+        <div className='lg:w-[852px] lg:py-20 md:py-[60px] py-10 md:text-left text-center'>
           <SectionHeader
             title={
               <>Get the developers & perfect solutions for your dream project</>
@@ -25,11 +25,14 @@ const DreamProject = () => (
             descriptionClassName='text-secondary md:!text-subtitle2Light'
           />
 
-          <div className='mt-14'>
-            <Typography className='text-white text-paragraph1Light mb-5'>
+          <div className='md:mt-14 mt-[30px]'>
+            <Typography className='text-white md:text-paragraph1Light text-tag mb-5'>
               Want to hire :
             </Typography>
-            <Button className='w-[206px] mr-[50px]' variant='secondary'>
+            <Button
+              className='w-[206px] md:mr-[50px] md:mb-0 mb-2.5'
+              variant='secondary'
+            >
               <Link href='/contact-us' rel='noopener noreferrer'>
                 A developer team
               </Link>
@@ -46,7 +49,7 @@ const DreamProject = () => (
             </Button>
           </div>
         </div>
-        <div className='relative'>
+        <div className='relative lg:block hidden'>
           <Image
             src='/assets/Service/whiteShade.png'
             alt='whiteShade'
