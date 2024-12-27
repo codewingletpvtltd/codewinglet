@@ -10,46 +10,27 @@ import {
   Typography,
 } from '@codewinglet/components';
 
-import { otherService } from './constant';
+import { categorizedServices } from './constant';
 
-function SampleNextArrow(props: any) {
-  const { className, style, onClick } = props;
+function SamplePrevArrow(props: any) {
+  const { className, onClick } = props;
   return (
-    <>
-      <Arrow
-        className={className}
-        onClick={onClick}
-        style={{
-          ...style,
-          display: 'block',
-          color: 'black',
-          bottom: '-60px',
-          left: 'auto',
-          right: '48%',
-          top: 'auto',
-          transform: 'unset',
-        }}
-      />
-    </>
+    <Arrow
+      className={`${className} !block !text-black !rotate-180 !absolute md:!-bottom-5 !-bottom-2 lg:!left-0 md:!left-[48%] !left-[42%] !top-auto`}
+      onClick={onClick}
+    />
   );
 }
 
-function SamplePrevArrow(props: any) {
-  const { className, style, onClick } = props;
+function SampleNextArrow(props: any) {
+  const { className, onClick } = props;
   return (
-    <Arrow
-      className={className}
-      onClick={onClick}
-      style={{
-        ...style,
-        display: 'block',
-        color: 'black',
-        transform: 'rotate(180deg)',
-        bottom: '-60px',
-        top: 'auto',
-        left: '47%',
-      }}
-    />
+    <>
+      <Arrow
+        className={`${className} !block !text-black !absolute md:!-bottom-5 !-bottom-2 lg:!left-10 !left-auto lg:!right-auto !right-[44%] !top-auto !transform-none`}
+        onClick={onClick}
+      />
+    </>
   );
 }
 
@@ -92,8 +73,8 @@ const OtherService = () => {
   return (
     <>
       <div className='bg-white lg:py-20 md:py-[60px] py-10'>
-        <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto flex'>
-          <div className='w-[370px] pr-[50px] border-r border-headerBoxBorder'>
+        <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto lg:flex'>
+          <div className='lg:w-[370px] lg:pr-[50px] lg:border-r border-headerBoxBorder'>
             <SectionHeader
               title={<>Looking for other Services?</>}
               description={
@@ -106,7 +87,7 @@ const OtherService = () => {
             />
 
             <Button
-              className='sm:w-[250px] w-[203px] mt-[70px] bg-transparent'
+              className='sm:w-[250px] w-[203px] mt-[70px] bg-transparent lg:block hidden'
               variant='blackOutline'
             >
               <Link
@@ -120,29 +101,49 @@ const OtherService = () => {
             </Button>
           </div>
 
-          <div className='relative w-[940px] pl-[50px]'>
-            <Slider {...settings}>
-              {otherService?.map((service) => (
-                <div
-                  key={service.id}
-                  className='mr-[50px] 2xl:!w-[450px] lg:!w-[420px] !w-[380px]'
-                >
-                  <Image
-                    src={service.img}
-                    alt={service.img}
-                    width={450}
-                    height={212}
-                  />
-                  <Typography className='text-primary lg:text-paragraph1Light text-paragraph1 pb-3'>
-                    {service.title}
-                  </Typography>
-                  <Typography className='text-secondary text-paragraph2Light'>
-                    {service.description}
-                  </Typography>
+          <div className='relative 2xl:w-[63rem] lg:w-[55rem] lg:pl-[50px] md:pb-[50px] pb-[30px] lg:mt-0 mt-10'>
+            <Slider settings={settings}>
+              {categorizedServices.map((category, index) => (
+                <div key={index}>
+                  {category.services.map((service) => (
+                    <div
+                      key={service.id}
+                      className='2xl:mr-[50px] md:mr-10 md:mb-10 mb-5 md:block flex gap-3'
+                    >
+                      <Image
+                        src={service.img}
+                        alt={service.title}
+                        width={450}
+                        height={212}
+                        className='md:w-[450px] w-[131px]'
+                      />
+                      <div>
+                        <Typography className='text-primary lg:text-paragraph1Light md:text-paragraph2 text-tag lg:pb-3 pb-1.5 md:pt-[15px]'>
+                          {service.title}
+                        </Typography>
+                        <Typography className='text-secondary lg:text-paragraph2Light md:text-tagLight text-tagExtraLight font-light'>
+                          {service.description}
+                        </Typography>
+                      </div>
+                    </div>
+                  ))}
                 </div>
               ))}
             </Slider>
           </div>
+          <Button
+            className='sm:w-[250px] w-[230px] mt-[70px] m-auto bg-transparent lg:hidden block'
+            variant='blackOutline'
+          >
+            <Link
+              href='/contact-us'
+              rel='noopener noreferrer'
+              className='flex items-center justify-center gap-3'
+            >
+              Explore all services
+              <Arrow />
+            </Link>
+          </Button>
         </div>
       </div>
     </>

@@ -122,7 +122,7 @@ const CurrentOpenings = () => (
             />
           </div> */}
 
-        <div className='md:mt-[86px] mt-[78px]'>
+        <div className='lg:mt-[50px] md:mt-10 mt-5'>
           <iframe
             src='https://codewinglet.oorwin.com/careers/index.html'
             width='100%'

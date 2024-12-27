@@ -9,7 +9,6 @@ import {
 } from '@codewinglet/components';
 import { fetchAllBlogs, fetchLatestBlog } from '@codewinglet/services';
 
-
 type BlogsProps = {
   searchParams: {
     page?: string;
@@ -35,7 +34,7 @@ const Blogs = async ({ searchParams }: BlogsProps) => {
 
   const showLatest = currentPage === 1 && !searchQuery && !categoryQuery;
   return (
-    <div className='text-black'>
+    <>
       {blogs.length > 0 || latestBlog.length > 0 ? (
         <>
           {/* {showLatest && (
@@ -45,8 +44,8 @@ const Blogs = async ({ searchParams }: BlogsProps) => {
             </>
           )} */}
           <div className='lg:block hidden'>
-          <Suspense fallback={<div>Loading...</div>}>
-            <BlogCategory />
+            <Suspense fallback={<div>Loading...</div>}>
+              <BlogCategory />
             </Suspense>
           </div>
           {blogs.length > 0 ? (
@@ -72,7 +71,7 @@ const Blogs = async ({ searchParams }: BlogsProps) => {
       ) : (
         <NoBlogFound />
       )}
-    </div>
+    </>
   );
 };
 

@@ -21,13 +21,13 @@ const Arrows: FC<ArrowProps> = ({
     >
       <div className='cursor-pointer'>
         <Arrow
-          className='rotate-180 w-6 h-6'
+          className='text-white rotate-180 w-6 h-6'
           onClick={() => sliderRef?.current?.slickPrev()}
         />
       </div>
       <div className='cursor-pointer'>
         <Arrow
-          className='w-6 h-6'
+          className='text-white w-6 h-6'
           onClick={() => sliderRef?.current?.slickNext()}
         />
       </div>

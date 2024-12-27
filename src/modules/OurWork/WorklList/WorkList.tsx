@@ -62,7 +62,7 @@ const WorkList = () => {
               </div>
             ))}
           </div>
-          <div className='md:mt-20 mt-[30px] border-t border-headerBoxBorder'>
+          <div className='lg:mt-20 mt-[30px] border-t border-headerBoxBorder'>
             <Pagination currentPage={currentPage} totalPages={totalPages} />
           </div>
         </div>

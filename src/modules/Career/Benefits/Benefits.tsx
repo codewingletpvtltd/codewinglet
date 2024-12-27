@@ -46,7 +46,7 @@ const workData = [
 const Benefits = () => (
   <>
     <div
-      className='bg-white lg:py-20 md:py-[60px] py-10 -scroll-mt-0'
+      className='bg-white lg:py-20 md:py-[60px] py-10 scroll-mt-32'
       id='perks'
     >
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto lg:flex block gap-[70px]'>

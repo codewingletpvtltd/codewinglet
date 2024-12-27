@@ -3,64 +3,25 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import { Arrow } from '@codewinglet/assets';
-import { Button, SectionHeader, Slider, Typography } from '@codewinglet/components';
-
+import {
+  Button,
+  SectionHeader,
+  Slider,
+  Typography,
+} from '@codewinglet/components';
 
 import { technologies } from './utils';
 
-function SampleNextArrow(props: any) {
-  const { className, style, onClick } = props;
-  return (
-    <>
-      <Arrow
-        className={className}
-        onClick={onClick}
-        style={{
-          ...style,
-          display: 'block',
-          color: 'black',
-          bottom: '-60px',
-          left: 'auto',
-          right: '48%',
-          top: 'auto',
-          transform: 'unset',
-        }}
-      />
-    </>
-  );
-}
-
-function SamplePrevArrow(props: any) {
-  const { className, style, onClick } = props;
-  return (
-    <Arrow
-      className={className}
-      onClick={onClick}
-      style={{
-        ...style,
-        display: 'block',
-        color: 'black',
-        transform: 'rotate(180deg)',
-        bottom: '-60px',
-        top: 'auto',
-        left: '47%',
-      }}
-    />
-  );
-}
-
 const Combination = () => {
   const settings = {
-    dots: false,
+    // dots: false,
     infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: false,
-    speed: 1500,
-    autoplaySpeed: 2800,
+    // slidesToShow: 3,
+    // slidesToScroll: 1,
+    autoplay: true,
+    speed: 1800,
+    autoplaySpeed: 1500,
     cssEase: 'linear',
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
     responsive: [
       {
         breakpoint: 1024,
@@ -104,12 +65,12 @@ const Combination = () => {
             descriptionClassName='text-primary lg:!text-subtitle2Light md:!text-paragraph1ExtraLight'
           />
 
-          <div className='lg:mt-[50px] md:mt-10 mt-5'>
-            <Slider {...settings}>
+          <div className='lg:mt-[50px] md:mt-10 mt-5 relative'>
+            <Slider {...settings} hideArrow>
               {technologies?.map((tech) => (
                 <div
                   key={tech.id}
-                  className='bg-white p-10 mr-[50px] 2xl:!w-[435px] lg:!w-[400px] !w-[324px] group hover:border border-headerBoxBorder cursor-pointer'
+                  className='bg-white p-10 mr-[50px] 2xl:!w-[435px] lg:!w-[400px] !w-[324px] group cursor-pointer'
                 >
                   <div className='flex justify-center items-center gap-5'>
                     {/* First Image - Order 1 */}

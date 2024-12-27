@@ -8,6 +8,7 @@ import Advantages from './Advantages/Advantages';
 import DevelopmentProcess from './DevelopmentProcess/DevelopmentProcess';
 import DreamProject from './DreamProject/DreamProject';
 import HeroSection from './HeroSection/HeroSection';
+import OtherService from './OtherService/OtherService';
 import ProvideDevelopment from './ProvideDevelopment/ProvideDevelopment';
 import ServiceFAQ from './ServiceFAQ/ServiceFAQ';
 import SolutionExpertise from './SolutionExpertise/SolutionExpertise';
@@ -23,6 +24,7 @@ const Service = () => (
     <Industries />
     <CaseStudies />
     <ClientTestimonials />
+    <OtherService />
     <DreamProject />
     <LatestArticles />
     <ServiceFAQ />
