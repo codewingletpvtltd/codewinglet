@@ -1,19 +1,17 @@
 'use client';
 
 import Image from 'next/image';
-import Script from 'next/script';
 
 import CheckIcon from '@codewinglet/assets/icons/CheckIcon';
 import { Typography } from '@codewinglet/components';
 import { useWindowSize } from '@codewinglet/hooks/useWindowSize';
-import './style.css';
 
 const ResultsContent = () => {
   const {
     windowSize: { width },
   } = useWindowSize();
 
-  const isBelowMd = width < 768;
+  const isBelowMd = width < 991;
 
   // Data for repeated sections
   const sections = [
@@ -49,7 +47,7 @@ const ResultsContent = () => {
     {
       title: 'Enhanced Collaboration and Performance',
       description:
-        'Streamline processes and improve team efficiency with specialized tools and practices.',
+        'Streamline processes and improve team efficiency with specialized tools and practices. Streamline processes and improve team efficiency with specialized tools and practices.',
       highlights: [
         'Achieve higher productivity rates',
         'Implement effective solutions with ease',
@@ -60,77 +58,86 @@ const ResultsContent = () => {
 
   return (
     <>
-      <div className='relative mt-[50px]'>
+      <div className='mt-[50px]'>
         <Image
           src='/assets/CaseStudy/resultsBg.png'
           alt='resultsBg'
           width={1410}
           height={219}
+          className='sticky top-40 lg:h-[219px] h-[184px]'
         />
       </div>
-      <div className='trigger'>
-        <div className='extra-trigger'>
-          <div className='card-container'>
-            {sections.map((section, index) => (
-              <div key={index} className='card-wrapper'>
-                <div className='border border-headerBoxBorder bg-white mt-5 flex gap-5 p-10 mx-20 card'>
-                  <div className='bg-bg w-24 h-24 flex justify-center items-center flex-shrink-0'>
-                    <Image
-                      src='/assets/CaseStudy/growth.svg'
-                      alt='growth'
-                      width={52}
-                      height={52}
-                    />
-                  </div>
-                  <div>
-                    <Typography className='pt-2.5 text-h6 text-primary'>
-                      {section.title}
-                    </Typography>
-                    <span className='block w-10 h-[3px] bg-primary my-3'></span>
-                    <Typography className='text-secondary text-paragraph1ExtraLight'>
-                      {section.description}
-                    </Typography>
-                    <div className='flex gap-24 pr-20 pt-5'>
-                      {section.highlights.map((highlight, idx) => (
-                        <div key={idx} className='text-success flex gap-2.5'>
-                          <CheckIcon />
-                          <Typography className='text-primary text-paragraph1ExtraLight'>
-                            {highlight}
-                          </Typography>
-                        </div>
-                      ))}
+
+      <div className='lg:-mt-36 -mt-32'>
+        {sections.map((section, index) => (
+          <div
+            className='sticky z-10 top-20'
+            key={index}
+            style={{
+              top: isBelowMd
+                ? `${160 + index * 30}px`
+                : `${160 + index * 30}px`,
+              marginLeft: isBelowMd
+                ? `${10 + index * 0}px`
+                : `-${10 + index * 30}px`,
+              marginRight: isBelowMd
+                ? `${10 + index * 0}px`
+                : `-${10 + index * 30}px`,
+            }}
+          >
+            <div className='border border-headerBoxBorder bg-white mt-5 flex md:gap-5 gap-3 lg:p-10 md:p-[30px] p-3 lg:mx-36'>
+              <div className='bg-bg lg:w-24 md:w-[50px] w-[30px] lg:h-24 md:h-[50px] h-[30px] flex justify-center items-center flex-shrink-0'>
+                <Image
+                  src='/assets/CaseStudy/growth.svg'
+                  alt='growth'
+                  width={52}
+                  height={52}
+                  className='lg:w-[52px] md:w-[26px] w-4'
+                />
+              </div>
+              <div>
+                <Typography className='lg:pt-2.5 lg:text-h6 md:text-paragraph1 text-tag text-primary'>
+                  {section.title}
+                </Typography>
+                <span className='block w-10 h-[3px] bg-primary my-3'></span>
+                <Typography className='text-secondary lg:text-paragraph1ExtraLight md:text-paragraph2Light text-tagExtraLight font-light'>
+                  {section.description}
+                </Typography>
+                <div className='flex lg:flex-row flex-col lg:gap-24 gap-3 lg:pr-20 pt-5'>
+                  {section.highlights.map((highlight, idx) => (
+                    <div key={idx} className='text-success flex gap-2.5'>
+                      <CheckIcon className='lg:w-7 lg:h-7 w-6 h-6 flex-shrink-0' />
+                      <Typography className='text-primary lg:text-paragraph1ExtraLight text-tagLight'>
+                        {highlight}
+                      </Typography>
                     </div>
-                    <div className='flex gap-5 mt-[50px]'>
-                      {[1, 2].map((_, i) => (
-                        <div key={i} className='bg-bg p-5 flex gap-[15px]'>
-                          <div className='bg-primary w-16 h-16 flex items-center justify-center'>
-                            <Image
-                              src='/assets/CaseStudy/user.svg'
-                              alt='user'
-                              width={28}
-                              height={28}
-                            />
-                          </div>
-                          <Typography className='text-secondary text-paragraph2Light'>
-                            Conversion rate
-                            <span className='text-h6 block text-primary pt-1'>
-                              {section.conversionRate}
-                            </span>
-                          </Typography>
-                        </div>
-                      ))}
+                  ))}
+                </div>
+                <div className='flex md:flex-row flex-col md:gap-5 gap-2.5 lg:mt-[50px] md:mt-10 mt-[15px]'>
+                  {[1, 2].map((_, i) => (
+                    <div key={i} className='bg-bg lg:p-5 p-3 flex gap-[15px]'>
+                      <div className='bg-primary lg:w-16 w-[46px] lg:h-16 h-[46px] flex items-center justify-center'>
+                        <Image
+                          src='/assets/CaseStudy/user.svg'
+                          alt='user'
+                          width={28}
+                          height={28}
+                        />
+                      </div>
+                      <Typography className='text-secondary lg:text-paragraph2Light md:text-tagLight text-tagExtraLight'>
+                        Conversion rate
+                        <span className='lg:text-h6 md:text-paragraph2 text-tag block text-primary lg:pt-1'>
+                          {section.conversionRate}
+                        </span>
+                      </Typography>
                     </div>
-                  </div>
+                  ))}
                 </div>
               </div>
-            ))}
+            </div>
           </div>
-        </div>
+        ))}
       </div>
-
-      <Script src='https://unpkg.com/gsap@3/dist/gsap.min.js' />
-      <Script src='https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js' />
-      <Script src='/script.js' />
     </>
   );
 };

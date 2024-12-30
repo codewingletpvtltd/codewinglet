@@ -51,7 +51,7 @@ const CaseStudies = () => (
           descriptionClassName='text-primary md:!text-paragraph1ExtraLight text-center'
         />
 
-        <div className='grid lg:grid-cols-4 md:grid-cols-2 gap-[30px] lg::mt-12 mt-10'>
+        <div className='grid lg:grid-cols-4 md:grid-cols-2 md:gap-[30px] gap-[15px] lg::mt-12 md:mt-10 mt-5'>
           {caseStudyData.map((item, index) => (
             <div
               key={index}
@@ -68,7 +68,7 @@ const CaseStudies = () => (
                 <span className='text-secondary md:text-paragraph2 text-tagExtraLight md:mt-4 block'>
                   {item.label}
                 </span>
-                <Typography className='md:text-[19px] text-tag mt-1.5'>
+                <Typography className='md:text-[19px] text-tag mt-1.5 line-clamp-4'>
                   {item.description}
                 </Typography>
 
