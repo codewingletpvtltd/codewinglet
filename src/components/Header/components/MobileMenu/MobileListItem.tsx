@@ -6,8 +6,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@codewinglet/components/Accordion';
-import { getClassNames } from '@codewinglet/utils';
 import Typography from '@codewinglet/components/Typography';
+import { getClassNames } from '@codewinglet/utils';
 
 import { ListItemProps } from '../../types';
 import ListItem from '../NavigationMenu/ListItem';
@@ -64,7 +64,7 @@ const MobileListItem: FC<ListItemProps> = ({
               alt='MenuDownArrow'
               width={18}
               height={18}
-              className='md:w-5 md:h-5 w-[18px] h-[18px] transition duration-500 group-hover:rotate-[180deg]'
+              className='md:w-5 md:h-5 w-[18px] h-[18px] transition duration-500 group-hover:rotate-180'
             />
           }
         >

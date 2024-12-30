@@ -80,7 +80,7 @@ const HeroSection = () => (
               alt='angular_logo'
               width={72}
               height={72}
-              className='absolute z-[2] top-[50%] lg:left-[53%] left-[52.5%] md:w-[72px] w-12'
+              className='absolute z-[2] top-2/4 lg:left-[53%] left-[52.5%] md:w-[72px] w-12'
             />
             <Image
               src='/assets/Technologies/pages/laptopBg.svg'

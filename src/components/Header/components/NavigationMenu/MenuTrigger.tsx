@@ -28,7 +28,7 @@ const MenuTrigger: FC<MenuTriggerProps> = ({
           alt='MenuDownArrow'
           width={50}
           height={50}
-          className='transition duration-200 group-hover:rotate-[180deg] ml-[3px]'
+          className='transition duration-200 group-hover:rotate-180 ml-[3px]'
         />
       )}
     </Link>
