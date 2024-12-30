@@ -19,7 +19,7 @@ const ResultsContent = () => {
   const sections = [
     {
       title: 'Streamlined Workflow and Data Segregation',
-      description: 'Whether you\'re seeking flexibility, cost-effectiveness, 111or specialized expertise, there\'s a hiring model tailored just for you.',
+      description: 'Whether you\'re seeking flexibility, cost-effectiveness, or specialized expertise, there\'s a hiring model tailored just for you.',
       highlights: [
         'Unlocking personalized quotations: tailored wisdom in simple terms',
         'Successfully overcome pressing business challenges',

@@ -85,9 +85,9 @@ const Industries = () => (
       />
 
       <div className='grid lg:grid-cols-4 grid-cols-2 md:mt-10 md:mb-0 sm:gap-[30px] gap-5 lg:mt-[50px] my-5'>
-        {industriesCard.map((card) => (
+        {industriesCard.map((card, i) => (
           <>
-            <div>
+            <div key={i}>
               <div className='w-full overflow-hidden cursor-pointer'>
                 <Image
                   src={card.image}
