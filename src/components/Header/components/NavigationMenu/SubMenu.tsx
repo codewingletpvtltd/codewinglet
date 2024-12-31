@@ -78,7 +78,7 @@ export const TechnologyContent: FC<SubMenuContentProps> = ({
       ))}
     </ul>
     <div className='bg-[#F4F4F4] flex items-center justify-between right-[30px] bottom-[30px] w-full p-2.5 mt-9 pl-6'>
-      <Typography className='text-paragraph1 text-primary w-[60%]'>
+      <Typography className='text-paragraph1 text-primary w-3/5'>
         Get consultation from our Technical experts
       </Typography>
 

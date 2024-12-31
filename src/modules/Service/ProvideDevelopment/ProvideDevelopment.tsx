@@ -50,7 +50,7 @@ const ServiceProvide = ({
             <AccordionTrigger
               icon={
                 <>
-                  <Arrow className='!rotate-[90deg] transition-all duration-300' />
+                  <Arrow className='!rotate-90 transition-all duration-300' />
                 </>
               }
               onClick={() => handleChangeIndex(i)}

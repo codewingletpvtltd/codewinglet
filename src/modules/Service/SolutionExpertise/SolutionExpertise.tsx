@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 
 import { Arrow } from '@codewinglet/assets';
@@ -10,26 +11,31 @@ const expertiseData = [
     title: 'Proven Expertise',
     description:
       'Our experienced team stays ahead of industry trends, ensuring your projects are future-ready.',
+    className: 'md:border-r border-b',
   },
   {
     title: 'Customized Solutions',
     description:
       'We craft tailored strategies to solve your unique business challenges, boosting impact and ROI.',
+    className: 'lg:border-r border-b',
   },
   {
     title: 'End-to-End Support:',
     description:
       'From consultation to maintenance, we provide transparent, collaborative support.',
+    className: 'border-b lg:border-r-0 md:border-r',
   },
   {
     title: 'Quality Assurance',
     description:
       'We follow strict quality standards to ensure it’s security, scalable, and high-performing.',
+    className: 'lg:border-r lg:border-b-0 border-b',
   },
   {
     title: 'Client-Centric Approach',
     description:
       'Your success is our priority; we build lasting partnerships with clear, consistent value.',
+    className: 'md:border-r md:border-0 border-b',
   },
   {
     title: 'Innovative Solutions',
@@ -58,15 +64,14 @@ const SolutionExpertise = () => (
         {expertiseData.map((item, index) => (
           <div
             key={index}
-            className={`bg-white md:p-10 p-[15px] border-headerBoxBorder flex gap-2.5 ${
-              index < expertiseData.length - 3 ? 'border-b' : ''
-            } ${index % 3 !== 2 ? 'lg:border-r' : ''}`}
+            className={`${item.className} bg-white md:p-10 p-[15px] border-headerBoxBorder md:block flex gap-2.5`}
           >
             <div className='bg-bg md:w-[70px] w-10 md:h-[70px] h-10 flex items-center justify-center flex-shrink-0'>
-              <img
+              <Image
                 src='/assets/icons/share.svg'
                 alt='share'
                 width={28}
+                height={28}
                 className='md:w-7 w-5'
               />
             </div>

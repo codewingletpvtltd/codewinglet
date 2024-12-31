@@ -58,14 +58,14 @@ const Services = () => {
             <AccordionItem key={service.title} value={service.title}>
               <AccordionTrigger
                 onClick={() => handleChangeIndex(i)}
-                className={`[&[data-state=open]>svg]:rotate-[45deg] !pb-0 group ${
+                className={`[&[data-state=open]>svg]:rotate-45 !pb-0 group ${
                   i === selectedIndex
                     ? 'border-b border-primary'
                     : 'border-b border-headerBoxBorder'
                 }`}
                 icon={
                   <Arrow
-                    className={`w-[21px] h-[21px] transition duration-500 group-hover:rotate-[45deg] ${
+                    className={`w-[21px] h-[21px] transition duration-500 group-hover:rotate-45 ${
                       i === selectedIndex ? 'text-primary' : 'text-secondary'
                     } `}
                   />

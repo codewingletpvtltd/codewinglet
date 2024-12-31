@@ -10,7 +10,7 @@ import { ContentProps } from '../types';
 
 const Content: FC<ContentProps> = ({ service }) => (
   <div>
-    <Typography className='md:text-h6 text-paragraph1 relative after:content after:absolute after:w-10 after:h-[2px] after:left-0 after:bg-white after:bottom-[-8px] mb-[30px] text-white'>
+    <Typography className='md:text-h6 text-paragraph1 relative after:content after:absolute after:w-10 after:h-[2px] after:left-0 after:bg-white after:-bottom-2 mb-[30px] text-white'>
       {service.mainTitle}
     </Typography>
 

@@ -17,7 +17,7 @@ const MenuContent: FC<MenuContentProps> = ({
   >
     <div
       className={getClassNames(
-        'bg-white h-max p-[30px] gap-[15px] top-[100%] mt-[34px] z-10 2xl:min-w-[1380px] xl:min-w-[1250px] 2xl:max-w-[1380px] xl:max-w-[1250px] w-full border-headerBoxBorder border rounded-sm',
+        'bg-white h-max p-[30px] gap-[15px] top-full mt-[34px] z-10 2xl:min-w-[1380px] xl:min-w-[1250px] 2xl:max-w-[1380px] xl:max-w-[1250px] w-full border-headerBoxBorder border rounded-sm',
         className
       )}
     >

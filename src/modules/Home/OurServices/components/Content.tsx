@@ -19,7 +19,7 @@ const Content: FC<ContentProps> = ({ service }) => (
         className='w-full lg:h-[180px]'
       />
       <div className='xl:flex items-center justify-between pt-5 pb-7 lg:block hidden'>
-        <Typography className='text-subtitle1 relative after:content after:absolute after:w-10 after:h-[2px] after:left-0 after:bg-primary after:bottom-[-8px]'>
+        <Typography className='text-subtitle1 relative after:content after:absolute after:w-10 after:h-[2px] after:left-0 after:bg-primary after:-bottom-2'>
           {service.title}
         </Typography>
         <div className='flex items-center gap-2'>

@@ -45,7 +45,7 @@ const BlogCard: FC<BlogCardProps> = ({
               alt={imageAlt}
               width={11}
               height={11}
-              className='transition duration-500 group-hover:rotate-[45deg]'
+              className='transition duration-500 group-hover:rotate-45'
             />
           )}
         </div>

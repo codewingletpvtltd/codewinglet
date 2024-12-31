@@ -17,7 +17,7 @@ const TechnologyTab = () => {
     <>
       {/* DESKTOP */}
       <div className='xl:flex lg:mt-[50px] mt-10 gap-16'>
-        <div className='2xl:w-[18%] lg:w-[20%] w-full lg:border-l lg:border-b-0 border-b border-secondary lg:grid flex lg:gap-0 gap-[29px] md:overscroll-none overflow-y-auto [-ms-overflow-style:_none;] [scrollbar-width:_none;]'>
+        <div className='2xl:w-[18%] lg:w-1/5 w-full lg:border-l lg:border-b-0 border-b border-secondary lg:grid flex lg:gap-0 gap-[29px] md:overscroll-none overflow-y-auto [-ms-overflow-style:_none;] [scrollbar-width:_none;]'>
           {ServiceData.map((service, i) => (
             <div
               key={service.title}
@@ -35,7 +35,7 @@ const TechnologyTab = () => {
             </div>
           ))}
         </div>
-        <div className='2xl:w-[82%] lg:w-[80%] w-full'>
+        <div className='2xl:w-[82%] lg:w-4/5 w-full'>
           <div className='bg-primary md:p-[30px] p-5 transition-transform duration-500 ease-in [will-change:_top;] text-white lg:h-[425px] lg:mt-0 mt-5'>
             <Content service={service} />
           </div>

@@ -22,7 +22,7 @@ const Insights = () => (
 
         <div className='lg:mt-[50px]'>
           <Counter />
-          <Button className='sm:w-[231px] w-[203px] h-12 lg:m-auto 2xl:mt-[50px] xl:mt-10 flex m-auto '>
+          <Button className='sm:w-[231px] w-[203px] h-12 lg:m-auto 2xl:mt-[50px] xl:mt-10 flex m-auto'>
             <Link
               href='/contact-us'
               rel='noopener noreferrer'

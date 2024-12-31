@@ -1,6 +1,6 @@
 <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-<ellipse cx="14.0021" cy="6.99571" rx="4.66667" ry="4.66667" stroke="white" stroke-width="1.5"/>
-<circle cx="21.0021" cy="18.6667" r="4.66667" stroke="white" stroke-width="1.5"/>
-<path d="M19.4429 18.6657L20.4153 19.8324L22.554 17.6287" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M17.4979 15.5526C16.417 15.3065 15.2356 15.171 13.9979 15.171C8.84323 15.171 4.66455 17.5215 4.66455 20.421C4.66455 23.3205 4.66455 25.671 13.9979 25.671C20.6332 25.671 22.5513 24.483 23.1058 22.7543" stroke="white" stroke-width="1.5"/>
+<ellipse cx="14.0021" cy="6.99571" rx="4.66667" ry="4.66667" stroke="white" strokeWidth="1.5"/>
+<circle cx="21.0021" cy="18.6667" r="4.66667" stroke="white" strokeWidth="1.5"/>
+<path d="M19.4429 18.6657L20.4153 19.8324L22.554 17.6287" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M17.4979 15.5526C16.417 15.3065 15.2356 15.171 13.9979 15.171C8.84323 15.171 4.66455 17.5215 4.66455 20.421C4.66455 23.3205 4.66455 25.671 13.9979 25.671C20.6332 25.671 22.5513 24.483 23.1058 22.7543" stroke="white" strokeWidth="1.5"/>
 </svg>

@@ -34,7 +34,7 @@ const ClientTestimonials = () => (
           height={215}
         />
         <Image
-          className='lg:w-[99px] md:w-[75px] absolute left-0 z-[-1] xl:top-[11rem] lg:top-[20rem] md:top-[6rem] md:block hidden'
+          className='lg:w-[99px] md:w-[75px] absolute left-0 z-[-1] xl:top-44 lg:top-80 md:top-24 md:block hidden'
           src={'/assets/icons/StartQuote.svg'}
           alt='StartQuote'
           width={100}
@@ -65,7 +65,7 @@ const ClientTestimonials = () => (
           </Slider>
         </div>
         <Image
-          className='lg:w-[99px] md:w-[75px] absolute 2xl:right-[24rem] xl:right-64 md:right-40 sm:right-0 lg:bottom-[-1rem] md:bottom-2.5 z-[-1] md:block hidden'
+          className='lg:w-[99px] md:w-[75px] absolute 2xl:right-[24rem] xl:right-64 md:right-40 sm:right-0 lg:-bottom-4 md:bottom-2.5 z-[-1] md:block hidden'
           src={'/assets/icons/ClosingQuote.svg'}
           alt='ClosingQuote'
           width={100}
