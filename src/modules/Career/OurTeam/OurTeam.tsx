@@ -96,8 +96,8 @@ const OurTeam = () => (
             </>
           }
           description='Gain Valuable Insights Directly from the Voices of Our Talented and Dedicated Members.'
-          descriptionClassName='text-secondary'
-          headingClassName=''
+          headingClassName='lg:text-h2'
+          descriptionClassName='text-secondary md:text-subtitle2Light'
         />
         <Button
           className='w-[320px] md:mt-[70px] mt-16 border-primary border hover:border-primary hover:border lg:block hidden'

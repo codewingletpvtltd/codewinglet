@@ -75,8 +75,8 @@ const FlexibleModels: React.FC = () => (
                 timeline.
               </>
             }
-            headingClassName='text-white'
-            descriptionClassName='text-white lg:!text-subtitle2Light md:!text-paragraph1ExtraLight !text-tagLight md:mb-10 mb-5'
+            headingClassName='text-white lg:text-h2'
+            descriptionClassName='text-white lg:text-subtitle2Light md:mb-10 mb-5'
           />
         </div>
         <div className='bg-primary text-white p-5 lg:w-[400px] lg:block md:flex block gap-[30px]'>
@@ -135,8 +135,8 @@ const FlexibleModels: React.FC = () => (
                 timeline.
               </>
             }
-            headingClassName='text-white lg:block hidden'
-            descriptionClassName='text-white lg:block hidden'
+            headingClassName='text-white lg:block hidden lg:text-h2'
+            descriptionClassName='text-white lg:block hidden md:text-subtitle2Light'
           />
 
           <div className='2xl:gap-[50px] md:gap-[30px] gap-5 lg:mt-[50px] mt-[30px] relative flex lg:flex-row flex-col'>

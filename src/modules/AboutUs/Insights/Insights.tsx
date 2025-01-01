@@ -16,8 +16,8 @@ const Insights = () => (
           title={<>Powerful data insights</>}
           description='Driving Transformation with Software Solutions that Enhance
                 Agility, Scalability, and Growth'
-          headingClassName='text-white'
-          descriptionClassName='text-secondary'
+          headingClassName='lg:text-h2 text-white'
+          descriptionClassName='md:text-subtitle2Light text-secondary'
         />
 
         <div className='lg:mt-[50px]'>

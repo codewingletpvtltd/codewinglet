@@ -64,7 +64,8 @@ const Benefits = () => (
                 you need to thrive.
               </>
             }
-            descriptionClassName='text-secondary lg:!text-subtitle2Light md:!text-paragraph1ExtraLight !text-tagExtraLight'
+            headingClassName='lg:text-h2'
+            descriptionClassName='lg:!text-subtitle2Light md:!text-paragraph1ExtraLight text-secondary'
           />
 
           <div className='hidden relative lg:block mt-10'>

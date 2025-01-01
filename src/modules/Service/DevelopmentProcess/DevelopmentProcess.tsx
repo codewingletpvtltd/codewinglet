@@ -9,7 +9,7 @@ const expertiseData = [
     id: 1,
     title: 'Discovery & Planning',
     description:
-      'We begin by understanding your goals and audience to build a strong foundation.',
+      'We begin by understanding your goals and audience to build a strong foundation seamless experience.',
   },
   {
     id: 2,
@@ -53,7 +53,7 @@ const DevelopmentProcess = () => (
           {expertiseData.map((item, index) => (
             <div
               key={index}
-              className='bg-white 2xl:p-[30px] md:p-[25px] p-[15px] relative group flex lg:flex-col justify-between lg:gap-0 gap-5'
+              className='bg-white 2xl:p-[30px] md:p-[25px] p-[15px] relative group flex lg:flex-col lg:gap-0 gap-5'
             >
               <div className='absolute lg:-right-[30px] lg:left-auto md:left-[30px] left-[15px] lg:bottom-auto md:-bottom-[30px] -bottom-[15px] group-last:hidden'>
                 <div className='md:w-[60px] w-[30px] md:h-[60px] h-[30px] bg-bg rounded-full flex items-center justify-center relative lg:rotate-0 rotate-90'>

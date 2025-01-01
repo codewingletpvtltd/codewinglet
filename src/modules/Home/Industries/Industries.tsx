@@ -81,7 +81,8 @@ const Industries = () => (
             industries
           </>
         }
-        headingClassName=''
+        headingClassName='lg:text-h2'
+        descriptionClassName='md:text-subtitle2Light'
       />
 
       <div className='grid lg:grid-cols-4 grid-cols-2 md:mt-10 md:mb-0 sm:gap-[30px] gap-5 lg:mt-[50px] my-5'>

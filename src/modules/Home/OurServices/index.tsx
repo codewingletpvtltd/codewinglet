@@ -16,8 +16,8 @@ const OurService = () => (
             strategic business growth
           </>
         }
-        headingClassName=''
-        descriptionClassName=''
+        headingClassName='lg:text-h2'
+        descriptionClassName='md:text-subtitle2Light'
       />
       <Services />
     </section>

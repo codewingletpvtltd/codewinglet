@@ -59,8 +59,8 @@ const ITService: React.FC = () => (
         description={
           <>Optimized customized software solutions to empower your niche.</>
         }
-        headingClassName='text-primary'
-        descriptionClassName='text-primary'
+        headingClassName='lg:text-h2'
+        descriptionClassName='md:text-subtitle2Light'
       />
 
       <div className='grid lg:grid-cols-3 md:grid-cols-2 lg:gap-[50px] md:gap-10 gap-5 mt-[50px] relative'>

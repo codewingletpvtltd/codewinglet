@@ -15,8 +15,8 @@ const ClientTestimonials = () => (
         description={
           <>Here’s a glimpse into what Our Clients have to say about us.</>
         }
-        headingClassName='text-subtitle1Light text-white'
-        descriptionClassName='mt-[9px] text-white'
+        headingClassName='text-white lg:text-h2'
+        descriptionClassName='mt-1.5 text-white md:text-subtitle2Light'
       />
       <div
         className='md:mt-10 mt-7 xl:h-[481px] h-auto relative lg:[background-size:_auto] md:[background-size:_70%] sm:[background-size:_auto] client_img'

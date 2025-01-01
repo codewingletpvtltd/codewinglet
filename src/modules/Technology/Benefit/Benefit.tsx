@@ -47,7 +47,7 @@ const Benefit: React.FC = () => (
             preferred for dynamic web application development:
           </>
         }
-        headingClassName='text-primary'
+        headingClassName='text-primary lg:text-h2'
         descriptionClassName='text-primary lg:!text-subtitle2Light md:!text-paragraph1ExtraLight'
       />
 
