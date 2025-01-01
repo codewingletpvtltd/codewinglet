@@ -44,8 +44,8 @@ const AboutProject = () => {
                   schedules, and odds.
                 </>
               }
-              headingClassName='text-primary lg:!text-h2 lg:text-left md:text-center'
-              descriptionClassName='text-primary mt-2.5 md:!text-paragraph1ExtraLight lg:text-left md:text-center'
+              headingClassName='text-gray-800 lg:!text-h2 lg:text-left md:text-center'
+              descriptionClassName='text-gray-800 mt-2.5 md:!text-paragraph1ExtraLight lg:text-left md:text-center'
             />
 
             <div className='lg:mt-20 md:mt-10 mt-[30px]'>
@@ -57,7 +57,7 @@ const AboutProject = () => {
                 {servicesProvided.map((service, index) => (
                   <li
                     key={index}
-                    className='bg-bg lg:py-[15px] md:py-3 py-2.5 lg:px-[30px] md:px-5 px-[15px]'
+                    className='bg-gray-50 lg:py-[15px] md:py-3 py-2.5 lg:px-[30px] md:px-5 px-[15px]'
                   >
                     {service}
                   </li>

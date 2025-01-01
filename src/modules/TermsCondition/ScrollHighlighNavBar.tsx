@@ -89,8 +89,8 @@ const ScrollHighlightNavbar: React.FC<ScrollHighlightNavbarProps> = ({
               <div
                 className={`bg-white p-0 ${
                   i === activeIndex
-                    ? 'text-primary lg:text-paragraph1ExtraLight md:text-paragraph2 text-tag'
-                    : 'text-secondary lg:text-paragraph1ExtraLight md:text-paragraph2Light text-tagLight'
+                    ? 'text-gray-800 lg:text-paragraph1ExtraLight md:text-paragraph2 text-tag'
+                    : 'text-gray-400 lg:text-paragraph1ExtraLight md:text-paragraph2Light text-tagLight'
                 } cursor-pointer flex items-center justify-between`}
               >
                 {policy.title}

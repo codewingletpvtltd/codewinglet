@@ -26,8 +26,8 @@ const Specialist = () => (
         </div>
 
         {/* Blend effect */}
-        <div className='w-full h-full block mix-blend-soft-light backdrop-blur-[17px] z-[1] bg-primary absolute top-0 left-0'></div>
-        <div className='w-full h-full block mix-blend-color bg-primary absolute top-0 left-0'></div>
+        <div className='w-full h-full block mix-blend-soft-light backdrop-blur-[17px] z-[1] bg-gray-800 absolute top-0 left-0'></div>
+        <div className='w-full h-full block mix-blend-color bg-gray-800 absolute top-0 left-0'></div>
 
         <div className='text-center md:pt-[62px] pt-10 md:pb-20 pb-10 lg:w-9/12 mx-auto relative z-10'>
           <SectionHeader

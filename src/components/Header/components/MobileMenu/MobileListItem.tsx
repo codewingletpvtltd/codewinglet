@@ -43,7 +43,7 @@ const MobileListItem: FC<ListItemProps> = ({
           <div>
             <Typography
               className={getClassNames(
-                'capitalize md:ml-[15px] ml-3 md:text-subtitle2 text-paragraph2 text-primary',
+                'capitalize md:ml-[15px] ml-3 md:text-subtitle2 text-paragraph2 text-gray-800',
                 labelClassName
               )}
             >

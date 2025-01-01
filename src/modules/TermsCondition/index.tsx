@@ -67,7 +67,7 @@ const TermsCondition = () => {
 
   return (
     <>
-      <div className=' bg-bg lg:mt-[86px] md:mt-[66px] mt-[9px] py-[15px] md:py-[30px] lg:fixed lg:top-0 fixed md:top-[90px] top-[130px] w-full z-10'>
+      <div className='bg-gray-50 lg:mt-[86px] md:mt-[66px] mt-[9px] py-[15px] md:py-[30px] lg:fixed lg:top-0 fixed md:top-[90px] top-[130px] w-full z-10'>
         <div className='container w-full lg:px-[15px] sm:px-[30px] px-5 mx-auto'>
           <div>
             <SectionHeader
@@ -86,15 +86,15 @@ const TermsCondition = () => {
             <div className='2xl:w-[70%] xl:w-[67%] w-full'>
               {/* Acceptance of terms : */}
               <div id='terms' ref={termsRef} className='scroll-mt-56'>
-                <Typography className='text-subtitle2 border-b border-headerBoxBorder pb-[15px]'>
+                <Typography className='text-subtitle2 border-b border-gray-100 pb-[15px]'>
                   Acceptance of terms :
                 </Typography>
-                <Typography className='text-paragraph1ExtraLight text-secondary pt-5'>
+                <Typography className='text-paragraph1ExtraLight text-gray-400 pt-5'>
                   You accept responsibility for adhering to and being governed
                   by these Terms & Conditions by visiting and using our website,{' '}
                   <Link
                     href='https://www.codewinglet.com/'
-                    className='text-primary'
+                    className='text-gray-800'
                   >
                     www.codewinglet.com.
                   </Link>{' '}
@@ -110,7 +110,7 @@ const TermsCondition = () => {
                 ref={websiteRef}
               >
                 <Typography
-                  className='text-subtitle2 border-b border-headerBoxBorder pb-[15px]'
+                  className='text-subtitle2 border-b border-gray-100 pb-[15px]'
                   id='types'
                 >
                   Use of the website :
@@ -118,7 +118,7 @@ const TermsCondition = () => {
                 <ul className='grid gap-[15px] ml-5 my-[25px]'>
                   <li className='text-paragraph1Light list-disc'>
                     License
-                    <Typography className='text-paragraph1ExtraLight text-secondary pt-2.5'>
+                    <Typography className='text-paragraph1ExtraLight text-gray-400 pt-2.5'>
                       You are given a limited, non-exclusive, and revocable
                       license by Codewinglet to access and use this website for
                       non-commercial, informative purposes.
@@ -126,20 +126,20 @@ const TermsCondition = () => {
                   </li>
                   <li className='text-paragraph1Light list-disc'>
                     Restricted activities
-                    <Typography className='text-paragraph1ExtraLight text-secondary pt-2.5'>
+                    <Typography className='text-paragraph1ExtraLight text-gray-400 pt-2.5'>
                       You promise not to do any of the following
                     </Typography>
-                    <Typography className='text-paragraph1ExtraLight text-primary py-5'>
+                    <Typography className='text-paragraph1ExtraLight text-gray-800 py-5'>
                       - Breaking any laws or rules that may be relevant.
                     </Typography>
-                    <Typography className='text-paragraph1ExtraLight text-primary'>
+                    <Typography className='text-paragraph1ExtraLight text-gray-800'>
                       - Making an effort to access the website or its servers
                       without authorization.
                     </Typography>
-                    <Typography className='text-paragraph1ExtraLight text-primary py-5'>
+                    <Typography className='text-paragraph1ExtraLight text-gray-800 py-5'>
                       - Use the website for any immoral or unlawful activities.
                     </Typography>
-                    <Typography className='text-paragraph1ExtraLight text-primary'>
+                    <Typography className='text-paragraph1ExtraLight text-gray-800'>
                       - Sending malware or malicious code.
                     </Typography>
                   </li>
@@ -152,13 +152,13 @@ const TermsCondition = () => {
                 id='property'
                 ref={propertyRef}
               >
-                <Typography className='text-subtitle2 border-b border-headerBoxBorder pb-[15px]'>
+                <Typography className='text-subtitle2 border-b border-gray-100 pb-[15px]'>
                   Intellectual Property :
                 </Typography>
                 <ul className='grid gap-[15px] ml-5 my-[25px]'>
                   <li className='text-paragraph1Light list-disc'>
                     Copyright
-                    <Typography className='text-paragraph1ExtraLight text-secondary pt-2.5'>
+                    <Typography className='text-paragraph1ExtraLight text-gray-400 pt-2.5'>
                       Copyright laws defend all content on the website, which
                       includes text, graphics, logos, and software, as it
                       belongs to Codewinglet.
@@ -166,7 +166,7 @@ const TermsCondition = () => {
                   </li>
                   <li className='text-paragraph1Light list-disc'>
                     Trademarks
-                    <Typography className='text-paragraph1ExtraLight text-secondary pt-2.5'>
+                    <Typography className='text-paragraph1ExtraLight text-gray-400 pt-2.5'>
                       Any trademarks or logos that appear on this website belong
                       to Codewinglet or the relevant owners.
                     </Typography>
@@ -180,14 +180,14 @@ const TermsCondition = () => {
                 id='policy'
                 ref={policyRef}
               >
-                <Typography className='text-subtitle2 border-b border-headerBoxBorder pb-[15px]'>
+                <Typography className='text-subtitle2 border-b border-gray-100 pb-[15px]'>
                   Privacy policy :
                 </Typography>
-                <Typography className='text-paragraph1ExtraLight text-secondary pt-5'>
+                <Typography className='text-paragraph1ExtraLight text-gray-400 pt-5'>
                   Your use of the Website is also governed by our&nbsp;
                   <Link
                     href='privacy-policy'
-                    className='underline text-primary'
+                    className='underline text-gray-800'
                   >
                     Privacy Policy.
                   </Link>
@@ -200,10 +200,10 @@ const TermsCondition = () => {
                 id='party'
                 ref={partyRef}
               >
-                <Typography className='text-subtitle2 border-b border-headerBoxBorder pb-[15px]'>
+                <Typography className='text-subtitle2 border-b border-gray-100 pb-[15px]'>
                   Links to third-party websites :
                 </Typography>
-                <Typography className='text-paragraph1ExtraLight text-secondary mt-5'>
+                <Typography className='text-paragraph1ExtraLight text-gray-400 mt-5'>
                   Links to external websites may be found on the website. The
                   information or policies on these websites are not within the
                   control of Codewinglet. It is at your own risk that you use
@@ -217,16 +217,16 @@ const TermsCondition = () => {
                 id='disclaimer'
                 ref={disclaimerRef}
               >
-                <Typography className='text-subtitle2 border-b border-headerBoxBorder pb-[15px]'>
+                <Typography className='text-subtitle2 border-b border-gray-100 pb-[15px]'>
                   Disclaimer of warranties :
                 </Typography>
-                <Typography className='text-paragraph1ExtraLight text-secondary mt-5'>
+                <Typography className='text-paragraph1ExtraLight text-gray-400 mt-5'>
                   Without making any promises of any kind, including but not
                   limited to the implied warranties of merchantability,
                   suitability for a specific purpose, or non-infringement, the
                   Website is given "as is" and "as available".
                 </Typography>
-                <Typography className='text-paragraph1ExtraLight text-secondary py-5'>
+                <Typography className='text-paragraph1ExtraLight text-gray-400 py-5'>
                   The correctness, comprehensiveness, or dependability of any
                   information on the website is not guaranteed by Codewinglet.
                 </Typography>
@@ -238,10 +238,10 @@ const TermsCondition = () => {
                 id='limitation'
                 ref={limitationRef}
               >
-                <Typography className='text-subtitle2 border-b border-headerBoxBorder pb-[15px]'>
+                <Typography className='text-subtitle2 border-b border-gray-100 pb-[15px]'>
                   Limitation of liability :
                 </Typography>
-                <Typography className='text-paragraph1ExtraLight text-secondary mt-5'>
+                <Typography className='text-paragraph1ExtraLight text-gray-400 mt-5'>
                   Codewinglet disclaims all liability for any damages, whether
                   direct, indirect, special, incidental, or consequential,
                   resulting from or related to your use of or inability to
@@ -255,10 +255,10 @@ const TermsCondition = () => {
                 id='conditions'
                 ref={conditionsRef}
               >
-                <Typography className='text-subtitle2 border-b border-headerBoxBorder pb-[15px]'>
+                <Typography className='text-subtitle2 border-b border-gray-100 pb-[15px]'>
                   Changes to terms and conditions :
                 </Typography>
-                <Typography className='text-paragraph1ExtraLight text-secondary mt-5'>
+                <Typography className='text-paragraph1ExtraLight text-gray-400 mt-5'>
                   Codewinglet maintains the right to change these guidelines at
                   any moment. It is your duty to periodically check for updates.
                 </Typography>
@@ -270,14 +270,14 @@ const TermsCondition = () => {
                 id='contact'
                 ref={contactRef}
               >
-                <Typography className='text-subtitle2 border-b border-headerBoxBorder pb-[15px]'>
+                <Typography className='text-subtitle2 border-b border-gray-100 pb-[15px]'>
                   Contact information :
                 </Typography>
-                <Typography className='text-paragraph1ExtraLight text-secondary mt-5'>
+                <Typography className='text-paragraph1ExtraLight text-gray-400 mt-5'>
                   Please email us at{' '}
                   <Link
                     href='mailto:info@codewinglet.com'
-                    className='text-primary font-semibold'
+                    className='text-gray-800 font-semibold'
                   >
                     info@codewinglet.com
                   </Link>

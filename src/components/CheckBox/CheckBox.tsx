@@ -26,11 +26,11 @@ const Checkbox: React.FC<CheckboxProps> = ({
     <>
       <input
         type='checkbox'
-        className='h-4 w-4 rounded accent-primary flex-shrink-0 cursor-pointer'
+        className='h-4 w-4 rounded accent-gray-800 flex-shrink-0 cursor-pointer'
         checked={isChecked}
         onChange={handleChange}
       />
-      <label className='text-secondary text-paragraph2Light cursor-pointer'>
+      <label className='text-gray-400 text-paragraph2Light cursor-pointer'>
         {label}
       </label>
     </>

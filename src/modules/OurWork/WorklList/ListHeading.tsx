@@ -20,7 +20,7 @@ const ListHeading = () => (
     <div className='bg-white py-10 pb-5'>
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
         <div className='flex justify-between lg:flex-row flex-col gap-5'>
-          <Typography className='lg:text-h2 md:text-[36px] text-subtitle2 text-primary'>
+          <Typography className='lg:text-h2 md:text-[36px] text-subtitle2 text-gray-800'>
             Our Works{' '}
             <span className='md:text-paragraph1ExtraLight text-tagExtraLight'>
               (20)
@@ -34,7 +34,7 @@ const ListHeading = () => (
               <Dropdown
                 options={checkboxData}
                 buttonText='All'
-                buttonClassName='!bg-bg text-secondary text-tagLight lg:w-[270px] md:w-[216px] w-[98px]'
+                buttonClassName='!bg-gray-50 text-gray-400 text-tagLight lg:w-[270px] md:w-[216px] w-[98px]'
                 menuClassName='bg-white z-10'
               />
             </div>
@@ -45,7 +45,7 @@ const ListHeading = () => (
               <Dropdown
                 options={checkboxData}
                 buttonText='All'
-                buttonClassName='!bg-bg text-secondary text-tagLight lg:w-[270px] md:w-[216px] w-[98px]'
+                buttonClassName='!bg-gray-50 text-gray-400 text-tagLight lg:w-[270px] md:w-[216px] w-[98px]'
                 menuClassName='bg-white z-10'
               />
             </div>
@@ -56,7 +56,7 @@ const ListHeading = () => (
               <Dropdown
                 options={checkboxData}
                 buttonText='All'
-                buttonClassName='!bg-bg text-secondary text-tagLight lg:w-[270px] md:w-[216px] w-[98px]'
+                buttonClassName='!bg-gray-50 text-gray-400 text-tagLight lg:w-[270px] md:w-[216px] w-[98px]'
                 menuClassName='bg-white z-10'
               />
             </div>

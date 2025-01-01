@@ -60,7 +60,7 @@ const ServiceProvide = ({
             >
               {service.title}
             </AccordionTrigger>
-            <AccordionContent className='border-remove service text-secondary md:!text-paragraph2Light !text-tagExtraLight'>
+            <AccordionContent className='border-remove service text-gray-400 md:!text-paragraph2Light !text-tagExtraLight'>
               {service.description}
             </AccordionContent>
           </AccordionItem>
@@ -83,7 +83,7 @@ const ProvideDevelopment = () => (
           </>
         }
         headingClassName='text-white lg:!text-h2 leading-normal text-center'
-        descriptionClassName='text-secondary mt-1.5 md:!text-subtitle2Light lg:mb-[50px] mb-10 text-center'
+        descriptionClassName='text-gray-400 mt-1.5 md:!text-subtitle2Light lg:mb-[50px] mb-10 text-center'
       />
 
       <div className='flex items-start lg:gap-[65px] lg:flex-row flex-col'>

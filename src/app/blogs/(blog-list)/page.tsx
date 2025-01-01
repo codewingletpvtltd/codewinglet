@@ -49,14 +49,14 @@ const Blogs = async ({ searchParams }: BlogsProps) => {
             </Suspense>
           </div>
           {blogs.length > 0 ? (
-            <div className='border-b border-headerBoxBorder lg:pb-[45px] pb-10 lg:mt-[50px]'>
+            <div className='border-b border-gray-100 lg:pb-[45px] pb-10 lg:mt-[50px]'>
               <Typography className='text-h6 mb-[37px]'>
                 Resources and insights
               </Typography>
               <BlogList blogs={blogs} />
             </div>
           ) : (
-            <div className='border-t border-headerBoxBorder lg:py-[45px] text-center pb-10 lg:mt-[50px]'>
+            <div className='border-t border-gray-100 lg:py-[45px] text-center pb-10 lg:mt-[50px]'>
               <h1>No Blogs Found</h1>
             </div>
           )}

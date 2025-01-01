@@ -34,7 +34,7 @@ const HeroSection = () => {
     <div className='lg:mt-[86px] md:mt-[90px] mt-[78px] lg:py-20 md:py-[60px] py-10 lg:pt-0 md:!pt-[100px] !pt-[88px] relative'>
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto relative z-10 lg:flex 2xl:gap-[76px] gap-14'>
         <div className='2xl:w-[762px] lg:w-[719px]'>
-          <span className='lg:text-subtitle2Light md:text-paragraph2Light text-tagLight text-secondary block'>
+          <span className='lg:text-subtitle2Light md:text-paragraph2Light text-tagLight text-gray-400 block'>
             Portfolio
           </span>
 
@@ -70,7 +70,7 @@ const HeroSection = () => {
                 className='flex justify-between py-4 border-b border-dashed border-[#3B3B3B] last:border-b-0'
                 key={index}
               >
-                <span className='text-secondary md:text-tag text-tagExtraLight flex items-center gap-2 uppercase'>
+                <span className='text-gray-400 md:text-tag text-tagExtraLight flex items-center gap-2 uppercase'>
                   <Image
                     src={info.icon}
                     alt={info.label.toLowerCase()}

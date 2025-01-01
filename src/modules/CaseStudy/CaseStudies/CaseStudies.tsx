@@ -35,7 +35,7 @@ const caseStudyData = [
 const CaseStudies = () => (
   <>
     <div
-      className='lg:bg-bg bg-white lg:py-20 md:py-[60px] py-10'
+      className='lg:bg-gray-50 bg-white lg:py-20 md:py-[60px] py-10'
       id='overview'
     >
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
@@ -47,7 +47,7 @@ const CaseStudies = () => (
               over 100 million fans weekly across
             </>
           }
-          headingClassName='text-primary lg:!text-h2 text-center'
+          headingClassName='text-gray-800 lg:!text-h2 text-center'
           descriptionClassName='md:text-subtitle2Light text-center'
         />
 
@@ -55,7 +55,7 @@ const CaseStudies = () => (
           {caseStudyData.map((item, index) => (
             <div
               key={index}
-              className='text-primary p-3 2xl:w-[330px] lg:w-[298px] lg:bg-white flex md:flex-col md:gap-0 gap-4'
+              className='text-gray-800 p-3 2xl:w-[330px] lg:w-[298px] lg:bg-white flex md:flex-col md:gap-0 gap-4'
             >
               <Image
                 src={item.img}
@@ -65,7 +65,7 @@ const CaseStudies = () => (
                 className='md:w-[306px] w-[134px] md:h-[216px] h-[145px]'
               />
               <div>
-                <span className='text-secondary md:text-paragraph2 text-tagExtraLight md:mt-4 block'>
+                <span className='text-gray-400 md:text-paragraph2 text-tagExtraLight md:mt-4 block'>
                   {item.label}
                 </span>
                 <Typography className='md:text-[19px] text-tag mt-1.5 line-clamp-4'>
@@ -91,7 +91,7 @@ const CaseStudies = () => (
         </div>
 
         <Button
-          className='lg:w-[276px] md:w-[248px] w-60 h-[52px] 2xl:mt-12 mt-10 mx-auto block !bg-transparent hover:!bg-primary'
+          className='lg:w-[276px] md:w-[248px] w-60 h-[52px] 2xl:mt-12 mt-10 mx-auto block !bg-transparent hover:!bg-gray-800'
           variant='blackOutline'
         >
           <Link

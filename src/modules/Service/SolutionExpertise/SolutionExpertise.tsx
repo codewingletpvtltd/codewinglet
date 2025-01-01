@@ -45,7 +45,7 @@ const expertiseData = [
 ];
 
 const SolutionExpertise = () => (
-  <div className='bg-bg lg:py-20 md:py-[60px] py-10'>
+  <div className='bg-gray-50 lg:py-20 md:py-[60px] py-10'>
     <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
       <SectionHeader
         title={<>What sets us apart in Web development solution expertise?</>}
@@ -55,8 +55,8 @@ const SolutionExpertise = () => (
             success
           </>
         }
-        headingClassName='text-primary lg:!text-h2 md:!text-[36px] lg:text-center'
-        descriptionClassName='text-secondary md:!text-subtitle2Light lg:text-center'
+        headingClassName='text-gray-800 lg:!text-h2 md:!text-[36px] lg:text-center'
+        descriptionClassName='text-gray-400 md:!text-subtitle2Light lg:text-center'
       />
 
       {/* Expertise Grid */}
@@ -64,9 +64,9 @@ const SolutionExpertise = () => (
         {expertiseData.map((item, index) => (
           <div
             key={index}
-            className={`${item.className} bg-white md:p-10 p-[15px] border-headerBoxBorder md:block flex gap-2.5`}
+            className={`${item.className} bg-white md:p-10 p-[15px] border-gray-100 md:block flex gap-2.5`}
           >
-            <div className='bg-bg md:w-[70px] w-10 md:h-[70px] h-10 flex items-center justify-center flex-shrink-0'>
+            <div className='bg-gray-50 md:w-[70px] w-10 md:h-[70px] h-10 flex items-center justify-center flex-shrink-0'>
               <Image
                 src='/assets/icons/share.svg'
                 alt='share'
@@ -76,7 +76,7 @@ const SolutionExpertise = () => (
               />
             </div>
             <div>
-              <Typography className='text-primary md:text-subtitle2 text-tag md:mt-[30px]'>
+              <Typography className='text-gray-800 md:text-subtitle2 text-tag md:mt-[30px]'>
                 {item.title}
               </Typography>
               <Typography className='md:text-paragraph2Light text-tagExtraLight font-light md:pt-2 pt-1'>

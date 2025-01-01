@@ -36,7 +36,7 @@ const BusinessGoal = () => {
 
   return (
     <>
-      <div className='bg-bg lg:py-20 md:py-[60px] py-10 scroll-mt-32'>
+      <div className='bg-gray-50 lg:py-20 md:py-[60px] py-10 scroll-mt-32'>
         <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto lg:flex block 2xl:gap-[90px] gap-[50px]'>
           {/* Left Section */}
           <div className='2xl:w-[530px] lg:w-[440px] flex-shrink-0'>
@@ -50,11 +50,11 @@ const BusinessGoal = () => {
                   engaging over 100 million.
                 </>
               }
-              headingClassName='text-primary lg:!text-h2 lg:text-left md:text-center'
-              descriptionClassName='text-secondary mt-1.5 md:!text-paragraph1ExtraLight lg:text-left md:text-center'
+              headingClassName='text-gray-800 lg:!text-h2 lg:text-left md:text-center'
+              descriptionClassName='text-gray-400 mt-1.5 md:!text-paragraph1ExtraLight lg:text-left md:text-center'
             />
             <Button
-              className='lg:w-[229px] md:w-[248px] w-60 h-[52px] 2xl:mt-12 mt-[50px] !bg-transparent hover:!bg-primary lg:block hidden'
+              className='lg:w-[229px] md:w-[248px] w-60 h-[52px] 2xl:mt-12 mt-[50px] !bg-transparent hover:!bg-gray-800 lg:block hidden'
               variant='blackOutline'
             >
               <Link
@@ -83,10 +83,10 @@ const BusinessGoal = () => {
                   className='md:w-[38px] md:h-[38px] w-6 h-6'
                 />
                 <div>
-                  <Typography className='text-primary lg:text-subtitle2 md:text-paragraph1 text-tag lg:pt-10'>
+                  <Typography className='text-gray-800 lg:text-subtitle2 md:text-paragraph1 text-tag lg:pt-10'>
                     {highlight.title}
                   </Typography>
-                  <Typography className='text-secondary md:text-paragraph2Light text-tagExtraLight lg:pt-2.5 pt-1.5'>
+                  <Typography className='text-gray-400 md:text-paragraph2Light text-tagExtraLight lg:pt-2.5 pt-1.5'>
                     {highlight.description}
                   </Typography>
                 </div>
@@ -94,7 +94,7 @@ const BusinessGoal = () => {
             ))}
           </div>
           <Button
-            className='lg:w-[229px] md:w-[248px] w-60 h-[52px] mt-[40px] !bg-transparent hover:!bg-primary mx-auto lg:hidden block'
+            className='lg:w-[229px] md:w-[248px] w-60 h-[52px] mt-[40px] !bg-transparent hover:!bg-gray-800 mx-auto lg:hidden block'
             variant='blackOutline'
           >
             <Link

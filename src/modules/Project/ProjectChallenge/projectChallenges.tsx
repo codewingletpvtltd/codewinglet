@@ -45,8 +45,8 @@ const ProjectChallenge = () => (
               platforms, it offers comprehensive sports coverage..
             </>
           }
-          headingClassName='text-primary lg:!text-h2 text-center'
-          descriptionClassName='text-secondary md:!text-paragraph1ExtraLight text-center'
+          headingClassName='text-gray-800 lg:!text-h2 text-center'
+          descriptionClassName='text-gray-400 md:!text-paragraph1ExtraLight text-center'
         />
 
         <div className='lg:mt-[50px] mt-[35px] lg:flex gap-10'>
@@ -65,10 +65,10 @@ const ProjectChallenge = () => (
                   <Arrow />
                 </div>
                 <div>
-                  <Typography className='text-primary lg:text-subtitle2 md:text-paragraph1 text-tag'>
+                  <Typography className='text-gray-800 lg:text-subtitle2 md:text-paragraph1 text-tag'>
                     {block.title}
                   </Typography>
-                  <Typography className='text-secondary md:text-paragraph2Light text-tagExtraLight pt-2'>
+                  <Typography className='text-gray-400 md:text-paragraph2Light text-tagExtraLight pt-2'>
                     {block.description}
                   </Typography>
                 </div>
