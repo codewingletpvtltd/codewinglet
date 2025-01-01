@@ -17,7 +17,7 @@ const Insights = () => (
           description='Driving Transformation with Software Solutions that Enhance
                 Agility, Scalability, and Growth'
           headingClassName='lg:text-h2 text-white'
-          descriptionClassName='md:text-subtitle2Light text-secondary'
+          descriptionClassName='md:text-subtitle2Light text-gray-400'
         />
 
         <div className='lg:mt-[50px]'>

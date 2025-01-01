@@ -5,7 +5,10 @@ import { Arrow } from '@codewinglet/assets';
 import { Button, SectionHeader, Typography } from '@codewinglet/components';
 
 const OurTeam = () => (
-  <div className='bg-bg lg:py-20 md:py-[60px] py-10 scroll-mt-32' id='employee'>
+  <div
+    className='bg-gray-50 lg:py-20 md:py-[60px] py-10 scroll-mt-32'
+    id='employee'
+  >
     <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto flex lg:flex-row flex-col lg:gap-[100px] gap-10 lg:items-center'>
       <div className='flex flex-col justify-between lg:order-1 order-2'>
         <div className='bg-white md:p-[60px] px-5 py-[30px] lg:mx-0 2xl:w-[624px] lg:w-[592px] w-auto lg:h-[675px] relative flex flex-col justify-between'>
@@ -19,14 +22,14 @@ const OurTeam = () => (
               </Typography>
               <Typography className='md:text-paragraph2 text-tag md:pt-4 pt-3 font-semibold'>
                 Milan R.
-                <span className='text-secondary md:text-tagLight text-tagExtraLight md:pl-2.5 md:inline block'>
+                <span className='text-gray-400 md:text-tagLight text-tagExtraLight md:pl-2.5 md:inline block'>
                   Sr. Product Designer
                 </span>
               </Typography>
             </div>
           </div>
           {/* second */}
-          <div className='flex md:items-center justify-between bg-white border border-headerBoxBorder md:p-10 p-5 lg:absolute 2xl:top-[232px] top-[220px] left-[104px] 2xl:w-[574px] lg:w-[542px] w-full lg:my-0 md:my-[50px] my-[30px]'>
+          <div className='flex md:items-center justify-between bg-white border border-gray-100 md:p-10 p-5 lg:absolute 2xl:top-[232px] top-[220px] left-[104px] 2xl:w-[574px] lg:w-[542px] w-full lg:my-0 md:my-[50px] my-[30px]'>
             <div>
               <Image
                 src='/assets/career/quote.svg'
@@ -42,7 +45,7 @@ const OurTeam = () => (
               </Typography>
               <Typography className='md:text-paragraph2 text-tag md:pt-4 pt-3 font-semibold md:flex'>
                 Ayushi R.
-                <span className='text-secondary md:text-tagLight text-tagExtraLight md:pl-2.5 mr-auto block'>
+                <span className='text-gray-400 md:text-tagLight text-tagExtraLight md:pl-2.5 mr-auto block'>
                   Software Developer
                 </span>
                 <Image
@@ -65,7 +68,7 @@ const OurTeam = () => (
               </Typography>
               <Typography className='md:text-paragraph2 text-tag md:pt-4 pt-3 font-semibold'>
                 Dharmik B.
-                <span className='text-secondary md:text-tagLight text-tagExtraLight md:pl-2.5 md:inline block'>
+                <span className='text-gray-400 md:text-tagLight text-tagExtraLight md:pl-2.5 md:inline block'>
                   Web Designer
                 </span>
               </Typography>
@@ -74,7 +77,7 @@ const OurTeam = () => (
         </div>
 
         <Button
-          className='md:w-[278px] w-[230px] !mt-10 border-primary border hover:border-primary hover:border lg:hidden block m-[0_auto]'
+          className='md:w-[278px] w-[230px] !mt-10 border-gray-800 border hover:border-gray-800 hover:border lg:hidden block m-[0_auto]'
           variant='default'
         >
           <Link
@@ -97,10 +100,10 @@ const OurTeam = () => (
           }
           description='Gain Valuable Insights Directly from the Voices of Our Talented and Dedicated Members.'
           headingClassName='lg:text-h2'
-          descriptionClassName='text-secondary md:text-subtitle2Light'
+          descriptionClassName='text-gray-400 md:text-subtitle2Light'
         />
         <Button
-          className='w-[320px] md:mt-[70px] mt-16 border-primary border hover:border-primary hover:border lg:block hidden'
+          className='w-[320px] md:mt-[70px] mt-16 border-gray-800 border hover:border-gray-800 hover:border lg:block hidden'
           variant='default'
         >
           <Link

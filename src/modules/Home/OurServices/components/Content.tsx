@@ -19,7 +19,7 @@ const Content: FC<ContentProps> = ({ service }) => (
         className='w-full lg:h-[180px]'
       />
       <div className='xl:flex items-center justify-between pt-5 pb-7 lg:block hidden'>
-        <Typography className='text-subtitle1 relative after:content after:absolute after:w-10 after:h-[2px] after:left-0 after:bg-primary after:-bottom-2'>
+        <Typography className='text-subtitle1 relative after:content after:absolute after:w-10 after:h-[2px] after:left-0 after:bg-gray-800 after:-bottom-2'>
           {service.title}
         </Typography>
         <div className='flex items-center gap-2'>
@@ -30,12 +30,12 @@ const Content: FC<ContentProps> = ({ service }) => (
         </div>
       </div>
 
-      <Typography className='lg:text-paragraph1ExtraLight md:text-paragraph2Light text-secondary pb-[25px] lg:block hidden'>
+      <Typography className='lg:text-paragraph1ExtraLight md:text-paragraph2Light text-gray-400 pb-[25px] lg:block hidden'>
         {service.description}
       </Typography>
 
       <div className='lg:hidden flex items-start justify-between pt-[15px]'>
-        <Typography className='lg:text-paragraph1ExtraLight md:text-paragraph2Light text-tagExtraLight text-secondary md:pb-10 pb-[30px] w-full'>
+        <Typography className='lg:text-paragraph1ExtraLight md:text-paragraph2Light text-tagExtraLight text-gray-400 md:pb-10 pb-[30px] w-full'>
           {service.description}
         </Typography>
         <div className='flex items-center flex-shrink-0 gap-2'>
@@ -51,7 +51,7 @@ const Content: FC<ContentProps> = ({ service }) => (
       <Typography className='md:text-paragraph1Light text-tag lg:mb-[15px] md:mb-[15px] mb-3'>
         Service Included :
       </Typography>
-      <div className='grid md:grid-cols-2 grid-cols-1 md:gap-5 gap-[15px] bg-bg lg:p-[30px] md:p-5 p-4'>
+      <div className='grid md:grid-cols-2 grid-cols-1 md:gap-5 gap-[15px] bg-gray-50 lg:p-[30px] md:p-5 p-4'>
         {service.subService.map((subService) => (
           <div
             key={subService.label}
@@ -74,7 +74,7 @@ const Content: FC<ContentProps> = ({ service }) => (
     <Link
       href='/contact-us'
       rel='noopener noreferrer'
-      className='text-primary group-hover:text-white text-center group w-[231px] mt-6 md:block hidden'
+      className='text-gray-800 group-hover:text-white text-center group w-[231px] mt-6 md:block hidden'
     >
       <Button className='w-[231px] gap-3 bg-transparent' variant='blackOutline'>
         Book a meeting

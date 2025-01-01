@@ -19,7 +19,7 @@ const BlogShareMobile = ({ title }: { title: string }) => {
   return (
     <div className='md:hidden sm:block'>
       <div
-        className='flex items-center justify-center lg:w-10 w-[30px] lg:h-10 h-[30px] rounded-full bg-bg cursor-pointer'
+        className='flex items-center justify-center lg:w-10 w-[30px] lg:h-10 h-[30px] rounded-full bg-gray-50 cursor-pointer'
         onClick={shareHandle}
       >
         <Image

@@ -11,7 +11,7 @@ const OurPromise = () => (
       <div className='container w-full lg:px-[15px] sm:px-[78px] px-5 mx-auto'>
         <div className='flex gap-[76px]'>
           <div className='w-[844px]'>
-            <Typography className='text-secondary md:text-subtitle2 text-tag pb-1.5 lg:text-left md:text-center'>
+            <Typography className='text-gray-400 md:text-subtitle2 text-tag pb-1.5 lg:text-left md:text-center'>
               Our promise{' '}
             </Typography>
             <Typography className='md:text-h2 text-subtitle2 md:pb-10 pb-[22px] lg:text-left md:text-center'>

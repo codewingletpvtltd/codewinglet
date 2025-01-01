@@ -55,7 +55,7 @@ const Proposed = () => (
           descriptionClassName='text-white md:!text-paragraph1ExtraLight text-center'
         />
 
-        <div className='bg-primary md:p-10 p-5 md:mt-[50px] mt-5'>
+        <div className='bg-gray-800 md:p-10 p-5 md:mt-[50px] mt-5'>
           <div className='grid lg:grid-cols-2 md:gap-y-10 gap-y-5 gap-x-20'>
             {contentBlocks.map((block, index) => (
               <div key={index} className='flex lg:gap-5 gap-[15px]'>
@@ -66,7 +66,7 @@ const Proposed = () => (
                   <Typography className='text-white lg:text-subtitle2 md:text-paragraph1 text-tag'>
                     {block.title}
                   </Typography>
-                  <Typography className='text-secondary md:text-paragraph2Light text-tagExtraLight'>
+                  <Typography className='text-gray-400 md:text-paragraph2Light text-tagExtraLight'>
                     {block.description}
                   </Typography>
                 </div>

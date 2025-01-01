@@ -45,7 +45,7 @@ const ServiceProvide = ({
             key={service.title}
             value={service.title}
             defaultChecked={i == 0}
-            className='border-b border-[#3B3B3B] last:border-b-0 md:py-10 py-[25px]'
+            className='border-b border-gray-500 last:border-b-0 md:py-10 py-[25px]'
           >
             <AccordionTrigger
               icon={

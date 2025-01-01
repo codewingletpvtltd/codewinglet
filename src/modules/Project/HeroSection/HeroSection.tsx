@@ -67,7 +67,7 @@ const HeroSection = () => {
           <div className='2xl:mt-[100px] lg:mt-[72px] mt-[50px]'>
             {industryDetails.map((info, index) => (
               <div
-                className='flex justify-between py-4 border-b border-dashed border-[#3B3B3B] last:border-b-0'
+                className='flex justify-between py-4 border-b border-dashed border-gray-500 last:border-b-0'
                 key={index}
               >
                 <span className='text-gray-400 md:text-tag text-tagExtraLight flex items-center gap-2 uppercase'>

@@ -20,7 +20,7 @@ const Content: FC<ContentProps> = ({ service }) => (
               height={30}
               className='w-[30px] h-[30px]'
             />
-            <div className='lg:text-paragraph1ExtraLight md:text-tagLight text-tagExtraLight text-primary'>
+            <div className='lg:text-paragraph1ExtraLight md:text-tagLight text-tagExtraLight text-gray-800'>
               {subService.label}
             </div>
           </div>

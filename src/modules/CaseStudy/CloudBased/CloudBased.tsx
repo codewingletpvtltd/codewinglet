@@ -62,8 +62,8 @@ const CloudBased = () => (
       </div>
 
       {/* Blend effect */}
-      <div className='w-full h-full block mix-blend-soft-light backdrop-blur-[17px] z-[1] bg-primary absolute top-0 left-0'></div>
-      <div className='w-full h-full block mix-blend-color bg-primary absolute top-0 left-0'></div>
+      <div className='w-full h-full block mix-blend-soft-light backdrop-blur-[17px] z-[1] bg-gray-800 absolute top-0 left-0'></div>
+      <div className='w-full h-full block mix-blend-color bg-gray-800 absolute top-0 left-0'></div>
 
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto relative z-10'>
         <div className='lg:flex block gap-[97px]'>
@@ -112,10 +112,10 @@ const CloudBased = () => (
           {caseStudyData.map((item, index) => (
             <div
               key={index}
-              className='border border-white/10 text-white md:p-5 p-3 lg:w-[218px] bg-primary/10'
+              className='border border-white/10 text-white md:p-5 p-3 lg:w-[218px] bg-gray-800/10'
             >
               <Image src={item.icon} alt='icon' width={24} height={24} />
-              <span className='text-secondary md:text-tag text-tagExtraLight mt-5 block'>
+              <span className='text-gray-400 md:text-tag text-tagExtraLight mt-5 block'>
                 {item.label}
               </span>
               <Typography className='md:text-paragraph2 text-tagExtraLight'>

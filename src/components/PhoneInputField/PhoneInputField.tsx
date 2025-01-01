@@ -1,5 +1,5 @@
 'use client';
-import { useState, useLayoutEffect } from 'react';
+import { useLayoutEffect, useState } from 'react';
 import PhoneInput from 'react-phone-input-2';
 
 import 'react-phone-input-2/lib/style.css';
@@ -32,7 +32,7 @@ const PhoneInputField: React.FC<PhoneInputFieldProps> = ({
   }, []);
   return (
     <>
-      <label className='text-primary sm:text-paragraph1 text-tag mb-2.5 block'>
+      <label className='text-gray-800 sm:text-paragraph1 text-tag mb-2.5 block'>
         Phone number
       </label>
       <PhoneInput
@@ -55,8 +55,8 @@ const PhoneInputField: React.FC<PhoneInputFieldProps> = ({
         }}
         enableAreaCodes={false}
         placeholder='Enter Your Number'
-        inputClass='!w-full !bg-transparent !text-paragraph1ExtraLight !rounded-none !border-x-0 !border-t-0 !border-b !border-primary font-primary'
-        buttonClass='!border-x-0 !border-t-0 !border-b !border-primary !rounded-none !bg-transparent'
+        inputClass='!w-full !bg-transparent !text-paragraph1ExtraLight !rounded-none !border-x-0 !border-t-0 !border-b !border-gray-800 font-primary'
+        buttonClass='!border-x-0 !border-t-0 !border-b !border-gray-800 !rounded-none !bg-transparent'
         dropdownClass='!shadow-[1px_2px_10px_rgba(0,0,0,0.08)]'
       />
     </>

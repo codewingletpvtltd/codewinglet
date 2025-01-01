@@ -167,7 +167,7 @@ const Footer = () => {
                 >
                   {menuItem.menu.map((item) => (
                     <div key={item.id}>
-                      <Typography className='text-paragraph2Light leading-normal mb-3.5 min-h-0 text-lightGray hover:text-white'>
+                      <Typography className='text-paragraph2Light leading-normal mb-3.5 min-h-0 text-gray-300 hover:text-white'>
                         <Link className='' href={item?.path}>
                           {item.label}
                         </Link>
@@ -185,7 +185,7 @@ const Footer = () => {
                 {contacts.map((contact, index) => (
                   <div
                     key={index}
-                    className='text-paragraph2Light leading-normal mb-5 min-h-0 text-lightGray flex gap-3 items-start'
+                    className='text-paragraph2Light leading-normal mb-5 min-h-0 text-gray-300 flex gap-3 items-start'
                   >
                     <Image
                       src={contact.icon}
@@ -232,7 +232,7 @@ const Footer = () => {
         </div>
       </footer>
 
-      <div className='relative text-lightGray border-t border-[#3b3b3b]'>
+      <div className='relative text-gray-300 border-t border-gray-500'>
         <div className='container flex flex-col sm:flex-row items-center sm:justify-between justify-start lg:px-3.5 sm:p-10 sm:py-3.5 p-5 md:gap-0 gap-1'>
           <Typography className='lg:text-paragraph2Light text-tagLight'>
             All rights reserved © {new Date().getFullYear()} - Codewinglet{' '}

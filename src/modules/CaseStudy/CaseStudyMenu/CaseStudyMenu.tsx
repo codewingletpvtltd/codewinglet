@@ -92,7 +92,7 @@ const CaseStudyMenu = () => {
 
   return (
     <div className='lg:sticky fixed w-full z-20 lg:top-[86px] top-0 lg:mt-0 md:mt-[90px] mt-[78px] lg:block'>
-      <div className='bg-white border-b border-headerBoxBorder'>
+      <div className='bg-white border-b border-gray-100'>
         <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
           <div className='flex md:gap-[90px] gap-8 lg:overscroll-x-none overflow-x-auto'>
             {MENU_ITEMS.map(({ title, path }, index) => (
@@ -103,8 +103,8 @@ const CaseStudyMenu = () => {
                 className={cn(
                   'relative md:text-tagBold flex-shrink-0 py-3 cursor-pointer',
                   activeIndex === index
-                    ? '!font-normal text-primary'
-                    : '!font-light text-secondary'
+                    ? '!font-normal text-gray-800'
+                    : '!font-light text-gray-400'
                 )}
                 onClick={(event) =>
                   handleMenuClick(event, path.substring(1), index)

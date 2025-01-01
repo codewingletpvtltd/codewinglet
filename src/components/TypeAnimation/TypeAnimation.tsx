@@ -55,7 +55,7 @@ const TypeAnimation = forwardRef<
 
     return (
       <Typography
-        className={getClassNames('typing-cursor text-primary', className)}
+        className={getClassNames('typing-cursor text-gray-800', className)}
         ref={textRef}
       />
     );

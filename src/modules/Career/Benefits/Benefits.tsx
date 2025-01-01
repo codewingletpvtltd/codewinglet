@@ -65,7 +65,7 @@ const Benefits = () => (
               </>
             }
             headingClassName='lg:text-h2'
-            descriptionClassName='lg:!text-subtitle2Light md:!text-paragraph1ExtraLight text-secondary'
+            descriptionClassName='lg:!text-subtitle2Light md:!text-paragraph1ExtraLight text-gray-400'
           />
 
           <div className='hidden relative lg:block mt-10'>
@@ -86,7 +86,7 @@ const Benefits = () => (
         <div className='lg:w-[710px] lg:mt-0 mt-10'>
           <div className='grid grid-cols-2 md:gap-[30px] gap-[15px]'>
             {workData.map((workData, i) => (
-              <div className='bg-bg md:p-[30px] p-[13px]' key={i}>
+              <div className='bg-gray-50 md:p-[30px] p-[13px]' key={i}>
                 <Image
                   src={workData.image}
                   alt='Menu Icon'
@@ -96,7 +96,7 @@ const Benefits = () => (
                 <Typography className='md:text-paragraph1 text-tag md:pt-4 pt-4 pb-1.5'>
                   {workData.title}
                 </Typography>
-                <Typography className='md:text-paragraph2Light text-tagExtraLight text-placeholderText'>
+                <Typography className='md:text-paragraph2Light text-tagExtraLight text-gray-200'>
                   {workData.description}
                 </Typography>
               </div>
