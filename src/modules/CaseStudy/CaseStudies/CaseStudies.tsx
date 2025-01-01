@@ -48,7 +48,7 @@ const CaseStudies = () => (
             </>
           }
           headingClassName='text-primary lg:!text-h2 text-center'
-          descriptionClassName='text-primary md:!text-paragraph1ExtraLight text-center'
+          descriptionClassName='md:text-subtitle2Light text-center'
         />
 
         <div className='grid lg:grid-cols-4 md:grid-cols-2 md:gap-[30px] gap-[15px] lg::mt-12 md:mt-10 mt-5'>

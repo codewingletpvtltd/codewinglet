@@ -54,7 +54,7 @@ const Advantages = () => (
             </>
           }
           headingClassName='text-white lg:!text-h2 text-center'
-          descriptionClassName='text-secondary md:!text-paragraph1ExtraLight text-center lg:px-20'
+          descriptionClassName='text-secondary lg:!text-subtitle2Light md:!text-paragraph1ExtraLight text-center lg:px-20'
         />
 
         <div className='md:mt-[50px] mt-5'>

@@ -115,7 +115,7 @@ const CloudBased = () => (
               className='border border-white/10 text-white md:p-5 p-3 lg:w-[218px] bg-primary/10'
             >
               <Image src={item.icon} alt='icon' width={24} height={24} />
-              <span className='text-secondary md:text-tagLight text-tagExtraLight mt-5 block'>
+              <span className='text-secondary md:text-tag text-tagExtraLight mt-5 block'>
                 {item.label}
               </span>
               <Typography className='md:text-paragraph2 text-tagExtraLight'>

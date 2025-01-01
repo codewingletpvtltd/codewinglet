@@ -15,7 +15,8 @@ const RelatedFaq = () => (
             empower your niche.
           </>
         }
-        descriptionClassName='sm:!text-subtitle2Light text-tagLight leading-normal'
+        headingClassName='lg:text-h2'
+        descriptionClassName='md:text-subtitle2Light leading-normal'
       />
       <div className='lg:gap-20 lg:mt-[50px] md:mt-10 mt-5'>
         <Faq faqData={faqData} />

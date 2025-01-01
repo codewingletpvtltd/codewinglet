@@ -20,8 +20,8 @@ const CurrentOpenings = () => (
         <SectionHeader
           title={<>Current job openings</>}
           description='Discover Your Next Career Opportunity: Explore Our Latest Job Openings.'
-          descriptionClassName='text-secondary md:text-left text-center'
-          headingClassName='md:text-left text-center'
+          headingClassName='md:text-left text-center lg:text-h2'
+          descriptionClassName='text-secondary md:text-left text-center md:text-subtitle2Light'
         />
         {/* TODO: New Design  */}
         {/* <div className='md:flex items-center justify-between md:mt-[55px] mt-5'>

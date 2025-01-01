@@ -11,8 +11,8 @@ const Opportunity = () => (
         <SectionHeader
           title={<>Join the Codewinglet Team</>}
           description='At Codewinglet, experience a vibrant work culture that encourages innovation and fosters personal growth while contributing to cutting-edge software development in a supportive and engaging environment.'
-          descriptionClassName='text-secondary'
           headingClassName='lg:!text-h1 md:!text-h2 !text-subtitle2'
+          descriptionClassName='text-secondary md:text-subtitle2Light'
         />
         <div className='flex cursor-pointer text-primary mt-[30px] items-center group gap-2.5'>
           <Link

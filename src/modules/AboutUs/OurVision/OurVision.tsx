@@ -16,6 +16,8 @@ const OurVision = () => (
               through innovation!
             </>
           }
+          headingClassName='lg:text-h2'
+          descriptionClassName='md:text-subtitle2Light'
         />
         <div>
           <div className='bg-headerBoxBorder w-[1px] 2xl:h-[690px] h-[590px] absolute top-56 left-1/2 lg:block hidden'></div>
@@ -34,7 +36,7 @@ const OurVision = () => (
                 />
                 OUR VISION
               </Typography>
-              <Typography className='text-secondary lg:text-subtitle2 md:text-paragraph1ExtraLight text-tagLight'>
+              <Typography className='text-secondary lg:text-subtitle2Light md:text-paragraph1ExtraLight text-tagLight pt-[15px]'>
                 Our vision is to pioneer innovative technological solutions that
                 empower businesses and individuals to thrive in the digital era.
                 We aspire to be a global leader in IT, driving positive change
@@ -71,7 +73,7 @@ const OurVision = () => (
               />
               OUR MISSION
             </Typography>
-            <Typography className='text-secondary lg:text-subtitle2 md:text-paragraph1ExtraLight text-tagLight'>
+            <Typography className='text-secondary lg:text-subtitle2Light md:text-paragraph1ExtraLight text-tagLight pt-[15px]'>
               At Codewinglet, we deliver tailored IT services and solutions,
               leveraging the latest technologies to meet our clients' unique
               needs. With a focus on innovation and collaboration, we

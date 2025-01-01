@@ -61,7 +61,7 @@ const Combination = () => {
                 companies in the tech world, including
               </>
             }
-            headingClassName='text-primary'
+            headingClassName='text-primary lg:text-h2'
             descriptionClassName='text-primary lg:!text-subtitle2Light md:!text-paragraph1ExtraLight'
           />
 

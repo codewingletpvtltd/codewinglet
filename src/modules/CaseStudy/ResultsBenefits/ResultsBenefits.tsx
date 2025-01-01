@@ -7,7 +7,7 @@ import ResultsContent from '.';
 const ResultsBenefits = () => (
   <>
     <div
-      className='bg-white lg:py-20 md:py-[60px] py-10 scroll-mt-32'
+      className='bg-white lg:pt-20 md:pt-[60px] pt-10 scroll-mt-32'
       id='results'
     >
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
