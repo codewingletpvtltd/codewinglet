@@ -91,9 +91,9 @@ const TechnologySubMenu = () => {
 
   return (
     <>
-      <div className='bg-white lg:mt-[86px] md:mt-[90px] mt-[78px] border-b border-headerBoxBorder fixed w-full z-10 submenus'>
+      <div className='bg-white lg:mt-[86px] md:mt-[90px] mt-[78px] border-b border-gray-100 fixed w-full z-10 submenus'>
         <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto flex'>
-          <Typography className='py-3 px-5 md:text-paragraph1Light text-tag bg-bg md:flex flex-shrink-0 font-normal hidden'>
+          <Typography className='py-3 px-5 md:text-paragraph1Light text-tag bg-gray-50 md:flex flex-shrink-0 font-normal hidden'>
             Angular JS
           </Typography>
           <div className='flex overflow-x-auto'>
@@ -101,8 +101,8 @@ const TechnologySubMenu = () => {
               <button
                 key={title}
                 className={cn(
-                  'relative md:text-paragraph2Light text-text-tag flex-shrink-0 py-2.5 px-5 cursor-pointer !font-light text-secondary',
-                  activeIndex === index ? '!font-normal text-primary' : ''
+                  'relative md:text-paragraph2Light text-text-tag flex-shrink-0 py-2.5 px-5 cursor-pointer !font-light text-gray-400',
+                  activeIndex === index ? '!font-normal text-gray-800' : ''
                 )}
                 onClick={(event) =>
                   clickHandler(event, path.substring(1), index)

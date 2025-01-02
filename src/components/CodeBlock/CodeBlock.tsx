@@ -36,7 +36,7 @@ const CodeBlock = ({ code, language = 'javascript' }: CodeBlockProps) => {
       </SyntaxHighlighter>
       <Tippy content='Copy to clipboard'>
         <button
-          className='absolute top-2 right-2 bg-secondary hover:bg-blue-600 text-white px-2 py-1 rounded'
+          className='absolute top-2 right-2 bg-gray-400 hover:bg-blue-600 text-white px-2 py-1 rounded'
           onClick={() => handleCopyClick(code)}
         >
           {copied ? 'Copied!' : 'Copy'}

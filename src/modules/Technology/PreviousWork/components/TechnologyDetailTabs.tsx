@@ -19,9 +19,9 @@ const TechnologyDetailTabs: React.FC<TechnologyDetailTabsProps> = ({
         <li
           key={index}
           onMouseEnter={() => onTabHover(item)}
-          className='flex gap-5 items-center bg-white border border-headerBoxBorder p-5 w-[510px] mb-[30px] last:mb-0 cursor-pointer group'
+          className='flex gap-5 items-center bg-white border border-gray-100 p-5 w-[510px] mb-[30px] last:mb-0 cursor-pointer group'
         >
-          <div className='bg-bg group-hover:bg-black p-[15px] text-primary group-hover:text-white transition duration-300'>
+          <div className='bg-gray-50 group-hover:bg-black p-[15px] text-gray-800 group-hover:text-white transition duration-300'>
             {item.icon}
           </div>
           <Typography className='text-subtitle2'>{item.label}</Typography>

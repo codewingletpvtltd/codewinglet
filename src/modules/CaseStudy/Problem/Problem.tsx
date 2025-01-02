@@ -38,11 +38,11 @@ const contentBlocks = [
 
 const Problem = () => (
   <>
-    <div className='pt-20 bg-white'>
+    <div className='lg:py-20 md:py-[60px] py-10 bg-white'>
       <div
-        className='bg-bg lg:py-20 md:py-[60px] py-10 relative scroll-mt-32'
+        className='bg-gray-50 lg:py-20 md:py-[60px] py-10 relative scroll-mt-32'
         id='problems'
-      >
+      >  11
         <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
           <SectionHeader
             title={<>Problem Statement</>}
@@ -53,22 +53,22 @@ const Problem = () => (
                 platforms.
               </>
             }
-            headingClassName='text-primary lg:!text-h2 text-center'
-            descriptionClassName='text-primary md:!text-paragraph1ExtraLight text-center'
+            headingClassName='text-gray-800 lg:!text-h2 text-center'
+            descriptionClassName='text-gray-800 md:!text-paragraph1ExtraLight text-center'
           />
 
           <div className='bg-white md:p-10 p-5 md:mt-[50px] mt-5'>
             <div className='grid lg:grid-cols-2 md:gap-y-10 gap-y-5 lg:gap-x-[50px]'>
               {contentBlocks.map((block, index) => (
                 <div key={index} className='flex gap-5'>
-                  <div className='md:w-[50px] w-8 md:h-[50px] h-8 bg-bg flex-shrink-0 flex items-center justify-center'>
+                  <div className='md:w-[50px] w-8 md:h-[50px] h-8 bg-gray-50 flex-shrink-0 flex items-center justify-center'>
                     <Arrow />
                   </div>
                   <div>
-                    <Typography className='text-primary lg:text-subtitle2 md:text-paragraph1 text-tag'>
+                    <Typography className='text-gray-800 lg:text-subtitle2 md:text-paragraph1 text-tag'>
                       {block.title}
                     </Typography>
-                    <Typography className='text-secondary md:text-paragraph2Light text-tagExtraLight'>
+                    <Typography className='text-gray-400 md:text-paragraph2Light text-tagExtraLight'>
                       {block.description}
                     </Typography>
                   </div>

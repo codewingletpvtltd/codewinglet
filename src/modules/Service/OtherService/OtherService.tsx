@@ -74,7 +74,7 @@ const OtherService = () => {
     <>
       <div className='bg-white lg:py-20 md:py-[60px] py-10'>
         <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto lg:flex'>
-          <div className='lg:w-[370px] lg:pr-[50px] lg:border-r border-headerBoxBorder'>
+          <div className='lg:w-[370px] lg:pr-[50px] lg:border-r border-gray-100'>
             <SectionHeader
               title={<>Looking for other Services?</>}
               description={
@@ -82,8 +82,8 @@ const OtherService = () => {
                   Explore our other related services to enhance the performance.
                 </>
               }
-              headingClassName='text-primary'
-              descriptionClassName='text-primary lg:!text-subtitle2Light md:!text-paragraph1ExtraLight'
+              headingClassName='text-gray-800'
+              descriptionClassName='text-gray-800 lg:!text-subtitle2Light md:!text-paragraph1ExtraLight'
             />
 
             <Button
@@ -118,10 +118,10 @@ const OtherService = () => {
                         className='md:w-[450px] w-[131px]'
                       />
                       <div>
-                        <Typography className='text-primary lg:text-paragraph1Light md:text-paragraph2 text-tag lg:pb-3 pb-1.5 md:pt-[15px]'>
+                        <Typography className='text-gray-800 lg:text-paragraph1Light md:text-paragraph2 text-tag lg:pb-3 pb-1.5 md:pt-[15px]'>
                           {service.title}
                         </Typography>
-                        <Typography className='text-secondary lg:text-paragraph2Light md:text-tagLight text-tagExtraLight font-light'>
+                        <Typography className='text-gray-400 lg:text-paragraph2Light md:text-tagLight text-tagExtraLight font-light'>
                           {service.description}
                         </Typography>
                       </div>

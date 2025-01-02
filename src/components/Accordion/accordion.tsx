@@ -39,13 +39,13 @@ const AccordionTrigger = React.forwardRef<
         <div className='absolute right-5 flex items-center justify-center icon-container h-[15px] w-[15px] md:h-[19px] md:w-[19px]'>
           <span
             className={cn(
-              'absolute block w-full h-[1px] bg-secondary transition-transform duration-500',
+              'absolute block w-full h-[1px] bg-gray-400 transition-transform duration-500',
               '[data-state=open]:rotate-45'
             )}
           ></span>
           <span
             className={cn(
-              'absolute block h-full w-[1px] bg-secondary transition-transform duration-500',
+              'absolute block h-full w-[1px] bg-gray-400 transition-transform duration-500',
               '[data-state=open]:-rotate-90'
             )}
           ></span>
@@ -68,7 +68,7 @@ const AccordionContent = React.forwardRef<
     )}
     {...props}
   >
-    <div className='mb-[30px] border-l border-headerBoxBorder'>{children}</div>
+    <div className='mb-[30px] border-l border-gray-100'>{children}</div>
   </AccordionPrimitive.Content>
 ));
 AccordionContent.displayName = AccordionPrimitive.Content.displayName;

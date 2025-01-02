@@ -49,7 +49,7 @@ const Combination = () => {
   return (
     <>
       <div
-        className='bg-bg lg:py-20 md:py-[60px] lg:!pb-20 !pb-24 py-[30px] scroll-mt-40'
+        className='bg-gray-50 lg:py-20 md:py-[60px] lg:!pb-20 !pb-24 py-[30px] scroll-mt-40'
         id='combination'
       >
         <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
@@ -61,8 +61,8 @@ const Combination = () => {
                 companies in the tech world, including
               </>
             }
-            headingClassName='text-primary lg:text-h2'
-            descriptionClassName='text-primary lg:!text-subtitle2Light md:!text-paragraph1ExtraLight'
+            headingClassName='text-gray-800 lg:text-h2'
+            descriptionClassName='text-gray-800 lg:!text-subtitle2Light md:!text-paragraph1ExtraLight'
           />
 
           <div className='lg:mt-[50px] md:mt-10 mt-5 relative'>
@@ -82,7 +82,7 @@ const Combination = () => {
                       className='order-1 lg:w-[89px] lg:h-[89px] w-[50px] h-[50px]'
                     />
                     {/* Span - Order 2 */}
-                    <span className='text-secondary text-h4 font-extralight order-2 group-hover:rotate-180 transform'>
+                    <span className='text-gray-400 text-h4 font-extralight order-2 group-hover:rotate-180 transform'>
                       +
                     </span>
                     {/* Second Image - Order 3 */}
@@ -94,10 +94,10 @@ const Combination = () => {
                       className='order-3 lg:w-[89px] lg:h-[89px] w-[50px] h-[50px]'
                     />
                   </div>
-                  <Typography className='text-primary lg:text-subtitle2 text-paragraph1 text-center pt-10 pb-3'>
+                  <Typography className='text-gray-800 lg:text-subtitle2 text-paragraph1 text-center pt-10 pb-3'>
                     {tech.title}
                   </Typography>
-                  <Typography className='text-secondary text-paragraph2Light text-center'>
+                  <Typography className='text-gray-400 text-paragraph2Light text-center'>
                     {tech.description}
                   </Typography>
                 </div>

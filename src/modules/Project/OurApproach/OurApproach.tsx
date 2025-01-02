@@ -33,7 +33,7 @@ const OurApproach = () => (
           descriptionClassName='text-white md:!text-paragraph1ExtraLight text-center'
         />
 
-        <div className='bg-primary lg:p-[50px] md:p-9 p-5 lg:mt-[50px] mt-10'>
+        <div className='bg-gray-800 lg:p-[50px] md:p-9 p-5 lg:mt-[50px] mt-10'>
           <div className='grid lg:grid-cols-2 2xl:gap-[50px] lg:gap-10 md:gap-[34px] gap-6'>
             {featureList.map((feature, index) => (
               <div key={index} className='flex lg:gap-5 md:gap-[15px] gap-2'>

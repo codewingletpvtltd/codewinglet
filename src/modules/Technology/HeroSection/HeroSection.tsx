@@ -58,11 +58,11 @@ const HeroSection = () => (
           </div>
         </div>
         <div className='mx-auto mt-auto relative lg:pt-0 md:pt-20 pt-10'>
-          <div className='bg-bg border-[5px] border-[#313131] md:w-[226px] w-[117px] text-center absolute lg:-right-20 md:right-4 -right-2 lg:top-36 md:top-56 top-[120px] md:py-4'>
-            <Typography className='text-primary md:text-[30px] text-paragraph2 leading-7'>
+          <div className='bg-gray-50 border-[5px] border-[#313131] md:w-[226px] w-[117px] text-center absolute lg:-right-20 md:right-4 -right-2 lg:top-36 md:top-56 top-[120px] md:py-4'>
+            <Typography className='text-gray-800 md:text-[30px] text-paragraph2 leading-7'>
               150+
             </Typography>
-            <Typography className='text-primary md:text-paragraph1Light text-tagExtraLight'>
+            <Typography className='text-gray-800 md:text-paragraph1Light text-tagExtraLight'>
               Happy Clients
             </Typography>
           </div>

@@ -1,6 +1,6 @@
 'use client';
-import Link from 'next/link';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import { Arrow } from '@codewinglet/assets';
 import { Typography } from '@codewinglet/components';
@@ -11,18 +11,18 @@ const Journey = () => (
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
         <div className='lg:flex block'>
           <div className='lg:w-[598px] w-full'>
-            <Typography className='text-primary md:text-subtitle2 text-tag 2xl:mb-1.5 sm:mb-3'>
+            <Typography className='text-gray-800 md:text-subtitle2 text-tag 2xl:mb-1.5 sm:mb-3'>
               About us
             </Typography>
             <Typography className='lg:text-h2 md:text-h3 text-subtitle2 lg:leading-normal md:leading-[50px] leading-7'>
               Discover Our IT Service Providing Journey
             </Typography>
-            <Typography className='text-secondary text-subtitle2Light pt-3 2xl:pb-10 pb-3 lg:block hidden'>
+            <Typography className='text-gray-400 text-subtitle2Light pt-3 2xl:pb-10 pb-3 lg:block hidden'>
               We specialize in strategic planning, designing, and developing
               world-class software across diverse industries.
             </Typography>
 
-            <div className='lg:flex group cursor-pointer text-primary items-center group gap-2.5 hidden'>
+            <div className='lg:flex group cursor-pointer text-gray-800 items-center group gap-2.5 hidden'>
               <Link
                 href='#exploreNow'
                 target='_parent'

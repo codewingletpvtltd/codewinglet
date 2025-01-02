@@ -31,7 +31,7 @@ export const BlogItem: React.FC<BlogItemProps> = ({ blog }) => (
           </div>
         )}
         <div className='2xl:py-[15px] 2xl:w-[428px] lg:w-[418px] w-[335px]'>
-          <Typography className='text-secondary text-tag'>
+          <Typography className='text-gray-400 text-tag'>
             {formatDate(blog.createdAt)} • {calculateReadTime(blog.content)}
           </Typography>
 
@@ -50,7 +50,7 @@ export const BlogItem: React.FC<BlogItemProps> = ({ blog }) => (
 
           <Typography
             className={getClassNames(
-              'text-paragraph2Light text-secondary leading-[18px] md:leading-[22px] mt-4 overflow-hidden text-ellipsis lg:line-clamp-5 line-clamp-3'
+              'text-paragraph2Light text-gray-400 leading-[18px] md:leading-[22px] mt-4 overflow-hidden text-ellipsis lg:line-clamp-5 line-clamp-3'
             )}
           >
             {blog.summary}
@@ -62,7 +62,7 @@ export const BlogItem: React.FC<BlogItemProps> = ({ blog }) => (
                 .map(([key], index) => (
                   <li
                     key={index}
-                    className='text-secondary capitalize text-tagLight bg-bg border border-headerBoxBorder rounded-full py-0.5 px-2.5 w-fit'
+                    className='text-gray-400 capitalize text-tagLight bg-gray-50 border border-gray-100 rounded-full py-0.5 px-2.5 w-fit'
                   >
                     {formatTag(key)}
                   </li>

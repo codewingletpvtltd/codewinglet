@@ -30,7 +30,7 @@ const contentBlocks = [
 const Project = () => (
   <>
     <div
-      className='bg-bg lg:py-20 md:py-[60px] py-10 relative scroll-mt-32'
+      className='bg-gray-50 lg:py-20 md:py-[60px] py-10 relative scroll-mt-32'
       id='projectLearning'
     >
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
@@ -42,8 +42,8 @@ const Project = () => (
               over 100 million fans weekly across
             </>
           }
-          headingClassName='text-primary lg:!text-h2 text-center'
-          descriptionClassName='text-primary md:!text-paragraph1ExtraLight text-center'
+          headingClassName='text-gray-800 lg:!text-h2 text-center'
+          descriptionClassName='text-gray-800 md:!text-paragraph1ExtraLight text-center'
         />
 
         <div className='grid md:grid-cols-2 lg:gap-[30px] gap-5 md:mt-[50px] mt-5'>
@@ -60,10 +60,10 @@ const Project = () => (
                   />
                 </div>
                 <div>
-                  <Typography className='text-primary lg:text-subtitle2 md:text-paragraph1Light text-tag'>
+                  <Typography className='text-gray-800 lg:text-subtitle2 md:text-paragraph1Light text-tag'>
                     {block.title}
                   </Typography>
-                  <Typography className='text-secondary md:text-paragraph2Light text-tagExtraLight'>
+                  <Typography className='text-gray-400 md:text-paragraph2Light text-tagExtraLight'>
                     {block.description}
                   </Typography>
                 </div>

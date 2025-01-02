@@ -386,7 +386,7 @@ const companyMenu: ChildItemType = [
 
 export const navMenu = [
   {
-    path: '',
+    path: '/service',
     label: 'Services',
     children: services,
     left: '2xl:left-[-25.5rem] xl:left-[-20.3rem]',
@@ -398,7 +398,7 @@ export const navMenu = [
   //   left: '2xl:left-[-32.1rem] xl:left-[-26.9rem]',
   // },
   {
-    path: '',
+    path: '/technology',
     label: 'Technology',
     category: true,
     children: technology,

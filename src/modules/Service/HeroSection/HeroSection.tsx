@@ -32,8 +32,8 @@ const HeroSection = () => (
               your unique challenges effectively.
             </>
           }
-          headingClassName='text-primary 2xl:!text-[55px] lg:!text-[53px] leading-normal'
-          descriptionClassName='text-primary mt-1.5 lg:!text-subtitle2Light md:!text-subtitle2Light'
+          headingClassName='text-gray-800 2xl:!text-[55px] lg:!text-[53px] leading-normal'
+          descriptionClassName='text-gray-800 mt-1.5 lg:!text-subtitle2Light md:!text-subtitle2Light'
         />
 
         <Button className='w-[276px] md:mt-10 mt-8 py-0' variant='blackOutline'>

@@ -33,7 +33,7 @@ const expertiseData = [
 
 const DevelopmentProcess = () => (
   <>
-    <div className='bg-bg lg:py-20 md:py-[60px] py-10'>
+    <div className='bg-gray-50 lg:py-20 md:py-[60px] py-10'>
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
         <SectionHeader
           title={<>Our Web Development Process</>}
@@ -45,8 +45,8 @@ const DevelopmentProcess = () => (
               lifecycle, allowing
             </>
           }
-          headingClassName='text-primary lg:!text-h2 md:!text-[36px] text-center'
-          descriptionClassName='text-secondary md:!text-subtitle2Light text-center lg:px-20'
+          headingClassName='text-gray-800 lg:!text-h2 md:!text-[36px] text-center'
+          descriptionClassName='text-gray-400 md:!text-subtitle2Light text-center lg:px-20'
         />
 
         <div className='mt-[50px] grid lg:grid-cols-4 md:gap-10 gap-[30px]'>
@@ -56,7 +56,7 @@ const DevelopmentProcess = () => (
               className='bg-white 2xl:p-[30px] md:p-[25px] p-[15px] relative group flex lg:flex-col lg:gap-0 gap-5'
             >
               <div className='absolute lg:-right-[30px] lg:left-auto md:left-[30px] left-[15px] lg:bottom-auto md:-bottom-[30px] -bottom-[15px] group-last:hidden'>
-                <div className='md:w-[60px] w-[30px] md:h-[60px] h-[30px] bg-bg rounded-full flex items-center justify-center relative lg:rotate-0 rotate-90'>
+                <div className='md:w-[60px] w-[30px] md:h-[60px] h-[30px] bg-gray-50 rounded-full flex items-center justify-center relative lg:rotate-0 rotate-90'>
                   <div className='md:w-[35px] w-[18px] md:h-[35px] h-[18px] bg-white rounded-full'>
                     <Image
                       src='/assets/Service/dotLine.svg'
@@ -72,10 +72,10 @@ const DevelopmentProcess = () => (
                 {item.id}
               </div>
               <div>
-                <Typography className='text-primary md:text-subtitle2 text-tag lg:mt-10'>
+                <Typography className='text-gray-800 md:text-subtitle2 text-tag lg:mt-10'>
                   {item.title}
                 </Typography>
-                <Typography className='md:text-paragraph2Light text-tagExtraLight font-light md:pt-2 text-secondary pb-2.5'>
+                <Typography className='md:text-paragraph2Light text-tagExtraLight font-light md:pt-2 text-gray-400 pb-2.5'>
                   {item.description}
                 </Typography>
                 <Image

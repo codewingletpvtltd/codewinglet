@@ -44,7 +44,7 @@ const process = [
 
 const ContactUs = () => (
   <section
-    className='relative xl:py-20 md:py-[60px] py-10 bg-bg scroll-mt-40'
+    className='relative xl:py-20 md:py-[60px] py-10 bg-gray-50 scroll-mt-40'
     id='workProcess'
   >
     <div className='container w-full lg:px-[15px] sm:px-[30px] px-5 mx-auto'>
@@ -60,19 +60,19 @@ const ContactUs = () => (
         {process.map((card, index) => (
           <>
             <div
-              className='soft-card lg:py-[35px] lg:px-7 sm:p-5 p-5 bg-white hover:bg-primary hover:text-white transition-all duration-300 group'
+              className='soft-card lg:py-[35px] lg:px-7 sm:p-5 p-5 bg-white hover:bg-gray-800 hover:text-white transition-all duration-300 group'
               key={index}
             >
               <Typography
                 variant='h1'
-                className='soft-head leading-10 relative after:content after:absolute lg:after:bottom-1.5 md:after:bottom-3 after:bottom-2.5 lg:after:left-[70px] md:after:left-[55px] sm:after:left-[70px] after:left-10 after:w-[30px] after:h-[2px] after:bg-primary hover:after:bg-white after:duration-[0.9s] after:transition-all after:ease-in'
+                className='soft-head leading-10 relative after:content after:absolute lg:after:bottom-1.5 md:after:bottom-3 after:bottom-2.5 lg:after:left-[70px] md:after:left-[55px] sm:after:left-[70px] after:left-10 after:w-[30px] after:h-[2px] after:bg-gray-800 hover:after:bg-white after:duration-[0.9s] after:transition-all after:ease-in'
               >
                 {card.number}
               </Typography>
-              <Typography className='sm:text-paragraph1 text-paragraph2 md:mb-3 md:mt-0 sm:mb-3 sm:mt-3 mb-1 mt-1 text-primary group-hover:text-white'>
+              <Typography className='sm:text-paragraph1 text-paragraph2 md:mb-3 md:mt-0 sm:mb-3 sm:mt-3 mb-1 mt-1 text-gray-800 group-hover:text-white'>
                 {card.title}
               </Typography>
-              <Typography className='m-0 md:text-paragraph2Light text-tagLight text-primary group-hover:text-white'>
+              <Typography className='m-0 md:text-paragraph2Light text-tagLight text-gray-800 group-hover:text-white'>
                 {card.description}
               </Typography>
             </div>

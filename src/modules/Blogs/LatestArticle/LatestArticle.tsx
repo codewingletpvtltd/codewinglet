@@ -22,7 +22,7 @@ const LatestArticle = () => {
     <div className='bg-white pt-10 lg:mt-[166px] md:mt-40 mt-[148px]'>
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto flex 2xl:gap-[55px] gap-[30px]'>
         <div className='w-[342px] lg:block hidden'>
-          <Typography className='text-paragraph2 mb-5 border-b border-headerBoxBorder pb-[15px]'>
+          <Typography className='text-paragraph2 mb-5 border-b border-gray-100 pb-[15px]'>
             Blog Categories
           </Typography>
 
@@ -37,7 +37,7 @@ const LatestArticle = () => {
             <input
               type='text'
               placeholder='Search your blog here'
-              className='w-full placeholder:text-secondary border border-headerBoxBorder py-[13px] pl-[58px] text-paragraph2Light focus:outline-0'
+              className='w-full placeholder:text-gray-400 border border-gray-100 py-[13px] pl-[58px] text-paragraph2Light focus:outline-0'
             />
           </div>
         </div>
@@ -54,7 +54,7 @@ const LatestArticle = () => {
             />
 
             <div className='2xl:py-[15px]'>
-              <Typography className='text-secondary text-tag'>
+              <Typography className='text-gray-400 text-tag'>
                 January 18, 2024 • 12 min read
               </Typography>
               <div className='flex justify-between items-start'>
@@ -69,23 +69,23 @@ const LatestArticle = () => {
                   className='mt-4'
                 />
               </div>
-              <Typography className='text-paragraph2Light text-secondary leading-[18px] md:leading-[22px] mt-4'>
+              <Typography className='text-paragraph2Light text-gray-400 leading-[18px] md:leading-[22px] mt-4'>
                 Extracting Insights from the Coaching Genius: Unveiling Bill
                 Walsh's Timeless Leadership Principles <br /> <br /> Discover
                 the Winning Strategies that Shaped a Dynasty and Transformed
                 Leadership Philosophy Forever.
               </Typography>
               <ul className='flex gap-2 lg:pt-[50px] pt-4'>
-                <li className='text-secondary text-tagLight bg-bg border border-headerBoxBorder rounded-full py-0.5 px-2.5 w-fit'>
+                <li className='text-gray-400 text-tagLight bg-gray-50 border border-gray-100 rounded-full py-0.5 px-2.5 w-fit'>
                   Management
                 </li>
-                <li className='text-secondary text-tagLight bg-bg border border-headerBoxBorder rounded-full py-0.5 px-2.5 w-fit'>
+                <li className='text-gray-400 text-tagLight bg-gray-50 border border-gray-100 rounded-full py-0.5 px-2.5 w-fit'>
                   Project
                 </li>
               </ul>
             </div>
           </div>
-          <div className='border-b border-headerBoxBorder lg:pb-[45px] pb-10 mb-5'>
+          <div className='border-b border-gray-100 lg:pb-[45px] pb-10 mb-5'>
             <Typography className='text-h6 mb-[37px] mt-[60px]'>
               Resources and insights
             </Typography>

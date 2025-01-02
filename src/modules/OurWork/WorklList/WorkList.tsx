@@ -25,7 +25,7 @@ const WorkList = () => {
             {ourWorkData.map((item, index) => (
               <div
                 key={index}
-                className='text-primary 2xl:w-[436px] lg:w-[400px] flex md:flex-col md:gap-0 gap-4 relative'
+                className='text-gray-800 2xl:w-[436px] lg:w-[400px] flex md:flex-col md:gap-0 gap-4 relative'
               >
                 <span className='text-white bg-white/30 border border-white/60 rounded-full text-tagLight px-2.5 py-0.5 absolute right-5 top-5 md:block hidden'>
                   {item.tag}
@@ -38,7 +38,7 @@ const WorkList = () => {
                   className='lg:w-[436px] md:w-[329px] w-[134px] lg:h-[269px] md:h-[216px] h-[145px]'
                 />
                 <div className='md:pt-0 pt-5'>
-                  <span className='text-secondary md:text-paragraph2 text-tagExtraLight md:mt-4 block'>
+                  <span className='text-gray-400 md:text-paragraph2 text-tagExtraLight md:mt-4 block'>
                     {item.label}
                   </span>
                   <Typography className='md:text-[19px] text-tag mt-1.5 line-clamp-2'>
@@ -62,7 +62,7 @@ const WorkList = () => {
               </div>
             ))}
           </div>
-          <div className='lg:mt-20 mt-[30px] border-t border-headerBoxBorder'>
+          <div className='lg:mt-20 mt-[30px] border-t border-gray-100'>
             <Pagination currentPage={currentPage} totalPages={totalPages} />
           </div>
         </div>

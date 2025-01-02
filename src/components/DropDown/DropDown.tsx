@@ -39,7 +39,7 @@ const Dropdown = ({
     <div className={`relative ${containerClassName}`}>
       <button
         type='button'
-        className={`flex justify-between items-center w-[270px] h-12 px-4 py-2 font-medium bg-white border border-headerBoxBorder focus:outline-none focus:ring-0 focus:ring-offset-2 focus:ring-indigo-500 ${buttonClassName}`}
+        className={`flex justify-between items-center w-[270px] h-12 px-4 py-2 font-medium bg-white border border-gray-100 focus:outline-none focus:ring-0 focus:ring-offset-2 focus:ring-indigo-500 ${buttonClassName}`}
         onClick={toggleDropdown}
       >
         {selected}
@@ -66,7 +66,7 @@ const Dropdown = ({
               <Link
                 key={index}
                 href='#'
-                className={`block px-4 py-2 text-sm text-secondary hover:bg-bg ${optionClassName}`}
+                className={`block px-4 py-2 text-sm text-gray-400 hover:bg-gray-50 ${optionClassName}`}
                 onClick={() => handleOptionClick(option.label)}
               >
                 {option.label}

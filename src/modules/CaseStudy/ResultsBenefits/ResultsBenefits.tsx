@@ -19,8 +19,8 @@ const ResultsBenefits = () => (
               over 100 million fans weekly across diverse media platforms.
             </>
           }
-          headingClassName='text-primary md:!text-h2 text-center'
-          descriptionClassName='text-primary md:!text-paragraph1ExtraLight text-center'
+          headingClassName='text-gray-800 md:!text-h2 text-center'
+          descriptionClassName='text-gray-800 md:!text-paragraph1ExtraLight text-center'
         />
 
         <ResultsContent />

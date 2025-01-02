@@ -54,7 +54,7 @@ const Advantages = () => (
             </>
           }
           headingClassName='text-white lg:!text-h2 text-center'
-          descriptionClassName='text-secondary lg:!text-subtitle2Light md:!text-paragraph1ExtraLight text-center lg:px-20'
+          descriptionClassName='text-gray-400 lg:!text-subtitle2Light md:!text-paragraph1ExtraLight text-center lg:px-20'
         />
 
         <div className='md:mt-[50px] mt-5'>
@@ -62,7 +62,7 @@ const Advantages = () => (
             {advantageList.map((advantage, index) => (
               <div
                 key={index}
-                className='flex lg:gap-5 gap-[15px] bg-primary md:p-[30px] p-5'
+                className='flex lg:gap-5 gap-[15px] bg-gray-800 md:p-[30px] p-5'
               >
                 <div className='text-white'>
                   <InteractiveIcon />
@@ -74,7 +74,7 @@ const Advantages = () => (
                   >
                     {advantage.title}
                   </Typography>
-                  <Typography className='text-secondary md:text-paragraph2Light text-tagExtraLight pt-1.5'>
+                  <Typography className='text-gray-400 md:text-paragraph2Light text-tagExtraLight pt-1.5'>
                     {advantage.description}
                   </Typography>
                 </div>

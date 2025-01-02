@@ -44,7 +44,7 @@ export const CustomizeTextField: StoryObj<typeof Textarea> = {
   args: {
     label: 'Customize Textarea',
     placeholder: 'Customize Textarea',
-    className: 'border-secondary',
+    className: 'border-gray-400',
     labelClassName: 'text-error',
   },
 };

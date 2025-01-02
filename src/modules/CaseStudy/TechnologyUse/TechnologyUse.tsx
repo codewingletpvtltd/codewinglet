@@ -4,11 +4,11 @@ import TechnologyTab from './TechnologyTab';
 
 const TechnologyUse = () => (
   <section
-    className='bg-bg xl:py-20 lg:py-14 md:py-[60px] py-10 scroll-mt-32'
+    className='bg-gray-50 xl:py-20 lg:py-14 md:py-[60px] py-10 scroll-mt-32'
     id='technologyies'
   >
     <section className='container w-full lg:px-[15px] sm:px-[30px] px-5 mx-auto lg:flex block'>
-      <div className='lg:w-[406px] lg:border-r border-headerBoxBorder 2xl:pr-[50px] lg:pr-10 flex-shrink-0'>
+      <div className='lg:w-[406px] lg:border-r border-gray-100 2xl:pr-[50px] lg:pr-10 flex-shrink-0'>
         <SectionHeader
           title={<>Technology we used</>}
           description={
@@ -17,8 +17,8 @@ const TechnologyUse = () => (
               over 100 million fans weekly.
             </>
           }
-          headingClassName='text-primary'
-          descriptionClassName='text-primary md:!text-paragraph1ExtraLight'
+          headingClassName='text-gray-800'
+          descriptionClassName='text-gray-800 md:!text-paragraph1ExtraLight'
         />
       </div>
       <TechnologyTab />

@@ -85,8 +85,8 @@ const ResultsContent = () => {
                 : `-${10 + index * 30}px`,
             }}
           >
-            <div className='border border-headerBoxBorder bg-white mt-5 flex md:gap-5 gap-3 lg:p-10 md:p-[30px] p-3 lg:mx-36'>
-              <div className='bg-bg lg:w-24 md:w-[50px] w-[30px] lg:h-24 md:h-[50px] h-[30px] flex justify-center items-center flex-shrink-0'>
+            <div className='border border-gray-100 bg-white mt-5 flex md:gap-5 gap-3 lg:p-10 md:p-[30px] p-3 lg:mx-36'>
+              <div className='bg-gray-50 lg:w-24 md:w-[50px] w-[30px] lg:h-24 md:h-[50px] h-[30px] flex justify-center items-center flex-shrink-0'>
                 <Image
                   src='/assets/CaseStudy/growth.svg'
                   alt='growth'
@@ -96,18 +96,18 @@ const ResultsContent = () => {
                 />
               </div>
               <div>
-                <Typography className='lg:pt-2.5 lg:text-h6 md:text-paragraph1 text-tag text-primary'>
+                <Typography className='lg:pt-2.5 lg:text-h6 md:text-paragraph1 text-tag text-gray-800'>
                   {section.title}
                 </Typography>
-                <span className='block w-10 h-[3px] bg-primary my-3'></span>
-                <Typography className='text-secondary lg:text-paragraph1ExtraLight md:text-paragraph2Light text-tagExtraLight font-light'>
+                <span className='block w-10 h-[3px] bg-gray-800 my-3'></span>
+                <Typography className='text-gray-400 lg:text-paragraph1ExtraLight md:text-paragraph2Light text-tagExtraLight font-light'>
                   {section.description}
                 </Typography>
                 <div className='flex lg:flex-row flex-col lg:gap-24 gap-3 lg:pr-20 pt-5'>
                   {section.highlights.map((highlight, idx) => (
                     <div key={idx} className='text-success flex gap-2.5'>
                       <CheckIcon className='lg:w-7 lg:h-7 w-6 h-6 flex-shrink-0' />
-                      <Typography className='text-primary lg:text-paragraph1ExtraLight text-tagLight'>
+                      <Typography className='text-gray-800 lg:text-paragraph1ExtraLight text-tagLight'>
                         {highlight}
                       </Typography>
                     </div>
@@ -115,8 +115,11 @@ const ResultsContent = () => {
                 </div>
                 <div className='flex md:flex-row flex-col md:gap-5 gap-2.5 lg:mt-[50px] md:mt-10 mt-[15px]'>
                   {[1, 2].map((_, i) => (
-                    <div key={i} className='bg-bg lg:p-5 p-3 flex gap-[15px]'>
-                      <div className='bg-primary lg:w-16 w-[46px] lg:h-16 h-[46px] flex items-center justify-center'>
+                    <div
+                      key={i}
+                      className='bg-gray-50 lg:p-5 p-3 flex gap-[15px]'
+                    >
+                      <div className='bg-gray-800 lg:w-16 w-[46px] lg:h-16 h-[46px] flex items-center justify-center'>
                         <Image
                           src='/assets/CaseStudy/user.svg'
                           alt='user'
@@ -124,9 +127,9 @@ const ResultsContent = () => {
                           height={28}
                         />
                       </div>
-                      <Typography className='text-secondary lg:text-paragraph2Light md:text-tagLight text-tagExtraLight'>
+                      <Typography className='text-gray-400 lg:text-paragraph2Light md:text-tagLight text-tagExtraLight'>
                         Conversion rate
-                        <span className='lg:text-h6 md:text-paragraph2 text-tag block text-primary lg:pt-1'>
+                        <span className='lg:text-h6 md:text-paragraph2 text-tag block text-gray-800 lg:pt-1'>
                           {section.conversionRate}
                         </span>
                       </Typography>

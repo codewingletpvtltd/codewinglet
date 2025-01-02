@@ -4,7 +4,7 @@ import Services from './Services';
 
 const OurService = () => (
   <section
-    className='xl:py-20 lg:py-14 md:py-[60px] py-10 bg-bg scroll-mt-40'
+    className='xl:py-20 lg:py-14 md:py-[60px] py-10 bg-gray-50 scroll-mt-40'
     id='service'
   >
     <section className='container w-full lg:px-[15px] sm:px-[30px] px-5 mx-auto'>

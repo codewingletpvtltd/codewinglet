@@ -5,7 +5,7 @@ import Faq from '@codewinglet/components/Faq';
 import { faqData } from '@codewinglet/components/Faq/constants';
 
 const ServiceFAQ = () => (
-  <div className='lg:py-20 md:py-[60px] py-10 relative bg-bg'>
+  <div className='lg:py-20 md:py-[60px] py-10 relative bg-gray-50'>
     <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
       <SectionHeader
         title={<>Related FAQs</>}
@@ -15,8 +15,8 @@ const ServiceFAQ = () => (
             empower your niche.
           </>
         }
-        headingClassName='text-primary md:!text-h2 leading-normal'
-        descriptionClassName='text-primary mt-1.5 lg:!text-subtitle2Light mb-[50px]'
+        headingClassName='text-gray-800 md:!text-h2 leading-normal'
+        descriptionClassName='text-gray-800 mt-1.5 lg:!text-subtitle2Light mb-[50px]'
       />
 
       <Faq faqData={faqData} />

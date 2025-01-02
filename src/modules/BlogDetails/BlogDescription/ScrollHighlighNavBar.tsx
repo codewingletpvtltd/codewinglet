@@ -1,6 +1,6 @@
 'use client';
-import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
 
 import { Arrow } from '@codewinglet/assets';
 import { Typography } from '@codewinglet/components';
@@ -48,7 +48,7 @@ const ScrollHighlightNavbar: React.FC<ScrollHighlightNavbarProps> = ({
     <div
       className={`w-full lg:p-0 p-5 bg-white lg:sticky lg:z-0 z-10 right-auto lg:top-[190px] md:top-[90px] top-[78px] lg:left-auto left-0 ${containerClassName}`}
     >
-      <Typography className='text-primary text-subtitle2 pb-4 mb-[29px] border-b-2 border-primary'>
+      <Typography className='text-gray-800 text-subtitle2 pb-4 mb-[29px] border-b-2 border-gray-800'>
         Table of Contents
       </Typography>
       <ul className='grid overflow-auto [-ms-overflow-style:_none;] [scrollbar-width:_none;] gap-5'>
@@ -58,8 +58,8 @@ const ScrollHighlightNavbar: React.FC<ScrollHighlightNavbarProps> = ({
               href={`#${policy.id}`}
               className={`bg-white p-0 ${
                 i === activeIndex
-                  ? 'text-primary lg:text-paragraph2 md:text-paragraph2 text-tag'
-                  : 'text-secondary lg:text-paragraph2Light md:text-paragraph2Light text-tagLight'
+                  ? 'text-gray-800 lg:text-paragraph2 md:text-paragraph2 text-tag'
+                  : 'text-gray-400 lg:text-paragraph2Light md:text-paragraph2Light text-tagLight'
               } cursor-pointer flex items-center justify-between`}
               onClick={() => setActiveIndex(i)}
             >
