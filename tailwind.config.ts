@@ -62,7 +62,7 @@ export default {
       custom: '0px 4px 10px 0px rgba(159, 159, 159, 0.1)',
     },
     keyframes: {
-      infiniteRotate: {
+      rotateInfinite: {
         '0%': {
           transform: 'rotate(0deg)',
         },
@@ -70,14 +70,14 @@ export default {
           transform: 'rotate(360deg)',
         },
       },
-      mockupSlider: {
+      sliderInfinite: {
         '0%': { transform: 'translateX(0)' },
         '100%': { transform: 'translateX(-50%)' },
       },
     },
     animation: {
-      infiniteRotate: 'infiniteRotate 6s linear infinite',
-      mockupSlider: 'mockupSlider 20s linear infinite',
+      rotateInfinite: 'rotateInfinite 6s linear infinite',
+      sliderInfinite: 'sliderInfinite 20s linear infinite',
     },
     textDecorationThickness: {
       '2': '2px', // custom thickness of 4px

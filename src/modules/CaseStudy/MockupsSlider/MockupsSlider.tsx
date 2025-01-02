@@ -4,7 +4,7 @@ import React from 'react';
 
 const MockupsSlider: React.FC = () => (
   <section className='overflow-hidden bg-white'>
-    <article className='w-max flex animate-mockupSlider'>
+    <article className='w-max flex animate-sliderInfinite'>
       <div>
         <ul className='flex 2xl:gap-[30px] lg:gap-[22px] md:gap-3 gap-[5px]'>
           <li className='w-auto'>

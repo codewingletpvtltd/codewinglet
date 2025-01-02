@@ -38,11 +38,11 @@ const contentBlocks = [
 
 const Problem = () => (
   <>
-    <div className='pt-20 bg-white'>
+    <div className='lg:py-20 md:py-[60px] py-10 bg-white'>
       <div
         className='bg-gray-50 lg:py-20 md:py-[60px] py-10 relative scroll-mt-32'
         id='problems'
-      >
+      >  11
         <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
           <SectionHeader
             title={<>Problem Statement</>}

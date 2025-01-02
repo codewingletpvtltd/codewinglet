@@ -93,7 +93,7 @@ const CloudBased = () => (
                 alt='codewinglet_text'
                 width={140}
                 height={140}
-                className='animate-infiniteRotate'
+                className='animate-rotateInfinite'
               />
               <div className='bg-white 2xl:w-14 w-11 2xl:h-14 h-11 flex justify-center items-center rounded-full absolute left-[18px] top-[18px]'>
                 <Image

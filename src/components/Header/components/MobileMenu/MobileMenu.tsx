@@ -17,7 +17,6 @@ const MobileMenu: FC<MobileMenuProps> = ({
   setSubMenuIndex,
 }) => {
   const { onNavigate } = useMobileMenu(onMenu);
-
   return (
     <>
       <div className='flex flex-col  gap-2.5 z-40 '>
@@ -25,7 +24,8 @@ const MobileMenu: FC<MobileMenuProps> = ({
           {navMenu.map((item, index) => (
             <div key={item.label} className='py-5'>
               {item.children ? (
-                <div
+                <Link
+                  href={item.path}
                   className='cursor-pointer flex justify-between md:text-subtitle1 text-paragraph1 !whitespace-nowrap'
                   onClick={() => setSubMenuIndex(index)}
                 >
@@ -39,7 +39,7 @@ const MobileMenu: FC<MobileMenuProps> = ({
                       height={16}
                     />
                   )}
-                </div>
+                </Link>
               ) : (
                 <Link
                   href={item.path || ''}
