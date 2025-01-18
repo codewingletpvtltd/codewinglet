@@ -2,6 +2,8 @@
 
 import { SectionHeader } from '@codewinglet/components';
 
+import PeopleHumJobs from './components/PeopleHumJobs';
+
 const CurrentOpenings = () => (
   // TODO : comment due to not used because of new design
   // const [currentPage, setCurrentPage] = useState(1);
@@ -123,7 +125,8 @@ const CurrentOpenings = () => (
           </div> */}
 
         <div className='lg:mt-[50px] md:mt-10 mt-5'>
-          <iframe
+          <PeopleHumJobs />
+          {/* <iframe
             src='https://codewinglet.oorwin.com/careers/index.html'
             width='100%'
             height='auto'
@@ -132,7 +135,7 @@ const CurrentOpenings = () => (
               margin: 0,
             }}
             className='h-[800px]'
-          ></iframe>
+          ></iframe> */}
         </div>
       </div>
     </div>
