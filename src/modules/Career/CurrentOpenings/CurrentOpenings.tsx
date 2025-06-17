@@ -123,19 +123,8 @@ const CurrentOpenings = () => (
               onPageChange={handlePageChange}
             />
           </div> */}
-
-        <div className='lg:mt-[50px] md:mt-10 mt-5'>
+        <div className='md:mt-[86px] mt-[78px]'>
           <PeopleHumJobs />
-          {/* <iframe
-            src='https://codewinglet.oorwin.com/careers/index.html'
-            width='100%'
-            height='auto'
-            style={{
-              border: 'none',
-              margin: 0,
-            }}
-            className='h-[800px]'
-          ></iframe> */}
         </div>
       </div>
     </div>
