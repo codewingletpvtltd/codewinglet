@@ -11,3 +11,4 @@ export { default as ProjectModule } from './Project';
 export { default as ServiceModule } from './Service';
 export { default as TechnologyModule } from './Technology';
 export { default as TermsConditionModule } from './TermsCondition';
+export { default as GetInTouchModule } from './GetInTouch';
