@@ -62,8 +62,8 @@ const Companies = () => {
               applications
             </>
           }
-          headingClassName='text-primary lg:!text-h2 md:!text-[35px] !text-subtitle2 text-center'
-          descriptionClassName='text-primary text-center lg:!text-subtitle2Light md:!text-paragraph1ExtraLight'
+          headingClassName='text-gray-800 lg:!text-h2 md:!text-[35px] !text-subtitle2 text-center'
+          descriptionClassName='text-gray-800 text-center lg:!text-subtitle2Light md:!text-paragraph1ExtraLight'
         />
         <div className='relative overflow-hidden'>
           <div className='md:mt-[50px] mt-5 relative marquee flex flex-shrink-0 2xl:gap-24 lg:gap-0 md:gap-24'>

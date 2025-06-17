@@ -15,8 +15,8 @@ const ClientTestimonials = () => (
         description={
           <>Here’s a glimpse into what Our Clients have to say about us.</>
         }
-        headingClassName='text-subtitle1Light text-white'
-        descriptionClassName='mt-[9px] text-white'
+        headingClassName='text-white lg:text-h2'
+        descriptionClassName='mt-1.5 text-white md:text-subtitle2Light'
       />
       <div
         className='md:mt-10 mt-7 xl:h-[481px] h-auto relative lg:[background-size:_auto] md:[background-size:_70%] sm:[background-size:_auto] client_img'
@@ -34,7 +34,7 @@ const ClientTestimonials = () => (
           height={215}
         />
         <Image
-          className='lg:w-[99px] md:w-[75px] absolute left-0 z-[-1] xl:top-[11rem] lg:top-[20rem] md:top-[6rem] md:block hidden'
+          className='lg:w-[99px] md:w-[75px] absolute left-0 z-[-1] xl:top-44 lg:top-80 md:top-24 md:block hidden'
           src={'/assets/icons/StartQuote.svg'}
           alt='StartQuote'
           width={100}
@@ -50,7 +50,7 @@ const ClientTestimonials = () => (
               <div key={index}>
                 <div
                   key={`testimonials-${data.id}-${index}`}
-                  className='z-10 bg-primary lg:p-10 md:p-[30px] sm:py-[22px] sm:px-[37px] p-6 lg:!w-[754px] md:!w-[455px] !w-[98%] sm:h-auto h-auto xl:mt-[170px] lg:mt-[350px] md:mt-[180px] sm:mt-[370px] mt-0 lg:mx-0 md:mx-0 !block mx-auto'
+                  className='z-10 bg-gray-800 lg:p-10 md:p-[30px] sm:py-[22px] sm:px-[37px] p-6 lg:!w-[754px] md:!w-[455px] !w-[98%] sm:h-auto h-auto xl:mt-[170px] lg:mt-[350px] md:mt-[180px] sm:mt-[370px] mt-0 lg:mx-0 md:mx-0 !block mx-auto'
                 >
                   <Typography className='lg:text-subtitle2Light md:text-[17px] text-tagLight text-white'>
                     {data.comment}
@@ -65,7 +65,7 @@ const ClientTestimonials = () => (
           </Slider>
         </div>
         <Image
-          className='lg:w-[99px] md:w-[75px] absolute 2xl:right-[24rem] xl:right-64 md:right-40 sm:right-0 lg:bottom-[-1rem] md:bottom-2.5 z-[-1] md:block hidden'
+          className='lg:w-[99px] md:w-[75px] absolute 2xl:right-[24rem] xl:right-64 md:right-40 sm:right-0 lg:-bottom-4 md:bottom-2.5 z-[-1] md:block hidden'
           src={'/assets/icons/ClosingQuote.svg'}
           alt='ClosingQuote'
           width={100}

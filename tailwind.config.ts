@@ -1,5 +1,4 @@
 import type { Config } from 'tailwindcss';
-
 // TODO : font should be set as per figma view, but need to find proper solution
 export default {
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
@@ -29,32 +28,56 @@ export default {
       tagExtraLight: ['12px', { fontWeight: 400 }],
     },
     colors: {
-      primary: '#141414',
-      secondary: '#606060',
+      gray: {
+        50: '#F5F5F5', // Light Gray
+        100: '#DADADA', // Soft Gray
+        200: '#979797', // Medium Gray
+        300: '#808080', // Regular Gray
+        400: '#606060', // Dark Gray
+        500: '#3b3b3b', // Charcoal Gray
+        600: '#1d1d1d', // Deep Gray
+        700: '#191919', // Almost Black
+        800: '#141414', // Blackish Gray
+        900: '#000000', // Black
+      },
+      black: '#000000',
+      white: '#FFFFFF',
+      transparent: 'transparent',
       success: '#26AD5C',
       error: '#FF4343',
       info: '#376DCF',
       warning: '#FFBF1A',
-      black: '#000000',
-      white: '#FFFFFF',
-      bg: '#F5F5F5',
-      headerBoxBorder: '#DADADA',
-      placeholderText: '#979797',
-      transparent: 'transparent',
-      darkBlack: '#191919',
-      darkBorder: '#1d1d1d',
-      grayBorder: '#3b3b3b',
-      lightGray: '#808080',
     },
     fontFamily: {
       primary: ['var(--font-poppins)', 'sans-serif'],
       playFair: ['Playfair Display', 'serif'],
     },
     backgroundImage: {
-      'dot-pattern': 'url("/assets/career/dotGrid.png")',
+      dotPattern: 'url("/assets/career/dotGrid.png")',
+      projectBg: 'url("/assets/CaseStudy/AboutProjectBg.png")',
+      keyFeatureBg: 'url("/assets/Project/KeyFeatureBg.png")',
+      ourWorkBg: 'url("/assets/OurWork/ourWorkBg.png")',
     },
     boxShadow: {
       custom: '0px 4px 10px 0px rgba(159, 159, 159, 0.1)',
+    },
+    keyframes: {
+      rotateInfinite: {
+        '0%': {
+          transform: 'rotate(0deg)',
+        },
+        '100%': {
+          transform: 'rotate(360deg)',
+        },
+      },
+      sliderInfinite: {
+        '0%': { transform: 'translateX(0)' },
+        '100%': { transform: 'translateX(-50%)' },
+      },
+    },
+    animation: {
+      rotateInfinite: 'rotateInfinite 6s linear infinite',
+      sliderInfinite: 'sliderInfinite 20s linear infinite',
     },
     textDecorationThickness: {
       '2': '2px', // custom thickness of 4px

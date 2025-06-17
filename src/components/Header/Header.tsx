@@ -59,8 +59,8 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
                   fill='none'
                   stroke='currentColor'
                   stroke-width='1.5'
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
                 >
                   <path stroke='none' d='M0 0h24v24H0z' fill='none' />
                   <path d='M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2' />
@@ -77,25 +77,27 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
         className={getClassNames(
           'fixed flex items-center top-0 z-50 w-full sm:py-5 md:py-0 lg:py-0 lg:px-20',
           pathName === '/event-form' || pathName === '/thank-you'
-            ? 'bg-primary !top-0'
+            ? 'bg-gray-800 !top-0'
             : isScroll
-            ? 'bg-primary'
+            ? 'bg-gray-800'
             : pathName === '/contact-us'
-            ? 'bg-primary'
+            ? 'bg-gray-800'
             : pathName === '/about-us'
-            ? 'bg-primary'
+            ? 'bg-gray-800'
             : pathName === '/blogs'
-            ? 'bg-primary'
+            ? 'bg-gray-800'
             : pathName === '/privacy-policy'
-            ? 'bg-primary'
+            ? 'bg-gray-800'
             : pathName === '/terms-and-conditions'
-            ? 'bg-primary'
+            ? 'bg-gray-800'
             : pathName === '/career'
-            ? 'bg-primary'
+            ? 'bg-gray-800'
             : pathName === '/technology'
-            ? 'bg-primary'
+            ? 'bg-gray-800'
+            : pathName === '/service'
+            ? 'bg-gray-800'
             : pathName === '/event-form'
-            ? 'bg-primary !top-0'
+            ? 'bg-gray-800 !top-0'
             : 'bg-transparent'
         )}
       >

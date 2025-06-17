@@ -18,7 +18,7 @@ const ModelPoints: React.FC<{ points: ModelPoint[] }> = ({ points }) => (
             <div className='text-success absolute left-0 md:-top-0.5 top-[1px]'>
               <CheckIcon className='w-5 h-5' />
             </div>
-            <Typography className='lg:text-paragraph2 md:text-paragraph1Light text-tagLight text-primary'>
+            <Typography className='lg:text-paragraph2 md:text-paragraph1Light text-tagLight text-gray-800'>
               {point.heading}
             </Typography>
           </div>
@@ -36,7 +36,7 @@ const ModelCard: React.FC<ModelCardProps> = ({
 }) => (
   <div className='bg-white p-[15px] hover:-translate-y-4 transition-all ease-linear duration-300 cursor-pointer group 2xl:w-[447px] lg:w-[400px] h-auto'>
     <div className='bg-black flex gap-[26px] items-center md:p-[25px] p-3 transition-all duration-300'>
-      <div className='bg-white md:w-[68px] md:h-[68px] w-10 h-10 flex items-center justify-center rounded-full text-primary transition-all duration-300'>
+      <div className='bg-white md:w-[68px] md:h-[68px] w-10 h-10 flex items-center justify-center rounded-full text-gray-800 transition-all duration-300'>
         <Image
           src={icon}
           alt={icon}
@@ -50,7 +50,7 @@ const ModelCard: React.FC<ModelCardProps> = ({
       </Typography>
     </div>
     <div className='md:px-2.5 md:pb-[15px]'>
-      <Typography className='lg:text-paragraph2Light md:text-paragraph2Light text-tagExtraLight text-secondary py-[15px] border-headerBoxBorder border-dashed border-b'>
+      <Typography className='lg:text-paragraph2Light md:text-paragraph2Light text-tagExtraLight text-gray-400 py-[15px] border-gray-100 border-dashed border-b'>
         {description}
       </Typography>
       <ModelPoints points={points} />
@@ -75,11 +75,11 @@ const FlexibleModels: React.FC = () => (
                 timeline.
               </>
             }
-            headingClassName='text-white'
-            descriptionClassName='text-white lg:!text-subtitle2Light md:!text-paragraph1ExtraLight !text-tagLight md:mb-10 mb-5'
+            headingClassName='text-white lg:text-h2'
+            descriptionClassName='text-white lg:text-subtitle2Light md:mb-10 mb-5'
           />
         </div>
-        <div className='bg-primary text-white p-5 lg:w-[400px] lg:block md:flex block gap-[30px]'>
+        <div className='bg-gray-800 text-white p-5 lg:w-[400px] lg:block md:flex block gap-[30px]'>
           <Image
             src='/assets/Technologies/pages/flexible_model.png'
             alt='flexible_model'
@@ -113,7 +113,7 @@ const FlexibleModels: React.FC = () => (
             </Typography>
 
             <Button
-              className='md:w-[331px] w-full lg:mt-[60px] mt-8 py-0 text-primary hover:text-white hover:border-white border'
+              className='md:w-[331px] w-full lg:mt-[60px] mt-8 py-0 text-gray-800 hover:text-white hover:border-white border'
               variant='secondary'
             >
               <Link
@@ -135,8 +135,8 @@ const FlexibleModels: React.FC = () => (
                 timeline.
               </>
             }
-            headingClassName='text-white lg:block hidden'
-            descriptionClassName='text-white lg:block hidden'
+            headingClassName='text-white lg:block hidden lg:text-h2'
+            descriptionClassName='text-white lg:block hidden md:text-subtitle2Light'
           />
 
           <div className='2xl:gap-[50px] md:gap-[30px] gap-5 lg:mt-[50px] mt-[30px] relative flex lg:flex-row flex-col'>

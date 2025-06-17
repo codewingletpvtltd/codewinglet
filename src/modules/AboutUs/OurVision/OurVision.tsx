@@ -16,14 +16,16 @@ const OurVision = () => (
               through innovation!
             </>
           }
+          headingClassName='lg:text-h2'
+          descriptionClassName='md:text-subtitle2Light'
         />
         <div>
-          <div className='bg-headerBoxBorder w-[1px] 2xl:h-[690px] h-[590px] absolute top-56 left-1/2 lg:block hidden'></div>
+          <div className='bg-gray-100 w-[1px] 2xl:h-[690px] h-[590px] absolute top-56 left-1/2 lg:block hidden'></div>
         </div>
         <div className='flex lg:flex-row flex-col lg:gap-[134px] gap-3 items-center lg:my-[60px] my-[34px]'>
           <div className='2xl:w-[696px] xl:w-[568px] w-full flex lg:justify-end lg:order-1 order-2'>
             <div className='lg:w-auto lg:text-right'>
-              <Typography className='text-primary md:text-subtitle2 text-paragraph2 relative lg:mb-0 mb-2'>
+              <Typography className='text-gray-800 lg:text-subtitle2 md:text-paragraph1Light text-paragraph2 relative lg:mb-0 mb-2'>
                 <span className='bg-black w-[3px] h-5 absolute 2xl:-right-[79px] -right-[66px] top-1 lg:block hidden'></span>
                 <Image
                   src='/assets/AboutUs/Arrow.svg'
@@ -34,7 +36,7 @@ const OurVision = () => (
                 />
                 OUR VISION
               </Typography>
-              <Typography className='text-secondary md:text-subtitle2Light text-tagLight'>
+              <Typography className='text-gray-400 lg:text-subtitle2Light md:text-paragraph1ExtraLight text-tagLight pt-[15px]'>
                 Our vision is to pioneer innovative technological solutions that
                 empower businesses and individuals to thrive in the digital era.
                 We aspire to be a global leader in IT, driving positive change
@@ -60,7 +62,7 @@ const OurVision = () => (
             className='2xl:w-[686px] lg:w-[568px] w-full lg:mb-0 mb-3'
           />
           <div className='2xl:w-auto lg:w-[568px] w-full'>
-            <Typography className='text-primary md:text-subtitle2 text-paragraph2 relative lg:mb-0 mb-2'>
+            <Typography className='text-gray-800 lg:text-subtitle2 md:text-paragraph1Light text-paragraph2 relative lg:mb-0 mb-2'>
               <span className='bg-black w-[3px] h-5 absolute 2xl:-left-[78px] -left-[68px] top-1 lg:block hidden'></span>
               <Image
                 src='/assets/AboutUs/Arrow.svg'
@@ -71,7 +73,7 @@ const OurVision = () => (
               />
               OUR MISSION
             </Typography>
-            <Typography className='text-secondary md:text-subtitle2Light text-tagLight'>
+            <Typography className='text-gray-400 lg:text-subtitle2Light md:text-paragraph1ExtraLight text-tagLight pt-[15px]'>
               At Codewinglet, we deliver tailored IT services and solutions,
               leveraging the latest technologies to meet our clients' unique
               needs. With a focus on innovation and collaboration, we

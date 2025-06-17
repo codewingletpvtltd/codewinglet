@@ -22,7 +22,7 @@ const CopyButton: React.FC<CopyButtonProps> = ({
   successMessage,
 }) => (
   <div
-    className='flex items-center justify-center lg:w-10 w-[30px] lg:h-10 h-[30px] rounded-full bg-bg cursor-pointer'
+    className='flex items-center justify-center lg:w-10 w-[30px] lg:h-10 h-[30px] rounded-full bg-gray-50 cursor-pointer'
     onClick={() => handleCopyClick(copyText, successMessage)}
   >
     <Image

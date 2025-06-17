@@ -1,4 +1,3 @@
-import React from 'react';
 import Image from 'next/image';
 
 import Typography from '../Typography';
@@ -15,10 +14,10 @@ const NoBlogFound = ({
         height={260}
         className='w-[260px] h-[260px]'
       />
-      <Typography className='text-h6 leading-8 mt-3 text-primary'>
+      <Typography className='text-h6 leading-8 mt-3 text-gray-800'>
         {text}
       </Typography>
-      <Typography className='font-normal text-[14px] leading-6 mt-3 text-lightGray text-center'>
+      <Typography className='font-normal text-tagLight leading-6 mt-3 text-gray-300 text-center'>
         {subText}
       </Typography>
     </div>

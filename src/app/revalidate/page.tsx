@@ -26,7 +26,7 @@ const LoginForm = async (formData: FormData) => {
 const LoginFormComponent = () => (
   <form
     action={LoginForm}
-    className='max-w-md mx-auto p-4 mt-36 bg-placeholderText'
+    className='max-w-md mx-auto p-4 mt-36 bg-gray-200'
   >
     <div className='mb-4'>
       <label className='block text-gray-700'>Username</label>

@@ -78,7 +78,7 @@ const TechnologyDetailSection: React.FC = () => {
             <AccordionItem
               key={tech.label}
               value={tech.label}
-              className='bg-white border border-headerBoxBorder'
+              className='bg-white border border-gray-100'
             >
               <AccordionTrigger
                 onClick={() => handleChangeIndex(i)}
@@ -88,11 +88,11 @@ const TechnologyDetailSection: React.FC = () => {
                 }
               >
                 <div
-                  className={`md:text-subtitle2 text-tag text-left text-primary ${
+                  className={`md:text-subtitle2 text-tag text-left text-gray-800 ${
                     i === selectedIndex ? '' : ''
                   } md:p-5 p-[15px] cursor-pointer md:gap-5 gap-2.5 flex items-center justify-between leading-normal`}
                 >
-                  <div className='bg-bg md:p-[15px] text-primary transition duration-300 md:w-[60px] w-11 md:h-[60px] h-11 flex items-center justify-center flex-shrink-0'>
+                  <div className='bg-gray-50 md:p-[15px] text-gray-800 transition duration-300 md:w-[60px] w-11 md:h-[60px] h-11 flex items-center justify-center flex-shrink-0'>
                     {tech.icon}
                   </div>
                   {tech.label}

@@ -24,8 +24,8 @@ const TextField: React.FC<TextFieldProps> = ({
         <label
           htmlFor={rest.id || inputId}
           className={getClassNames(
-            'text-primary sm:text-paragraph1 text-tag mb-2.5',
-            error ? 'text-primary' : '',
+            'text-gray-800 sm:text-paragraph1 text-tag mb-2.5',
+            error ? 'text-gray-800' : '',
             labelClassName
           )}
         >
@@ -40,9 +40,9 @@ const TextField: React.FC<TextFieldProps> = ({
           autoComplete='off'
           disabled={disabled}
           className={getClassNames(
-            'rounded-none border-solid h-10 w-[200px] sm:text-paragraph1ExtraLight text-tag bg-transparent placeholder:text-placeholderText focus:outline-none focus:border-primary ',
-            error ? 'border-error border-b' : 'border-b border-secondary ',
-            disabled ? 'pointer-events-none bg-secondary' : '',
+            'rounded-none border-solid h-10 w-[200px] sm:text-paragraph1ExtraLight text-tag bg-transparent placeholder:text-gray-200 focus:outline-none focus:border-gray-800 ',
+            error ? 'border-error border-b' : 'border-b border-gray-400 ',
+            disabled ? 'pointer-events-none bg-gray-400' : '',
             fullWidth ? 'w-full' : ''
           )}
           {...rest}

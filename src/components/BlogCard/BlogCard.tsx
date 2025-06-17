@@ -34,9 +34,9 @@ const BlogCard: FC<BlogCardProps> = ({
       )}
       <div className='py-[15px]'>
         <div className='flex justify-between'>
-          <Typography className='text-secondary text-tag'>
+          <Typography className='text-gray-400 text-tag'>
             {formatDate(date)}
-            <span className='text-headerBoxBorder px-3'>•</span>
+            <span className='text-gray-100 px-3'>•</span>
             {readTime}
           </Typography>
           {imageSrc && (
@@ -45,7 +45,7 @@ const BlogCard: FC<BlogCardProps> = ({
               alt={imageAlt}
               width={11}
               height={11}
-              className='transition duration-500 group-hover:rotate-[45deg]'
+              className='transition duration-500 group-hover:rotate-45'
             />
           )}
         </div>
@@ -55,7 +55,7 @@ const BlogCard: FC<BlogCardProps> = ({
           </Typography>
         </div>
 
-        {/* <Typography className='text-paragraph2Light text-secondary leading-[18px] md:leading-[22px] mt-4 overflow-hidden text-ellipsis line-clamp-3'>
+        {/* <Typography className='text-paragraph2Light text-gray-400 leading-[18px] md:leading-[22px] mt-4 overflow-hidden text-ellipsis line-clamp-3'>
           {desc}
         </Typography> */}
         {/* {tags && (
@@ -65,7 +65,7 @@ const BlogCard: FC<BlogCardProps> = ({
               .map(([key], index) => (
                 <li
                   key={index}
-                  className='text-secondary text-tagLight bg-bg border border-headerBoxBorder rounded-full py-0.5 px-2.5 w-fit'
+                  className='text-gray-400 text-tagLight bg-gray-50 border border-gray-100 rounded-full py-0.5 px-2.5 w-fit'
                 >
                   {formatTag(key)}
                 </li>

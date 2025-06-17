@@ -29,7 +29,7 @@ const ListItem = ({ data }: { data: ListItemProps[] }) => (
         key={index}
         className='relative after:content after:absolute after:w-[1px] after:top-3 md:after:-right-8 after:-right-4 after:h-[52px] after:bg-white/20 last:after:bg-transparent'
       >
-        <Typography className='xl:text-h4 md:text-h4 text-paragraph1 text-white flex item-center'>
+        <div className='xl:text-h4 md:text-h4 text-paragraph1 text-white flex item-center'>
           {typeof number === 'number' ? (
             <>
               <AboutCount number={number} />+
@@ -37,7 +37,7 @@ const ListItem = ({ data }: { data: ListItemProps[] }) => (
           ) : (
             <Typography>{number}</Typography>
           )}
-        </Typography>
+        </div>
         <Typography className='text-white lg:text-paragraph1 md:text-paragraph1ExtraLight text-tagExtraLight font-light'>
           {label}
         </Typography>

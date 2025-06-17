@@ -12,9 +12,9 @@ const BenefitCard: React.FC<BenefitCardProps> = ({
   title,
   description,
 }) => (
-  <div className='bg-bg hover:bg-white lg:p-[30px] md:p-[25px] p-[15px] group cursor-pointer transform duration-300'>
+  <div className='bg-gray-50 hover:bg-white lg:p-[30px] md:p-[25px] p-[15px] group cursor-pointer transform duration-300'>
     <div className='md:block flex items-center gap-3'>
-      <div className='bg-white group-hover:bg-bg md:w-[50px] w-10 md:h-[50px] h-10 flex items-center justify-center md:mb-[26px] mb-2 transform duration-300'>
+      <div className='bg-white group-hover:bg-gray-50 md:w-[50px] w-10 md:h-[50px] h-10 flex items-center justify-center md:mb-[26px] mb-2 transform duration-300'>
         <Image
           src={iconSrc}
           alt={iconAlt}
@@ -24,11 +24,11 @@ const BenefitCard: React.FC<BenefitCardProps> = ({
         />
       </div>
 
-      <Typography className='lg:text-subtitle2 text-tagBold pb-2 text-primary'>
+      <Typography className='lg:text-subtitle2 text-tagBold pb-2 text-gray-800'>
         {title}
       </Typography>
     </div>
-    <Typography className='lg:text-paragraph2Light text-tagBold text-primary font-light'>
+    <Typography className='lg:text-paragraph2Light text-tagBold text-gray-800 font-light'>
       {description}
     </Typography>
   </div>
@@ -36,7 +36,10 @@ const BenefitCard: React.FC<BenefitCardProps> = ({
 
 // Main component
 const Benefit: React.FC = () => (
-  <div className='bg-bg lg:py-20 md:py-[60px] py-10 scroll-mt-40' id='whyUs'>
+  <div
+    className='bg-gray-50 lg:py-20 md:py-[60px] py-10 scroll-mt-40'
+    id='whyUs'
+  >
     <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
       <SectionHeader
         title={<>A Simple Guide to Angular Development</>}
@@ -47,12 +50,12 @@ const Benefit: React.FC = () => (
             preferred for dynamic web application development:
           </>
         }
-        headingClassName='text-primary'
-        descriptionClassName='text-primary lg:!text-subtitle2Light md:!text-paragraph1ExtraLight'
+        headingClassName='text-gray-800 lg:text-h2'
+        descriptionClassName='text-gray-800 lg:!text-subtitle2Light md:!text-paragraph1ExtraLight'
       />
 
       <div className='bg-white md:mt-[50px] mt-5'>
-        <Typography className='text-primary lg:text-h6 md:text-subtitle2 text-paragraph2 lg:p-[30px] md:p-[25px] p-[15px] border-b border-headerBoxBorder'>
+        <Typography className='text-gray-800 lg:text-h6 md:text-subtitle2 text-paragraph2 lg:p-[30px] md:p-[25px] p-[15px] border-b border-gray-100'>
           Benefit of using Angular Development
         </Typography>
       </div>

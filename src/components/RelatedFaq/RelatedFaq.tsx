@@ -5,7 +5,7 @@ import { faqData } from '@codewinglet/components/Faq/constants';
 import SectionHeader from '../SectionHeader';
 
 const RelatedFaq = () => (
-  <div className='bg-bg lg:py-20 md:py-[60px] py-10 scroll-mt-40' id='faq'>
+  <div className='bg-gray-50 lg:py-20 md:py-[60px] py-10 scroll-mt-40' id='faq'>
     <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
       <SectionHeader
         title={<>Related FAQs</>}
@@ -15,7 +15,8 @@ const RelatedFaq = () => (
             empower your niche.
           </>
         }
-        descriptionClassName='sm:!text-subtitle2Light text-tagLight leading-normal'
+        headingClassName='lg:text-h2'
+        descriptionClassName='md:text-subtitle2Light leading-normal'
       />
       <div className='lg:gap-20 lg:mt-[50px] md:mt-10 mt-5'>
         <Faq faqData={faqData} />

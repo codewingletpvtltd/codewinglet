@@ -3,8 +3,8 @@ import Link from 'next/link';
 import { FC } from 'react';
 import { Url } from 'url';
 
-import { getClassNames } from '@codewinglet/utils';
 import Typography from '@codewinglet/components/Typography';
+import { getClassNames } from '@codewinglet/utils';
 
 import { ListItemProps } from '../../types';
 
@@ -30,14 +30,14 @@ export const ListItem: FC<ListItemProps> = ({
             {...props}
           >
             {icon && (
-              <span className='flex items-center justify-center w-[52px] h-[52px] bg-bg rounded-md'>
+              <span className='flex items-center justify-center w-[52px] h-[52px] bg-gray-50 rounded-md'>
                 <Image src={icon} alt='Menu Icon' width={28} height={28} />
               </span>
             )}
             <div>
               <Typography
                 className={getClassNames(
-                  'capitalize ml-4 text-primary text-paragraph2 ',
+                  'capitalize ml-4 text-gray-800 text-paragraph2 ',
                   labelClassName
                 )}
               >
@@ -46,7 +46,7 @@ export const ListItem: FC<ListItemProps> = ({
               {description && (
                 <Typography
                   className={getClassNames(
-                    'font-bold capitalize ml-4 text-paragraph1 font-400 text-primary 2xl:text-subtitle1 xl:text-tagLight',
+                    'font-bold capitalize ml-4 text-paragraph1 font-400 text-gray-800 2xl:text-subtitle1 xl:text-tagLight',
                     labelClassName
                   )}
                 >
@@ -70,7 +70,7 @@ export const ListItem: FC<ListItemProps> = ({
               <Typography
                 variant='subtitle1'
                 className={getClassNames(
-                  'font-bold capitalize text-primary whitespace-nowrap ml-2 font-400',
+                  'font-bold capitalize text-gray-800 whitespace-nowrap ml-2 font-400',
                   labelClassName
                 )}
               >
@@ -109,7 +109,7 @@ export const ListItem: FC<ListItemProps> = ({
             <div>
               <Typography
                 className={getClassNames(
-                  'text-paragraph2 capitalize text-primary mb-4',
+                  'text-paragraph2 capitalize text-gray-800 mb-4',
                   labelClassName
                 )}
               >
@@ -130,7 +130,7 @@ export const ListItem: FC<ListItemProps> = ({
         ) : (
           <Link
             href={href as unknown as Url}
-            className='flex flex-row items-start cursor-pointer border-l border-dropBorderLeft border-headerBoxBorder'
+            className='flex flex-row items-start cursor-pointer border-l border-dropBorderLeft border-gray-100'
             aria-label='menu-item'
             {...props}
           >
@@ -141,7 +141,7 @@ export const ListItem: FC<ListItemProps> = ({
             <div>
               <Typography
                 className={getClassNames(
-                  'text-tag text-primary whitespace-nowrap ml-5 mb-[17px] group-last:mb-0',
+                  'text-tag text-gray-800 whitespace-nowrap ml-5 mb-[17px] group-last:mb-0',
                   labelClassName
                 )}
               >

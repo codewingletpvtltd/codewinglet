@@ -16,13 +16,13 @@ const Insights = () => (
           title={<>Powerful data insights</>}
           description='Driving Transformation with Software Solutions that Enhance
                 Agility, Scalability, and Growth'
-          headingClassName='text-white'
-          descriptionClassName='text-secondary'
+          headingClassName='lg:text-h2 text-white'
+          descriptionClassName='md:text-subtitle2Light text-gray-400'
         />
 
         <div className='lg:mt-[50px]'>
           <Counter />
-          <Button className='sm:w-[231px] w-[203px] h-12 lg:m-auto 2xl:mt-[50px] xl:mt-10 flex m-auto '>
+          <Button className='sm:w-[231px] w-[203px] h-12 lg:m-auto 2xl:mt-[50px] xl:mt-10 flex m-auto'>
             <Link
               href='/contact-us'
               rel='noopener noreferrer'

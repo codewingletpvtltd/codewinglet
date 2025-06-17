@@ -44,8 +44,8 @@ const WhyChoose = () => (
                 data-driven optimizations. Evaluate our team.
               </>
             }
-            headingClassName='text-primary lg:!text-h2 md:!text-[36px] md:w-[582px] lg:pt-[50px] pt-10'
-            descriptionClassName='text-secondary pt-1 md:!text-subtitle2Light border-l-[5px] border-primary pl-[15px]'
+            headingClassName='text-gray-800 lg:!text-h2 md:!text-[36px] md:w-[582px] lg:pt-[50px] pt-10'
+            descriptionClassName='text-gray-400 pt-1 md:!text-subtitle2Light border-l-[5px] border-gray-800 pl-[15px]'
           />
 
           <div className='mt-[30px] lg:order-2 order-3'>

@@ -384,7 +384,7 @@ const companyMenu: ChildItemType = [
 
 export const navMenu = [
   {
-    path: '',
+    path: '/service',
     label: 'Services',
     children: services,
     left: '2xl:left-[-506px] xl:left-[-440px]',

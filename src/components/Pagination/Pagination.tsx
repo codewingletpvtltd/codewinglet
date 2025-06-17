@@ -52,8 +52,8 @@ export const Pagination = ({ totalPages, currentPage }: PaginationProps) => {
           onClick={() => handlePageClick(page)}
           className={`px-3 py-2 rounded-lg font-medium w-10 h-10 ${
             page === currentPage
-              ? 'bg-bg text-black'
-              : 'text-secondary hover:bg-gray-100'
+              ? 'bg-gray-50 text-black'
+              : 'text-gray-400 hover:bg-gray-100'
           }`}
           disabled={page === currentPage}
         >

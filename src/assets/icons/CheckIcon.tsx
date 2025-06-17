@@ -16,9 +16,9 @@ const CheckIcon: FC<SVGProps<SVGSVGElement>> = (props) => (
     <path
       d='M11.25 15L13.75 17.5L18.75 12.5'
       stroke='white'
-      stroke-width='2'
-      stroke-linecap='round'
-      stroke-linejoin='round'
+      strokeWidth='2'
+      strokeLinecap='round'
+      strokeLinejoin='round'
     />
   </svg>
 );

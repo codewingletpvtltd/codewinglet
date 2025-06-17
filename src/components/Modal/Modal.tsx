@@ -29,14 +29,14 @@ const Modal: FC<ModalProps> = ({
         open ? 'opacity-100' : 'opacity-0'
       )}
     >
-      <div className='bg-primary h-[6px]' />
+      <div className='bg-gray-800 h-1.5' />
 
       <div className='grid grid-flow-row gap-[30px] pt-5 px-9 pb-10 bg-white'>
         {showHeader && (
           <div className='flex justify-start items-center'>
             <Typography
               variant='h3'
-              className='text-[35px] font-[800] self-center text-center w-[95%]'
+              className='text-[35px] font-extrabold self-center text-center w-[95%]'
             >
               {title}
             </Typography>

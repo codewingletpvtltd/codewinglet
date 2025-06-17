@@ -87,7 +87,7 @@ const Collaborate = () => (
             </span>
           </Typography>
 
-          <Typography className='sm:text-paragraph1ExtraLight text-tagLight text-secondary lg:text-left sm:text-center text-left lg:mb-0 sm:mt-[50px] mb-5 mt-5'>
+          <Typography className='sm:text-paragraph1ExtraLight text-tagLight text-gray-400 lg:text-left sm:text-center text-left lg:mb-0 sm:mt-[50px] mb-5 mt-5'>
             Book your Free
             <span className='text-white'> 30 minutes expert </span>
             consultation now

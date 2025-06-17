@@ -32,8 +32,8 @@ const Services = () => {
               key={service.title}
               onClick={() => handleChangeIndex(i)}
               className={`text-paragraph1ExtraLight ${
-                i === selectedIndex ? 'text-primary' : 'text-secondary'
-              } border-b border-headerBoxBorder py-5 cursor-pointer flex items-center justify-between hover:text-primary`}
+                i === selectedIndex ? 'text-gray-800' : 'text-gray-400'
+              } border-b border-gray-100 py-5 cursor-pointer flex items-center justify-between hover:text-gray-800`}
             >
               {service.title}
               <Arrow
@@ -58,15 +58,15 @@ const Services = () => {
             <AccordionItem key={service.title} value={service.title}>
               <AccordionTrigger
                 onClick={() => handleChangeIndex(i)}
-                className={`[&[data-state=open]>svg]:rotate-[45deg] !pb-0 group ${
+                className={`[&[data-state=open]>svg]:rotate-45 !pb-0 group ${
                   i === selectedIndex
-                    ? 'border-b border-primary'
-                    : 'border-b border-headerBoxBorder'
+                    ? 'border-b border-gray-800'
+                    : 'border-b border-gray-100'
                 }`}
                 icon={
                   <Arrow
-                    className={`w-[21px] h-[21px] transition duration-500 group-hover:rotate-[45deg] ${
-                      i === selectedIndex ? 'text-primary' : 'text-secondary'
+                    className={`w-[21px] h-[21px] transition duration-500 group-hover:rotate-45 ${
+                      i === selectedIndex ? 'text-gray-800' : 'text-gray-400'
                     } `}
                   />
                 }
@@ -74,8 +74,8 @@ const Services = () => {
                 <div
                   className={`md:text-subtitle2Light text-paragraph2Light ${
                     i === selectedIndex
-                      ? 'text-primary md:!text-subtitle2 !text-paragraph2'
-                      : 'text-secondary'
+                      ? 'text-gray-800 md:!text-subtitle2 !text-paragraph2'
+                      : 'text-gray-400'
                   }  md:py-[22px] py-5 cursor-pointer flex items-center justify-between`}
                 >
                   {service.title}
@@ -90,7 +90,7 @@ const Services = () => {
         <Link
           href='/contact-us'
           rel='noopener noreferrer'
-          className='text-primary group-hover:text-white text-center group mt-6 md:hidden block m-auto'
+          className='text-gray-800 group-hover:text-white text-center group mt-6 md:hidden block m-auto'
         >
           <Button
             className='gap-2 bg-transparent w-[178px]'

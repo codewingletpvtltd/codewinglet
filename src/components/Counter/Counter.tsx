@@ -41,7 +41,7 @@ const data: ListItemProps[] = [
 const ListItem: React.FC<ListItemProps> = ({ number, label, icon }) => (
   <div className='relative flex justify-between items-center lg:p-[50px] py-10'>
     <div>
-      <Typography className='xl:text-h1 md:text-h2 text-h6 text-white flex items-center lg:mb-1.5 mb-1'>
+      <div className='xl:text-h1 md:text-h2 text-h6 text-white flex items-center lg:mb-1.5 mb-1'>
         {typeof number === 'number' ? (
           <>
             <AboutCount number={number} />+
@@ -49,12 +49,12 @@ const ListItem: React.FC<ListItemProps> = ({ number, label, icon }) => (
         ) : (
           <Typography>{number}</Typography>
         )}
-      </Typography>
+      </div>
       <Typography className='text-white lg:text-subtitle2Light md:text-paragraph1ExtraLight text-tagLight'>
         {label}
       </Typography>
     </div>
-    <div className='bg-darkBlack flex lg:p-[27px] md:p-5 p-2.5'>
+    <div className='bg-gray-700 flex lg:p-[27px] md:p-5 p-2.5'>
       <Image
         src={icon}
         alt='icon'
@@ -71,7 +71,7 @@ const ListItems: React.FC<{ items: ListItemProps[] }> = ({ items }) => (
   <div className='relative mt-0 grid lg:grid-cols-2 grid-cols-1'>
     {items.map((item, index) => (
       <div
-        className='lg:border-e border-e-darkBorder border-b border-b-darkBorder lg:[&:nth-child(even)]:border-e-0 border-e-0 lg:[&:nth-of-type(3)]:border-b-0 [&:nth-of-type(4)]:border-b-0'
+        className='lg:border-e border-e-gray-600 border-b border-b-gray-600 lg:[&:nth-child(even)]:border-e-0 border-e-0 lg:[&:nth-of-type(3)]:border-b-0 [&:nth-of-type(4)]:border-b-0'
         key={index}
       >
         <ListItem {...item} />

@@ -24,7 +24,7 @@ const Accordion: React.FC<AccordCompProps> = ({
     }`}
     onClick={() => handleChange(count)}
   >
-    <div className='w-7 flex justify-between relative text-primary accord-head'>
+    <div className='w-7 flex justify-between relative text-gray-800 accord-head'>
       <h3
         className={`${
           expanded == count ? '!text-white' : ''
@@ -35,7 +35,7 @@ const Accordion: React.FC<AccordCompProps> = ({
       <span
         className={`${
           expanded == count ? '!text-white text-10' : ''
-        }  absolute text-5 text-primary count-tab`}
+        }  absolute text-5 text-gray-800 count-tab`}
       >
         {count}
       </span>

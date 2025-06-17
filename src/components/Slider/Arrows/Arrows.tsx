@@ -13,21 +13,21 @@ const Arrows: FC<ArrowProps> = ({
   <>
     <div
       className={getClassNames(
-        'flex flex-row items-center gap-[18px] md:absolute bottom-[8rem] left-auto justify-center right-0 xl:bottom-4 -z-10 md:mt-0 mt-4',
+        'flex flex-row items-center gap-[18px] md:absolute bottom-32 left-auto justify-center right-0 xl:bottom-4 z-10 md:mt-0 mt-4',
         arrowPosition.vertical
           ? verticalPosition[arrowPosition.vertical]
           : 'justify-end md:flex hidden'
       )}
     >
-      <div className='text-white hover:text-secondary cursor-pointer'>
+      <div className='cursor-pointer'>
         <Arrow
-          className='rotate-180 w-6 h-6'
+          className='text-white rotate-180 w-6 h-6'
           onClick={() => sliderRef?.current?.slickPrev()}
         />
       </div>
-      <div className='text-white hover:text-secondary cursor-pointer'>
+      <div className='cursor-pointer'>
         <Arrow
-          className='w-6 h-6'
+          className='text-white w-6 h-6'
           onClick={() => sliderRef?.current?.slickNext()}
         />
       </div>

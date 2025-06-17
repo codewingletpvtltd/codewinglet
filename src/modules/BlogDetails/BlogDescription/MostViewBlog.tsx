@@ -8,12 +8,12 @@ const MostViewBlog = async () => {
   const blogs = await fetchMostViewedBlogs();
   return (
     <div className='lg:sticky right-0 top-[230px]'>
-      <Typography className='text-primary text-subtitle2 pb-[18px] border-b-2border-primary'>
+      <Typography className='text-gray-800 text-subtitle2 pb-[18px] border-b-2border-gray-800'>
         Most Viewed Blogs
       </Typography>
       <ol
         type='1'
-        className='list-decimal pt-5 pl-5 text-secondary lg:text-paragraph2Light text-paragraph1ExtraLight text-paragraph2Light flex flex-col md:gap-[26px] gap-5'
+        className='list-decimal pt-5 pl-5 text-gray-400 lg:text-paragraph2Light text-paragraph1ExtraLight text-paragraph2Light flex flex-col md:gap-[26px] gap-5'
       >
         {blogs &&
           blogs.map((blog: any) => (
@@ -24,7 +24,7 @@ const MostViewBlog = async () => {
       </ol>
 
       <div
-        className='bg-primary text-white lg:p-5 md:p-11 lg:mt-5 mt-[30px] lg:text-left text-center md:px-28 p-5'
+        className='bg-gray-800 text-white lg:p-5 md:p-11 lg:mt-5 mt-[30px] lg:text-left text-center md:px-28 p-5'
         style={{
           backgroundImage: 'url(/assets/blog/viewBg.png)',
           backgroundRepeat: 'no-repeat',
@@ -41,7 +41,7 @@ const MostViewBlog = async () => {
         </Typography>
         <Button
           variant='secondary'
-          className='w-[212px] text-primary !py-0 mt-5 border hover:border-white'
+          className='w-[212px] text-gray-800 !py-0 mt-5 border hover:border-white'
         >
           <Link
             href='/contact-us'

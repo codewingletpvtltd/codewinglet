@@ -28,10 +28,6 @@ iframe .gm-style-mtc {
   display: none;
 }
 
-.about-why-work .slick-initialized .slick-slide {
-  width: auto !important;
-}
-
 input[type='search']::-webkit-search-cancel-button {
   display: none;
 }
@@ -135,14 +131,6 @@ input[type='number']::-webkit-outer-spin-button {
   .address svg {
     width: 11.1%;
   }
-
-  #combination .slick-arrow.slick-prev {
-    left: 45% !important;
-  }
-
-  #combination .slick-arrow.slick-next {
-    right: 46% !important;
-  }
 }
 
 @media only screen and (min-width: 640px) and (max-width: 767px) {
@@ -191,22 +179,6 @@ input[type='number']::-webkit-outer-spin-button {
 
   .client_img {
     background-image: none !important;
-  }
-
-  .why-work .slick-slider .slick-prev {
-    left: 40% !important;
-  }
-
-  .why-work .slick-slider .slick-next {
-    left: 50% !important;
-  }
-
-  #combination .slick-arrow.slick-prev {
-    left: 39% !important;
-  }
-
-  #combination .slick-arrow.slick-next {
-    right: 39% !important;
   }
 }
 
@@ -296,6 +268,10 @@ input[type='number']::-webkit-outer-spin-button {
 
 .faq > div {
   padding-bottom: 25px;
+}
+
+.service > div {
+  padding-top: 8px;
 }
 
 /* ===== Scrollbar CSS ===== */

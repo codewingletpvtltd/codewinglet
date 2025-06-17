@@ -10,7 +10,7 @@ const Typography: React.FC<TypographyProps> = forwardRef(
       case 'h1':
         return (
           <h1
-            className={getClassNames('text-h1 font-secondary', className)}
+            className={getClassNames('text-h1 font-gray-400', className)}
             ref={ref}
             {...rest}
           >
@@ -20,7 +20,7 @@ const Typography: React.FC<TypographyProps> = forwardRef(
       case 'h2':
         return (
           <h2
-            className={getClassNames('text-h2 font-secondary', className)}
+            className={getClassNames('text-h2 font-gray-400', className)}
             ref={ref}
             {...rest}
           >
@@ -30,7 +30,7 @@ const Typography: React.FC<TypographyProps> = forwardRef(
       case 'h3':
         return (
           <h3
-            className={getClassNames('text-h3 font-secondary', className)}
+            className={getClassNames('text-h3 font-gray-400', className)}
             ref={ref}
             {...rest}
           >
@@ -40,7 +40,7 @@ const Typography: React.FC<TypographyProps> = forwardRef(
       case 'h4':
         return (
           <h4
-            className={getClassNames('text-h4 font-secondary', className)}
+            className={getClassNames('text-h4 font-gray-400', className)}
             ref={ref}
             {...rest}
           >
@@ -50,7 +50,7 @@ const Typography: React.FC<TypographyProps> = forwardRef(
       case 'h5':
         return (
           <h5
-            className={getClassNames('text-h5 font-secondary', className)}
+            className={getClassNames('text-h5 font-gray-400', className)}
             ref={ref}
             {...rest}
           >
@@ -60,7 +60,7 @@ const Typography: React.FC<TypographyProps> = forwardRef(
       case 'h6':
         return (
           <h6
-            className={getClassNames('text-h6 font-secondary', className)}
+            className={getClassNames('text-h6 font-gray-400', className)}
             ref={ref}
             {...rest}
           >

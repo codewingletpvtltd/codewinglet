@@ -23,7 +23,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
       {icon}
       <Typography
         variant='body2'
-        className='flex font-[800] justify-center items-center flex-wrap text-[18px] md:text-[18px]'
+        className='flex font-extrabold justify-center items-center flex-wrap text-paragraph1'
       >
         {title}
       </Typography>
