@@ -28,6 +28,7 @@ const ContactCard = ({
     target='_blank'
     rel='noopener noreferrer'
     className='group block p-6 border border-white/10 rounded-2xl bg-white/5 backdrop-blur-md'
+
   >
     <div className='flex items-start space-x-4'>
       <div className='flex-shrink-0'>
