@@ -27,6 +27,7 @@ const ContactCard = ({
     href={href}
     target='_blank'
     rel='noopener noreferrer'
+
     className='group block p-6 border border-gray-500 rounded-2xl bg-gray-800'
   >
     <div className='flex items-start space-x-4'>
@@ -39,9 +40,9 @@ const ContactCard = ({
         <h3 className='text-subtitle2Light font-medium text-white group-hover:text-blue-300 transition-colors duration-300'>
           {title}
         </h3>
-        <p className='text-gray-200 !font-light'>{value}</p>
+        <p className='text-white !font-light'>{value}</p>
         {description && (
-          <p className='text-sm text-gray-400 mt-1 !font-light'>
+          <p className='text-sm text-gray-200 mt-1 !font-light'>
             {description}
           </p>
         )}
@@ -58,10 +59,12 @@ const SocialLink = ({
   icon: Icon,
   name,
   href,
+  bgColor,
 }: {
   icon: React.ElementType;
   name: string;
   href: string;
+  bgColor: string;
 }) => (
   <a
     href={href}
@@ -70,9 +73,7 @@ const SocialLink = ({
     className='group relative'
   >
     <div
-      className={
-        'w-14 h-14 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-all duration-300 shadow-lg group-hover:shadow-2xl'
-      }
+      className={`w-14 h-14 rounded-2xl ${bgColor} flex items-center justify-center group-hover:scale-110 transition-all duration-300 shadow-lg group-hover:shadow-2xl`}
     >
       <Icon className='w-7 h-7 text-white' color='white' />
     </div>
@@ -98,7 +99,7 @@ function GetInTouch() {
       title: 'Call Us',
       value: '+91 81608 68310',
       href: 'tel:+918160868310',
-      description: 'Available Monday to Friday, 9 AM - 6 PM EST',
+      description: 'Available Monday to Friday, 10:00 AM - 06:00 PM IST',
     },
     {
       icon: MapPin,
@@ -122,42 +123,48 @@ function GetInTouch() {
       icon: LinkedInIcon,
       name: 'LinkedIn',
       href: 'https://www.linkedin.com/company/codewinglet',
+      bgColor: 'bg-linkedin',
     },
     {
       icon: InstagramIcon,
       name: 'Instagram',
       href: 'https://www.instagram.com/codewinglet',
+      bgColor: 'bg-instagram',
     },
     {
       icon: FacebookIcon,
       name: 'Facebook',
       href: 'https://www.facebook.com/codewingletpteltd',
+      bgColor: 'bg-facebook',
     },
     {
       icon: XIcon,
       name: 'X (Twitter)',
       href: 'https://x.com/codewinglet',
+      bgColor: 'bg-twitter',
     },
     {
       icon: DribbleIcon,
       name: 'Dribble',
       href: 'https://dribbble.com/codewingletprivatelimited',
+      bgColor: 'bg-dribble',
     },
     {
       icon: BehanceIcon,
       name: 'Behance',
       href: 'https://www.behance.net/codewinglet',
+      bgColor: 'bg-behance',
     },
   ];
 
   return (
-    <div className='relative lg:py-20 md:py-[60px] py-[30px] sm:pb-[inherit] pb-10 lg:mt-[86px] md:mt-[90px] mt-[78px]'>
+    <div className='relative lg:py-20 md:py-[60px] py-[30px] sm:pb-[inherit] pb-10 lg:mt-[86px] md:mt-[90px] mt-[78px] bg-[linear-gradient(131deg,_#1f29377d_0%,_#111827ed_100%)]'>
       {/* Hero Section */}
       <div className='container w-full lg:px-[15px] sm:px-[30px] px-5 mx-auto'>
         <div className='text-center lg:mb-16 mb-10'>
           <h2 className='md:text-[36px] sm:text-h3 text-h5 font-medium text-white mb-2'>
             Get In
-            <span className=''> Touch</span>
+            <span className='touch-text'> Touch</span>
           </h2>
           <p className='text-tag sm:text-lg lg:text-subtitle2 text-gray-200 !font-light max-w-3xl mx-auto leading-relaxed'>
             Connect with CodeWinglet across all platforms. We're here to help
@@ -173,7 +180,7 @@ function GetInTouch() {
         </div>
 
         {/* Social Media Section */}
-        <div className='bg-gray-800 rounded-3xl p-8 sm:p-12 border border-gray-500'>
+        <div className='bg-white/5 backdrop-blur-md rounded-3xl p-8 sm:p-12 border border-white/10'>
           <div className='text-center mb-12'>
             <h3 className='text-h5 sm:text-h2 font-medium text-white md:mb-4 mb-2'>
               Follow Our Journey
