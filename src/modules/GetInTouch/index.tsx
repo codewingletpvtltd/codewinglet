@@ -27,12 +27,11 @@ const ContactCard = ({
     href={href}
     target='_blank'
     rel='noopener noreferrer'
-
-    className='group block p-6 border border-gray-500 rounded-2xl bg-gray-800'
+    className='group block p-6 border border-white/10 rounded-2xl bg-white/5 backdrop-blur-md'
   >
     <div className='flex items-start space-x-4'>
       <div className='flex-shrink-0'>
-        <div className='w-12 h-12 bg-gradient-to-r from-blue-400 to-purple-500 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg'>
+        <div className='w-12 h-12 bg-touchText rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg'>
           <Icon className='w-6 h-6 text-white' />
         </div>
       </div>
