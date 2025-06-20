@@ -325,3 +325,13 @@ input[type='number']::-webkit-outer-spin-button {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+.touch-text {
+  background: linear-gradient(
+    90deg,
+    rgba(168, 85, 247, 1) 0%,
+    rgba(96, 165, 250, 1) 100%
+  );
+  background-clip: text;
+  color: transparent;
+}

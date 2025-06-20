@@ -28,6 +28,12 @@ export default {
       tagExtraLight: ['12px', { fontWeight: 400 }],
     },
     colors: {
+      blue: {
+        400: '#60a5fa', // This is Tailwind’s default blue-400
+      },
+      purple: {
+        500: '#a855f7', // This is Tailwind’s default purple-500
+      },
       gray: {
         50: '#F5F5F5', // Light Gray
         100: '#DADADA', // Soft Gray
@@ -57,6 +63,18 @@ export default {
       projectBg: 'url("/assets/CaseStudy/AboutProjectBg.png")',
       keyFeatureBg: 'url("/assets/Project/KeyFeatureBg.png")',
       ourWorkBg: 'url("/assets/OurWork/ourWorkBg.png")',
+      touchText:
+        'linear-gradient(90deg,rgba(168, 85, 247, 1) 0%, rgba(96, 165, 250, 1) 100%)',
+      linkedin:
+        'linear-gradient(90deg,rgba(29, 78, 216, 1) 0%, rgba(37, 99, 235, 1) 100%)',
+      instagram:
+        'linear-gradient(90deg,rgba(234, 179, 8, 1) 0%, rgba(239, 68, 68, 1) 50%, rgba(236, 72, 153, 1) 100%)',
+      twitter:
+        'linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(31, 41, 55, 1) 100%)',
+      dribble: 'linear-gradient(to right, #ea4c89, #f7a1c4)',
+      behance: 'linear-gradient(to right, #1769ff, #00cfff)',
+      facebook:
+        'linear-gradient(90deg,rgba(37, 99, 235, 1) 0%, rgba(59, 130, 246, 1) 100%);',
     },
     boxShadow: {
       custom: '0px 4px 10px 0px rgba(159, 159, 159, 0.1)',
