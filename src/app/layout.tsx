@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Head from 'next/head';
 import { Poppins } from 'next/font/google';
 import React from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 import { COLORS } from '@codewinglet/constants';
 
@@ -34,6 +35,7 @@ export default function RootLayout({
       </Head>
       <body className={`font-primary bg-black ${poppins.variable}`}>
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
