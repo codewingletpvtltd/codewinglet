@@ -15,7 +15,7 @@ const projectHighlights = [
 ];
 
 const HeroSection = () => (
-  <div className='lg:mt-[86px] md:mt-[90px] mt-[78px] lg:py-20 md:py-[60px] py-10 lg:pt-0 md:!pt-[60px] !pt-10 relative bg-white'>
+  <div className='lg:mt-[139px] md:mt-[90px] mt-[124px] lg:py-20 md:py-[60px] py-10 lg:pt-0 md:!pt-[60px] !pt-10 relative bg-white'>
     <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto relative z-10 2xl:gap-[76px] gap-14'>
       <div className=''>
         <SectionHeader
