@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import { usePathname, useRouter } from 'next/navigation';
 import React, { FC } from 'react';
+import Link from 'next/link';
 
 import { xl } from '@codewinglet/constants/mediaQueryConst';
 import { useScreenSize } from '@codewinglet/hooks';
@@ -13,6 +14,7 @@ import MenuIcon from '../MenuIcon';
 import { MobileMenu, NavMenu } from './components';
 import { HeaderProps } from './types';
 import useHeader from './useHeader';
+import Typography from '../Typography';
 
 const Header: FC<HeaderProps> = ({ isScroll }) => {
   const router = useRouter();
@@ -21,22 +23,25 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
     useHeader();
 
   const pathName = usePathname();
+  const showBanner = pathName !== '/event-form' && pathName !== '/thank-you';
 
   return (
     <>
-      {/* {pathName != '/event-form' && pathName != '/thank-you' && (
+      {showBanner && (
         <div className='bg-white font-light py-4 fixed top-0 z-[100] w-full px-4'>
-          <div className='container w-full flex items-center justify-between md:flex-row flex-col lg:px-[15px] sm:px-[30px] px-4'>
+          <div className='container w-full flex items-center justify-center md:flex-row flex-col lg:px-[15px] sm:px-[30px] px-4'>
             <Typography className='text-center lg:text-tag text-tagExtraLight  xl:flex items-center gap-2.5'>
-              🎉 Join Codewinglet DevBattle 2024? 🚀{' '}
-              <span className='font-normal'>
+              🎉 We’re Hiring! Join Our Team 🚀{' '}
+              {/* <span className='font-normal'>
                 Register here to compete and showcase your skills
-              </span>
+              </span> */}
               <div className='hurry-up-animation inline-block ml-2'>
-                <div className='font-bold hurryUp-text'>Hurry up !</div>
+                <Link href='/career'>
+                  <div className='font-bold hurryUp-text'>Apply Here</div>
+                </Link>
               </div>
             </Typography>
-            <div className='md:mt-0 mt-1 flex md:flex-row flex-col md:gap-10 gap-2'>
+            {/* <div className='md:mt-0 mt-1 flex md:flex-row flex-col md:gap-10 gap-2'>
               <Link href='/event-form' className='md:m-0 mx-auto'>
                 <Button
                   variant='link'
@@ -68,16 +73,17 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
                   <path d='M12 4l0 12' />
                 </svg>
               </Button>
-            </div>
+            </div> */}
           </div>
         </div>
-      )} */}
+      )}
       <header
         id='header'
         className={getClassNames(
-          'fixed flex items-center top-0 z-50 w-full sm:py-5 md:py-0 lg:py-0 lg:px-20',
+          'fixed flex items-center z-50 w-full sm:py-5 md:py-0 lg:py-0 lg:px-20',
+          showBanner ? 'top-[50px]' : 'top-0',
           pathName === '/event-form' || pathName === '/thank-you'
-            ? 'bg-gray-800 !top-0'
+            ? 'bg-gray-800'
             : isScroll
             ? 'bg-gray-800'
             : pathName === '/contact-us'
@@ -97,7 +103,7 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
             : pathName === '/service'
             ? 'bg-gray-800'
             : pathName === '/event-form'
-            ? 'bg-gray-800 !top-0'
+            ? 'bg-gray-800'
             : 'bg-transparent'
         )}
       >

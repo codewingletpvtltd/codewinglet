@@ -40,7 +40,7 @@ export const BlogSearch = () => {
   };
 
   return (
-    <div className='bg-white md:mt-[86px] mt-[78px] fixed top-0 w-full z-10 shadow-custom'>
+    <div className='bg-white md:mt-[139px] mt-[78px] fixed top-0 w-full z-10 shadow-custom'>
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto flex justify-between items-center lg:py-[13px] py-2.5'>
         <Typography className='lg:block hidden'>All blog</Typography>
         <div className='flex'>

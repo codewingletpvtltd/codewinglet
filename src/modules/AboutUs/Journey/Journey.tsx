@@ -7,7 +7,7 @@ import { Typography } from '@codewinglet/components';
 
 const Journey = () => (
   <>
-    <div className='relative bg-white lg:py-20 md:py-[60px] py-[30px] sm:pb-[inherit] pb-[130px] lg:mt-[86px] md:mt-[90px] mt-[78px]'>
+    <div className='relative bg-white lg:py-20 md:py-[60px] py-[30px] sm:pb-[inherit] pb-[130px] lg:mt-[139px] md:mt-[90px] mt-[124px]'>
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
         <div className='lg:flex block'>
           <div className='lg:w-[598px] w-full'>
