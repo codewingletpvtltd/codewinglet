@@ -9,9 +9,9 @@ const Career = () => (
   <>
     <CareerMenu />
     <Opportunity />
+    <CurrentOpenings />
     <Benefits />
     <OurHiringProcess />
-    <CurrentOpenings />
     <OurTeam />
   </>
 );
