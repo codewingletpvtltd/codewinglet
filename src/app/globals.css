@@ -20,6 +20,10 @@ html {
   display: none !important;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 iframe {
   filter: invert(5%) grayscale(1);
 }
@@ -334,4 +338,8 @@ input[type='number']::-webkit-outer-spin-button {
   );
   background-clip: text;
   color: transparent;
+}
+
+.react-photo-album--image {
+  object-fit: cover;
 }

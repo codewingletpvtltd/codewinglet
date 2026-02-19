@@ -102,6 +102,8 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
             ? 'bg-gray-800'
             : pathName === '/service'
             ? 'bg-gray-800'
+            : pathName === '/career/gallery'
+            ? 'bg-gray-800'
             : pathName === '/event-form'
             ? 'bg-gray-800'
             : 'bg-transparent'
@@ -142,7 +144,7 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
             showMenu={showMenu}
             className='z-40 md:max-w-[500px]'
           >
-            <div className='px-[30px] md:px-[35px]'>
+            <div className='px-5 md:px-[35px] pt-10'>
               <div className='flex items-center max-w-[1410px] justify-between relative w-full md:ml-[-2px] mx-auto lg-auto md:h-[90px] h-auto mb-auto'>
                 <div className='flex justify-between items-center my-5'>
                   <Image

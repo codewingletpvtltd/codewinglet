@@ -80,6 +80,10 @@ export default {
       custom: '0px 4px 10px 0px rgba(159, 159, 159, 0.1)',
     },
     keyframes: {
+      fadeIn: {
+        '0%': { opacity: '0' },
+        '100%': { opacity: '1' },
+      },
       rotateInfinite: {
         '0%': {
           transform: 'rotate(0deg)',
@@ -94,6 +98,7 @@ export default {
       },
     },
     animation: {
+      fadeIn: 'fadeIn 0.5s ease-in-out forwards',
       rotateInfinite: 'rotateInfinite 6s linear infinite',
       sliderInfinite: 'sliderInfinite 20s linear infinite',
     },
