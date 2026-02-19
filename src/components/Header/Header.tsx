@@ -26,9 +26,9 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
   const showBanner = pathName !== '/event-form' && pathName !== '/thank-you';
 
   return (
-    <>
+    <div className='sticky top-0 z-[100]'>
       {showBanner && (
-        <div className='bg-white font-light py-4 fixed top-0 z-[100] w-full px-4'>
+        <div className='bg-white font-light py-3 w-full px-4'>
           <div className='container w-full flex items-center justify-center md:flex-row flex-col lg:px-[15px] sm:px-[30px] px-4'>
             <Typography className='text-center lg:text-tag text-tagExtraLight  xl:flex items-center gap-2.5'>
               🎉 We’re Hiring! Join Our Team 🚀{' '}
@@ -80,8 +80,7 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
       <header
         id='header'
         className={getClassNames(
-          'fixed flex items-center z-50 w-full sm:py-5 md:py-0 lg:py-0 lg:px-20',
-          showBanner ? 'top-[50px]' : 'top-0',
+          'flex items-center z-50 w-full sm:py-5 md:py-0 lg:py-0 lg:px-20',
           pathName === '/event-form' || pathName === '/thank-you'
             ? 'bg-gray-800'
             : isScroll
@@ -144,7 +143,7 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
             showMenu={showMenu}
             className='z-40 md:max-w-[500px]'
           >
-            <div className='px-5 md:px-[35px] pt-10'>
+            <div className='px-5 md:px-[35px]'>
               <div className='flex items-center max-w-[1410px] justify-between relative w-full md:ml-[-2px] mx-auto lg-auto md:h-[90px] h-auto mb-auto'>
                 <div className='flex justify-between items-center my-5'>
                   <Image
@@ -177,7 +176,7 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
           </Drawer>
         )}
       </header>
-    </>
+    </div>
   );
 };
 

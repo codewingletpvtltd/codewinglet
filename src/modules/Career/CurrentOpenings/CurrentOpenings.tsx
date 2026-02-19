@@ -7,7 +7,7 @@ import JobOpening from './components/JobOpening';
 const CurrentOpenings = () => (
   <>
     <div
-      className='bg-white lg:py-20 md:py-[60px] py-10 scroll-mt-32'
+      className='bg-white lg:py-20 md:py-[60px] py-10 scroll-mt-32 !pb-[120px]'
       id='jobs'
     >
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
@@ -18,7 +18,7 @@ const CurrentOpenings = () => (
           descriptionClassName='text-gray-400 md:text-left text-center md:text-subtitle2Light'
         />
 
-        <div className='md:mt-[86px] mt-[78px]'>
+        <div className='md:mt-[86px] mt-[78px] relative'>
           <JobOpening />
         </div>
       </div>

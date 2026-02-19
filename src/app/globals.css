@@ -20,10 +20,6 @@ html {
   display: none !important;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 iframe {
   filter: invert(5%) grayscale(1);
 }
