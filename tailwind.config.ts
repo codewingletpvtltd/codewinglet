@@ -109,6 +109,15 @@ export default {
       container: {
         center: true,
       },
+      keyframes: {
+        spin: {
+          from: { transform: 'rotate(0deg)' },
+          to: { transform: 'rotate(360deg)' },
+        },
+      },
+      animation: {
+        spin: 'spin 1s linear infinite',
+      },
     },
   },
   plugins: [],
