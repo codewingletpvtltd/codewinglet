@@ -59,7 +59,7 @@ const OurVision = () => (
             alt='mission'
             width={686}
             height={309}
-            className='2xl:w-[686px] lg:w-[568px] w-full lg:mb-0 mb-3'
+            className='2xl:w-[686px] lg:w-[568px] w-full lg:mb-0 mb-3 shrink-0'
           />
           <div className='2xl:w-auto lg:w-[568px] w-full'>
             <Typography className='text-gray-800 lg:text-subtitle2 md:text-paragraph1Light text-paragraph2 relative lg:mb-0 mb-2'>

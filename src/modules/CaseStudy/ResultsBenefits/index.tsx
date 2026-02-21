@@ -17,7 +17,8 @@ const ResultsContent = () => {
   const sections = [
     {
       title: 'Streamlined Workflow and Data Segregation',
-      description: 'Whether you\'re seeking flexibility, cost-effectiveness, or specialized expertise, there\'s a hiring model tailored just for you.',
+      description:
+        'Whether you\'re seeking flexibility, cost-effectiveness, or specialized expertise, there\'s a hiring model tailored just for you.',
       highlights: [
         'Unlocking personalized quotations: tailored wisdom in simple terms',
         'Successfully overcome pressing business challenges',
@@ -58,7 +59,7 @@ const ResultsContent = () => {
 
   return (
     <>
-      <div className='mt-[50px]'>
+      <div className='mt-[50px] sticky top-[100px]'>
         <Image
           src='/assets/CaseStudy/resultsBg.png'
           alt='resultsBg'

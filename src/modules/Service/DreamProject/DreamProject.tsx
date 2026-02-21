@@ -22,7 +22,7 @@ const DreamProject = () => (
               </>
             }
             headingClassName='text-white lg:!text-h2 md:!text-[36px]'
-            descriptionClassName='text-gray-400 md:!text-subtitle2Light'
+            descriptionClassName='!text-gray-400 md:!text-subtitle2Light'
           />
 
           <div className='md:mt-14 mt-[30px]'>

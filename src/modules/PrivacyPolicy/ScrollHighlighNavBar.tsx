@@ -91,7 +91,7 @@ const ScrollHighlightNavbar: React.FC<ScrollHighlightNavbarProps> = ({
 
   return (
     <div
-      className={`xl:w-1/4 w-full lg:p-0 p-5 bg-white lg:sticky fixed lg:z-0 z-10 right-auto lg:top-[230px] md:top-[90px] top-[78px] lg:left-auto left-0 ${containerClassName}`}
+      className={`xl:w-1/4 w-full lg:p-0 p-5 bg-white lg:sticky fixed lg:z-0 z-10 right-auto lg:top-[230px] md:top-[90px] top-[128px] lg:left-auto left-0 ${containerClassName}`}
     >
       <ul className='lg:grid flex overflow-auto [-ms-overflow-style:_none;] [scrollbar-width:_none;] gap-6'>
         {navHeader.map((policy, i) => (

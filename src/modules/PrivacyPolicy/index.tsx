@@ -67,7 +67,7 @@ const PrivacyPolicy = () => {
 
   return (
     <>
-      <div className='bg-gray-50 lg:mt-[86px] md:mt-[66px] mt-[9px] py-[15px] md:py-[30px] lg:fixed lg:top-0 fixed md:top-[90px] top-[130px] w-full z-10'>
+      <div className='bg-gray-50 lg:mt-[139px] md:mt-[66px] mt-[59px] py-[15px] md:py-[30px] lg:fixed lg:top-0 fixed md:top-[90px] top-[130px] w-full z-10'>
         <div className='container w-full lg:px-[15px] sm:px-[30px] px-5 mx-auto'>
           <div>
             <SectionHeader
@@ -79,7 +79,7 @@ const PrivacyPolicy = () => {
         </div>
       </div>
 
-      <div className='bg-white mt-[180px] [scroll-behavior:_smooth;]'>
+      <div className='bg-white mt-[230px] [scroll-behavior:_smooth;]'>
         <div className='container w-full lg:px-[15px] sm:px-[30px] px-5 mx-auto lg:pt-[50px] md:pt-[110px] pt-[60px] relative pb-1'>
           <div className='lg:flex block gap-[100px] items-start mb-[50px] pt-0'>
             <ScrollHighlightNavbar navHeader={PolicyData} />

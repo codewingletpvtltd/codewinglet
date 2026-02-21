@@ -32,7 +32,7 @@ const OurHiringProcess = () => (
           title={<>Our Hiring Process</>}
           description='Step into Your Future with Confidence: A Simple, Transparent Hiring Journey.'
           headingClassName='text-white lg:text-left text-center lg:text-h2'
-          descriptionClassName='text-gray-400 lg:text-left text-center lg:px-0 md:px-20 md:text-subtitle2Light'
+          descriptionClassName='!text-gray-400 lg:text-left text-center lg:px-0 md:px-20 md:text-subtitle2Light'
         />
         <div className='relative flex xl:gap-[30px] lg:gap-4 mt-[50px] lg:pt-[30px] lg:border-t md:border-gray-400 lg:flex-nowrap flex-wrap'>
           {processSteps.map((step, index) => (

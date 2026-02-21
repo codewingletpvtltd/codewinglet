@@ -21,3 +21,4 @@ export { default as ToolsIcon } from './ToolsIcon';
 export { default as TwitterIcon } from './TwitterIcon';
 export { default as UIIcon } from './UIIcon';
 export { default as WebAppIcon } from './WebAppIcon';
+export { default as LoaderIcon } from './LoaderIcon';

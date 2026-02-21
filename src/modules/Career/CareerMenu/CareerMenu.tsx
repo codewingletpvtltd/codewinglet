@@ -88,7 +88,7 @@ const CareerMenu = () => {
   };
 
   return (
-    <div className='bg-white lg:mt-[86px] md:mt-[90px] mt-[78px] border-b border-gray-100 fixed w-full z-10'>
+    <div className='bg-white border-b border-gray-100 fixed w-full z-10'>
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto'>
         <div className='flex lg:overscroll-x-none overflow-x-auto'>
           {MENU_ITEMS.map(({ title, path }, index) => (
