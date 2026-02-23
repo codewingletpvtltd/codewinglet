@@ -44,7 +44,7 @@ const CloudBased = () => (
     <div className='lg:!hidden !block'>
       <CaseStudyMenu />
     </div>
-    <div className='xl:pt-[166px] lg:pt-60 md:pt-[185px] pt-[166px] lg:pb-20 md:pb-[60px] pb-10 relative'>
+    <div className='xl:pt-[86px] lg:pt-60 md:pt-[185px] pt-[166px] lg:pb-20 md:pb-[60px] pb-10 relative'>
       {/* VIDEO */}
       <div className='absolute left-0 top-0 w-full h-full'>
         <video

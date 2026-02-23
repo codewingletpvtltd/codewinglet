@@ -9,7 +9,7 @@ import Counter from './components/Counter';
 
 const HeroSection = () => (
   <>
-    <div className='lg:mt-[86px] mt-[90px] lg:py-20 md:py-[60px] py-10 relative bg-ourWorkBg bg-no-repeat lg:bg-cover bg-contain'>
+    <div className='lg:py-20 md:py-[60px] py-10 relative bg-ourWorkBg bg-no-repeat lg:bg-cover bg-contain'>
       <div className='container w-full lg:px-[15px] sm:px-10 px-5 mx-auto relative z-10'>
         <span className='lg:text-subtitle2Light md:text-paragraph2Light text-tagLight text-gray-400 block'>
           Portfolio
