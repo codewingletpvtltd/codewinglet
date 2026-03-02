@@ -28,7 +28,6 @@ const ContactCard = ({
     target='_blank'
     rel='noopener noreferrer'
     className='group block p-6 border border-white/10 rounded-2xl bg-white/5 backdrop-blur-md'
-
   >
     <div className='flex items-start space-x-4'>
       <div className='flex-shrink-0'>
@@ -158,7 +157,7 @@ function GetInTouch() {
   ];
 
   return (
-    <div className='relative lg:py-20 md:py-[60px] py-[30px] sm:pb-[inherit] pb-10 lg:mt-[86px] md:mt-[90px] mt-[78px] bg-[linear-gradient(131deg,_#1f29377d_0%,_#111827ed_100%)]'>
+    <div className='relative lg:py-20 md:py-[60px] py-[30px] sm:pb-[inherit] pb-10 bg-[linear-gradient(131deg,_#1f29377d_0%,_#111827ed_100%)]'>
       {/* Hero Section */}
       <div className='container w-full lg:px-[15px] sm:px-[30px] px-5 mx-auto'>
         <div className='text-center lg:mb-16 mb-10'>

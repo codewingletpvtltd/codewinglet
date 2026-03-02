@@ -105,6 +105,8 @@ const Header: FC<HeaderProps> = ({ isScroll }) => {
             ? 'bg-gray-800'
             : pathName === '/event-form'
             ? 'bg-gray-800'
+            : pathName === '/'
+            ? 'bg-gray-800'
             : 'bg-transparent'
         )}
       >
