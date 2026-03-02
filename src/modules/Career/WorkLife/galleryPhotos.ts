@@ -4,6 +4,12 @@ type Photo = {
 
 const galleryPhotos: Photo[] = [
   {
+    asset: '/assets/career/workLife_16.jpg',
+  },
+  {
+    asset: '/assets/career/workLife_17.JPG',
+  },
+  {
     asset: '/assets/career/workLife_10.png',
   },
   {
