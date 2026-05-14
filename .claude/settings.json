@@ -1,0 +1,364 @@
+{
+  "permissions": {
+    "suppressPrompts": true,
+    "allowlist": [
+      {
+        "tool": "Bash",
+        "prompt": "run npm commands (install, build, dev, test, lint)"
+      },
+      {
+        "tool": "Bash",
+        "prompt": "run git commands (status, diff, log, commit, push, pull, branch)"
+      },
+      {
+        "tool": "Bash",
+        "prompt": "run linting and code quality checks"
+      },
+      {
+        "tool": "Bash",
+        "prompt": "run build and compilation commands"
+      },
+      {
+        "tool": "Bash",
+        "prompt": "run tests and test suites"
+      },
+      {
+        "tool": "Bash",
+        "prompt": "run file system operations (mkdir, ls, find, grep, cat)"
+      },
+      {
+        "tool": "Bash",
+        "prompt": "run storybook commands"
+      },
+      {
+        "tool": "Bash",
+        "prompt": "run development server"
+      },
+      {
+        "tool": "Read",
+        "prompt": "read any source files"
+      },
+      {
+        "tool": "Read",
+        "prompt": "read configuration files"
+      },
+      {
+        "tool": "Read",
+        "prompt": "read documentation files"
+      },
+      {
+        "tool": "Edit",
+        "prompt": "edit source code files"
+      },
+      {
+        "tool": "Edit",
+        "prompt": "edit configuration files"
+      },
+      {
+        "tool": "Edit",
+        "prompt": "edit markdown and documentation"
+      },
+      {
+        "tool": "Write",
+        "prompt": "create new source files"
+      },
+      {
+        "tool": "Write",
+        "prompt": "create test files"
+      },
+      {
+        "tool": "Write",
+        "prompt": "create configuration files"
+      },
+      {
+        "tool": "Write",
+        "prompt": "create documentation files"
+      },
+      {
+        "tool": "Agent",
+        "prompt": "spawn specialized agents for complex tasks"
+      },
+      {
+        "tool": "AskUserQuestion",
+        "prompt": "ask clarifying questions during development"
+      },
+      {
+        "tool": "TaskCreate",
+        "prompt": "create and track work items"
+      },
+      {
+        "tool": "TaskUpdate",
+        "prompt": "update task status and progress"
+      },
+      {
+        "tool": "TaskList",
+        "prompt": "view task list and progress"
+      },
+      {
+        "tool": "WebSearch",
+        "prompt": "search the web for information"
+      },
+      {
+        "tool": "WebFetch",
+        "prompt": "fetch content from web URLs"
+      },
+      {
+        "tool": "EnterPlanMode",
+        "prompt": "enter plan mode for complex implementations"
+      },
+      {
+        "tool": "ExitPlanMode",
+        "prompt": "exit plan mode and request user approval"
+      },
+      {
+        "tool": "EnterWorktree",
+        "prompt": "create isolated git worktrees"
+      },
+      {
+        "tool": "ExitWorktree",
+        "prompt": "exit from worktrees"
+      },
+      {
+        "tool": "Monitor",
+        "prompt": "monitor long-running processes and logs"
+      },
+      {
+        "tool": "PushNotification",
+        "prompt": "send desktop notifications"
+      },
+      {
+        "tool": "CronCreate",
+        "prompt": "schedule recurring tasks"
+      },
+      {
+        "tool": "CronDelete",
+        "prompt": "cancel scheduled tasks"
+      },
+      {
+        "tool": "CronList",
+        "prompt": "list scheduled tasks"
+      },
+      {
+        "tool": "Skill",
+        "prompt": "invoke available skills"
+      },
+      {
+        "tool": "RemoteTrigger",
+        "prompt": "manage remote trigger routines"
+      }
+    ]
+  },
+  "model": "claude-haiku-4-5-20251001",
+  "theme": "dark",
+  "editor": "vim",
+  "worktreeBaseRef": "fresh",
+  "workspace": {
+    "autoSave": true,
+    "showLineNumbers": true,
+    "tabSize": 2
+  },
+  "codeQuality": {
+    "enableESLint": true,
+    "enableTypeScript": true,
+    "enablePrettier": true,
+    "autoFixOnSave": true
+  },
+  "environment": {
+    "NODE_ENV": "development",
+    "NEXT_PUBLIC_API_URL": "http://localhost:3000"
+  },
+  "projectDefaults": {
+    "branch": "develop",
+    "mainBranch": "main",
+    "autoCommit": false,
+    "requirePullRequest": true
+  },
+  "testing": {
+    "runTestsBeforeBuild": false,
+    "coverage": true,
+    "coverageThreshold": 60
+  },
+  "agents": [
+    {
+      "name": "prompt-refiner",
+      "description": "Use FIRST on every user request. Detects create vs modify mode, validates user choices (colour contrast, feature suitability, taste conflicts), pushes back on bad picks before any builder runs, and asks clarifying questions when confidence is low.",
+      "path": ".claude/agents/prompt-refiner.md",
+      "model": "opus"
+    },
+    {
+      "name": "intent-parser",
+      "description": "Use after prompt-refiner. Converts the refined prompt into a structured intent_spec (visual style, theme, features, locales, tracking, data collection) that downstream agents consume.",
+      "path": ".claude/agents/intent-parser.md",
+      "model": "opus"
+    },
+    {
+      "name": "orchestrator",
+      "description": "Top-level coordinator. Use after prompt-refiner to plan and delegate to all other agents, run the quality gate, handle retries, and emit the final build manifest.",
+      "path": ".claude/agents/orchestrator.md",
+      "model": "opus"
+    },
+    {
+      "name": "codebase-analyzer",
+      "description": "Use in modify mode only. Scans the existing repo to produce a snapshot of stack, components, design tokens, routes, and APIs before any change is planned.",
+      "path": ".claude/agents/codebase-analyzer.md"
+    },
+    {
+      "name": "change-planner",
+      "description": "Use in modify mode only, after codebase-analyzer. Produces a file-level change plan with required_agents, skipped_agents, and required_reviewers — enforces minimum-required-agents to keep token cost low.",
+      "path": ".claude/agents/change-planner.md",
+      "model": "opus"
+    },
+    {
+      "name": "ui-design",
+      "description": "Use for any visual / component / design-token / page-layout work. Implements the AI Product preset (dark surface, blue→indigo→cyan gradient, glassmorphism, glow) by default.",
+      "path": ".claude/agents/ui-design.md"
+    },
+    {
+      "name": "backend",
+      "description": "Use for API routes, server logic, integrations, and DB query code.",
+      "path": ".claude/agents/backend.md"
+    },
+    {
+      "name": "content",
+      "description": "Use to write copy, content JSON, microcopy, hero text, CTAs, FAQs, and any user-facing strings.",
+      "path": ".claude/agents/content.md"
+    },
+    {
+      "name": "analytics",
+      "description": "Use ONLY when the change adds tracking or analytics instrumentation.",
+      "path": ".claude/agents/analytics.md"
+    },
+    {
+      "name": "i18n",
+      "description": "Use ONLY when the project supports multiple locales AND the change adds user-facing strings. Extracts strings, sets up locale files, wires up the i18n framework.",
+      "path": ".claude/agents/i18n.md"
+    },
+    {
+      "name": "db-migration",
+      "description": "Use ONLY when schema changes are required. Generates migration files and seed data.",
+      "path": ".claude/agents/db-migration.md"
+    },
+    {
+      "name": "notifications",
+      "description": "Use ONLY when the change adds email/SMS/push/webhook flows. Builds templates and triggers.",
+      "path": ".claude/agents/notifications.md"
+    },
+    {
+      "name": "legal",
+      "description": "Use ONLY when the change touches data collection, cookies, consent, PII, or jurisdictional requirements. Generates privacy policy, terms, cookie banners.",
+      "path": ".claude/agents/legal.md"
+    },
+    {
+      "name": "seo",
+      "description": "Use for meta tags, structured data (JSON-LD), sitemap.xml, robots.txt, and OpenGraph / Twitter cards.",
+      "path": ".claude/agents/seo.md"
+    },
+    {
+      "name": "design-critic",
+      "description": "Use after ui-design changes. Audits aesthetic FIT against the AI Product preset (dark surface, blue→indigo→cyan gradient, glassmorphism, glow). Detects taste conflicts with user input and pushes back. Different from review-design-sys (which checks consistency).",
+      "path": ".claude/agents/design-critic.md",
+      "model": "opus"
+    },
+    {
+      "name": "review-code",
+      "description": "Use after any code-producing builder. Runs lint, typecheck, complexity and anti-pattern checks.",
+      "path": ".claude/agents/review-code.md"
+    },
+    {
+      "name": "review-design-sys",
+      "description": "Use after ui-design changes. Audits design-system CONSISTENCY: tokens used everywhere, no hardcoded colours/spacing, no duplicate components.",
+      "path": ".claude/agents/review-design-sys.md"
+    },
+    {
+      "name": "review-responsive",
+      "description": "Use after ui-design changes. Audits mobile/tablet/desktop breakpoints and tap targets.",
+      "path": ".claude/agents/review-responsive.md"
+    },
+    {
+      "name": "review-a11y",
+      "description": "Use after ui-design or content runs. Audits WCAG 2.2 AA: contrast, alt text, keyboard nav, ARIA, semantic HTML.",
+      "path": ".claude/agents/review-a11y.md"
+    },
+    {
+      "name": "review-api",
+      "description": "Use after backend changes that add or modify API routes. Audits rate limiting, validation, CORS scoping, error handling.",
+      "path": ".claude/agents/review-api.md"
+    },
+    {
+      "name": "review-scalability",
+      "description": "Use after backend / db-migration changes. Audits N+1 queries, indexing, caching, pagination.",
+      "path": ".claude/agents/review-scalability.md"
+    },
+    {
+      "name": "review-security",
+      "description": "Use after backend / db-migration / auth changes. Audits secrets, CORS, headers, dependency CVEs, auth flows.",
+      "path": ".claude/agents/review-security.md"
+    },
+    {
+      "name": "review-performance",
+      "description": "Use after builders complete on any UI or backend change. Audits Core Web Vitals, bundle size, image optimisation, lazy loading.",
+      "path": ".claude/agents/review-performance.md"
+    },
+    {
+      "name": "documentation",
+      "description": "Use after the quality gate passes. Generates README, OpenAPI spec, CHANGELOG entries, component docs.",
+      "path": ".claude/agents/documentation.md"
+    },
+    {
+      "name": "tdd",
+      "description": "Use to write unit, integration, and E2E test suites. Pairs with backend / ui-design changes.",
+      "path": ".claude/agents/tdd.md"
+    },
+    {
+      "name": "deploy",
+      "description": "Use last. Builds, runs smoke tests, deploys, and tags the release.",
+      "path": ".claude/agents/deploy.md"
+    },
+    {
+      "name": "competitor-analyst",
+      "description": "Use in create mode (or when intent_spec.requires_market_research is true). Researches competitors and produces a patterns-to-adopt / patterns-to-avoid report.",
+      "path": ".claude/agents/competitor-analyst.md"
+    },
+    {
+      "name": "sitemap-planner",
+      "description": "Use in create mode only. Designs the full page hierarchy and route structure for a new site.",
+      "path": ".claude/agents/sitemap-planner.md"
+    },
+    {
+      "name": "stack-selector",
+      "description": "Use in create mode only. Picks the framework, styling approach, hosting target, and dependencies based on intent_spec.",
+      "path": ".claude/agents/stack-selector.md"
+    },
+    {
+      "name": "stitch-code-generator",
+      "description": "Converts Stitch UI designs into production-ready React/Next.js code with TypeScript, Tailwind CSS, and full component structure. Works directly with HTML specifications.",
+      "path": ".claude/agents/stitch-code-generator.md"
+    },
+    {
+      "name": "stitch-screen-generator",
+      "description": "Extract HTML/code from Stitch-generated screens and replicate the complete design across all Codewinglet project screens in React/Next.js.",
+      "path": ".claude/agents/stitch-screen-generator.md"
+    },
+    {
+      "name": "stitch-quality-validator",
+      "description": "Verify that generated Stitch components exactly replicate the HTML from Stitch designs without any modifications, and handle file updates properly.",
+      "path": ".claude/agents/stitch-quality-validator.md"
+    },
+    {
+      "name": "stitch-verify-fix",
+      "description": "Automatically verify that all pages match the Stitch design exactly, detect any discrepancies, and apply fixes automatically without user intervention.",
+      "path": ".claude/agents/stitch-verify-fix.md"
+    },
+    {
+      "name": "stitch-website-builder",
+      "description": "Orchestrates complete website development from a Stitch project ID, generating all necessary screens, design systems, and code structure for a full-featured website.",
+      "path": ".claude/agents/stitch-website-builder.md"
+    },
+    {
+      "name": "website-builder-from-description",
+      "description": "Complete website builder that converts user descriptions into Stitch designs, extracts HTML, and generates production-ready interlinked React/Next.js components",
+      "path": ".claude/agents/website-builder-from-description.md",
+      "model": "sonnet"
+    }
+  ]
+}
